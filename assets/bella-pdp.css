@@ -55,3 +55,11 @@
 .bb-more summary::after{display:none;content:none}
 /* lookbook: hide alt-text paint while large tiles decode */
 .blb img{color:transparent}
+/* rating line: stars align to first text line; tighter on small screens */
+.ph-rating{align-items:flex-start}
+.ph-rating .stars5{margin-top:3px}
+.ph-rating>span:last-child{flex:1;min-width:0}
+@media(max-width:640px){
+  .ph-rating{font-size:11px;letter-spacing:.06em;gap:8px}
+  .ph-rating .stars5 svg{width:12px;height:12px}
+}

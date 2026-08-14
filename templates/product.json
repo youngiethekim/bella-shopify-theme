@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,7 +18,10 @@
         "u4": { "type": "usp", "settings": { "text": "<b>Rework or refund</b>" } }
       },
       "block_order": ["u1", "u2", "u3", "u4"],
-      "settings": {}
+      "settings": {
+        "style_options": "",
+        "show_notes": false
+      }
     },
     "steps": {
       "type": "bella-steps",
