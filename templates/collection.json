@@ -11,14 +11,60 @@
   "sections": {
     "main": {
       "type": "main-collection",
+      "blocks": {
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "product": "virtual-staging-1",
+            "eyebrow": "01 · Virtual Staging · Most popular",
+            "title": "Virtual Staging",
+            "unit": "photo",
+            "text": "Empty rooms furnished by real interior designers, matched to your buyer and market. Furniture removal included free. MLS-ready in 24–48 hours, with unlimited revisions for two weeks.",
+            "cta": "Order virtual staging →"
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "product": "3d-rendering",
+            "eyebrow": "02 · 3D Renderings",
+            "title": "3D Renderings",
+            "unit": "render",
+            "text": "Photoreal interiors and exteriors built from your plans — for homes, developments and commercial spaces. Sell it before you build it.",
+            "cta": "Order 3D renderings →"
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "product": "2d-3d-floor-plan-service",
+            "eyebrow": "03 · Floor Plans",
+            "title": "Floor Plans",
+            "unit": "floor",
+            "text": "Clean 2D and furnished 3D floor plans buyers can actually read — drawn to scale from your sketch, photos or existing plan.",
+            "cta": "Order floor plans →"
+          }
+        },
+        "f4": {
+          "type": "feature",
+          "settings": {
+            "product": "photo-editing",
+            "eyebrow": "04 · Photo Editing",
+            "title": "Photo Editing",
+            "unit": "photo",
+            "text": "HDR blending, day-to-dusk, item removal and sky swaps by our retouching team — back within 24 hours.",
+            "cta": "Order photo editing →"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
       "settings": {
-        "heading": "Our services",
-        "show_featured": true,
-        "featured_eyebrow": "Our main service · Most popular",
-        "featured_product": "virtual-staging-1",
-        "group_1": "virtual-staging",
-        "group_2": "3d-renderings",
-        "group_3": "photo-editing"
+        "heading": "Our services"
       }
     }
   },
