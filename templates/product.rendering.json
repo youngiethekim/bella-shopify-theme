@@ -16,7 +16,7 @@
           "type": "usp",
           "settings": {
             "icon": "note",
-            "text": "From <b>$350</b> / render"
+            "text": "From <b>$550</b> / render"
           }
         },
         "u2": {
@@ -157,7 +157,7 @@
         "eyebrow": "Your next listing",
         "heading": "Ready to bring your plans to life?",
         "text": "Order today, send your plans, and sell it before you build it.",
-        "cta_label": "Get started — from $350 a render",
+        "cta_label": "Get started — from $550 a render",
         "fine_print": "Send plans after checkout · Revisions included"
       }
     }
