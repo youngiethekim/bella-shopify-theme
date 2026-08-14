@@ -12,13 +12,14 @@
       endif
     endfor
   endif
+  assign has_groups = false
+  if section.settings.group_1 != blank or section.settings.group_2 != blank or section.settings.group_3 != blank
+    assign has_groups = true
+  endif
 -%}
 <div class="shop-wrap">
   <p class="micro">{{ section.settings.eyebrow }}</p>
   <h1>{% if section.settings.heading != blank %}{{ section.settings.heading }}{% else %}{{ collection.title }}{% endif %}</h1>
-  {%- if collection.description != blank -%}
-    <div class="rte">{{ collection.description }}</div>
-  {%- endif -%}
 
   {%- if featured != blank and section.settings.show_featured -%}
     <a class="feat-svc" href="{{ featured.url }}">
@@ -41,34 +42,67 @@
     </a>
   {%- endif -%}
 
-  {%- paginate collection.products by 24 -%}
-    <div class="other-svcs">
-      {%- if section.settings.other_heading != blank -%}
-        <p class="micro">{{ section.settings.other_heading }}</p>
-      {%- endif -%}
-      <div class="coll-grid">
-        {%- for product in collection.products -%}
-          {%- if featured != blank and product.id == featured.id and section.settings.show_featured -%}
-            {%- continue -%}
-          {%- endif -%}
-          <a class="coll-card" href="{{ product.url }}">
-            {%- if product.featured_image -%}
-              <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="600" height="450">
+  {%- if has_groups -%}
+    {%- for i in (1..3) -%}
+      {%- assign gkey = 'group_' | append: i -%}
+      {%- assign grp = section.settings[gkey] -%}
+      {%- if grp != blank -%}
+        <div class="svc-group" id="{{ grp.handle }}">
+          <div class="svc-group-head">
+            <p class="micro sg-eyebrow">0{{ forloop.index }} · {{ grp.title }}</p>
+            {%- if grp.description != blank -%}
+              <p class="sg-desc">{{ grp.description | strip_html }}</p>
             {%- endif -%}
-            <div class="cc-body">
-              <div class="cc-title">{{ product.title }}</div>
-              <div class="cc-price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</div>
-            </div>
-          </a>
-        {%- else -%}
-          <p class="rte">No services here yet.</p>
-        {%- endfor -%}
+          </div>
+          <div class="coll-grid">
+            {%- for product in grp.products limit: 24 -%}
+              {%- if featured != blank and product.id == featured.id and section.settings.show_featured -%}
+                {%- continue -%}
+              {%- endif -%}
+              <a class="coll-card" href="{{ product.url }}">
+                {%- if product.featured_image -%}
+                  <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="600" height="450">
+                {%- endif -%}
+                <div class="cc-body">
+                  <div class="cc-title">{{ product.title }}</div>
+                  <div class="cc-price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</div>
+                </div>
+              </a>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- paginate collection.products by 24 -%}
+      <div class="other-svcs">
+        {%- if section.settings.other_heading != blank -%}
+          <p class="micro">{{ section.settings.other_heading }}</p>
+        {%- endif -%}
+        <div class="coll-grid">
+          {%- for product in collection.products -%}
+            {%- if featured != blank and product.id == featured.id and section.settings.show_featured -%}
+              {%- continue -%}
+            {%- endif -%}
+            <a class="coll-card" href="{{ product.url }}">
+              {%- if product.featured_image -%}
+                <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="600" height="450">
+              {%- endif -%}
+              <div class="cc-body">
+                <div class="cc-title">{{ product.title }}</div>
+                <div class="cc-price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</div>
+              </div>
+            </a>
+          {%- else -%}
+            <p class="rte">No services here yet.</p>
+          {%- endfor -%}
+        </div>
       </div>
-    </div>
-    {%- if paginate.pages > 1 -%}
-      <div class="pagination">{{ paginate | default_pagination }}</div>
-    {%- endif -%}
-  {%- endpaginate -%}
+      {%- if paginate.pages > 1 -%}
+        <div class="pagination">{{ paginate | default_pagination }}</div>
+      {%- endif -%}
+    {%- endpaginate -%}
+  {%- endif -%}
 </div>
 
 {% schema %}
@@ -83,7 +117,11 @@
     { "type": "text", "id": "featured_eyebrow", "label": "Featured eyebrow", "default": "Our main service · Most popular" },
     { "type": "textarea", "id": "featured_text", "label": "Featured description (overrides product description)", "default": "Empty rooms furnished by real interior designers, matched to your buyer and market. MLS-ready in 24–48 hours, with unlimited revisions for two weeks." },
     { "type": "text", "id": "featured_cta", "label": "Featured button label", "default": "Order virtual staging →" },
-    { "type": "header", "content": "Other services" },
+    { "type": "header", "content": "Service categories", "info": "When set, products are shown grouped by these collections instead of one flat grid" },
+    { "type": "collection", "id": "group_1", "label": "Category 1" },
+    { "type": "collection", "id": "group_2", "label": "Category 2" },
+    { "type": "collection", "id": "group_3", "label": "Category 3" },
+    { "type": "header", "content": "Fallback grid (no categories set)" },
     { "type": "text", "id": "other_heading", "label": "Grid heading", "default": "Other services" }
   ]
 }
