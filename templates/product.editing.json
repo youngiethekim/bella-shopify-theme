@@ -136,7 +136,14 @@
         "st2",
         "st3"
       ],
-      "settings": {}
+      "settings": {
+        "eyebrow": "The difference it makes",
+        "heading": "The same home, day to dusk.",
+        "before_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Image_Nov_16_2025.jpg?width=1400",
+        "before_label": "Before · flat daytime shot",
+        "after_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Dawn_Image.jpg?width=1400",
+        "after_label": "After · day-to-dusk by Bella"
+      }
     },
     "tips": {
       "type": "bella-included",

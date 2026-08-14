@@ -212,7 +212,14 @@
         "st2",
         "st3"
       ],
-      "settings": {}
+      "settings": {
+        "eyebrow": "The difference it makes",
+        "heading": "From your plans to photoreal.",
+        "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/floorplan-standard.PNG?v=1615928605",
+        "before_label": "Before · your drawings",
+        "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/products/3d-rendering-service-for-architectural-visualization-607448.jpg?v=1673656751",
+        "after_label": "After · photoreal render by Bella"
+      }
     },
     "tips": {
       "type": "bella-included",
