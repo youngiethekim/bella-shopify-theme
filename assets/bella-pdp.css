@@ -157,6 +157,8 @@
 .value-also a{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.35);transition:.15s}
 .value-also a:hover{text-decoration-color:#fff}
 .value-also .va-dot{color:rgba(255,255,255,.35)}
+/* ---- services page: clientele line on feature cards ---- */
+.fs-for{margin-top:10px;font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--green)}
 /* ---- portfolio: best-work grid ---- */
 .pf-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:34px}
 .pf-card{margin:0;cursor:pointer;outline:none}
