@@ -151,6 +151,12 @@
   .bscope td[data-l]::before{content:attr(data-l);display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:8px 0 2px}
   .bscope td:nth-child(2){color:var(--green)}
 }
+/* ---- homepage: flagship qualifier under the cost comparison ---- */
+.value-also{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:#807A72;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 10px;line-height:1.6}
+.value-also .va-lead{color:#A8A29A}
+.value-also a{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.35);transition:.15s}
+.value-also a:hover{text-decoration-color:#fff}
+.value-also .va-dot{color:rgba(255,255,255,.35)}
 /* ---- case study ---- */
 .cs-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .cs-split img{width:100%;border-radius:12px;height:auto}
