@@ -19,6 +19,7 @@
             "eyebrow": "01 · Virtual Staging · Most popular",
             "title": "Virtual Staging",
             "unit": "photo",
+            "audience": "real estate agents · brokerages · property managers",
             "text": "Empty rooms furnished by real interior designers, matched to your buyer and market. Furniture removal included free. MLS-ready in 24–48 hours, with unlimited revisions for two weeks.",
             "cta": "Order virtual staging →"
           }
@@ -30,6 +31,7 @@
             "eyebrow": "02 · 3D Renderings",
             "title": "3D Renderings",
             "unit": "render",
+            "audience": "home builders · developers · architects",
             "text": "Photoreal interiors and exteriors built from your plans — for homes, developments and commercial spaces. Sell it before you build it.",
             "cta": "Order 3D renderings →"
           }
@@ -41,6 +43,7 @@
             "eyebrow": "03 · Floor Plans",
             "title": "Floor Plans",
             "unit": "floor",
+            "audience": "agents · home builders · property managers",
             "text": "Clean 2D and furnished 3D floor plans buyers can actually read — drawn to scale from your sketch, photos or existing plan.",
             "cta": "Order floor plans →"
           }
@@ -52,6 +55,7 @@
             "eyebrow": "04 · Photo Editing",
             "title": "Photo Editing",
             "unit": "photo",
+            "audience": "agents · photographers · property managers",
             "text": "HDR blending, day-to-dusk, item removal and sky swaps by our retouching team — back within 24 hours.",
             "cta": "Order photo editing →"
           }
