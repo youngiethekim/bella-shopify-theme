@@ -85,7 +85,10 @@
         "p5",
         "p6"
       ],
-      "settings": {}
+      "settings": {
+        "eyebrow": "Portfolio",
+        "heading": "Real listings with real results"
+      }
     },
     "cta": {
       "type": "bella-end-cta",
