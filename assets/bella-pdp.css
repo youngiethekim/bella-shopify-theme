@@ -151,6 +151,10 @@
   .bscope td[data-l]::before{content:attr(data-l);display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:8px 0 2px}
   .bscope td:nth-child(2){color:var(--green)}
 }
+/* ---- article: related + service CTA ---- */
+.art-more{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}
+.art-cta{margin-top:40px;padding:34px 36px;background:#EEF3EE;border-radius:14px;text-align:center}
+.art-cta h2{font-size:clamp(21px,2.4vw,28px);font-weight:300;margin:10px 0 20px}
 /* ---- recommended quantity badge ---- */
 .bb-reco{margin-left:auto;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#FBFAF8;color:var(--soft);border-radius:99px;padding:4px 11px;font-family:inherit;font-size:10px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.15s}
 .bb-reco .br-star{color:#C9A96A;font-size:11px;line-height:1}

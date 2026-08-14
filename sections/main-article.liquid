@@ -1,15 +1,61 @@
 <article class="shop-wrap shop-narrow">
+  <nav class="crumb" aria-label="Breadcrumb" style="padding:0 0 14px">
+    <a href="{{ routes.root_url }}">Home</a> ·
+    <a href="{{ blog.url }}">{{ blog.title }}</a> ·
+    {{ article.title | truncate: 40 }}
+  </nav>
   <p class="micro">{{ article.published_at | date: '%B %-d, %Y' }}{% if article.author != blank %} · {{ article.author }}{% endif %}</p>
   <h1>{{ article.title }}</h1>
   {%- if article.image -%}
-    <img src="{{ article.image | image_url: width: 1400 }}" alt="{{ article.image.alt | escape }}" style="width:100%;border-radius:14px;margin:18px 0 26px" width="1400" height="930">
+    <img src="{{ article.image | image_url: width: 1400 }}" alt="{{ article.image.alt | default: article.title | escape }}" style="width:100%;border-radius:14px;margin:18px 0 26px" width="1400" height="930">
   {%- endif -%}
   <div class="rte">{{ article.content }}</div>
+
+  {%- if section.settings.show_related -%}
+    {%- if blog.articles.size > 1 -%}
+      <aside class="art-more">
+        <p class="micro">{{ section.settings.related_label }}</p>
+        <div class="blog-list" style="margin-top:16px">
+          {%- assign shown = 0 -%}
+          {%- for a in blog.articles -%}
+            {%- if a.id != article.id and shown < 3 -%}
+              {%- assign shown = shown | plus: 1 -%}
+              <a class="coll-card" href="{{ a.url }}">
+                {%- if a.image -%}
+                  <img src="{{ a.image | image_url: width: 600 }}" alt="{{ a.image.alt | default: a.title | escape }}" loading="lazy" width="600" height="450">
+                {%- endif -%}
+                <div class="cc-body">
+                  <div class="cc-title">{{ a.title }}</div>
+                  <div class="cc-price">{{ a.published_at | date: '%B %-d, %Y' }}</div>
+                </div>
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </aside>
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if section.settings.show_cta -%}
+    <aside class="art-cta">
+      <p class="micro">{{ section.settings.cta_eyebrow }}</p>
+      <h2>{{ section.settings.cta_heading }}</h2>
+      <a class="btn" href="{{ section.settings.cta_url | default: '/products/virtual-staging-1' }}">{{ section.settings.cta_label }}</a>
+    </aside>
+  {%- endif -%}
 </article>
 
 {% schema %}
 {
   "name": "Article",
-  "settings": []
+  "settings": [
+    { "type": "checkbox", "id": "show_related", "label": "Show related articles", "default": true },
+    { "type": "text", "id": "related_label", "label": "Related label", "default": "More from the Bella blog" },
+    { "type": "checkbox", "id": "show_cta", "label": "Show service CTA", "default": true },
+    { "type": "text", "id": "cta_eyebrow", "label": "CTA eyebrow", "default": "While you're here" },
+    { "type": "text", "id": "cta_heading", "label": "CTA heading", "default": "Selling a listing? Stage it virtually for $45 a photo." },
+    { "type": "url", "id": "cta_url", "label": "CTA link" },
+    { "type": "text", "id": "cta_label", "label": "CTA button", "default": "See virtual staging →" }
+  ]
 }
 {% endschema %}
