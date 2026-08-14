@@ -157,6 +157,23 @@
 .value-also a{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.35);transition:.15s}
 .value-also a:hover{text-decoration-color:#fff}
 .value-also .va-dot{color:rgba(255,255,255,.35)}
+/* ---- portfolio: best-work grid ---- */
+.pf-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:34px}
+.pf-card{margin:0;cursor:pointer;outline:none}
+.pf-shot{position:relative;overflow:hidden;border-radius:12px;background:#EFECE8;aspect-ratio:3/2}
+.pf-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.pf-before{opacity:0;transition:opacity .35s ease}
+.pf-card:hover .pf-before,.pf-card:focus-visible .pf-before,.pf-card.on .pf-before{opacity:1}
+.pf-tag{position:absolute;left:14px;bottom:14px;z-index:2;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#fff;background:rgba(20,18,16,.55);padding:5px 11px;border-radius:99px;backdrop-filter:blur(3px)}
+.pf-card figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-top:12px;font-size:13px;color:var(--soft)}
+.pf-card figcaption b{font-weight:500;color:var(--ink);font-size:15px}
+.pf-cust{color:var(--faint)}
+.pf-meta{width:100%;font-size:12.5px;color:var(--faint)}
+.pf-meta em{font-style:normal;color:var(--green)}
+.pf-foot{display:flex;align-items:center;flex-wrap:wrap;gap:16px 26px;margin-top:38px}
+.pf-look{font-size:13px;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.pf-look:hover{color:var(--ink)}
+@media(max-width:760px){.pf-grid{grid-template-columns:1fr;gap:22px}}
 /* ---- case study ---- */
 .cs-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .cs-split img{width:100%;border-radius:12px;height:auto}
