@@ -173,7 +173,20 @@
           {%- if section.settings.def_heading != blank -%}
             <h2 class="head2" style="font-size:clamp(25px,2.9vw,38px);margin:10px 0 18px;font-weight:300">{{ section.settings.def_heading }}</h2>
           {%- endif -%}
-          <div class="rte">{{ product.description }}</div>
+          {%- assign dparts = product.description | split: '</p>' -%}
+          {%- if dparts.size > 1 -%}
+            {%- assign dlede = dparts.first | append: '</p>' -%}
+            {%- assign drest = product.description | remove_first: dlede -%}
+            <div class="rte def-lede">{{ dlede }}</div>
+            {%- if drest != blank -%}
+              <details class="def-more">
+                <summary>{{ section.settings.def_more_label }}</summary>
+                <div class="rte">{{ drest }}</div>
+              </details>
+            {%- endif -%}
+          {%- else -%}
+            <div class="rte">{{ product.description }}</div>
+          {%- endif -%}
         </div>
       </div>
     </section>
@@ -225,7 +238,8 @@
     { "type": "number", "id": "tier4_pct", "label": "Tier 4 — % off", "default": 20 },
     { "type": "header", "content": "Description section" },
     { "type": "text", "id": "def_eyebrow", "label": "Eyebrow", "default": "What it is" },
-    { "type": "text", "id": "def_heading", "label": "Heading", "default": "What you get" }
+    { "type": "text", "id": "def_heading", "label": "Heading", "default": "What you get" },
+    { "type": "text", "id": "def_more_label", "label": "Expand link label", "default": "Read the full service details" }
   ],
   "blocks": [
     {
