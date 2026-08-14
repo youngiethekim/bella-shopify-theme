@@ -1,0 +1,73 @@
+<div class="svc-page">
+  <section class="sec">
+    <div class="sec-in">
+      <div class="head2">
+        <p class="micro">{{ section.settings.eyebrow }}</p>
+        <h2>{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+      <div class="bscope">
+        <table>
+          <thead>
+            <tr>
+              <th>{{ section.settings.col_type }}</th>
+              <th>{{ section.settings.col_price }}</th>
+              <th>{{ section.settings.col_covers }}</th>
+              <th>{{ section.settings.col_limit }}</th>
+              <th>{{ section.settings.col_ideal }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- for block in section.blocks -%}
+              {%- assign vprice = '' -%}
+              {%- for pv in product.variants -%}
+                {%- if pv.title == block.settings.title -%}{%- assign vprice = pv.price | money -%}{%- endif -%}
+              {%- endfor -%}
+              <tr {{ block.shopify_attributes }}>
+                <td><b>{{ block.settings.title }}</b></td>
+                <td data-l="{{ section.settings.col_price | escape }}">{% if vprice != '' %}{{ vprice }}{% else %}{{ block.settings.price }}{% endif %}</td>
+                <td data-l="{{ section.settings.col_covers | escape }}">{{ block.settings.covers }}</td>
+                <td data-l="{{ section.settings.col_limit | escape }}">{{ block.settings.limit }}</td>
+                <td data-l="{{ section.settings.col_ideal | escape }}">{{ block.settings.ideal }}</td>
+              </tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+        {%- if section.settings.note != blank -%}<p class="bscope-note">{{ section.settings.note }}</p>{%- endif -%}
+      </div>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Service scope table",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Black and white" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "What each render type includes" },
+    { "type": "textarea", "id": "text", "label": "Intro text" },
+    { "type": "text", "id": "note", "label": "Footnote (universal inclusions)" },
+    { "type": "header", "content": "Column labels" },
+    { "type": "text", "id": "col_type", "label": "Column 1", "default": "Render type" },
+    { "type": "text", "id": "col_price", "label": "Column 2", "default": "Price" },
+    { "type": "text", "id": "col_covers", "label": "Column 3", "default": "What one render covers" },
+    { "type": "text", "id": "col_limit", "label": "Column 4", "default": "Size limit" },
+    { "type": "text", "id": "col_ideal", "label": "Column 5", "default": "Best for" }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Service row",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title (match variant title to auto-pull its price)" },
+        { "type": "text", "id": "price", "label": "Price fallback (used when no variant matches)" },
+        { "type": "text", "id": "covers", "label": "What one unit covers" },
+        { "type": "text", "id": "limit", "label": "Size limit" },
+        { "type": "text", "id": "ideal", "label": "Best for" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Service scope table" }]
+}
+{% endschema %}
