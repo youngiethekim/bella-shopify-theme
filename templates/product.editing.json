@@ -60,7 +60,12 @@
         "assure_3": "Rework or refund",
         "def_heading": "About this service",
         "variant_label": "Choose your edit type",
-        "shot_label": "Edited by a Bella professional"
+        "shot_label": "Edited by a Bella professional",
+        "variant_tip": "Minor HDR covers most listing shots. Choose major HDR for tricky windows, flash cleanup and detailed fixes.",
+        "reco_text": "A full listing shoot is typically 8–12 photos — batching them in one order keeps edits consistent and unlocks volume pricing.",
+        "assure_1_tip": "Your order confirmation includes an upload link — send photos whenever they're ready.",
+        "assure_2_tip": "Most batches come back within 24 hours — we confirm timing when you upload.",
+        "assure_3_tip": "If an edit isn't right, we rework it — or refund that photo."
       }
     },
     "steps": {
@@ -97,6 +102,88 @@
         "s3"
       ],
       "settings": {}
+    },
+    "proof": {
+      "type": "bella-proof",
+      "blocks": {
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "figure": "24h",
+            "text": "typical turnaround from upload to finished, MLS-ready photos.",
+            "source": "Bella turnaround"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "figure": "97%",
+            "text": "of home buyers start their search online — clean photos are the whole first impression.",
+            "source": "NAR"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "figure": "100%",
+            "text": "of edits are covered by our rework-or-refund guarantee.",
+            "source": "Bella guarantee"
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
+      "settings": {}
+    },
+    "tips": {
+      "type": "bella-included",
+      "blocks": {
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "upload",
+            "title": "Upload full-resolution files",
+            "text": "Send originals straight from the camera — more pixels means cleaner blends and swaps."
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Day-to-dusk your lead photo",
+            "text": "Twilight exteriors stop the scroll — order one for the front shot."
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Flag the tricky shots",
+            "text": "Note windows, mirrors and flash spots so we route them to major HDR."
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Batch the whole listing",
+            "text": "One order for the full shoot keeps edits consistent across every room."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Best practices",
+        "heading": "Get the cleanest edits"
+      }
     },
     "faq": {
       "type": "bella-faq",
@@ -155,6 +242,8 @@
   "order": [
     "main",
     "steps",
+    "proof",
+    "tips",
     "faq",
     "cta"
   ]

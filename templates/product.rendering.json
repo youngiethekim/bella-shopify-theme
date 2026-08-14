@@ -62,7 +62,12 @@
         "assure_3": "Print-ready delivery",
         "def_heading": "About this service",
         "variant_label": "Choose your render type",
-        "shot_label": "3D rendering by a Bella professional"
+        "shot_label": "3D rendering by a Bella professional",
+        "variant_tip": "Not sure? Interior — residential is our most-ordered render. Pricing is per finished image, and you can add more types to the same order.",
+        "reco_text": "Start with one render per key view — front exterior, living space, kitchen. You can mix interior and exterior types in one order.",
+        "assure_1_tip": "Your order confirmation tells you where to send floor plans, elevations and reference images.",
+        "assure_2_tip": "You review a draft and mark up changes to composition, materials and lighting — we revise until it's right.",
+        "assure_3_tip": "High-resolution files sized for print, MLS and marketing — billboard sizing on request."
       }
     },
     "steps": {
@@ -99,6 +104,88 @@
         "s3"
       ],
       "settings": {}
+    },
+    "proof": {
+      "type": "bella-proof",
+      "blocks": {
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "figure": "97%",
+            "text": "of home buyers start their search online — a photoreal render is your project's first impression.",
+            "source": "NAR"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "figure": "1–2 wks",
+            "text": "typical turnaround from plans to a finalized render, depending on scope.",
+            "source": "Bella turnaround"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "figure": "100%",
+            "text": "of renders include revisions until the composition, materials and lighting are right.",
+            "source": "Bella guarantee"
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
+      "settings": {}
+    },
+    "tips": {
+      "type": "bella-included",
+      "blocks": {
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Send dimensioned plans",
+            "text": "Floor plans with measurements (PDF or CAD) cut modelling time — hand-drawn works too."
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Include real references",
+            "text": "Material selections, finishes and photos of furniture you like keep the first draft close."
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "One render per key view",
+            "text": "Pick the angles buyers will see first — front exterior, living space, kitchen."
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Choose your moment",
+            "text": "Tell us daylight or dusk — twilight exteriors are the most shared shots."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Best practices",
+        "heading": "Get the best render, faster"
+      }
     },
     "faq": {
       "type": "bella-faq",
@@ -165,6 +252,8 @@
   "order": [
     "main",
     "steps",
+    "proof",
+    "tips",
     "faq",
     "cta"
   ]
