@@ -1,0 +1,104 @@
+{%- assign m = metaobject -%}
+<div class="svc-page">
+  <article class="shop-wrap">
+    <nav class="crumb" aria-label="Breadcrumb" style="padding:0 0 14px">
+      <a href="{{ routes.root_url }}">Home</a> ·
+      <a href="/pages/main-case-study">Case studies</a> ·
+      {{ m.title.value }}
+    </nav>
+
+    <p class="micro">Case study</p>
+    <h1 style="max-width:24ch">{{ m.hero_heading.value | default: m.title.value }}</h1>
+    {%- if m.hero_text.value != blank -%}
+      <p class="lede" style="color:var(--soft);margin-top:14px;max-width:60ch">{{ m.hero_text.value }}</p>
+    {%- endif -%}
+    {%- if m.hero_image.value -%}
+      <img src="{{ m.hero_image.value.preview_image | image_url: width: 1600 }}" alt="{{ m.hero_heading.value | default: m.title.value | escape }}" style="width:100%;border-radius:14px;margin:24px 0 8px" width="1600" height="1000">
+    {%- endif -%}
+
+    {%- if m.section_2_heading.value != blank or m.section_2_text.value != blank -%}
+      <section class="sec" style="padding:44px 0 0">
+        <div class="cs-split">
+          {%- if m.section_2_image.value -%}
+            <img src="{{ m.section_2_image.value.preview_image | image_url: width: 1000 }}" alt="{{ m.section_2_heading.value | escape }}" loading="lazy" width="1000" height="750">
+          {%- endif -%}
+          <div>
+            <h2>{{ m.section_2_heading.value }}</h2>
+            <p>{{ m.section_2_text.value | newline_to_br }}</p>
+          </div>
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if m.card_section_title.value != blank -%}
+      <section class="sec" style="padding:44px 0 0">
+        <div class="head2">
+          <h2>{{ m.card_section_title.value }}</h2>
+          {%- if m.card_section_description.value != blank -%}<p>{{ m.card_section_description.value }}</p>{%- endif -%}
+        </div>
+        <div class="incl" style="margin-top:22px">
+          {%- if m.card_title_1.value != blank -%}<div class="incl-card"><h3>{{ m.card_title_1.value }}</h3><p>{{ m.card_content_1.value }}</p></div>{%- endif -%}
+          {%- if m.card_title_2.value != blank -%}<div class="incl-card"><h3>{{ m.card_title_2.value }}</h3><p>{{ m.card_content_2.value }}</p></div>{%- endif -%}
+          {%- if m.card_title_3.value != blank -%}<div class="incl-card"><h3>{{ m.card_title_3.value }}</h3><p>{{ m.card_content_3.value }}</p></div>{%- endif -%}
+          {%- if m.card_title_4.value != blank -%}<div class="incl-card"><h3>{{ m.card_title_4.value }}</h3><p>{{ m.card_content_4.value }}</p></div>{%- endif -%}
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if m.section_3_heading.value != blank -%}
+      <section class="sec" style="padding:44px 0 0">
+        <div class="cs-split cs-flip">
+          {%- if m.section_3_image.value -%}
+            <img src="{{ m.section_3_image.value.preview_image | image_url: width: 1000 }}" alt="{{ m.section_3_heading.value | escape }}" loading="lazy" width="1000" height="750">
+          {%- endif -%}
+          <div>
+            <h2>{{ m.section_3_heading.value }}</h2>
+            <p>{{ m.section_3_text.value | newline_to_br }}</p>
+            <ul class="cs-checks">
+              {%- if m.section_3_checklist_1.value != blank -%}<li>{{ m.section_3_checklist_1.value }}</li>{%- endif -%}
+              {%- if m.section_3_checklist_2.value != blank -%}<li>{{ m.section_3_checklist_2.value }}</li>{%- endif -%}
+              {%- if m.section_3_checklist_3.value != blank -%}<li>{{ m.section_3_checklist_3.value }}</li>{%- endif -%}
+            </ul>
+          </div>
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if m.section_4_heading.value != blank -%}
+      <section class="sec" style="padding:44px 0 0">
+        <div class="cs-split">
+          {%- if m.section_4_image.value -%}
+            <img src="{{ m.section_4_image.value.preview_image | image_url: width: 1000 }}" alt="{{ m.section_4_heading.value | escape }}" loading="lazy" width="1000" height="750">
+          {%- endif -%}
+          <div>
+            <h2>{{ m.section_4_heading.value }}</h2>
+            <p>{{ m.section_4_text.value | newline_to_br }}</p>
+            <ul class="cs-checks">
+              {%- if m.section_4_checklist_1.value != blank -%}<li>{{ m.section_4_checklist_1.value }}</li>{%- endif -%}
+              {%- if m.section_4_checklist_2.value != blank -%}<li>{{ m.section_4_checklist_2.value }}</li>{%- endif -%}
+              {%- if m.section_4_checklist_3.value != blank -%}<li>{{ m.section_4_checklist_3.value }}</li>{%- endif -%}
+            </ul>
+          </div>
+        </div>
+      </section>
+    {%- endif -%}
+
+    <aside class="art-cta" style="margin-top:56px">
+      <p class="micro">{{ section.settings.cta_eyebrow }}</p>
+      <h2>{{ section.settings.cta_heading }}</h2>
+      <a class="btn" href="{{ section.settings.cta_url | default: '/products/virtual-staging-1' }}">{{ section.settings.cta_label }}</a>
+    </aside>
+  </article>
+</div>
+
+{% schema %}
+{
+  "name": "Case study",
+  "settings": [
+    { "type": "text", "id": "cta_eyebrow", "label": "CTA eyebrow", "default": "Your listing next" },
+    { "type": "text", "id": "cta_heading", "label": "CTA heading", "default": "Get the same result for your listing." },
+    { "type": "url", "id": "cta_url", "label": "CTA link" },
+    { "type": "text", "id": "cta_label", "label": "CTA button", "default": "Get started →" }
+  ]
+}
+{% endschema %}
