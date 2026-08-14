@@ -1,0 +1,162 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "note",
+            "text": "From <b>$350</b> / render"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "doc",
+            "text": "Built from <b>your plans</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "pen",
+            "text": "<b>Revisions</b> included"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "icon": "shield",
+            "text": "<b>Photoreal</b> quality"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "style_options": "",
+        "show_notes": false,
+        "assure_1_icon": "upload",
+        "assure_2_icon": "pen",
+        "assure_3_icon": "doc",
+        "lede": "Photoreal interiors and exteriors built from your plans by our 3D team — so buyers commit before you build.",
+        "unit_label": "render",
+        "qty_label": "How many renders?",
+        "default_qty": 1,
+        "assure_1": "Send plans after checkout",
+        "assure_2": "Revisions until it's right",
+        "assure_3": "Print-ready delivery",
+        "def_heading": "About this service",
+        "variant_label": "Choose your render type"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & send plans",
+            "text": "Place your order, then send floor plans, elevations and reference images — right after checkout."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "We model & render",
+            "text": "Our 3D team models the space and renders photoreal drafts, with materials and lighting matched to your references."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Review & finalize",
+            "text": "Mark up anything you'd like changed — we revise until it's right, then deliver print-ready files."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "What do you need from me?",
+            "answer": "Floor plans or architectural drawings, plus any elevations, material selections and reference images you have. Rough or hand-drawn plans are fine — we confirm anything unclear before modelling."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does a render take?",
+            "answer": "It depends on scope — we confirm timing as soon as you send your plans, and interiors are typically faster than multi-building exteriors."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Are revisions included?",
+            "answer": "Yes. You review a draft and mark up changes to composition, materials and lighting, and we revise until it's right."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "What files do I get?",
+            "answer": "High-resolution, print-ready images sized for marketing, MLS and hoarding/billboard use on request."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you order"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Ready to bring your plans to life?",
+        "text": "Order today, send your plans, and sell it before you build it.",
+        "cta_label": "Get started — from $350 a render",
+        "fine_print": "Send plans after checkout · Revisions included"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "steps",
+    "faq",
+    "cta"
+  ]
+}

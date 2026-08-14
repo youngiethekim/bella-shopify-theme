@@ -1,0 +1,160 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "note",
+            "text": "From <b>$5</b> / photo"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "clock",
+            "text": "Back in <b>24 hrs</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "pen",
+            "text": "<b>Edited by hand</b>, not AI"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "icon": "shield",
+            "text": "<b>Rework or refund</b>"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "style_options": "",
+        "show_notes": false,
+        "assure_1_icon": "upload",
+        "assure_2_icon": "clock",
+        "assure_3_icon": "shield",
+        "lede": "Professional retouching for listing photos — HDR blending, day-to-dusk, item removal and sky swaps, back within 24 hours.",
+        "default_qty": 10,
+        "assure_1": "Upload photos after checkout",
+        "assure_2": "Back within 24 hours",
+        "assure_3": "Rework or refund",
+        "def_heading": "About this service",
+        "variant_label": "Choose your edit type"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & upload",
+            "text": "Place your order, then upload your photos — right after checkout or whenever you're ready."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "Editors get to work",
+            "text": "Our retouching team blends, corrects and cleans each photo by hand."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Approve & download",
+            "text": "Review your photos, request any tweaks, and download MLS-ready files."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "When do I send my photos?",
+            "answer": "After checkout. Your order confirmation includes an upload link, so you can order now and send the photos whenever they're ready."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How fast do I get them back?",
+            "answer": "Within 24 hours for most orders — larger batches may take a little longer, and we'll confirm when you upload."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "What's the difference between minor and major HDR edits?",
+            "answer": "Minor edits blend exposures with color and lens correction. Major edits add window masking, flash removal and detailed cleanup for tricky shots."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I mix edit types in one order?",
+            "answer": "Yes — add each edit type to your order with its own photo count, and our team handles them together."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you order"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Ready to polish your listing photos?",
+        "text": "Order today and have clean, corrected, MLS-ready photos back within 24 hours.",
+        "cta_label": "Get started — from $5 a photo",
+        "fine_print": "Upload after checkout · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "steps",
+    "faq",
+    "cta"
+  ]
+}
