@@ -145,9 +145,9 @@
 
           {%- if section.settings.assure_1 != blank or section.settings.assure_2 != blank or section.settings.assure_3 != blank -%}
             <div class="bb-assure">
-              {%- if section.settings.assure_1 != blank -%}<span>{{ section.settings.assure_1 }}</span>{%- endif -%}
-              {%- if section.settings.assure_2 != blank -%}<span>{{ section.settings.assure_2 }}</span>{%- endif -%}
-              {%- if section.settings.assure_3 != blank -%}<span>{{ section.settings.assure_3 }}</span>{%- endif -%}
+              {%- if section.settings.assure_1 != blank -%}<span><svg class="ico"><use href="#i-{{ section.settings.assure_1_icon | default: 'upload' }}"/></svg>{{ section.settings.assure_1 }}</span>{%- endif -%}
+              {%- if section.settings.assure_2 != blank -%}<span><svg class="ico"><use href="#i-{{ section.settings.assure_2_icon | default: 'clock' }}"/></svg>{{ section.settings.assure_2 }}</span>{%- endif -%}
+              {%- if section.settings.assure_3 != blank -%}<span><svg class="ico"><use href="#i-{{ section.settings.assure_3_icon | default: 'shield' }}"/></svg>{{ section.settings.assure_3 }}</span>{%- endif -%}
             </div>
           {%- endif -%}
         </div>
@@ -158,7 +158,12 @@
   {%- if section.blocks.size > 0 -%}
     <div class="strip">
       {%- for block in section.blocks -%}
-        <div {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+        <div {{ block.shopify_attributes }}>
+          {%- if block.settings.icon != blank and block.settings.icon != 'none' -%}
+            <svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>
+          {%- endif -%}
+          <span>{{ block.settings.text }}</span>
+        </div>
       {%- endfor -%}
     </div>
   {%- endif -%}
@@ -173,10 +178,12 @@
           {%- if section.settings.def_heading != blank -%}
             <h2 class="head2" style="font-size:clamp(25px,2.9vw,38px);margin:10px 0 18px;font-weight:300">{{ section.settings.def_heading }}</h2>
           {%- endif -%}
-          {%- assign dparts = product.description | split: '</p>' -%}
+          {%- comment -%} strip the description's own FAQ — the designed FAQ section below covers it {%- endcomment -%}
+          {%- assign dsource = product.description | split: '<h4>Frequently asked' | first | split: '<h4>Frequently Asked' | first | split: '<h4>FAQ' | first -%}
+          {%- assign dparts = dsource | split: '</p>' -%}
           {%- if dparts.size > 1 -%}
             {%- assign dlede = dparts.first | append: '</p>' -%}
-            {%- assign drest = product.description | remove_first: dlede -%}
+            {%- assign drest = dsource | remove_first: dlede -%}
             <div class="rte def-lede">{{ dlede }}</div>
             {%- if drest != blank -%}
               <details class="def-more">
@@ -224,8 +231,17 @@
     { "type": "text", "id": "buy_label", "label": "Buy button label", "default": "Add to order" },
     { "type": "text", "id": "sticky_label", "label": "Sticky bar label (mobile)", "default": "Your total" },
     { "type": "text", "id": "assure_1", "label": "Reassurance 1", "default": "Upload photos after checkout" },
+    { "type": "select", "id": "assure_1_icon", "label": "Reassurance 1 icon", "default": "upload", "options": [
+      { "value": "upload", "label": "Upload" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
+      { "value": "pen", "label": "Pen" }, { "value": "doc", "label": "Document" }, { "value": "check", "label": "Check" } ] },
     { "type": "text", "id": "assure_2", "label": "Reassurance 2", "default": "Unlimited revisions · 2 weeks" },
+    { "type": "select", "id": "assure_2_icon", "label": "Reassurance 2 icon", "default": "pen", "options": [
+      { "value": "upload", "label": "Upload" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
+      { "value": "pen", "label": "Pen" }, { "value": "doc", "label": "Document" }, { "value": "check", "label": "Check" } ] },
     { "type": "text", "id": "assure_3", "label": "Reassurance 3", "default": "Rework or refund" },
+    { "type": "select", "id": "assure_3_icon", "label": "Reassurance 3 icon", "default": "shield", "options": [
+      { "value": "upload", "label": "Upload" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
+      { "value": "pen", "label": "Pen" }, { "value": "doc", "label": "Document" }, { "value": "check", "label": "Check" } ] },
     { "type": "header", "content": "Volume discounts", "info": "Shown in the buy box. Create a matching automatic discount in admin so checkout applies it." },
     { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": true },
     { "type": "number", "id": "tier1_qty", "label": "Tier 1 — from qty", "default": 3 },
@@ -246,6 +262,10 @@
       "type": "usp",
       "name": "Strip item",
       "settings": [
+        { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [
+          { "value": "none", "label": "None" }, { "value": "note", "label": "Price tag" }, { "value": "clock", "label": "Clock" },
+          { "value": "pen", "label": "Pen" }, { "value": "shield", "label": "Shield" }, { "value": "doc", "label": "Document" },
+          { "value": "sofa", "label": "Sofa" }, { "value": "star", "label": "Star" }, { "value": "upload", "label": "Upload" } ] },
         { "type": "html", "id": "text", "label": "Text (b for emphasis)", "default": "From <b>$45</b> / photo" }
       ]
     }
@@ -255,10 +275,10 @@
     {
       "name": "Product (service)",
       "blocks": [
-        { "type": "usp", "settings": { "text": "From <b>$45</b> / photo" } },
-        { "type": "usp", "settings": { "text": "Back in <b>24–48 hrs</b>" } },
-        { "type": "usp", "settings": { "text": "<b>Unlimited revisions</b>, 2 weeks" } },
-        { "type": "usp", "settings": { "text": "<b>Rework or refund</b>" } }
+        { "type": "usp", "settings": { "icon": "note", "text": "From <b>$45</b> / photo" } },
+        { "type": "usp", "settings": { "icon": "clock", "text": "Back in <b>24–48 hrs</b>" } },
+        { "type": "usp", "settings": { "icon": "pen", "text": "<b>Unlimited revisions</b>, 2 weeks" } },
+        { "type": "usp", "settings": { "icon": "shield", "text": "<b>Rework or refund</b>" } }
       ]
     }
   ]
