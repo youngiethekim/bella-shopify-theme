@@ -109,6 +109,13 @@
             "answer": "Floor plans or architectural drawings, plus any elevations, material selections and reference images you have. Rough or hand-drawn plans are fine — we confirm anything unclear before modelling."
           }
         },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I order interior and exterior renders together?",
+            "answer": "Yes. Add your interior renders to the order, then switch the render type and add your exteriors — each type shows as its own line in the same order and checks out together."
+          }
+        },
         "q2": {
           "type": "qa",
           "settings": {
@@ -133,6 +140,7 @@
       },
       "block_order": [
         "q1",
+        "q5",
         "q2",
         "q3",
         "q4"

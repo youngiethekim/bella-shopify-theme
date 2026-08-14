@@ -110,6 +110,80 @@
   inject();
 })();
 
+/* ---- ajax add-to-cart: stay on the page so buyers can mix types in one order ---- */
+(function () {
+  var form = document.getElementById('BellaProductForm'), box = document.getElementById('BuyBox');
+  if (!form || !box || !window.fetch || !window.FormData) return;
+
+  function fmt(cents) {
+    var f = box.getAttribute('data-money-format') || '${{amount}}';
+    var n = (cents / 100).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return f
+      .replace(/\{\{\s*amount\s*\}\}/, n)
+      .replace(/\{\{\s*amount_no_decimals\s*\}\}/, Math.round(cents / 100).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
+  }
+
+  var panel = null;
+  function show(item, cart) {
+    if (!panel) {
+      panel = document.createElement('div');
+      panel.className = 'bb-added';
+      var btn = box.querySelector('.prod-buy');
+      if (btn && btn.nextElementSibling) box.insertBefore(panel, btn.nextElementSibling);
+      else box.appendChild(panel);
+    }
+    var what = item.variant_title && item.variant_title !== 'Default Title'
+      ? item.variant_title : item.product_title;
+    panel.innerHTML = '';
+    var line = document.createElement('div');
+    line.className = 'ba-line';
+    line.innerHTML = '✓ Added — <b></b>';
+    line.querySelector('b').textContent = what + ' × ' + item.quantity;
+    var sub = document.createElement('div');
+    sub.className = 'ba-cart';
+    sub.textContent = 'Your order: ' + cart.item_count + ' item' + (cart.item_count === 1 ? '' : 's') +
+      ' · ' + fmt(cart.total_price);
+    var acts = document.createElement('div');
+    acts.className = 'ba-actions';
+    var go = document.createElement('a');
+    go.className = 'btn'; go.href = '/cart'; go.textContent = 'Review & check out →';
+    var again = document.createElement('button');
+    again.type = 'button'; again.className = 'ba-again'; again.textContent = '+ Add another';
+    again.addEventListener('click', function () {
+      panel.classList.remove('on');
+      var v = document.getElementById('BuyVariant');
+      if (v && v.tagName === 'SELECT') v.focus();
+    });
+    acts.appendChild(go); acts.appendChild(again);
+    panel.appendChild(line); panel.appendChild(sub); panel.appendChild(acts);
+    panel.classList.add('on');
+    var r = panel.getBoundingClientRect();
+    if (r.top < 0 || r.bottom > window.innerHeight) panel.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+
+  var busy = false;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (busy) return;
+    busy = true;
+    var btns = document.querySelectorAll('.prod-buy');
+    btns.forEach(function (b) { b.dataset.lbl = b.textContent; b.disabled = true; b.textContent = 'Adding…'; });
+    fetch('/cart/add.js', { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(form) })
+      .then(function (r) { if (!r.ok) throw new Error('add failed'); return r.json(); })
+      .then(function (item) {
+        return fetch('/cart.js').then(function (r) { return r.json(); }).then(function (cart) {
+          document.querySelectorAll('[data-cart-count]').forEach(function (el) { el.textContent = cart.item_count; });
+          show(item, cart);
+        });
+      })
+      .catch(function () { form.submit(); })
+      .then(function () {
+        busy = false;
+        btns.forEach(function (b) { b.disabled = false; if (b.dataset.lbl) b.textContent = b.dataset.lbl; });
+      });
+  });
+})();
+
 /* ---- product page: saved looks arrive via ?looks= and attach to the order ---- */
 (function () {
   var form = document.getElementById('BellaProductForm'), box = document.getElementById('BuyBox');
