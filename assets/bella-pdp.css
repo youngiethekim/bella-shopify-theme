@@ -76,3 +76,6 @@
 .def-more[open] summary::before{content:"−"}
 .def-more[open] summary{margin-bottom:14px}
 .def-more summary::after{display:none;content:none}
+.def-more summary{justify-content:flex-start}
+.buybox .bb-group{border-top:1px solid var(--line-2);padding-top:16px;margin-top:16px}
+.buybox .bb-group:first-of-type{border-top:0;padding-top:0;margin-top:0}
