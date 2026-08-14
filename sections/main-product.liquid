@@ -1,0 +1,252 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+-%}
+<div class="svc-page">
+  {%- if section.settings.show_breadcrumb -%}
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="{{ routes.root_url }}">Home</a> ·
+      {%- if collection -%}
+        <a href="{{ collection.url }}">{{ collection.title }}</a> ·
+      {%- else -%}
+        <a href="{{ routes.all_products_collection_url }}">Services</a> ·
+      {%- endif -%}
+      {{ product.title }}
+    </nav>
+  {%- endif -%}
+
+  <section class="svc-hero2">
+
+    {%- comment -%} 1 · Identity: what is this, is it credible, what does it cost {%- endcomment -%}
+    <div class="ph-head">
+      <p class="micro">{{ product.type | default: section.settings.eyebrow_fallback }}</p>
+      <h1>{{ product.title }}</h1>
+      {%- if section.settings.cred_text != blank -%}
+        <div class="ph-rating">
+          <span class="stars5" aria-hidden="true">
+            {%- for i in (1..5) -%}
+              <svg viewBox="0 0 24 24" width="14" height="14"><path fill="#3E6B4C" d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>
+            {%- endfor -%}
+          </span>
+          <span>{{ section.settings.cred_text }}</span>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.lede != blank -%}
+        <p class="lede">{{ section.settings.lede }}</p>
+      {%- endif -%}
+      <div class="ph-price">
+        {%- if product.price_varies -%}From {% endif -%}
+        <b>{{ product.price_min | money }}</b> / {{ section.settings.unit_label }}
+        {%- if section.settings.enable_tiers %} <span>· volume discounts up to {{ section.settings.tier4_pct }}%</span>{% endif -%}
+      </div>
+    </div>
+
+    {%- comment -%} 2 · See the work before configuring {%- endcomment -%}
+    <div class="ph-media">
+      <div class="shot2">
+        {%- if product.featured_image -%}
+          <img id="MainShot" src="{{ product.featured_image | image_url: width: 1400 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" fetchpriority="high" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}">
+        {%- else -%}
+          <img id="MainShot" src="{{ 'proj-living-after.jpg' | asset_url }}" alt="A living room virtually staged with designer furniture" fetchpriority="high" width="1400" height="1050">
+        {%- endif -%}
+        {%- if section.settings.shot_label != blank -%}
+          <span class="lbl">{{ section.settings.shot_label }}</span>
+        {%- endif -%}
+      </div>
+      {%- if product.images.size > 1 -%}
+        <div class="ph-thumbs" id="ShotThumbs">
+          {%- for image in product.images limit: 5 -%}
+            <button type="button" class="{% if forloop.first %}on{% endif %}" data-src="{{ image | image_url: width: 1400 }}" aria-label="View image {{ forloop.index }}">
+              <img src="{{ image | image_url: width: 200 }}" alt="" loading="lazy" width="200" height="150">
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} 3 · Configure & order — grouped into numbered steps {%- endcomment -%}
+    <div class="ph-buy">
+      {%- form 'product', product, id: 'BellaProductForm' -%}
+        <div class="buybox"
+          id="BuyBox"
+          data-money-format="{{ shop.money_format | escape }}"
+          data-tiers-enabled="{{ section.settings.enable_tiers }}"
+          data-tiers='[{"m":{{ section.settings.tier1_qty }},"d":{{ section.settings.tier1_pct }}},{"m":{{ section.settings.tier2_qty }},"d":{{ section.settings.tier2_pct }}},{"m":{{ section.settings.tier3_qty }},"d":{{ section.settings.tier3_pct }}},{"m":{{ section.settings.tier4_qty }},"d":{{ section.settings.tier4_pct }}}]'
+          data-unit-label="{{ section.settings.unit_label | escape }}">
+
+          {%- assign step = 0 -%}
+
+          {%- unless product.has_only_default_variant -%}
+            {%- assign step = step | plus: 1 -%}
+            <div class="bb-group">
+              <label class="bb-lbl" for="BuyVariant"><span class="bb-num">{{ step }}</span>{{ section.settings.variant_label }}</label>
+              <select name="id" id="BuyVariant">
+                {%- for variant in product.variants -%}
+                  <option value="{{ variant.id }}"
+                    data-price="{{ variant.price }}"
+                    {% if variant == current_variant %}selected{% endif %}
+                    {% unless variant.available %}disabled{% endunless %}>
+                    {{ variant.title }} — {{ variant.price | money }}{% unless variant.available %} (sold out){% endunless %}
+                  </option>
+                {%- endfor -%}
+              </select>
+            </div>
+          {%- else -%}
+            <input type="hidden" name="id" value="{{ current_variant.id }}" data-price="{{ current_variant.price }}" id="BuyVariant">
+          {%- endunless -%}
+
+          {%- assign step = step | plus: 1 -%}
+          <div class="bb-group">
+            <label class="bb-lbl" for="BuyQty"><span class="bb-num">{{ step }}</span>{{ section.settings.qty_label }}</label>
+            <div class="bb-row bb-qtyrow">
+              <div class="qty-step">
+                <button type="button" id="QtyMinus" aria-label="Fewer">−</button>
+                <input type="number" id="BuyQty" name="quantity" value="{{ section.settings.default_qty }}" min="1" max="99" inputmode="numeric">
+                <button type="button" id="QtyPlus" aria-label="More">+</button>
+              </div>
+              <div class="bb-total">
+                <div class="bb-price">
+                  <span class="was" id="BbWas" hidden></span>
+                  <span class="now" id="BbNow">{{ current_variant.price | times: section.settings.default_qty | money }}</span>
+                </div>
+                <div class="per" id="BbPer"></div>
+              </div>
+            </div>
+            <div class="bb-save" id="BbSave"></div>
+            <div class="bb-nudge" id="BbNudge"></div>
+            {%- if section.settings.enable_tiers -%}
+              <div class="bb-tiers" id="BbTiers" aria-label="Volume discounts"></div>
+            {%- endif -%}
+          </div>
+
+          {%- if section.settings.style_options != blank -%}
+            {%- assign step = step | plus: 1 -%}
+            <div class="bb-group">
+              <label class="bb-lbl" for="BuyStyle"><span class="bb-num">{{ step }}</span>{{ section.settings.style_label }}</label>
+              <select id="BuyStyle" name="properties[{{ section.settings.style_label | escape }}]">
+                <option value="Designer's choice">Designer's choice — what sells for my market</option>
+                {%- assign styles = section.settings.style_options | split: ',' -%}
+                {%- for s in styles -%}
+                  <option value="{{ s | strip | escape }}">{{ s | strip }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.show_notes -%}
+            <details class="bb-more">
+              <summary>{{ section.settings.notes_label }} <span>(optional)</span></summary>
+              <input type="text" id="BuyNotes" name="properties[{{ section.settings.notes_label | escape }}]" placeholder="{{ section.settings.notes_placeholder | escape }}">
+            </details>
+          {%- endif -%}
+
+          <button type="submit" class="prod-buy" {% unless product.available %}disabled{% endunless %}>
+            {%- if product.available -%}{{ section.settings.buy_label }}{%- else -%}Sold out{%- endif -%}
+          </button>
+
+          {%- if section.settings.assure_1 != blank or section.settings.assure_2 != blank or section.settings.assure_3 != blank -%}
+            <div class="bb-assure">
+              {%- if section.settings.assure_1 != blank -%}<span>{{ section.settings.assure_1 }}</span>{%- endif -%}
+              {%- if section.settings.assure_2 != blank -%}<span>{{ section.settings.assure_2 }}</span>{%- endif -%}
+              {%- if section.settings.assure_3 != blank -%}<span>{{ section.settings.assure_3 }}</span>{%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endform -%}
+    </div>
+  </section>
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="strip">
+      {%- for block in section.blocks -%}
+        <div {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  {%- if product.description != blank -%}
+    <section class="sec">
+      <div class="sec-in">
+        <div class="def">
+          {%- if section.settings.def_eyebrow != blank -%}
+            <p class="micro">{{ section.settings.def_eyebrow }}</p>
+          {%- endif -%}
+          {%- if section.settings.def_heading != blank -%}
+            <h2 class="head2" style="font-size:clamp(25px,2.9vw,38px);margin:10px 0 18px;font-weight:300">{{ section.settings.def_heading }}</h2>
+          {%- endif -%}
+          <div class="rte">{{ product.description }}</div>
+        </div>
+      </div>
+    </section>
+  {%- endif -%}
+
+  {%- comment -%} Mobile: total + CTA stay reachable while reading the page {%- endcomment -%}
+  <div class="buy-sticky" id="BuySticky">
+    <div class="bs-total">
+      <span>{{ section.settings.sticky_label }}</span>
+      <b id="StickyTotal">{{ current_variant.price | times: section.settings.default_qty | money }}</b>
+    </div>
+    <button type="submit" form="BellaProductForm" class="prod-buy bs-btn" {% unless product.available %}disabled{% endunless %}>{{ section.settings.buy_label }}</button>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product (service)",
+  "settings": [
+    { "type": "checkbox", "id": "show_breadcrumb", "label": "Show breadcrumb", "default": true },
+    { "type": "text", "id": "eyebrow_fallback", "label": "Eyebrow (when product has no type)", "default": "Service" },
+    { "type": "text", "id": "cred_text", "label": "Rating line", "default": "4.9 on Google · real interior designers, never AI" },
+    { "type": "textarea", "id": "lede", "label": "Intro paragraph", "default": "Real designer furniture, styled for how buyers in your market actually want to live. MLS-ready in 24 to 48 hours." },
+    { "type": "text", "id": "shot_label", "label": "Image label", "default": "Staged by a Bella designer" },
+    { "type": "header", "content": "Buy box" },
+    { "type": "text", "id": "variant_label", "label": "Variant step label", "default": "Choose your option" },
+    { "type": "text", "id": "qty_label", "label": "Quantity step label", "default": "How many photos?" },
+    { "type": "range", "id": "default_qty", "label": "Starting quantity", "min": 1, "max": 20, "step": 1, "default": 8 },
+    { "type": "text", "id": "unit_label", "label": "Unit name", "default": "photo" },
+    { "type": "text", "id": "style_label", "label": "Style step label", "default": "Staging style" },
+    { "type": "text", "id": "style_options", "label": "Style choices (comma-separated, empty = hide)", "default": "Modern, Scandinavian, Contemporary, Coastal, Farmhouse, Traditional, Industrial, Luxury" },
+    { "type": "checkbox", "id": "show_notes", "label": "Show optional notes field", "default": true },
+    { "type": "text", "id": "notes_label", "label": "Notes label", "default": "Add listing address or notes" },
+    { "type": "text", "id": "notes_placeholder", "label": "Notes placeholder", "default": "You can also add this after checkout" },
+    { "type": "text", "id": "buy_label", "label": "Buy button label", "default": "Add to order" },
+    { "type": "text", "id": "sticky_label", "label": "Sticky bar label (mobile)", "default": "Your total" },
+    { "type": "text", "id": "assure_1", "label": "Reassurance 1", "default": "Upload photos after checkout" },
+    { "type": "text", "id": "assure_2", "label": "Reassurance 2", "default": "Unlimited revisions · 2 weeks" },
+    { "type": "text", "id": "assure_3", "label": "Reassurance 3", "default": "Rework or refund" },
+    { "type": "header", "content": "Volume discounts", "info": "Shown in the buy box. Create a matching automatic discount in admin so checkout applies it." },
+    { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": true },
+    { "type": "number", "id": "tier1_qty", "label": "Tier 1 — from qty", "default": 3 },
+    { "type": "number", "id": "tier1_pct", "label": "Tier 1 — % off", "default": 5 },
+    { "type": "number", "id": "tier2_qty", "label": "Tier 2 — from qty", "default": 6 },
+    { "type": "number", "id": "tier2_pct", "label": "Tier 2 — % off", "default": 10 },
+    { "type": "number", "id": "tier3_qty", "label": "Tier 3 — from qty", "default": 11 },
+    { "type": "number", "id": "tier3_pct", "label": "Tier 3 — % off", "default": 15 },
+    { "type": "number", "id": "tier4_qty", "label": "Tier 4 — from qty", "default": 21 },
+    { "type": "number", "id": "tier4_pct", "label": "Tier 4 — % off", "default": 20 },
+    { "type": "header", "content": "Description section" },
+    { "type": "text", "id": "def_eyebrow", "label": "Eyebrow", "default": "What it is" },
+    { "type": "text", "id": "def_heading", "label": "Heading", "default": "What you get" }
+  ],
+  "blocks": [
+    {
+      "type": "usp",
+      "name": "Strip item",
+      "settings": [
+        { "type": "html", "id": "text", "label": "Text (b for emphasis)", "default": "From <b>$45</b> / photo" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Product (service)",
+      "blocks": [
+        { "type": "usp", "settings": { "text": "From <b>$45</b> / photo" } },
+        { "type": "usp", "settings": { "text": "Back in <b>24–48 hrs</b>" } },
+        { "type": "usp", "settings": { "text": "<b>Unlimited revisions</b>, 2 weeks" } },
+        { "type": "usp", "settings": { "text": "<b>Rework or refund</b>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

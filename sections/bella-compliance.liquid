@@ -1,0 +1,60 @@
+<section class="comply">
+  <div class="head">
+    <span class="micro">{{ section.settings.eyebrow }}</span>
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
+  <div class="comply-tiles">
+    {%- for block in section.blocks -%}
+      <div class="tile" {{ block.shopify_attributes }}>
+        <svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>
+        <b>{{ block.settings.title }}</b>
+        <p>{{ block.settings.text }}</p>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Compliance",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Compliance" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Staging that will not put your license at risk." }
+  ],
+  "blocks": [
+    {
+      "type": "tile",
+      "name": "Tile",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "doc",
+          "options": [
+            { "value": "doc", "label": "Document" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "eye", "label": "Eye" },
+            { "value": "note", "label": "Note" },
+            { "value": "star", "label": "Star" }
+          ]
+        },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Compliance",
+      "blocks": [
+        { "type": "tile", "settings": { "icon": "doc", "title": "Built to MLS specifications", "text": "Correct dimensions and file standards, so there is no re-exporting on your end." } },
+        { "type": "tile", "settings": { "icon": "shield", "title": "AB 723-compliant", "text": "Disclosure standards built into the order, not bolted on afterward." } },
+        { "type": "tile", "settings": { "icon": "eye", "title": "We never invent the property", "text": "No added windows, no moved walls, no square footage that isn't there." } },
+        { "type": "tile", "settings": { "icon": "note", "title": "Disclosure guidance included", "text": "We tell you exactly what to note on the listing, and we always recommend you do." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

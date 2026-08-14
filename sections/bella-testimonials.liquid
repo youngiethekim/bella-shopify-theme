@@ -1,0 +1,64 @@
+<section class="revs">
+  <div class="head">
+    <span class="micro">{{ section.settings.eyebrow }}</span>
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
+  <div class="revs-grid">
+    {%- for block in section.blocks -%}
+      <blockquote class="rev" {{ block.shopify_attributes }}>
+        <span class="rev-stars" aria-hidden="true">{%- for i in (1..5) -%}<svg class="ico"><use href="#i-star"/></svg>{%- endfor -%}</span>
+        <p>&ldquo;{{ block.settings.quote }}&rdquo;</p>
+        <cite>
+          {%- if block.settings.photo != blank -%}
+            <img class="rev-ph" src="{{ block.settings.photo | image_url: width: 160, height: 160, crop: 'center' }}" alt="" loading="lazy" width="160" height="160">
+          {%- elsif block.settings.photo_url != blank -%}
+            <img class="rev-ph" src="{{ block.settings.photo_url }}" alt="" loading="lazy" width="160" height="160">
+          {%- endif -%}
+          <span class="who">{{ block.settings.name }}<span>{{ block.settings.role }}</span></span>
+        </cite>
+      </blockquote>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "From the agents who list with us" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Staged in 48 hours. Sold in days." }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Quote" },
+        { "type": "image_picker", "id": "photo", "label": "Photo" },
+        { "type": "text", "id": "photo_url", "label": "Photo URL (fallback)" },
+        { "type": "text", "id": "name", "label": "Name" },
+        { "type": "text", "id": "role", "label": "Role / location" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        { "type": "review", "settings": {
+          "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+          "photo_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=160&h=160&fit=crop&q=70&fm=jpg",
+          "name": "Beverly Bahm", "role": "Agent · Chicago, IL" } },
+        { "type": "review", "settings": {
+          "quote": "I am so pleased with your services. The virtual staging was awesome. We sold my listing in 8 days with multiple offers.",
+          "photo_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&h=160&fit=crop&q=70&fm=jpg",
+          "name": "Joe Benvenuto", "role": "Agent · San Francisco, CA" } },
+        { "type": "review", "settings": {
+          "quote": "The quality is impeccable. Their furniture is so realistic it does the trick every single time. We highly recommend Bella and will keep using them.",
+          "photo_url": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=160&h=160&fit=crop&q=70&fm=jpg",
+          "name": "Natasha Reneau Jones", "role": "Agent · Long Beach, CA" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

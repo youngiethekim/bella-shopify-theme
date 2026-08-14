@@ -1,0 +1,20 @@
+<div class="shop-wrap">
+  <h1>Services</h1>
+  <div class="coll-grid">
+    {%- for collection in collections -%}
+      <a class="coll-card" href="{{ collection.url }}">
+        {%- if collection.featured_image -%}
+          <img src="{{ collection.featured_image | image_url: width: 600 }}" alt="{{ collection.featured_image.alt | escape }}" loading="lazy" width="600" height="450">
+        {%- endif -%}
+        <div class="cc-body"><div class="cc-title">{{ collection.title }}</div></div>
+      </a>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collections list",
+  "settings": []
+}
+{% endschema %}

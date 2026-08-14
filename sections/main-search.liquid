@@ -1,0 +1,35 @@
+<div class="shop-wrap">
+  <h1>Search</h1>
+  <form action="{{ routes.search_url }}" method="get" role="search" style="max-width:520px;display:flex;gap:10px;margin-bottom:8px">
+    <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="Search"
+      style="flex:1;font-family:inherit;font-size:14.5px;padding:13px 14px;border:1px solid var(--line);border-radius:9px">
+    <button type="submit" class="prod-buy" style="width:auto;margin-top:0;padding:13px 22px">Search</button>
+  </form>
+  {%- if search.performed -%}
+    <p class="rte">{{ search.results_count }} result{% if search.results_count != 1 %}s{% endif %} for &ldquo;{{ search.terms | escape }}&rdquo;</p>
+    {%- paginate search.results by 24 -%}
+      <div class="coll-grid">
+        {%- for item in search.results -%}
+          <a class="coll-card" href="{{ item.url }}">
+            {%- if item.featured_image -%}
+              <img src="{{ item.featured_image | image_url: width: 600 }}" alt="{{ item.featured_image.alt | escape }}" loading="lazy" width="600" height="450">
+            {%- elsif item.image -%}
+              <img src="{{ item.image | image_url: width: 600 }}" alt="{{ item.image.alt | escape }}" loading="lazy" width="600" height="450">
+            {%- endif -%}
+            <div class="cc-body"><div class="cc-title">{{ item.title }}</div></div>
+          </a>
+        {%- endfor -%}
+      </div>
+      {%- if paginate.pages > 1 -%}
+        <div class="pagination">{{ paginate | default_pagination }}</div>
+      {%- endif -%}
+    {%- endpaginate -%}
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Search",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,15 @@
+<div class="shop-wrap">
+  <div class="form-card">
+    <h1 style="font-size:26px">Log in</h1>
+    {% form 'customer_login' %}
+      {{ form.errors | default_errors }}
+      <input type="email" name="customer[email]" placeholder="Email" autocomplete="email" required>
+      <input type="password" name="customer[password]" placeholder="Password" autocomplete="current-password" required>
+      <button type="submit" class="prod-buy" style="margin-top:4px">Log in</button>
+    {% endform %}
+    <p class="rte" style="margin-top:16px;font-size:13.5px">
+      <a href="{{ routes.account_recover_url }}">Forgot password?</a> ·
+      <a href="{{ routes.account_register_url }}">Create account</a>
+    </p>
+  </div>
+</div>

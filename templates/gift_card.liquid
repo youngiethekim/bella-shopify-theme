@@ -1,0 +1,21 @@
+{% layout none %}
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ 'Gift card' }} · {{ shop.name }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  {{ 'bella.css' | asset_url | stylesheet_tag }}
+</head>
+<body>
+  <div class="shop-wrap shop-narrow" style="text-align:center">
+    <p class="micro">{{ shop.name }}</p>
+    <h1>Gift card</h1>
+    <p class="rte">Your gift card balance: <b>{{ gift_card.balance | money }}</b></p>
+    <p class="rte" style="font-size:22px;letter-spacing:.14em">{{ gift_card.code | format_code }}</p>
+    {% if gift_card.expired %}<p class="rte">This gift card has expired.</p>{% endif %}
+    <p style="margin-top:22px"><a class="btn" href="{{ shop.url }}">Start shopping</a></p>
+  </div>
+</body>
+</html>

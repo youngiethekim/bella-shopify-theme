@@ -1,0 +1,193 @@
+{
+  "sections": {
+    "hero": {
+      "type": "bella-hero",
+      "blocks": {
+        "cred1": { "type": "cred", "settings": { "icon": "pen", "text": "Real designers, never AI" } },
+        "cred2": { "type": "cred", "settings": { "icon": "clock", "text": "24–48 hour delivery" } },
+        "cred3": { "type": "cred", "settings": { "icon": "doc", "text": "MLS-ready & AB 723" } },
+        "cred4": { "type": "cred", "settings": { "icon": "shield", "text": "Rework or refund" } }
+      },
+      "block_order": ["cred1", "cred2", "cred3", "cred4"],
+      "settings": {}
+    },
+    "trust": { "type": "bella-trust-quote", "settings": {} },
+    "who": {
+      "type": "bella-who",
+      "blocks": {
+        "c1": { "type": "card", "settings": { "icon": "star", "title": "Win the listing", "text": "Show up with staged renders and a plan, and sellers choose you over the agent with an empty MLS photo." } },
+        "c2": { "type": "card", "settings": { "icon": "pen", "title": "Look like the expert", "text": "Every room composed by a designer who knows your market, so your sellers think you're a hero." } },
+        "c3": { "type": "card", "settings": { "icon": "clock", "title": "Sell it faster", "text": "Buyers feel at home in the first three photos, so the offers come sooner and the home moves." } }
+      },
+      "block_order": ["c1", "c2", "c3"],
+      "settings": {}
+    },
+    "value": { "type": "bella-value", "settings": {} },
+    "services": {
+      "type": "bella-services",
+      "blocks": {
+        "r1": { "type": "room", "settings": { "room": "Living room", "sample": "living" } },
+        "r2": { "type": "room", "settings": { "room": "Kitchen & island", "sample": "kitchen" } },
+        "r3": { "type": "room", "settings": { "room": "Kitchen & dining", "sample": "dining" } },
+        "r4": { "type": "room", "settings": { "room": "Primary bedroom", "sample": "primary" } },
+        "r5": { "type": "room", "settings": { "room": "Second bedroom", "sample": "bed2" } },
+        "r6": { "type": "room", "settings": { "room": "Bedroom", "sample": "bed3" } },
+        "s1": { "type": "service", "settings": { "icon": "sofa", "title": "Virtual staging", "text": "Empty rooms furnished by real interior designers to match the home and the buyer." } },
+        "s2": { "type": "service", "settings": { "icon": "eraser", "title": "Furniture removal", "text": "Clear occupied or cluttered rooms, then restage them clean." } },
+        "s3": { "type": "service", "settings": { "icon": "roller", "title": "Virtual renovation", "text": "Modernize dated finishes, floors, and fixtures before staging." } },
+        "s4": { "type": "service", "settings": { "icon": "plan", "title": "3D floor plans", "text": "Furnished, to-scale layouts buyers can actually walk." } },
+        "s5": { "type": "service", "settings": { "icon": "sun", "title": "Day-to-dusk edits", "text": "Turn a flat daytime exterior into a warm twilight hero shot." } },
+        "s6": { "type": "service", "settings": { "icon": "360", "title": "Virtual tours & 360°", "text": "Walkable 360° tours with every room virtually staged. We furnish the empty spaces, then stitch them into one immersive walkthrough." } },
+        "s7": { "type": "service", "settings": { "icon": "cube", "title": "3D renders", "text": "Photoreal interiors and exteriors from plans, before you build." } },
+        "s8": { "type": "service", "settings": { "icon": "cloud", "title": "Sky swaps & photo edits", "text": "Sky replacement, item removal, and general image enhancement." } }
+      },
+      "block_order": ["r1", "r2", "r3", "r4", "r5", "r6", "s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"],
+      "settings": {}
+    },
+    "doors": {
+      "type": "bella-doors",
+      "blocks": {
+        "d1": { "type": "door", "settings": {
+          "image_url": "https://images.unsplash.com/photo-1592621385612-4d7129426394?w=1200&q=75&fm=jpg",
+          "tag": "For real estate agents",
+          "heading": "Your listing goes live Thursday, and the rooms are empty.",
+          "text": "Or worse: full of the tenant's furniture. Staging, floor plans, and photo edits in one order, back in 24 to 48 hours. Listing bundles from $349.",
+          "quote": "My favorite virtual stagers. We got an offer in 4 days and closed in 2 weeks.",
+          "quote_name": "Beverly Bahm",
+          "quote_role": "Real estate agent, Chicago IL",
+          "link_label": "See what we do for agents"
+        } },
+        "d2": { "type": "door", "settings": {
+          "image_url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=75&fm=jpg",
+          "tag": "For home builders & developers",
+          "heading": "You need pre-sales, and all you have is drawings.",
+          "text": "Photoreal exterior and interior renders, furnished 3D floor plans, and model-unit staging. Sell it before you build it. Packs from $1,950.",
+          "quote": "These are perfect, thank you!",
+          "quote_name": "Caleigh Wells",
+          "quote_role": "Marketing, Highland Homes",
+          "link_label": "See what we do for builders"
+        } },
+        "d3": { "type": "door", "settings": {
+          "image_url": "https://images.unsplash.com/photo-1520390138845-fd2d229dd553?w=1200&q=75&fm=jpg",
+          "tag": "For photographers & editing pros",
+          "heading": "You shoot it. We stage and edit it — under your name.",
+          "text": "White-label virtual staging, item removal, day-to-dusk, and sky swaps. Offer staging without moving a single piece of furniture. Back in 24 to 48 hours, your brand on every file.",
+          "quote": "We add staging to every shoot now — same day, our logo on the files. Clients think it's all in-house.",
+          "quote_name": "A real estate photographer",
+          "quote_role": "White-label partner",
+          "link_label": "See what we do for photographers"
+        } }
+      },
+      "block_order": ["d1", "d2", "d3"],
+      "settings": {}
+    },
+    "jobs": {
+      "type": "bella-jobs",
+      "blocks": {
+        "j1": { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_Tung_TP_1.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_1.jpg?width=1200",
+          "customer": "Real estate agent · Lodge estate", "name": "Den & family room",
+          "services": "Virtual staging, 3D floor plan", "outcome": "Sold · 9 days" } },
+        "j2": { "type": "job", "settings": {
+          "customer": "Home builder · Pre-construction", "name": "Built from the plans",
+          "services": "3D rendering", "outcome": "Pre-sold from renders" } },
+        "j3": { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
+          "customer": "Real estate agent · Toronto", "name": "120 Bayview Ave",
+          "services": "Virtual staging, Floor plan, House tour", "outcome": "Sold · 21 days" } },
+        "j4": { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1_nhi_hb.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1.jpg?width=1200",
+          "customer": "Brokerage · Vancouver", "name": "289 Drake St",
+          "services": "Virtual staging, 360° tour", "outcome": "Leased · 30 days" } },
+        "j5": { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Dawn_Image.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Image_Nov_16_2025.jpg?width=1200",
+          "customer": "Home builder · Model home", "name": "Twilight exterior",
+          "services": "Day-to-dusk, 3D render", "outcome": "Pre-sold from renders" } }
+      },
+      "block_order": ["j1", "j2", "j3", "j4", "j5"],
+      "settings": {}
+    },
+    "press": {
+      "type": "bella-press",
+      "blocks": {
+        "p1": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/FORTUNE.jpg?width=800",
+          "outlet": "FORTUNE",
+          "title": "Coronavirus has shut down open houses, but virtual staging and 3D walkthroughs are saving the day",
+          "byline": "by David Z. Morris",
+          "link": "https://fortune.com/2020/07/05/virtual-home-staging-coronavirus-real-estate-house-hunting-apartments/" } },
+        "p2": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/globe_and_mail.jpg?width=800",
+          "outlet": "THE GLOBE AND MAIL",
+          "title": "In some real estate listings, it's hard to see what's real",
+          "byline": "by Shane Digman",
+          "link": "https://www.theglobeandmail.com/real-estate/article-in-some-real-estate-listings-its-hard-to-see-whats-real/" } },
+        "p3": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/Bella_Virtual_Staging_Edit_3.png?width=800",
+          "outlet": "INMAN",
+          "title": "Is it Real or BellaStaging? - Inman.com Tech Review",
+          "byline": "by Craig Rowe",
+          "link": "https://www.inman.com/2024/02/09/is-it-real-or-is-it-bella-staging-tech-review/" } },
+        "p4": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/Bella_Virtual_Staging_Miami_Herald.jpg?width=800",
+          "outlet": "MIAMI HERALD",
+          "title": "Miami Digital Staging to Sell",
+          "byline": "by Michael Butler",
+          "link": "https://www.miamiherald.com/news/business/real-estate-news/article277824868.html" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {}
+    },
+    "reviews": {
+      "type": "bella-testimonials",
+      "blocks": {
+        "t1": { "type": "review", "settings": {
+          "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+          "photo_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=160&h=160&fit=crop&q=70&fm=jpg",
+          "name": "Beverly Bahm", "role": "Agent · Chicago, IL" } },
+        "t2": { "type": "review", "settings": {
+          "quote": "I am so pleased with your services. The virtual staging was awesome. We sold my listing in 8 days with multiple offers.",
+          "photo_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&h=160&fit=crop&q=70&fm=jpg",
+          "name": "Joe Benvenuto", "role": "Agent · San Francisco, CA" } },
+        "t3": { "type": "review", "settings": {
+          "quote": "The quality is impeccable. Their furniture is so realistic it does the trick every single time. We highly recommend Bella and will keep using them.",
+          "photo_url": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=160&h=160&fit=crop&q=70&fm=jpg",
+          "name": "Natasha Reneau Jones", "role": "Agent · Long Beach, CA" } }
+      },
+      "block_order": ["t1", "t2", "t3"],
+      "settings": {}
+    },
+    "sold": { "type": "bella-sold", "settings": {} },
+    "comply": {
+      "type": "bella-compliance",
+      "blocks": {
+        "cp1": { "type": "tile", "settings": { "icon": "doc", "title": "Built to MLS specifications", "text": "Correct dimensions and file standards, so there is no re-exporting on your end." } },
+        "cp2": { "type": "tile", "settings": { "icon": "shield", "title": "AB 723-compliant", "text": "Disclosure standards built into the order, not bolted on afterward." } },
+        "cp3": { "type": "tile", "settings": { "icon": "eye", "title": "We never invent the property", "text": "No added windows, no moved walls, no square footage that isn't there." } },
+        "cp4": { "type": "tile", "settings": { "icon": "note", "title": "Disclosure guidance included", "text": "We tell you exactly what to note on the listing, and we always recommend you do." } }
+      },
+      "block_order": ["cp1", "cp2", "cp3", "cp4"],
+      "settings": {}
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What does it cost?", "answer": "$45 per photo, with volume discounts that scale to 20%: 5% at three photos, 10% at six to ten, 15% at ten to twenty, and 20% at twenty-one to thirty. A typical eight-photo listing runs about $360. No subscription, no minimum, no monthly rental." } },
+        "q2": { "type": "qa", "settings": { "question": "Can I use these photos on the MLS?", "answer": "Yes. Every image is built to MLS specifications and AB 723 disclosure standards. We always recommend disclosing that photos were virtually staged on your public listing and marketing materials, and we tell you exactly what to note. Check your local real estate board for any additional requirements." } },
+        "q3": { "type": "qa", "settings": { "question": "Is this AI?", "answer": "No. That is the entire point. Every Bella image is composed by hand by a professional interior designer using Photoshop, 3D Max, Corona, and our own internal tools. We do not use AI staging or templates, because they misrepresent properties and produce the same room on every listing in your market." } },
+        "q4": { "type": "qa", "settings": { "question": "How fast do I get my photos back?", "answer": "24 to 48 hours from the moment you upload, not the one to two weeks it typically takes to schedule a physical stage." } },
+        "q5": { "type": "qa", "settings": { "question": "What if I don't like the result?", "answer": "You get unlimited revisions for two weeks after delivery. If it is still not right, we rework it or refund it. You are not stuck with an image you cannot use." } },
+        "q6": { "type": "qa", "settings": { "question": "The room isn't empty. Can you still stage it?", "answer": "Yes. Furniture removal is included: we digitally clear cluttered, tenant-occupied, or mid-renovation rooms before staging them. Send us what you have." } },
+        "q7": { "type": "qa", "settings": { "question": "Where do you work?", "answer": "Most of our work is with agents, brokerages, and builders across the United States and Canada, and we take listings internationally on request." } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
+      "settings": {}
+    },
+    "end": { "type": "bella-end-cta", "settings": {} }
+  },
+  "order": ["hero", "trust", "who", "value", "services", "doors", "jobs", "press", "reviews", "sold", "comply", "faq", "end"]
+}

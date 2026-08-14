@@ -1,0 +1,6 @@
+{
+  "sections": {
+    "main": { "type": "bella-lookbook", "settings": {} }
+  },
+  "order": ["main"]
+}

@@ -1,0 +1,104 @@
+<section id="work" class="jobs-sec">
+  <div class="reel-head">
+    <div class="head" style="margin-bottom:0">
+      <span class="micro">{{ section.settings.eyebrow }}</span>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.text }}</p>
+    </div>
+  </div>
+  <div class="jobs" id="jobs">
+    {%- for block in section.blocks -%}
+      {%- liquid
+        if block.settings.after != blank
+          assign after_src = block.settings.after | image_url: width: 1200
+        elsif block.settings.after_url != blank
+          assign after_src = block.settings.after_url
+        else
+          assign after_src = 'ext-villa-2.jpg' | asset_url
+        endif
+        if block.settings.before != blank
+          assign before_src = block.settings.before | image_url: width: 1200
+        elsif block.settings.before_url != blank
+          assign before_src = block.settings.before_url
+        else
+          assign before_src = 'fp-2d.jpg' | asset_url
+        endif
+      -%}
+      <article class="job-card" {{ block.shopify_attributes }}>
+        <div class="jc-img">
+          <img class="jc-after" src="{{ after_src }}" alt="{{ block.settings.name | escape }}, staged" loading="lazy" width="1200" height="800">
+          <img class="jc-before" src="{{ before_src }}" alt="{{ block.settings.name | escape }}, before staging" loading="lazy" width="1200" height="800">
+          {%- if block.settings.outcome != blank -%}<span class="jc-badge">{{ block.settings.outcome }}</span>{%- endif -%}
+          <span class="jc-hint">Hover for before</span>
+        </div>
+        <div class="jc-body">
+          <span class="jc-cust">{{ block.settings.customer }}</span>
+          <h3>{{ block.settings.name }}</h3>
+          <div class="jc-svcs">
+            {%- assign svcs = block.settings.services | split: ',' -%}
+            {%- for s in svcs -%}<span>{{ s | strip }}</span>{%- endfor -%}
+          </div>
+        </div>
+      </article>
+    {%- endfor -%}
+  </div>
+  <div class="reel-hint">{{ section.settings.hint }}</div>
+</section>
+
+{% schema %}
+{
+  "name": "Completed jobs",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Completed jobs" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Real listings. Real outcomes." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Scroll through recent projects — see each room before and after, who it was for, and exactly what we made." },
+    { "type": "text", "id": "hint", "label": "Hint text", "default": "Hover or tap a card to see it empty · drag to browse" }
+  ],
+  "blocks": [
+    {
+      "type": "job",
+      "name": "Job",
+      "settings": [
+        { "type": "image_picker", "id": "after", "label": "After photo" },
+        { "type": "image_picker", "id": "before", "label": "Before photo" },
+        { "type": "text", "id": "after_url", "label": "After photo URL (fallback)" },
+        { "type": "text", "id": "before_url", "label": "Before photo URL (fallback)" },
+        { "type": "text", "id": "customer", "label": "Customer", "default": "Real estate agent" },
+        { "type": "text", "id": "name", "label": "Job name", "default": "Den & family room" },
+        { "type": "text", "id": "services", "label": "Services (comma-separated)", "default": "Virtual staging, 3D floor plan" },
+        { "type": "text", "id": "outcome", "label": "Outcome badge", "default": "Sold · 9 days" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Completed jobs",
+      "blocks": [
+        { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_Tung_TP_1.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_1.jpg?width=1200",
+          "customer": "Real estate agent · Lodge estate", "name": "Den & family room",
+          "services": "Virtual staging, 3D floor plan", "outcome": "Sold · 9 days" } },
+        { "type": "job", "settings": {
+          "customer": "Home builder · Pre-construction", "name": "Built from the plans",
+          "services": "3D rendering", "outcome": "Pre-sold from renders" } },
+        { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
+          "customer": "Real estate agent · Toronto", "name": "120 Bayview Ave",
+          "services": "Virtual staging, Floor plan, House tour", "outcome": "Sold · 21 days" } },
+        { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1_nhi_hb.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1.jpg?width=1200",
+          "customer": "Brokerage · Vancouver", "name": "289 Drake St",
+          "services": "Virtual staging, 360° tour", "outcome": "Leased · 30 days" } },
+        { "type": "job", "settings": {
+          "after_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Dawn_Image.jpg?width=1200",
+          "before_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Image_Nov_16_2025.jpg?width=1200",
+          "customer": "Home builder · Model home", "name": "Twilight exterior",
+          "services": "Day-to-dusk, 3D render", "outcome": "Pre-sold from renders" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

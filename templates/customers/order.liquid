@@ -1,0 +1,15 @@
+<div class="shop-wrap shop-narrow">
+  <h1>{{ order.name }}</h1>
+  <p class="rte">{{ order.created_at | date: '%B %-d, %Y' }} · {{ order.financial_status_label }}</p>
+  {% for line_item in order.line_items %}
+    <div class="cart-line" style="grid-template-columns:1fr auto">
+      <div>
+        <span class="cl-title">{{ line_item.title }}</span>
+        <div class="cl-meta">Qty {{ line_item.quantity }}</div>
+      </div>
+      <span>{{ line_item.final_line_price | money }}</span>
+    </div>
+  {% endfor %}
+  <div class="cart-foot"><span class="total">{{ order.total_price | money }}</span></div>
+  <p class="rte" style="margin-top:18px"><a href="{{ routes.account_url }}">← Back to account</a></p>
+</div>

@@ -1,0 +1,78 @@
+{%- liquid
+  assign stats = section.blocks | where: 'type', 'stat'
+-%}
+<div class="svc-page">
+  <section class="sec proof">
+    <div class="sec-in">
+      <div class="head2">
+        <p class="micro">{{ section.settings.eyebrow }}</p>
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <div class="ba">
+        <figure>
+          {%- if section.settings.before != blank -%}
+            <img src="{{ section.settings.before | image_url: width: 1400 }}" alt="{{ section.settings.before.alt | default: 'Before' }}" loading="lazy" width="1400" height="930">
+          {%- else -%}
+            <img src="{{ 'proj-living-before.jpg' | asset_url }}" alt="An empty living room before virtual staging" loading="lazy" width="1400" height="930">
+          {%- endif -%}
+          <figcaption>{{ section.settings.before_label }}</figcaption>
+        </figure>
+        <figure>
+          {%- if section.settings.after != blank -%}
+            <img src="{{ section.settings.after | image_url: width: 1400 }}" alt="{{ section.settings.after.alt | default: 'After' }}" loading="lazy" width="1400" height="930">
+          {%- else -%}
+            <img src="{{ 'proj-living-after.jpg' | asset_url }}" alt="The same living room after virtual staging" loading="lazy" width="1400" height="930">
+          {%- endif -%}
+          <figcaption>{{ section.settings.after_label }}</figcaption>
+        </figure>
+      </div>
+      {%- if stats.size > 0 -%}
+        <div class="stats">
+          {%- for block in stats -%}
+            <div class="stat" {{ block.shopify_attributes }}>
+              <b>{{ block.settings.figure }}</b>
+              <span>{{ block.settings.text }}</span>
+              {%- if block.settings.source != blank -%}<cite>{{ block.settings.source }}</cite>{%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Before / after proof",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The difference it makes" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "The same room, before and after." },
+    { "type": "image_picker", "id": "before", "label": "Before photo" },
+    { "type": "text", "id": "before_label", "label": "Before label", "default": "Before · empty" },
+    { "type": "image_picker", "id": "after", "label": "After photo" },
+    { "type": "text", "id": "after_label", "label": "After label", "default": "After · staged by Bella" }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "figure", "label": "Figure", "default": "82%" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "of buyers' agents say staging makes it easier for buyers to visualize a property as their future home." },
+        { "type": "text", "id": "source", "label": "Source", "default": "NAR" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Before / after proof",
+      "blocks": [
+        { "type": "stat", "settings": { "figure": "82%", "text": "of buyers' agents say staging makes it easier for buyers to visualize a property as their future home.", "source": "NAR" } },
+        { "type": "stat", "settings": { "figure": "97%", "text": "of home buyers start their search online, where your photos are the whole first impression.", "source": "NAR" } },
+        { "type": "stat", "settings": { "figure": "24–48h", "text": "from upload to MLS-ready staged photos, so your listing never waits on a moving truck.", "source": "Bella turnaround" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

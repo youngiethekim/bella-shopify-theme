@@ -1,0 +1,26 @@
+<section class="sold">
+  {%- if section.settings.image != blank -%}
+    <img src="{{ section.settings.image | image_url: width: 2000 }}" alt="{{ section.settings.image.alt | default: section.settings.heading | escape }}" loading="lazy" width="2000" height="1250">
+  {%- else -%}
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=2000&q=75&fm=jpg" alt="A modern home at dusk, sold after virtual staging" loading="lazy" width="2000" height="1250">
+  {%- endif -%}
+  <div class="veil"></div>
+  <div class="txt">
+    <span class="micro">{{ section.settings.eyebrow }}</span>
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.text }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Outcome banner",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Background image" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "The outcome" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Hundreds of millions in listings sold." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Staged by Bella designers for agents, brokerages, and home builders across the United States and Canada." }
+  ],
+  "presets": [{ "name": "Outcome banner" }]
+}
+{% endschema %}

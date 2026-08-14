@@ -1,0 +1,15 @@
+<article class="shop-wrap shop-narrow">
+  <p class="micro">{{ article.published_at | date: '%B %-d, %Y' }}{% if article.author != blank %} · {{ article.author }}{% endif %}</p>
+  <h1>{{ article.title }}</h1>
+  {%- if article.image -%}
+    <img src="{{ article.image | image_url: width: 1400 }}" alt="{{ article.image.alt | escape }}" style="width:100%;border-radius:14px;margin:18px 0 26px" width="1400" height="930">
+  {%- endif -%}
+  <div class="rte">{{ article.content }}</div>
+</article>
+
+{% schema %}
+{
+  "name": "Article",
+  "settings": []
+}
+{% endschema %}

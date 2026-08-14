@@ -1,0 +1,83 @@
+<div class="hero">
+  {%- if section.settings.video != blank -%}
+    {{ section.settings.video | video_tag: class: 'hero-vid', autoplay: true, muted: true, loop: false, controls: false, playsinline: true }}
+  {%- else -%}
+    <video class="hero-vid" autoplay muted playsinline poster="{{ 'hero-before.jpg' | asset_url }}">
+      <source src="{{ 'hero-transform.mp4' | asset_url }}" type="video/mp4">
+    </video>
+  {%- endif -%}
+  <div class="scrim"></div>
+  <div class="hero-copy">
+    {%- if section.settings.badge != blank -%}
+      <span class="hero-badge">{{ section.settings.badge }}</span>
+    {%- endif -%}
+    <h1>{{ section.settings.heading }} {%- if section.settings.heading_em != blank %} <em>{{ section.settings.heading_em }}</em>{% endif %}</h1>
+    <p>{{ section.settings.subtext }}</p>
+    <div class="row">
+      {%- if section.settings.cta_label != blank -%}
+        <a class="btn btn-wht" href="{{ section.settings.cta_link | default: routes.all_products_collection_url }}">{{ section.settings.cta_label }}</a>
+      {%- endif -%}
+      {%- if section.settings.ghost_label != blank -%}
+        <a class="btn-ghost" href="{{ section.settings.ghost_link | default: '#work' }}">{{ section.settings.ghost_label }}</a>
+      {%- endif -%}
+    </div>
+    <div class="hero-cred">
+      {%- for block in section.blocks -%}
+        <span {{ block.shopify_attributes }}><svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>{{ block.settings.text }}</span>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero (video)",
+  "settings": [
+    { "type": "video", "id": "video", "label": "Hero video", "info": "Leave empty to use the bundled before→after transform video" },
+    { "type": "text", "id": "badge", "label": "Badge", "default": "Real estate visualization studio" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Real estate visualization that sells listings" },
+    { "type": "text", "id": "heading_em", "label": "Heading accent (italic)", "default": "for more." },
+    { "type": "textarea", "id": "subtext", "label": "Subtext", "default": "Bella Virtual is a real estate visualization studio. Our specialists handle virtual staging, 3D rendering, architectural visualization and 3D floor plans, showing buyers a property's full potential so listings market better, sell faster and earn a higher return. Real designers, never AI. MLS-ready in 24 to 48 hours, from $45 a photo." },
+    { "type": "text", "id": "cta_label", "label": "Primary button label", "default": "Get started" },
+    { "type": "url", "id": "cta_link", "label": "Primary button link" },
+    { "type": "text", "id": "ghost_label", "label": "Secondary link label", "default": "See before & afters" },
+    { "type": "url", "id": "ghost_link", "label": "Secondary link" }
+  ],
+  "blocks": [
+    {
+      "type": "cred",
+      "name": "Trust point",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "pen",
+          "options": [
+            { "value": "pen", "label": "Pen" },
+            { "value": "clock", "label": "Clock" },
+            { "value": "doc", "label": "Document" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "star", "label": "Star" },
+            { "value": "eye", "label": "Eye" },
+            { "value": "note", "label": "Note" }
+          ]
+        },
+        { "type": "text", "id": "text", "label": "Text", "default": "Real designers, never AI" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Hero (video)",
+      "blocks": [
+        { "type": "cred", "settings": { "icon": "pen", "text": "Real designers, never AI" } },
+        { "type": "cred", "settings": { "icon": "clock", "text": "24–48 hour delivery" } },
+        { "type": "cred", "settings": { "icon": "doc", "text": "MLS-ready & AB 723" } },
+        { "type": "cred", "settings": { "icon": "shield", "text": "Rework or refund" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

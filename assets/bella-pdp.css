@@ -1,0 +1,55 @@
+/* ==== product page v2 — UX pass ==== */
+.svc-hero2{display:grid;grid-template-columns:1.02fr .98fr;grid-template-areas:"head media" "buy media";column-gap:60px;align-items:start;max-width:1300px;margin:0 auto;padding:26px var(--pad) 60px}
+.ph-head{grid-area:head;padding-top:12px}
+.ph-head h1{font-size:clamp(30px,3.4vw,44px);font-weight:300;letter-spacing:-.012em;line-height:1.1;margin-top:12px;max-width:18ch}
+.ph-rating{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
+.ph-rating .stars5{display:inline-flex;gap:2px;flex:none}
+.ph-rating .stars5 svg{display:block}
+.ph-head .lede{color:var(--soft);margin-top:14px;font-size:16px;max-width:48ch}
+.ph-price{margin-top:18px;font-size:14.5px;color:var(--soft)}
+.ph-price b{font-size:26px;font-weight:400;color:var(--ink);letter-spacing:-.01em}
+.ph-price span{font-size:13px;color:var(--green)}
+.ph-media{grid-area:media;position:sticky;top:92px}
+.shot2{position:relative;background:#EFECE8;overflow:hidden}
+.shot2 img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover}
+.shot2 .lbl{position:absolute;left:16px;bottom:16px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(20,18,16,.6);padding:6px 12px;backdrop-filter:blur(3px)}
+.ph-thumbs{display:flex;gap:8px;margin-top:8px}
+.ph-thumbs button{width:72px;height:54px;padding:0;border:1px solid var(--line);background:#EFECE8;cursor:pointer;overflow:hidden;opacity:.75;transition:.15s}
+.ph-thumbs button img{width:100%;height:100%;object-fit:cover;display:block}
+.ph-thumbs button:hover{opacity:1}
+.ph-thumbs button.on{opacity:1;border-color:var(--ink)}
+.ph-buy{grid-area:buy;margin-top:26px}
+.ph-buy .buybox{max-width:none;margin-top:0}
+/* grouped steps inside the buy box */
+.bb-group{padding:16px 0 0;margin-top:16px;border-top:1px solid var(--line-2)}
+.bb-group:first-child{padding-top:0;margin-top:0;border-top:0}
+.bb-lbl{display:flex;align-items:center;gap:9px;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);margin-bottom:10px}
+.bb-num{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border-radius:50%;background:var(--ink);color:#fff;font-size:10.5px;letter-spacing:0;flex:none}
+.bb-more{margin-top:16px;border-top:1px solid var(--line-2);padding-top:12px}
+.bb-more summary{list-style:none;cursor:pointer;font-size:13px;color:var(--green);display:flex;align-items:center;gap:7px}
+.bb-more summary::-webkit-details-marker{display:none}
+.bb-more summary::before{content:"+";font-size:16px;line-height:1;transition:transform .15s}
+.bb-more[open] summary::before{content:"−"}
+.bb-more summary span{color:var(--faint)}
+.bb-more input{margin-top:10px;font-family:inherit;font-size:14.5px;color:var(--ink);border:1px solid var(--line);padding:11px 12px;width:100%;background:#fff}
+.bb-more input:focus{outline:none;border-color:var(--green)}
+.bb-assure{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;justify-content:center}
+.bb-assure span{font-size:12px;color:var(--soft);display:inline-flex;align-items:center;gap:6px}
+.bb-assure span::before{content:"✓";color:var(--green);font-size:12px}
+/* sticky mobile order bar */
+.buy-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;gap:16px;background:#fff;border-top:1px solid var(--line);padding:10px 18px;padding-bottom:calc(10px + env(safe-area-inset-bottom));box-shadow:0 -10px 30px -18px rgba(20,18,16,.35);transform:translateY(102%);transition:transform .25s ease}
+.buy-sticky.on{transform:none}
+.bs-total{display:flex;flex-direction:column;line-height:1.25}
+.bs-total span{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.bs-total b{font-size:19px;font-weight:400;color:var(--ink)}
+.bs-btn{flex:1;margin-top:0!important;padding:14px!important}
+@media(max-width:900px){
+  .svc-hero2{grid-template-columns:1fr;grid-template-areas:"head" "media" "buy";padding-bottom:44px}
+  .ph-media{position:static;margin-top:20px}
+  .ph-buy{margin-top:22px}
+  .buy-sticky{display:flex}
+}
+/* specificity fixes for buy box groups */
+.buybox .bb-lbl{display:flex;align-items:center;gap:9px;color:var(--ink);margin-bottom:10px}
+.bb-more summary{justify-content:flex-start}
+.bb-more summary::after{display:none;content:none}

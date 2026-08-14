@@ -1,0 +1,23 @@
+<div class="quote quote-top">
+  <p>&ldquo;{{ section.settings.quote }}&rdquo;</p>
+  <cite>{{ section.settings.attribution }}</cite>
+  <div class="rating">
+    <span class="stars" aria-hidden="true">
+      {%- for i in (1..5) -%}<svg class="ico"><use href="#i-star"/></svg>{%- endfor -%}
+    </span>
+    <span class="rating-txt"><b>{{ section.settings.rating }}</b> {{ section.settings.rating_text }}</span>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trust quote band",
+  "settings": [
+    { "type": "text", "id": "quote", "label": "Quote", "default": "Bella is as good as I've seen." },
+    { "type": "text", "id": "attribution", "label": "Attribution", "default": "Craig C. Rowe · Inman" },
+    { "type": "text", "id": "rating", "label": "Rating", "default": "4.9" },
+    { "type": "text", "id": "rating_text", "label": "Rating text", "default": "on Google · Trusted by real estate professionals across the US & Canada" }
+  ],
+  "presets": [{ "name": "Trust quote band" }]
+}
+{% endschema %}

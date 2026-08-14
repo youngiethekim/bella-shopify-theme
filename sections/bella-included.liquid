@@ -1,0 +1,52 @@
+<div class="svc-page">
+  <section class="sec">
+    <div class="sec-in">
+      <div class="head2">
+        <p class="micro">{{ section.settings.eyebrow }}</p>
+        <h2>{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+      <div class="incl">
+        {%- for block in section.blocks -%}
+          <div class="incl-card" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "What's included",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Every order includes" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "No add-ons, no surprises." },
+    { "type": "textarea", "id": "text", "label": "Text" }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Included item",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Furniture removal included" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Occupied or cluttered rooms are digitally cleared free, then staged clean." }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "What's included",
+      "blocks": [
+        { "type": "item", "settings": { "title": "Furniture removal included", "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean." } },
+        { "type": "item", "settings": { "title": "Any style", "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own." } },
+        { "type": "item", "settings": { "title": "MLS-ready files", "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance." } },
+        { "type": "item", "settings": { "title": "Unlimited revisions", "text": "Free for two weeks after delivery, with a rework-or-refund guarantee." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

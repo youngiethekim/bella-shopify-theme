@@ -1,0 +1,88 @@
+<div class="doors" id="segments">
+  {%- for block in section.blocks -%}
+    <a class="door" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+      <div class="door-photo">
+        {%- if block.settings.image != blank -%}
+          <img src="{{ block.settings.image | image_url: width: 1200 }}" alt="{{ block.settings.image.alt | default: block.settings.tag | escape }}" loading="lazy" width="1200" height="800">
+        {%- elsif block.settings.image_url != blank -%}
+          <img src="{{ block.settings.image_url }}" alt="{{ block.settings.tag | escape }}" loading="lazy" width="1200" height="800">
+        {%- endif -%}
+        <span class="tag">{{ block.settings.tag }}</span>
+      </div>
+      <div class="door-body">
+        <h3>{{ block.settings.heading }}</h3>
+        <p>{{ block.settings.text }}</p>
+        {%- if block.settings.quote != blank -%}
+        <div class="door-quote">
+          <p class="q">&ldquo;{{ block.settings.quote }}&rdquo;</p>
+          <cite><b>{{ block.settings.quote_name }}</b> · {{ block.settings.quote_role }}</cite>
+        </div>
+        {%- endif -%}
+        <span class="go"><span>{{ block.settings.link_label }}</span></span>
+      </div>
+    </a>
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "Audience doors",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "door",
+      "name": "Door",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Photo" },
+        { "type": "text", "id": "image_url", "label": "Photo URL (fallback)", "info": "Used only when no photo is picked" },
+        { "type": "text", "id": "tag", "label": "Tag", "default": "For real estate agents" },
+        { "type": "text", "id": "heading", "label": "Heading", "default": "Your listing goes live Thursday, and the rooms are empty." },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Staging, floor plans, and photo edits in one order, back in 24 to 48 hours. Listing bundles from $349." },
+        { "type": "textarea", "id": "quote", "label": "Quote" },
+        { "type": "text", "id": "quote_name", "label": "Quote name" },
+        { "type": "text", "id": "quote_role", "label": "Quote role" },
+        { "type": "text", "id": "link_label", "label": "Link label", "default": "See what we do for agents" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Audience doors",
+      "blocks": [
+        { "type": "door", "settings": {
+          "image_url": "https://images.unsplash.com/photo-1592621385612-4d7129426394?w=1200&q=75&fm=jpg",
+          "tag": "For real estate agents",
+          "heading": "Your listing goes live Thursday, and the rooms are empty.",
+          "text": "Or worse: full of the tenant's furniture. Staging, floor plans, and photo edits in one order, back in 24 to 48 hours. Listing bundles from $349.",
+          "quote": "My favorite virtual stagers. We got an offer in 4 days and closed in 2 weeks.",
+          "quote_name": "Beverly Bahm",
+          "quote_role": "Real estate agent, Chicago IL",
+          "link_label": "See what we do for agents"
+        } },
+        { "type": "door", "settings": {
+          "image_url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=75&fm=jpg",
+          "tag": "For home builders & developers",
+          "heading": "You need pre-sales, and all you have is drawings.",
+          "text": "Photoreal exterior and interior renders, furnished 3D floor plans, and model-unit staging. Sell it before you build it. Packs from $1,950.",
+          "quote": "These are perfect, thank you!",
+          "quote_name": "Caleigh Wells",
+          "quote_role": "Marketing, Highland Homes",
+          "link_label": "See what we do for builders"
+        } },
+        { "type": "door", "settings": {
+          "image_url": "https://images.unsplash.com/photo-1520390138845-fd2d229dd553?w=1200&q=75&fm=jpg",
+          "tag": "For photographers & editing pros",
+          "heading": "You shoot it. We stage and edit it — under your name.",
+          "text": "White-label virtual staging, item removal, day-to-dusk, and sky swaps. Offer staging without moving a single piece of furniture. Back in 24 to 48 hours, your brand on every file.",
+          "quote": "We add staging to every shoot now — same day, our logo on the files. Clients think it's all in-house.",
+          "quote_name": "A real estate photographer",
+          "quote_role": "White-label partner",
+          "link_label": "See what we do for photographers"
+        } }
+      ]
+    }
+  ]
+}
+{% endschema %}

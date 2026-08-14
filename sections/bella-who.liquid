@@ -1,0 +1,64 @@
+<section class="whyus">
+  <div class="who-in">
+    <div class="who-lead">
+      <p class="micro">{{ section.settings.eyebrow }}</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.text }}</p>
+    </div>
+    <div class="who-grid">
+      {%- for block in section.blocks -%}
+        <div class="who-card" {{ block.shopify_attributes }}>
+          <svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Who we are",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Who we are" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Real estate pros who make you look like one." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Bella isn't a software company. We're interior designers and real estate professionals who have staged thousands of residential and commercial properties, so we know exactly what buyers in your market are looking for. We turn your listing photos and other real estate media into visuals that stand out, showing the full potential of the property and painting the picture buyers are searching for. You walk into every appointment with a property that already looks sold." }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "star",
+          "options": [
+            { "value": "star", "label": "Star" },
+            { "value": "pen", "label": "Pen" },
+            { "value": "clock", "label": "Clock" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "doc", "label": "Document" },
+            { "value": "eye", "label": "Eye" }
+          ]
+        },
+        { "type": "text", "id": "title", "label": "Title", "default": "Win the listing" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Show up with staged renders and a plan, and sellers choose you over the agent with an empty MLS photo." }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Who we are",
+      "blocks": [
+        { "type": "card", "settings": { "icon": "star", "title": "Win the listing", "text": "Show up with staged renders and a plan, and sellers choose you over the agent with an empty MLS photo." } },
+        { "type": "card", "settings": { "icon": "pen", "title": "Look like the expert", "text": "Every room composed by a designer who knows your market, so your sellers think you're a hero." } },
+        { "type": "card", "settings": { "icon": "clock", "title": "Sell it faster", "text": "Buyers feel at home in the first three photos, so the offers come sooner and the home moves." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

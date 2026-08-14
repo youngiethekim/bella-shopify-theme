@@ -1,0 +1,11 @@
+<div class="shop-wrap">
+  <div class="form-card">
+    <h1 style="font-size:26px">Activate account</h1>
+    {% form 'activate_customer_password' %}
+      {{ form.errors | default_errors }}
+      <input type="password" name="customer[password]" placeholder="Password" autocomplete="new-password" required>
+      <input type="password" name="customer[password_confirmation]" placeholder="Confirm password" required>
+      <button type="submit" class="prod-buy" style="margin-top:4px">Activate</button>
+    {% endform %}
+  </div>
+</div>

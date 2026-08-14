@@ -1,0 +1,31 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Bella",
+    "theme_version": "1.0.0",
+    "theme_author": "Bella Virtual",
+    "theme_documentation_url": "https://github.com/youngiethekim/bella-preview",
+    "theme_support_url": "https://github.com/youngiethekim/bella-preview/issues"
+  },
+  {
+    "name": "Branding",
+    "settings": [
+      { "type": "image_picker", "id": "favicon", "label": "Favicon" }
+    ]
+  },
+  {
+    "name": "Bella assistant",
+    "settings": [
+      { "type": "checkbox", "id": "enable_assistant", "label": "Show the \"Ask Bella\" chat bubble", "default": true, "info": "Scripted answers about pricing, services and process, with buttons that route visitors to order / pricing pages" },
+      { "type": "url", "id": "assistant_order_url", "label": "Order page link" },
+      { "type": "url", "id": "assistant_pricing_url", "label": "Pricing page link" },
+      { "type": "url", "id": "assistant_services_url", "label": "Services page link" }
+    ]
+  },
+  {
+    "name": "Free-stage popup",
+    "settings": [
+      { "type": "checkbox", "id": "enable_freestage_popup", "label": "Show the free room offer popup on the homepage", "default": true, "info": "Appears on exit intent, 55% scroll, or after 30 seconds — once per visitor. Submissions arrive as contact form emails." }
+    ]
+  }
+]

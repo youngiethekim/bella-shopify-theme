@@ -1,0 +1,44 @@
+<div class="shop-wrap shop-narrow">
+  <h1>{{ section.settings.heading }}</h1>
+  {%- if cart.item_count > 0 -%}
+    {%- form 'cart', cart -%}
+      {%- for item in cart.items -%}
+        <div class="cart-line">
+          {%- if item.image -%}
+            <img src="{{ item.image | image_url: width: 200 }}" alt="{{ item.image.alt | escape }}" width="200" height="150">
+          {%- else -%}
+            <span></span>
+          {%- endif -%}
+          <div>
+            <a class="cl-title" href="{{ item.url }}">{{ item.product.title }}</a>
+            <div class="cl-meta">
+              {%- unless item.product.has_only_default_variant -%}{{ item.variant.title }} · {% endunless -%}
+              {{ item.final_price | money }} each
+              {%- for property in item.properties -%}
+                {%- unless property.last == blank %} · {{ property.first }}: {{ property.last }}{% endunless -%}
+              {%- endfor -%}
+              · <a href="{{ item.url_to_remove }}" style="color:var(--faint)">Remove</a>
+            </div>
+          </div>
+          <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" aria-label="Quantity">
+        </div>
+      {%- endfor -%}
+      <div class="cart-foot">
+        <button type="submit" class="btn-line" name="update" style="border:1px solid var(--line);background:none;font-family:inherit;padding:12px 18px;border-radius:9px;cursor:pointer">Update</button>
+        <span class="total">{{ cart.total_price | money }}</span>
+        <button type="submit" name="checkout" class="prod-buy" style="width:auto;padding:16px 34px">Check out</button>
+      </div>
+    {%- endform -%}
+  {%- else -%}
+    <p class="rte">Your order is empty. <a href="{{ routes.all_products_collection_url }}">Browse services →</a></p>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Cart",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Your order" }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,14 @@
+<div class="shop-wrap">
+  <div class="form-card">
+    <h1 style="font-size:26px">Create account</h1>
+    {% form 'create_customer' %}
+      {{ form.errors | default_errors }}
+      <input type="text" name="customer[first_name]" placeholder="First name" autocomplete="given-name">
+      <input type="text" name="customer[last_name]" placeholder="Last name" autocomplete="family-name">
+      <input type="email" name="customer[email]" placeholder="Email" autocomplete="email" required>
+      <input type="password" name="customer[password]" placeholder="Password" autocomplete="new-password" required>
+      <button type="submit" class="prod-buy" style="margin-top:4px">Create account</button>
+    {% endform %}
+    <p class="rte" style="margin-top:16px;font-size:13.5px"><a href="{{ routes.account_login_url }}">Already have an account? Log in</a></p>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="shop-wrap shop-narrow">
+  <h1>Addresses</h1>
+  {% paginate customer.addresses by 10 %}
+    {% for address in customer.addresses %}
+      <div class="cart-line" style="grid-template-columns:1fr">
+        <div class="rte">{{ address | format_address }}</div>
+      </div>
+    {% else %}
+      <p class="rte">No saved addresses.</p>
+    {% endfor %}
+  {% endpaginate %}
+  <div class="form-card" style="margin-top:26px">
+    <h2 style="font-size:20px;margin-bottom:12px">Add address</h2>
+    {% form 'customer_address', customer.new_address %}
+      <input type="text" name="address[first_name]" placeholder="First name">
+      <input type="text" name="address[last_name]" placeholder="Last name">
+      <input type="text" name="address[address1]" placeholder="Address">
+      <input type="text" name="address[city]" placeholder="City">
+      <input type="text" name="address[zip]" placeholder="Postal / ZIP">
+      <input type="text" name="address[country]" placeholder="Country">
+      <button type="submit" class="prod-buy" style="margin-top:4px">Save</button>
+    {% endform %}
+  </div>
+  <p class="rte" style="margin-top:18px"><a href="{{ routes.account_url }}">← Back to account</a></p>
+</div>

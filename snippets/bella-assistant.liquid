@@ -1,0 +1,21 @@
+{%- liquid
+  assign order_url = settings.assistant_order_url | default: routes.all_products_collection_url
+  assign pricing_url = settings.assistant_pricing_url | default: routes.all_products_collection_url
+  assign services_url = settings.assistant_services_url | default: routes.all_products_collection_url
+-%}
+<button class="ba-launch" id="baLaunch" aria-label="Ask Bella">
+  <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+  <span>Ask Bella</span><span class="ba-dot"></span>
+</button>
+<div class="ba-panel" id="baPanel" role="dialog" aria-label="Bella assistant"
+  data-order-url="{{ order_url }}" data-pricing-url="{{ pricing_url }}" data-services-url="{{ services_url }}">
+  <div class="ba-head">
+    <span class="ba-av">B</span>
+    <div class="ba-ht"><b>Bella assistant</b><span>Replies instantly</span></div>
+    <button class="ba-x" id="baClose" aria-label="Close">&times;</button>
+  </div>
+  <div class="ba-body" id="baBody"></div>
+  <div class="ba-chips" id="baChips"></div>
+  <form class="ba-foot" id="baForm"><input id="baInput" placeholder="Ask about pricing, services, anything…" autocomplete="off"><button class="ba-send" type="submit" aria-label="Send"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button></form>
+  <div class="ba-note">Automated assistant · answers reflect current pricing on our pricing page</div>
+</div>

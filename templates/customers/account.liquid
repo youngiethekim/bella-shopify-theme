@@ -1,0 +1,21 @@
+<div class="shop-wrap">
+  <h1>My account</h1>
+  <p class="rte">{{ customer.name }} · <a href="{{ routes.account_logout_url }}">Log out</a> · <a href="{{ routes.account_addresses_url }}">Addresses</a></p>
+  <h2 style="font-weight:500;margin:26px 0 10px">Order history</h2>
+  {% paginate customer.orders by 20 %}
+    {% if customer.orders.size > 0 %}
+      {% for order in customer.orders %}
+        <div class="cart-line" style="grid-template-columns:1fr auto">
+          <div>
+            <a class="cl-title" href="{{ order.customer_url }}">{{ order.name }}</a>
+            <div class="cl-meta">{{ order.created_at | date: '%B %-d, %Y' }} · {{ order.financial_status_label }} · {{ order.fulfillment_status_label }}</div>
+          </div>
+          <span>{{ order.total_price | money }}</span>
+        </div>
+      {% endfor %}
+      {% if paginate.pages > 1 %}<div class="pagination">{{ paginate | default_pagination }}</div>{% endif %}
+    {% else %}
+      <p class="rte">No orders yet.</p>
+    {% endif %}
+  {% endpaginate %}
+</div>

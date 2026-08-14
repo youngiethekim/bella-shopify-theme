@@ -1,0 +1,31 @@
+<div class="svc-page">
+  <section class="sec" style="border-top:1px solid var(--line)">
+    <div class="sec-in">
+      <p class="micro">{{ section.settings.eyebrow }}</p>
+      <h2 class="head2" style="font-size:clamp(24px,2.7vw,34px);margin-top:10px;max-width:22ch;font-weight:300">{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}
+        <p style="color:var(--soft);margin-top:12px;max-width:60ch">{{ section.settings.text }}</p>
+      {%- endif -%}
+      {%- if section.settings.menu != blank -%}
+        <div class="related-row">
+          {%- for link in section.settings.menu.links -%}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Related links",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Virtual staging near you" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Serving agents in your market." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "We stage listings across the US and Canada. Explore virtual staging tuned to your city's buyers and price points:" },
+    { "type": "link_list", "id": "menu", "label": "Links menu", "info": "e.g. your city pages menu" }
+  ],
+  "presets": [{ "name": "Related links" }]
+}
+{% endschema %}

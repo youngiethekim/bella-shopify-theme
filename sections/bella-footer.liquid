@@ -1,0 +1,41 @@
+<footer>
+  {%- if section.settings.menu_1 != blank -%}
+  <div class="foot-cities">
+    <span class="micro">{{ section.settings.menu_1_title }}</span>
+    <nav>
+      {%- for link in section.settings.menu_1.links -%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+  {%- endif -%}
+  {%- if section.settings.menu_2 != blank -%}
+  <div class="foot-cities">
+    <span class="micro">{{ section.settings.menu_2_title }}</span>
+    <nav aria-label="{{ section.settings.menu_2_title | escape }}">
+      {%- for link in section.settings.menu_2.links -%}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+  {%- endif -%}
+  <div class="foot-base">
+    <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}</span>
+    {%- if section.settings.note != blank -%}
+      <span>{{ section.settings.note }}</span>
+    {%- endif -%}
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    { "type": "text", "id": "menu_1_title", "label": "First menu heading", "default": "Who we work with" },
+    { "type": "link_list", "id": "menu_1", "label": "First menu", "default": "footer" },
+    { "type": "text", "id": "menu_2_title", "label": "Second menu heading", "default": "Virtual staging near you" },
+    { "type": "link_list", "id": "menu_2", "label": "Second menu (e.g. city pages)" },
+    { "type": "richtext", "id": "note", "label": "Bottom note", "default": "<p>Brokerage or builder with volume? Talk to us about volume pricing.</p>" }
+  ]
+}
+{% endschema %}
