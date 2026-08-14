@@ -10,6 +10,16 @@
     {%- if section.settings.cta_label != blank -%}
       <a class="btn btn-wht" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label }}</a>
     {%- endif -%}
+    {%- assign links = section.blocks | where: 'type', 'link' -%}
+    {%- if links.size > 0 -%}
+      <div class="value-also">
+        <span class="va-lead">{{ section.settings.also_label }}</span>
+        {%- for block in links -%}
+          <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>{{ block.settings.label }}</a>
+          {%- unless forloop.last %}<span class="va-dot" aria-hidden="true">·</span>{% endunless -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
   </div>
 </section>
 
@@ -27,8 +37,20 @@
     { "type": "text", "id": "new_per", "label": "Row 2 detail", "default": "a photo · paid once · yours for the whole listing" },
     { "type": "textarea", "id": "note", "label": "Note", "default": "Staging does one job: it shows buyers the full potential of a home. Real furniture or virtual, a staged room sets the scene, fills the space, and lets a buyer imagine themselves living there. Both earn the same reaction in the first three photos, where the click is won or lost. The only real difference is the bill: physical staging runs thousands a month and leaves the day the home sells, while Bella does the same job once, for about a tenth of the cost." },
     { "type": "text", "id": "cta_label", "label": "Button label", "default": "See the full comparison →" },
-    { "type": "url", "id": "cta_link", "label": "Button link" }
+    { "type": "url", "id": "cta_link", "label": "Button link" },
+    { "type": "text", "id": "also_label", "label": "Other-services lead-in", "default": "Virtual staging is our flagship — the same designers also deliver:" }
   ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Other service link",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "3D Renderings" },
+        { "type": "url", "id": "url", "label": "Link" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
   "presets": [{ "name": "Cost comparison" }]
 }
 {% endschema %}
