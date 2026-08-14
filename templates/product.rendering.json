@@ -64,10 +64,84 @@
         "variant_label": "Choose your render type",
         "shot_label": "3D rendering by a Bella professional",
         "variant_tip": "Not sure? Interior — residential is our most-ordered render. Pricing is per finished image, and you can add more types to the same order.",
+        "variant_specs": "Interior — residential | One room · one camera angle · open-plan spaces up to 1,000 sq ft count as one room\nInterior — commercial | One commercial space · one camera angle · up to 2,500 sq ft per view\nExterior — single building | One home or duplex up to 6,000 sq ft · one camera angle · landscaping, sky and lighting included\nExterior — streetscape | Street-level row or bird's-eye site view · one camera angle · up to 6 homes or units in frame\nExterior — multiple | 2–6 buildings composed in one view · one camera angle · larger master plans quoted separately\n3D model only | Clay-style model views built from your plans · no materials, landscaping or photoreal lighting",
         "reco_text": "Start with one render per key view — front exterior, living space, kitchen. You can mix interior and exterior types in one order.",
         "assure_1_tip": "Your order confirmation tells you where to send floor plans, elevations and reference images.",
         "assure_2_tip": "You review a draft and mark up changes to composition, materials and lighting — we revise until it's right.",
         "assure_3_tip": "High-resolution files sized for print, MLS and marketing — billboard sizing on request."
+      }
+    },
+    "scope": {
+      "type": "bella-scope",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "title": "Interior — residential",
+            "covers": "One room from one camera angle, fully furnished and styled.",
+            "limit": "Open-plan spaces up to 1,000 sq ft count as one room.",
+            "ideal": "Homes, condos, pre-sale suites"
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "title": "Interior — commercial",
+            "covers": "One commercial space from one angle, fixtures and furniture included.",
+            "limit": "Up to 2,500 sq ft in a single view.",
+            "ideal": "Lobbies, offices, retail, restaurants"
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "title": "Exterior — single building",
+            "covers": "One building with landscaping, sky and lighting.",
+            "limit": "Single-family home or duplex up to 6,000 sq ft.",
+            "ideal": "Custom homes, spec builds"
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "title": "Exterior — streetscape or aerial",
+            "covers": "Street-level row or bird's-eye view of one site, one angle.",
+            "limit": "Up to 6 homes or units in frame.",
+            "ideal": "Townhome rows, small subdivisions"
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "title": "Exterior — multiple buildings",
+            "covers": "Multi-building composition in a single view.",
+            "limit": "2–6 buildings; larger master plans quoted separately.",
+            "ideal": "Condo and mixed-use developments"
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "title": "3D model only",
+            "covers": "Clay-style model views built straight from your plans.",
+            "limit": "No materials, landscaping or photoreal lighting.",
+            "ideal": "Massing studies, early design checks"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "What each render type includes",
+        "text": "Pricing is per finished image — one space or building from one camera angle. Here's exactly where each type starts and stops.",
+        "note": "Every render includes: built from your plans · revisions until it's right · 4K print-ready delivery. Another angle of the same space is a second render — volume discounts apply automatically. Over the size limit? We'll quote it before you commit, no surcharge surprises."
       }
     },
     "steps": {
@@ -197,6 +271,13 @@
             "answer": "Floor plans or architectural drawings, plus any elevations, material selections and reference images you have. Rough or hand-drawn plans are fine — we confirm anything unclear before modelling."
           }
         },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "What counts as one render?",
+            "answer": "One finished image: a single room or building from a single camera angle. Open-plan interiors up to 1,000 sq ft count as one room, and single-building exteriors cover homes up to 6,000 sq ft. Another angle of the same space is a second render — volume discounts apply automatically."
+          }
+        },
         "q5": {
           "type": "qa",
           "settings": {
@@ -228,6 +309,7 @@
       },
       "block_order": [
         "q1",
+        "q6",
         "q5",
         "q2",
         "q3",
@@ -251,6 +333,7 @@
   },
   "order": [
     "main",
+    "scope",
     "steps",
     "proof",
     "tips",
