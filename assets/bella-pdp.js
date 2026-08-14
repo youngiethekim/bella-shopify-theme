@@ -110,6 +110,27 @@
   inject();
 })();
 
+/* ---- per-variant spec line under the type selector ---- */
+(function () {
+  var spec = document.getElementById('BbSpec'), sel = document.getElementById('BuyVariant');
+  if (!spec || !sel || sel.tagName !== 'SELECT') return;
+  var map = [];
+  (spec.getAttribute('data-specs') || '').split('\n').forEach(function (l) {
+    var i = l.indexOf('|');
+    if (i > 0) map.push([l.slice(0, i).trim().toLowerCase(), l.slice(i + 1).trim()]);
+  });
+  if (!map.length) return;
+  function paint() {
+    var t = sel.options[sel.selectedIndex].textContent.trim().toLowerCase();
+    var hit = null;
+    map.forEach(function (m) { if (!hit && t.indexOf(m[0]) === 0) hit = m[1]; });
+    spec.textContent = hit || '';
+    spec.style.display = hit ? '' : 'none';
+  }
+  sel.addEventListener('change', paint);
+  paint();
+})();
+
 /* ---- recommended quantity badge ---- */
 (function () {
   var reco = document.getElementById('BbReco'), qty = document.getElementById('BuyQty');

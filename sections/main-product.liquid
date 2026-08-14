@@ -89,6 +89,9 @@
                   </option>
                 {%- endfor -%}
               </select>
+              {%- if section.settings.variant_specs != blank -%}
+                <div class="bb-spec" id="BbSpec" data-specs="{{ section.settings.variant_specs | escape }}"></div>
+              {%- endif -%}
             </div>
           {%- else -%}
             <input type="hidden" name="id" value="{{ current_variant.id }}" data-price="{{ current_variant.price }}" id="BuyVariant">
@@ -225,6 +228,7 @@
     { "type": "header", "content": "Buy box" },
     { "type": "text", "id": "variant_label", "label": "Variant step label", "default": "Choose your option" },
     { "type": "text", "id": "variant_tip", "label": "Variant tooltip (empty = none)" },
+    { "type": "textarea", "id": "variant_specs", "label": "Per-variant spec lines (Variant title | spec text, one per line)" },
     { "type": "text", "id": "qty_label", "label": "Quantity step label", "default": "How many photos?" },
     { "type": "range", "id": "default_qty", "label": "Starting quantity", "min": 1, "max": 20, "step": 1, "default": 8 },
     { "type": "text", "id": "reco_text", "label": "Recommended amount tooltip (empty = hide badge)" },
