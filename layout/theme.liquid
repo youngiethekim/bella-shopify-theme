@@ -28,6 +28,8 @@
   {{ 'bella.css' | asset_url | stylesheet_tag }}
   {{ 'bella-pdp.css' | asset_url | stylesheet_tag }}
 
+  {% render 'bella-seo' %}
+
   {{ content_for_header }}
 </head>
 
