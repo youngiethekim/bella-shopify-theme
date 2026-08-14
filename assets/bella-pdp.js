@@ -110,6 +110,32 @@
   inject();
 })();
 
+/* ---- recommended quantity badge ---- */
+(function () {
+  var reco = document.getElementById('BbReco'), qty = document.getElementById('BuyQty');
+  if (!reco || !qty) return;
+  var n = parseInt(reco.getAttribute('data-reco'), 10) || 1;
+  var txt = reco.querySelector('.br-txt');
+  function paint() {
+    var on = parseInt(qty.value, 10) === n;
+    reco.classList.toggle('on', on);
+    txt.textContent = on ? 'Recommended amount' : 'Recommended: ' + n;
+  }
+  reco.addEventListener('click', function (e) {
+    e.preventDefault();
+    qty.value = n;
+    qty.dispatchEvent(new Event('input', { bubbles: true }));
+    qty.dispatchEvent(new Event('change', { bubbles: true }));
+    paint();
+  });
+  ['input', 'change'].forEach(function (ev) { qty.addEventListener(ev, paint); });
+  ['QtyMinus', 'QtyPlus'].forEach(function (id) {
+    var b = document.getElementById(id);
+    if (b) b.addEventListener('click', function () { setTimeout(paint, 0); });
+  });
+  paint();
+})();
+
 /* ---- ajax add-to-cart: stay on the page so buyers can mix types in one order ---- */
 (function () {
   var form = document.getElementById('BellaProductForm'), box = document.getElementById('BuyBox');
