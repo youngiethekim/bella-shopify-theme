@@ -96,3 +96,8 @@
 .svc-page .strip div{font-size:12px}
 .bb-save,.bb-nudge{font-size:12.5px}
 .svc-page .crumb,.svc-page .micro{letter-spacing:.14em}
+/* ---- services page: category groups ---- */
+.svc-group{margin-top:52px;padding-top:36px;border-top:1px solid var(--line)}
+.svc-group .sg-eyebrow{color:var(--green)}
+.sg-desc{color:var(--soft);font-size:14.5px;margin-top:8px;max-width:62ch}
+.svc-group .coll-grid{margin-top:22px}
