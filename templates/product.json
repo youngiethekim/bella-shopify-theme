@@ -12,12 +12,37 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "u1": { "type": "usp", "settings": { "text": "From <b>$45</b> / photo" } },
-        "u2": { "type": "usp", "settings": { "text": "Back in <b>24–48 hrs</b>" } },
-        "u3": { "type": "usp", "settings": { "text": "<b>Unlimited revisions</b>, 2 weeks" } },
-        "u4": { "type": "usp", "settings": { "text": "<b>Rework or refund</b>" } }
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "text": "From <b>$45</b> / photo"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "text": "Back in <b>24–48 hrs</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>Unlimited revisions</b>, 2 weeks"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>Rework or refund</b>"
+          }
+        }
       },
-      "block_order": ["u1", "u2", "u3", "u4"],
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
       "settings": {
         "style_options": "",
         "show_notes": false
@@ -26,50 +51,188 @@
     "steps": {
       "type": "bella-steps",
       "blocks": {
-        "s1": { "type": "step", "settings": { "title": "Order & upload", "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started." } },
-        "s2": { "type": "step", "settings": { "title": "A designer stages it", "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market." } },
-        "s3": { "type": "step", "settings": { "title": "Approve & download", "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks." } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "sofa",
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks."
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
       "settings": {}
     },
     "proof": {
       "type": "bella-proof",
       "blocks": {
-        "st1": { "type": "stat", "settings": { "figure": "82%", "text": "of buyers' agents say staging makes it easier for buyers to visualize a property as their future home.", "source": "NAR" } },
-        "st2": { "type": "stat", "settings": { "figure": "97%", "text": "of home buyers start their search online, where your photos are the whole first impression.", "source": "NAR" } },
-        "st3": { "type": "stat", "settings": { "figure": "24–48h", "text": "from upload to MLS-ready staged photos, so your listing never waits on a moving truck.", "source": "Bella turnaround" } }
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "figure": "82%",
+            "text": "of buyers' agents say staging makes it easier for buyers to visualize a property as their future home.",
+            "source": "NAR"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "figure": "97%",
+            "text": "of home buyers start their search online, where your photos are the whole first impression.",
+            "source": "NAR"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "figure": "24–48h",
+            "text": "from upload to MLS-ready staged photos, so your listing never waits on a moving truck.",
+            "source": "Bella turnaround"
+          }
+        }
       },
-      "block_order": ["st1", "st2", "st3"],
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
       "settings": {}
     },
     "included": {
       "type": "bella-included",
       "blocks": {
-        "i1": { "type": "item", "settings": { "title": "Furniture removal included", "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean." } },
-        "i2": { "type": "item", "settings": { "title": "Any style", "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own." } },
-        "i3": { "type": "item", "settings": { "title": "MLS-ready files", "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance." } },
-        "i4": { "type": "item", "settings": { "title": "Unlimited revisions", "text": "Free for two weeks after delivery, with a rework-or-refund guarantee." } }
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Furniture removal included",
+            "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Any style",
+            "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "MLS-ready files",
+            "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Unlimited revisions",
+            "text": "Free for two weeks after delivery, with a rework-or-refund guarantee."
+          }
+        }
       },
-      "block_order": ["i1", "i2", "i3", "i4"],
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
       "settings": {}
     },
     "faq": {
       "type": "bella-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "When do I send my photos?", "answer": "After checkout. Your order confirmation includes an upload link, so you can order now and send the photos whenever they're ready — nothing is needed up front." } },
-        "q2": { "type": "qa", "settings": { "question": "How much does it cost?", "answer": "From $45 per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one. A typical eight-photo listing runs about $324." } },
-        "q3": { "type": "qa", "settings": { "question": "How long does it take?", "answer": "24 to 48 hours from the moment you upload, with unlimited revisions free for two weeks and a rework-or-refund guarantee." } },
-        "q4": { "type": "qa", "settings": { "question": "Is it allowed on the MLS?", "answer": "Yes. Virtually staged photos are widely used on the MLS as long as they're disclosed as virtually staged. We build every image to MLS specifications and tell you exactly what to note." } },
-        "q5": { "type": "qa", "settings": { "question": "Can you stage occupied or cluttered rooms?", "answer": "Yes, at no extra charge. Furniture removal is included free — we digitally clear the existing furniture first, then stage the empty room." } }
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "When do I send my photos?",
+            "answer": "After checkout. Your order confirmation includes an upload link, so you can order now and send the photos whenever they're ready — nothing is needed up front."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost?",
+            "answer": "From $45 per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one. A typical eight-photo listing runs about $324."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does it take?",
+            "answer": "24 to 48 hours from the moment you upload, with unlimited revisions free for two weeks and a rework-or-refund guarantee."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Is it allowed on the MLS?",
+            "answer": "Yes. Virtually staged photos are widely used on the MLS as long as they're disclosed as virtually staged. We build every image to MLS specifications and tell you exactly what to note."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage occupied or cluttered rooms?",
+            "answer": "Yes, at no extra charge. Furniture removal is included free — we digitally clear the existing furniture first, then stage the empty room."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you also fix walls, floors or other items?",
+            "answer": "Yes. With furniture removal and virtual renovation we can clean up issues with walls, floors and fixtures before staging, so the room photographs clean and move-in ready."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Why Bella over cheaper services?",
+            "answer": "Quality over quantity. Every photo is composed by hand by a professional interior designer and carefully finished — we believe higher-quality images bring more buyers to the listing and help it sell at a higher price. And with unlimited revisions and a rework-or-refund guarantee, you're never stuck with an image you can't use."
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
       "settings": {
         "eyebrow": "Questions",
         "heading": "Before you order"
       }
     },
-    "related": { "type": "bella-related-links", "settings": {} },
+    "related": {
+      "type": "bella-related-links",
+      "settings": {}
+    },
     "cta": {
       "type": "bella-end-cta",
       "settings": {
@@ -81,5 +244,13 @@
       }
     }
   },
-  "order": ["main", "steps", "proof", "included", "faq", "related", "cta"]
+  "order": [
+    "main",
+    "steps",
+    "proof",
+    "included",
+    "faq",
+    "related",
+    "cta"
+  ]
 }

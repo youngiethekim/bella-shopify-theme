@@ -79,3 +79,20 @@
 .def-more summary{justify-content:flex-start}
 .buybox .bb-group{border-top:1px solid var(--line-2);padding-top:16px;margin-top:16px}
 .buybox .bb-group:first-of-type{border-top:0;padding-top:0;margin-top:0}
+/* ---- icons across the product page ---- */
+.svc-page .strip div{display:flex;align-items:center;justify-content:center;gap:9px}
+.svc-page .strip .ico{width:17px;height:17px;color:var(--green);opacity:1;margin:0;display:inline-block;flex:none}
+.bb-assure span::before{content:none}
+.bb-assure .ico{width:14px;height:14px;color:var(--green);flex:none}
+.svc-page .step .step-ico{width:26px;height:26px;color:var(--green);stroke-width:1.1;display:block;margin-bottom:12px}
+.svc-page .incl-card .ico{width:24px;height:24px;color:var(--ink);stroke-width:1.1;display:block;margin-bottom:12px}
+/* ---- one type scale (consistency pass) ---- */
+.ph-rating{font-size:12px;letter-spacing:.1em}
+.bb-price .now{font-size:28px}
+.svc-page .stat b{font-size:28px}
+.def .def-lede p{font-size:17px}
+.svc-page .step h3,.svc-page .incl-card h3{font-size:17px;font-weight:400}
+.svc-page .step p,.svc-page .incl-card p{font-size:14.5px;line-height:1.6}
+.svc-page .strip div{font-size:12px}
+.bb-save,.bb-nudge{font-size:12.5px}
+.svc-page .crumb,.svc-page .micro{letter-spacing:.14em}
