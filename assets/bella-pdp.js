@@ -231,6 +231,13 @@
   });
 })();
 
+/* ---- portfolio: tap toggles before/after on touch devices ---- */
+(function () {
+  document.querySelectorAll('.pf-card').forEach(function (c) {
+    c.addEventListener('click', function () { c.classList.toggle('on'); });
+  });
+})();
+
 /* ---- product page: saved looks arrive via ?looks= and attach to the order ---- */
 (function () {
   var form = document.getElementById('BellaProductForm'), box = document.getElementById('BuyBox');
