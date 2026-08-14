@@ -9,6 +9,9 @@
       <div class="incl">
         {%- for block in section.blocks -%}
           <div class="incl-card" {{ block.shopify_attributes }}>
+            {%- if block.settings.icon != blank and block.settings.icon != 'none' -%}
+              <svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>
+            {%- endif -%}
             <h3>{{ block.settings.title }}</h3>
             <p>{{ block.settings.text }}</p>
           </div>
@@ -31,6 +34,10 @@
       "type": "item",
       "name": "Included item",
       "settings": [
+        { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [
+          { "value": "none", "label": "None" }, { "value": "eraser", "label": "Eraser" }, { "value": "swatch", "label": "Swatch" },
+          { "value": "doc", "label": "Document" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
+          { "value": "sofa", "label": "Sofa" }, { "value": "pen", "label": "Pen" }, { "value": "roller", "label": "Roller" } ] },
         { "type": "text", "id": "title", "label": "Title", "default": "Furniture removal included" },
         { "type": "textarea", "id": "text", "label": "Text", "default": "Occupied or cluttered rooms are digitally cleared free, then staged clean." }
       ]
@@ -41,10 +48,10 @@
     {
       "name": "What's included",
       "blocks": [
-        { "type": "item", "settings": { "title": "Furniture removal included", "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean." } },
-        { "type": "item", "settings": { "title": "Any style", "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own." } },
-        { "type": "item", "settings": { "title": "MLS-ready files", "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance." } },
-        { "type": "item", "settings": { "title": "Unlimited revisions", "text": "Free for two weeks after delivery, with a rework-or-refund guarantee." } }
+        { "type": "item", "settings": { "icon": "eraser", "title": "Furniture removal included", "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean." } },
+        { "type": "item", "settings": { "icon": "swatch", "title": "Any style", "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own." } },
+        { "type": "item", "settings": { "icon": "doc", "title": "MLS-ready files", "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance." } },
+        { "type": "item", "settings": { "icon": "clock", "title": "Unlimited revisions", "text": "Free for two weeks after delivery, with a rework-or-refund guarantee." } }
       ]
     }
   ]

@@ -8,6 +8,9 @@
       <div class="steps">
         {%- for block in section.blocks -%}
           <div class="step" {{ block.shopify_attributes }}>
+            {%- if block.settings.icon != blank and block.settings.icon != 'none' -%}
+              <svg class="ico step-ico"><use href="#i-{{ block.settings.icon }}"/></svg>
+            {%- endif -%}
             <div class="n">Step {{ forloop.index }}</div>
             <h3>{{ block.settings.title }}</h3>
             <p>{{ block.settings.text }}</p>
@@ -30,6 +33,10 @@
       "type": "step",
       "name": "Step",
       "settings": [
+        { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [
+          { "value": "none", "label": "None" }, { "value": "upload", "label": "Upload" }, { "value": "sofa", "label": "Sofa" },
+          { "value": "check", "label": "Check" }, { "value": "pen", "label": "Pen" }, { "value": "eye", "label": "Eye" },
+          { "value": "clock", "label": "Clock" }, { "value": "doc", "label": "Document" } ] },
         { "type": "text", "id": "title", "label": "Title", "default": "Upload your photos" },
         { "type": "textarea", "id": "text", "label": "Text", "default": "Send the empty-room shots and tell us the style you want, or let our designers choose what sells for your buyer." }
       ]
@@ -40,9 +47,9 @@
     {
       "name": "How it works",
       "blocks": [
-        { "type": "step", "settings": { "title": "Order & upload", "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started." } },
-        { "type": "step", "settings": { "title": "A designer stages it", "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market." } },
-        { "type": "step", "settings": { "title": "Approve & download", "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks." } }
+        { "type": "step", "settings": { "icon": "upload", "title": "Order & upload", "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started." } },
+        { "type": "step", "settings": { "icon": "sofa", "title": "A designer stages it", "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market." } },
+        { "type": "step", "settings": { "icon": "check", "title": "Approve & download", "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks." } }
       ]
     }
   ]
