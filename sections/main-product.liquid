@@ -36,7 +36,7 @@
       <div class="ph-price">
         {%- if product.price_varies -%}From {% endif -%}
         <b>{{ product.price_min | money }}</b> / {{ section.settings.unit_label }}
-        {%- if section.settings.enable_tiers %} <span>· volume discounts up to {{ section.settings.tier4_pct }}%</span>{% endif -%}
+        {%- if section.settings.enable_tiers %} <span class="tt" tabindex="0" data-tip="Save {{ section.settings.tier1_pct }}% at {{ section.settings.tier1_qty }}+, {{ section.settings.tier2_pct }}% at {{ section.settings.tier2_qty }}+, {{ section.settings.tier3_pct }}% at {{ section.settings.tier3_qty }}+ and {{ section.settings.tier4_pct }}% at {{ section.settings.tier4_qty }}+ {{ section.settings.unit_label }}s — applied automatically in the order box.">· volume discounts up to {{ section.settings.tier4_pct }}%</span>{% endif -%}
       </div>
     </div>
 
@@ -78,7 +78,7 @@
           {%- unless product.has_only_default_variant -%}
             {%- assign step = step | plus: 1 -%}
             <div class="bb-group">
-              <label class="bb-lbl" for="BuyVariant"><span class="bb-num">{{ step }}</span>{{ section.settings.variant_label }}</label>
+              <label class="bb-lbl" for="BuyVariant"><span class="bb-num">{{ step }}</span>{{ section.settings.variant_label }}{% if section.settings.variant_tip != blank %} <span class="tt tt-i" tabindex="0" data-tip="{{ section.settings.variant_tip | escape }}">i</span>{% endif %}</label>
               <select name="id" id="BuyVariant">
                 {%- for variant in product.variants -%}
                   <option value="{{ variant.id }}"
@@ -96,7 +96,11 @@
 
           {%- assign step = step | plus: 1 -%}
           <div class="bb-group">
-            <label class="bb-lbl" for="BuyQty"><span class="bb-num">{{ step }}</span>{{ section.settings.qty_label }}</label>
+            <label class="bb-lbl" for="BuyQty"><span class="bb-num">{{ step }}</span>{{ section.settings.qty_label }}
+              {%- if section.settings.reco_text != blank -%}
+                <button type="button" class="bb-reco tt" id="BbReco" data-reco="{{ section.settings.default_qty }}" data-tip="{{ section.settings.reco_text | escape }}"><span class="br-star" aria-hidden="true">★</span><span class="br-txt">Recommended amount</span></button>
+              {%- endif -%}
+            </label>
             <div class="bb-row bb-qtyrow">
               <div class="qty-step">
                 <button type="button" id="QtyMinus" aria-label="Fewer">−</button>
@@ -145,9 +149,9 @@
 
           {%- if section.settings.assure_1 != blank or section.settings.assure_2 != blank or section.settings.assure_3 != blank -%}
             <div class="bb-assure">
-              {%- if section.settings.assure_1 != blank -%}<span><svg class="ico"><use href="#i-{{ section.settings.assure_1_icon | default: 'upload' }}"/></svg>{{ section.settings.assure_1 }}</span>{%- endif -%}
-              {%- if section.settings.assure_2 != blank -%}<span><svg class="ico"><use href="#i-{{ section.settings.assure_2_icon | default: 'clock' }}"/></svg>{{ section.settings.assure_2 }}</span>{%- endif -%}
-              {%- if section.settings.assure_3 != blank -%}<span><svg class="ico"><use href="#i-{{ section.settings.assure_3_icon | default: 'shield' }}"/></svg>{{ section.settings.assure_3 }}</span>{%- endif -%}
+              {%- if section.settings.assure_1 != blank -%}<span{% if section.settings.assure_1_tip != blank %} class="tt" tabindex="0" data-tip="{{ section.settings.assure_1_tip | escape }}"{% endif %}><svg class="ico"><use href="#i-{{ section.settings.assure_1_icon | default: 'upload' }}"/></svg>{{ section.settings.assure_1 }}</span>{%- endif -%}
+              {%- if section.settings.assure_2 != blank -%}<span{% if section.settings.assure_2_tip != blank %} class="tt" tabindex="0" data-tip="{{ section.settings.assure_2_tip | escape }}"{% endif %}><svg class="ico"><use href="#i-{{ section.settings.assure_2_icon | default: 'clock' }}"/></svg>{{ section.settings.assure_2 }}</span>{%- endif -%}
+              {%- if section.settings.assure_3 != blank -%}<span{% if section.settings.assure_3_tip != blank %} class="tt" tabindex="0" data-tip="{{ section.settings.assure_3_tip | escape }}"{% endif %}><svg class="ico"><use href="#i-{{ section.settings.assure_3_icon | default: 'shield' }}"/></svg>{{ section.settings.assure_3 }}</span>{%- endif -%}
             </div>
           {%- endif -%}
         </div>
@@ -220,8 +224,10 @@
     { "type": "text", "id": "shot_label", "label": "Image label", "default": "Staged by a Bella designer" },
     { "type": "header", "content": "Buy box" },
     { "type": "text", "id": "variant_label", "label": "Variant step label", "default": "Choose your option" },
+    { "type": "text", "id": "variant_tip", "label": "Variant tooltip (empty = none)" },
     { "type": "text", "id": "qty_label", "label": "Quantity step label", "default": "How many photos?" },
     { "type": "range", "id": "default_qty", "label": "Starting quantity", "min": 1, "max": 20, "step": 1, "default": 8 },
+    { "type": "text", "id": "reco_text", "label": "Recommended amount tooltip (empty = hide badge)" },
     { "type": "text", "id": "unit_label", "label": "Unit name", "default": "photo" },
     { "type": "text", "id": "style_label", "label": "Style step label", "default": "Staging style" },
     { "type": "text", "id": "style_options", "label": "Style choices (comma-separated, empty = hide)", "default": "Modern, Scandinavian, Contemporary, Coastal, Farmhouse, Traditional, Industrial, Luxury" },
@@ -234,14 +240,17 @@
     { "type": "select", "id": "assure_1_icon", "label": "Reassurance 1 icon", "default": "upload", "options": [
       { "value": "upload", "label": "Upload" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
       { "value": "pen", "label": "Pen" }, { "value": "doc", "label": "Document" }, { "value": "check", "label": "Check" } ] },
+    { "type": "text", "id": "assure_1_tip", "label": "Reassurance 1 tooltip" },
     { "type": "text", "id": "assure_2", "label": "Reassurance 2", "default": "Unlimited revisions · 2 weeks" },
     { "type": "select", "id": "assure_2_icon", "label": "Reassurance 2 icon", "default": "pen", "options": [
       { "value": "upload", "label": "Upload" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
       { "value": "pen", "label": "Pen" }, { "value": "doc", "label": "Document" }, { "value": "check", "label": "Check" } ] },
+    { "type": "text", "id": "assure_2_tip", "label": "Reassurance 2 tooltip" },
     { "type": "text", "id": "assure_3", "label": "Reassurance 3", "default": "Rework or refund" },
     { "type": "select", "id": "assure_3_icon", "label": "Reassurance 3 icon", "default": "shield", "options": [
       { "value": "upload", "label": "Upload" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
       { "value": "pen", "label": "Pen" }, { "value": "doc", "label": "Document" }, { "value": "check", "label": "Check" } ] },
+    { "type": "text", "id": "assure_3_tip", "label": "Reassurance 3 tooltip" },
     { "type": "header", "content": "Volume discounts", "info": "Shown in the buy box. Create a matching automatic discount in admin so checkout applies it." },
     { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": true },
     { "type": "number", "id": "tier1_qty", "label": "Tier 1 — from qty", "default": 3 },
@@ -275,10 +284,10 @@
     {
       "name": "Product (service)",
       "blocks": [
-        { "type": "usp", "settings": { "icon": "note", "text": "From <b>$45</b> / photo" } },
-        { "type": "usp", "settings": { "icon": "clock", "text": "Back in <b>24–48 hrs</b>" } },
-        { "type": "usp", "settings": { "icon": "pen", "text": "<b>Unlimited revisions</b>, 2 weeks" } },
-        { "type": "usp", "settings": { "icon": "shield", "text": "<b>Rework or refund</b>" } }
+        { "type": "usp", "settings": { "text": "From <b>$45</b> / photo" } },
+        { "type": "usp", "settings": { "text": "Back in <b>24–48 hrs</b>" } },
+        { "type": "usp", "settings": { "text": "<b>Unlimited revisions</b>, 2 weeks" } },
+        { "type": "usp", "settings": { "text": "<b>Rework or refund</b>" } }
       ]
     }
   ]
