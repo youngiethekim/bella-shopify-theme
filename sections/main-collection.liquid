@@ -17,6 +17,9 @@
               <p class="micro" style="color:var(--green)">{{ block.settings.eyebrow }}</p>
               <h2>{% if block.settings.title != blank %}{{ block.settings.title }}{% else %}{{ p.title }}{% endif %}</h2>
               <div class="fs-price">{% if p.price_varies %}From {% endif %}<b>{{ p.price_min | money }}</b> / {{ block.settings.unit }}</div>
+              {%- if block.settings.audience != blank -%}
+                <p class="fs-for">For {{ block.settings.audience }}</p>
+              {%- endif -%}
               {%- if block.settings.text != blank -%}
                 <p class="fs-desc">{{ block.settings.text }}</p>
               {%- elsif p.description != blank -%}
@@ -68,6 +71,7 @@
         { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "01 · Virtual Staging" },
         { "type": "text", "id": "title", "label": "Title (overrides product title)" },
         { "type": "text", "id": "unit", "label": "Unit", "default": "photo" },
+        { "type": "text", "id": "audience", "label": "Typical clients (shown as 'For …')" },
         { "type": "textarea", "id": "text", "label": "Description (overrides product description)" },
         { "type": "text", "id": "cta", "label": "Button label", "default": "Order virtual staging →" }
       ]
