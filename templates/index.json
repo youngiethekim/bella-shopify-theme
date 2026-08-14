@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -22,7 +31,19 @@
       "block_order": ["c1", "c2", "c3"],
       "settings": {}
     },
-    "value": { "type": "bella-value", "settings": {} },
+    "value": {
+      "type": "bella-value",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "label": "3D Renderings", "url": "/products/3d-rendering" } },
+        "l2": { "type": "link", "settings": { "label": "Floor Plans", "url": "/products/2d-3d-floor-plan-service" } },
+        "l3": { "type": "link", "settings": { "label": "Photo Editing", "url": "/products/photo-editing" } }
+      },
+      "block_order": ["l1", "l2", "l3"],
+      "settings": {
+        "eyebrow": "The math · our flagship service",
+        "also_label": "Virtual staging is our flagship — the same designers also deliver:"
+      }
+    },
     "services": {
       "type": "bella-services",
       "blocks": {
