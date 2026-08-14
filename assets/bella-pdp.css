@@ -53,3 +53,5 @@
 .buybox .bb-lbl{display:flex;align-items:center;gap:9px;color:var(--ink);margin-bottom:10px}
 .bb-more summary{justify-content:flex-start}
 .bb-more summary::after{display:none;content:none}
+/* lookbook: hide alt-text paint while large tiles decode */
+.blb img{color:transparent}
