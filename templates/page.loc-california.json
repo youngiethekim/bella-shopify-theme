@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual staging near you",
+        "heading": "Virtual Home Staging in California",
+        "lede": "From San Francisco flats to San Diego ranch homes, Bella stages listings across California in 24 to 48 hours, from $45 a photo — with furnishing matched to each metro's buyer.",
+        "cta_label": "Stage my listing — from $45",
+        "cta_link": "/products/virtual-staging-1",
+        "alt_label": "Browse the lookbook",
+        "alt_link": "/pages/lookbook",
+        "city": "California",
+        "market_heading": "Why staging matters across California",
+        "market_text": "<p>California is not one market — a Noe Valley Victorian, a Sacramento new build and an Orange County family home attract different buyers with different taste. What they share is price point: with the median California home among the most expensive in the nation, buyers expect listing photos that look like the money being asked.</p><p>Physical staging costs scale with those prices — often thousands per month in coastal metros. Virtual staging delivers the same first impression once, for $45 a photo, which is why California agents were among our first and remain our largest client base.</p>",
+        "local_heading": "One studio, every California metro",
+        "local_text": "<p>Our designers stage daily for the Bay Area, Los Angeles, San Diego, Sacramento and the Central Valley, matching furniture and palette to each region's buyer. Images are MLS-ready in 24 to 48 hours, disclosed as virtually staged, with unlimited revisions free for two weeks.</p>",
+        "hoods_label": "Where we stage most",
+        "hoods": "San Francisco, San Jose, Oakland, Sacramento, Fresno, Orange County, Riverside, Palm Springs, Santa Barbara, Bakersfield"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "I am so pleased with your services. The virtual staging was awesome. We sold my listing in 8 days with multiple offers.",
+        "attribution": "Joe Benvenuto · Real estate agent, San Francisco CA",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Stage your California listing this week.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
+        "cta_label": "Get started — from $45 a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "quote",
+    "cta"
+  ]
+}
