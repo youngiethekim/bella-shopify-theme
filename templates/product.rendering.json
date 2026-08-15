@@ -56,7 +56,7 @@
         "lede": "Photoreal interiors and exteriors built from your plans by our 3D team — so buyers commit before you build.",
         "unit_label": "render",
         "qty_label": "How many renders?",
-        "default_qty": 1,
+        "default_qty": 5,
         "assure_1": "Send plans after checkout",
         "assure_2": "Revisions until it's right",
         "assure_3": "Print-ready delivery",
@@ -65,7 +65,7 @@
         "shot_label": "3D rendering by a Bella professional",
         "variant_tip": "Not sure? Interior — residential is our most-ordered render. Pricing is per finished image, and you can add more types to the same order.",
         "variant_specs": "Interior — residential | One room · one camera angle · open-plan spaces up to 1,000 sq ft count as one room\nInterior — commercial | One commercial space · one camera angle · up to 2,500 sq ft per view\nExterior — single building | One home or duplex up to 6,000 sq ft · one camera angle · landscaping, sky and lighting included\nExterior — streetscape | Street-level row or bird's-eye site view · one camera angle · up to 6 homes or units in frame\nExterior — multiple | 2–6 buildings composed in one view · one camera angle · larger master plans quoted separately\n3D model only | Clay-style model views built from your plans · no materials, landscaping or photoreal lighting",
-        "reco_text": "Start with one render per key view — front exterior, living space, kitchen. You can mix interior and exterior types in one order.",
+        "reco_text": "Our most popular order is 5 renders — front exterior, kitchen, living space and two more key views. You can mix interior and exterior types in one order.",
         "assure_1_tip": "Your order confirmation tells you where to send floor plans, elevations and reference images.",
         "assure_2_tip": "You review a draft and mark up changes to composition, materials and lighting — we revise until it's right.",
         "assure_3_tip": "High-resolution files sized for print, MLS and marketing — billboard sizing on request."
