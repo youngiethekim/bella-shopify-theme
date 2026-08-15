@@ -12,6 +12,43 @@
     "res": {
       "type": "bella-resources",
       "blocks": {
+        "g0": {
+          "type": "heading",
+          "settings": {
+            "title": "Start here — flagship guides",
+            "text": "Long-form playbooks written by the Bella team, with the numbers, checklists and scripts included."
+          }
+        },
+        "f1": {
+          "type": "card",
+          "settings": {
+            "tag": "Builder guide",
+            "title": "Pre-sell homes with 3D renderings",
+            "text": "The home builder's playbook: pre-sell from plans, skip the six-figure model home, and sell upgrades buyers can see.",
+            "link": "/blogs/news/home-builders-guide-preselling-with-3d-renderings",
+            "link_label": "Read the playbook →"
+          }
+        },
+        "f2": {
+          "type": "card",
+          "settings": {
+            "tag": "Agent & investor guide",
+            "title": "Sell a dated home without renovating it",
+            "text": "The virtual renovation guide: why dated finishes kill offers, what disclosure requires, and the $69 alternative to a $20,000 refresh.",
+            "link": "/blogs/news/virtual-renovation-guide-sell-dated-home",
+            "link_label": "Read the guide →"
+          }
+        },
+        "f3": {
+          "type": "card",
+          "settings": {
+            "tag": "Playbook",
+            "title": "The listing launch playbook: the first 72 hours",
+            "text": "Pricing, the first-three-photos strategy, syndication and the launch-week push — the full plan for a new listing.",
+            "link": "/blogs/news/listing-launch-playbook-first-72-hours",
+            "link_label": "Read the playbook →"
+          }
+        },
         "g1": {
           "type": "heading",
           "settings": {
@@ -210,6 +247,10 @@
         }
       },
       "block_order": [
+        "g0",
+        "f1",
+        "f2",
+        "f3",
         "g1",
         "r1",
         "r2",
