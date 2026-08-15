@@ -155,6 +155,20 @@
   .bscope td[data-l]::before{content:attr(data-l);display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin:8px 0 2px}
   .bscope td:nth-child(2){color:var(--green)}
 }
+/* ---- press: single sliding row (marquee) ---- */
+.press-mq{overflow:hidden;padding:32px 0 26px;max-width:none;position:relative}
+.press-mq::before,.press-mq::after{content:"";position:absolute;top:0;bottom:0;width:70px;z-index:2;pointer-events:none}
+.press-mq::before{left:0;background:linear-gradient(90deg,#fff,rgba(255,255,255,0))}
+.press-mq::after{right:0;background:linear-gradient(270deg,#fff,rgba(255,255,255,0))}
+.press-track{display:flex;width:max-content;animation:pressScroll 55s linear infinite}
+.press-track .pc{flex:none;width:310px;margin-right:20px}
+.press-mq:hover .press-track,.press-track:focus-within{animation-play-state:paused}
+@keyframes pressScroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion: reduce){
+  .press-track{animation:none}
+  .press-mq{overflow-x:auto}
+}
+@media(max-width:640px){.press-track .pc{width:260px;margin-right:14px}}
 /* ---- homepage: flagship qualifier under the cost comparison ---- */
 .value-also{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:#807A72;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 10px;line-height:1.6}
 .value-also .va-lead{color:#A8A29A}

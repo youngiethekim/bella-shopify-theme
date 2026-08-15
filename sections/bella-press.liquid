@@ -4,23 +4,28 @@
     <h2>{{ section.settings.heading }}</h2>
     <p>{{ section.settings.text }}</p>
   </div>
-  <div class="press-grid">
-    {%- for block in section.blocks -%}
-      <a class="pc" href="{{ block.settings.link }}" target="_blank" rel="noopener" {{ block.shopify_attributes }}>
-        <figure>
-          {%- if block.settings.image != blank -%}
-            <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title | escape }}" loading="lazy" width="1200" height="800">
-          {%- elsif block.settings.image_url != blank -%}
-            <img src="{{ block.settings.image_url }}" alt="{{ block.settings.title | escape }}" loading="lazy" width="1200" height="800">
-          {%- endif -%}
-        </figure>
-        <div class="body">
-          <div class="out">{{ block.settings.outlet }}</div>
-          <div class="t">{{ block.settings.title }}</div>
-          <div class="by">{{ block.settings.byline }}</div>
-        </div>
-      </a>
-    {%- endfor -%}
+  <div class="press-mq">
+    <div class="press-track">
+      {%- for i in (1..2) -%}
+        {%- for block in section.blocks -%}
+          <a class="pc" href="{{ block.settings.link }}" target="_blank" rel="noopener"
+            {% if i == 2 %}aria-hidden="true" tabindex="-1"{% else %}{{ block.shopify_attributes }}{% endif %}>
+            <figure>
+              {%- if block.settings.image != blank -%}
+                <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title | escape }}" loading="lazy" width="1200" height="800">
+              {%- elsif block.settings.image_url != blank -%}
+                <img src="{{ block.settings.image_url }}" alt="{{ block.settings.title | escape }}" loading="lazy" width="1200" height="800">
+              {%- endif -%}
+            </figure>
+            <div class="body">
+              <div class="out">{{ block.settings.outlet }}</div>
+              <div class="t">{{ block.settings.title }}</div>
+              <div class="by">{{ block.settings.byline }}</div>
+            </div>
+          </a>
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
   </div>
   {%- if section.settings.more != blank -%}
     <div class="press-more">{{ section.settings.more }}</div>
