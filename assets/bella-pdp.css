@@ -69,6 +69,10 @@
 .def .rte h4:empty,.def .rte h3:empty{display:none}
 .def .rte p{margin:0 0 13px;color:var(--soft);font-size:15px;line-height:1.7;max-width:68ch}
 .def .rte div[class*="elfsight"]{display:none}
+.def .rte ul{list-style:none;margin:6px 0 18px;padding:0;max-width:68ch}
+.def .rte ul li{position:relative;padding:7px 0 7px 28px;color:var(--soft);font-size:15px;line-height:1.65}
+.def .rte ul li::before{content:"✓";position:absolute;left:2px;color:var(--green)}
+.def .rte a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
 .def-more{margin-top:20px;border-top:1px solid var(--line);padding-top:14px}
 .def-more summary{list-style:none;cursor:pointer;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:8px}
 .def-more summary::-webkit-details-marker{display:none}
