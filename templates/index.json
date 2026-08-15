@@ -160,10 +160,37 @@
           "outlet": "MIAMI HERALD",
           "title": "Miami Digital Staging to Sell",
           "byline": "by Michael Butler",
-          "link": "https://www.miamiherald.com/news/business/real-estate-news/article277824868.html" } }
+          "link": "https://www.miamiherald.com/news/business/real-estate-news/article277824868.html" } },
+        "p5": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/cbc-virtual-staging.png?width=800",
+          "outlet": "CBC NEWS",
+          "title": "Virtual staging featured on CBC",
+          "byline": "as seen on CBC News",
+          "link": "https://www.bellavirtual.com/cdn/shop/files/cbc-virtual-staging.png" } },
+        "p6": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=800",
+          "outlet": "STOREYS",
+          "title": "From Listings To Leases, Virtual Staging Is Changing The Property Marketing Game",
+          "byline": "by Zakiya Kassam",
+          "link": "https://storeys.com/virtual-staging-is-changing-the-property-marketing-game/" } },
+        "p7": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/Kristi_Foxgrover_-_6_Bay_Tree_Blu_Skye_Media-7881-Edit-Edit_final-ink.jpeg?width=800",
+          "outlet": "AUTHORITY MAGAZINE",
+          "title": "JD Lloyd of Bella Virtual Staging on Five Things You Need to Succeed in Real Estate",
+          "byline": "by Jason Hartman",
+          "link": "https://medium.com/authority-magazine/jd-lloyd-of-bella-virtual-staging-on-five-things-you-need-to-know-to-succeed-in-the-real-estate-25f05fa027d2" } },
+        "p8": { "type": "article", "settings": {
+          "image_url": "https://www.bellavirtual.com/cdn/shop/files/1516_Vancouver_Blu_Skye_Media-6818MLS_final-ink.jpeg?width=800",
+          "outlet": "PR NEWSWIRE",
+          "title": "Bella Staging Helps Home Buyers Imagine the Possibilities",
+          "byline": "May 2020",
+          "link": "https://www.prnewswire.com/news-releases/bella-staging-helps-home-buyers-imagine-the-possibilities-301059154.html" } }
       },
-      "block_order": ["p1", "p2", "p3", "p4"],
-      "settings": {}
+      "block_order": ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8"],
+      "settings": {
+        "text": "Fortune, CBC News, The Globe and Mail, Inman, Storeys and the Miami Herald have all looked at what we make. Every link below goes to the original coverage.",
+        "more": "Also covered by Yahoo Finance · Real Estate Magazine · Geek Estate · ValiantCEO · Vancouver Awesome · Bob Vila — and winner of Best of Houzz 2021"
+      }
     },
     "reviews": {
       "type": "bella-testimonials",
