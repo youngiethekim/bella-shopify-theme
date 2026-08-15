@@ -140,7 +140,7 @@
   function paint() {
     var on = parseInt(qty.value, 10) === n;
     reco.classList.toggle('on', on);
-    txt.textContent = on ? 'Recommended amount' : 'Recommended: ' + n;
+    txt.textContent = on ? 'Most popular' : 'Most popular: ' + n;
   }
   reco.addEventListener('click', function (e) {
     e.preventDefault();
