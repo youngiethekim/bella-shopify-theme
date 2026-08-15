@@ -101,7 +101,7 @@
           <div class="bb-group">
             <label class="bb-lbl" for="BuyQty"><span class="bb-num">{{ step }}</span>{{ section.settings.qty_label }}
               {%- if section.settings.reco_text != blank -%}
-                <button type="button" class="bb-reco tt" id="BbReco" data-reco="{{ section.settings.default_qty }}" data-tip="{{ section.settings.reco_text | escape }}"><span class="br-star" aria-hidden="true">★</span><span class="br-txt">Recommended amount</span></button>
+                <button type="button" class="bb-reco tt" id="BbReco" data-reco="{{ section.settings.default_qty }}" data-tip="{{ section.settings.reco_text | escape }}"><span class="br-star" aria-hidden="true">★</span><span class="br-txt">Most popular</span></button>
               {%- endif -%}
             </label>
             <div class="bb-row bb-qtyrow">
@@ -236,7 +236,7 @@
     { "type": "textarea", "id": "variant_specs", "label": "Per-variant spec lines (Variant title | spec text, one per line)" },
     { "type": "text", "id": "qty_label", "label": "Quantity step label", "default": "How many photos?" },
     { "type": "range", "id": "default_qty", "label": "Starting quantity", "min": 1, "max": 20, "step": 1, "default": 8 },
-    { "type": "text", "id": "reco_text", "label": "Recommended amount tooltip (empty = hide badge)" },
+    { "type": "text", "id": "reco_text", "label": "Most popular tooltip (empty = hide badge)" },
     { "type": "text", "id": "unit_label", "label": "Unit name", "default": "photo" },
     { "type": "text", "id": "style_label", "label": "Style step label", "default": "Staging style" },
     { "type": "text", "id": "style_options", "label": "Style choices (comma-separated, empty = hide)", "default": "Modern, Scandinavian, Contemporary, Coastal, Farmhouse, Traditional, Industrial, Luxury" },
@@ -284,8 +284,7 @@
         { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [
           { "value": "none", "label": "None" }, { "value": "note", "label": "Price tag" }, { "value": "clock", "label": "Clock" },
           { "value": "pen", "label": "Pen" }, { "value": "shield", "label": "Shield" }, { "value": "doc", "label": "Document" },
-          { "value": "sofa", "label": "Sofa" }, { "value": "star", "label": "Star" }, { "value": "upload", "label": "Upload" },
-          { "value": "roller", "label": "Paint roller" } ] },
+          { "value": "sofa", "label": "Sofa" }, { "value": "star", "label": "Star" }, { "value": "upload", "label": "Upload" } ] },
         { "type": "html", "id": "text", "label": "Text (b for emphasis)", "default": "From <b>$45</b> / photo" }
       ]
     }
