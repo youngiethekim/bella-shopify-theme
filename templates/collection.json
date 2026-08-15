@@ -24,11 +24,23 @@
             "cta": "Order virtual staging →"
           }
         },
+        "f5": {
+          "type": "feature",
+          "settings": {
+            "product": "virtual-renovation",
+            "eyebrow": "02 · Virtual Renovation",
+            "title": "Virtual Renovation",
+            "unit": "photo",
+            "audience": "agents · investors · property flippers",
+            "text": "Dated finishes modernized digitally — new floors, paint, counters and fixtures, then staged by a designer. Show the after, without doing the renovation.",
+            "cta": "Order virtual renovation →"
+          }
+        },
         "f2": {
           "type": "feature",
           "settings": {
             "product": "3d-rendering",
-            "eyebrow": "02 · 3D Renderings",
+            "eyebrow": "03 · 3D Renderings",
             "title": "3D Renderings",
             "unit": "render",
             "audience": "home builders · developers · architects",
@@ -40,7 +52,7 @@
           "type": "feature",
           "settings": {
             "product": "2d-3d-floor-plan-service",
-            "eyebrow": "03 · Floor Plans",
+            "eyebrow": "04 · Floor Plans",
             "title": "Floor Plans",
             "unit": "floor",
             "audience": "agents · home builders · property managers",
@@ -52,7 +64,7 @@
           "type": "feature",
           "settings": {
             "product": "photo-editing",
-            "eyebrow": "04 · Photo Editing",
+            "eyebrow": "05 · Photo Editing",
             "title": "Photo Editing",
             "unit": "photo",
             "audience": "agents · photographers · property managers",
@@ -63,6 +75,7 @@
       },
       "block_order": [
         "f1",
+        "f5",
         "f2",
         "f3",
         "f4"

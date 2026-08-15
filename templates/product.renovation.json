@@ -1,0 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "note",
+            "text": "<b>$69</b> / photo"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "roller",
+            "text": "New <b>floors, paint & fixtures</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "sofa",
+            "text": "<b>Staging included</b>"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "icon": "shield",
+            "text": "<b>Rework or refund</b>"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "style_options": "",
+        "show_notes": false,
+        "collapse_description": false,
+        "assure_1_icon": "upload",
+        "assure_2_icon": "pen",
+        "assure_3_icon": "shield",
+        "lede": "Dated rooms modernized digitally — new floors, paint and fixtures, then staged by a real designer. Show buyers the after, without doing the renovation.",
+        "unit_label": "photo",
+        "qty_label": "How many photos?",
+        "default_qty": 5,
+        "reco_text": "Renovate the rooms that date the home — kitchen, baths and the main living areas usually cover it in 4–6 photos.",
+        "assure_1": "Upload photos after checkout",
+        "assure_2": "Unlimited revisions · 2 weeks",
+        "assure_3": "Rework or refund",
+        "assure_1_tip": "Your order confirmation includes an upload link — send photos whenever they're ready.",
+        "assure_2_tip": "Mark up anything you'd like changed — finishes, colors, furniture — free for two weeks.",
+        "assure_3_tip": "If a photo still isn't right after rework, we refund that photo.",
+        "def_heading": "About this service",
+        "shot_label": "Virtually renovated by a Bella designer"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & upload",
+            "text": "Place your order, then send photos of the rooms as they are — dated, cluttered or mid-renovation is fine."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "roller",
+            "title": "We renovate & stage",
+            "text": "Our designers replace floors, paint, counters and fixtures digitally, then stage the finished room to match your market."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Approve & download",
+            "text": "Review the rooms, request any tweaks, and download MLS-ready files with disclosure guidance."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "What can you change?",
+            "answer": "Finishes: flooring, wall colors, countertops, cabinet fronts, lighting and plumbing fixtures. We never change the structure — no moved walls, added windows or square footage that isn't there."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Is staging included?",
+            "answer": "Yes. Every virtually renovated room is also staged with designer furniture at no extra charge, so the photo is listing-ready."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use these photos on the MLS?",
+            "answer": "Yes, with disclosure. Virtually renovated photos must be clearly disclosed as digitally altered — we build every image to MLS specifications and tell you exactly what to note."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "What if I don't like the result?",
+            "answer": "Unlimited revisions for two weeks after delivery. If it's still not right, we rework it or refund that photo."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you order"
+      }
+    },
+    "related": {
+      "type": "bella-related-links",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Ready to modernize your listing?",
+        "text": "Order today and show buyers the renovated home — without lifting a paintbrush.",
+        "cta_label": "Get started — $69 a photo",
+        "fine_print": "Upload after checkout · Staging included · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "steps",
+    "faq",
+    "related",
+    "cta"
+  ]
+}
