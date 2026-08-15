@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual staging near you",
+        "heading": "Virtual Staging in Vancouver, BC",
+        "lede": "Bella is headquartered in Vancouver — the designers staging listings across North America work from right here in BC. Send your listing photos and get designer-staged, MLS-ready images back in 24 to 48 hours, from $45 a photo.",
+        "cta_label": "Stage my listing — from $45",
+        "cta_link": "/products/virtual-staging-1",
+        "alt_label": "Browse the lookbook",
+        "alt_link": "/pages/lookbook",
+        "city": "Vancouver",
+        "market_heading": "Why staging matters in the Vancouver market",
+        "market_text": "<p>Vancouver buyers shop online first, and the region's housing stock is hard on empty photos: glass condo towers shot against grey skies read cold, and compact downtown floor plans look even smaller unfurnished. Staging fills the square footage believably, so a 550 sq ft Yaletown one-bed reads as a home rather than a box with a view.</p><p>With presales and assignments a constant part of the market, many Vancouver listings can't be photographed furnished at all. Virtual staging — and for unbuilt units, 3D rendering — lets you market the lifestyle before the furniture, or the building, exists.</p>",
+        "local_heading": "Staged for the Vancouver buyer",
+        "local_text": "<p>Our designers match furnishing to the local buyer: clean west-coast modern with light woods and glass for downtown condos, warmer transitional looks for East Van character homes and North Shore family houses. Every image is composed by hand, disclosed as virtually staged, and sized to REBGV MLS specs.</p>",
+        "hoods_label": "Where we stage most",
+        "hoods": "Yaletown, Coal Harbour, Kitsilano, Mount Pleasant, East Vancouver, North Vancouver, Burnaby, Richmond, Surrey"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "I am so pleased with your services. The virtual staging was awesome. We sold my listing in 8 days with multiple offers.",
+        "attribution": "Joe Benvenuto · Real estate agent, San Francisco CA",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Stage your Vancouver listing this week.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
+        "cta_label": "Get started — from $45 a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "quote",
+    "cta"
+  ]
+}

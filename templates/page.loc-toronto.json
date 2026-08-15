@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual staging near you",
+        "heading": "Virtual Staging in Toronto, ON",
+        "lede": "Toronto's listings live or die in the first three photos on the MLS and Realtor.ca. Bella's designers stage your photos in 24 to 48 hours, from $45 a photo — a fraction of what a downtown staging company charges for a single month.",
+        "cta_label": "Stage my listing — from $45",
+        "cta_link": "/products/virtual-staging-1",
+        "alt_label": "Browse the lookbook",
+        "alt_link": "/pages/lookbook",
+        "city": "Toronto",
+        "market_heading": "Why staging matters in the Toronto market",
+        "market_text": "<p>Toronto is one of the most condo-dense markets in North America, and an empty 500 sq ft unit in a King West tower photographs like every other empty unit in the building. Staging is how a listing separates itself when a buyer is flipping through forty near-identical floor plans.</p><p>For freehold listings, presentation drives the offer-night dynamic: a staged, well-photographed semi in Leslieville draws more showings, and more showings drive the competition that Toronto pricing strategies depend on.</p>",
+        "local_heading": "Staged for the Toronto buyer",
+        "local_text": "<p>We stage a lot of downtown condos and lofts, Victorian semis, and family homes across the 416 and 905. Furnishing is matched to the buyer each home attracts — sleek contemporary for Liberty Village, warmer family looks for North York and Mississauga — and every image ships MLS-ready with disclosure guidance.</p>",
+        "hoods_label": "Where we stage most",
+        "hoods": "King West, Liberty Village, Leslieville, The Annex, Yorkville, Etobicoke, North York, Scarborough, Mississauga, Vaughan"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+        "attribution": "Beverly Bahm · Real estate agent, Chicago IL",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Stage your Toronto listing this week.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
+        "cta_label": "Get started — from $45 a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "quote",
+    "cta"
+  ]
+}
