@@ -188,7 +188,7 @@
           {%- comment -%} strip the description's own FAQ — the designed FAQ section below covers it {%- endcomment -%}
           {%- assign dsource = product.description | split: '<h4>Frequently asked' | first | split: '<h4>Frequently Asked' | first | split: '<h4>FAQ' | first -%}
           {%- assign dparts = dsource | split: '</p>' -%}
-          {%- if dparts.size > 1 -%}
+          {%- if section.settings.collapse_description and dparts.size > 1 -%}
             {%- assign dlede = dparts.first | append: '</p>' -%}
             {%- assign drest = dsource | remove_first: dlede -%}
             <div class="rte def-lede">{{ dlede }}</div>
@@ -198,6 +198,11 @@
                 <div class="rte">{{ drest }}</div>
               </details>
             {%- endif -%}
+          {%- elsif dparts.size > 1 -%}
+            {%- assign dlede = dparts.first | append: '</p>' -%}
+            {%- assign drest = dsource | remove_first: dlede -%}
+            <div class="rte def-lede">{{ dlede }}</div>
+            <div class="rte">{{ drest }}</div>
           {%- else -%}
             <div class="rte">{{ product.description }}</div>
           {%- endif -%}
@@ -268,7 +273,8 @@
     { "type": "header", "content": "Description section" },
     { "type": "text", "id": "def_eyebrow", "label": "Eyebrow", "default": "What it is" },
     { "type": "text", "id": "def_heading", "label": "Heading", "default": "What you get" },
-    { "type": "text", "id": "def_more_label", "label": "Expand link label", "default": "Read the full service details" }
+    { "type": "text", "id": "def_more_label", "label": "Expand link label", "default": "Read the full service details" },
+    { "type": "checkbox", "id": "collapse_description", "label": "Collapse details behind 'Read more'", "default": true }
   ],
   "blocks": [
     {
@@ -278,7 +284,8 @@
         { "type": "select", "id": "icon", "label": "Icon", "default": "none", "options": [
           { "value": "none", "label": "None" }, { "value": "note", "label": "Price tag" }, { "value": "clock", "label": "Clock" },
           { "value": "pen", "label": "Pen" }, { "value": "shield", "label": "Shield" }, { "value": "doc", "label": "Document" },
-          { "value": "sofa", "label": "Sofa" }, { "value": "star", "label": "Star" }, { "value": "upload", "label": "Upload" } ] },
+          { "value": "sofa", "label": "Sofa" }, { "value": "star", "label": "Star" }, { "value": "upload", "label": "Upload" },
+          { "value": "roller", "label": "Paint roller" } ] },
         { "type": "html", "id": "text", "label": "Text (b for emphasis)", "default": "From <b>$45</b> / photo" }
       ]
     }
