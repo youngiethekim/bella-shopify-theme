@@ -265,3 +265,19 @@
   var btn = box.querySelector('.prod-buy');
   if (btn) box.insertBefore(row, btn); else box.appendChild(row);
 })();
+
+/* floating order CTA: appears once the user starts scrolling */
+(function () {
+  var fl = document.getElementById('BbFloat');
+  if (!fl) return;
+  var tick = false;
+  function update() {
+    tick = false;
+    var y = window.scrollY || document.documentElement.scrollTop;
+    fl.classList.toggle('on', y > 320);
+  }
+  window.addEventListener('scroll', function () {
+    if (!tick) { tick = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
