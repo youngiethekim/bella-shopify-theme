@@ -46,10 +46,11 @@
       "blocks": {
         "w1": { "type": "item", "settings": { "icon": "star", "title": "Win the listing presentation", "text": "Walk into the pitch with the seller's rooms already staged — sellers pick the agent who shows them the potential." } },
         "w2": { "type": "item", "settings": { "icon": "clock", "title": "Sell empty homes faster", "text": "Vacant listings feel cold and photograph small. Staged photos get the showing booked before a competitor's does." } },
-        "w3": { "type": "item", "settings": { "icon": "sofa", "title": "Help buyers fall in love", "text": "Buyers decide in the first three photos. A staged room lets them feel home — not just see a floor." } }
+        "w3": { "type": "item", "settings": { "icon": "sofa", "title": "Help buyers fall in love", "text": "Buyers decide in the first three photos. A staged room lets them feel home — not just see a floor." } },
+        "w4": { "type": "item", "settings": { "icon": "note", "title": "Save your clients thousands", "text": "Conventional staging runs $2,000–5,000 a month until the home sells — and the furniture leaves. Virtual staging does the same job once, from $45 a photo." } }
       },
-      "block_order": ["w1", "w2", "w3"],
-      "settings": { "eyebrow": "How agents use it", "heading": "What staging wins you." }
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": { "eyebrow": "How agents use it", "heading": "How virtual staging wins you." }
     },
     "proof": {
       "type": "bella-proof",
