@@ -314,3 +314,14 @@
 .rte .gd-check li{position:relative;padding:7px 0 7px 28px;color:var(--soft);font-size:15px;line-height:1.65}
 .rte .gd-check li::before{content:"✓";position:absolute;left:2px;color:var(--green)}
 @media(max-width:700px){.rte .gd-num{grid-template-columns:1fr}}
+/* ---- requirements & deliverables ---- */
+.reqs-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:26px}
+.reqs-h{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:4px}
+.reqs-list{list-style:none;margin:10px 0 0;padding:0}
+.reqs-list li{position:relative;padding:9px 0 9px 30px;color:var(--soft);font-size:15px;line-height:1.65;border-bottom:1px solid var(--line-2)}
+.reqs-list li:last-child{border-bottom:0}
+.reqs-list.req li::before{content:"→";position:absolute;left:2px;color:var(--ink)}
+.reqs-list.ok li::before{content:"✓";position:absolute;left:2px;color:var(--green)}
+.reqs-list li strong{color:var(--ink);font-weight:500}
+.reqs-note{margin-top:18px;font-size:12.5px;color:var(--faint);line-height:1.6;max-width:78ch}
+@media(max-width:760px){.reqs-grid{grid-template-columns:1fr;gap:28px}}
