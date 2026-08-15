@@ -12,12 +12,41 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "u1": { "type": "usp", "settings": { "text": "<b>$45</b> / photo", "icon": "note" } },
-        "u2": { "type": "usp", "settings": { "text": "Back in <b>24–48 hrs</b>", "icon": "clock" } },
-        "u3": { "type": "usp", "settings": { "text": "<b>Unlimited revisions</b>, 2 weeks", "icon": "pen" } },
-        "u4": { "type": "usp", "settings": { "text": "<b>Rework or refund</b>", "icon": "shield" } }
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>$45</b> / photo",
+            "icon": "note"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "text": "Back in <b>24–48 hrs</b>",
+            "icon": "clock"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>Unlimited revisions</b>, 2 weeks",
+            "icon": "pen"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>Rework or refund</b>",
+            "icon": "shield"
+          }
+        }
       },
-      "block_order": ["u1", "u2", "u3", "u4"],
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
       "settings": {
         "style_options": "",
         "show_notes": false,
@@ -34,71 +63,238 @@
     "steps": {
       "type": "bella-steps",
       "blocks": {
-        "s1": { "type": "step", "settings": { "title": "Order & upload", "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.", "icon": "upload" } },
-        "s2": { "type": "step", "settings": { "title": "A designer stages it", "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.", "icon": "sofa" } },
-        "s3": { "type": "step", "settings": { "title": "Approve & download", "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.", "icon": "check" } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
       "settings": {}
-    },
-    "uses": {
-      "type": "bella-included",
-      "blocks": {
-        "w1": { "type": "item", "settings": { "icon": "star", "title": "Win the listing presentation", "text": "Walk into the pitch with the seller's rooms already staged — sellers pick the agent who shows them the potential." } },
-        "w2": { "type": "item", "settings": { "icon": "clock", "title": "Sell empty homes faster", "text": "Vacant listings feel cold and photograph small. Staged photos get the showing booked before a competitor's does." } },
-        "w3": { "type": "item", "settings": { "icon": "sofa", "title": "Help buyers fall in love", "text": "Buyers decide in the first three photos. A staged room lets them feel home — not just see a floor." } },
-        "w4": { "type": "item", "settings": { "icon": "note", "title": "Save your clients thousands", "text": "Conventional staging runs $2,000–5,000 a month until the home sells — and the furniture leaves. Virtual staging does the same job once, from $45 a photo." } }
-      },
-      "block_order": ["w1", "w2", "w3", "w4"],
-      "settings": { "eyebrow": "How agents use it", "heading": "How virtual staging wins you." }
     },
     "proof": {
       "type": "bella-proof",
       "blocks": {
-        "st1": { "type": "stat", "settings": { "figure": "82%", "text": "of buyers' agents say staging makes it easier for buyers to visualize a property as their future home.", "source": "NAR" } },
-        "st2": { "type": "stat", "settings": { "figure": "97%", "text": "of home buyers start their search online, where your photos are the whole first impression.", "source": "NAR" } },
-        "st3": { "type": "stat", "settings": { "figure": "24–48h", "text": "from upload to MLS-ready staged photos, so your listing never waits on a moving truck.", "source": "Bella turnaround" } }
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "figure": "82%",
+            "text": "of buyers' agents say staging makes it easier for buyers to visualize a property as their future home.",
+            "source": "NAR",
+            "icon": "eye"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "figure": "97%",
+            "text": "of home buyers start their search online, where your photos are the whole first impression.",
+            "source": "NAR",
+            "icon": "image"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "figure": "24–48h",
+            "text": "from upload to MLS-ready staged photos, so your listing never waits on a moving truck.",
+            "source": "Bella turnaround",
+            "icon": "clock"
+          }
+        }
       },
-      "block_order": ["st1", "st2", "st3"],
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
       "settings": {}
     },
     "included": {
       "type": "bella-included",
       "blocks": {
-        "i1": { "type": "item", "settings": { "title": "Furniture removal included", "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean.", "icon": "eraser" } },
-        "i2": { "type": "item", "settings": { "title": "Any style", "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own.", "icon": "swatch" } },
-        "i3": { "type": "item", "settings": { "title": "MLS-ready files", "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance.", "icon": "doc" } },
-        "i4": { "type": "item", "settings": { "title": "Unlimited revisions", "text": "Free for two weeks after delivery, with a rework-or-refund guarantee.", "icon": "clock" } }
+        "i1": {
+          "type": "item",
+          "settings": {
+            "title": "Furniture removal included",
+            "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean.",
+            "icon": "eraser"
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "title": "Any style",
+            "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own.",
+            "icon": "swatch"
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "title": "MLS-ready files",
+            "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance.",
+            "icon": "doc"
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "title": "Unlimited revisions",
+            "text": "Free for two weeks after delivery, with a rework-or-refund guarantee.",
+            "icon": "clock"
+          }
+        }
       },
-      "block_order": ["i1", "i2", "i3", "i4"],
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
       "settings": {}
     },
     "tips": {
       "type": "bella-included",
       "blocks": {
-        "t1": { "type": "item", "settings": { "icon": "image", "title": "Shoot wide and level", "text": "Landscape photos taken at chest height with the whole room in frame stage best." } },
-        "t2": { "type": "item", "settings": { "icon": "sofa", "title": "Cover the rooms that sell", "text": "Living room, kitchen and primary bedroom do the heavy lifting on the MLS — stage those first." } },
-        "t3": { "type": "item", "settings": { "icon": "note", "title": "Order 6+ and save", "text": "Volume pricing applies automatically — 10% off at six photos, 15% at eleven, 20% at twenty-one." } },
-        "t4": { "type": "item", "settings": { "icon": "swatch", "title": "Browse the lookbook first", "text": "Save your favorite looks and attach them to your order so your designer matches your taste." } }
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Shoot wide and level",
+            "text": "Landscape photos taken at chest height with the whole room in frame stage best."
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Cover the rooms that sell",
+            "text": "Living room, kitchen and primary bedroom do the heavy lifting on the MLS — stage those first."
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Order 6+ and save",
+            "text": "Volume pricing applies automatically — 10% off at six photos, 15% at eleven, 20% at twenty-one."
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Browse the lookbook first",
+            "text": "Save your favorite looks and attach them to your order so your designer matches your taste."
+          }
+        }
       },
-      "block_order": ["t1", "t2", "t3", "t4"],
-      "settings": { "eyebrow": "Best practices", "heading": "Get the most from your staging" }
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Best practices",
+        "heading": "Get the most from your staging"
+      }
     },
     "faq": {
       "type": "bella-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "When do I send my photos?", "answer": "After checkout. Your order confirmation includes an upload link, so you can order now and send the photos whenever they're ready — nothing is needed up front." } },
-        "q2": { "type": "qa", "settings": { "question": "How much does it cost?", "answer": "From $45 per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one. A typical eight-photo listing runs about $324." } },
-        "q3": { "type": "qa", "settings": { "question": "How long does it take?", "answer": "24 to 48 hours from the moment you upload, with unlimited revisions free for two weeks and a rework-or-refund guarantee." } },
-        "q4": { "type": "qa", "settings": { "question": "Is it allowed on the MLS?", "answer": "Yes. Virtually staged photos are widely used on the MLS as long as they're disclosed as virtually staged. We build every image to MLS specifications and tell you exactly what to note." } },
-        "q5": { "type": "qa", "settings": { "question": "Can you stage occupied or cluttered rooms?", "answer": "Yes, at no extra charge. Furniture removal is included free — we digitally clear the existing furniture first, then stage the empty room." } },
-        "q6": { "type": "qa", "settings": { "question": "Can you also fix walls, floors or other items?", "answer": "Yes — that's our Virtual Renovation service. We digitally modernize walls, floors and fixtures, then stage the room, from $69 a photo. Order it from the Virtual Renovation page." } },
-        "q7": { "type": "qa", "settings": { "question": "Why Bella over cheaper services?", "answer": "Quality over quantity. Every photo is composed by hand by a professional interior designer and carefully finished — we believe higher-quality images bring more buyers to the listing and help it sell at a higher price. And with unlimited revisions and a rework-or-refund guarantee, you're never stuck with an image you can't use." } }
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "When do I send my photos?",
+            "answer": "After checkout. Your order confirmation includes an upload link, so you can order now and send the photos whenever they're ready — nothing is needed up front."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost?",
+            "answer": "From $45 per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one. A typical eight-photo listing runs about $324."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does it take?",
+            "answer": "24 to 48 hours from the moment you upload, with unlimited revisions free for two weeks and a rework-or-refund guarantee."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Is it allowed on the MLS?",
+            "answer": "Yes. Virtually staged photos are widely used on the MLS as long as they're disclosed as virtually staged. We build every image to MLS specifications and tell you exactly what to note."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage occupied or cluttered rooms?",
+            "answer": "Yes, at no extra charge. Furniture removal is included free — we digitally clear the existing furniture first, then stage the empty room."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you also fix walls, floors or other items?",
+            "answer": "Yes — that's our Virtual Renovation service. We digitally modernize walls, floors and fixtures, then stage the room, from $69 a photo. Order it from the Virtual Renovation page."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Why Bella over cheaper services?",
+            "answer": "Quality over quantity. Every photo is composed by hand by a professional interior designer and carefully finished — we believe higher-quality images bring more buyers to the listing and help it sell at a higher price. And with unlimited revisions and a rework-or-refund guarantee, you're never stuck with an image you can't use."
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
-      "settings": { "eyebrow": "Questions", "heading": "Before you order" }
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you order"
+      }
     },
-    "related": { "type": "bella-related-links", "settings": {} },
+    "related": {
+      "type": "bella-related-links",
+      "settings": {}
+    },
     "cta": {
       "type": "bella-end-cta",
       "settings": {
@@ -108,7 +304,91 @@
         "cta_label": "Get started — from $45 a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "uses": {
+      "type": "bella-included",
+      "blocks": {
+        "w1": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Win the listing presentation",
+            "text": "Walk into the pitch with the seller's rooms already staged — sellers pick the agent who shows them the potential."
+          }
+        },
+        "w2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Sell empty homes faster",
+            "text": "Vacant listings feel cold and photograph small. Staged photos get the showing booked before a competitor's does."
+          }
+        },
+        "w3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Help buyers fall in love",
+            "text": "Buyers decide in the first three photos. A staged room lets them feel home — not just see a floor."
+          }
+        },
+        "w4": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Save your clients thousands",
+            "text": "Conventional staging runs $2,000–5,000 a month until the home sells — and the furniture leaves. Virtual staging does the same job once, from $45 a photo."
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3",
+        "w4"
+      ],
+      "settings": {
+        "eyebrow": "How agents use it",
+        "heading": "How virtual staging wins you."
+      }
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+        "attribution": "Beverly Bahm · Real estate agent, Chicago IL",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "math": {
+      "type": "bella-value",
+      "settings": {
+        "eyebrow": "The math",
+        "heading": "Same result. A fraction of the cost.",
+        "old_label": "Physical staging",
+        "old_amount": "$2,000–5,000",
+        "old_per": "a month · until it sells · the furniture goes back",
+        "new_label": "Bella virtual staging",
+        "new_amount": "$45",
+        "new_per": "a photo · paid once · yours for the whole listing",
+        "note": "Staging does one job: it shows buyers the full potential of a home. Real furniture or virtual, a staged room sets the scene, fills the space, and lets a buyer imagine themselves living there. The only real difference is the bill: physical staging runs thousands a month and leaves the day the home sells, while Bella does the same job once — technology and a real designer, for about a tenth of the cost.",
+        "cta_label": "",
+        "also_label": ""
+      }
     }
   },
-  "order": ["main", "steps", "uses", "proof", "included", "tips", "faq", "related", "cta"]
+  "order": [
+    "main",
+    "steps",
+    "uses",
+    "proof",
+    "quote",
+    "included",
+    "math",
+    "tips",
+    "faq",
+    "related",
+    "cta"
+  ]
 }
