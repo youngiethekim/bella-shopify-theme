@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual staging near you",
+        "heading": "Virtual Staging in Chicago, IL",
+        "lede": "From Loop high-rises to brick two-flats, Bella stages Chicago listings in 24 to 48 hours, from $45 a photo. Ask Beverly — her staged listing drew an offer in four days.",
+        "cta_label": "Stage my listing — from $45",
+        "cta_link": "/products/virtual-staging-1",
+        "alt_label": "Browse the lookbook",
+        "alt_link": "/pages/lookbook",
+        "city": "Chicago",
+        "market_heading": "Why staging matters in the Chicago market",
+        "market_text": "<p>Chicago's signature stock — vintage condos, greystones and two-flats — photographs with beautiful bones and empty, echoing rooms. Staging warms the vintage details buyers love while proving the rooms hold modern furniture, the doubt that stalls showings on older stock.</p><p>Chicago is also fiercely seasonal: listings that launch in spring market weeks compete with everything else that waited for March. A staged listing stands out in the flood — and in the winter months, staged photos keep a listing feeling warm when the light outside is grey.</p>",
+        "local_heading": "Staged for the Chicago buyer",
+        "local_text": "<p>Designers stage clean contemporary for West Loop and River North condos, warm transitional for Lincoln Park and Lakeview vintage units, and family looks for the North Shore and western suburbs. MLS-ready files in 24 to 48 hours, disclosure guidance included.</p>",
+        "hoods_label": "Where we stage most",
+        "hoods": "Lincoln Park, West Loop, River North, Wicker Park, Logan Square, Lakeview, Gold Coast, Hyde Park, Evanston, Oak Park"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+        "attribution": "Beverly Bahm · Real estate agent, Chicago IL",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Stage your Chicago listing this week.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
+        "cta_label": "Get started — from $45 a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "quote",
+    "cta"
+  ]
+}

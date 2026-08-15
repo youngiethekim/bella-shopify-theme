@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual staging near you",
+        "heading": "Virtual Staging in Tampa, FL",
+        "lede": "One of America's busiest relocation markets, shopped largely from out of state. Bella stages Tampa Bay listings in 24 to 48 hours, from $45 a photo.",
+        "cta_label": "Stage my listing — from $45",
+        "cta_link": "/products/virtual-staging-1",
+        "alt_label": "Browse the lookbook",
+        "alt_link": "/pages/lookbook",
+        "city": "Tampa",
+        "market_heading": "Why staging matters in the Tampa market",
+        "market_text": "<p>Tampa Bay has spent years near the top of national relocation lists, and the buyers arriving from the Northeast and Midwest do most of their shopping before the moving truck is booked. For them the listing photos are the property tour — and an empty stucco ranch with tile floors reads as an echo, not a home.</p><p>The bay itself does heavy lifting in local marketing: staged waterfront lanais, pool decks and bonus rooms consistently out-perform interior shots. We stage outdoor living too, and day-to-dusk editing turns a flat exterior into the sunset-over-the-water shot.</p>",
+        "local_heading": "Staged for the Tampa buyer",
+        "local_text": "<p>Our designers stage coastal-bright for South Tampa and St. Pete condos, airy transitional for Wesley Chapel and Brandon family homes, and clean modern for Channelside towers. Stellar MLS-ready files in 24 to 48 hours, disclosure guidance included.</p>",
+        "hoods_label": "Where we stage most",
+        "hoods": "South Tampa, Hyde Park, Seminole Heights, Channelside, Westchase, St. Petersburg, Clearwater, Wesley Chapel, Brandon, Riverview"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "I am so pleased with your services. The virtual staging was awesome. We sold my listing in 8 days with multiple offers.",
+        "attribution": "Joe Benvenuto · Real estate agent, San Francisco CA",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Stage your Tampa listing this week.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
+        "cta_label": "Get started — from $45 a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "quote",
+    "cta"
+  ]
+}
