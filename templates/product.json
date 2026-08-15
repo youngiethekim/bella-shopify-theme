@@ -377,11 +377,90 @@
         "cta_label": "",
         "also_label": ""
       }
+    },
+    "reqs": {
+      "type": "bella-reqs",
+      "blocks": {
+        "rq1": {
+          "type": "req",
+          "settings": {
+            "text": "Photos at least <strong>2,000 × 3,000 pixels</strong> (about 6 MP). This is a hard minimum — smaller files can't be staged to our quality bar and will be declined."
+          }
+        },
+        "rq2": {
+          "type": "req",
+          "settings": {
+            "text": "JPEG or PNG, straight from the camera — unedited originals stage best."
+          }
+        },
+        "rq3": {
+          "type": "req",
+          "settings": {
+            "text": "Shot wide and level at chest height, with the whole room in frame."
+          }
+        },
+        "rq4": {
+          "type": "req",
+          "settings": {
+            "text": "One photo per room or angle you want staged. Occupied or cluttered rooms are fine — furniture removal is included."
+          }
+        },
+        "gt1": {
+          "type": "get",
+          "settings": {
+            "text": "One photorealistic, designer-staged photo per image — composed by hand, never AI."
+          }
+        },
+        "gt2": {
+          "type": "get",
+          "settings": {
+            "text": "<strong>MLS-ready files</strong> at full resolution, with disclosure guidance for your listing."
+          }
+        },
+        "gt3": {
+          "type": "get",
+          "settings": {
+            "text": "Free digital furniture removal wherever the room needs clearing first."
+          }
+        },
+        "gt4": {
+          "type": "get",
+          "settings": {
+            "text": "Delivery by download link in <strong>24–48 hours</strong>."
+          }
+        },
+        "gt5": {
+          "type": "get",
+          "settings": {
+            "text": "Unlimited revisions free for two weeks, backed by rework-or-refund."
+          }
+        }
+      },
+      "block_order": [
+        "rq1",
+        "rq2",
+        "rq3",
+        "rq4",
+        "gt1",
+        "gt2",
+        "gt3",
+        "gt4",
+        "gt5"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "What we need. What you get.",
+        "text": "No surprises in either direction: here's exactly what your order needs, and exactly what lands in your inbox.",
+        "req_heading": "What we need from you",
+        "get_heading": "What you get back",
+        "note": "Not sure your photos qualify? Send one through the free-sample form or contact us before ordering — we'll tell you straight."
+      }
     }
   },
   "order": [
     "main",
     "steps",
+    "reqs",
     "uses",
     "proof",
     "quote",
