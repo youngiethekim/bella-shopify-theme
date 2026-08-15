@@ -12,12 +12,41 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "u1": { "type": "usp", "settings": { "icon": "note", "text": "From <b>$5</b> / photo" } },
-        "u2": { "type": "usp", "settings": { "icon": "clock", "text": "Back in <b>24 hrs</b>" } },
-        "u3": { "type": "usp", "settings": { "icon": "pen", "text": "<b>Edited by hand</b>, not AI" } },
-        "u4": { "type": "usp", "settings": { "icon": "shield", "text": "<b>Rework or refund</b>" } }
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "note",
+            "text": "From <b>$5</b> / photo"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "clock",
+            "text": "Back in <b>24 hrs</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "pen",
+            "text": "<b>Edited by hand</b>, not AI"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "icon": "shield",
+            "text": "<b>Rework or refund</b>"
+          }
+        }
       },
-      "block_order": ["u1", "u2", "u3", "u4"],
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
       "settings": {
         "style_options": "",
         "show_notes": false,
@@ -42,31 +71,71 @@
     "steps": {
       "type": "bella-steps",
       "blocks": {
-        "s1": { "type": "step", "settings": { "icon": "upload", "title": "Order & upload", "text": "Place your order, then upload your photos — right after checkout or whenever you're ready." } },
-        "s2": { "type": "step", "settings": { "icon": "pen", "title": "Editors get to work", "text": "Our retouching team blends, corrects and cleans each photo by hand." } },
-        "s3": { "type": "step", "settings": { "icon": "check", "title": "Approve & download", "text": "Review your photos, request any tweaks, and download MLS-ready files." } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & upload",
+            "text": "Place your order, then upload your photos — right after checkout or whenever you're ready."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "Editors get to work",
+            "text": "Our retouching team blends, corrects and cleans each photo by hand."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Approve & download",
+            "text": "Review your photos, request any tweaks, and download MLS-ready files."
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
       "settings": {}
-    },
-    "uses": {
-      "type": "bella-included",
-      "blocks": {
-        "w1": { "type": "item", "settings": { "icon": "sun", "title": "Stop the scroll", "text": "A twilight hero shot stands out in a feed of flat daytime photos — more clicks, more showings." } },
-        "w2": { "type": "item", "settings": { "icon": "eye", "title": "Look professionally shot", "text": "HDR blending makes every window and room read bright and true, even from tricky originals." } },
-        "w3": { "type": "item", "settings": { "icon": "clock", "title": "List today, not next week", "text": "24-hour edits keep your listing on schedule when the shoot didn't go perfectly." } }
-      },
-      "block_order": ["w1", "w2", "w3"],
-      "settings": { "eyebrow": "How clients use it", "heading": "What clean photos win you." }
     },
     "proof": {
       "type": "bella-proof",
       "blocks": {
-        "st1": { "type": "stat", "settings": { "figure": "24h", "text": "typical turnaround from upload to finished, MLS-ready photos.", "source": "Bella turnaround" } },
-        "st2": { "type": "stat", "settings": { "figure": "97%", "text": "of home buyers start their search online — clean photos are the whole first impression.", "source": "NAR" } },
-        "st3": { "type": "stat", "settings": { "figure": "100%", "text": "of edits are covered by our rework-or-refund guarantee.", "source": "Bella guarantee" } }
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "figure": "24h",
+            "text": "typical turnaround from upload to finished, MLS-ready photos.",
+            "source": "Bella turnaround"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "figure": "97%",
+            "text": "of home buyers start their search online — clean photos are the whole first impression.",
+            "source": "NAR"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "figure": "100%",
+            "text": "of edits are covered by our rework-or-refund guarantee.",
+            "source": "Bella guarantee"
+          }
+        }
       },
-      "block_order": ["st1", "st2", "st3"],
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
       "settings": {
         "eyebrow": "The difference it makes",
         "heading": "The same home, day to dusk.",
@@ -79,24 +148,92 @@
     "tips": {
       "type": "bella-included",
       "blocks": {
-        "t1": { "type": "item", "settings": { "icon": "upload", "title": "Upload full-resolution files", "text": "Send originals straight from the camera — more pixels means cleaner blends and swaps." } },
-        "t2": { "type": "item", "settings": { "icon": "sun", "title": "Day-to-dusk your lead photo", "text": "Twilight exteriors stop the scroll — order one for the front shot." } },
-        "t3": { "type": "item", "settings": { "icon": "eye", "title": "Flag the tricky shots", "text": "Note windows, mirrors and flash spots so we route them to major HDR." } },
-        "t4": { "type": "item", "settings": { "icon": "doc", "title": "Batch the whole listing", "text": "One order for the full shoot keeps edits consistent across every room." } }
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "upload",
+            "title": "Upload full-resolution files",
+            "text": "Send originals straight from the camera — more pixels means cleaner blends and swaps."
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Day-to-dusk your lead photo",
+            "text": "Twilight exteriors stop the scroll — order one for the front shot."
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Flag the tricky shots",
+            "text": "Note windows, mirrors and flash spots so we route them to major HDR."
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Batch the whole listing",
+            "text": "One order for the full shoot keeps edits consistent across every room."
+          }
+        }
       },
-      "block_order": ["t1", "t2", "t3", "t4"],
-      "settings": { "eyebrow": "Best practices", "heading": "Get the cleanest edits" }
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Best practices",
+        "heading": "Get the cleanest edits"
+      }
     },
     "faq": {
       "type": "bella-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "When do I send my photos?", "answer": "After checkout. Your order confirmation includes an upload link, so you can order now and send the photos whenever they're ready." } },
-        "q2": { "type": "qa", "settings": { "question": "How fast do I get them back?", "answer": "Within 24 hours for most orders — larger batches may take a little longer, and we'll confirm when you upload." } },
-        "q3": { "type": "qa", "settings": { "question": "What's the difference between minor and major HDR edits?", "answer": "Minor edits blend exposures with color and lens correction. Major edits add window masking, flash removal and detailed cleanup for tricky shots." } },
-        "q4": { "type": "qa", "settings": { "question": "Can I mix edit types in one order?", "answer": "Yes — add each edit type to your order with its own photo count, and our team handles them together." } }
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "When do I send my photos?",
+            "answer": "After checkout. Your order confirmation includes an upload link, so you can order now and send the photos whenever they're ready."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How fast do I get them back?",
+            "answer": "Within 24 hours for most orders — larger batches may take a little longer, and we'll confirm when you upload."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "What's the difference between minor and major HDR edits?",
+            "answer": "Minor edits blend exposures with color and lens correction. Major edits add window masking, flash removal and detailed cleanup for tricky shots."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I mix edit types in one order?",
+            "answer": "Yes — add each edit type to your order with its own photo count, and our team handles them together."
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4"],
-      "settings": { "eyebrow": "Questions", "heading": "Before you order" }
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you order"
+      }
     },
     "cta": {
       "type": "bella-end-cta",
@@ -107,7 +244,80 @@
         "cta_label": "Get started — from $5 a photo",
         "fine_print": "Upload after checkout · Rework or refund"
       }
+    },
+    "uses": {
+      "type": "bella-included",
+      "blocks": {
+        "w1": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Stop the scroll",
+            "text": "A twilight hero shot stands out in a feed of flat daytime photos — more clicks, more showings."
+          }
+        },
+        "w2": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Look professionally shot",
+            "text": "HDR blending makes every window and room read bright and true, even from tricky originals."
+          }
+        },
+        "w3": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "List today, not next week",
+            "text": "24-hour edits keep your listing on schedule when the shoot didn't go perfectly."
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3"
+      ],
+      "settings": {
+        "eyebrow": "How clients use it",
+        "heading": "What clean photos win you."
+      }
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "Bella is as good as I've seen.",
+        "attribution": "Craig C. Rowe · Inman News, tech review",
+        "rating": "4.9",
+        "rating_text": "on Google · reviewed by Inman, 2024"
+      }
+    },
+    "math": {
+      "type": "bella-value",
+      "settings": {
+        "eyebrow": "The math",
+        "heading": "The reshoot, without the reshoot.",
+        "old_label": "Re-shooting the listing",
+        "old_amount": "$150–300",
+        "old_per": "per return trip · rescheduling · waiting on weather",
+        "new_label": "Bella photo editing",
+        "new_amount": "$5",
+        "new_per": "a photo · dusk skies, HDR and cleanups · back in 24–48 h",
+        "note": "Most 'bad' listing photos don't need a photographer — they need an editor. Grey skies, dim rooms, a missed twilight, a bin in the driveway: our editors fix in hours what a reshoot fixes in a week, at a fraction of the cost. Same camera work, superior finish, streamlined into your existing workflow.",
+        "cta_label": "",
+        "also_label": ""
+      }
     }
   },
-  "order": ["main", "steps", "uses", "proof", "tips", "faq", "cta"]
+  "order": [
+    "main",
+    "steps",
+    "uses",
+    "proof",
+    "quote",
+    "math",
+    "tips",
+    "faq",
+    "cta"
+  ]
 }
