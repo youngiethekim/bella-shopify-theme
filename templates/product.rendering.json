@@ -12,41 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "u1": {
-          "type": "usp",
-          "settings": {
-            "icon": "note",
-            "text": "From <b>$550</b> / render"
-          }
-        },
-        "u2": {
-          "type": "usp",
-          "settings": {
-            "icon": "doc",
-            "text": "Built from <b>your plans</b>"
-          }
-        },
-        "u3": {
-          "type": "usp",
-          "settings": {
-            "icon": "pen",
-            "text": "<b>Revisions</b> included"
-          }
-        },
-        "u4": {
-          "type": "usp",
-          "settings": {
-            "icon": "shield",
-            "text": "<b>Photoreal</b> quality"
-          }
-        }
+        "u1": { "type": "usp", "settings": { "icon": "note", "text": "From <b>$550</b> / render" } },
+        "u2": { "type": "usp", "settings": { "icon": "doc", "text": "Built from <b>your plans</b>" } },
+        "u3": { "type": "usp", "settings": { "icon": "pen", "text": "<b>Revisions</b> included" } },
+        "u4": { "type": "usp", "settings": { "icon": "shield", "text": "<b>Photoreal</b> quality" } }
       },
-      "block_order": [
-        "u1",
-        "u2",
-        "u3",
-        "u4"
-      ],
+      "block_order": ["u1", "u2", "u3", "u4"],
       "settings": {
         "style_options": "",
         "show_notes": false,
@@ -74,69 +45,14 @@
     "scope": {
       "type": "bella-scope",
       "blocks": {
-        "r1": {
-          "type": "row",
-          "settings": {
-            "title": "Interior — residential",
-            "covers": "One room from one camera angle, fully furnished and styled.",
-            "limit": "Open-plan spaces up to 1,000 sq ft count as one room.",
-            "ideal": "Homes, condos, pre-sale suites"
-          }
-        },
-        "r2": {
-          "type": "row",
-          "settings": {
-            "title": "Interior — commercial",
-            "covers": "One commercial space from one angle, fixtures and furniture included.",
-            "limit": "Up to 2,500 sq ft in a single view.",
-            "ideal": "Lobbies, offices, retail, restaurants"
-          }
-        },
-        "r3": {
-          "type": "row",
-          "settings": {
-            "title": "Exterior — single building",
-            "covers": "One building with landscaping, sky and lighting.",
-            "limit": "Single-family home or duplex up to 6,000 sq ft.",
-            "ideal": "Custom homes, spec builds"
-          }
-        },
-        "r4": {
-          "type": "row",
-          "settings": {
-            "title": "Exterior — streetscape or aerial",
-            "covers": "Street-level row or bird's-eye view of one site, one angle.",
-            "limit": "Up to 6 homes or units in frame.",
-            "ideal": "Townhome rows, small subdivisions"
-          }
-        },
-        "r5": {
-          "type": "row",
-          "settings": {
-            "title": "Exterior — multiple buildings",
-            "covers": "Multi-building composition in a single view.",
-            "limit": "2–6 buildings; larger master plans quoted separately.",
-            "ideal": "Condo and mixed-use developments"
-          }
-        },
-        "r6": {
-          "type": "row",
-          "settings": {
-            "title": "3D model only",
-            "covers": "Clay-style model views built straight from your plans.",
-            "limit": "No materials, landscaping or photoreal lighting.",
-            "ideal": "Massing studies, early design checks"
-          }
-        }
+        "r1": { "type": "row", "settings": { "title": "Interior — residential", "covers": "One room from one camera angle, fully furnished and styled.", "limit": "Open-plan spaces up to 1,000 sq ft count as one room.", "ideal": "Homes, condos, pre-sale suites" } },
+        "r2": { "type": "row", "settings": { "title": "Interior — commercial", "covers": "One commercial space from one angle, fixtures and furniture included.", "limit": "Up to 2,500 sq ft in a single view.", "ideal": "Lobbies, offices, retail, restaurants" } },
+        "r3": { "type": "row", "settings": { "title": "Exterior — single building", "covers": "One building with landscaping, sky and lighting.", "limit": "Single-family home or duplex up to 6,000 sq ft.", "ideal": "Custom homes, spec builds" } },
+        "r4": { "type": "row", "settings": { "title": "Exterior — streetscape or aerial", "covers": "Street-level row or bird's-eye view of one site, one angle.", "limit": "Up to 6 homes or units in frame.", "ideal": "Townhome rows, small subdivisions" } },
+        "r5": { "type": "row", "settings": { "title": "Exterior — multiple buildings", "covers": "Multi-building composition in a single view.", "limit": "2–6 buildings; larger master plans quoted separately.", "ideal": "Condo and mixed-use developments" } },
+        "r6": { "type": "row", "settings": { "title": "3D model only", "covers": "Clay-style model views built straight from your plans.", "limit": "No materials, landscaping or photoreal lighting.", "ideal": "Massing studies, early design checks" } }
       },
-      "block_order": [
-        "r1",
-        "r2",
-        "r3",
-        "r4",
-        "r5",
-        "r6"
-      ],
+      "block_order": ["r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
         "eyebrow": "Black and white",
         "heading": "What each render type includes",
@@ -147,71 +63,31 @@
     "steps": {
       "type": "bella-steps",
       "blocks": {
-        "s1": {
-          "type": "step",
-          "settings": {
-            "icon": "upload",
-            "title": "Order & send plans",
-            "text": "Place your order, then send floor plans, elevations and reference images — right after checkout."
-          }
-        },
-        "s2": {
-          "type": "step",
-          "settings": {
-            "icon": "pen",
-            "title": "We model & render",
-            "text": "Our 3D team models the space and renders photoreal drafts, with materials and lighting matched to your references."
-          }
-        },
-        "s3": {
-          "type": "step",
-          "settings": {
-            "icon": "check",
-            "title": "Review & finalize",
-            "text": "Mark up anything you'd like changed — we revise until it's right, then deliver print-ready files."
-          }
-        }
+        "s1": { "type": "step", "settings": { "icon": "upload", "title": "Order & send plans", "text": "Place your order, then send floor plans, elevations and reference images — right after checkout." } },
+        "s2": { "type": "step", "settings": { "icon": "pen", "title": "We model & render", "text": "Our 3D team models the space and renders photoreal drafts, with materials and lighting matched to your references." } },
+        "s3": { "type": "step", "settings": { "icon": "check", "title": "Review & finalize", "text": "Mark up anything you'd like changed — we revise until it's right, then deliver print-ready files." } }
       },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3"
-      ],
+      "block_order": ["s1", "s2", "s3"],
       "settings": {}
+    },
+    "uses": {
+      "type": "bella-included",
+      "blocks": {
+        "w1": { "type": "item", "settings": { "icon": "cube", "title": "Pre-sell before you build", "text": "Buyers commit from photoreal renders months before completion — deposits without a model home." } },
+        "w2": { "type": "item", "settings": { "icon": "doc", "title": "Win approvals and lenders", "text": "Photoreal visuals carry planning meetings and pitch decks further than technical drawings ever do." } },
+        "w3": { "type": "item", "settings": { "icon": "star", "title": "Market like it's built", "text": "Billboards, brochures and listings that make an unbuilt home feel real enough to want." } }
+      },
+      "block_order": ["w1", "w2", "w3"],
+      "settings": { "eyebrow": "How clients use it", "heading": "What renders win you." }
     },
     "proof": {
       "type": "bella-proof",
       "blocks": {
-        "st1": {
-          "type": "stat",
-          "settings": {
-            "figure": "97%",
-            "text": "of home buyers start their search online — a photoreal render is your project's first impression.",
-            "source": "NAR"
-          }
-        },
-        "st2": {
-          "type": "stat",
-          "settings": {
-            "figure": "1–2 wks",
-            "text": "typical turnaround from plans to a finalized render, depending on scope.",
-            "source": "Bella turnaround"
-          }
-        },
-        "st3": {
-          "type": "stat",
-          "settings": {
-            "figure": "100%",
-            "text": "of renders include revisions until the composition, materials and lighting are right.",
-            "source": "Bella guarantee"
-          }
-        }
+        "st1": { "type": "stat", "settings": { "figure": "97%", "text": "of home buyers start their search online — a photoreal render is your project's first impression.", "source": "NAR" } },
+        "st2": { "type": "stat", "settings": { "figure": "1–2 wks", "text": "typical turnaround from plans to a finalized render, depending on scope.", "source": "Bella turnaround" } },
+        "st3": { "type": "stat", "settings": { "figure": "100%", "text": "of renders include revisions until the composition, materials and lighting are right.", "source": "Bella guarantee" } }
       },
-      "block_order": [
-        "st1",
-        "st2",
-        "st3"
-      ],
+      "block_order": ["st1", "st2", "st3"],
       "settings": {
         "eyebrow": "The difference it makes",
         "heading": "From your plans to photoreal.",
@@ -224,108 +100,26 @@
     "tips": {
       "type": "bella-included",
       "blocks": {
-        "t1": {
-          "type": "item",
-          "settings": {
-            "icon": "plan",
-            "title": "Send dimensioned plans",
-            "text": "Floor plans with measurements (PDF or CAD) cut modelling time — hand-drawn works too."
-          }
-        },
-        "t2": {
-          "type": "item",
-          "settings": {
-            "icon": "swatch",
-            "title": "Include real references",
-            "text": "Material selections, finishes and photos of furniture you like keep the first draft close."
-          }
-        },
-        "t3": {
-          "type": "item",
-          "settings": {
-            "icon": "cube",
-            "title": "One render per key view",
-            "text": "Pick the angles buyers will see first — front exterior, living space, kitchen."
-          }
-        },
-        "t4": {
-          "type": "item",
-          "settings": {
-            "icon": "sun",
-            "title": "Choose your moment",
-            "text": "Tell us daylight or dusk — twilight exteriors are the most shared shots."
-          }
-        }
+        "t1": { "type": "item", "settings": { "icon": "plan", "title": "Send dimensioned plans", "text": "Floor plans with measurements (PDF or CAD) cut modelling time — hand-drawn works too." } },
+        "t2": { "type": "item", "settings": { "icon": "swatch", "title": "Include real references", "text": "Material selections, finishes and photos of furniture you like keep the first draft close." } },
+        "t3": { "type": "item", "settings": { "icon": "cube", "title": "One render per key view", "text": "Pick the angles buyers will see first — front exterior, living space, kitchen." } },
+        "t4": { "type": "item", "settings": { "icon": "sun", "title": "Choose your moment", "text": "Tell us daylight or dusk — twilight exteriors are the most shared shots." } }
       },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4"
-      ],
-      "settings": {
-        "eyebrow": "Best practices",
-        "heading": "Get the best render, faster"
-      }
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": { "eyebrow": "Best practices", "heading": "Get the best render, faster" }
     },
     "faq": {
       "type": "bella-faq",
       "blocks": {
-        "q1": {
-          "type": "qa",
-          "settings": {
-            "question": "What do you need from me?",
-            "answer": "Floor plans or architectural drawings, plus any elevations, material selections and reference images you have. Rough or hand-drawn plans are fine — we confirm anything unclear before modelling."
-          }
-        },
-        "q6": {
-          "type": "qa",
-          "settings": {
-            "question": "What counts as one render?",
-            "answer": "One finished image: a single room or building from a single camera angle. Open-plan interiors up to 1,000 sq ft count as one room, and single-building exteriors cover homes up to 6,000 sq ft. Another angle of the same space is a second render — volume discounts apply automatically."
-          }
-        },
-        "q5": {
-          "type": "qa",
-          "settings": {
-            "question": "Can I order interior and exterior renders together?",
-            "answer": "Yes. Add your interior renders to the order, then switch the render type and add your exteriors — each type shows as its own line in the same order and checks out together."
-          }
-        },
-        "q2": {
-          "type": "qa",
-          "settings": {
-            "question": "How long does a render take?",
-            "answer": "It depends on scope — we confirm timing as soon as you send your plans, and interiors are typically faster than multi-building exteriors."
-          }
-        },
-        "q3": {
-          "type": "qa",
-          "settings": {
-            "question": "Are revisions included?",
-            "answer": "Yes. You review a draft and mark up changes to composition, materials and lighting, and we revise until it's right."
-          }
-        },
-        "q4": {
-          "type": "qa",
-          "settings": {
-            "question": "What files do I get?",
-            "answer": "High-resolution, print-ready images sized for marketing, MLS and hoarding/billboard use on request."
-          }
-        }
+        "q1": { "type": "qa", "settings": { "question": "What do you need from me?", "answer": "Floor plans or architectural drawings, plus any elevations, material selections and reference images you have. Rough or hand-drawn plans are fine — we confirm anything unclear before modelling." } },
+        "q6": { "type": "qa", "settings": { "question": "What counts as one render?", "answer": "One finished image: a single room or building from a single camera angle. Open-plan interiors up to 1,000 sq ft count as one room, and single-building exteriors cover homes up to 6,000 sq ft. Another angle of the same space is a second render — volume discounts apply automatically." } },
+        "q5": { "type": "qa", "settings": { "question": "Can I order interior and exterior renders together?", "answer": "Yes. Add your interior renders to the order, then switch the render type and add your exteriors — each type shows as its own line in the same order and checks out together." } },
+        "q2": { "type": "qa", "settings": { "question": "How long does a render take?", "answer": "It depends on scope — we confirm timing as soon as you send your plans, and interiors are typically faster than multi-building exteriors." } },
+        "q3": { "type": "qa", "settings": { "question": "Are revisions included?", "answer": "Yes. You review a draft and mark up changes to composition, materials and lighting, and we revise until it's right." } },
+        "q4": { "type": "qa", "settings": { "question": "What files do I get?", "answer": "High-resolution, print-ready images sized for marketing, MLS and hoarding/billboard use on request." } }
       },
-      "block_order": [
-        "q1",
-        "q6",
-        "q5",
-        "q2",
-        "q3",
-        "q4"
-      ],
-      "settings": {
-        "eyebrow": "Questions",
-        "heading": "Before you order"
-      }
+      "block_order": ["q1", "q6", "q5", "q2", "q3", "q4"],
+      "settings": { "eyebrow": "Questions", "heading": "Before you order" }
     },
     "cta": {
       "type": "bella-end-cta",
@@ -338,13 +132,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "scope",
-    "steps",
-    "proof",
-    "tips",
-    "faq",
-    "cta"
-  ]
+  "order": ["main", "scope", "steps", "uses", "proof", "tips", "faq", "cta"]
 }
