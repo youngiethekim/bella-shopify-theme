@@ -15,7 +15,7 @@
         "u1": {
           "type": "usp",
           "settings": {
-            "text": "From <b>$45</b> / photo",
+            "text": "<b>$45</b> / photo",
             "icon": "note"
           }
         },
@@ -54,6 +54,7 @@
         "assure_2_icon": "pen",
         "assure_3_icon": "shield",
         "reco_text": "8 photos covers a typical 3-bed listing — living room, kitchen, dining, primary bedroom and the other key rooms buyers look for.",
+        "collapse_description": false,
         "assure_1_tip": "Your order confirmation includes an upload link — send photos right away or whenever the shoot is done.",
         "assure_2_tip": "Mark up anything you'd like changed — revisions are free and unlimited for two weeks after delivery.",
         "assure_3_tip": "If a photo still isn't right after rework, we refund that photo. No fine print."
@@ -262,7 +263,7 @@
           "type": "qa",
           "settings": {
             "question": "Can you also fix walls, floors or other items?",
-            "answer": "Yes. With furniture removal and virtual renovation we can clean up issues with walls, floors and fixtures before staging, so the room photographs clean and move-in ready."
+            "answer": "Yes — that's our Virtual Renovation service. We digitally modernize walls, floors and fixtures, then stage the room, from $69 a photo. Order it from the Virtual Renovation page."
           }
         },
         "q7": {
