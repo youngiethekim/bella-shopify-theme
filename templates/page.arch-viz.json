@@ -1,0 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Bella · architectural visualization studio",
+        "heading": "Architectural Rendering Services",
+        "lede": "Architectural rendering and visualization services that turn drawings into imagery buyers, lenders and planning boards believe. Photoreal interiors, exteriors and site views from a human studio — from $550 a render.",
+        "cta_label": "Order a render — from $550",
+        "cta_link": "/products/3d-rendering",
+        "alt_label": "Explore 3D architectural rendering services",
+        "alt_link": "/pages/3d-architectural-rendering-services",
+        "market_heading": "From architectural drawings to visualization",
+        "market_text": "<p>Architectural visualization services bridge the gap between technical drawings and human imagination. A floor plan tells a buyer the kitchen is 14 feet wide; a photoreal render shows them the morning light on the island. We visualize residential and commercial projects at every scale — a single custom home, a townhome row, a full mixed-use development — working directly from your CAD files, PDFs or sketches.</p><p>Our flagship offering is <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a>: photoreal still images priced per view, from $550, with revisions and 4K print-ready delivery included.</p>",
+        "local_heading": "An architectural visualization studio, human from end to end",
+        "local_text": "<p>Every project is handled by a 3D artist, not an algorithm. That matters because architectural rendering is a series of judgment calls — which camera angle sells the elevation, how the specified oak floor should read at dusk, where the landscaping fills a composition. Software approximates those calls; a studio makes them deliberately, and revises until you'd put the image on a billboard. Many of our clients do exactly that.</p><p>Unlike many architectural visualisation firms that outsource overseas and quote by the project, Bella prices per image and works directly with your team. We've rendered for home builders, developers and architects across the US and Canada since 2019, alongside the virtual staging work reviewed by Inman and covered in Fortune.</p>",
+        "hoods_label": "Who we render for",
+        "hoods": "Home builders, Developers, Architects, Interior designers, Real estate agents, Marketing agencies"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & send plans",
+            "text": "Place your order, then send floor plans, elevations and reference images — right after checkout."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "We model & render",
+            "text": "Our 3D team models the space and renders photoreal drafts, with materials and lighting matched to your references."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Review & finalize",
+            "text": "Mark up anything you'd like changed — we revise until it's right, then deliver print-ready files."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "proof": {
+      "type": "bella-proof",
+      "blocks": {
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "icon": "image",
+            "figure": "97%",
+            "text": "of home buyers start their search online — a photoreal render is your project's first impression.",
+            "source": "NAR"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "icon": "clock",
+            "figure": "1–2 wks",
+            "text": "typical turnaround from plans to a finalized architectural render, depending on scope.",
+            "source": "Bella turnaround"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "icon": "pen",
+            "figure": "100%",
+            "text": "of renders include revisions until the composition, materials and lighting are right.",
+            "source": "Bella guarantee"
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
+      "settings": {
+        "eyebrow": "The difference it makes",
+        "heading": "From architectural drawings to photoreal.",
+        "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/floorplan-standard.PNG?v=1615928605",
+        "before_label": "Before · your drawings",
+        "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/products/3d-rendering-service-for-architectural-visualization-607448.jpg?v=1673656751",
+        "after_label": "After · photoreal render by Bella"
+      }
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "These are perfect, thank you!",
+        "attribution": "Caleigh Wells · Senior Marketing Coordinator, Highland Homes",
+        "rating": "4.9",
+        "rating_text": "on Google · trusted by home builders, developers and architects"
+      }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "What is architectural visualization?",
+            "answer": "Architectural visualization is the practice of communicating unbuilt or renovated architecture through visual media — photoreal renders, 3D models and visual compositions. It lets buyers, investors and approval boards experience a design as a finished place rather than a technical drawing."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "What's included in your architectural rendering services?",
+            "answer": "Photoreal residential and commercial interiors, single-building exteriors, streetscapes and aerial site views, multi-building compositions, and clay-style 3D models for massing studies. Every render is built from your plans with revisions included and delivered print-ready in 4K."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does architectural visualization cost?",
+            "answer": "Renders are priced per finished image: interiors from $550, exteriors from $750, streetscapes from $1,000 and multi-building views from $1,400, with automatic volume discounts. See the full breakdown on our 3D architectural rendering services page."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you match our brand and material selections?",
+            "answer": "Yes — send material selections, finish schedules and reference imagery and we match them. Drafts come back for your markup, and we revise composition, materials and lighting until it's right."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Architectural rendering, answered"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next project",
+        "heading": "Ready to bring your plans to life?",
+        "text": "Order today, send your plans, and market your project with photoreal renders — before ground breaks.",
+        "cta_label": "Order a render — from $550",
+        "cta_link": "/products/3d-rendering",
+        "fine_print": "Send plans after checkout · Revisions included · Print-ready 4K delivery"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "proof",
+    "quote",
+    "faq",
+    "cta"
+  ]
+}
