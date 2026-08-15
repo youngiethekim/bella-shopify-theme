@@ -18,7 +18,9 @@
         "cred4": { "type": "cred", "settings": { "icon": "shield", "text": "Rework or refund" } }
       },
       "block_order": ["cred1", "cred2", "cred3", "cred4"],
-      "settings": {}
+      "settings": {
+        "ghost_label": ""
+      }
     },
     "trust": { "type": "bella-trust-quote", "settings": {} },
     "who": {
