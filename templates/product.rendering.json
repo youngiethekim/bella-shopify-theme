@@ -64,7 +64,7 @@
         "variant_label": "Choose your render type",
         "shot_label": "3D rendering by a Bella professional",
         "variant_tip": "Not sure? Interior — residential is our most-ordered render. Pricing is per finished image, and you can add more types to the same order.",
-        "variant_specs": "Interior — residential | One room · one camera angle · open-plan spaces up to 1,000 sq ft count as one room\nInterior — commercial | One commercial space · one camera angle · up to 2,500 sq ft per view\nExterior — single building | One home or duplex up to 6,000 sq ft · one camera angle · landscaping, sky and lighting included\nExterior — streetscape | Street-level row or bird's-eye site view · one camera angle · up to 6 homes or units in frame\nExterior — multiple | 2–6 buildings composed in one view · one camera angle · larger master plans quoted separately\n3D model only | Clay-style model views built from your plans · no materials, landscaping or photoreal lighting",
+        "variant_specs": "Interior — residential | One room · one camera angle · open-plan spaces up to 1,000 sq ft count as one room\nInterior — commercial | One commercial space · one camera angle · up to 2,500 sq ft per view\nExterior — single building | One home or duplex up to 6,000 sq ft · one camera angle · landscaping, sky and lighting included\nExterior — streetscape | Street-level row or bird's-eye site view · one camera angle · up to 6 homes or units in frame\nExterior — multiple | 2–6 buildings composed in one view · one camera angle · larger master plans quoted separately",
         "reco_text": "Our most popular order is 5 renders — front exterior, kitchen, living space and two more key views. You can mix interior and exterior types in one order.",
         "assure_1_tip": "Your order confirmation tells you where to send floor plans, elevations and reference images.",
         "assure_2_tip": "You review a draft and mark up changes to composition, materials and lighting — we revise until it's right.",
@@ -118,15 +118,6 @@
             "limit": "2–6 buildings; larger master plans quoted separately.",
             "ideal": "Condo and mixed-use developments"
           }
-        },
-        "r6": {
-          "type": "row",
-          "settings": {
-            "title": "3D model only",
-            "covers": "Clay-style model views built straight from your plans.",
-            "limit": "No materials, landscaping or photoreal lighting.",
-            "ideal": "Massing studies, early design checks"
-          }
         }
       },
       "block_order": [
@@ -134,8 +125,7 @@
         "r2",
         "r3",
         "r4",
-        "r5",
-        "r6"
+        "r5"
       ],
       "settings": {
         "eyebrow": "Black and white",
@@ -402,12 +392,91 @@
         "cta_label": "",
         "also_label": ""
       }
+    },
+    "reqs": {
+      "type": "bella-reqs",
+      "blocks": {
+        "rq1": {
+          "type": "req",
+          "settings": {
+            "text": "<strong>Architectural blueprints or floor plans with dimensions</strong> — CAD or PDF preferred; dimensioned hand-drawn plans are accepted."
+          }
+        },
+        "rq2": {
+          "type": "req",
+          "settings": {
+            "text": "<strong>Elevations</strong> for any exterior render (all visible sides)."
+          }
+        },
+        "rq3": {
+          "type": "req",
+          "settings": {
+            "text": "<strong>Material and finish list</strong> — flooring, cabinetry, counters, roofing, siding, paint colors — or reference photos to match."
+          }
+        },
+        "rq4": {
+          "type": "req",
+          "settings": {
+            "text": "Reference images for style, furniture and lighting mood (daylight or dusk)."
+          }
+        },
+        "rq5": {
+          "type": "req",
+          "settings": {
+            "text": "For streetscape and aerial views: a site plan with lot orientation and unit placement."
+          }
+        },
+        "gt1": {
+          "type": "get",
+          "settings": {
+            "text": "Photoreal renders in <strong>4K, print-ready</strong> — sized for MLS, brochures and hoardings; billboard sizing on request."
+          }
+        },
+        "gt2": {
+          "type": "get",
+          "settings": {
+            "text": "A draft for markup, then <strong>revisions until composition, materials and lighting are right</strong>."
+          }
+        },
+        "gt3": {
+          "type": "get",
+          "settings": {
+            "text": "Typical delivery in 1–2 weeks depending on scope — confirmed when you send your plans."
+          }
+        },
+        "gt4": {
+          "type": "get",
+          "settings": {
+            "text": "Full usage rights for all your marketing, print and pre-sale materials."
+          }
+        }
+      },
+      "block_order": [
+        "rq1",
+        "rq2",
+        "rq3",
+        "rq4",
+        "rq5",
+        "gt1",
+        "gt2",
+        "gt3",
+        "gt4"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "What we need. What you get.",
+        "text": "A render is only as accurate as its inputs. Here's the checklist we build from, and exactly what comes back.",
+        "req_heading": "What we need from you",
+        "get_heading": "What you get back",
+        "note": "Missing something on the list? Send what you have — we confirm anything unclear before modelling starts, and we'll tell you up front if a project needs more documentation."
+      }
     }
   },
   "order": [
     "main",
     "scope",
     "steps",
+    "reqs",
     "uses",
     "proof",
     "quote",
