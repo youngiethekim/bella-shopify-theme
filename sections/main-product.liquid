@@ -83,6 +83,7 @@
                 {%- for variant in product.variants -%}
                   <option value="{{ variant.id }}"
                     data-price="{{ variant.price }}"
+                    {% if variant.image %}data-image="{{ variant.image | image_url: width: 1400 }}"{% endif %}
                     {% if variant == current_variant %}selected{% endif %}
                     {% unless variant.available %}disabled{% endunless %}>
                     {{ variant.title }} — {{ variant.price | money }}{% unless variant.available %} (sold out){% endunless %}
