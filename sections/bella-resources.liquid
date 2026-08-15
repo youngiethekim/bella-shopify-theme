@@ -1,0 +1,58 @@
+<section class="res-hero">
+  <span class="micro">{{ section.settings.eyebrow }}</span>
+  <h1>{{ section.settings.heading }}</h1>
+  <p class="loc-lede">{{ section.settings.lede }}</p>
+</section>
+<section class="res-wrap">
+  <div class="res-grid">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'heading' -%}
+        <div class="res-break" {{ block.shopify_attributes }}>
+          <h2>{{ block.settings.title }}</h2>
+          {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+        </div>
+      {%- else -%}
+        <a class="res-card" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+          <span class="res-tag">{{ block.settings.tag }}</span>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+          <span class="res-go">{{ block.settings.link_label | default: 'Read the guide →' }}</span>
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Resources",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Free resources" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Real estate marketing resources" },
+    { "type": "textarea", "id": "lede", "label": "Lede", "default": "Practical guides, checklists and how-tos from the team that stages thousands of listings a year. 100% free — no order required." }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Group heading",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    },
+    {
+      "type": "card",
+      "name": "Resource card",
+      "settings": [
+        { "type": "text", "id": "tag", "label": "Tag", "default": "Guide" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Description" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "text", "id": "link_label", "label": "Link label" }
+      ]
+    }
+  ],
+  "max_blocks": 32,
+  "presets": [{ "name": "Resources" }]
+}
+{% endschema %}

@@ -44,6 +44,13 @@
 
   {% sections 'footer-group' %}
 
+  {%- unless template.name == 'product' or template.name == 'cart' -%}
+    <a class="bb-float" id="BbFloat" href="{{ routes.all_products_collection_url }}">
+      <span class="bf-txt">Order now</span>
+      <span class="bf-sub">From $45 · 24–48 h delivery</span>
+    </a>
+  {%- endunless -%}
+
   {%- if settings.enable_assistant -%}
     {% render 'bella-assistant' %}
   {%- endif -%}

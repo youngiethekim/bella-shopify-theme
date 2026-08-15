@@ -34,6 +34,7 @@
         <div class="stats">
           {%- for block in stats -%}
             <div class="stat" {{ block.shopify_attributes }}>
+              {%- if block.settings.icon != blank -%}<svg class="ico stat-ico" aria-hidden="true"><use href="#i-{{ block.settings.icon }}"/></svg>{%- endif -%}
               <b>{{ block.settings.figure }}</b>
               <span>{{ block.settings.text }}</span>
               {%- if block.settings.source != blank -%}<cite>{{ block.settings.source }}</cite>{%- endif -%}
@@ -63,6 +64,26 @@
       "type": "stat",
       "name": "Stat",
       "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "default": "eye",
+          "options": [
+            { "value": "eye", "label": "Eye" },
+            { "value": "image", "label": "Image" },
+            { "value": "clock", "label": "Clock" },
+            { "value": "star", "label": "Star" },
+            { "value": "doc", "label": "Document" },
+            { "value": "cube", "label": "Cube" },
+            { "value": "sun", "label": "Sun" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "pen", "label": "Pen" },
+            { "value": "sofa", "label": "Sofa" },
+            { "value": "check", "label": "Check" },
+            { "value": "note", "label": "Note" }
+          ]
+        },
         { "type": "text", "id": "figure", "label": "Figure", "default": "82%" },
         { "type": "textarea", "id": "text", "label": "Text", "default": "of buyers' agents say staging makes it easier for buyers to visualize a property as their future home." },
         { "type": "text", "id": "source", "label": "Source", "default": "NAR" }

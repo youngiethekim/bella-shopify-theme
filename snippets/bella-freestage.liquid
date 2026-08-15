@@ -1,4 +1,4 @@
-<div class="fs-back" id="fsBack" role="dialog" aria-modal="true" aria-label="Free room staging offer">
+<div class="fs-back" id="fsBack" role="dialog" aria-modal="true" aria-label="Free sample visualization offer">
   <div class="fs-modal">
     <div class="fs-vis" id="fsVis">
       <img class="fs-before" src="{{ 'hero-before.jpg' | asset_url }}" alt="Empty room" width="1200" height="800">
@@ -8,9 +8,9 @@
     <div class="fs-body">
       <button class="fs-x" id="fsX" aria-label="Close">&times;</button>
       <div id="fsForm">
-        <div class="fs-eyebrow">For real estate pros · You may be eligible</div>
-        <h3>See one room <em>staged free.</em></h3>
-        <p class="sub">Send us your work email. Our designers stage one listing photo and email it back within 24 hours — watermark-free, MLS-ready. See the quality before you spend a dollar.</p>
+        <div class="fs-eyebrow">For agents, brokers & builders · You may be eligible</div>
+        <h3>Get one free <em>visualization.</em></h3>
+        <p class="sub">You may be eligible for a free sample — a staged photo of your listing, or a sample visualization of your project — emailed back within 24 hours, watermark-free. See how much better it sells before you spend a dollar.</p>
         {%- form 'contact', id: 'fsFm' -%}
           <input class="fs-field" type="email" id="fsEmail" name="contact[email]" placeholder="Work email" required>
           <select class="fs-field" id="fsRole" name="contact[role]" required aria-label="I'm a…">
@@ -21,14 +21,14 @@
             <option value="photographer">Real estate photographer</option>
             <option value="notpro">Not a real estate professional</option>
           </select>
-          <input type="hidden" name="contact[body]" value="Free-stage offer signup from the website popup.">
-          <button class="fs-sub" type="submit">Stage my room free →</button>
+          <input type="hidden" name="contact[body]" value="Free sample visualization signup from the website popup.">
+          <button class="fs-sub" type="submit">Claim my free sample →</button>
         {%- endform -%}
-        <p class="fs-fine">This promotion is for real estate professionals only; we reserve the right to verify eligibility or decline. One free room each. We'll never share your email. Full listing staging is just $45/photo. Reply to our confirmation email with your room photo.</p>
+        <p class="fs-fine">This promotion is for real estate professionals, builders and developers only; we reserve the right to verify eligibility or decline. One free sample each. We'll never share your email. Staging from $45 a photo · 3D renders from $550. Reply to our confirmation email with your photo or plans.</p>
       </div>
       <div class="fs-ok" id="fsGate" style="display:none">
         <div class="chk">🏠</div>
-        <h3>This free room is for real estate pros.</h3>
+        <h3>This free sample is for real estate pros.</h3>
         <p>Selling your own home? Your listing agent can claim the free room for you. Or stage your listing directly — real designer staging from $45 a photo.</p>
         <a class="go" href="{{ settings.assistant_order_url | default: routes.all_products_collection_url }}">Stage a listing → $45/photo</a>
       </div>

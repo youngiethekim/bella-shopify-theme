@@ -1,0 +1,68 @@
+<section class="loc-hero">
+  <span class="micro">{{ section.settings.eyebrow }}</span>
+  <h1>{{ section.settings.heading }}</h1>
+  <p class="loc-lede">{{ section.settings.lede }}</p>
+  <div class="row">
+    <a class="btn" href="{{ section.settings.cta_link | default: '/products/virtual-staging-1' }}">{{ section.settings.cta_label | default: 'Stage my listing — from $45' }}</a>
+    <a class="loc-alt" href="{{ section.settings.alt_link | default: '/pages/lookbook' }}">{{ section.settings.alt_label | default: 'Browse the lookbook' }}</a>
+  </div>
+  <div class="loc-cred">
+    <span>From $45 a photo</span><span>·</span><span>24–48 hour delivery</span><span>·</span><span>Real designers, never AI</span><span>·</span><span>Rework or refund</span>
+  </div>
+</section>
+<section class="loc-body">
+  <div class="loc-grid">
+    <div>
+      <h2>{{ section.settings.market_heading }}</h2>
+      {{ section.settings.market_text }}
+    </div>
+    <div>
+      <h2>{{ section.settings.local_heading }}</h2>
+      {{ section.settings.local_text }}
+      {%- if section.settings.hoods != blank -%}
+        <div class="loc-hoods">
+          <span class="micro">{{ section.settings.hoods_label | default: 'Where we stage most' }}</span>
+          <div class="loc-chips">
+            {%- assign hoods = section.settings.hoods | split: ',' -%}
+            {%- for h in hoods -%}<span class="chip">{{ h | strip }}</span>{%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+  {%- if section.settings.city != blank -%}
+  <div class="loc-services">
+    <span class="micro">Every Bella service, available in {{ section.settings.city }}</span>
+    <div class="loc-svc-row">
+      <a href="/products/virtual-staging-1">Virtual staging <b>from $45</b></a>
+      <a href="/products/virtual-renovation">Virtual renovation <b>from $69</b></a>
+      <a href="/products/3d-rendering">3D rendering <b>from $550</b></a>
+      <a href="/products/2d-3d-floor-plan-service">Floor plans</a>
+      <a href="/products/photo-editing">Photo editing</a>
+    </div>
+  </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Location page",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Virtual staging near you" },
+    { "type": "text", "id": "heading", "label": "Heading (H1)" },
+    { "type": "textarea", "id": "lede", "label": "Lede" },
+    { "type": "text", "id": "cta_label", "label": "CTA label" },
+    { "type": "url", "id": "cta_link", "label": "CTA link" },
+    { "type": "text", "id": "alt_label", "label": "Secondary link label" },
+    { "type": "url", "id": "alt_link", "label": "Secondary link" },
+    { "type": "text", "id": "city", "label": "City name (for services row)" },
+    { "type": "text", "id": "market_heading", "label": "Market column heading" },
+    { "type": "richtext", "id": "market_text", "label": "Market column text" },
+    { "type": "text", "id": "local_heading", "label": "Local column heading" },
+    { "type": "richtext", "id": "local_text", "label": "Local column text" },
+    { "type": "text", "id": "hoods_label", "label": "Neighbourhoods label" },
+    { "type": "text", "id": "hoods", "label": "Neighbourhoods (comma-separated)" }
+  ],
+  "presets": [{ "name": "Location page" }]
+}
+{% endschema %}
