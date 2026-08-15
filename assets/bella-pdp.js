@@ -281,3 +281,20 @@
   }, { passive: true });
   update();
 })();
+
+/* ---- variant -> image switching: the photo follows the selected type ---- */
+(function () {
+  var sel = document.getElementById('BuyVariant'), main = document.getElementById('MainShot');
+  if (!sel || !main || sel.tagName !== 'SELECT') return;
+  function swap() {
+    var src = sel.options[sel.selectedIndex].getAttribute('data-image');
+    if (!src || main.src === src) return;
+    main.src = src;
+    var thumbs = document.getElementById('ShotThumbs');
+    if (thumbs) thumbs.querySelectorAll('button').forEach(function (b) {
+      b.classList.toggle('on', b.getAttribute('data-src') === src);
+    });
+  }
+  sel.addEventListener('change', swap);
+  swap();
+})();
