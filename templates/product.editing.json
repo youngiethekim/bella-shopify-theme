@@ -307,11 +307,83 @@
         "cta_label": "",
         "also_label": ""
       }
+    },
+    "reqs": {
+      "type": "bella-reqs",
+      "blocks": {
+        "rq1": {
+          "type": "req",
+          "settings": {
+            "text": "<strong>Full-resolution originals</strong> — RAW files or the highest-resolution JPEGs, straight from the camera."
+          }
+        },
+        "rq2": {
+          "type": "req",
+          "settings": {
+            "text": "For HDR edits: bracketed exposures (3–5 frames per shot) if you have them — single frames are workable."
+          }
+        },
+        "rq3": {
+          "type": "req",
+          "settings": {
+            "text": "A note flagging tricky shots — windows, mirrors, flash spots — so we route them to major edits."
+          }
+        },
+        "rq4": {
+          "type": "req",
+          "settings": {
+            "text": "For item removal: tell us exactly what goes."
+          }
+        },
+        "gt1": {
+          "type": "get",
+          "settings": {
+            "text": "Corrected, <strong>MLS-ready photos back within 24 hours</strong> for most batches."
+          }
+        },
+        "gt2": {
+          "type": "get",
+          "settings": {
+            "text": "The edit you ordered — HDR blending, day-to-dusk, or item removal — finished by hand, not a filter."
+          }
+        },
+        "gt3": {
+          "type": "get",
+          "settings": {
+            "text": "Consistent color and exposure across the whole batch."
+          }
+        },
+        "gt4": {
+          "type": "get",
+          "settings": {
+            "text": "Rework or refund on any edit that isn't right."
+          }
+        }
+      },
+      "block_order": [
+        "rq1",
+        "rq2",
+        "rq3",
+        "rq4",
+        "gt1",
+        "gt2",
+        "gt3",
+        "gt4"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "What we need. What you get.",
+        "text": "Clean inputs, clean edits. Here's what to upload, and what comes back within 24 hours.",
+        "req_heading": "What we need from you",
+        "get_heading": "What you get back",
+        "note": "Files under about 1,600 px wide limit what editing can rescue — when a source file is too small to edit cleanly, we'll flag it before working on it."
+      }
     }
   },
   "order": [
     "main",
     "steps",
+    "reqs",
     "uses",
     "proof",
     "quote",

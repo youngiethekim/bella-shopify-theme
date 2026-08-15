@@ -223,11 +223,83 @@
         "cta_label": "",
         "also_label": ""
       }
+    },
+    "reqs": {
+      "type": "bella-reqs",
+      "blocks": {
+        "rq1": {
+          "type": "req",
+          "settings": {
+            "text": "Photos at least <strong>2,000 × 3,000 pixels</strong> (about 6 MP) — the same hard minimum as virtual staging; smaller files will be declined."
+          }
+        },
+        "rq2": {
+          "type": "req",
+          "settings": {
+            "text": "The room as it is — dated, cluttered or tenanted is fine. Furniture removal is included."
+          }
+        },
+        "rq3": {
+          "type": "req",
+          "settings": {
+            "text": "Optional: your finish direction (\"light oak floors, white shaker cabinets, quartz counters\") — or leave it to the designer to match your market."
+          }
+        },
+        "rq4": {
+          "type": "req",
+          "settings": {
+            "text": "One photo per room you want renovated."
+          }
+        },
+        "gt1": {
+          "type": "get",
+          "settings": {
+            "text": "The same room with <strong>new floors, walls, counters and fixtures</strong>, rendered photoreal — structure never changes."
+          }
+        },
+        "gt2": {
+          "type": "get",
+          "settings": {
+            "text": "<strong>Designer staging included</strong> in every renovated photo at no extra charge."
+          }
+        },
+        "gt3": {
+          "type": "get",
+          "settings": {
+            "text": "MLS-ready files with clear disclosure guidance for digitally altered images."
+          }
+        },
+        "gt4": {
+          "type": "get",
+          "settings": {
+            "text": "Delivery in <strong>24–48 hours</strong>, unlimited revisions free for two weeks, rework-or-refund."
+          }
+        }
+      },
+      "block_order": [
+        "rq1",
+        "rq2",
+        "rq3",
+        "rq4",
+        "gt1",
+        "gt2",
+        "gt3",
+        "gt4"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "What we need. What you get.",
+        "text": "Same ground rules as staging, plus your say on the finishes. Here's the full exchange.",
+        "req_heading": "What we need from you",
+        "get_heading": "What you get back",
+        "note": "Virtually renovated photos must be disclosed as digitally altered on the MLS — we tell you exactly what to note, and we recommend publishing the original photo alongside."
+      }
     }
   },
   "order": [
     "main",
     "steps",
+    "reqs",
     "uses",
     "quote",
     "math",
