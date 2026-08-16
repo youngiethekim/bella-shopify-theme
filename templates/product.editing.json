@@ -378,17 +378,96 @@
         "get_heading": "What you get back",
         "note": "Files under about 1,600 px wide limit what editing can rescue — when a source file is too small to edit cleanly, we'll flag it before working on it."
       }
+    },
+    "flow": {
+      "type": "bella-timeline",
+      "blocks": {
+        "t1": {
+          "type": "step",
+          "settings": {
+            "when": "Day 0",
+            "title": "Shoot day",
+            "text": "RAW or JPEG brackets, straight off the camera — including the exteriors you shot at 2pm."
+          }
+        },
+        "t2": {
+          "type": "step",
+          "settings": {
+            "when": "Within 24h",
+            "title": "We edit",
+            "text": "HDR blending, sky swaps, day-to-dusk conversions and item removal by our retouching team.",
+            "us": true
+          }
+        },
+        "t3": {
+          "type": "step",
+          "settings": {
+            "when": "Day 1",
+            "title": "Launch",
+            "text": "Polished photos lead the MLS, portals and social feeds."
+          }
+        },
+        "t4": {
+          "type": "step",
+          "settings": {
+            "when": "Ongoing",
+            "title": "Reuse everywhere",
+            "text": "Print-ready files for feature sheets, signage and ads."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Where we fit",
+        "heading": "Where editing fits in your shoot",
+        "text": "Between the camera and the MLS — polished within 24 hours, no re-shoot required."
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Twilight exterior",
+            "customer": "Home builder · Model home",
+            "services": "Day-to-dusk, 3D render",
+            "outcome": "Pre-sold from renders",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Image_Nov_16_2025.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Dawn_Image.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1"
+      ],
+      "settings": {
+        "eyebrow": "Completed projects",
+        "heading": "A recent edit that pre-sold",
+        "sub": true,
+        "text": "Hover or tap to see the original afternoon shot behind the twilight hero.",
+        "cta_label": "",
+        "look_label": "See more in the portfolio →",
+        "look_url": "/pages/portfolio"
+      }
     }
   },
   "order": [
     "main",
     "steps",
+    "flow",
     "reqs",
     "uses",
     "proof",
     "quote",
     "math",
     "tips",
+    "work",
     "faq",
     "cta"
   ]
