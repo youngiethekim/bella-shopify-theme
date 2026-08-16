@@ -305,15 +305,94 @@
         "cta_label": "Get started — $99 + $10 a photo",
         "fine_print": "Upload after checkout · Staging included · Rework or refund"
       }
+    },
+    "flow": {
+      "type": "bella-timeline",
+      "blocks": {
+        "t1": {
+          "type": "step",
+          "settings": {
+            "when": "Day 0",
+            "title": "Walk the home with a 360 camera",
+            "text": "Any consumer 360 camera works — about 10 minutes for a whole listing."
+          }
+        },
+        "t2": {
+          "type": "step",
+          "settings": {
+            "when": "Day 1–3",
+            "title": "We stitch & stage",
+            "text": "Panoramas become a shareable virtual tour, and every room is virtually staged.",
+            "us": true
+          }
+        },
+        "t3": {
+          "type": "step",
+          "settings": {
+            "when": "Day 3",
+            "title": "Share the tour link",
+            "text": "MLS, email and social — buyers walk through from their couch."
+          }
+        },
+        "t4": {
+          "type": "step",
+          "settings": {
+            "when": "Week 1+",
+            "title": "Remote buyers self-qualify",
+            "text": "Fewer wasted showings; the serious ones book in person."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Where we fit",
+        "heading": "Where the tour fits in your listing",
+        "text": "One 10-minute walkthrough with a 360 camera becomes a staged tour buyers can walk from anywhere."
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "289 Drake St · Unit 706",
+            "customer": "Brokerage · Vancouver",
+            "services": "Virtual staging, 360° tour",
+            "outcome": "Leased · 30 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1_nhi_hb.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1"
+      ],
+      "settings": {
+        "eyebrow": "Completed projects",
+        "heading": "A recent tour that leased",
+        "sub": true,
+        "text": "Staged and stitched by Bella for a Vancouver brokerage.",
+        "cta_label": "",
+        "look_label": "See more in the portfolio →",
+        "look_url": "/pages/portfolio"
+      }
     }
   },
   "order": [
     "main",
     "steps",
+    "flow",
     "reqs",
     "uses",
     "quote",
     "math",
+    "work",
     "faq",
     "related",
     "cta"
