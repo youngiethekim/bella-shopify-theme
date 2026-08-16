@@ -274,6 +274,12 @@
           "settings": {
             "text": "Delivery in <strong>24–48 hours</strong>, unlimited revisions free for two weeks, rework-or-refund."
           }
+        },
+        "g9": {
+          "type": "get",
+          "settings": {
+            "text": "<strong>FF&E + paint sheet</strong> — the Benjamin Moore-matched paint codes, flooring and furniture used, so the renovation can be recreated for real"
+          }
         }
       },
       "block_order": [
@@ -284,7 +290,8 @@
         "gt1",
         "gt2",
         "gt3",
-        "gt4"
+        "gt4",
+        "g9"
       ],
       "settings": {
         "eyebrow": "Black and white",
@@ -294,15 +301,106 @@
         "get_heading": "What you get back",
         "note": "Virtually renovated photos must be disclosed as digitally altered on the MLS — we tell you exactly what to note, and we recommend publishing the original photo alongside."
       }
+    },
+    "flow": {
+      "type": "bella-timeline",
+      "blocks": {
+        "t1": {
+          "type": "step",
+          "settings": {
+            "when": "Day 0",
+            "title": "The listing photographs 'dated'",
+            "text": "Original finishes, worn floors or an occupied unit are hiding the value buyers would pay for."
+          }
+        },
+        "t2": {
+          "type": "step",
+          "settings": {
+            "when": "Day 1–2",
+            "title": "We renovate it digitally",
+            "text": "New floors, paint, counters and fixtures — then a designer stages the finished room.",
+            "us": true
+          }
+        },
+        "t3": {
+          "type": "step",
+          "settings": {
+            "when": "Day 2",
+            "title": "Launch with both photo sets",
+            "text": "Show the potential next to the original, clearly disclosed on the MLS."
+          }
+        },
+        "t4": {
+          "type": "step",
+          "settings": {
+            "when": "Week 1+",
+            "title": "Buyers price in the after",
+            "text": "Offers reflect the potential instead of the to-do list."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "eyebrow": "Where we fit",
+        "heading": "Where virtual renovation fits",
+        "text": "For the properties that photograph 'dated': show the after while the property is still the before."
+      }
+    },
+    "pal": {
+      "type": "bella-palette",
+      "blocks": {
+        "c1": {
+          "type": "palette",
+          "settings": {
+            "name": "Warm neutral",
+            "text": "The safe-and-loved flip palette — bright, soft and photographs beautifully.",
+            "colors": "White Dove|OC-17|#F0EEE4, Edgecomb Gray|HC-173|#D8D1C3, Revere Pewter|HC-172|#CCC6B8, Kendall Charcoal|HC-166|#696661"
+          }
+        },
+        "c2": {
+          "type": "palette",
+          "settings": {
+            "name": "Coastal calm",
+            "text": "Airy whites with blue-green depth — suits condos, capes and waterfront listings.",
+            "colors": "Chantilly Lace|OC-65|#F5F6F1, Palladian Blue|HC-144|#C3D2CB, Boothbay Gray|HC-165|#A9B4B0, Hale Navy|HC-154|#434D58"
+          }
+        },
+        "c3": {
+          "type": "palette",
+          "settings": {
+            "name": "Modern contrast",
+            "text": "Crisp whites against charcoal — the palette buyers screenshot from design feeds.",
+            "colors": "Simply White|OC-117|#F7F5EB, Classic Gray|OC-23|#E2DED4, Chelsea Gray|HC-168|#8B867E, Wrought Iron|2124-10|#45484A"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "eyebrow": "Pick your finishes",
+        "heading": "Choose a palette for your renovation",
+        "text": "Every color is matched to a Benjamin Moore code. Pick a palette — or name any BM color in your order notes — and we renovate to it.",
+        "note": "Your delivery includes a mini FF&E + paint sheet: the exact Benjamin Moore-matched paint codes, flooring and furniture we used, so a buyer or contractor can recreate the renovation for real."
+      }
     }
   },
   "order": [
     "main",
     "steps",
+    "flow",
     "reqs",
     "uses",
     "quote",
     "math",
+    "pal",
     "faq",
     "related",
     "cta"
