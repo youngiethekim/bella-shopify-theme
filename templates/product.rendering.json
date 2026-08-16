@@ -470,17 +470,131 @@
         "get_heading": "What you get back",
         "note": "Missing something on the list? Send what you have — we confirm anything unclear before modelling starts, and we'll tell you up front if a project needs more documentation."
       }
+    },
+    "flow": {
+      "type": "bella-timeline",
+      "blocks": {
+        "t1": {
+          "type": "step",
+          "settings": {
+            "when": "Design",
+            "title": "Plans are finalized",
+            "text": "Your architect or drafter delivers CAD or PDF plans, elevations and material picks."
+          }
+        },
+        "t2": {
+          "type": "step",
+          "settings": {
+            "when": "Weeks 1–2",
+            "title": "We build the renders",
+            "text": "Photoreal interiors, exteriors and aerials from your drawings — with revisions until the composition, materials and light are right.",
+            "us": true
+          }
+        },
+        "t3": {
+          "type": "step",
+          "settings": {
+            "when": "Pre-construction",
+            "title": "Market before ground breaks",
+            "text": "Renders power the listing, site hoardings, lender deck and planning submissions."
+          }
+        },
+        "t4": {
+          "type": "step",
+          "settings": {
+            "when": "Pre-sale",
+            "title": "Deposits come in",
+            "text": "Buyers commit from visuals months before a model home could exist."
+          }
+        },
+        "t5": {
+          "type": "step",
+          "settings": {
+            "when": "Build & close",
+            "title": "Construction to move-in",
+            "text": "The visuals you paid for once keep selling every remaining unit."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ],
+      "settings": {
+        "eyebrow": "Where we fit",
+        "heading": "Where renders fit in your project timeline",
+        "text": "Rendering is a pre-construction investment: it does its selling before and during the build."
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Twilight exterior",
+            "customer": "Home builder · Model home",
+            "services": "Day-to-dusk, 3D render",
+            "outcome": "Pre-sold from renders",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Image_Nov_16_2025.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Dawn_Image.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "Custom home · exterior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Pre-sale marketing",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/3d-rendering-3546479.jpg?v=1786851971",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/3d-rendering-3546479.jpg?v=1786851971",
+            "tag": "Finished render"
+          }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "Development interior",
+            "customer": "Property developer",
+            "services": "3D rendering from plans",
+            "outcome": "Sales-centre visuals",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/3d-rendering-2082803.png?v=1786851971",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/3d-rendering-2082803.png?v=1786851971",
+            "tag": "Finished render"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3"
+      ],
+      "settings": {
+        "eyebrow": "Completed projects",
+        "heading": "Recent projects, rendered and sold",
+        "sub": true,
+        "text": "Built from plans and finished photos by the Bella visualization team.",
+        "cta_label": "",
+        "look_label": "See more in the portfolio →",
+        "look_url": "/pages/portfolio"
+      }
     }
   },
   "order": [
     "main",
     "scope",
     "steps",
+    "flow",
     "reqs",
     "uses",
     "proof",
     "quote",
     "math",
+    "work",
     "tips",
     "faq",
     "cta"
