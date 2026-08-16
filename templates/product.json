@@ -58,7 +58,8 @@
         "assure_1_tip": "Your order confirmation includes an upload link — send photos right away or whenever the shoot is done.",
         "assure_2_tip": "Mark up anything you'd like changed — revisions are free and unlimited for two weeks after delivery.",
         "assure_3_tip": "If a photo still isn't right after rework, we refund that photo. No fine print.",
-        "default_qty": 8
+        "default_qty": 8,
+        "lede": "For properties that are built but sitting vacant — or occupied and cluttered. A real interior designer furnishes your listing photos so buyers see a home, not an empty room. MLS-ready in 24 to 48 hours."
       }
     },
     "steps": {
