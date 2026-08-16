@@ -42,6 +42,15 @@
             "link_label": "Read the playbook →"
           }
         },
+        "r8": {
+          "type": "card",
+          "settings": {
+            "tag": "Guide",
+            "title": "Do's and don'ts of virtual staging",
+            "text": "The agent's guide to staging that helps a sale — and the mistakes that invite MLS trouble.",
+            "link": "/blogs/news/dos-and-donts-of-virtual-staging-a-guide-for-real-estate-agents"
+          }
+        },
         "g1": {
           "type": "heading",
           "settings": {
@@ -269,6 +278,7 @@
       "block_order": [
         "g1",
         "f3",
+        "r8",
         "r4",
         "r5",
         "r6",
