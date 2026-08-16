@@ -1,6 +1,6 @@
 <section class="res-hero">
   <span class="micro">{{ section.settings.eyebrow }}</span>
-  <h1>{{ section.settings.heading }}</h1>
+  {%- if section.settings.sub -%}<h2 class="res-h2">{{ section.settings.heading }}</h2>{%- else -%}<h1>{{ section.settings.heading }}</h1>{%- endif -%}
   <p class="loc-lede">{{ section.settings.lede }}</p>
 </section>
 <section class="res-wrap">
@@ -29,6 +29,7 @@
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Free resources" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Real estate marketing resources" },
+    { "type": "checkbox", "id": "sub", "label": "Render heading as H2 (page already has an H1)", "default": false },
     { "type": "textarea", "id": "lede", "label": "Lede", "default": "Practical guides, checklists and how-tos from the team that stages thousands of listings a year. 100% free — no order required." }
   ],
   "blocks": [
