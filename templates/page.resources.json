@@ -12,13 +12,6 @@
     "res": {
       "type": "bella-resources",
       "blocks": {
-        "g0": {
-          "type": "heading",
-          "settings": {
-            "title": "Start here — flagship guides",
-            "text": "Long-form playbooks written by the Bella team, with the numbers, checklists and scripts included."
-          }
-        },
         "f1": {
           "type": "card",
           "settings": {
@@ -52,8 +45,8 @@
         "g1": {
           "type": "heading",
           "settings": {
-            "title": "Shoot better photos",
-            "text": "Great staging starts with a usable photo. How to shoot listings that stage, edit and sell well."
+            "title": "For real estate agents & brokerages",
+            "text": "Win the listing, launch it right, and market it until it sells — the agent's shelf."
           }
         },
         "r1": {
@@ -81,13 +74,6 @@
             "title": "What is twilight photography?",
             "text": "Why dusk exteriors stop the scroll — and when a $5 day-to-dusk edit does the job of a return trip at sunset.",
             "link": "/blogs/news/what-is-twilight-photography-in-real-estate"
-          }
-        },
-        "g2": {
-          "type": "heading",
-          "settings": {
-            "title": "Market the listing",
-            "text": "The photos win the click — these guides win the rest of the campaign."
           }
         },
         "r4": {
@@ -126,22 +112,6 @@
             "link": "/blogs/news/integrating-virtual-staging-into-your-marketing-strategy-a-comprehensive-guide"
           }
         },
-        "g3": {
-          "type": "heading",
-          "settings": {
-            "title": "Know the services",
-            "text": "Plain-English explainers for every visual service we offer."
-          }
-        },
-        "r8": {
-          "type": "card",
-          "settings": {
-            "tag": "Guide",
-            "title": "Do's and don'ts of virtual staging",
-            "text": "The agent's guide to staging that helps a sale — and the mistakes that invite MLS trouble.",
-            "link": "/blogs/news/dos-and-donts-of-virtual-staging-a-guide-for-real-estate-agents"
-          }
-        },
         "r9": {
           "type": "card",
           "settings": {
@@ -151,13 +121,30 @@
             "link": "/blogs/news/2d-vs-3d-floor-plans-which-one-does-your-listing-need"
           }
         },
-        "r10": {
+        "g2": {
+          "type": "heading",
+          "settings": {
+            "title": "For home builders & property developers",
+            "text": "Pre-sell from plans, win approvals, and market projects before ground breaks."
+          }
+        },
+        "n1": {
           "type": "card",
           "settings": {
             "tag": "Explainer",
-            "title": "Day-to-dusk editing, explained",
-            "text": "How editors turn an afternoon exterior into a twilight hero shot — and what it costs.",
-            "link": "/blogs/news/what-is-day-to-dusk-editing-a-guide-to-day-to-dusk-photo-editing-for-real-estate"
+            "title": "What is architectural rendering?",
+            "text": "The complete guide to architectural visualization — how it works, the types of renders, and what it costs.",
+            "link": "/blogs/news/what-is-architectural-rendering"
+          }
+        },
+        "n2": {
+          "type": "card",
+          "settings": {
+            "tag": "Service",
+            "title": "3D architectural rendering services",
+            "text": "Interiors, exteriors, streetscapes and aerials from your plans — the full pricing and scope table.",
+            "link": "/pages/3d-architectural-rendering-services",
+            "link_label": "See pricing & scope →"
           }
         },
         "r11": {
@@ -167,6 +154,33 @@
             "title": "How 3D renderings sell homes",
             "text": "Pre-sell from plans: how photoreal renders market a build before ground breaks.",
             "link": "/blogs/news/how-3d-renderings-can-help-you-sell-your-home"
+          }
+        },
+        "r17": {
+          "type": "card",
+          "settings": {
+            "tag": "For builders",
+            "title": "3D rendering for home builders",
+            "text": "Pre-sell developments from your plans with photoreal renders.",
+            "link": "/pages/home-builder",
+            "link_label": "For builders →"
+          }
+        },
+        "g3": {
+          "type": "heading",
+          "settings": {
+            "title": "For investors, flippers & landlords",
+            "text": "Market the after while the property is still the before."
+          }
+        },
+        "n3": {
+          "type": "card",
+          "settings": {
+            "tag": "Service",
+            "title": "Virtual renovation — from $69",
+            "text": "Dated rooms digitally renovated and staged, disclosed for the MLS. Built for flips, estates and tenanted units.",
+            "link": "/products/virtual-renovation",
+            "link_label": "See the service →"
           }
         },
         "r12": {
@@ -181,8 +195,34 @@
         "g4": {
           "type": "heading",
           "settings": {
-            "title": "Tools from Bella",
-            "text": "Shortcuts you'll use on every listing."
+            "title": "For real estate photographers",
+            "text": "Shoot for staging, edit smarter, and white-label Bella behind your own brand."
+          }
+        },
+        "r18": {
+          "type": "card",
+          "settings": {
+            "tag": "For photographers",
+            "title": "Partner with Bella",
+            "text": "White-label staging and editing for real estate photographers.",
+            "link": "/pages/photographers",
+            "link_label": "Partner up →"
+          }
+        },
+        "r10": {
+          "type": "card",
+          "settings": {
+            "tag": "Explainer",
+            "title": "Day-to-dusk editing, explained",
+            "text": "How editors turn an afternoon exterior into a twilight hero shot — and what it costs.",
+            "link": "/blogs/news/what-is-day-to-dusk-editing-a-guide-to-day-to-dusk-photo-editing-for-real-estate"
+          }
+        },
+        "g5": {
+          "type": "heading",
+          "settings": {
+            "title": "Quick tools for every client",
+            "text": "Shortcuts you'll use on every order, whoever you are."
           }
         },
         "r13": {
@@ -224,55 +264,37 @@
             "link": "/pages/faq",
             "link_label": "Read the FAQ →"
           }
-        },
-        "r17": {
-          "type": "card",
-          "settings": {
-            "tag": "For builders",
-            "title": "3D rendering for home builders",
-            "text": "Pre-sell developments from your plans with photoreal renders.",
-            "link": "/pages/home-builder",
-            "link_label": "For builders →"
-          }
-        },
-        "r18": {
-          "type": "card",
-          "settings": {
-            "tag": "For photographers",
-            "title": "Partner with Bella",
-            "text": "White-label staging and editing for real estate photographers.",
-            "link": "/pages/photographers",
-            "link_label": "Partner up →"
-          }
         }
       },
       "block_order": [
-        "g0",
-        "f1",
-        "f2",
-        "f3",
         "g1",
-        "r1",
-        "r2",
-        "r3",
-        "g2",
+        "f3",
         "r4",
         "r5",
         "r6",
         "r7",
-        "g3",
-        "r8",
         "r9",
-        "r10",
+        "g2",
+        "f1",
+        "n1",
+        "n2",
         "r11",
+        "r17",
+        "g3",
+        "f2",
+        "n3",
         "r12",
         "g4",
+        "r18",
+        "r1",
+        "r2",
+        "r3",
+        "r10",
+        "g5",
         "r13",
         "r14",
         "r15",
-        "r16",
-        "r17",
-        "r18"
+        "r16"
       ],
       "settings": {
         "eyebrow": "Free resources",
