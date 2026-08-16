@@ -1,0 +1,116 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Free resources · for photographers",
+        "heading": "Real Estate Photography Business Resources",
+        "lede": "Shoot listings that stage and edit beautifully, add services your clients will pay for, and white-label Bella behind your own brand.",
+        "cta_label": "Partner with Bella",
+        "cta_link": "/pages/photographers",
+        "alt_label": "Back to all resources",
+        "alt_link": "/pages/resources",
+        "market_heading": "Grow a real estate photography business beyond the shoot",
+        "market_text": "<p>The photographers earning the most per listing aren't just delivering photos — they're delivering the finished marketing package: staged images, twilight heroes, floor plans and 360 tours, all under their own brand. Every add-on is margin on a shoot you were already doing.</p><p>Bella white-labels behind you: your logo on the files, our designers and editors doing the work, same-day-to-48-hour turnarounds your clients never see behind the curtain.</p>",
+        "local_heading": "Shoot for the edit",
+        "local_text": "<p>The guides below cover the craft side — shooting rooms that stage cleanly, bracketing for HDR, and when a <a href=\"/products/photo-editing\">$5 day-to-dusk edit</a> replaces a return trip at sunset. When you're ready, the <a href=\"/pages/photographers\">partner program</a> is where the add-on revenue starts.</p>",
+        "hoods_label": "What's on this shelf",
+        "hoods": "Partner program, Photography guide, Staging photo requirements, Twilight & day-to-dusk, HDR editing"
+      }
+    },
+    "res": {
+      "type": "bella-resources",
+      "blocks": {
+        "r18": {
+          "type": "card",
+          "settings": {
+            "tag": "For photographers",
+            "title": "Partner with Bella",
+            "text": "White-label staging and editing for real estate photographers.",
+            "link": "/pages/photographers",
+            "link_label": "Partner up →"
+          }
+        },
+        "r1": {
+          "type": "card",
+          "settings": {
+            "tag": "Photography guide",
+            "title": "Real estate photography tips that sell for more",
+            "text": "Camera height, lenses, light and the shots every listing needs — the guide to photographing a home so it earns a higher price.",
+            "link": "/blogs/news/real-estate-photography-tips-to-help-you-sell-for-a-higher-price"
+          }
+        },
+        "r2": {
+          "type": "card",
+          "settings": {
+            "tag": "Checklist",
+            "title": "Virtual staging photo requirements",
+            "text": "How to capture images that deliver the best staging results — angles, framing and what to avoid before you upload.",
+            "link": "/blogs/news/virtual-staging-photo-requirements-how-to-capture-images-that-deliver-the-best-results"
+          }
+        },
+        "r3": {
+          "type": "card",
+          "settings": {
+            "tag": "Guide",
+            "title": "What is twilight photography?",
+            "text": "Why dusk exteriors stop the scroll — and when a $5 day-to-dusk edit does the job of a return trip at sunset.",
+            "link": "/blogs/news/what-is-twilight-photography-in-real-estate"
+          }
+        },
+        "r10": {
+          "type": "card",
+          "settings": {
+            "tag": "Explainer",
+            "title": "Day-to-dusk editing, explained",
+            "text": "How editors turn an afternoon exterior into a twilight hero shot — and what it costs.",
+            "link": "/blogs/news/what-is-day-to-dusk-editing-a-guide-to-day-to-dusk-photo-editing-for-real-estate"
+          }
+        }
+      },
+      "block_order": [
+        "r18",
+        "r1",
+        "r2",
+        "r3",
+        "r10"
+      ],
+      "settings": {
+        "eyebrow": "The shelf",
+        "heading": "The photographer's shelf",
+        "lede": "Craft guides plus the partner program that turns them into revenue.",
+        "sub": true
+      }
+    },
+    "lead": {
+      "type": "bella-lead",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Rather skip the DIY?",
+        "heading": "Want us to handle the visuals?",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from $45 a photo.",
+        "cta_label": "See all services",
+        "cta_link": "/collections/all",
+        "fine_print": "Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "res",
+    "lead",
+    "cta"
+  ]
+}

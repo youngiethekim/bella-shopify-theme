@@ -1,0 +1,169 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Free resources · for agents & brokerages",
+        "heading": "Real Estate Marketing for Agents & Brokerages",
+        "lede": "Every guide, playbook and tool we've built for winning the listing and selling it faster — free, from the team that stages thousands of listings a year.",
+        "cta_label": "Stage a listing — from $45",
+        "cta_link": "/products/virtual-staging-1",
+        "alt_label": "Back to all resources",
+        "alt_link": "/pages/resources",
+        "market_heading": "Real estate marketing that wins the listing first",
+        "market_text": "<p>Real estate marketing for agents comes down to a brutal funnel: 97% of buyers start online, they judge your listing in three photos, and the attention peaks in the first 72 hours on market. Every resource on this page is built around winning those three moments — the listing presentation, the launch, and the follow-through on social, email and open houses.</p><p>Brokerages and team leads: everything here scales. Talk to us about volume pricing when your agents are ordering across multiple listings a month.</p>",
+        "local_heading": "Real estate marketing tools that pay for themselves",
+        "local_text": "<p>The tools behind the guides are priced per listing, not per month: <a href=\"/products/virtual-staging-1\">virtual staging from $45 a photo</a>, <a href=\"/products/photo-editing\">day-to-dusk and HDR edits from $5</a>, <a href=\"/products/2d-3d-floor-plan-service\">floor plans from $19.95</a>, and a <a href=\"/products/360-virtual-tour-staging\">staged 360 tour for about $179</a>. One saved price reduction pays for years of all of them.</p>",
+        "hoods_label": "What's on this shelf",
+        "hoods": "Listing launch playbook, Staging do's & don'ts, Marketing ideas, Social media, Open houses, Floor plans, Lookbook & pricing"
+      }
+    },
+    "res": {
+      "type": "bella-resources",
+      "blocks": {
+        "f3": {
+          "type": "card",
+          "settings": {
+            "tag": "Playbook",
+            "title": "The listing launch playbook: the first 72 hours",
+            "text": "Pricing, the first-three-photos strategy, syndication and the launch-week push — the full plan for a new listing.",
+            "link": "/blogs/news/listing-launch-playbook-first-72-hours",
+            "link_label": "Read the playbook →"
+          }
+        },
+        "r8": {
+          "type": "card",
+          "settings": {
+            "tag": "Guide",
+            "title": "Do's and don'ts of virtual staging",
+            "text": "The agent's guide to staging that helps a sale — and the mistakes that invite MLS trouble.",
+            "link": "/blogs/news/dos-and-donts-of-virtual-staging-a-guide-for-real-estate-agents"
+          }
+        },
+        "r4": {
+          "type": "card",
+          "settings": {
+            "tag": "Ideas",
+            "title": "Powerful real estate marketing ideas",
+            "text": "Proven tactics to make a listing stand out — from launch strategy to the follow-up that converts showings into offers.",
+            "link": "/blogs/news/real-estate-marketing-ideas"
+          }
+        },
+        "r5": {
+          "type": "card",
+          "settings": {
+            "tag": "Guide",
+            "title": "Social media marketing for listings",
+            "text": "What to post — and how staged visuals perform — on Instagram, TikTok and Facebook in today's real estate feed.",
+            "link": "/blogs/news/virtual-staging-in-the-era-of-social-media-marketing-in-real-estate"
+          }
+        },
+        "r6": {
+          "type": "card",
+          "settings": {
+            "tag": "Ideas",
+            "title": "10 unique open house ideas",
+            "text": "Fill your next open house: promotion, sign-in, and the touches attendees actually remember.",
+            "link": "/blogs/news/10-unique-open-house-ideas-for-2025"
+          }
+        },
+        "r7": {
+          "type": "card",
+          "settings": {
+            "tag": "Playbook",
+            "title": "Virtual staging in your marketing strategy",
+            "text": "A comprehensive guide to integrating staged visuals across the MLS, portals, social and email.",
+            "link": "/blogs/news/integrating-virtual-staging-into-your-marketing-strategy-a-comprehensive-guide"
+          }
+        },
+        "r9": {
+          "type": "card",
+          "settings": {
+            "tag": "Explainer",
+            "title": "2D vs 3D floor plans",
+            "text": "Which one does your listing need? Costs, buyer behaviour and when each earns its keep.",
+            "link": "/blogs/news/2d-vs-3d-floor-plans-which-one-does-your-listing-need"
+          }
+        },
+        "r13": {
+          "type": "card",
+          "settings": {
+            "tag": "Lookbook",
+            "title": "The furniture lookbook",
+            "text": "Browse every staging style we offer, save your favourites and attach them to your order.",
+            "link": "/pages/lookbook",
+            "link_label": "Browse styles →"
+          }
+        },
+        "r14": {
+          "type": "card",
+          "settings": {
+            "tag": "Pricing",
+            "title": "Virtual staging pricing",
+            "text": "Every price on one page, including volume discounts up to 20%.",
+            "link": "/pages/pricing",
+            "link_label": "See pricing →"
+          }
+        },
+        "r16": {
+          "type": "card",
+          "settings": {
+            "tag": "FAQ",
+            "title": "Frequently asked questions",
+            "text": "Turnaround, revisions, MLS disclosure rules and everything else agents ask.",
+            "link": "/pages/faq",
+            "link_label": "Read the FAQ →"
+          }
+        }
+      },
+      "block_order": [
+        "f3",
+        "r8",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r9",
+        "r13",
+        "r14",
+        "r16"
+      ],
+      "settings": {
+        "eyebrow": "The shelf",
+        "heading": "The agent's shelf",
+        "lede": "Playbooks first, then the guides you'll reuse on every listing.",
+        "sub": true
+      }
+    },
+    "lead": {
+      "type": "bella-lead",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Rather skip the DIY?",
+        "heading": "Want us to handle the visuals?",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from $45 a photo.",
+        "cta_label": "See all services",
+        "cta_link": "/collections/all",
+        "fine_print": "Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "res",
+    "lead",
+    "cta"
+  ]
+}

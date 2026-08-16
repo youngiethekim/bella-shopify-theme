@@ -12,6 +12,53 @@
     "res": {
       "type": "bella-resources",
       "blocks": {
+        "a1": {
+          "type": "card",
+          "settings": {
+            "tag": "For agents & brokerages",
+            "title": "Real estate marketing for agents",
+            "text": "The agent's shelf: the listing launch playbook, staging do's & don'ts, social, open houses and every tool priced per listing.",
+            "link": "/pages/real-estate-marketing-for-agents",
+            "link_label": "Browse the shelf →"
+          }
+        },
+        "a2": {
+          "type": "card",
+          "settings": {
+            "tag": "For builders & developers",
+            "title": "Home builder marketing",
+            "text": "Pre-sell from plans: the builder's playbook, rendering pricing and scope, and the model-home math.",
+            "link": "/pages/home-builder-marketing",
+            "link_label": "Browse the shelf →"
+          }
+        },
+        "a3": {
+          "type": "card",
+          "settings": {
+            "tag": "For investors & flippers",
+            "title": "Marketing for real estate investors",
+            "text": "Sell the after while it's still the before: virtual renovation, disclosure rules and the flip-marketing toolkit.",
+            "link": "/pages/real-estate-investor-marketing",
+            "link_label": "Browse the shelf →"
+          }
+        },
+        "a4": {
+          "type": "card",
+          "settings": {
+            "tag": "For photographers",
+            "title": "Real estate photography business",
+            "text": "Shoot for the edit, add services clients pay for, and white-label Bella behind your brand.",
+            "link": "/pages/real-estate-photography-business",
+            "link_label": "Browse the shelf →"
+          }
+        },
+        "g0": {
+          "type": "heading",
+          "settings": {
+            "title": "Start here — flagship guides",
+            "text": "Long-form playbooks written by the Bella team, with the numbers, checklists and scripts included."
+          }
+        },
         "f1": {
           "type": "card",
           "settings": {
@@ -25,7 +72,7 @@
         "f2": {
           "type": "card",
           "settings": {
-            "tag": "Agent & investor guide",
+            "tag": "Investor guide",
             "title": "Sell a dated home without renovating it",
             "text": "The virtual renovation guide: why dated finishes kill offers, what disclosure requires, and the $69 alternative to a $20,000 refresh.",
             "link": "/blogs/news/virtual-renovation-guide-sell-dated-home",
@@ -40,191 +87,6 @@
             "text": "Pricing, the first-three-photos strategy, syndication and the launch-week push — the full plan for a new listing.",
             "link": "/blogs/news/listing-launch-playbook-first-72-hours",
             "link_label": "Read the playbook →"
-          }
-        },
-        "r8": {
-          "type": "card",
-          "settings": {
-            "tag": "Guide",
-            "title": "Do's and don'ts of virtual staging",
-            "text": "The agent's guide to staging that helps a sale — and the mistakes that invite MLS trouble.",
-            "link": "/blogs/news/dos-and-donts-of-virtual-staging-a-guide-for-real-estate-agents"
-          }
-        },
-        "g1": {
-          "type": "heading",
-          "settings": {
-            "title": "For real estate agents & brokerages",
-            "text": "Win the listing, launch it right, and market it until it sells — the agent's shelf."
-          }
-        },
-        "r1": {
-          "type": "card",
-          "settings": {
-            "tag": "Photography guide",
-            "title": "Real estate photography tips that sell for more",
-            "text": "Camera height, lenses, light and the shots every listing needs — the guide to photographing a home so it earns a higher price.",
-            "link": "/blogs/news/real-estate-photography-tips-to-help-you-sell-for-a-higher-price"
-          }
-        },
-        "r2": {
-          "type": "card",
-          "settings": {
-            "tag": "Checklist",
-            "title": "Virtual staging photo requirements",
-            "text": "How to capture images that deliver the best staging results — angles, framing and what to avoid before you upload.",
-            "link": "/blogs/news/virtual-staging-photo-requirements-how-to-capture-images-that-deliver-the-best-results"
-          }
-        },
-        "r3": {
-          "type": "card",
-          "settings": {
-            "tag": "Guide",
-            "title": "What is twilight photography?",
-            "text": "Why dusk exteriors stop the scroll — and when a $5 day-to-dusk edit does the job of a return trip at sunset.",
-            "link": "/blogs/news/what-is-twilight-photography-in-real-estate"
-          }
-        },
-        "r4": {
-          "type": "card",
-          "settings": {
-            "tag": "Ideas",
-            "title": "Powerful real estate marketing ideas",
-            "text": "Proven tactics to make a listing stand out — from launch strategy to the follow-up that converts showings into offers.",
-            "link": "/blogs/news/real-estate-marketing-ideas"
-          }
-        },
-        "r5": {
-          "type": "card",
-          "settings": {
-            "tag": "Guide",
-            "title": "Social media marketing for listings",
-            "text": "What to post — and how staged visuals perform — on Instagram, TikTok and Facebook in today's real estate feed.",
-            "link": "/blogs/news/virtual-staging-in-the-era-of-social-media-marketing-in-real-estate"
-          }
-        },
-        "r6": {
-          "type": "card",
-          "settings": {
-            "tag": "Ideas",
-            "title": "10 unique open house ideas",
-            "text": "Fill your next open house: promotion, sign-in, and the touches attendees actually remember.",
-            "link": "/blogs/news/10-unique-open-house-ideas-for-2025"
-          }
-        },
-        "r7": {
-          "type": "card",
-          "settings": {
-            "tag": "Playbook",
-            "title": "Virtual staging in your marketing strategy",
-            "text": "A comprehensive guide to integrating staged visuals across the MLS, portals, social and email.",
-            "link": "/blogs/news/integrating-virtual-staging-into-your-marketing-strategy-a-comprehensive-guide"
-          }
-        },
-        "r9": {
-          "type": "card",
-          "settings": {
-            "tag": "Explainer",
-            "title": "2D vs 3D floor plans",
-            "text": "Which one does your listing need? Costs, buyer behaviour and when each earns its keep.",
-            "link": "/blogs/news/2d-vs-3d-floor-plans-which-one-does-your-listing-need"
-          }
-        },
-        "g2": {
-          "type": "heading",
-          "settings": {
-            "title": "For home builders & property developers",
-            "text": "Pre-sell from plans, win approvals, and market projects before ground breaks."
-          }
-        },
-        "n1": {
-          "type": "card",
-          "settings": {
-            "tag": "Explainer",
-            "title": "What is architectural rendering?",
-            "text": "The complete guide to architectural visualization — how it works, the types of renders, and what it costs.",
-            "link": "/blogs/news/what-is-architectural-rendering"
-          }
-        },
-        "n2": {
-          "type": "card",
-          "settings": {
-            "tag": "Service",
-            "title": "3D architectural rendering services",
-            "text": "Interiors, exteriors, streetscapes and aerials from your plans — the full pricing and scope table.",
-            "link": "/pages/3d-architectural-rendering-services",
-            "link_label": "See pricing & scope →"
-          }
-        },
-        "r11": {
-          "type": "card",
-          "settings": {
-            "tag": "Explainer",
-            "title": "How 3D renderings sell homes",
-            "text": "Pre-sell from plans: how photoreal renders market a build before ground breaks.",
-            "link": "/blogs/news/how-3d-renderings-can-help-you-sell-your-home"
-          }
-        },
-        "r17": {
-          "type": "card",
-          "settings": {
-            "tag": "For builders",
-            "title": "3D rendering for home builders",
-            "text": "Pre-sell developments from your plans with photoreal renders.",
-            "link": "/pages/home-builder",
-            "link_label": "For builders →"
-          }
-        },
-        "g3": {
-          "type": "heading",
-          "settings": {
-            "title": "For investors, flippers & landlords",
-            "text": "Market the after while the property is still the before."
-          }
-        },
-        "n3": {
-          "type": "card",
-          "settings": {
-            "tag": "Service",
-            "title": "Virtual renovation — from $69",
-            "text": "Dated rooms digitally renovated and staged, disclosed for the MLS. Built for flips, estates and tenanted units.",
-            "link": "/products/virtual-renovation",
-            "link_label": "See the service →"
-          }
-        },
-        "r12": {
-          "type": "card",
-          "settings": {
-            "tag": "Explainer",
-            "title": "Item removal in photo editing",
-            "text": "Decluttering a listing digitally: what item removal covers and when to use it.",
-            "link": "/blogs/news/what-is-item-removal-in-photo-editing-a-guide-for-real-estate-listings"
-          }
-        },
-        "g4": {
-          "type": "heading",
-          "settings": {
-            "title": "For real estate photographers",
-            "text": "Shoot for staging, edit smarter, and white-label Bella behind your own brand."
-          }
-        },
-        "r18": {
-          "type": "card",
-          "settings": {
-            "tag": "For photographers",
-            "title": "Partner with Bella",
-            "text": "White-label staging and editing for real estate photographers.",
-            "link": "/pages/photographers",
-            "link_label": "Partner up →"
-          }
-        },
-        "r10": {
-          "type": "card",
-          "settings": {
-            "tag": "Explainer",
-            "title": "Day-to-dusk editing, explained",
-            "text": "How editors turn an afternoon exterior into a twilight hero shot — and what it costs.",
-            "link": "/blogs/news/what-is-day-to-dusk-editing-a-guide-to-day-to-dusk-photo-editing-for-real-estate"
           }
         },
         "g5": {
@@ -276,30 +138,14 @@
         }
       },
       "block_order": [
-        "g1",
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "g0",
         "f3",
-        "r8",
-        "r4",
-        "r5",
-        "r6",
-        "r7",
-        "r9",
-        "g2",
         "f1",
-        "n1",
-        "n2",
-        "r11",
-        "r17",
-        "g3",
         "f2",
-        "n3",
-        "r12",
-        "g4",
-        "r18",
-        "r1",
-        "r2",
-        "r3",
-        "r10",
         "g5",
         "r13",
         "r14",
@@ -308,8 +154,8 @@
       ],
       "settings": {
         "eyebrow": "Free resources",
-        "heading": "Real estate marketing resources",
-        "lede": "Practical guides, checklists and how-tos from the team that stages thousands of listings a year. 100% free — no order required."
+        "heading": "Real Estate Marketing Resources",
+        "lede": "Pick your shelf: dedicated resource pages for agents, builders, investors and photographers — plus the flagship guides everyone starts with. 100% free, no order required."
       }
     },
     "cta": {
@@ -317,8 +163,9 @@
       "settings": {
         "eyebrow": "Rather skip the DIY?",
         "heading": "Want us to handle the visuals?",
-        "text": "Virtual staging, renovations, renders, floor plans and edits — MLS-ready in 24 to 48 hours, from $45 a photo.",
-        "cta_label": "Get started",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from $45 a photo.",
+        "cta_label": "See all services",
+        "cta_link": "/collections/all",
         "fine_print": "Unlimited revisions for two weeks · Rework or refund"
       }
     }

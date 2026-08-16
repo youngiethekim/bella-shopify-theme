@@ -1,0 +1,108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Free resources · for investors & flippers",
+        "heading": "Marketing for Real Estate Investors & Flippers",
+        "lede": "Sell the after while the property is still the before: guides and tools for flips, estates, wholesaling and tenanted units.",
+        "cta_label": "See virtual renovation — $69",
+        "cta_link": "/products/virtual-renovation",
+        "alt_label": "Back to all resources",
+        "alt_link": "/pages/resources",
+        "market_heading": "Sell the after, not the before",
+        "market_text": "<p>Investor marketing is vision marketing. Buyers of flips, estates and value-add properties aren't paying for what the property is — they're paying for what it can be, and they pay more when they can see it. Virtual renovation shows the finished flip while trades are still inside; virtual staging turns a cleared unit into a home; item removal declutters a tenanted photo without touching the tenancy.</p>",
+        "local_heading": "The investor's toolkit",
+        "local_text": "<p><a href=\"/products/virtual-renovation\">Virtual renovation is $69 a photo</a> with designer staging included — against $20,000+ for a real pre-sale refresh. Pair it with <a href=\"/products/virtual-staging-1\">$45 staging</a> for the rooms that only need furniture, and disclose everything on the MLS exactly as our guides show.</p>",
+        "hoods_label": "What's on this shelf",
+        "hoods": "Virtual renovation guide, Disclosure rules, Item removal, Marketing the flip"
+      }
+    },
+    "res": {
+      "type": "bella-resources",
+      "blocks": {
+        "f2": {
+          "type": "card",
+          "settings": {
+            "tag": "Investor guide",
+            "title": "Sell a dated home without renovating it",
+            "text": "The virtual renovation guide: why dated finishes kill offers, what disclosure requires, and the $69 alternative to a $20,000 refresh.",
+            "link": "/blogs/news/virtual-renovation-guide-sell-dated-home",
+            "link_label": "Read the guide →"
+          }
+        },
+        "n3": {
+          "type": "card",
+          "settings": {
+            "tag": "Service",
+            "title": "Virtual renovation — from $69",
+            "text": "Dated rooms digitally renovated and staged, disclosed for the MLS. Built for flips, estates and tenanted units.",
+            "link": "/products/virtual-renovation",
+            "link_label": "See the service →"
+          }
+        },
+        "r12": {
+          "type": "card",
+          "settings": {
+            "tag": "Explainer",
+            "title": "Item removal in photo editing",
+            "text": "Decluttering a listing digitally: what item removal covers and when to use it.",
+            "link": "/blogs/news/what-is-item-removal-in-photo-editing-a-guide-for-real-estate-listings"
+          }
+        },
+        "f3": {
+          "type": "card",
+          "settings": {
+            "tag": "Playbook",
+            "title": "The listing launch playbook: the first 72 hours",
+            "text": "Pricing, the first-three-photos strategy, syndication and the launch-week push — the full plan for a new listing.",
+            "link": "/blogs/news/listing-launch-playbook-first-72-hours",
+            "link_label": "Read the playbook →"
+          }
+        }
+      },
+      "block_order": [
+        "f2",
+        "n3",
+        "r12",
+        "f3"
+      ],
+      "settings": {
+        "eyebrow": "The shelf",
+        "heading": "The investor's shelf",
+        "lede": "The renovation guide is the core read — the rest rounds it out.",
+        "sub": true
+      }
+    },
+    "lead": {
+      "type": "bella-lead",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Rather skip the DIY?",
+        "heading": "Want us to handle the visuals?",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from $45 a photo.",
+        "cta_label": "See all services",
+        "cta_link": "/collections/all",
+        "fine_print": "Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "res",
+    "lead",
+    "cta"
+  ]
+}

@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Free resources · for builders & developers",
+        "heading": "Home Builder Marketing",
+        "lede": "How builders and property developers pre-sell from plans, win approvals, and market projects before ground breaks — guides, pricing and the pre-sale playbook, all free.",
+        "cta_label": "Order a render — from $550",
+        "cta_link": "/products/3d-rendering",
+        "alt_label": "Back to all resources",
+        "alt_link": "/pages/resources",
+        "market_heading": "Home builder marketing starts before ground breaks",
+        "market_text": "<p>Marketing for home builders has one job the rest of real estate doesn't: selling something that doesn't exist yet. The cheapest money in any build is a pre-sale, and pre-sales come from visuals — photoreal renders that let a buyer commit from a floor plan, upgrade packages they can see, and lender decks that read like the project is already selling.</p><p>The resources below cover that whole arc, from the render shot list to the model-home math.</p>",
+        "local_heading": "From drawings to deposits",
+        "local_text": "<p>Our <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a> run from $550 per photoreal view — interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans with revisions included. A full 4–6 view pre-sale package costs $2,500–4,500, against a six-figure model home that shows one floor plan.</p>",
+        "hoods_label": "What's on this shelf",
+        "hoods": "Pre-sale playbook, Rendering pricing & scope, What is architectural rendering, Approvals & lender packages, Model home math"
+      }
+    },
+    "res": {
+      "type": "bella-resources",
+      "blocks": {
+        "f1": {
+          "type": "card",
+          "settings": {
+            "tag": "Builder guide",
+            "title": "Pre-sell homes with 3D renderings",
+            "text": "The home builder's playbook: pre-sell from plans, skip the six-figure model home, and sell upgrades buyers can see.",
+            "link": "/blogs/news/home-builders-guide-preselling-with-3d-renderings",
+            "link_label": "Read the playbook →"
+          }
+        },
+        "n1": {
+          "type": "card",
+          "settings": {
+            "tag": "Explainer",
+            "title": "What is architectural rendering?",
+            "text": "The complete guide to architectural visualization — how it works, the types of renders, and what it costs.",
+            "link": "/blogs/news/what-is-architectural-rendering"
+          }
+        },
+        "n2": {
+          "type": "card",
+          "settings": {
+            "tag": "Service",
+            "title": "3D architectural rendering services",
+            "text": "Interiors, exteriors, streetscapes and aerials from your plans — the full pricing and scope table.",
+            "link": "/pages/3d-architectural-rendering-services",
+            "link_label": "See pricing & scope →"
+          }
+        },
+        "r11": {
+          "type": "card",
+          "settings": {
+            "tag": "Explainer",
+            "title": "How 3D renderings sell homes",
+            "text": "Pre-sell from plans: how photoreal renders market a build before ground breaks.",
+            "link": "/blogs/news/how-3d-renderings-can-help-you-sell-your-home"
+          }
+        },
+        "r17": {
+          "type": "card",
+          "settings": {
+            "tag": "For builders",
+            "title": "3D rendering for home builders",
+            "text": "Pre-sell developments from your plans with photoreal renders.",
+            "link": "/pages/home-builder",
+            "link_label": "For builders →"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "n1",
+        "n2",
+        "r11",
+        "r17"
+      ],
+      "settings": {
+        "eyebrow": "The shelf",
+        "heading": "The builder's shelf",
+        "lede": "Start with the playbook — the rest supports it.",
+        "sub": true
+      }
+    },
+    "lead": {
+      "type": "bella-lead",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Rather skip the DIY?",
+        "heading": "Want us to handle the visuals?",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from $45 a photo.",
+        "cta_label": "See all services",
+        "cta_link": "/collections/all",
+        "fine_print": "Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "res",
+    "lead",
+    "cta"
+  ]
+}
