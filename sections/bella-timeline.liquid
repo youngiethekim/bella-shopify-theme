@@ -1,0 +1,50 @@
+<div class="svc-page">
+  <section class="sec">
+    <div class="sec-in">
+      <div class="head2">
+        <p class="micro">{{ section.settings.eyebrow }}</p>
+        <h2>{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+      <ol class="tl">
+        {%- for block in section.blocks -%}
+          <li class="tl-step{% if block.settings.us %} us{% endif %}" {{ block.shopify_attributes }}>
+            <span class="tl-dot" aria-hidden="true"></span>
+            <span class="tl-when">{{ block.settings.when }}</span>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+            {%- if block.settings.us -%}<span class="tl-badge">{{ section.settings.badge | default: 'We handle this' }}</span>{%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ol>
+      {%- if section.settings.note != blank -%}<p class="tl-note">{{ section.settings.note }}</p>{%- endif -%}
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Buyer-flow timeline",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Where we fit" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Your listing's marketing timeline" },
+    { "type": "textarea", "id": "text", "label": "Intro" },
+    { "type": "text", "id": "badge", "label": "Highlight badge", "default": "We handle this" },
+    { "type": "textarea", "id": "note", "label": "Footnote" }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        { "type": "text", "id": "when", "label": "When", "default": "Day 0" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" },
+        { "type": "checkbox", "id": "us", "label": "This is the Bella step", "default": false }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Buyer-flow timeline" }]
+}
+{% endschema %}

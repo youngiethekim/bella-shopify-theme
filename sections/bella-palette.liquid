@@ -1,0 +1,81 @@
+<div class="svc-page">
+  <section class="sec">
+    <div class="sec-in">
+      <div class="head2">
+        <p class="micro">{{ section.settings.eyebrow }}</p>
+        <h2>{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+      <div class="pal-grid">
+        {%- for block in section.blocks -%}
+          <div class="pal-card" {{ block.shopify_attributes }}>
+            <div class="pal-swatches">
+              {%- assign colors = block.settings.colors | split: ',' -%}
+              {%- for c in colors -%}
+                {%- assign parts = c | strip | split: '|' -%}
+                <span class="pal-chip" style="background:{{ parts[2] | strip }}" title="{{ parts[0] | strip }} · {{ parts[1] | strip }}">
+                  <span class="pal-tip">{{ parts[0] | strip }} <em>{{ parts[1] | strip }}</em></span>
+                </span>
+              {%- endfor -%}
+            </div>
+            <b>{{ block.settings.name }}</b>
+            <p>{{ block.settings.text }}</p>
+            <button type="button" class="pal-copy" data-palette="{{ block.settings.name | escape }}" data-colors="{{ block.settings.colors | escape }}">{{ section.settings.pick_label | default: 'Use this palette →' }}</button>
+          </div>
+        {%- endfor -%}
+      </div>
+      {%- if section.settings.note != blank -%}<p class="tl-note">{{ section.settings.note }}</p>{%- endif -%}
+    </div>
+  </section>
+</div>
+
+<script>
+(function () {
+  document.querySelectorAll('.pal-copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var names = (btn.getAttribute('data-colors') || '').split(',').map(function (c) {
+        var p = c.split('|');
+        return (p[0] || '').trim() + (p[1] ? ' ' + p[1].trim() : '');
+      }).join(', ');
+      var text = 'Palette: ' + btn.getAttribute('data-palette') + ' — ' + names;
+      try { navigator.clipboard.writeText(text); } catch (e) {}
+      var more = document.querySelector('.bb-more');
+      if (more) {
+        more.setAttribute('open', '');
+        var input = more.querySelector('input');
+        if (input) input.value = input.value ? input.value + ' · ' + text : text;
+      }
+      var old = btn.textContent;
+      btn.textContent = 'Added to your order notes ✓';
+      btn.classList.add('on');
+      setTimeout(function () { btn.textContent = old; btn.classList.remove('on'); }, 2200);
+    });
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Color palettes",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Pick your finishes" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Choose a palette for your renovation" },
+    { "type": "textarea", "id": "text", "label": "Intro" },
+    { "type": "text", "id": "pick_label", "label": "Pick button label", "default": "Use this palette →" },
+    { "type": "textarea", "id": "note", "label": "Footnote" }
+  ],
+  "blocks": [
+    {
+      "type": "palette",
+      "name": "Palette",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Palette name" },
+        { "type": "textarea", "id": "text", "label": "Description" },
+        { "type": "textarea", "id": "colors", "label": "Colors (Name|CODE|#hex, comma-separated)" }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "Color palettes" }]
+}
+{% endschema %}
