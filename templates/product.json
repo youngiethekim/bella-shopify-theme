@@ -456,11 +456,110 @@
         "get_heading": "What you get back",
         "note": "Not sure your photos qualify? Send one through the free-sample form or contact us before ordering — we'll tell you straight."
       }
+    },
+    "flow": {
+      "type": "bella-timeline",
+      "blocks": {
+        "t1": {
+          "type": "step",
+          "settings": {
+            "when": "Day 0",
+            "title": "Shoot the vacant listing",
+            "text": "Your photographer shoots the empty rooms — 2,000×3,000 px or larger."
+          }
+        },
+        "t2": {
+          "type": "step",
+          "settings": {
+            "when": "Day 1–2",
+            "title": "We stage the photos",
+            "text": "Designers furnish every room to match your buyer and market, with free furniture removal if it started cluttered.",
+            "us": true
+          }
+        },
+        "t3": {
+          "type": "step",
+          "settings": {
+            "when": "Day 2",
+            "title": "Launch on MLS & portals",
+            "text": "Staged photos lead the listing everywhere buyers scroll."
+          }
+        },
+        "t4": {
+          "type": "step",
+          "settings": {
+            "when": "Week 1",
+            "title": "Showings & saves peak",
+            "text": "Staged listings earn more saves, shares and showings in the critical first 72 hours on market."
+          }
+        },
+        "t5": {
+          "type": "step",
+          "settings": {
+            "when": "Closing",
+            "title": "Sold",
+            "text": "Buyers walk in already knowing how the home lives."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ],
+      "settings": {
+        "eyebrow": "Where we fit",
+        "heading": "Your listing's marketing timeline",
+        "text": "From shoot to sold — staging slots into the 48 hours between the photographer and the MLS launch."
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Den & family room",
+            "customer": "Real estate agent · Lodge estate",
+            "services": "Virtual staging, 3D floor plan",
+            "outcome": "Sold · 9 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_Tung_TP_1.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "120 Bayview Ave",
+            "customer": "Real estate agent · Toronto",
+            "services": "Virtual staging, floor plan, house tour",
+            "outcome": "Sold · 21 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2"
+      ],
+      "settings": {
+        "eyebrow": "Completed projects",
+        "heading": "Recent stagings that sold",
+        "sub": true,
+        "text": "Real listings, staged by Bella — hover or tap to see the room we started with.",
+        "cta_label": "",
+        "look_label": "See more in the portfolio →",
+        "look_url": "/pages/portfolio"
+      }
     }
   },
   "order": [
     "main",
     "steps",
+    "flow",
     "reqs",
     "uses",
     "proof",
@@ -468,6 +567,7 @@
     "included",
     "math",
     "tips",
+    "work",
     "faq",
     "related",
     "cta"
