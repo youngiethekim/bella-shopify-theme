@@ -71,6 +71,18 @@
             "text": "HDR blending, day-to-dusk, item removal and sky swaps by our retouching team — back within 24 hours.",
             "cta": "Order photo editing →"
           }
+        },
+        "f6": {
+          "type": "feature",
+          "settings": {
+            "product": "360-virtual-tour-staging",
+            "eyebrow": "06 · 360° Tours + Staging",
+            "title": "360° Virtual Tour + Staging",
+            "unit": "photo",
+            "audience": "agents · property managers · vacation rentals",
+            "text": "Shoot your listing with any 360 camera — we stitch the panoramas into a shareable virtual tour and virtually stage every room. A fraction of the cost of a professionally shot 3D tour.",
+            "cta": "Order a 360 tour →"
+          }
         }
       },
       "block_order": [
@@ -78,7 +90,8 @@
         "f5",
         "f2",
         "f3",
-        "f4"
+        "f4",
+        "f6"
       ],
       "settings": {
         "eyebrow": "Services",

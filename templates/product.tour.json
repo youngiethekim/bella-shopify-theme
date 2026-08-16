@@ -1,0 +1,321 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "note",
+            "text": "<b>$99</b> / tour + <b>$10</b> / photo"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "image",
+            "text": "Works with <b>any 360 camera</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "sofa",
+            "text": "<b>Staging included</b> in every room"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "icon": "shield",
+            "text": "<b>Rework or refund</b>"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "style_options": "",
+        "show_notes": false,
+        "collapse_description": false,
+        "assure_1_icon": "upload",
+        "assure_2_icon": "pen",
+        "assure_3_icon": "shield",
+        "lede": "For listings that deserve a walkthrough without the walkthrough price. Shoot your own 360 photos, and we turn them into a staged virtual tour remote buyers can step inside.",
+        "unit_label": "item",
+        "variant_label": "Choose your item",
+        "variant_tip": "Every tour needs one 'Tour setup & stitching' ($99), plus one 'Staged 360° photo' for each room. Add the setup first, then switch and add your photo count.",
+        "variant_specs": "Tour setup & stitching | One per tour · we assemble your panoramas into a shareable tour link · hosting setup included\nStaged 360° photo | One per room · your panorama virtually staged by a designer · disclosed for the MLS",
+        "qty_label": "How many?",
+        "default_qty": 8,
+        "reco_text": "Our most popular order: 1 tour setup + 8 staged 360° photos covers a typical listing — $179 all-in.",
+        "shot_label": "360° tour staged by a Bella designer",
+        "assure_1": "Upload 360s after checkout",
+        "assure_2": "Unlimited revisions · 2 weeks",
+        "assure_3": "Rework or refund",
+        "assure_1_tip": "Your order confirmation includes an upload link — send the panoramas straight off the camera.",
+        "assure_2_tip": "Mark up any room you'd like re-staged — revisions are free for two weeks.",
+        "assure_3_tip": "If a staged panorama still isn't right after rework, we refund that photo.",
+        "def_heading": "About this service"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Shoot & upload your 360s",
+            "text": "Walk the listing with any 360 camera — one panorama per room — and upload the files after checkout."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "sofa",
+            "title": "We stitch & stage",
+            "text": "We assemble your panoramas into a smooth virtual tour and a designer virtually stages every room, disclosed for the MLS."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Share the tour anywhere",
+            "text": "You get a tour link plus the staged panoramas — ready for the MLS, Zillow, your website and social."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "reqs": {
+      "type": "bella-reqs",
+      "blocks": {
+        "rq1": {
+          "type": "req",
+          "settings": {
+            "text": "<strong>360° panoramas from any consumer 360 camera</strong> — Ricoh Theta, Insta360 or similar, straight off the camera. One panorama per room."
+          }
+        },
+        "rq2": {
+          "type": "req",
+          "settings": {
+            "text": "Panoramas at least <strong>5,000 px wide</strong> (any modern 360 camera's standard output). Smaller files can't be staged cleanly and will be declined."
+          }
+        },
+        "rq3": {
+          "type": "req",
+          "settings": {
+            "text": "Shot from the centre of the room at chest height, on a tripod or monopod if you have one."
+          }
+        },
+        "rq4": {
+          "type": "req",
+          "settings": {
+            "text": "The room order you'd like the tour to follow (front door to back is typical)."
+          }
+        },
+        "gt1": {
+          "type": "get",
+          "settings": {
+            "text": "A <strong>shareable virtual tour link</strong> that works on the MLS, Zillow, your website and social."
+          }
+        },
+        "gt2": {
+          "type": "get",
+          "settings": {
+            "text": "Every room <strong>virtually staged by a real designer</strong>, disclosed as digitally staged."
+          }
+        },
+        "gt3": {
+          "type": "get",
+          "settings": {
+            "text": "The staged 360° panorama files themselves — use them on any tour platform you already pay for."
+          }
+        },
+        "gt4": {
+          "type": "get",
+          "settings": {
+            "text": "Unlimited revisions free for two weeks, backed by rework-or-refund."
+          }
+        }
+      },
+      "block_order": [
+        "rq1",
+        "rq2",
+        "rq3",
+        "rq4",
+        "gt1",
+        "gt2",
+        "gt3",
+        "gt4"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "What we need. What you get.",
+        "text": "You do the ten-minute walkthrough with the camera; we do everything else.",
+        "req_heading": "What we need from you",
+        "get_heading": "What you get back",
+        "note": "No 360 camera? Many agents borrow or rent one for under $50 a day — one listing pays for it several times over versus booking a 3D tour crew."
+      }
+    },
+    "uses": {
+      "type": "bella-included",
+      "blocks": {
+        "w1": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Win the remote buyer",
+            "text": "Out-of-town and investor buyers shortlist from tours. A staged walkthrough lets them commit without a flight."
+          }
+        },
+        "w2": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Tour-level marketing, photo-level budget",
+            "text": "A typical 8-room staged tour is $179 — against $300–500+ for a professionally shot 3D tour, before hosting fees."
+          }
+        },
+        "w3": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "No crew to schedule",
+            "text": "You shoot the 360s on your own timeline — no waiting on a tour photographer's calendar to launch the listing."
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3"
+      ],
+      "settings": {
+        "eyebrow": "How clients use it",
+        "heading": "What a staged tour wins you."
+      }
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "I am so pleased with your services. The virtual staging was awesome. We sold my listing in 8 days with multiple offers.",
+        "attribution": "Joe Benvenuto · Real estate agent, San Francisco CA",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "math": {
+      "type": "bella-value",
+      "settings": {
+        "eyebrow": "The math",
+        "heading": "The 3D tour, without the 3D tour bill.",
+        "old_label": "Professionally shot 3D tour",
+        "old_amount": "$300–500+",
+        "old_per": "per shoot · crew scheduling · monthly hosting fees · empty rooms",
+        "new_label": "Bella 360 tour + staging",
+        "new_amount": "$179",
+        "new_per": "typical 8-room tour · your own 360 camera · every room staged",
+        "note": "A professional 3D tour crew photographs the home exactly as it is — which for a vacant listing means a tour of empty rooms, at $300–500 per shoot plus hosting. Our approach flips it: you spend ten minutes walking the home with a 360 camera, and we stitch the tour and stage every room for $99 plus $10 a photo. The remote buyer gets a furnished walkthrough; your seller keeps hundreds of dollars per listing.",
+        "cta_label": "",
+        "also_label": ""
+      }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "How does the pricing work?",
+            "answer": "Each tour is $99 for stitching, assembly and setup, plus $10 per staged 360° photo (one per room). A typical 8-room listing is $179 all-in. Add the tour setup to your order first, then switch to 'Staged 360° photo' and add one per room."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "What camera do I need?",
+            "answer": "Any consumer 360 camera — Ricoh Theta, Insta360 or similar — or your photographer's rig. Shoot one panorama per room from the centre at chest height and upload the files straight off the camera."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Where can I use the tour?",
+            "answer": "Anywhere a link works: the MLS's virtual-tour field, Zillow, Realtor.com, your website, email and social. You also receive the staged panorama files themselves, so you can load them into any tour platform you already use."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Is the staging MLS-compliant?",
+            "answer": "Yes, with disclosure — the same rule as virtually staged photos. Every staged room is clearly disclosed as digitally staged, and we tell you exactly what to note on the listing."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How is this different from a Matterport tour?",
+            "answer": "A Matterport-style tour is a 3D scan shot by a crew with proprietary hardware, typically $300–500 per listing plus monthly hosting — and it shows the home exactly as it is, empty rooms included. Our tour is built from your own 360 photos, costs a fraction as much, and every room comes virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you order"
+      }
+    },
+    "related": {
+      "type": "bella-related-links",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Ready to give buyers the walkthrough?",
+        "text": "Shoot the 360s this afternoon — we'll return a staged, shareable tour.",
+        "cta_label": "Get started — $99 + $10 a photo",
+        "fine_print": "Upload after checkout · Staging included · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "steps",
+    "reqs",
+    "uses",
+    "quote",
+    "math",
+    "faq",
+    "related",
+    "cta"
+  ]
+}
