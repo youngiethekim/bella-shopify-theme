@@ -35,7 +35,7 @@
       {%- endif -%}
       <div class="ph-price">
         {%- if product.price_varies -%}From {% endif -%}
-        <b>{{ product.price_min | money }}</b> / {{ section.settings.unit_label }}
+        <b id="PhUnit">{{ product.price_min | money }}</b> / {{ section.settings.unit_label }}
         {%- if section.settings.enable_tiers %} <span class="tt" tabindex="0" data-tip="Save {{ section.settings.tier1_pct }}% at {{ section.settings.tier1_qty }}+, {{ section.settings.tier2_pct }}% at {{ section.settings.tier2_qty }}+, {{ section.settings.tier3_pct }}% at {{ section.settings.tier3_qty }}+ and {{ section.settings.tier4_pct }}% at {{ section.settings.tier4_qty }}+ {{ section.settings.unit_label }}s — applied automatically in the order box.">· volume discounts up to {{ section.settings.tier4_pct }}%</span>{% endif -%}
       </div>
     </div>
@@ -71,7 +71,8 @@
           data-money-format="{{ shop.money_format | escape }}"
           data-tiers-enabled="{{ section.settings.enable_tiers }}"
           data-tiers='[{"m":{{ section.settings.tier1_qty }},"d":{{ section.settings.tier1_pct }}},{"m":{{ section.settings.tier2_qty }},"d":{{ section.settings.tier2_pct }}},{"m":{{ section.settings.tier3_qty }},"d":{{ section.settings.tier3_pct }}},{"m":{{ section.settings.tier4_qty }},"d":{{ section.settings.tier4_pct }}}]'
-          data-unit-label="{{ section.settings.unit_label | escape }}">
+          data-unit-label="{{ section.settings.unit_label | escape }}"
+          data-reco="{{ section.settings.default_qty }}">
 
           {%- assign step = 0 -%}
 
@@ -102,7 +103,7 @@
           <div class="bb-group">
             <label class="bb-lbl" for="BuyQty"><span class="bb-num">{{ step }}</span>{{ section.settings.qty_label }}
               {%- if section.settings.reco_text != blank -%}
-                <button type="button" class="bb-reco tt" id="BbReco" data-reco="{{ section.settings.default_qty }}" data-tip="{{ section.settings.reco_text | escape }}"><span class="br-star" aria-hidden="true">★</span><span class="br-txt">Most popular</span></button>
+                <span class="tt tt-i" tabindex="0" data-tip="{{ section.settings.reco_text | escape }}">i</span>
               {%- endif -%}
             </label>
             <div class="bb-row bb-qtyrow">
