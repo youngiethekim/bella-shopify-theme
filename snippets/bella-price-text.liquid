@@ -1,0 +1,44 @@
+{%- comment -%}
+  Resolves {price:<token>} placeholders in copy to the LIVE product price,
+  so prices stay correct site-wide when a product price changes in admin.
+  Usage: {% render 'bella-price-text', text: section.settings.heading %}
+  Tokens map to product handles (with aliases for convenience).
+{%- endcomment -%}
+{%- liquid
+  assign t = text
+  if t contains '{price:'
+    if t contains '{price:virtual-staging}'
+      assign amt = all_products['virtual-staging-1'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:virtual-staging}', amt
+    endif
+    if t contains '{price:virtual-staging-1}'
+      assign amt = all_products['virtual-staging-1'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:virtual-staging-1}', amt
+    endif
+    if t contains '{price:3d-rendering}'
+      assign amt = all_products['3d-rendering'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:3d-rendering}', amt
+    endif
+    if t contains '{price:virtual-renovation-service}'
+      assign amt = all_products['virtual-renovation'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:virtual-renovation-service}', amt
+    endif
+    if t contains '{price:virtual-renovation}'
+      assign amt = all_products['virtual-renovation'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:virtual-renovation}', amt
+    endif
+    if t contains '{price:photo-editing}'
+      assign amt = all_products['photo-editing'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:photo-editing}', amt
+    endif
+    if t contains '{price:2d-3d-floor-plan-service}'
+      assign amt = all_products['2d-3d-floor-plan-service'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:2d-3d-floor-plan-service}', amt
+    endif
+    if t contains '{price:360-virtual-tour-staging}'
+      assign amt = all_products['360-virtual-tour-staging'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:360-virtual-tour-staging}', amt
+    endif
+  endif
+  echo t
+-%}
