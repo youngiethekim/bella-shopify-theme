@@ -260,10 +260,16 @@
   }
   function paint() {
     var q = qty(), u = unitPrice(), d = discFor(q);
-    var full = u * q, disc = Math.round(full * (1 - d / 100));
+    /* Mirror Shopify's arithmetic exactly: it floors the per-unit discount to the
+       cent and applies that to each unit. Discounting the line total in one go and
+       rounding drifts by up to half a cent per unit - 17c on 21 photos in CAD - and
+       the page would quote a total the cart does not honour. Whole-cent currencies
+       like USD hide this; CAD exposes it. */
+    var perOff = Math.floor(u * d / 100);
+    var perNow = u - perOff;
+    var full = u * q, disc = perNow * q;
     nowEl.textContent = money(disc);
     if (d > 0) { wasEl.hidden = false; wasEl.textContent = money(full); } else { wasEl.hidden = true; }
-    var perNow = Math.round(u * (1 - d / 100));
     perEl.textContent = q + ' ' + unit + (q === 1 ? '' : 's') + ' × ' + money(perNow) + ' / ' + unit;
     if (phUnit) phUnit.textContent = money(perNow);
     if (saveEl) {
