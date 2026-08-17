@@ -7,7 +7,7 @@
         {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
       </div>
 
-      <div class="pf-grid">
+      <div class="pf-grid{% if section.settings.carousel %} pf-carousel{% endif %}">
         {%- for block in section.blocks -%}
           {%- liquid
             assign before_fallback = 'proj-' | append: block.settings.sample | append: '-before.jpg' | asset_url
@@ -59,6 +59,7 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Portfolio" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Our best work." },
     { "type": "checkbox", "id": "sub", "label": "Render heading as H2 (page already has an H1)", "default": false },
+    { "type": "checkbox", "id": "carousel", "label": "Show projects as a swipeable carousel", "default": false },
     { "type": "textarea", "id": "text", "label": "Intro", "default": "Real listings, staged, rendered and edited by the Bella team — and what happened after. Hover or tap any project to see the room we started with." },
     { "type": "text", "id": "cta_label", "label": "Button label", "default": "Get started — from $45 a photo" },
     { "type": "url", "id": "cta_url", "label": "Button link" },
