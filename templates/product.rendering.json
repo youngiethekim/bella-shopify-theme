@@ -266,7 +266,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does 3D rendering cost?",
-            "answer": "At Bella, photoreal renders start at $550 per finished image — one room or building from one camera angle, with revisions and 4K print-ready delivery included, and volume discounts up to 20%. For comparison, architects and boutique studios commonly charge $1,000–3,000+ per view for the same photoreal quality."
+            "answer": "At Bella, photoreal renders start at {price:3d-rendering-service-for-architectural-visualization} per finished image — one room or building from one camera angle, with revisions and 4K print-ready delivery included, and volume discounts up to 20%. For comparison, architects and boutique studios commonly charge $1,000–3,000+ per view for the same photoreal quality."
           }
         }
       },
@@ -290,7 +290,7 @@
         "eyebrow": "Your next listing",
         "heading": "Ready to bring your plans to life?",
         "text": "Order today, send your plans, and sell it before you build it.",
-        "cta_label": "Get started — from $550 a render",
+        "cta_label": "Get started — from {price:3d-rendering-service-for-architectural-visualization} a render",
         "fine_print": "Send plans after checkout · Revisions included"
       }
     },
@@ -350,7 +350,7 @@
         "old_amount": "$100,000+",
         "old_per": "one floor plan · months of construction · built to be torn out",
         "new_label": "Bella 3D rendering",
-        "new_amount": "$550",
+        "new_amount": "{price:3d-rendering-service-for-architectural-visualization}",
         "new_per": "a render · from your plans · every floor plan and finish",
         "note": "Pre-selling used to mean building a model home and hoping buyers could imagine the rest. A photoreal render does the model home's job before ground breaks — and does it for every floor plan, elevation and finish package, not just one. Modern 3D technology in the hands of a human artist: the render sells the build instead of describing it.",
         "cta_label": "",
