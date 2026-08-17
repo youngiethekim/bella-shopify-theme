@@ -44,7 +44,7 @@
     <div class="ph-media">
       <div class="shot2">
         {%- if product.featured_image -%}
-          <img id="MainShot" src="{{ product.featured_image | image_url: width: 1400 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" fetchpriority="high" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}">
+          <img id="MainShot" src="{{ product.featured_image | image_url: width: 1400, height: 1050, crop: 'center' }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" fetchpriority="high" width="{{ product.featured_image.width }}" height="{{ product.featured_image.height }}">
         {%- else -%}
           <img id="MainShot" src="{{ 'proj-living-after.jpg' | asset_url }}" alt="A living room virtually staged with designer furniture" fetchpriority="high" width="1400" height="1050">
         {%- endif -%}
@@ -55,8 +55,8 @@
       {%- if product.images.size > 1 -%}
         <div class="ph-thumbs" id="ShotThumbs">
           {%- for image in product.images limit: 5 -%}
-            <button type="button" class="{% if forloop.first %}on{% endif %}" data-src="{{ image | image_url: width: 1400 }}" aria-label="View image {{ forloop.index }}">
-              <img src="{{ image | image_url: width: 200 }}" alt="" loading="lazy" width="200" height="150">
+            <button type="button" class="{% if forloop.first %}on{% endif %}" data-src="{{ image | image_url: width: 1400, height: 1050, crop: 'center' }}" aria-label="View image {{ forloop.index }}">
+              <img src="{{ image | image_url: width: 200, height: 150, crop: 'center' }}" alt="" loading="lazy" width="200" height="150">
             </button>
           {%- endfor -%}
         </div>
@@ -83,7 +83,7 @@
                 {%- for variant in product.variants -%}
                   <option value="{{ variant.id }}"
                     data-price="{{ variant.price }}"
-                    {% if variant.image %}data-image="{{ variant.image | image_url: width: 1400 }}"{% endif %}
+                    {% if variant.image %}data-image="{{ variant.image | image_url: width: 1400, height: 1050, crop: 'center' }}"{% endif %}
                     {% if variant == current_variant %}selected{% endif %}
                     {% unless variant.available %}disabled{% endunless %}>
                     {{ variant.title }} — {{ variant.price | money }}{% unless variant.available %} (sold out){% endunless %}
