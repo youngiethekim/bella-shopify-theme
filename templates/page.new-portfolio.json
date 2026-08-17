@@ -75,6 +75,102 @@
             "outcome": "Full-home stage",
             "sample": "kitchen"
           }
+        },
+        "r1": {
+          "type": "project",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "customer": "Property developer",
+            "services": "3D rendering from plans",
+            "outcome": "Pre-sale marketing",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/rockwood-legacy-residences-3d-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/rockwood-legacy-residences-3d-render.jpg?width=1600"
+          }
+        },
+        "r2": {
+          "type": "project",
+          "settings": {
+            "name": "Spec house · exterior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Sold from plans",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spec-house-exterior-3d-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spec-house-exterior-3d-render.jpg?width=1600"
+          }
+        },
+        "r3": {
+          "type": "project",
+          "settings": {
+            "name": "393 Main St",
+            "customer": "Property developer",
+            "services": "3D rendering from plans",
+            "outcome": "Planning & pre-sale visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/393-main-st-exterior-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/393-main-st-exterior-render.jpg?width=1600"
+          }
+        },
+        "r4": {
+          "type": "project",
+          "settings": {
+            "name": "Apartment building",
+            "customer": "Property developer",
+            "services": "3D rendering from plans",
+            "outcome": "Marketing visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/apartment-building-3d-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/apartment-building-3d-render.jpg?width=1600"
+          }
+        },
+        "r5": {
+          "type": "project",
+          "settings": {
+            "name": "Great room · interior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Sales-centre visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/great-room-interior-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/great-room-interior-render.jpg?width=1600"
+          }
+        },
+        "r6": {
+          "type": "project",
+          "settings": {
+            "name": "Kitchen · interior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Upgrade-package visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1600"
+          }
+        },
+        "r7": {
+          "type": "project",
+          "settings": {
+            "name": "Spa lounge",
+            "customer": "Commercial client",
+            "services": "3D rendering from plans",
+            "outcome": "Investor presentation",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spa-lounge-interior-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spa-lounge-interior-render.jpg?width=1600"
+          }
+        },
+        "r8": {
+          "type": "project",
+          "settings": {
+            "name": "Reception with brand logo",
+            "customer": "Ark & Mason · commercial",
+            "services": "3D rendering from plans",
+            "outcome": "Client presentation",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/commercial-reception-3d-render.jpg?width=1600",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/commercial-reception-3d-render.jpg?width=1600"
+          }
         }
       },
       "block_order": [
@@ -82,6 +178,14 @@
         "p2",
         "p3",
         "p4",
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8",
         "p5",
         "p6"
       ],
