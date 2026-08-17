@@ -368,3 +368,8 @@
 .quote .qt-avatar img,.quote .qt-mono{width:76px;height:76px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px -8px rgba(20,18,16,.3)}
 .quote .qt-mono{display:flex;align-items:center;justify-content:center;background:#EEF3EE;color:var(--green);font-size:26px;font-weight:400;letter-spacing:.03em;box-shadow:none;border:1px solid var(--line)}
 .quote-top.quote .qt-avatar+cite{margin-top:12px}
+/* ---- portfolio carousel mode ---- */
+.pf-grid.pf-carousel{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding-bottom:14px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.pf-carousel .pf-card{flex:0 0 min(430px,82vw);scroll-snap-align:start}
+.pf-carousel .pf-shot{aspect-ratio:3/2}
+@media(max-width:760px){.pf-grid.pf-carousel{gap:12px}.pf-carousel .pf-card{flex-basis:78vw}}
