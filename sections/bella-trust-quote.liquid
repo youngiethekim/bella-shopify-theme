@@ -1,5 +1,24 @@
 <div class="quote quote-top">
   <p>&ldquo;{{ section.settings.quote }}&rdquo;</p>
+  {%- liquid
+    assign who = section.settings.attribution | split: '·' | first | strip
+    assign wparts = who | split: ' '
+    assign ini = wparts[0] | slice: 0
+    if wparts.size > 1
+      assign wlast = wparts | last
+      assign ini2 = wlast | slice: 0
+      assign ini = ini | append: ini2
+    endif
+  -%}
+  <div class="qt-avatar">
+    {%- if section.settings.photo != blank -%}
+      <img src="{{ section.settings.photo | image_url: width: 160, height: 160, crop: 'center' }}" alt="{{ who | escape }}" width="80" height="80" loading="lazy">
+    {%- elsif section.settings.photo_url != blank -%}
+      <img src="{{ section.settings.photo_url }}" alt="{{ who | escape }}" width="80" height="80" loading="lazy">
+    {%- else -%}
+      <span class="qt-mono" aria-hidden="true">{{ ini | upcase }}</span>
+    {%- endif -%}
+  </div>
   <cite>{{ section.settings.attribution }}</cite>
   <div class="rating">
     <span class="stars" aria-hidden="true">
@@ -14,6 +33,8 @@
   "name": "Trust quote band",
   "settings": [
     { "type": "text", "id": "quote", "label": "Quote", "default": "Bella is as good as I've seen." },
+    { "type": "image_picker", "id": "photo", "label": "Photo of the reviewer" },
+    { "type": "text", "id": "photo_url", "label": "Photo URL (used when no image is picked)" },
     { "type": "text", "id": "attribution", "label": "Attribution", "default": "Craig C. Rowe · Inman" },
     { "type": "text", "id": "rating", "label": "Rating", "default": "4.9" },
     { "type": "text", "id": "rating_text", "label": "Rating text", "default": "on Google · Trusted by real estate professionals across the US & Canada" }
