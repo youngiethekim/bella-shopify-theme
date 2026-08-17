@@ -1,3 +1,11 @@
+{% style %}
+.cred-marks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:34px}
+.cred-mark{border:1px solid var(--line);border-radius:12px;padding:20px 16px;text-align:center;background:#fff}
+.cred-mark b{display:block;font-size:15px;font-weight:600;letter-spacing:.01em}
+.cred-mark span{display:block;margin-top:5px;font-size:12px;color:#6c6f6b}
+.cred-note{margin-top:24px;text-align:center;font-size:13px;color:#6c6f6b;max-width:640px;margin-left:auto;margin-right:auto}
+@media(max-width:600px){.cred-marks{grid-template-columns:1fr 1fr;gap:10px}.cred-mark{padding:15px 10px}.cred-mark b{font-size:13.5px}}
+{% endstyle %}
 <div class="svc-page">
   <section class="sec">
     <div class="sec-in">
