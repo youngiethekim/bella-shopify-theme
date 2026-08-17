@@ -15,7 +15,7 @@
         "f1": {
           "type": "feature",
           "settings": {
-            "product": "virtual-staging-1",
+            "product": "virtual-staging",
             "eyebrow": "01 · Virtual Staging · Most popular",
             "title": "Virtual Staging",
             "unit": "photo",
@@ -27,7 +27,7 @@
         "f5": {
           "type": "feature",
           "settings": {
-            "product": "virtual-renovation",
+            "product": "virtual-renovation-service",
             "eyebrow": "02 · Virtual Renovation",
             "title": "Virtual Renovation",
             "unit": "photo",
@@ -39,7 +39,7 @@
         "f2": {
           "type": "feature",
           "settings": {
-            "product": "3d-rendering",
+            "product": "3d-rendering-service-for-architectural-visualization",
             "eyebrow": "03 · 3D Renderings",
             "title": "3D Renderings",
             "unit": "render",
@@ -63,7 +63,7 @@
         "f4": {
           "type": "feature",
           "settings": {
-            "product": "photo-editing",
+            "product": "real-estate-photo-editing",
             "eyebrow": "05 · Photo Editing",
             "title": "Photo Editing",
             "unit": "photo",

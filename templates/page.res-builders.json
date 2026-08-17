@@ -15,14 +15,14 @@
         "eyebrow": "Free resources · for builders & developers",
         "heading": "Home Builder Marketing",
         "lede": "How builders and property developers pre-sell from plans, win approvals, and market projects before ground breaks — guides, pricing and the pre-sale playbook, all free.",
-        "cta_label": "Order a render — from {price:3d-rendering}",
-        "cta_link": "/products/3d-rendering",
+        "cta_label": "Order a render — from {price:3d-rendering-service-for-architectural-visualization}",
+        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
         "alt_label": "Back to all resources",
         "alt_link": "/pages/resources",
         "market_heading": "Home builder marketing starts before ground breaks",
         "market_text": "<p>Marketing for home builders has one job the rest of real estate doesn't: selling something that doesn't exist yet. The cheapest money in any build is a pre-sale, and pre-sales come from visuals — photoreal renders that let a buyer commit from a floor plan, upgrade packages they can see, and lender decks that read like the project is already selling.</p><p>The resources below cover that whole arc, from the render shot list to the model-home math.</p>",
         "local_heading": "From drawings to deposits",
-        "local_text": "<p>Our <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a> run from {price:3d-rendering} per photoreal view — interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans with revisions included. A full 4–6 view pre-sale package costs $2,500–4,500, against a six-figure model home that shows one floor plan.</p>",
+        "local_text": "<p>Our <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a> run from {price:3d-rendering-service-for-architectural-visualization} per photoreal view — interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans with revisions included. A full 4–6 view pre-sale package costs $2,500–4,500, against a six-figure model home that shows one floor plan.</p>",
         "hoods_label": "What's on this shelf",
         "hoods": "Pre-sale playbook, Rendering pricing & scope, What is architectural rendering, Approvals & lender packages, Model home math"
       }
@@ -102,7 +102,7 @@
       "settings": {
         "eyebrow": "Rather skip the DIY?",
         "heading": "Want us to handle the visuals?",
-        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from {price:virtual-staging-1} a photo.",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from {price:virtual-staging} a photo.",
         "cta_label": "See all services",
         "cta_link": "/collections/all",
         "fine_print": "Unlimited revisions for two weeks · Rework or refund"

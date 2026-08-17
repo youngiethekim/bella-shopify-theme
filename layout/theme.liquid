@@ -54,7 +54,7 @@
 
   {%- unless template.name == 'product' or template.name == 'cart' -%}
     {%- capture bb_float_price -%}
-      {% render 'bella-price', product: settings.float_product, handle: 'virtual-staging-1', prefix: 'From' %}
+      {% render 'bella-price', product: settings.float_product, handle: 'virtual-staging', prefix: 'From' %}
     {%- endcapture -%}
     {%- assign bb_float_price = bb_float_price | strip -%}
     <a class="bb-float" id="BbFloat" href="{{ settings.float_link | default: routes.all_products_collection_url }}">

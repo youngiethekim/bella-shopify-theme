@@ -4,13 +4,13 @@
 
   Template JSON can't run Liquid, so prices typed into section settings used to
   go stale the moment a product was repriced — and never converted for Canada.
-  Writing "from {price:virtual-staging-1} a photo" instead keeps the sentence
+  Writing "from {price:virtual-staging} a photo" instead keeps the sentence
   editable in the theme editor while the number stays sourced from the product.
 
   Token forms:
-    {price:virtual-staging-1}                              cheapest variant
+    {price:virtual-staging}                              cheapest variant
     {price:360-virtual-tour-staging|Tour setup & stitching} one named variant
-    {price:virtual-staging-1*8}                            cheapest variant × 8
+    {price:virtual-staging*8}                            cheapest variant × 8
 
   Name the variant whenever a product's cheapest variant isn't the figure the
   copy means: 360 tours start at a $99 setup, but their cheapest variant is a

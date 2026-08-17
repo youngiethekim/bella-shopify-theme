@@ -14,13 +14,13 @@
       "settings": {
         "eyebrow": "Bella · architectural visualization studio",
         "heading": "Architectural Rendering Services",
-        "lede": "Architectural rendering and visualization services that turn drawings into imagery buyers, lenders and planning boards believe. Photoreal interiors, exteriors and site views from a human studio — from {price:3d-rendering} a render.",
-        "cta_label": "Order a render — from {price:3d-rendering}",
-        "cta_link": "/products/3d-rendering",
+        "lede": "Architectural rendering and visualization services that turn drawings into imagery buyers, lenders and planning boards believe. Photoreal interiors, exteriors and site views from a human studio — from {price:3d-rendering-service-for-architectural-visualization} a render.",
+        "cta_label": "Order a render — from {price:3d-rendering-service-for-architectural-visualization}",
+        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
         "alt_label": "Explore 3D architectural rendering services",
         "alt_link": "/pages/3d-architectural-rendering-services",
         "market_heading": "From architectural drawings to visualization",
-        "market_text": "<p>Architectural visualization services bridge the gap between technical drawings and human imagination. A floor plan tells a buyer the kitchen is 14 feet wide; a photoreal render shows them the morning light on the island. We visualize residential and commercial projects at every scale — a single custom home, a townhome row, a full mixed-use development — working directly from your CAD files, PDFs or sketches.</p><p>Our flagship offering is <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a>: photoreal still images priced per view, from {price:3d-rendering}, with revisions and 4K print-ready delivery included.</p>",
+        "market_text": "<p>Architectural visualization services bridge the gap between technical drawings and human imagination. A floor plan tells a buyer the kitchen is 14 feet wide; a photoreal render shows them the morning light on the island. We visualize residential and commercial projects at every scale — a single custom home, a townhome row, a full mixed-use development — working directly from your CAD files, PDFs or sketches.</p><p>Our flagship offering is <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a>: photoreal still images priced per view, from {price:3d-rendering-service-for-architectural-visualization}, with revisions and 4K print-ready delivery included.</p>",
         "local_heading": "An architectural visualization studio, human from end to end",
         "local_text": "<p>Every project is handled by a 3D artist, not an algorithm. That matters because architectural rendering is a series of judgment calls — which camera angle sells the elevation, how the specified oak floor should read at dusk, where the landscaping fills a composition. Software approximates those calls; a studio makes them deliberately, and revises until you'd put the image on a billboard. Many of our clients do exactly that.</p><p>Unlike many architectural visualisation firms that outsource overseas and quote by the project, Bella prices per image and works directly with your team. We've rendered for home builders, developers and architects across the US and Canada since 2019, alongside the virtual staging work reviewed by Inman and covered in Fortune.</p>",
         "hoods_label": "Who we render for",
@@ -137,7 +137,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does architectural visualization cost?",
-            "answer": "Renders are priced per finished image: interiors from {price:3d-rendering}, exteriors from $750, streetscapes from $1,000 and multi-building views from $1,400, with automatic volume discounts. See the full breakdown on our 3D architectural rendering services page."
+            "answer": "Renders are priced per finished image: interiors from {price:3d-rendering-service-for-architectural-visualization}, exteriors from $750, streetscapes from $1,000 and multi-building views from $1,400, with automatic volume discounts. See the full breakdown on our 3D architectural rendering services page."
           }
         },
         "q4": {
@@ -165,8 +165,8 @@
         "eyebrow": "Your next project",
         "heading": "Ready to bring your plans to life?",
         "text": "Order today, send your plans, and market your project with photoreal renders — before ground breaks.",
-        "cta_label": "Order a render — from {price:3d-rendering}",
-        "cta_link": "/products/3d-rendering",
+        "cta_label": "Order a render — from {price:3d-rendering-service-for-architectural-visualization}",
+        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
         "fine_print": "Send plans after checkout · Revisions included · Print-ready 4K delivery"
       }
     }

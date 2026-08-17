@@ -14,9 +14,9 @@
       "settings": {
         "eyebrow": "Virtual staging near you",
         "heading": "Virtual Staging in Florida",
-        "lede": "Half of Florida's buyers are shopping from another state — the photos do the showing. Bella stages listings across Florida in 24 to 48 hours, from {price:virtual-staging-1} a photo.",
-        "cta_label": "Stage my listing — from {price:virtual-staging-1}",
-        "cta_link": "/products/virtual-staging-1",
+        "lede": "Half of Florida's buyers are shopping from another state — the photos do the showing. Bella stages listings across Florida in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "cta_label": "Stage my listing — from {price:virtual-staging}",
+        "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Florida",
@@ -79,7 +79,7 @@
         "eyebrow": "Your next listing",
         "heading": "Stage your Florida listing this week.",
         "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
-        "cta_label": "Get started — from {price:virtual-staging-1} a photo",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }

@@ -176,8 +176,8 @@
       "settings": {
         "eyebrow": "Your team next",
         "heading": "Add your brand to the list.",
-        "text": "Same designers, same pipeline, whether you send one listing or fifty — from {price:virtual-staging-1} a photo, back in 24 to 48 hours.",
-        "cta_label": "Get started — from {price:virtual-staging-1} a photo",
+        "text": "Same designers, same pipeline, whether you send one listing or fifty — from {price:virtual-staging} a photo, back in 24 to 48 hours.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }

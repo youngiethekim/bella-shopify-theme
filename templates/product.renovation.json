@@ -157,7 +157,7 @@
         "eyebrow": "Your next listing",
         "heading": "Ready to modernize your listing?",
         "text": "Order today and show buyers the renovated home — without lifting a paintbrush.",
-        "cta_label": "Get started — {price:virtual-renovation} a photo",
+        "cta_label": "Get started — {price:virtual-renovation-service} a photo",
         "fine_print": "Upload after checkout · Staging included · Rework or refund"
       }
     },
@@ -217,7 +217,7 @@
         "old_amount": "$20,000+",
         "old_per": "per room · weeks of trades · spent before you list",
         "new_label": "Bella virtual renovation",
-        "new_amount": "{price:virtual-renovation}",
+        "new_amount": "{price:virtual-renovation-service}",
         "new_per": "a photo · renovated and staged · back in 24–48 h",
         "note": "Buyers can't see past dated finishes — but nobody should renovate a home just to sell it. A virtual renovation shows the same potential a contractor would deliver: new floors, fresh walls, a modern kitchen, rendered photoreal by a designer and disclosed as virtual. The buyer sees what the home can be; your seller keeps the twenty grand.",
         "cta_label": "",

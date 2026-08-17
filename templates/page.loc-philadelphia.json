@@ -14,14 +14,14 @@
       "settings": {
         "eyebrow": "Virtual staging near you",
         "heading": "Virtual Staging in Philadelphia, PA",
-        "lede": "Rowhomes are hard to photograph empty — long, narrow and dark in the middle. Bella stages Philadelphia listings in 24 to 48 hours, from {price:virtual-staging-1} a photo.",
-        "cta_label": "Stage my listing — from {price:virtual-staging-1}",
-        "cta_link": "/products/virtual-staging-1",
+        "lede": "Rowhomes are hard to photograph empty — long, narrow and dark in the middle. Bella stages Philadelphia listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "cta_label": "Stage my listing — from {price:virtual-staging}",
+        "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Philadelphia",
         "market_heading": "Why staging matters in the Philadelphia market",
-        "market_text": "<p>The classic Philly rowhome is a staging problem by design: a straight-through floor plan where the living room, dining space and kitchen blur together in photos. Staged furniture defines the zones, so buyers scrolling Zillow can read the layout in one glance instead of puzzling over it.</p><p>Philadelphia also runs on value-conscious buyers and tight margins for flippers — which makes {price:virtual-staging-1}-a-photo staging an easy line item where $3,000-a-month physical staging isn't. For dated interiors in transitioning blocks, our virtual renovation shows the after without the contractor.</p>",
+        "market_text": "<p>The classic Philly rowhome is a staging problem by design: a straight-through floor plan where the living room, dining space and kitchen blur together in photos. Staged furniture defines the zones, so buyers scrolling Zillow can read the layout in one glance instead of puzzling over it.</p><p>Philadelphia also runs on value-conscious buyers and tight margins for flippers — which makes {price:virtual-staging}-a-photo staging an easy line item where $3,000-a-month physical staging isn't. For dated interiors in transitioning blocks, our virtual renovation shows the after without the contractor.</p>",
         "local_heading": "Staged for the Philadelphia buyer",
         "local_text": "<p>Designers match the furnishing to the block: refined traditional around Rittenhouse Square, industrial-warm for Fishtown and Northern Liberties lofts, family staging for Manayunk and the suburbs. MLS-ready in 24 to 48 hours, disclosure guidance included.</p>",
         "hoods_label": "Where we stage most",
@@ -78,7 +78,7 @@
         "eyebrow": "Your next listing",
         "heading": "Stage your Philadelphia listing this week.",
         "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
-        "cta_label": "Get started — from {price:virtual-staging-1} a photo",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }

@@ -14,14 +14,14 @@
       "settings": {
         "eyebrow": "Virtual staging near you",
         "heading": "Virtual Staging in New York City",
-        "lede": "At Manhattan and Brooklyn prices, every photo carries five figures of value. Bella stages NYC listings in 24 to 48 hours, from {price:virtual-staging-1} a photo — a rounding error next to what physical staging costs in the city.",
-        "cta_label": "Stage my listing — from {price:virtual-staging-1}",
-        "cta_link": "/products/virtual-staging-1",
+        "lede": "At Manhattan and Brooklyn prices, every photo carries five figures of value. Bella stages NYC listings in 24 to 48 hours, from {price:virtual-staging} a photo — a rounding error next to what physical staging costs in the city.",
+        "cta_label": "Stage my listing — from {price:virtual-staging}",
+        "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "New York City",
         "market_heading": "Why staging matters in the NYC market",
-        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan is among the most expensive in the country, with freight elevators, COIs and monthly furniture rental stacking up fast. Virtual staging does the same visual job for {price:virtual-staging-1} a photo, with nothing to move in or out.</p>",
+        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan is among the most expensive in the country, with freight elevators, COIs and monthly furniture rental stacking up fast. Virtual staging does the same visual job for {price:virtual-staging} a photo, with nothing to move in or out.</p>",
         "local_heading": "Staged for the New York buyer",
         "local_text": "<p>Our designers stage daily across all five boroughs — polished contemporary for Manhattan condos, warm modern for Brooklyn brownstones and Queens co-ops. Files ship REBNY- and MLS-ready in 24 to 48 hours, disclosed as virtually staged.</p>",
         "hoods_label": "Where we stage most",
@@ -78,7 +78,7 @@
         "eyebrow": "Your next listing",
         "heading": "Stage your New York City listing this week.",
         "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
-        "cta_label": "Get started — from {price:virtual-staging-1} a photo",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }

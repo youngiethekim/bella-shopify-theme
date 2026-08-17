@@ -4,13 +4,13 @@
   bella-copy snippet.
 {%- endcomment -%}
 {%- liquid
-  assign svc_staging = settings.product_staging | default: all_products['virtual-staging-1']
-  assign svc_renovation = settings.product_renovation | default: all_products['virtual-renovation']
-  assign svc_rendering = settings.product_rendering | default: all_products['3d-rendering']
+  assign svc_staging = settings.product_staging | default: all_products['virtual-staging']
+  assign svc_renovation = settings.product_renovation | default: all_products['virtual-renovation-service']
+  assign svc_rendering = settings.product_rendering | default: all_products['3d-rendering-service-for-architectural-visualization']
   assign svc_floorplan = settings.product_floorplan | default: all_products['2d-3d-floor-plan-service']
-  assign svc_editing = settings.product_editing | default: all_products['photo-editing']
+  assign svc_editing = settings.product_editing | default: all_products['real-estate-photo-editing']
 
-  assign loc_cta_label = section.settings.cta_label | default: 'Stage my listing — from {price:virtual-staging-1}'
+  assign loc_cta_label = section.settings.cta_label | default: 'Stage my listing — from {price:virtual-staging}'
   assign loc_cta_link = section.settings.cta_link
   if loc_cta_link == blank
     assign loc_cta_link = svc_staging.url | default: routes.all_products_collection_url
@@ -123,11 +123,11 @@
 {
   "name": "Location page",
   "settings": [
-    { "type": "paragraph", "content": "Write prices as {price:virtual-staging-1} — the live price of that product is filled in, in the visitor's currency. Handles: virtual-staging-1, virtual-renovation, 3d-rendering, 360-virtual-tour-staging, 2d-3d-floor-plan-service, photo-editing." },
+    { "type": "paragraph", "content": "Write prices as {price:virtual-staging} — the live price of that product is filled in, in the visitor's currency. Handles: virtual-staging, virtual-renovation-service, 3d-rendering-service-for-architectural-visualization, 360-virtual-tour-staging, 2d-3d-floor-plan-service, real-estate-photo-editing." },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Virtual staging near you" },
     { "type": "text", "id": "heading", "label": "Heading (H1)" },
     { "type": "textarea", "id": "lede", "label": "Lede" },
-    { "type": "text", "id": "cta_label", "label": "CTA label", "info": "Default: Stage my listing — from {price:virtual-staging-1}" },
+    { "type": "text", "id": "cta_label", "label": "CTA label", "info": "Default: Stage my listing — from {price:virtual-staging}" },
     { "type": "url", "id": "cta_link", "label": "CTA link", "info": "Defaults to the virtual staging product." },
     { "type": "text", "id": "alt_label", "label": "Secondary link label" },
     { "type": "url", "id": "alt_link", "label": "Secondary link" },

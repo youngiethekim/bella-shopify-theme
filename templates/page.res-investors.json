@@ -15,14 +15,14 @@
         "eyebrow": "Free resources · for investors & flippers",
         "heading": "Marketing for Real Estate Investors & Flippers",
         "lede": "Sell the after while the property is still the before: guides and tools for flips, estates, wholesaling and tenanted units.",
-        "cta_label": "See virtual renovation — {price:virtual-renovation}",
-        "cta_link": "/products/virtual-renovation",
+        "cta_label": "See virtual renovation — {price:virtual-renovation-service}",
+        "cta_link": "/products/virtual-renovation-service",
         "alt_label": "Back to all resources",
         "alt_link": "/pages/resources",
         "market_heading": "Sell the after, not the before",
         "market_text": "<p>Investor marketing is vision marketing. Buyers of flips, estates and value-add properties aren't paying for what the property is — they're paying for what it can be, and they pay more when they can see it. Virtual renovation shows the finished flip while trades are still inside; virtual staging turns a cleared unit into a home; item removal declutters a tenanted photo without touching the tenancy.</p>",
         "local_heading": "The investor's toolkit",
-        "local_text": "<p><a href=\"/products/virtual-renovation\">Virtual renovation is {price:virtual-renovation} a photo</a> with designer staging included — against $20,000+ for a real pre-sale refresh. Pair it with <a href=\"/products/virtual-staging-1\">{price:virtual-staging-1} staging</a> for the rooms that only need furniture, and disclose everything on the MLS exactly as our guides show.</p>",
+        "local_text": "<p><a href=\"/products/virtual-renovation-service\">Virtual renovation is {price:virtual-renovation-service} a photo</a> with designer staging included — against $20,000+ for a real pre-sale refresh. Pair it with <a href=\"/products/virtual-staging\">{price:virtual-staging} staging</a> for the rooms that only need furniture, and disclose everything on the MLS exactly as our guides show.</p>",
         "hoods_label": "What's on this shelf",
         "hoods": "Virtual renovation guide, Disclosure rules, Item removal, Marketing the flip"
       }
@@ -35,7 +35,7 @@
           "settings": {
             "tag": "Investor guide",
             "title": "Sell a dated home without renovating it",
-            "text": "The virtual renovation guide: why dated finishes kill offers, what disclosure requires, and the {price:virtual-renovation} alternative to a $20,000 refresh.",
+            "text": "The virtual renovation guide: why dated finishes kill offers, what disclosure requires, and the {price:virtual-renovation-service} alternative to a $20,000 refresh.",
             "link": "/blogs/news/virtual-renovation-guide-sell-dated-home",
             "link_label": "Read the guide →"
           }
@@ -44,9 +44,9 @@
           "type": "card",
           "settings": {
             "tag": "Service",
-            "title": "Virtual renovation — from {price:virtual-renovation}",
+            "title": "Virtual renovation — from {price:virtual-renovation-service}",
             "text": "Dated rooms digitally renovated and staged, disclosed for the MLS. Built for flips, estates and tenanted units.",
-            "link": "/products/virtual-renovation",
+            "link": "/products/virtual-renovation-service",
             "link_label": "See the service →"
           }
         },
@@ -92,7 +92,7 @@
       "settings": {
         "eyebrow": "Rather skip the DIY?",
         "heading": "Want us to handle the visuals?",
-        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from {price:virtual-staging-1} a photo.",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from {price:virtual-staging} a photo.",
         "cta_label": "See all services",
         "cta_link": "/collections/all",
         "fine_print": "Unlimited revisions for two weeks · Rework or refund"

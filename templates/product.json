@@ -149,7 +149,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does virtual staging cost?",
-            "answer": "From {price:virtual-staging-1} per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one — the best value. A typical six-photo listing runs about $243 with the volume discount applied."
+            "answer": "From {price:virtual-staging} per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one — the best value. A typical six-photo listing runs about $243 with the volume discount applied."
           }
         },
         "q3": {
@@ -177,7 +177,7 @@
           "type": "qa",
           "settings": {
             "question": "Can you also fix walls, floors or other items?",
-            "answer": "Yes — that's our Virtual Renovation service. We digitally modernize walls, floors and fixtures, then stage the room, from {price:virtual-renovation} a photo. Order it from the Virtual Renovation page."
+            "answer": "Yes — that's our Virtual Renovation service. We digitally modernize walls, floors and fixtures, then stage the room, from {price:virtual-renovation-service} a photo. Order it from the Virtual Renovation page."
           }
         },
         "q7": {
@@ -228,7 +228,7 @@
         "eyebrow": "Your next listing",
         "heading": "Ready to stage your listing?",
         "text": "Order today and have MLS-ready, designer-staged photos back in 24 to 48 hours.",
-        "cta_label": "Get started — from {price:virtual-staging-1} a photo",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     },
@@ -264,7 +264,7 @@
           "settings": {
             "icon": "note",
             "title": "Save your clients thousands",
-            "text": "Conventional staging runs $2,000–5,000 a month until the home sells — and the furniture leaves. Virtual staging does the same job once, from {price:virtual-staging-1} a photo."
+            "text": "Conventional staging runs $2,000–5,000 a month until the home sells — and the furniture leaves. Virtual staging does the same job once, from {price:virtual-staging} a photo."
           }
         }
       },
@@ -297,7 +297,7 @@
         "old_amount": "$2,000–5,000",
         "old_per": "a month · until it sells · the furniture goes back",
         "new_label": "Bella virtual staging",
-        "new_amount": "{price:virtual-staging-1}",
+        "new_amount": "{price:virtual-staging}",
         "new_per": "a photo · paid once · yours for the whole listing",
         "note": "Staging does one job: it shows buyers the full potential of a home. Real furniture or virtual, a staged room sets the scene, fills the space, and lets a buyer imagine themselves living there. The only real difference is the bill: physical staging runs thousands a month and leaves the day the home sells, while Bella does the same job once — technology and a real designer, for about a tenth of the cost.",
         "cta_label": "",

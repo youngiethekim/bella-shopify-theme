@@ -99,10 +99,10 @@
             "service": "Staging a vacant listing",
             "old_label": "Physical staging",
             "old_amount": "$2,000–5,000 a month",
-            "new_amount": "{price:virtual-staging-1}",
+            "new_amount": "{price:virtual-staging}",
             "new_unit": "a photo · paid once",
             "link_label": "Virtual staging →",
-            "url": "/products/virtual-staging-1"
+            "url": "/products/virtual-staging"
           }
         },
         "p2": {
@@ -111,10 +111,10 @@
             "service": "Selling homes that aren't built yet",
             "old_label": "A model home",
             "old_amount": "$100,000+",
-            "new_amount": "{price:3d-rendering}",
+            "new_amount": "{price:3d-rendering-service-for-architectural-visualization}",
             "new_unit": "a render · from your plans",
             "link_label": "3D rendering →",
-            "url": "/products/3d-rendering"
+            "url": "/products/3d-rendering-service-for-architectural-visualization"
           }
         },
         "p3": {
@@ -123,10 +123,10 @@
             "service": "Modernizing a dated listing",
             "old_label": "A real renovation",
             "old_amount": "$20,000+",
-            "new_amount": "{price:virtual-renovation}",
+            "new_amount": "{price:virtual-renovation-service}",
             "new_unit": "a photo · renovated virtually",
             "link_label": "Virtual renovation →",
-            "url": "/products/virtual-renovation"
+            "url": "/products/virtual-renovation-service"
           }
         },
         "p4": {
@@ -135,10 +135,10 @@
             "service": "Getting the twilight hero shot",
             "old_label": "A dusk re-shoot",
             "old_amount": "$150–300",
-            "new_amount": "{price:photo-editing}",
+            "new_amount": "{price:real-estate-photo-editing}",
             "new_unit": "a photo · pro editing",
             "link_label": "Photo editing →",
-            "url": "/products/photo-editing"
+            "url": "/products/real-estate-photo-editing"
           }
         }
       },
@@ -592,7 +592,7 @@
           "type": "qa",
           "settings": {
             "question": "What does it cost?",
-            "answer": "{price:virtual-staging-1} per photo, with volume discounts that scale to 20%: 5% at three photos, 10% at six to ten, 15% at ten to twenty, and 20% at twenty-one to thirty. A typical eight-photo listing runs about {price:virtual-staging-1*8}. No subscription, no minimum, no monthly rental."
+            "answer": "{price:virtual-staging} per photo, with volume discounts that scale to 20%: 5% at three photos, 10% at six to ten, 15% at ten to twenty, and 20% at twenty-one to thirty. A typical eight-photo listing runs about {price:virtual-staging*8}. No subscription, no minimum, no monthly rental."
           }
         },
         "q2": {
