@@ -148,7 +148,7 @@
         "q2": {
           "type": "qa",
           "settings": {
-            "question": "How much does it cost?",
+            "question": "How much does virtual staging cost?",
             "answer": "From $45 per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one — the best value. A typical six-photo listing runs about $243 with the volume discount applied."
           }
         },
@@ -186,13 +186,29 @@
             "question": "Why Bella over cheaper services?",
             "answer": "Quality over quantity. Every photo is composed by hand by a professional interior designer and carefully finished — we believe higher-quality images bring more buyers to the listing and help it sell at a higher price. And with unlimited revisions and a rework-or-refund guarantee, you're never stuck with an image you can't use."
           }
+        },
+        "q0": {
+          "type": "qa",
+          "settings": {
+            "question": "What is virtual staging?",
+            "answer": "Virtual staging digitally furnishes photos of an empty (or cluttered) room so buyers can see it as a home. At Bella, a real interior designer places photorealistic furniture and decor in your listing photos — no truck, no rental furniture, and the result is MLS-ready in 24–48 hours."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Does virtual staging help sell a house?",
+            "answer": "Yes — staging exists because buyers struggle to picture empty rooms. NAR reports 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, and staged listings consistently earn more saves and showings in the critical first days on market."
+          }
         }
       },
       "block_order": [
+        "q0",
         "q1",
         "q2",
         "q3",
         "q4",
+        "q8",
         "q5",
         "q6",
         "q7"
