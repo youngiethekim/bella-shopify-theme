@@ -145,9 +145,21 @@
             "stat1": "30+|orders and counting",
             "stat2": "Vancouver|westside listings"
           }
+        },
+        "c0": {
+          "type": "case",
+          "settings": {
+            "image_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-1.jpg?width=1400",
+            "sub": "Condo development · complete pre-sale marketing kit",
+            "name": "La Riviere",
+            "text": "For the La Riviere development, Bella delivered the entire pre-sale marketing kit: photoreal exterior renders, furnished interiors for each floor plan, amenity visuals (rooftop terrace, yoga studio, meeting rooms), plus branding, brochures, an investor deck, an area map and social media assets — everything the realtor team needed to sell a building before it was built.",
+            "stat1": "15+|renders across exteriors, interiors & amenities",
+            "stat2": "Full kit|branding · brochures · investor deck · social"
+          }
         }
       },
       "block_order": [
+        "c0",
         "c1",
         "c2",
         "c3",
@@ -176,8 +188,8 @@
       "settings": {
         "eyebrow": "Your team next",
         "heading": "Add your brand to the list.",
-        "text": "Same designers, same pipeline, whether you send one listing or fifty — from {price:virtual-staging} a photo, back in 24 to 48 hours.",
-        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "text": "Same designers, same pipeline, whether you send one listing or fifty — from $45 a photo, back in 24 to 48 hours.",
+        "cta_label": "Get started — from $45 a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }
