@@ -68,7 +68,10 @@
         "reco_text": "Our most popular order is 5 renders — front exterior, kitchen, living space and two more key views. You can mix interior and exterior types in one order.",
         "assure_1_tip": "Your order confirmation tells you where to send floor plans, elevations and reference images.",
         "assure_2_tip": "You review a draft and mark up changes to composition, materials and lighting — we revise until it's right.",
-        "assure_3_tip": "High-resolution files sized for print, MLS and marketing — billboard sizing on request."
+        "assure_3_tip": "High-resolution files sized for print, MLS and marketing — billboard sizing on request.",
+        "call_text": "3D rendering is a bigger investment — want to talk your project through first?",
+        "call_label": "Book a free project call →",
+        "call_url": "/pages/contact-us"
       }
     },
     "scope": {
@@ -622,11 +625,66 @@
         "look_url": "/pages/portfolio",
         "carousel": true
       }
+    },
+    "cred": {
+      "type": "bella-cred",
+      "blocks": {
+        "m1": {
+          "type": "mark",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "detail": "Multi-family development · pre-sale campaign"
+          }
+        },
+        "m2": {
+          "type": "mark",
+          "settings": {
+            "name": "Highland Homes",
+            "detail": "Home builder · Texas"
+          }
+        },
+        "m3": {
+          "type": "mark",
+          "settings": {
+            "name": "Concord Pacific",
+            "detail": "Property developer · Vancouver"
+          }
+        },
+        "m4": {
+          "type": "mark",
+          "settings": {
+            "name": "Brown Harris Stevens",
+            "detail": "Luxury brokerage · New York"
+          }
+        },
+        "m5": {
+          "type": "mark",
+          "settings": {
+            "name": "Aureliana",
+            "detail": "Restaurant · with Ark & Mason"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5"
+      ],
+      "settings": {
+        "eyebrow": "Who makes your renders",
+        "heading": "World-class artists. Top-tier projects.",
+        "sub": true,
+        "text": "Bella's visualization team is made up of some of the most talented 3D artists and interior designers in the industry — the same hands behind pre-sale campaigns for multi-million-dollar developments, national home builders and landmark commercial spaces. Every render is composed by hand to the standard those projects demand.",
+        "note": "Whatever the size of your order, it's built by the same senior team — there is no junior tier."
+      }
     }
   },
   "order": [
     "main",
     "work",
+    "cred",
     "scope",
     "steps",
     "flow",
