@@ -48,34 +48,33 @@
       assign cta_label = section.settings.cta_label
       if cta_url == blank
         if topic contains 'render' or topic contains 'architect' or topic contains 'builder' or topic contains 'presell' or topic contains 'pre-sell'
-          assign cta_product = settings.product_rendering | default: all_products['3d-rendering-service-for-architectural-visualization']
-          assign cta_heading = 'Building or pre-selling? Photoreal 3D renders from {price:3d-rendering-service-for-architectural-visualization}.'
+          assign cta_url = '/products/3d-rendering'
+          assign cta_heading = 'Building or pre-selling? Photoreal 3D renders from {price:3d-rendering}.'
           assign cta_label = 'See 3D rendering →'
         elsif topic contains 'renovation' or topic contains 'dated home' or topic contains 'flip'
-          assign cta_product = settings.product_renovation | default: all_products['virtual-renovation-service']
+          assign cta_url = '/products/virtual-renovation'
           assign cta_heading = 'Selling a dated home? Renovate it virtually for {price:virtual-renovation-service} a photo.'
           assign cta_label = 'See virtual renovation →'
         elsif topic contains '360' or topic contains 'house tour' or topic contains 'virtual tour'
-          assign cta_product = settings.product_tour | default: all_products['360-virtual-tour-staging']
-          assign cta_heading = 'Give buyers the walkthrough — staged 360° tours from {price:360-virtual-tour-staging|Tour setup & stitching}.'
+          assign cta_url = '/products/360-virtual-tour-staging'
+          assign cta_heading = 'Give buyers the walkthrough — staged 360° tours from $99.'
           assign cta_label = 'See 360° tours →'
         elsif topic contains 'floor plan' or topic contains 'floor-plan'
-          assign cta_product = settings.product_floorplan | default: all_products['2d-3d-floor-plan-service']
-          assign cta_heading = 'Add a floor plan buyers can actually read — from {price:2d-3d-floor-plan-service}.'
+          assign cta_url = '/products/2d-3d-floor-plan-service'
+          assign cta_heading = 'Add a floor plan buyers can actually read — from $19.95.'
           assign cta_label = 'See floor plans →'
-        elsif topic contains 'dusk' or topic contains 'twilight' or topic contains 'real-estate-photo-editing' or topic contains 'item-removal' or topic contains 'hdr' or topic contains 'photography'
-          assign cta_product = settings.product_editing | default: all_products['real-estate-photo-editing']
-          assign cta_heading = 'Polish your listing photos — professional edits from {price:real-estate-photo-editing} a photo.'
+        elsif topic contains 'dusk' or topic contains 'twilight' or topic contains 'photo-editing' or topic contains 'item-removal' or topic contains 'hdr' or topic contains 'photography'
+          assign cta_url = '/products/photo-editing'
+          assign cta_heading = 'Polish your listing photos — professional edits from {price:photo-editing} a photo.'
           assign cta_label = 'See photo editing →'
         else
-          assign cta_product = settings.product_staging | default: all_products['virtual-staging']
+          assign cta_url = '/products/virtual-staging-1'
         endif
-        assign cta_url = cta_product.url | default: routes.all_products_collection_url
       endif
     -%}
     <aside class="art-cta">
       <p class="micro">{{ section.settings.cta_eyebrow }}</p>
-      <h2>{% render 'bella-copy', text: cta_heading %}</h2>
+      <h2>{% render 'bella-price-text', text: cta_heading %}</h2>
       <a class="btn" href="{{ cta_url }}">{{ cta_label }}</a>
     </aside>
   {%- endif -%}
@@ -89,8 +88,8 @@
     { "type": "text", "id": "related_label", "label": "Related label", "default": "More from the Bella blog" },
     { "type": "checkbox", "id": "show_cta", "label": "Show service CTA", "default": true },
     { "type": "text", "id": "cta_eyebrow", "label": "CTA eyebrow", "default": "While you're here" },
-    { "type": "text", "id": "cta_heading", "label": "CTA heading", "default": "Selling a listing? Stage it virtually for {price:virtual-staging} a photo.", "info": "Write prices as {price:product-handle} so they follow the product and the visitor's currency." },
-    { "type": "url", "id": "cta_url", "label": "CTA link", "info": "Leave empty to match the CTA to the article's topic automatically." },
+    { "type": "text", "id": "cta_heading", "label": "CTA heading", "default": "Selling a listing? Stage it virtually for {price:virtual-staging} a photo." },
+    { "type": "url", "id": "cta_url", "label": "CTA link" },
     { "type": "text", "id": "cta_label", "label": "CTA button", "default": "See virtual staging →" }
   ]
 }
