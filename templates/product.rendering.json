@@ -258,10 +258,18 @@
             "question": "What files do I get?",
             "answer": "High-resolution, print-ready images sized for marketing, MLS and hoarding/billboard use on request."
           }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does 3D rendering cost?",
+            "answer": "At Bella, photoreal renders start at $550 per finished image — one room or building from one camera angle, with revisions and 4K print-ready delivery included, and volume discounts up to 20%. For comparison, architects and boutique studios commonly charge $1,000–3,000+ per view for the same photoreal quality."
+          }
         }
       },
       "block_order": [
         "q1",
+        "q7",
         "q6",
         "q5",
         "q2",
@@ -519,10 +527,88 @@
             "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/3d-rendering-2082803.png?v=1786851971",
             "tag": "Finished render"
           }
+        },
+        "w4": {
+          "type": "project",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "customer": "Property developer",
+            "services": "3D rendering from plans",
+            "outcome": "Pre-sale marketing",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/rockwood-legacy-residences-3d-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/rockwood-legacy-residences-3d-render.jpg?width=1400"
+          }
+        },
+        "w5": {
+          "type": "project",
+          "settings": {
+            "name": "Spec house · exterior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Sold from plans",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spec-house-exterior-3d-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spec-house-exterior-3d-render.jpg?width=1400"
+          }
+        },
+        "w6": {
+          "type": "project",
+          "settings": {
+            "name": "393 Main St",
+            "customer": "Property developer",
+            "services": "3D rendering from plans",
+            "outcome": "Planning & pre-sale visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/393-main-st-exterior-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/393-main-st-exterior-render.jpg?width=1400"
+          }
+        },
+        "w7": {
+          "type": "project",
+          "settings": {
+            "name": "Great room · interior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Sales-centre visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/great-room-interior-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/great-room-interior-render.jpg?width=1400"
+          }
+        },
+        "w8": {
+          "type": "project",
+          "settings": {
+            "name": "Kitchen · interior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Upgrade-package visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1400"
+          }
+        },
+        "w9": {
+          "type": "project",
+          "settings": {
+            "name": "Spa lounge",
+            "customer": "Commercial client",
+            "services": "3D rendering from plans",
+            "outcome": "Investor presentation",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spa-lounge-interior-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spa-lounge-interior-render.jpg?width=1400"
+          }
         }
       },
       "block_order": [
+        "w4",
+        "w5",
         "w1",
+        "w6",
+        "w7",
+        "w8",
+        "w9",
         "w2",
         "w3"
       ],
@@ -530,15 +616,17 @@
         "eyebrow": "Completed projects",
         "heading": "Recent projects, rendered and sold",
         "sub": true,
-        "text": "Built from plans and finished photos by the Bella visualization team.",
+        "text": "Real projects by the Bella visualization team — swipe through recent renders.",
         "cta_label": "",
         "look_label": "See more in the portfolio →",
-        "look_url": "/pages/portfolio"
+        "look_url": "/pages/portfolio",
+        "carousel": true
       }
     }
   },
   "order": [
     "main",
+    "work",
     "scope",
     "steps",
     "flow",
@@ -547,7 +635,6 @@
     "proof",
     "quote",
     "math",
-    "work",
     "faq",
     "cta"
   ]
