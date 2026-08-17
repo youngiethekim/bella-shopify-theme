@@ -291,7 +291,7 @@
     { "type": "text", "id": "call_label", "label": "Consult link label", "default": "Book a free project call →" },
     { "type": "text", "id": "call_url", "label": "Consult link URL (Calendly)", "info": "Leave blank to hide. Paste your Calendly event link here." },
     { "type": "header", "content": "Volume discounts", "info": "Shown in the buy box. Create a matching automatic discount in admin so checkout applies it." },
-    { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": false, "info": "Leave OFF until the matching automatic discounts exist in Discounts. When on, the page quotes a discounted total and promises it is applied at checkout — if no discount is configured the customer is charged full price." },
+    { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": true, "info": "Must match the automatic discounts in Discounts. Verified 2026-08-17: Volume 5/10/15/20% at qty 3/6/11/21 charge correctly in USD and CAD. If those discounts are ever removed, turn this off — otherwise the page quotes a saving the customer will not receive." },
     { "type": "number", "id": "tier1_qty", "label": "Tier 1 — from qty", "default": 3 },
     { "type": "number", "id": "tier1_pct", "label": "Tier 1 — % off", "default": 5 },
     { "type": "number", "id": "tier2_qty", "label": "Tier 2 — from qty", "default": 6 },
