@@ -464,17 +464,30 @@
             "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
             "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200"
           }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "289 Drake St · Unit 706",
+            "customer": "Brokerage · Vancouver",
+            "services": "Virtual staging, 360° tour",
+            "outcome": "Leased · 30 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1_nhi_hb.jpg?width=1200"
+          }
         }
       },
       "block_order": [
         "w1",
-        "w2"
+        "w2",
+        "w3"
       ],
       "settings": {
         "eyebrow": "Completed projects",
         "heading": "Recent stagings that sold",
         "sub": true,
-        "text": "Real listings, staged by Bella — hover or tap to see the room we started with.",
+        "carousel": true,
+        "text": "Real listings, staged by Bella — swipe through, and hover or tap to see the room we started with.",
         "cta_label": "",
         "look_label": "See more in the portfolio →",
         "look_url": "/pages/portfolio"
@@ -487,14 +500,16 @@
           "type": "mark",
           "settings": {
             "name": "Brown Harris Stevens",
-            "detail": "Luxury brokerage · New York"
+            "detail": "Luxury brokerage · New York",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/brown-harris-stevens-logo.png?v=1786982242"
           }
         },
         "m2": {
           "type": "mark",
           "settings": {
             "name": "Concord Pacific",
-            "detail": "Property developer · Vancouver"
+            "detail": "Property developer · Vancouver",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/concord-pacific-logo.png?v=1786982242"
           }
         },
         "m3": {
@@ -530,6 +545,7 @@
   },
   "order": [
     "main",
+    "work",
     "steps",
     "flow",
     "reqs",
@@ -538,7 +554,6 @@
     "cred",
     "quote",
     "math",
-    "work",
     "faq",
     "related",
     "cta"
