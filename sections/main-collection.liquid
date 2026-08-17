@@ -10,7 +10,7 @@
           <a class="feat-svc{% cycle '', ' flip' %}" href="{{ p.url }}" {{ block.shopify_attributes }}>
             <div class="fs-img">
               {%- if p.featured_image -%}
-                <img src="{{ p.featured_image | image_url: width: 1200 }}" alt="{{ p.featured_image.alt | default: p.title | escape }}" {% unless forloop.first %}loading="lazy"{% endunless %} width="1200" height="900">
+                <img src="{{ p.featured_image | image_url: width: 1200, height: 900, crop: 'center' }}" alt="{{ p.featured_image.alt | default: p.title | escape }}" {% unless forloop.first %}loading="lazy"{% endunless %} width="1200" height="900">
               {%- endif -%}
             </div>
             <div class="fs-body">
@@ -37,7 +37,7 @@
         {%- for product in collection.products -%}
           <a class="coll-card" href="{{ product.url }}">
             {%- if product.featured_image -%}
-              <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="600" height="450">
+              <img src="{{ product.featured_image | image_url: width: 600, height: 450, crop: 'center' }}" alt="{{ product.featured_image.alt | escape }}" loading="lazy" width="600" height="450">
             {%- endif -%}
             <div class="cc-body">
               <div class="cc-title">{{ product.title }}</div>
