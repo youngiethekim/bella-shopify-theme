@@ -121,7 +121,7 @@
     function answer(q) {
       q = q.toLowerCase();
       if (/price|cost|how much|pricing|\$|expensive|rate|cheap/.test(q))
-        return { t: 'Virtual staging is <b>$45 a photo</b>, paid once, with volume discounts up to 20% — a typical 8-photo listing is about <b>$324</b>. Floor plans from $24/floor, day-to-dusk edits $7/photo, and 3D renders are quoted per project. Want the full breakdown, or shall I start your order?', a: [{ label: 'See full pricing', href: PRICING }, { label: 'Start my order →', href: ORDER, primary: true }] };
+        return { t: 'Virtual staging is <b>$45 a photo</b>, paid once, with volume discounts up to 20% — a typical 6-photo listing is about <b>$243</b>. Floor plans from $24/floor, day-to-dusk edits $7/photo, and 3D renders are quoted per project. Want the full breakdown, or shall I start your order?', a: [{ label: 'See full pricing', href: PRICING }, { label: 'Start my order →', href: ORDER, primary: true }] };
       if (/which|what.*(service|need)|not sure|recommend|choose|help me decide/.test(q))
         return { t: 'Happy to help. Quick version — <b>Virtual staging</b> for empty or dated rooms, <b>3D renders</b> if it isn’t built yet, plus <b>floor plans</b> and <b>3D tours</b> to round out the listing.', a: [{ label: 'See all services', href: SERVICES }, { label: 'Start my order →', href: ORDER, primary: true }] };
       if (/how.*work|turnaround|how long|fast|time|revision|process|deliver/.test(q))
@@ -254,9 +254,10 @@
         : (tiersOn && d > 0 && !nt ? 'Top tier unlocked — your best price.' : '');
     }
     if (tiersEl) {
-      tiersEl.innerHTML = TIERS.map(function (t) {
+      tiersEl.innerHTML = TIERS.map(function (t, i) {
         var on = q >= t.m && (nextTier(q) === null ? t.d === discFor(q) : t.d === discFor(q));
-        return '<button type="button" class="bb-tier' + (on ? ' on' : '') + '" data-q="' + t.m + '"><b>' + t.d + '% off</b>' + t.m + '+ ' + unit + 's</button>';
+        var best = i === TIERS.length - 1 ? '<span class="bt-best">Best value</span>' : '';
+        return '<button type="button" class="bb-tier' + (on ? ' on' : '') + '" data-q="' + t.m + '">' + best + '<b>' + t.d + '% off</b>' + t.m + '+ ' + unit + 's</button>';
       }).join('');
       tiersEl.querySelectorAll('button').forEach(function (b) {
         b.onclick = function () { qtyEl.value = b.getAttribute('data-q'); paint(); };
