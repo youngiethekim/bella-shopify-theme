@@ -109,27 +109,6 @@
         form = document.getElementById('baForm'), input = document.getElementById('baInput'), started = false;
     var ORDER = panel.getAttribute('data-order-url') || '/', PRICING = panel.getAttribute('data-pricing-url') || '/',
         SERVICES = panel.getAttribute('data-services-url') || '/';
-    /* Prices come from the products via data attributes, already formatted for the
-       visitor's currency. A service with no price simply goes unmentioned rather
-       than being quoted from a stale figure typed in here. */
-    function priceOf(name) { return panel.getAttribute('data-price-' + name) || ''; }
-    function sentence(parts) {
-      if (!parts.length) return '';
-      if (parts.length === 1) return parts[0];
-      return parts.slice(0, -1).join(', ') + ', and ' + parts[parts.length - 1];
-    }
-    function pricingAnswer() {
-      var staging = priceOf('staging'), rest = [];
-      if (priceOf('renovation')) rest.push('virtual renovation is ' + priceOf('renovation') + ' a photo');
-      if (priceOf('floorplan')) rest.push('floor plans start at ' + priceOf('floorplan'));
-      if (priceOf('editing')) rest.push('photo edits start at ' + priceOf('editing'));
-      if (priceOf('rendering')) rest.push('3D renders start at ' + priceOf('rendering'));
-      var t = staging
-        ? 'Virtual staging is <b>' + staging + ' a photo</b>, paid once — no subscription and no minimum.'
-        : 'Pricing depends on the service.';
-      if (rest.length) t += ' ' + sentence(rest).replace(/^./, function (c) { return c.toUpperCase(); }) + '.';
-      return t + ' Want the full breakdown, or shall I start your order?';
-    }
     function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
     function add(cls, html) { var d = document.createElement('div'); d.className = 'ba-msg ' + cls; d.innerHTML = html; body.appendChild(d); body.scrollTop = body.scrollHeight; }
     function acts(list) {
@@ -142,7 +121,7 @@
     function answer(q) {
       q = q.toLowerCase();
       if (/price|cost|how much|pricing|\$|expensive|rate|cheap/.test(q))
-        return { t: pricingAnswer(), a: [{ label: 'See full pricing', href: PRICING }, { label: 'Start my order →', href: ORDER, primary: true }] };
+        return { t: 'Virtual staging is priced per photo, paid once, with volume discounts up to 20% — most listings only need 5 to 8 photos. Floor plans, photo edits, tours and 3D renders each have simple per-item pricing on their pages. Want the full breakdown, or shall I start your order?', a: [{ label: 'See full pricing', href: PRICING }, { label: 'Start my order →', href: ORDER, primary: true }] };
       if (/which|what.*(service|need)|not sure|recommend|choose|help me decide/.test(q))
         return { t: 'Happy to help. Quick version — <b>Virtual staging</b> for empty or dated rooms, <b>3D renders</b> if it isn’t built yet, plus <b>floor plans</b> and <b>3D tours</b> to round out the listing.', a: [{ label: 'See all services', href: SERVICES }, { label: 'Start my order →', href: ORDER, primary: true }] };
       if (/how.*work|turnaround|how long|fast|time|revision|process|deliver/.test(q))
@@ -260,16 +239,10 @@
   }
   function paint() {
     var q = qty(), u = unitPrice(), d = discFor(q);
-    /* Mirror Shopify's arithmetic exactly: it floors the per-unit discount to the
-       cent and applies that to each unit. Discounting the line total in one go and
-       rounding drifts by up to half a cent per unit - 17c on 21 photos in CAD - and
-       the page would quote a total the cart does not honour. Whole-cent currencies
-       like USD hide this; CAD exposes it. */
-    var perOff = Math.floor(u * d / 100);
-    var perNow = u - perOff;
-    var full = u * q, disc = perNow * q;
+    var full = u * q, disc = Math.round(full * (1 - d / 100));
     nowEl.textContent = money(disc);
     if (d > 0) { wasEl.hidden = false; wasEl.textContent = money(full); } else { wasEl.hidden = true; }
+    var perNow = Math.round(u * (1 - d / 100));
     perEl.textContent = q + ' ' + unit + (q === 1 ? '' : 's') + ' × ' + money(perNow) + ' / ' + unit;
     if (phUnit) phUnit.textContent = money(perNow);
     if (saveEl) {
