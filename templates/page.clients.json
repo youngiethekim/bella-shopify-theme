@@ -1,0 +1,188 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "bella-cred",
+      "blocks": {
+        "m1": {
+          "type": "mark",
+          "settings": {
+            "name": "Brown Harris Stevens",
+            "detail": "Luxury brokerage · New York"
+          }
+        },
+        "m2": {
+          "type": "mark",
+          "settings": {
+            "name": "Highland Homes",
+            "detail": "Home builder · Texas"
+          }
+        },
+        "m3": {
+          "type": "mark",
+          "settings": {
+            "name": "Concord Pacific",
+            "detail": "Community developer · Vancouver"
+          }
+        },
+        "m4": {
+          "type": "mark",
+          "settings": {
+            "name": "Broccolini",
+            "detail": "Builder & developer · Montreal"
+          }
+        },
+        "m5": {
+          "type": "mark",
+          "settings": {
+            "name": "Sotheby's International Realty",
+            "detail": "Agent teams · Canada"
+          }
+        },
+        "m6": {
+          "type": "mark",
+          "settings": {
+            "name": "Douglas Elliman",
+            "detail": "Agents · New York"
+          }
+        },
+        "m7": {
+          "type": "mark",
+          "settings": {
+            "name": "Compass",
+            "detail": "Agents · US"
+          }
+        },
+        "m8": {
+          "type": "mark",
+          "settings": {
+            "name": "Berkshire Hathaway HS",
+            "detail": "Agents · Fox & Roach"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8"
+      ],
+      "settings": {
+        "eyebrow": "Clients",
+        "heading": "Who works with Bella.",
+        "sub": false,
+        "text": "Real orders from real inboxes: the brokerages, home builders and developers who send Bella their listings and projects — including some of the biggest names in North American real estate.",
+        "note": "Brokerage brands reflect individual agents and teams at those firms who order Bella for their own listings."
+      }
+    },
+    "cases": {
+      "type": "bella-case-rows",
+      "blocks": {
+        "c1": {
+          "type": "case",
+          "settings": {
+            "sub": "Luxury brokerage · New York, est. 1873",
+            "name": "Brown Harris Stevens",
+            "text": "BHS's digital imaging team sends Bella new Manhattan and Brooklyn listings week after week — Upper East Side co-ops, Sutton Place apartments, Brooklyn Heights brownstones. Photos and a floor plan come in; designer-staged, MLS-ready images go back, usually the next day. Staging for one of New York's most demanding luxury markets runs through Bella on a standing basis.",
+            "stat1": "Weekly|new listings staged",
+            "stat2": "~24h|typical turnaround",
+            "stat3": "NYC|Manhattan & Brooklyn"
+          }
+        },
+        "c2": {
+          "type": "case",
+          "settings": {
+            "sub": "Home builder · Texas",
+            "name": "Highland Homes",
+            "text": "Highland's marketing team stages every new spec home the same way: kitchen, primary bedroom, living/dining and study, in the community's chosen style — modern or contemporary, neutral palette — matched to the furniture-layout references their coordinators provide. Bella is part of the launch checklist for new Highland communities across Texas.",
+            "stat1": "50+|homes staged and counting",
+            "stat2": "4 rooms|per home, launch-ready",
+            "quote": "These look amazing! Thank you!",
+            "quote_by": "Caleigh Wells · Senior Marketing Coordinator, Highland Homes"
+          }
+        },
+        "c3": {
+          "type": "case",
+          "settings": {
+            "sub": "Master-planned community developer · Vancouver",
+            "name": "Concord Pacific",
+            "text": "Canada's largest master-planned community builder works with Bella through its sales and marketing team: staging and visualization for presale suites, so buyers can commit to homes in communities that are still rising out of the ground.",
+            "stat1": "Presale|suite marketing visuals",
+            "stat2": "Repeat|client since 2025"
+          }
+        },
+        "c4": {
+          "type": "case",
+          "settings": {
+            "sub": "Builder & developer · Montreal, Ottawa, Toronto",
+            "name": "Broccolini",
+            "text": "The construction and development firm behind some of Canada's most recognizable commercial and residential projects orders Bella imagery through its marketing team for residential campaigns.",
+            "stat1": "Repeat|marketing-team client",
+            "stat2": "Residential|campaign imagery"
+          }
+        },
+        "c5": {
+          "type": "case",
+          "settings": {
+            "sub": "Luxury brokerage · Vancouver",
+            "name": "Faith Wilson Group",
+            "text": "One of Vancouver's premier westside brokerages runs listing after listing through Bella — dozens of orders and counting — using virtual staging to present character homes and condos at their full potential.",
+            "stat1": "30+|orders and counting",
+            "stat2": "Vancouver|westside listings"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ],
+      "settings": {
+        "eyebrow": "Case studies",
+        "heading": "How teams put Bella to work.",
+        "sub": true,
+        "text": "Five clients, five different workflows — same 24–48 hour, designer-quality pipeline behind each one.",
+        "note": "Every client named on this page appears in Bella's real order history and correspondence. Project details are limited to what those clients have made public in their own listings and marketing."
+      }
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+        "attribution": "Beverly Bahm · Real estate agent, Chicago IL",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your team next",
+        "heading": "Add your brand to the list.",
+        "text": "Same designers, same pipeline, whether you send one listing or fifty — from $45 a photo, back in 24 to 48 hours.",
+        "cta_label": "Get started — from $45 a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "cases",
+    "quote",
+    "cta"
+  ]
+}
