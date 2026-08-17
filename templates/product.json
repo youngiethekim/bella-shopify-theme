@@ -479,6 +479,52 @@
         "look_label": "See more in the portfolio →",
         "look_url": "/pages/portfolio"
       }
+    },
+    "cred": {
+      "type": "bella-cred",
+      "blocks": {
+        "m1": {
+          "type": "mark",
+          "settings": {
+            "name": "Brown Harris Stevens",
+            "detail": "Luxury brokerage · New York"
+          }
+        },
+        "m2": {
+          "type": "mark",
+          "settings": {
+            "name": "Concord Pacific",
+            "detail": "Property developer · Vancouver"
+          }
+        },
+        "m3": {
+          "type": "mark",
+          "settings": {
+            "name": "Highland Homes",
+            "detail": "Home builder · Texas"
+          }
+        },
+        "m4": {
+          "type": "mark",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "detail": "Multi-family development"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "settings": {
+        "eyebrow": "Who stages your photos",
+        "heading": "Real designers. World-class work.",
+        "sub": true,
+        "text": "Every Bella staging is composed by hand by a professional interior designer — the same design team trusted for top-tier projects by luxury brokerages, national developers and home builders across the US and Canada. No AI shortcuts and no template rooms: furniture, light and styling are chosen for your listing and your buyer.",
+        "note": "Rated 4.9 on Google by verified Bella clients."
+      }
     }
   },
   "order": [
@@ -488,6 +534,7 @@
     "reqs",
     "uses",
     "proof",
+    "cred",
     "quote",
     "math",
     "work",
