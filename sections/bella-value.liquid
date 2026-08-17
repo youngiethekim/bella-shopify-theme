@@ -25,7 +25,7 @@
           <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
             <span class="vp-svc">{{ block.settings.service }}</span>
             <span class="vp-old">{{ block.settings.old_label }} <s>{{ block.settings.old_amount }}</s></span>
-            <span class="vp-new"><b>{% render 'bella-copy', text: block.settings.new_amount %}</b>{{ block.settings.new_unit }}</span>
+            <span class="vp-new"><b>{% render 'bella-price-text', text: block.settings.new_amount %}</b>{{ block.settings.new_unit }}</span>
             <span class="vp-go">{{ block.settings.link_label | default: 'See the service →' }}</span>
           </a>
         {%- endfor -%}
@@ -33,10 +33,10 @@
     {%- else -%}
       <div class="value-rows">
         <div class="vrow old"><span class="vlbl">{{ section.settings.old_label }}</span><span class="vamt"><s>{{ section.settings.old_amount }}</s></span><span class="vper">{{ section.settings.old_per }}</span></div>
-        <div class="vrow new"><span class="vlbl">{{ section.settings.new_label }}</span><span class="vamt">{% render 'bella-copy', text: section.settings.new_amount %}</span><span class="vper">{{ section.settings.new_per }}</span></div>
+        <div class="vrow new"><span class="vlbl">{{ section.settings.new_label }}</span><span class="vamt">{% render 'bella-price-text', text: section.settings.new_amount %}</span><span class="vper">{{ section.settings.new_per }}</span></div>
       </div>
     {%- endif -%}
-    <p class="value-note">{% render 'bella-copy', text: section.settings.note %}</p>
+    <p class="value-note">{% render 'bella-price-text', text: section.settings.note %}</p>
     {%- if section.settings.cta_label != blank -%}
       <a class="btn btn-wht" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label }}</a>
     {%- endif -%}

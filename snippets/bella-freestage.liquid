@@ -1,17 +1,10 @@
-{%- liquid
-  assign fs_staging = settings.product_staging | default: all_products['virtual-staging']
-  assign fs_rendering = settings.product_rendering | default: all_products['3d-rendering-service-for-architectural-visualization']
-  assign fs_order_url = settings.assistant_order_url | default: fs_staging.url | default: routes.all_products_collection_url
--%}
+{%- assign fs_vs = all_products['virtual-staging-1'].price_min | money_without_trailing_zeros -%}
+{%- assign fs_rd = all_products['3d-rendering'].price_min | money_without_trailing_zeros -%}
 <div class="fs-back" id="fsBack" role="dialog" aria-modal="true" aria-label="Free sample visualization offer">
   <div class="fs-modal">
     <div class="fs-vis" id="fsVis">
-      {%- comment -%}
-        This dialog starts hidden and many visitors never open it, so both images
-        load lazily and at a size that fits the modal rather than full-resolution.
-      {%- endcomment -%}
-      {% render 'bella-image', image: settings.freestage_before, asset: 'hero-before.jpg', class: 'fs-before', alt: 'Empty room', width: 1200, height: 800, sizes: '(max-width: 760px) 94vw, 620px' %}
-      {% render 'bella-image', image: settings.freestage_after, asset: 'hero-after.jpg', class: 'fs-after', alt: 'Same room, staged', width: 1200, height: 800, sizes: '(max-width: 760px) 94vw, 620px' %}
+      <img class="fs-before" src="{{ 'hero-before.jpg' | asset_url }}" alt="Empty room" width="1200" height="800">
+      <img class="fs-after" src="{{ 'hero-after.jpg' | asset_url }}" alt="Same room, staged" width="1200" height="800">
       <span class="fs-tag" id="fsTag">Before</span>
     </div>
     <div class="fs-body">
@@ -33,13 +26,13 @@
           <input type="hidden" name="contact[body]" value="Free sample visualization signup from the website popup.">
           <button class="fs-sub" type="submit">Claim my free sample →</button>
         {%- endform -%}
-        <p class="fs-fine">This promotion is for real estate professionals, builders and developers only; we reserve the right to verify eligibility or decline. One free sample each. We'll never share your email. Staging {% render 'bella-price', product: fs_staging, prefix: 'from', suffix: 'a photo' %} · 3D renders {% render 'bella-price', product: fs_rendering, prefix: 'from' %}. Reply to our confirmation email with your photo or plans.</p>
+        <p class="fs-fine">This promotion is for real estate professionals, builders and developers only; we reserve the right to verify eligibility or decline. One free sample each. We'll never share your email. Staging from {{ fs_vs }} a photo · 3D renders from {{ fs_rd }}. Reply to our confirmation email with your photo or plans.</p>
       </div>
       <div class="fs-ok" id="fsGate" style="display:none">
         <div class="chk">🏠</div>
         <h3>This free sample is for real estate pros.</h3>
-        <p>Selling your own home? Your listing agent can claim the free room for you. Or stage your listing directly — real designer staging {% render 'bella-price', product: fs_staging, prefix: 'from', suffix: 'a photo' %}.</p>
-        <a class="go" href="{{ fs_order_url }}">Stage a listing → {% render 'bella-price', product: fs_staging %}/photo</a>
+        <p>Selling your own home? Your listing agent can claim the free room for you. Or stage your listing directly — real designer staging from {{ fs_vs }} a photo.</p>
+        <a class="go" href="{{ settings.assistant_order_url | default: routes.all_products_collection_url }}">Stage a listing → {{ fs_vs }}/photo</a>
       </div>
     </div>
   </div>
