@@ -214,53 +214,6 @@
         "after_label": "After · photoreal render by Bella"
       }
     },
-    "tips": {
-      "type": "bella-included",
-      "blocks": {
-        "t1": {
-          "type": "item",
-          "settings": {
-            "icon": "plan",
-            "title": "Send dimensioned plans",
-            "text": "Floor plans with measurements (PDF or CAD) cut modelling time — hand-drawn works too."
-          }
-        },
-        "t2": {
-          "type": "item",
-          "settings": {
-            "icon": "swatch",
-            "title": "Include real references",
-            "text": "Material selections, finishes and photos of furniture you like keep the first draft close."
-          }
-        },
-        "t3": {
-          "type": "item",
-          "settings": {
-            "icon": "cube",
-            "title": "One render per key view",
-            "text": "Pick the angles buyers will see first — front exterior, living space, kitchen."
-          }
-        },
-        "t4": {
-          "type": "item",
-          "settings": {
-            "icon": "sun",
-            "title": "Choose your moment",
-            "text": "Tell us daylight or dusk — twilight exteriors are the most shared shots."
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4"
-      ],
-      "settings": {
-        "eyebrow": "Best practices",
-        "heading": "Get the best render, faster"
-      }
-    },
     "faq": {
       "type": "bella-faq",
       "blocks": {
@@ -595,7 +548,6 @@
     "quote",
     "math",
     "work",
-    "tips",
     "faq",
     "cta"
   ]
