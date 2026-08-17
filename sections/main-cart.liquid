@@ -32,6 +32,13 @@
   {%- else -%}
     <p class="rte">Your order is empty. <a href="{{ routes.all_products_collection_url }}">Browse services →</a></p>
   {%- endif -%}
+
+  {%- comment -%} App blocks, so cart upsell and trust apps need no code change. {%- endcomment -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == '@app' -%}
+      <div class="cart-app" {{ block.shopify_attributes }}>{% render block %}</div>
+    {%- endif -%}
+  {%- endfor -%}
 </div>
 
 {% schema %}
@@ -39,6 +46,9 @@
   "name": "Cart",
   "settings": [
     { "type": "text", "id": "heading", "label": "Heading", "default": "Your order" }
+  ],
+  "blocks": [
+    { "type": "@app" }
   ]
 }
 {% endschema %}

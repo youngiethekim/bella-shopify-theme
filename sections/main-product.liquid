@@ -177,9 +177,11 @@
     </div>
   </section>
 
-  {%- if section.blocks.size > 0 -%}
+  {%- comment -%} The strip is a fixed trust row, so it takes only its own blocks. {%- endcomment -%}
+  {%- assign usp_blocks = section.blocks | where: 'type', 'usp' -%}
+  {%- if usp_blocks.size > 0 -%}
     <div class="strip">
-      {%- for block in section.blocks -%}
+      {%- for block in usp_blocks -%}
         <div {{ block.shopify_attributes }}>
           {%- if block.settings.icon != blank and block.settings.icon != 'none' -%}
             <svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>
@@ -189,6 +191,16 @@
       {%- endfor -%}
     </div>
   {%- endif -%}
+
+  {%- comment -%}
+    App blocks. Without these, a reviews or upsell app cannot put anything on the
+    product page without someone editing this file.
+  {%- endcomment -%}
+  {%- for block in section.blocks -%}
+    {%- if block.type == '@app' -%}
+      <div class="prod-app" {{ block.shopify_attributes }}>{% render block %}</div>
+    {%- endif -%}
+  {%- endfor -%}
 
   {%- if product.description != blank -%}
     <section class="sec">
@@ -305,9 +317,10 @@
           { "value": "sofa", "label": "Sofa" }, { "value": "star", "label": "Star" }, { "value": "upload", "label": "Upload" } ] },
         { "type": "html", "id": "text", "label": "Text (b for emphasis)", "default": "From <b>{price:virtual-staging-1}</b> / photo" }
       ]
-    }
+    },
+    { "type": "@app" }
   ],
-  "max_blocks": 4,
+  "max_blocks": 10,
   "presets": [
     {
       "name": "Product (service)",
