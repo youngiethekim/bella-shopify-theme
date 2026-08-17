@@ -15,8 +15,8 @@
         "u1": {
           "type": "usp",
           "settings": {
-            "text": "<b>$45</b> / photo",
-            "icon": "note"
+            "text": "<b>82%</b> of buyers visualize it · NAR",
+            "icon": "star"
           }
         },
         "u2": {
@@ -53,12 +53,12 @@
         "assure_1_icon": "upload",
         "assure_2_icon": "pen",
         "assure_3_icon": "shield",
-        "reco_text": "Our most popular order: 8 photos covers a typical 3-bed listing — living room, kitchen, dining, primary bedroom and the other key rooms buyers look for.",
+        "reco_text": "Our most popular order: 6 photos covers the rooms that sell a typical listing — living room, kitchen, dining, primary bedroom and two more key spaces. Ordering 6 also unlocks 10% off automatically.",
         "collapse_description": false,
         "assure_1_tip": "Your order confirmation includes an upload link — send photos right away or whenever the shoot is done.",
         "assure_2_tip": "Mark up anything you'd like changed — revisions are free and unlimited for two weeks after delivery.",
         "assure_3_tip": "If a photo still isn't right after rework, we refund that photo. No fine print.",
-        "default_qty": 8,
+        "default_qty": 6,
         "lede": "For properties that are built but sitting vacant — or occupied and cluttered. A real interior designer furnishes your listing photos so buyers see a home, not an empty room. MLS-ready in 24 to 48 hours."
       }
     },
@@ -240,7 +240,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does it cost?",
-            "answer": "From $45 per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one. A typical eight-photo listing runs about $324."
+            "answer": "From $45 per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one — the best value. A typical six-photo listing runs about $243 with the volume discount applied."
           }
         },
         "q3": {
