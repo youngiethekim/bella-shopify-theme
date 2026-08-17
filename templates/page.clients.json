@@ -16,7 +16,8 @@
           "type": "mark",
           "settings": {
             "name": "Brown Harris Stevens",
-            "detail": "Luxury brokerage · New York"
+            "detail": "Luxury brokerage · New York",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/brown-harris-stevens-logo.png?v=1786982242"
           }
         },
         "m2": {
@@ -31,7 +32,8 @@
           "type": "mark",
           "settings": {
             "name": "Concord Pacific",
-            "detail": "Community developer · Vancouver"
+            "detail": "Community developer · Vancouver",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/concord-pacific-logo.png?v=1786982242"
           }
         },
         "m4": {
