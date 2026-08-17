@@ -159,6 +159,13 @@
               {%- if section.settings.assure_3 != blank -%}<span{% if section.settings.assure_3_tip != blank %} class="tt" tabindex="0" data-tip="{{ section.settings.assure_3_tip | escape }}"{% endif %}><svg class="ico"><use href="#i-{{ section.settings.assure_3_icon | default: 'shield' }}"/></svg>{{ section.settings.assure_3 }}</span>{%- endif -%}
             </div>
           {%- endif -%}
+
+          {%- if section.settings.call_url != blank -%}
+            <div class="bb-call">
+              <span>{{ section.settings.call_text }}</span>
+              <a href="{{ section.settings.call_url }}" target="_blank" rel="noopener">{{ section.settings.call_label }}</a>
+            </div>
+          {%- endif -%}
         </div>
       {%- endform -%}
     </div>
@@ -262,6 +269,9 @@
       { "value": "upload", "label": "Upload" }, { "value": "clock", "label": "Clock" }, { "value": "shield", "label": "Shield" },
       { "value": "pen", "label": "Pen" }, { "value": "doc", "label": "Document" }, { "value": "check", "label": "Check" } ] },
     { "type": "text", "id": "assure_3_tip", "label": "Reassurance 3 tooltip" },
+    { "type": "text", "id": "call_text", "label": "Consult line (above the call link)", "default": "Planning a bigger project, or want to talk it through first?" },
+    { "type": "text", "id": "call_label", "label": "Consult link label", "default": "Book a free project call →" },
+    { "type": "text", "id": "call_url", "label": "Consult link URL (Calendly)", "info": "Leave blank to hide. Paste your Calendly event link here." },
     { "type": "header", "content": "Volume discounts", "info": "Shown in the buy box. Create a matching automatic discount in admin so checkout applies it." },
     { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": true },
     { "type": "number", "id": "tier1_qty", "label": "Tier 1 — from qty", "default": 3 },
