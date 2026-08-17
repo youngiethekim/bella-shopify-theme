@@ -85,7 +85,7 @@
           {%- unless product.has_only_default_variant -%}
             {%- assign step = step | plus: 1 -%}
             <div class="bb-group">
-              <label class="bb-lbl" for="BuyVariant"><span class="bb-num">{{ step }}</span>{{ section.settings.variant_label }}{% if section.settings.variant_tip != blank %}{%- capture variant_tip_copy -%}{% render 'bella-copy', text: section.settings.variant_tip %}{%- endcapture -%} <span class="tt tt-i" tabindex="0" data-tip="{{ variant_tip_copy | escape }}">i</span>{% endif %}</label>
+              <label class="bb-lbl" for="BuyVariant"><span class="bb-num">{{ step }}</span>{{ section.settings.variant_label }}{% if section.settings.variant_tip != blank %} <span class="tt tt-i" tabindex="0" data-tip="{{ section.settings.variant_tip | escape }}">i</span>{% endif %}</label>
               <select name="id" id="BuyVariant">
                 {%- for variant in product.variants -%}
                   <option value="{{ variant.id }}"
@@ -177,30 +177,18 @@
     </div>
   </section>
 
-  {%- comment -%} The strip is a fixed trust row, so it takes only its own blocks. {%- endcomment -%}
-  {%- assign usp_blocks = section.blocks | where: 'type', 'usp' -%}
-  {%- if usp_blocks.size > 0 -%}
+  {%- if section.blocks.size > 0 -%}
     <div class="strip">
-      {%- for block in usp_blocks -%}
+      {%- for block in section.blocks -%}
         <div {{ block.shopify_attributes }}>
           {%- if block.settings.icon != blank and block.settings.icon != 'none' -%}
             <svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>
           {%- endif -%}
-          <span>{% render 'bella-copy', text: block.settings.text %}</span>
+          <span>{% render 'bella-price-text', text: block.settings.text %}</span>
         </div>
       {%- endfor -%}
     </div>
   {%- endif -%}
-
-  {%- comment -%}
-    App blocks. Without these, a reviews or upsell app cannot put anything on the
-    product page without someone editing this file.
-  {%- endcomment -%}
-  {%- for block in section.blocks -%}
-    {%- if block.type == '@app' -%}
-      <div class="prod-app" {{ block.shopify_attributes }}>{% render block %}</div>
-    {%- endif -%}
-  {%- endfor -%}
 
   {%- if product.description != blank -%}
     <section class="sec">
@@ -291,7 +279,7 @@
     { "type": "text", "id": "call_label", "label": "Consult link label", "default": "Book a free project call →" },
     { "type": "text", "id": "call_url", "label": "Consult link URL (Calendly)", "info": "Leave blank to hide. Paste your Calendly event link here." },
     { "type": "header", "content": "Volume discounts", "info": "Shown in the buy box. Create a matching automatic discount in admin so checkout applies it." },
-    { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": false, "info": "Turn on only when the Volume 5/10/15/20% automatic discounts are active AND scoped to the products this theme sells. They were built and verified on 2026-08-17, then paused until launch so the live shop keeps its current pricing — switch this on in the same sitting you re-activate them, and re-check a real cart in CAD (USD rounds evenly and hides errors)." },
+    { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": true },
     { "type": "number", "id": "tier1_qty", "label": "Tier 1 — from qty", "default": 3 },
     { "type": "number", "id": "tier1_pct", "label": "Tier 1 — % off", "default": 5 },
     { "type": "number", "id": "tier2_qty", "label": "Tier 2 — from qty", "default": 6 },
@@ -317,10 +305,9 @@
           { "value": "sofa", "label": "Sofa" }, { "value": "star", "label": "Star" }, { "value": "upload", "label": "Upload" } ] },
         { "type": "html", "id": "text", "label": "Text (b for emphasis)", "default": "From <b>{price:virtual-staging}</b> / photo" }
       ]
-    },
-    { "type": "@app" }
+    }
   ],
-  "max_blocks": 10,
+  "max_blocks": 4,
   "presets": [
     {
       "name": "Product (service)",
