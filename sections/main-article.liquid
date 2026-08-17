@@ -37,10 +37,45 @@
   {%- endif -%}
 
   {%- if section.settings.show_cta -%}
+    {%- liquid
+      comment
+        Match the closing CTA to the article's topic so a rendering guide
+        sells renders, a renovation guide sells renovations, and so on.
+      endcomment
+      assign topic = article.handle | append: ' ' | append: article.title | downcase
+      assign cta_url = section.settings.cta_url
+      assign cta_heading = section.settings.cta_heading
+      assign cta_label = section.settings.cta_label
+      if cta_url == blank
+        if topic contains 'render' or topic contains 'architect' or topic contains 'builder' or topic contains 'presell' or topic contains 'pre-sell'
+          assign cta_url = '/products/3d-rendering'
+          assign cta_heading = 'Building or pre-selling? Photoreal 3D renders from $550.'
+          assign cta_label = 'See 3D rendering →'
+        elsif topic contains 'renovation' or topic contains 'dated home' or topic contains 'flip'
+          assign cta_url = '/products/virtual-renovation'
+          assign cta_heading = 'Selling a dated home? Renovate it virtually for $69 a photo.'
+          assign cta_label = 'See virtual renovation →'
+        elsif topic contains '360' or topic contains 'house tour' or topic contains 'virtual tour'
+          assign cta_url = '/products/360-virtual-tour-staging'
+          assign cta_heading = 'Give buyers the walkthrough — staged 360° tours from $99.'
+          assign cta_label = 'See 360° tours →'
+        elsif topic contains 'floor plan' or topic contains 'floor-plan'
+          assign cta_url = '/products/2d-3d-floor-plan-service'
+          assign cta_heading = 'Add a floor plan buyers can actually read — from $19.95.'
+          assign cta_label = 'See floor plans →'
+        elsif topic contains 'dusk' or topic contains 'twilight' or topic contains 'photo-editing' or topic contains 'item-removal' or topic contains 'hdr' or topic contains 'photography'
+          assign cta_url = '/products/photo-editing'
+          assign cta_heading = 'Polish your listing photos — professional edits from $5 a photo.'
+          assign cta_label = 'See photo editing →'
+        else
+          assign cta_url = '/products/virtual-staging-1'
+        endif
+      endif
+    -%}
     <aside class="art-cta">
       <p class="micro">{{ section.settings.cta_eyebrow }}</p>
-      <h2>{{ section.settings.cta_heading }}</h2>
-      <a class="btn" href="{{ section.settings.cta_url | default: '/products/virtual-staging-1' }}">{{ section.settings.cta_label }}</a>
+      <h2>{{ cta_heading }}</h2>
+      <a class="btn" href="{{ cta_url }}">{{ cta_label }}</a>
     </aside>
   {%- endif -%}
 </article>
