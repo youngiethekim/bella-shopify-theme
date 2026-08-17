@@ -362,3 +362,9 @@
 /* ---- best-value tag on the top volume tier ---- */
 .bb-tier{position:relative;overflow:visible}
 .bb-tier .bt-best{position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:99px;padding:2px 8px;white-space:nowrap}
+.bb-tier .bt-pop{background:#C9A96A}
+/* ---- reviewer avatar in the quote band ---- */
+.quote .qt-avatar{margin-top:26px;display:flex;justify-content:center}
+.quote .qt-avatar img,.quote .qt-mono{width:76px;height:76px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px -8px rgba(20,18,16,.3)}
+.quote .qt-mono{display:flex;align-items:center;justify-content:center;background:#EEF3EE;color:var(--green);font-size:26px;font-weight:400;letter-spacing:.03em;box-shadow:none;border:1px solid var(--line)}
+.quote-top.quote .qt-avatar+cite{margin-top:12px}
