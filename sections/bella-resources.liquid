@@ -1,13 +1,37 @@
+{% style %}
+.res-pills{display:flex;flex-wrap:wrap;gap:8px;max-width:1120px;margin:22px auto 0;padding:0 var(--pad)}
+.res-pills a{border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:12.5px;color:var(--ink);text-decoration:none;background:#fff;transition:.15s;white-space:nowrap}
+.res-pills a:hover{border-color:var(--green);color:var(--green)}
+.res-break{scroll-margin-top:110px}
+@media(max-width:640px){.res-pills{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}}
+{% endstyle %}
 <section class="res-hero">
   <span class="micro">{{ section.settings.eyebrow }}</span>
   {%- if section.settings.sub -%}<h2 class="res-h2">{{ section.settings.heading }}</h2>{%- else -%}<h1>{{ section.settings.heading }}</h1>{%- endif -%}
   <p class="loc-lede">{{ section.settings.lede }}</p>
 </section>
+{%- liquid
+  assign navcount = 0
+  for block in section.blocks
+    if block.type == 'heading'
+      assign navcount = navcount | plus: 1
+    endif
+  endfor
+-%}
+{%- if section.settings.show_nav and navcount > 1 -%}
+  <nav class="res-pills" aria-label="Jump to a section">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'heading' -%}
+        <a href="#res-{{ block.settings.title | handleize }}">{{ block.settings.nav_label | default: block.settings.title }}</a>
+      {%- endif -%}
+    {%- endfor -%}
+  </nav>
+{%- endif -%}
 <section class="res-wrap">
   <div class="res-grid">
     {%- for block in section.blocks -%}
       {%- if block.type == 'heading' -%}
-        <div class="res-break" {{ block.shopify_attributes }}>
+        <div class="res-break" id="res-{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
           <h2>{{ block.settings.title }}</h2>
           {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
         </div>
@@ -30,6 +54,7 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Free resources" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Real estate marketing resources" },
     { "type": "checkbox", "id": "sub", "label": "Render heading as H2 (page already has an H1)", "default": false },
+    { "type": "checkbox", "id": "show_nav", "label": "Show jump links to each group", "default": true },
     { "type": "textarea", "id": "lede", "label": "Lede", "default": "Practical guides, checklists and how-tos from the team that stages thousands of listings a year. 100% free — no order required." }
   ],
   "blocks": [
@@ -38,6 +63,7 @@
       "name": "Group heading",
       "settings": [
         { "type": "text", "id": "title", "label": "Heading" },
+        { "type": "text", "id": "nav_label", "label": "Short label for the jump link (optional)" },
         { "type": "textarea", "id": "text", "label": "Text" }
       ]
     },

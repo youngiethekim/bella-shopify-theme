@@ -11,7 +11,7 @@
     <div class="sec-in">
       <div class="head2">
         <p class="micro">{{ section.settings.eyebrow }}</p>
-        {%- if section.settings.sub -%}<h2 style="font-size:clamp(25px,2.9vw,38px);font-weight:300">{{ section.settings.heading }}</h2>{%- else -%}<h2>{{ section.settings.heading }}</h2>{%- endif -%}
+        {%- if section.settings.sub -%}<h2 style="font-size:clamp(25px,2.9vw,38px);font-weight:300">{{ section.settings.heading }}</h2>{%- else -%}<h1>{{ section.settings.heading }}</h1>{%- endif -%}
         {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
       </div>
 
