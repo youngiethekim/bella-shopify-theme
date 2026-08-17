@@ -73,6 +73,52 @@
   {%- endif -%}
 </section>
 
+{%- comment -%}
+  Local SEO is the entire point of these pages, so describe what Bella actually
+  is: a Service with the area it serves. Deliberately not LocalBusiness — Bella
+  has no premises in these cities, and an invented address per city would be
+  fabricated data that Google treats as spam.
+{%- endcomment -%}
+{%- if section.settings.city != blank -%}
+  {%- capture loc_description -%}{% render 'bella-copy', text: section.settings.lede %}{%- endcapture -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": {{ section.settings.heading | default: page.title | json }},
+    "serviceType": {{ section.settings.service_type | default: 'Virtual staging' | json }},
+    "description": {{ loc_description | strip_html | strip | json }},
+    "url": {{ canonical_url | json }},
+    "provider": {
+      "@type": "Organization",
+      "name": {{ shop.name | json }},
+      "url": {{ shop.secure_url | json }}
+    },
+    "areaServed": {
+      "@type": {{ section.settings.area_type | default: 'City' | json }},
+      "name": {{ section.settings.city | json }}
+    }{% if svc_staging.price_min > 0 %},
+    "offers": {
+      "@type": "Offer",
+      "price": {{ svc_staging.price_min | divided_by: 100.0 }},
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "availability": "https://schema.org/InStock",
+      "url": {{ shop.secure_url | append: svc_staging.url | json }}
+    }{% endif %}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ shop.secure_url | json }} },
+      { "@type": "ListItem", "position": 2, "name": {{ section.settings.city | json }}, "item": {{ canonical_url | json }} }
+    ]
+  }
+  </script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "Location page",
@@ -85,7 +131,12 @@
     { "type": "url", "id": "cta_link", "label": "CTA link", "info": "Defaults to the virtual staging product." },
     { "type": "text", "id": "alt_label", "label": "Secondary link label" },
     { "type": "url", "id": "alt_link", "label": "Secondary link" },
-    { "type": "text", "id": "city", "label": "City name (for services row)" },
+    { "type": "text", "id": "city", "label": "City name (for services row)", "info": "Also the area served in this page's search-engine markup. Leave empty to omit both." },
+    { "type": "select", "id": "area_type", "label": "This area is a", "default": "City", "options": [
+      { "value": "City", "label": "City" },
+      { "value": "AdministrativeArea", "label": "State / province / region" },
+      { "value": "Country", "label": "Country" } ] },
+    { "type": "text", "id": "service_type", "label": "Service described", "default": "Virtual staging", "info": "Used in this page's search-engine markup." },
     { "type": "text", "id": "market_heading", "label": "Market column heading" },
     { "type": "richtext", "id": "market_text", "label": "Market column text" },
     { "type": "text", "id": "local_heading", "label": "Local column heading" },

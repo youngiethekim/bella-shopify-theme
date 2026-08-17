@@ -2,7 +2,13 @@
   {%- if section.settings.video != blank -%}
     {{ section.settings.video | video_tag: class: 'hero-vid', autoplay: true, muted: true, loop: false, controls: false, playsinline: true }}
   {%- else -%}
-    <video class="hero-vid" autoplay muted playsinline poster="{{ 'hero-before.jpg' | asset_url }}">
+    {%- comment -%} Poster through the image CDN: asset_url sent the full 475 KB original to phones. {%- endcomment -%}
+    {%- if section.settings.poster != blank -%}
+      {%- assign hero_poster = section.settings.poster | image_url: width: 1600 -%}
+    {%- else -%}
+      {%- assign hero_poster = 'hero-before.jpg' | asset_img_url: '1600x' -%}
+    {%- endif -%}
+    <video class="hero-vid" autoplay muted playsinline poster="{{ hero_poster }}">
       <source src="{{ 'hero-transform.mp4' | asset_url }}" type="video/mp4">
     </video>
   {%- endif -%}
@@ -34,6 +40,7 @@
   "name": "Hero (video)",
   "settings": [
     { "type": "video", "id": "video", "label": "Hero video", "info": "Leave empty to use the bundled before→after transform video" },
+    { "type": "image_picker", "id": "poster", "label": "Poster image", "info": "Shown while the bundled video loads. Defaults to the bundled hero-before.jpg." },
     { "type": "text", "id": "badge", "label": "Badge", "default": "Real estate visualization studio" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Real estate visualization that sells listings" },
     { "type": "text", "id": "heading_em", "label": "Heading accent (italic)", "default": "for more." },

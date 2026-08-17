@@ -21,12 +21,17 @@
     <meta name="description" content="{{ page_description | escape }}">
   {% endif %}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  {% render 'bella-fonts' %}
 
   {{ 'bella.css' | asset_url | stylesheet_tag }}
+  {%- comment -%}
+    Despite the name, bella-pdp.css is a second site-wide stylesheet: it carries
+    .bb-float, .art-cta and the location, resources, portfolio, palette and
+    timeline sections. It is not safe to load conditionally.
+  {%- endcomment -%}
   {{ 'bella-pdp.css' | asset_url | stylesheet_tag }}
+  {%- comment -%} Last, so its focus rules win over the outline:none above. {%- endcomment -%}
+  {{ 'bella-a11y.css' | asset_url | stylesheet_tag }}
 
   {% render 'bella-seo' %}
 
@@ -34,11 +39,14 @@
 </head>
 
 <body class="template-{{ template.name | handle }}">
+  <a class="skip-link" href="#MainContent">Skip to content</a>
+
   {% render 'bella-icons' %}
 
   {% sections 'header-group' %}
 
-  <main id="MainContent" role="main">
+  {%- comment -%} tabindex allows the skip link to actually move focus here, not just scroll. {%- endcomment -%}
+  <main id="MainContent" role="main" tabindex="-1">
     {{ content_for_layout }}
   </main>
 
@@ -64,6 +72,13 @@
   {%- endif -%}
 
   <script src="{{ 'bella.js' | asset_url }}" defer></script>
-  <script src="{{ 'bella-pdp.js' | asset_url }}" defer></script>
+  {%- comment -%}
+    bella-pdp.js only ever touches the product gallery, the buy box and the
+    lookbook, so other pages were downloading 13 KB to do nothing. The lookbook
+    section loads it for itself when it appears off a product page.
+  {%- endcomment -%}
+  {%- if template.name == 'product' -%}
+    <script src="{{ 'bella-pdp.js' | asset_url }}" defer></script>
+  {%- endif -%}
 </body>
 </html>

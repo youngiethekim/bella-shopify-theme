@@ -55,7 +55,12 @@
     {
       "@type": "Offer",
       "name": {{ variant.title | json }},
-      "price": {{ variant.price | money_without_currency | remove: ',' | json }},
+      {%- comment -%}
+        Divide the cents rather than reformatting money: money_without_currency
+        follows the locale, so a comma-decimal market emitted "45,00" and the
+        stripped thousands separator turned 1.400,00 into an invalid 140000.
+      {%- endcomment -%}
+      "price": {{ variant.price | divided_by: 100.0 }},
       "priceCurrency": {{ cart.currency.iso_code | json }},
       "availability": "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
       "url": {{ shop.secure_url | append: product.url | append: '?variant=' | append: variant.id | json }}

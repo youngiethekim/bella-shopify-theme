@@ -5,7 +5,7 @@
      Images load from an absolute URL; re-host them and change IMG_BASE if you like.
      ============================================================ -->
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+{%- comment -%} Jost is self-hosted for the whole theme in bella-fonts; the @import that used to sit here blocked rendering on a third-party origin. {%- endcomment -%}
 .blb{--bg:#FDFCFA;--ink:#232120;--soft:#6E6A66;--faint:#9C978F;--line:#E8E4DE;--line2:#F0EDE8;--green:#3E6B4C;--wash:#FAF8F5;
   background:var(--bg);color:var(--ink);font-family:'Jost',system-ui,-apple-system,sans-serif;font-weight:300;line-height:1.6;
   -webkit-font-smoothing:antialiased;max-width:1440px;margin:0 auto;padding:0 22px 60px}
@@ -166,6 +166,15 @@
   render();
 })();
 </script>
+
+{%- comment -%}
+  The favourites bar and lightbox live in bella-pdp.js, which the layout only
+  loads on product pages. Pull it in here so this section keeps working wherever
+  it is placed, without loading it twice on a product page.
+{%- endcomment -%}
+{%- unless template.name == 'product' -%}
+  <script src="{{ 'bella-pdp.js' | asset_url }}" defer></script>
+{%- endunless -%}
 
 {% schema %}
 {

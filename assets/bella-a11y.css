@@ -1,0 +1,63 @@
+/* ---------------------------------------------------------------------------
+   Keyboard accessibility.
+
+   Loaded last on purpose. Several form rules in bella.css and bella-pdp.css set
+   outline:none on :focus and signal focus with a border colour alone, which is
+   too weak to find with a keyboard and disappears entirely for anyone who can't
+   distinguish the two greys. Overriding them from an earlier stylesheet would
+   mean escalating specificity in a dozen places, so the fix lives here where it
+   simply wins.
+
+   :focus-visible rather than :focus, so a mouse click never draws a ring the
+   person who clicked doesn't need.
+   --------------------------------------------------------------------------- */
+
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -60px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: var(--ink, #232120);
+  color: var(--bg, #FDFCFA);
+  font-size: 14px;
+  letter-spacing: .04em;
+  border-radius: 0 0 3px 3px;
+  transition: top .12s ease-out;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--green, #3E6B4C);
+  outline-offset: 2px;
+}
+
+/* Fields whose focus ring was suppressed elsewhere. Keeps the green border those
+   rules add, and puts the ring back on top of it. */
+.ba-foot input:focus-visible,
+.fs-field:focus-visible,
+.form-card input:focus-visible,
+.buybox select:focus-visible,
+.buybox input:focus-visible,
+.qty-step input:focus-visible,
+.bb-more input:focus-visible,
+.lb-form input:focus-visible,
+.lb-form select:focus-visible {
+  outline: 2px solid var(--green, #3E6B4C);
+  outline-offset: 1px;
+}
+
+/* Focus has to be visible against the dark bands too, where green on near-black
+   fails contrast. */
+.us :focus-visible,
+.bb-float:focus-visible,
+.skip-link:focus-visible {
+  outline-color: var(--bg, #FDFCFA);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link { transition: none; }
+}

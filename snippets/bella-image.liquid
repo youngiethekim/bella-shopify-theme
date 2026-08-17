@@ -1,0 +1,45 @@
+{%- comment -%}
+  Renders an <img> served through Shopify's image CDN with a srcset, from either
+  a merchant-picked image or a file bundled in assets/.
+
+  Files referenced with asset_url are sent at full size to every device — the
+  bundled hero JPGs are ~500-700 KB each. asset_img_url and image_url both go
+  through the CDN, which resizes and re-encodes per request instead.
+
+  Accepts:
+    image   - an image object from an image_picker setting. Preferred. Optional.
+    asset   - filename in assets/, used when `image` is blank. Optional.
+    alt     - alt text. Pass '' deliberately for decorative images.
+    class   - class attribute.
+    width   - intrinsic width, for aspect ratio. Required to avoid layout shift.
+    height  - intrinsic height.
+    sizes   - sizes attribute. Defaults to 100vw.
+    loading - 'lazy' (default) or 'eager' for anything above the fold.
+
+  {% render 'bella-image', asset: 'hero-before.jpg', alt: 'Empty room', width: 1200, height: 800 %}
+{%- endcomment -%}
+{%- liquid
+  assign bella_widths = '600,900,1200,1600' | split: ','
+  assign bella_sizes = sizes | default: '100vw'
+  assign bella_loading = loading | default: 'lazy'
+-%}
+{%- if image != blank -%}
+  {%- capture bella_srcset -%}
+    {%- for w in bella_widths -%}{{ image | image_url: width: w }} {{ w }}w{%- unless forloop.last -%}, {% endunless -%}{%- endfor -%}
+  {%- endcapture -%}
+  <img{% if class %} class="{{ class }}"{% endif %} src="{{ image | image_url: width: 1200 }}"
+    srcset="{{ bella_srcset | strip }}" sizes="{{ bella_sizes }}"
+    alt="{{ alt | escape }}" width="{{ width | default: image.width }}" height="{{ height | default: image.height }}"
+    loading="{{ bella_loading }}" decoding="async">
+{%- elsif asset != blank -%}
+  {%- capture bella_srcset -%}
+    {%- for w in bella_widths -%}
+      {%- assign bella_size = w | append: 'x' -%}
+      {{ asset | asset_img_url: bella_size }} {{ w }}w{%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  <img{% if class %} class="{{ class }}"{% endif %} src="{{ asset | asset_img_url: '1200x' }}"
+    srcset="{{ bella_srcset | strip }}" sizes="{{ bella_sizes }}"
+    alt="{{ alt | escape }}" width="{{ width }}" height="{{ height }}"
+    loading="{{ bella_loading }}" decoding="async">
+{%- endif -%}

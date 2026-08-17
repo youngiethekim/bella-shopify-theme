@@ -53,7 +53,9 @@
   {
     "name": "Free-stage popup",
     "settings": [
-      { "type": "checkbox", "id": "enable_freestage_popup", "label": "Show the free room offer popup on the homepage", "default": true, "info": "Appears on exit intent, 55% scroll, or after 30 seconds — once per visitor. Submissions arrive as contact form emails." }
+      { "type": "checkbox", "id": "enable_freestage_popup", "label": "Show the free room offer popup on the homepage", "default": true, "info": "Appears on exit intent, 55% scroll, or after 30 seconds — once per visitor. Submissions arrive as contact form emails." },
+      { "type": "image_picker", "id": "freestage_before", "label": "Before image", "info": "Defaults to the bundled hero-before.jpg." },
+      { "type": "image_picker", "id": "freestage_after", "label": "After image", "info": "Defaults to the bundled hero-after.jpg." }
     ]
   }
 ]

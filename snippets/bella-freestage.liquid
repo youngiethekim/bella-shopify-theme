@@ -6,8 +6,12 @@
 <div class="fs-back" id="fsBack" role="dialog" aria-modal="true" aria-label="Free sample visualization offer">
   <div class="fs-modal">
     <div class="fs-vis" id="fsVis">
-      <img class="fs-before" src="{{ 'hero-before.jpg' | asset_url }}" alt="Empty room" width="1200" height="800">
-      <img class="fs-after" src="{{ 'hero-after.jpg' | asset_url }}" alt="Same room, staged" width="1200" height="800">
+      {%- comment -%}
+        This dialog starts hidden and many visitors never open it, so both images
+        load lazily and at a size that fits the modal rather than full-resolution.
+      {%- endcomment -%}
+      {% render 'bella-image', image: settings.freestage_before, asset: 'hero-before.jpg', class: 'fs-before', alt: 'Empty room', width: 1200, height: 800, sizes: '(max-width: 760px) 94vw, 620px' %}
+      {% render 'bella-image', image: settings.freestage_after, asset: 'hero-after.jpg', class: 'fs-after', alt: 'Same room, staged', width: 1200, height: 800, sizes: '(max-width: 760px) 94vw, 620px' %}
       <span class="fs-tag" id="fsTag">Before</span>
     </div>
     <div class="fs-body">
