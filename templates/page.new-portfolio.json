@@ -252,7 +252,7 @@
         "eyebrow": "Your listing next",
         "heading": "Want results like these?",
         "text": "Designer staging, photoreal renders and clean edits — back in 24 to 48 hours.",
-        "cta_label": "Get started — from $45 a photo",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }
