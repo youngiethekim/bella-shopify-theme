@@ -198,11 +198,13 @@
       perEl = document.getElementById('BbPer'),
       saveEl = document.getElementById('BbSave'),
       nudgeEl = document.getElementById('BbNudge'),
-      tiersEl = document.getElementById('BbTiers');
+      tiersEl = document.getElementById('BbTiers'),
+      phUnit = document.getElementById('PhUnit');
 
   var tiersOn = box.getAttribute('data-tiers-enabled') === 'true';
   var unit = box.getAttribute('data-unit-label') || 'photo';
   var fmt = box.getAttribute('data-money-format') || '${{amount}}';
+  var RECO = parseInt(box.getAttribute('data-reco'), 10) || 0;
   var TIERS = [];
   try { TIERS = JSON.parse(box.getAttribute('data-tiers') || '[]'); } catch (e) {}
   TIERS = TIERS.filter(function (t) { return t && t.m > 0 && t.d > 0; }).sort(function (a, b) { return a.m - b.m; });
@@ -242,6 +244,7 @@
     if (d > 0) { wasEl.hidden = false; wasEl.textContent = money(full); } else { wasEl.hidden = true; }
     var perNow = Math.round(u * (1 - d / 100));
     perEl.textContent = q + ' ' + unit + (q === 1 ? '' : 's') + ' × ' + money(perNow) + ' / ' + unit;
+    if (phUnit) phUnit.textContent = money(perNow);
     if (saveEl) {
       saveEl.textContent = d > 0
         ? '✓ ' + d + '% volume discount — you save ' + money(full - disc) + ' (applied at checkout)'
@@ -256,7 +259,7 @@
     if (tiersEl) {
       tiersEl.innerHTML = TIERS.map(function (t, i) {
         var on = q >= t.m && (nextTier(q) === null ? t.d === discFor(q) : t.d === discFor(q));
-        var best = i === TIERS.length - 1 ? '<span class="bt-best">Best value</span>' : '';
+        var best = i === TIERS.length - 1 ? '<span class="bt-best">Best value</span>' : (t.m === RECO ? '<span class="bt-best bt-pop">Most popular</span>' : '');
         return '<button type="button" class="bb-tier' + (on ? ' on' : '') + '" data-q="' + t.m + '">' + best + '<b>' + t.d + '% off</b>' + t.m + '+ ' + unit + 's</button>';
       }).join('');
       tiersEl.querySelectorAll('button').forEach(function (b) {
