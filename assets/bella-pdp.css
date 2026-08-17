@@ -359,3 +359,6 @@
 .pal-copy:hover{border-color:var(--green)}
 .pal-copy.on{background:#EEF3EE;border-color:rgba(62,107,76,.35)}
 @media(max-width:820px){.pal-grid{grid-template-columns:1fr}}
+/* ---- best-value tag on the top volume tier ---- */
+.bb-tier{position:relative;overflow:visible}
+.bb-tier .bt-best{position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:99px;padding:2px 8px;white-space:nowrap}
