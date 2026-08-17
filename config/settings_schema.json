@@ -14,12 +14,40 @@
     ]
   },
   {
+    "name": "Services",
+    "settings": [
+      { "type": "paragraph", "content": "Point each service at the product that charges for it. Every price the site quotes is then read from that product, so repricing in the admin updates the whole site and each market sees its own currency. Left empty, a service falls back to its usual product handle." },
+      { "type": "product", "id": "product_staging", "label": "Virtual staging", "info": "Default: virtual-staging-1" },
+      { "type": "product", "id": "product_renovation", "label": "Virtual renovation", "info": "Default: virtual-renovation" },
+      { "type": "product", "id": "product_rendering", "label": "3D rendering", "info": "Default: 3d-rendering" },
+      { "type": "product", "id": "product_tour", "label": "360° tours", "info": "Default: 360-virtual-tour-staging" },
+      { "type": "product", "id": "product_floorplan", "label": "Floor plans", "info": "Default: 2d-3d-floor-plan-service" },
+      { "type": "product", "id": "product_editing", "label": "Photo editing", "info": "Default: photo-editing" }
+    ]
+  },
+  {
+    "name": "Floating order button",
+    "settings": [
+      { "type": "paragraph", "content": "The button pinned to the corner of every page except product and cart pages." },
+      { "type": "text", "id": "float_label", "label": "Label", "default": "Order now" },
+      { "type": "product", "id": "float_product", "label": "Price shown", "info": "Its starting price is shown as \"From …\". Defaults to virtual-staging-1." },
+      { "type": "text", "id": "float_note", "label": "Note after the price", "default": "24–48 h delivery" },
+      { "type": "url", "id": "float_link", "label": "Link", "info": "Defaults to the all-products collection." }
+    ]
+  },
+  {
     "name": "Bella assistant",
     "settings": [
       { "type": "checkbox", "id": "enable_assistant", "label": "Show the \"Ask Bella\" chat bubble", "default": true, "info": "Scripted answers about pricing, services and process, with buttons that route visitors to order / pricing pages" },
       { "type": "url", "id": "assistant_order_url", "label": "Order page link" },
       { "type": "url", "id": "assistant_pricing_url", "label": "Pricing page link" },
       { "type": "url", "id": "assistant_services_url", "label": "Services page link" }
+    ]
+  },
+  {
+    "name": "Lookbook",
+    "settings": [
+      { "type": "url", "id": "lookbook_order_url", "label": "\"Use in my order\" link", "info": "Where the favourites bar sends visitors. Defaults to the virtual staging product." }
     ]
   },
   {

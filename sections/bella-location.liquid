@@ -1,24 +1,42 @@
+{%- comment -%}
+  One section drives all 15 location pages, so every price here is read from the
+  product that charges it. Copy settings may use {price:handle} tokens; see the
+  bella-copy snippet.
+{%- endcomment -%}
+{%- liquid
+  assign svc_staging = settings.product_staging | default: all_products['virtual-staging-1']
+  assign svc_renovation = settings.product_renovation | default: all_products['virtual-renovation']
+  assign svc_rendering = settings.product_rendering | default: all_products['3d-rendering']
+  assign svc_floorplan = settings.product_floorplan | default: all_products['2d-3d-floor-plan-service']
+  assign svc_editing = settings.product_editing | default: all_products['photo-editing']
+
+  assign loc_cta_label = section.settings.cta_label | default: 'Stage my listing — from {price:virtual-staging-1}'
+  assign loc_cta_link = section.settings.cta_link
+  if loc_cta_link == blank
+    assign loc_cta_link = svc_staging.url | default: routes.all_products_collection_url
+  endif
+-%}
 <section class="loc-hero">
   <span class="micro">{{ section.settings.eyebrow }}</span>
   <h1>{{ section.settings.heading }}</h1>
-  <p class="loc-lede">{{ section.settings.lede }}</p>
+  <p class="loc-lede">{% render 'bella-copy', text: section.settings.lede %}</p>
   <div class="row">
-    <a class="btn" href="{{ section.settings.cta_link | default: '/products/virtual-staging-1' }}">{{ section.settings.cta_label | default: 'Stage my listing — from $45' }}</a>
+    <a class="btn" href="{{ loc_cta_link }}">{% render 'bella-copy', text: loc_cta_label %}</a>
     <a class="loc-alt" href="{{ section.settings.alt_link | default: '/pages/lookbook' }}">{{ section.settings.alt_label | default: 'Browse the lookbook' }}</a>
   </div>
   <div class="loc-cred">
-    <span>From $45 a photo</span><span>·</span><span>24–48 hour delivery</span><span>·</span><span>Real designers, never AI</span><span>·</span><span>Rework or refund</span>
+    <span>{% render 'bella-price', product: svc_staging, prefix: 'From', suffix: 'a photo', fallback: 'Real designer staging' %}</span><span>·</span><span>24–48 hour delivery</span><span>·</span><span>Real designers, never AI</span><span>·</span><span>Rework or refund</span>
   </div>
 </section>
 <section class="loc-body">
   <div class="loc-grid">
     <div>
       <h2>{{ section.settings.market_heading }}</h2>
-      {{ section.settings.market_text }}
+      {% render 'bella-copy', text: section.settings.market_text %}
     </div>
     <div>
       <h2>{{ section.settings.local_heading }}</h2>
-      {{ section.settings.local_text }}
+      {% render 'bella-copy', text: section.settings.local_text %}
       {%- if section.settings.hoods != blank -%}
         <div class="loc-hoods">
           <span class="micro">{{ section.settings.hoods_label | default: 'Where we stage most' }}</span>
@@ -34,11 +52,22 @@
   <div class="loc-services">
     <span class="micro">Every Bella service, available in {{ section.settings.city }}</span>
     <div class="loc-svc-row">
-      <a href="/products/virtual-staging-1">Virtual staging <b>from $45</b></a>
-      <a href="/products/virtual-renovation">Virtual renovation <b>from $69</b></a>
-      <a href="/products/3d-rendering">3D rendering <b>from $550</b></a>
-      <a href="/products/2d-3d-floor-plan-service">Floor plans</a>
-      <a href="/products/photo-editing">Photo editing</a>
+      {%- comment -%} Link and price both come from the product, so a discontinued service drops out instead of dead-linking. {%- endcomment -%}
+      {%- if svc_staging != blank -%}
+        <a href="{{ svc_staging.url }}">Virtual staging <b>{% render 'bella-price', product: svc_staging, prefix: 'from' %}</b></a>
+      {%- endif -%}
+      {%- if svc_renovation != blank -%}
+        <a href="{{ svc_renovation.url }}">Virtual renovation <b>{% render 'bella-price', product: svc_renovation, prefix: 'from' %}</b></a>
+      {%- endif -%}
+      {%- if svc_rendering != blank -%}
+        <a href="{{ svc_rendering.url }}">3D rendering <b>{% render 'bella-price', product: svc_rendering, prefix: 'from' %}</b></a>
+      {%- endif -%}
+      {%- if svc_floorplan != blank -%}
+        <a href="{{ svc_floorplan.url }}">Floor plans</a>
+      {%- endif -%}
+      {%- if svc_editing != blank -%}
+        <a href="{{ svc_editing.url }}">Photo editing</a>
+      {%- endif -%}
     </div>
   </div>
   {%- endif -%}
@@ -48,11 +77,12 @@
 {
   "name": "Location page",
   "settings": [
+    { "type": "paragraph", "content": "Write prices as {price:virtual-staging-1} — the live price of that product is filled in, in the visitor's currency. Handles: virtual-staging-1, virtual-renovation, 3d-rendering, 360-virtual-tour-staging, 2d-3d-floor-plan-service, photo-editing." },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Virtual staging near you" },
     { "type": "text", "id": "heading", "label": "Heading (H1)" },
     { "type": "textarea", "id": "lede", "label": "Lede" },
-    { "type": "text", "id": "cta_label", "label": "CTA label" },
-    { "type": "url", "id": "cta_link", "label": "CTA link" },
+    { "type": "text", "id": "cta_label", "label": "CTA label", "info": "Default: Stage my listing — from {price:virtual-staging-1}" },
+    { "type": "url", "id": "cta_link", "label": "CTA link", "info": "Defaults to the virtual staging product." },
     { "type": "text", "id": "alt_label", "label": "Secondary link label" },
     { "type": "url", "id": "alt_link", "label": "Secondary link" },
     { "type": "text", "id": "city", "label": "City name (for services row)" },

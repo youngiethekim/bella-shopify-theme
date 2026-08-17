@@ -25,7 +25,7 @@
           <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
             <span class="vp-svc">{{ block.settings.service }}</span>
             <span class="vp-old">{{ block.settings.old_label }} <s>{{ block.settings.old_amount }}</s></span>
-            <span class="vp-new"><b>{{ block.settings.new_amount }}</b>{{ block.settings.new_unit }}</span>
+            <span class="vp-new"><b>{% render 'bella-copy', text: block.settings.new_amount %}</b>{{ block.settings.new_unit }}</span>
             <span class="vp-go">{{ block.settings.link_label | default: 'See the service →' }}</span>
           </a>
         {%- endfor -%}
@@ -33,10 +33,10 @@
     {%- else -%}
       <div class="value-rows">
         <div class="vrow old"><span class="vlbl">{{ section.settings.old_label }}</span><span class="vamt"><s>{{ section.settings.old_amount }}</s></span><span class="vper">{{ section.settings.old_per }}</span></div>
-        <div class="vrow new"><span class="vlbl">{{ section.settings.new_label }}</span><span class="vamt">{{ section.settings.new_amount }}</span><span class="vper">{{ section.settings.new_per }}</span></div>
+        <div class="vrow new"><span class="vlbl">{{ section.settings.new_label }}</span><span class="vamt">{% render 'bella-copy', text: section.settings.new_amount %}</span><span class="vper">{{ section.settings.new_per }}</span></div>
       </div>
     {%- endif -%}
-    <p class="value-note">{{ section.settings.note }}</p>
+    <p class="value-note">{% render 'bella-copy', text: section.settings.note %}</p>
     {%- if section.settings.cta_label != blank -%}
       <a class="btn btn-wht" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label }}</a>
     {%- endif -%}
@@ -63,7 +63,7 @@
     { "type": "text", "id": "old_amount", "label": "Row 1 amount (struck through)", "default": "$2,000–5,000" },
     { "type": "text", "id": "old_per", "label": "Row 1 detail", "default": "a month · until it sells · the furniture goes back" },
     { "type": "text", "id": "new_label", "label": "Row 2 label", "default": "Bella virtual staging" },
-    { "type": "text", "id": "new_amount", "label": "Row 2 amount", "default": "$45" },
+    { "type": "text", "id": "new_amount", "label": "Row 2 amount", "default": "{price:virtual-staging-1}" },
     { "type": "text", "id": "new_per", "label": "Row 2 detail", "default": "a photo · paid once · yours for the whole listing" },
     { "type": "textarea", "id": "note", "label": "Note", "default": "Staging does one job: it shows buyers the full potential of a home. Real furniture or virtual, a staged room sets the scene, fills the space, and lets a buyer imagine themselves living there. Both earn the same reaction in the first three photos, where the click is won or lost. The only real difference is the bill: physical staging runs thousands a month and leaves the day the home sells, while Bella does the same job once, for about a tenth of the cost." },
     { "type": "text", "id": "cta_label", "label": "Button label", "default": "See the full comparison →" },
@@ -86,7 +86,7 @@
         { "type": "text", "id": "service", "label": "What you're doing", "default": "Staging a vacant listing" },
         { "type": "text", "id": "old_label", "label": "The old way", "default": "Physical staging" },
         { "type": "text", "id": "old_amount", "label": "Old cost (struck through)", "default": "$2,000–5,000 a month" },
-        { "type": "text", "id": "new_amount", "label": "Bella price", "default": "$45" },
+        { "type": "text", "id": "new_amount", "label": "Bella price", "default": "{price:virtual-staging-1}" },
         { "type": "text", "id": "new_unit", "label": "Bella unit", "default": "a photo · paid once" },
         { "type": "text", "id": "link_label", "label": "Link label", "default": "See the service →" },
         { "type": "url", "id": "url", "label": "Link" }

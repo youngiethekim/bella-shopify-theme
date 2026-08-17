@@ -1,0 +1,72 @@
+{%- comment -%}
+  Outputs merchant copy, replacing every {price:…} token with a live product
+  price in the visitor's currency.
+
+  Template JSON can't run Liquid, so prices typed into section settings used to
+  go stale the moment a product was repriced — and never converted for Canada.
+  Writing "from {price:virtual-staging-1} a photo" instead keeps the sentence
+  editable in the theme editor while the number stays sourced from the product.
+
+  Token forms:
+    {price:virtual-staging-1}                              cheapest variant
+    {price:360-virtual-tour-staging|Tour setup & stitching} one named variant
+    {price:virtual-staging-1*8}                            cheapest variant × 8
+
+  Name the variant whenever a product's cheapest variant isn't the figure the
+  copy means: 360 tours start at a $99 setup, but their cheapest variant is a
+  $10 add-on photo. Use × N for "a typical eight-photo listing" style figures so
+  they follow the price they're derived from.
+
+  Any setting whose copy may contain a token must be printed through this
+  snippet rather than with {{ ... }}. A token that can't be resolved is left on
+  the page as-is: a price that has quietly stopped rendering is the bug this
+  whole approach exists to prevent, so it fails loudly rather than silently.
+
+  Accepts:
+    text - the setting value to print. Any type: text, textarea, richtext, html.
+
+  {% render 'bella-copy', text: section.settings.lede %}
+{%- endcomment -%}
+{%- liquid
+  assign bella_copy = text
+  assign bella_segments = bella_copy | split: '{price:'
+
+  for bella_segment in bella_segments offset: 1
+    assign bella_spec = bella_segment | split: '}' | first
+    assign bella_handle = bella_spec
+    assign bella_variant = ''
+    assign bella_times = 1
+
+    if bella_spec contains '|'
+      assign bella_parts = bella_spec | split: '|'
+      assign bella_handle = bella_parts | first
+      assign bella_variant = bella_parts | last
+    elsif bella_spec contains '*'
+      assign bella_parts = bella_spec | split: '*'
+      assign bella_handle = bella_parts | first
+      assign bella_times = bella_parts | last | times: 1
+    endif
+
+    assign bella_found = all_products[bella_handle]
+    assign bella_amount = bella_found.price_min
+
+    if bella_variant != ''
+      assign bella_amount = 0
+      for bella_v in bella_found.variants
+        if bella_v.title == bella_variant
+          assign bella_amount = bella_v.price
+        endif
+      endfor
+    endif
+
+    assign bella_amount = bella_amount | times: bella_times
+
+    if bella_amount > 0
+      assign bella_token = '{price:' | append: bella_spec | append: '}'
+      assign bella_money = bella_amount | money_without_trailing_zeros
+      assign bella_copy = bella_copy | replace: bella_token, bella_money
+    endif
+  endfor
+
+  echo bella_copy
+-%}

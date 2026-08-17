@@ -4,7 +4,7 @@
       <div class="head2">
         <p class="micro">{{ section.settings.eyebrow }}</p>
         {%- if section.settings.sub -%}<h2 style="font-size:clamp(25px,2.9vw,38px);font-weight:300">{{ section.settings.heading }}</h2>{%- else -%}<h1>{{ section.settings.heading }}</h1>{%- endif -%}
-        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+        {%- if section.settings.text != blank -%}<p>{% render 'bella-copy', text: section.settings.text %}</p>{%- endif -%}
       </div>
 
       <div class="pf-grid{% if section.settings.carousel %} pf-carousel{% endif %}">
@@ -41,7 +41,7 @@
       {%- if section.settings.look_label != blank or section.settings.cta_label != blank -%}
         <div class="pf-foot">
           {%- if section.settings.cta_label != blank -%}
-            <a class="btn" href="{{ section.settings.cta_url | default: '/products/virtual-staging-1' }}">{{ section.settings.cta_label }}</a>
+            <a class="btn" href="{{ section.settings.cta_url | default: settings.product_staging.url | default: all_products['virtual-staging-1'].url | default: routes.all_products_collection_url }}">{% render 'bella-copy', text: section.settings.cta_label %}</a>
           {%- endif -%}
           {%- if section.settings.look_label != blank -%}
             <a class="pf-look" href="{{ section.settings.look_url | default: '/pages/lookbook' }}">{{ section.settings.look_label }}</a>
@@ -61,7 +61,7 @@
     { "type": "checkbox", "id": "sub", "label": "Render heading as H2 (page already has an H1)", "default": false },
     { "type": "checkbox", "id": "carousel", "label": "Show projects as a swipeable carousel", "default": false },
     { "type": "textarea", "id": "text", "label": "Intro", "default": "Real listings, staged, rendered and edited by the Bella team — and what happened after. Hover or tap any project to see the room we started with." },
-    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Get started — from $45 a photo" },
+    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Get started — from {price:virtual-staging-1} a photo" },
     { "type": "url", "id": "cta_url", "label": "Button link" },
     { "type": "text", "id": "look_label", "label": "Lookbook link label", "default": "Browse 300+ furnished looks in the lookbook →" },
     { "type": "url", "id": "look_url", "label": "Lookbook link" }

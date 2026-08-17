@@ -1,0 +1,35 @@
+{%- comment -%}
+  Renders a service's starting price in the visitor's active currency.
+
+  A price is rendered, never typed. Every number the site quotes comes from the
+  product that actually charges for it, so a reprice in the admin can't leave a
+  stale figure behind in the theme, and every market sees its own currency.
+
+  Accepts:
+    product  - a product object, usually from a product picker setting. Optional.
+    handle   - product handle used when `product` is blank. Optional.
+    prefix   - text before the amount, e.g. 'From'. Only printed with a price.
+    suffix   - text after the amount, e.g. 'a photo'. Only printed with a price.
+    fallback - printed instead if neither product resolves. Optional.
+
+  {% render 'bella-price', handle: 'virtual-staging-1', prefix: 'From', suffix: 'a photo' %}
+{%- endcomment -%}
+{%- liquid
+  assign bella_product = product
+  if bella_product == blank and handle != blank
+    assign bella_product = all_products[handle]
+  endif
+  assign bella_amount = bella_product.price_min
+
+  if bella_amount > 0
+    if prefix != blank
+      echo prefix | append: ' '
+    endif
+    echo bella_amount | money_without_trailing_zeros
+    if suffix != blank
+      echo ' ' | append: suffix
+    endif
+  else
+    echo fallback
+  endif
+-%}

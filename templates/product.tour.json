@@ -57,7 +57,7 @@
         "lede": "For listings that deserve a walkthrough without the walkthrough price. Shoot your own 360 photos, and we turn them into a staged virtual tour remote buyers can step inside.",
         "unit_label": "item",
         "variant_label": "Choose your item",
-        "variant_tip": "Every tour needs one 'Tour setup & stitching' ($99), plus one 'Staged 360° photo' for each room. Add the setup first, then switch and add your photo count.",
+        "variant_tip": "Every tour needs one 'Tour setup & stitching' ({price:360-virtual-tour-staging|Tour setup & stitching}), plus one 'Staged 360° photo' for each room. Add the setup first, then switch and add your photo count.",
         "variant_specs": "Tour setup & stitching | One per tour · we assemble your panoramas into a shareable tour link · hosting setup included\nStaged 360° photo | One per room · your panorama virtually staged by a designer · disclosed for the MLS",
         "qty_label": "How many?",
         "default_qty": 8,
@@ -236,7 +236,7 @@
         "new_label": "Bella 360 tour + staging",
         "new_amount": "$179",
         "new_per": "typical 8-room tour · your own 360 camera · every room staged",
-        "note": "A professional 3D tour crew photographs the home exactly as it is — which for a vacant listing means a tour of empty rooms, at $300–500 per shoot plus hosting. Our approach flips it: you spend ten minutes walking the home with a 360 camera, and we stitch the tour and stage every room for $99 plus $10 a photo. The remote buyer gets a furnished walkthrough; your seller keeps hundreds of dollars per listing.",
+        "note": "A professional 3D tour crew photographs the home exactly as it is — which for a vacant listing means a tour of empty rooms, at $300–500 per shoot plus hosting. Our approach flips it: you spend ten minutes walking the home with a 360 camera, and we stitch the tour and stage every room for {price:360-virtual-tour-staging|Tour setup & stitching} plus {price:360-virtual-tour-staging|Staged 360° photo} a photo. The remote buyer gets a furnished walkthrough; your seller keeps hundreds of dollars per listing.",
         "cta_label": "",
         "also_label": ""
       }
@@ -248,7 +248,7 @@
           "type": "qa",
           "settings": {
             "question": "How does the pricing work?",
-            "answer": "Each tour is $99 for stitching, assembly and setup, plus $10 per staged 360° photo (one per room). A typical 8-room listing is $179 all-in. Add the tour setup to your order first, then switch to 'Staged 360° photo' and add one per room."
+            "answer": "Each tour is {price:360-virtual-tour-staging|Tour setup & stitching} for stitching, assembly and setup, plus {price:360-virtual-tour-staging|Staged 360° photo} per staged 360° photo (one per room). A typical 8-room listing is $179 all-in. Add the tour setup to your order first, then switch to 'Staged 360° photo' and add one per room."
           }
         },
         "q2": {
@@ -302,7 +302,7 @@
         "eyebrow": "Your next listing",
         "heading": "Ready to give buyers the walkthrough?",
         "text": "Shoot the 360s this afternoon — we'll return a staged, shareable tour.",
-        "cta_label": "Get started — $99 + $10 a photo",
+        "cta_label": "Get started — {price:360-virtual-tour-staging|Tour setup & stitching} + {price:360-virtual-tour-staging|Staged 360° photo} a photo",
         "fine_print": "Upload after checkout · Staging included · Rework or refund"
       }
     },

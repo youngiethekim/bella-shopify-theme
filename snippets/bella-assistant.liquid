@@ -2,13 +2,31 @@
   assign order_url = settings.assistant_order_url | default: routes.all_products_collection_url
   assign pricing_url = settings.assistant_pricing_url | default: routes.all_products_collection_url
   assign services_url = settings.assistant_services_url | default: routes.all_products_collection_url
+
+  comment
+    The assistant quotes prices, so it reads them from the products rather than
+    carrying its own copy. Formatted here because the panel is site-wide and has
+    no product context of its own; a service with no product simply goes unquoted.
+  endcomment
+  assign p_staging = settings.product_staging | default: all_products['virtual-staging-1']
+  assign p_renovation = settings.product_renovation | default: all_products['virtual-renovation']
+  assign p_rendering = settings.product_rendering | default: all_products['3d-rendering']
+  assign p_floorplan = settings.product_floorplan | default: all_products['2d-3d-floor-plan-service']
+  assign p_editing = settings.product_editing | default: all_products['photo-editing']
 -%}
+{%- capture price_attrs -%}
+  {%- if p_staging.price_min > 0 %} data-price-staging="{{ p_staging.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
+  {%- if p_renovation.price_min > 0 %} data-price-renovation="{{ p_renovation.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
+  {%- if p_rendering.price_min > 0 %} data-price-rendering="{{ p_rendering.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
+  {%- if p_floorplan.price_min > 0 %} data-price-floorplan="{{ p_floorplan.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
+  {%- if p_editing.price_min > 0 %} data-price-editing="{{ p_editing.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
+{%- endcapture -%}
 <button class="ba-launch" id="baLaunch" aria-label="Ask Bella">
   <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
   <span>Ask Bella</span><span class="ba-dot"></span>
 </button>
 <div class="ba-panel" id="baPanel" role="dialog" aria-label="Bella assistant"
-  data-order-url="{{ order_url }}" data-pricing-url="{{ pricing_url }}" data-services-url="{{ services_url }}">
+  data-order-url="{{ order_url }}" data-pricing-url="{{ pricing_url }}" data-services-url="{{ services_url }}"{{ price_attrs }}>
   <div class="ba-head">
     <span class="ba-av">B</span>
     <div class="ba-ht"><b>Bella assistant</b><span>Replies instantly</span></div>

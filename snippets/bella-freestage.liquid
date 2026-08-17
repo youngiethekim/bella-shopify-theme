@@ -1,3 +1,8 @@
+{%- liquid
+  assign fs_staging = settings.product_staging | default: all_products['virtual-staging-1']
+  assign fs_rendering = settings.product_rendering | default: all_products['3d-rendering']
+  assign fs_order_url = settings.assistant_order_url | default: fs_staging.url | default: routes.all_products_collection_url
+-%}
 <div class="fs-back" id="fsBack" role="dialog" aria-modal="true" aria-label="Free sample visualization offer">
   <div class="fs-modal">
     <div class="fs-vis" id="fsVis">
@@ -24,13 +29,13 @@
           <input type="hidden" name="contact[body]" value="Free sample visualization signup from the website popup.">
           <button class="fs-sub" type="submit">Claim my free sample →</button>
         {%- endform -%}
-        <p class="fs-fine">This promotion is for real estate professionals, builders and developers only; we reserve the right to verify eligibility or decline. One free sample each. We'll never share your email. Staging from $45 a photo · 3D renders from $550. Reply to our confirmation email with your photo or plans.</p>
+        <p class="fs-fine">This promotion is for real estate professionals, builders and developers only; we reserve the right to verify eligibility or decline. One free sample each. We'll never share your email. Staging {% render 'bella-price', product: fs_staging, prefix: 'from', suffix: 'a photo' %} · 3D renders {% render 'bella-price', product: fs_rendering, prefix: 'from' %}. Reply to our confirmation email with your photo or plans.</p>
       </div>
       <div class="fs-ok" id="fsGate" style="display:none">
         <div class="chk">🏠</div>
         <h3>This free sample is for real estate pros.</h3>
-        <p>Selling your own home? Your listing agent can claim the free room for you. Or stage your listing directly — real designer staging from $45 a photo.</p>
-        <a class="go" href="{{ settings.assistant_order_url | default: routes.all_products_collection_url }}">Stage a listing → $45/photo</a>
+        <p>Selling your own home? Your listing agent can claim the free room for you. Or stage your listing directly — real designer staging {% render 'bella-price', product: fs_staging, prefix: 'from', suffix: 'a photo' %}.</p>
+        <a class="go" href="{{ fs_order_url }}">Stage a listing → {% render 'bella-price', product: fs_staging %}/photo</a>
       </div>
     </div>
   </div>

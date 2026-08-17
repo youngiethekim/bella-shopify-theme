@@ -36,7 +36,7 @@
   try { favs = JSON.parse(localStorage.getItem(FKEY) || '[]'); } catch (e) { favs = []; }
   if (!Array.isArray(favs)) favs = [];
   function save() { try { localStorage.setItem(FKEY, JSON.stringify(favs)); } catch (e) {} }
-  var ORDER_URL = '/products/virtual-staging-1';
+  var ORDER_URL = root.getAttribute('data-order-url') || '/collections/all';
   function toast(m) {
     var t = document.querySelector('.blb-toast'); if (!t) return;
     t.textContent = m; t.classList.add('on');

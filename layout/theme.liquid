@@ -45,9 +45,13 @@
   {% sections 'footer-group' %}
 
   {%- unless template.name == 'product' or template.name == 'cart' -%}
-    <a class="bb-float" id="BbFloat" href="{{ routes.all_products_collection_url }}">
-      <span class="bf-txt">Order now</span>
-      <span class="bf-sub">From $45 · 24–48 h delivery</span>
+    {%- capture bb_float_price -%}
+      {% render 'bella-price', product: settings.float_product, handle: 'virtual-staging-1', prefix: 'From' %}
+    {%- endcapture -%}
+    {%- assign bb_float_price = bb_float_price | strip -%}
+    <a class="bb-float" id="BbFloat" href="{{ settings.float_link | default: routes.all_products_collection_url }}">
+      <span class="bf-txt">{{ settings.float_label | default: 'Order now' }}</span>
+      <span class="bf-sub">{% if bb_float_price != blank %}{{ bb_float_price }} · {% endif %}{{ settings.float_note | default: '24–48 h delivery' }}</span>
     </a>
   {%- endunless -%}
 

@@ -30,7 +30,7 @@
           "type": "usp",
           "settings": {
             "icon": "note",
-            "text": "From <b>$19.95</b> a floor"
+            "text": "From <b>{price:2d-3d-floor-plan-service}</b> a floor"
           }
         },
         "u4": {
@@ -154,7 +154,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does a floor plan cost?",
-            "answer": "From $19.95 per floor. Pricing is per floor drawn — order one plan for each level of the home, and volume discounts apply automatically on larger orders."
+            "answer": "From {price:2d-3d-floor-plan-service} per floor. Pricing is per floor drawn — order one plan for each level of the home, and volume discounts apply automatically on larger orders."
           }
         },
         "q2": {
@@ -208,7 +208,7 @@
         "eyebrow": "Your next listing",
         "heading": "Add a floor plan buyers can actually read.",
         "text": "Order today, send whatever you have, and get a clean, to-scale plan back in 24 to 48 hours.",
-        "cta_label": "Get started — from $19.95 a floor",
+        "cta_label": "Get started — from {price:2d-3d-floor-plan-service} a floor",
         "fine_print": "Send materials after checkout · Revisions included · Rework or refund"
       }
     }

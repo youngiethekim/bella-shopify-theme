@@ -22,7 +22,7 @@
         "market_heading": "Grow a real estate photography business beyond the shoot",
         "market_text": "<p>The photographers earning the most per listing aren't just delivering photos — they're delivering the finished marketing package: staged images, twilight heroes, floor plans and 360 tours, all under their own brand. Every add-on is margin on a shoot you were already doing.</p><p>Bella white-labels behind you: your logo on the files, our designers and editors doing the work, same-day-to-48-hour turnarounds your clients never see behind the curtain.</p>",
         "local_heading": "Shoot for the edit",
-        "local_text": "<p>The guides below cover the craft side — shooting rooms that stage cleanly, bracketing for HDR, and when a <a href=\"/products/photo-editing\">$5 day-to-dusk edit</a> replaces a return trip at sunset. When you're ready, the <a href=\"/pages/photographers\">partner program</a> is where the add-on revenue starts.</p>",
+        "local_text": "<p>The guides below cover the craft side — shooting rooms that stage cleanly, bracketing for HDR, and when a <a href=\"/products/photo-editing\">{price:photo-editing} day-to-dusk edit</a> replaces a return trip at sunset. When you're ready, the <a href=\"/pages/photographers\">partner program</a> is where the add-on revenue starts.</p>",
         "hoods_label": "What's on this shelf",
         "hoods": "Partner program, Photography guide, Staging photo requirements, Twilight & day-to-dusk, HDR editing"
       }
@@ -63,7 +63,7 @@
           "settings": {
             "tag": "Guide",
             "title": "What is twilight photography?",
-            "text": "Why dusk exteriors stop the scroll — and when a $5 day-to-dusk edit does the job of a return trip at sunset.",
+            "text": "Why dusk exteriors stop the scroll — and when a {price:photo-editing} day-to-dusk edit does the job of a return trip at sunset.",
             "link": "/blogs/news/what-is-twilight-photography-in-real-estate"
           }
         },
@@ -100,7 +100,7 @@
       "settings": {
         "eyebrow": "Rather skip the DIY?",
         "heading": "Want us to handle the visuals?",
-        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from $45 a photo.",
+        "text": "Virtual staging, renovations, renders, floor plans, edits and 360 tours — MLS-ready fast, from {price:virtual-staging-1} a photo.",
         "cta_label": "See all services",
         "cta_link": "/collections/all",
         "fine_print": "Unlimited revisions for two weeks · Rework or refund"

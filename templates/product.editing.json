@@ -194,7 +194,7 @@
         "eyebrow": "Your next listing",
         "heading": "Ready to polish your listing photos?",
         "text": "Order today and have clean, corrected, MLS-ready photos back within 24 hours.",
-        "cta_label": "Get started — from $5 a photo",
+        "cta_label": "Get started — from {price:photo-editing} a photo",
         "fine_print": "Upload after checkout · Rework or refund"
       }
     },
@@ -254,7 +254,7 @@
         "old_amount": "$150–300",
         "old_per": "per return trip · rescheduling · waiting on weather",
         "new_label": "Bella photo editing",
-        "new_amount": "$5",
+        "new_amount": "{price:photo-editing}",
         "new_per": "a photo · dusk skies, HDR and cleanups · back in 24–48 h",
         "note": "Most 'bad' listing photos don't need a photographer — they need an editor. Grey skies, dim rooms, a missed twilight, a bin in the driveway: our editors fix in hours what a reshoot fixes in a week, at a fraction of the cost. Same camera work, superior finish, streamlined into your existing workflow.",
         "cta_label": "",

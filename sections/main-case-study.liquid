@@ -86,7 +86,7 @@
     <aside class="art-cta" style="margin-top:56px">
       <p class="micro">{{ section.settings.cta_eyebrow }}</p>
       <h2>{{ section.settings.cta_heading }}</h2>
-      <a class="btn" href="{{ section.settings.cta_url | default: '/products/virtual-staging-1' }}">{{ section.settings.cta_label }}</a>
+      <a class="btn" href="{{ section.settings.cta_url | default: settings.product_staging.url | default: all_products['virtual-staging-1'].url | default: routes.all_products_collection_url }}">{{ section.settings.cta_label }}</a>
     </aside>
   </article>
 </div>

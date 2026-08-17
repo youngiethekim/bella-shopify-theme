@@ -14,8 +14,8 @@
       "settings": {
         "eyebrow": "Virtual staging near you",
         "heading": "Virtual Staging in Tampa, FL",
-        "lede": "One of America's busiest relocation markets, shopped largely from out of state. Bella stages Tampa Bay listings in 24 to 48 hours, from $45 a photo.",
-        "cta_label": "Stage my listing — from $45",
+        "lede": "One of America's busiest relocation markets, shopped largely from out of state. Bella stages Tampa Bay listings in 24 to 48 hours, from {price:virtual-staging-1} a photo.",
+        "cta_label": "Stage my listing — from {price:virtual-staging-1}",
         "cta_link": "/products/virtual-staging-1",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
@@ -78,7 +78,7 @@
         "eyebrow": "Your next listing",
         "heading": "Stage your Tampa listing this week.",
         "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
-        "cta_label": "Get started — from $45 a photo",
+        "cta_label": "Get started — from {price:virtual-staging-1} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }

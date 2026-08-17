@@ -4,7 +4,7 @@
       <div class="head2">
         <p class="micro">{{ section.settings.eyebrow }}</p>
         <h2>{{ section.settings.heading }}</h2>
-        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+        {%- if section.settings.text != blank -%}<p>{% render 'bella-copy', text: section.settings.text %}</p>{%- endif -%}
       </div>
       <div class="bscope">
         <table>
@@ -25,7 +25,7 @@
               {%- endfor -%}
               <tr {{ block.shopify_attributes }}>
                 <td><b>{{ block.settings.title }}</b></td>
-                <td data-l="{{ section.settings.col_price | escape }}">{% if vprice != '' %}{{ vprice }}{% else %}{{ block.settings.price }}{% endif %}</td>
+                <td data-l="{{ section.settings.col_price | escape }}">{% if vprice != '' %}{{ vprice }}{% else %}{% render 'bella-copy', text: block.settings.price %}{% endif %}</td>
                 <td data-l="{{ section.settings.col_covers | escape }}">{{ block.settings.covers }}</td>
                 <td data-l="{{ section.settings.col_limit | escape }}">{{ block.settings.limit }}</td>
                 <td data-l="{{ section.settings.col_ideal | escape }}">{{ block.settings.ideal }}</td>
@@ -33,7 +33,7 @@
             {%- endfor -%}
           </tbody>
         </table>
-        {%- if section.settings.note != blank -%}<p class="bscope-note">{{ section.settings.note }}</p>{%- endif -%}
+        {%- if section.settings.note != blank -%}<p class="bscope-note">{% render 'bella-copy', text: section.settings.note %}</p>{%- endif -%}
       </div>
     </div>
   </section>
