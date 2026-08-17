@@ -135,97 +135,6 @@
       ],
       "settings": {}
     },
-    "included": {
-      "type": "bella-included",
-      "blocks": {
-        "i1": {
-          "type": "item",
-          "settings": {
-            "title": "Furniture removal included",
-            "text": "Occupied or cluttered rooms are digitally cleared free, then staged clean.",
-            "icon": "eraser"
-          }
-        },
-        "i2": {
-          "type": "item",
-          "settings": {
-            "title": "Any style",
-            "text": "Modern, coastal, farmhouse and more — matched to your buyer, or pick your own.",
-            "icon": "swatch"
-          }
-        },
-        "i3": {
-          "type": "item",
-          "settings": {
-            "title": "MLS-ready files",
-            "text": "Correct dimensions and file standards in 24–48 hours, with disclosure guidance.",
-            "icon": "doc"
-          }
-        },
-        "i4": {
-          "type": "item",
-          "settings": {
-            "title": "Unlimited revisions",
-            "text": "Free for two weeks after delivery, with a rework-or-refund guarantee.",
-            "icon": "clock"
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3",
-        "i4"
-      ],
-      "settings": {}
-    },
-    "tips": {
-      "type": "bella-included",
-      "blocks": {
-        "t1": {
-          "type": "item",
-          "settings": {
-            "icon": "image",
-            "title": "Shoot wide and level",
-            "text": "Landscape photos taken at chest height with the whole room in frame stage best."
-          }
-        },
-        "t2": {
-          "type": "item",
-          "settings": {
-            "icon": "sofa",
-            "title": "Cover the rooms that sell",
-            "text": "Living room, kitchen and primary bedroom do the heavy lifting on the MLS — stage those first."
-          }
-        },
-        "t3": {
-          "type": "item",
-          "settings": {
-            "icon": "note",
-            "title": "Order 6+ and save",
-            "text": "Volume pricing applies automatically — 10% off at six photos, 15% at eleven, 20% at twenty-one."
-          }
-        },
-        "t4": {
-          "type": "item",
-          "settings": {
-            "icon": "swatch",
-            "title": "Browse the lookbook first",
-            "text": "Save your favorite looks and attach them to your order so your designer matches your taste."
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4"
-      ],
-      "settings": {
-        "eyebrow": "Best practices",
-        "heading": "Get the most from your staging"
-      }
-    },
     "faq": {
       "type": "bella-faq",
       "blocks": {
@@ -564,9 +473,7 @@
     "uses",
     "proof",
     "quote",
-    "included",
     "math",
-    "tips",
     "work",
     "faq",
     "related",
