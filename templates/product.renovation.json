@@ -390,10 +390,64 @@
         "text": "Every color is matched to a Benjamin Moore code. Pick a palette — or name any BM color in your order notes — and we renovate to it.",
         "note": "Your delivery includes a mini FF&E + paint sheet: the exact Benjamin Moore-matched paint codes, flooring and furniture we used, so a buyer or contractor can recreate the renovation for real."
       }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Den & family room",
+            "customer": "Real estate agent · Lodge estate",
+            "services": "Virtual staging, 3D floor plan",
+            "outcome": "Sold · 9 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_Tung_TP_1.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "120 Bayview Ave",
+            "customer": "Real estate agent · Toronto",
+            "services": "Virtual staging, floor plan, house tour",
+            "outcome": "Sold · 21 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200"
+          }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "289 Drake St · Unit 706",
+            "customer": "Brokerage · Vancouver",
+            "services": "Virtual staging, 360° tour",
+            "outcome": "Leased · 30 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1_nhi_hb.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3"
+      ],
+      "settings": {
+        "eyebrow": "Completed projects",
+        "heading": "Recent projects that sold",
+        "sub": true,
+        "carousel": true,
+        "text": "Real listings marketed with Bella visuals — swipe through, and hover or tap to see the original photo.",
+        "cta_label": "",
+        "look_label": "See more in the portfolio →",
+        "look_url": "/pages/portfolio"
+      }
     }
   },
   "order": [
     "main",
+    "work",
     "steps",
     "flow",
     "reqs",
