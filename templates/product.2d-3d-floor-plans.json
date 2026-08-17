@@ -1,0 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "star",
+            "text": "<b>67%</b> of buyers want a floor plan · NAR"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "clock",
+            "text": "Back in <b>24–48 hrs</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "note",
+            "text": "From <b>$19.95</b> a floor"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "icon": "shield",
+            "text": "<b>Rework or refund</b>"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "style_options": "",
+        "show_notes": false,
+        "lede": "Every listing deserves a floor plan buyers can actually read. We redraw your sketch, blueprint, old MLS plan or measurement export into a clean, to-scale plan — 2D for the MLS, furnished 3D for marketing.",
+        "unit_label": "floor",
+        "qty_label": "How many floors?",
+        "default_qty": 2,
+        "reco_text": "Order one plan per floor of the home — a typical house is 2 floors, plus a basement if you want it drawn.",
+        "variant_label": "Choose your plan type",
+        "variant_tip": "2D is the classic measured plan for the MLS; 3D adds furniture and depth so buyers can picture the layout.",
+        "shot_label": "Floor plan by a Bella drafter",
+        "assure_1": "Send any sketch after checkout",
+        "assure_1_icon": "upload",
+        "assure_1_tip": "Hand sketch with measurements, blueprint, builder plan, old MLS plan or a laser-measure export — we redraw whatever you have.",
+        "assure_2": "Drawn to scale, revisions included",
+        "assure_2_icon": "pen",
+        "assure_2_tip": "Mark up anything to change — room labels, dimensions, orientation — and we revise it.",
+        "assure_3": "Rework or refund",
+        "assure_3_icon": "shield",
+        "assure_3_tip": "If a plan still is not right after rework, we refund it. No fine print.",
+        "def_heading": "About this service",
+        "collapse_description": false
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Den & family room",
+            "customer": "Real estate agent · Lodge estate",
+            "services": "Virtual staging, 3D floor plan",
+            "outcome": "Sold · 9 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_Tung_TP_1.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "120 Bayview Ave",
+            "customer": "Real estate agent · Toronto",
+            "services": "Virtual staging, floor plan, house tour",
+            "outcome": "Sold · 21 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2"
+      ],
+      "settings": {
+        "eyebrow": "Completed projects",
+        "heading": "Recent projects that sold",
+        "sub": true,
+        "carousel": true,
+        "text": "Real listings marketed with Bella floor plans and staging — swipe through, and hover or tap to see the before.",
+        "cta_label": "",
+        "look_label": "See more in the portfolio →",
+        "look_url": "/pages/portfolio"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & send what you have",
+            "text": "Any sketch with measurements, blueprint, old listing plan or laser-measure export works — send it right after checkout."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "plan",
+            "title": "We draw it to scale",
+            "text": "Our drafters rebuild the layout cleanly to scale; 3D plans are furnished by a designer so buyers can picture the space."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Approve & download",
+            "text": "MLS-ready files back in 24 to 48 hours, with revisions included until the plan reads right."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does a floor plan cost?",
+            "answer": "From $19.95 per floor. Pricing is per floor drawn — order one plan for each level of the home, and volume discounts apply automatically on larger orders."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "What do you need to draw my floor plan?",
+            "answer": "Anything with the layout and measurements: a hand sketch, builder blueprint, an old MLS plan, or the export from a laser-measure app. We redraw whatever you have into a clean, to-scale plan."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the difference between a 2D and 3D floor plan?",
+            "answer": "A 2D plan is the classic top-down measured drawing the MLS expects. A 3D plan shows the same layout with depth and designer furniture, so buyers can instantly picture how the home lives. Many listings use both."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does it take?",
+            "answer": "24 to 48 hours from the moment you send your materials, with revisions included."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Are the plans MLS-ready?",
+            "answer": "Yes — files are sized and formatted for the MLS, portals and print feature sheets, and drawn to scale from the measurements you provide."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Before you order"
+      }
+    },
+    "related": {
+      "type": "bella-related-links",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Add a floor plan buyers can actually read.",
+        "text": "Order today, send whatever you have, and get a clean, to-scale plan back in 24 to 48 hours.",
+        "cta_label": "Get started — from $19.95 a floor",
+        "fine_print": "Send materials after checkout · Revisions included · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "work",
+    "steps",
+    "faq",
+    "related",
+    "cta"
+  ]
+}
