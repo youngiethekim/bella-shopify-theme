@@ -1,11 +1,41 @@
+{% style %}
+.vp{margin-top:26px;border-top:1px solid rgba(255,255,255,.14)}
+.vp a{display:grid;grid-template-columns:1.05fr 1fr .9fr auto;gap:10px 20px;align-items:baseline;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.14);text-decoration:none;transition:.15s}
+.vp .vp-svc{color:#fff;font-size:15px;letter-spacing:-.005em}
+.vp .vp-old{color:#807A72;font-size:13px}
+.vp .vp-old s{color:#807A72}
+.vp .vp-new{color:#CFC9C0;font-size:13px}
+.vp .vp-new b{font-size:18px;font-weight:400;color:#fff;margin-right:5px}
+.vp .vp-go{color:#8FA898;font-size:12px;letter-spacing:.05em;white-space:nowrap;justify-self:end}
+.vp a:hover .vp-go{color:#fff}
+@media(max-width:760px){
+  .vp a{grid-template-columns:1fr auto;padding:14px 0}
+  .vp .vp-svc{grid-column:1/-1}
+  .vp .vp-go{grid-row:2;align-self:baseline}
+}
+{% endstyle %}
 <section class="value">
   <div class="value-in">
     <p class="micro">{{ section.settings.eyebrow }}</p>
     <h2>{{ section.settings.heading }}</h2>
-    <div class="value-rows">
-      <div class="vrow old"><span class="vlbl">{{ section.settings.old_label }}</span><span class="vamt"><s>{{ section.settings.old_amount }}</s></span><span class="vper">{{ section.settings.old_per }}</span></div>
-      <div class="vrow new"><span class="vlbl">{{ section.settings.new_label }}</span><span class="vamt">{{ section.settings.new_amount }}</span><span class="vper">{{ section.settings.new_per }}</span></div>
-    </div>
+    {%- assign pairs = section.blocks | where: 'type', 'pair' -%}
+    {%- if pairs.size > 0 -%}
+      <div class="vp">
+        {%- for block in pairs -%}
+          <a href="{{ block.settings.url }}" {{ block.shopify_attributes }}>
+            <span class="vp-svc">{{ block.settings.service }}</span>
+            <span class="vp-old">{{ block.settings.old_label }} <s>{{ block.settings.old_amount }}</s></span>
+            <span class="vp-new"><b>{{ block.settings.new_amount }}</b>{{ block.settings.new_unit }}</span>
+            <span class="vp-go">{{ block.settings.link_label | default: 'See the service →' }}</span>
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="value-rows">
+        <div class="vrow old"><span class="vlbl">{{ section.settings.old_label }}</span><span class="vamt"><s>{{ section.settings.old_amount }}</s></span><span class="vper">{{ section.settings.old_per }}</span></div>
+        <div class="vrow new"><span class="vlbl">{{ section.settings.new_label }}</span><span class="vamt">{{ section.settings.new_amount }}</span><span class="vper">{{ section.settings.new_per }}</span></div>
+      </div>
+    {%- endif -%}
     <p class="value-note">{{ section.settings.note }}</p>
     {%- if section.settings.cta_label != blank -%}
       <a class="btn btn-wht" href="{{ section.settings.cta_link }}">{{ section.settings.cta_label }}</a>
@@ -48,9 +78,22 @@
         { "type": "text", "id": "label", "label": "Label", "default": "3D Renderings" },
         { "type": "url", "id": "url", "label": "Link" }
       ]
+    },
+    {
+      "type": "pair",
+      "name": "Savings row",
+      "settings": [
+        { "type": "text", "id": "service", "label": "What you're doing", "default": "Staging a vacant listing" },
+        { "type": "text", "id": "old_label", "label": "The old way", "default": "Physical staging" },
+        { "type": "text", "id": "old_amount", "label": "Old cost (struck through)", "default": "$2,000–5,000 a month" },
+        { "type": "text", "id": "new_amount", "label": "Bella price", "default": "$45" },
+        { "type": "text", "id": "new_unit", "label": "Bella unit", "default": "a photo · paid once" },
+        { "type": "text", "id": "link_label", "label": "Link label", "default": "See the service →" },
+        { "type": "url", "id": "url", "label": "Link" }
+      ]
     }
   ],
-  "max_blocks": 4,
+  "max_blocks": 8,
   "presets": [{ "name": "Cost comparison" }]
 }
 {% endschema %}
