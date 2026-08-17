@@ -394,16 +394,41 @@
             "before_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Image_Nov_16_2025.jpg?width=1200",
             "after_url": "https://www.bellavirtual.com/cdn/shop/files/Calvin_Theme_Dawn_Image.jpg?width=1200"
           }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "Den & family room",
+            "customer": "Real estate agent · Lodge estate",
+            "services": "Virtual staging, 3D floor plan",
+            "outcome": "Sold · 9 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Josh_Goetz_-_Room_1_Den-Family_Room_Tung_TP_1.jpg?width=1200"
+          }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "120 Bayview Ave",
+            "customer": "Real estate agent · Toronto",
+            "services": "Virtual staging, floor plan, house tour",
+            "outcome": "Sold · 21 days",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200"
+          }
         }
       },
       "block_order": [
-        "w1"
+        "w1",
+        "w2",
+        "w3"
       ],
       "settings": {
         "eyebrow": "Completed projects",
-        "heading": "A recent edit that pre-sold",
+        "heading": "Recent projects that sold",
         "sub": true,
-        "text": "Hover or tap to see the original afternoon shot behind the twilight hero.",
+        "carousel": true,
+        "text": "Real listings polished and marketed by the Bella team — swipe through, and hover or tap to see the original shot.",
         "cta_label": "",
         "look_label": "See more in the portfolio →",
         "look_url": "/pages/portfolio"
@@ -412,6 +437,7 @@
   },
   "order": [
     "main",
+    "work",
     "steps",
     "flow",
     "reqs",
@@ -419,7 +445,6 @@
     "proof",
     "quote",
     "math",
-    "work",
     "faq",
     "cta"
   ]
