@@ -145,53 +145,6 @@
         "after_label": "After · day-to-dusk by Bella"
       }
     },
-    "tips": {
-      "type": "bella-included",
-      "blocks": {
-        "t1": {
-          "type": "item",
-          "settings": {
-            "icon": "upload",
-            "title": "Upload full-resolution files",
-            "text": "Send originals straight from the camera — more pixels means cleaner blends and swaps."
-          }
-        },
-        "t2": {
-          "type": "item",
-          "settings": {
-            "icon": "sun",
-            "title": "Day-to-dusk your lead photo",
-            "text": "Twilight exteriors stop the scroll — order one for the front shot."
-          }
-        },
-        "t3": {
-          "type": "item",
-          "settings": {
-            "icon": "eye",
-            "title": "Flag the tricky shots",
-            "text": "Note windows, mirrors and flash spots so we route them to major HDR."
-          }
-        },
-        "t4": {
-          "type": "item",
-          "settings": {
-            "icon": "doc",
-            "title": "Batch the whole listing",
-            "text": "One order for the full shoot keeps edits consistent across every room."
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3",
-        "t4"
-      ],
-      "settings": {
-        "eyebrow": "Best practices",
-        "heading": "Get the cleanest edits"
-      }
-    },
     "faq": {
       "type": "bella-faq",
       "blocks": {
@@ -466,7 +419,6 @@
     "proof",
     "quote",
     "math",
-    "tips",
     "work",
     "faq",
     "cta"
