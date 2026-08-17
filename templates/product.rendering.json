@@ -266,7 +266,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does 3D rendering cost?",
-            "answer": "At Bella, photoreal renders start at {price:3d-rendering-service-for-architectural-visualization} per finished image — one room or building from one camera angle, with revisions and 4K print-ready delivery included, and volume discounts up to 20%. For comparison, architects and boutique studios commonly charge $1,000–3,000+ per view for the same photoreal quality."
+            "answer": "At Bella, photoreal renders start at $550 per finished image — one room or building from one camera angle, with revisions and 4K print-ready delivery included, and volume discounts up to 20%. For comparison, architects and boutique studios commonly charge $1,000–3,000+ per view for the same photoreal quality."
           }
         }
       },
@@ -290,7 +290,7 @@
         "eyebrow": "Your next listing",
         "heading": "Ready to bring your plans to life?",
         "text": "Order today, send your plans, and sell it before you build it.",
-        "cta_label": "Get started — from {price:3d-rendering-service-for-architectural-visualization} a render",
+        "cta_label": "Get started — from $550 a render",
         "fine_print": "Send plans after checkout · Revisions included"
       }
     },
@@ -350,7 +350,7 @@
         "old_amount": "$100,000+",
         "old_per": "one floor plan · months of construction · built to be torn out",
         "new_label": "Bella 3D rendering",
-        "new_amount": "{price:3d-rendering-service-for-architectural-visualization}",
+        "new_amount": "$550",
         "new_per": "a render · from your plans · every floor plan and finish",
         "note": "Pre-selling used to mean building a model home and hoping buyers could imagine the rest. A photoreal render does the model home's job before ground breaks — and does it for every floor plan, elevation and finish package, not just one. Modern 3D technology in the hands of a human artist: the render sells the build instead of describing it.",
         "cta_label": "",
@@ -602,9 +602,48 @@
             "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spa-lounge-interior-render.jpg?width=1400",
             "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spa-lounge-interior-render.jpg?width=1400"
           }
+        },
+        "lr1": {
+          "type": "project",
+          "settings": {
+            "name": "La Riviere · exterior",
+            "customer": "Property developer · La Riviere",
+            "services": "3D rendering from plans",
+            "outcome": "Pre-sale realtor kit",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-1.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-1.jpg?width=1400"
+          }
+        },
+        "lr2": {
+          "type": "project",
+          "settings": {
+            "name": "La Riviere · living room",
+            "customer": "Property developer · La Riviere",
+            "services": "Interior render · Plan B",
+            "outcome": "Pre-sale realtor kit",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-interior-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-interior-render.jpg?width=1400"
+          }
+        },
+        "lr3": {
+          "type": "project",
+          "settings": {
+            "name": "La Riviere · rooftop amenity",
+            "customer": "Property developer · La Riviere",
+            "services": "Amenity visualization",
+            "outcome": "Pre-sale realtor kit",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-rooftop-amenity-render.png?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-rooftop-amenity-render.png?width=1400"
+          }
         }
       },
       "block_order": [
+        "lr1",
+        "lr2",
+        "lr3",
         "w4",
         "w5",
         "w1",
@@ -666,6 +705,13 @@
             "name": "Aureliana",
             "detail": "Restaurant · with Ark & Mason"
           }
+        },
+        "m6": {
+          "type": "mark",
+          "settings": {
+            "name": "La Riviere",
+            "detail": "Condo development · full marketing kit"
+          }
         }
       },
       "block_order": [
@@ -673,7 +719,8 @@
         "m2",
         "m3",
         "m4",
-        "m5"
+        "m5",
+        "m6"
       ],
       "settings": {
         "eyebrow": "Who makes your renders",
