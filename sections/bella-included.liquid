@@ -4,7 +4,7 @@
       <div class="head2">
         <p class="micro">{{ section.settings.eyebrow }}</p>
         <h2>{{ section.settings.heading }}</h2>
-        {%- if section.settings.text != blank -%}<p>{% render 'bella-copy', text: section.settings.text %}</p>{%- endif -%}
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
       </div>
       <div class="incl">
         {%- for block in section.blocks -%}
@@ -13,7 +13,7 @@
               <svg class="ico"><use href="#i-{{ block.settings.icon }}"/></svg>
             {%- endif -%}
             <h3>{{ block.settings.title }}</h3>
-            <p>{% render 'bella-copy', text: block.settings.text %}</p>
+            <p>{% render 'bella-price-text', text: block.settings.text %}</p>
           </div>
         {%- endfor -%}
       </div>
