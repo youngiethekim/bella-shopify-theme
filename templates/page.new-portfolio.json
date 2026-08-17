@@ -171,9 +171,61 @@
             "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/commercial-reception-3d-render.jpg?width=1600",
             "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/commercial-reception-3d-render.jpg?width=1600"
           }
+        },
+        "lr1": {
+          "type": "project",
+          "settings": {
+            "name": "La Riviere · exterior",
+            "customer": "Property developer · La Riviere",
+            "services": "3D rendering from plans",
+            "outcome": "Pre-sale realtor kit",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-1.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-1.jpg?width=1400"
+          }
+        },
+        "lr2": {
+          "type": "project",
+          "settings": {
+            "name": "La Riviere · streetscape",
+            "customer": "Property developer · La Riviere",
+            "services": "3D rendering from plans",
+            "outcome": "Pre-sale realtor kit",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-2.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-2.jpg?width=1400"
+          }
+        },
+        "lr3": {
+          "type": "project",
+          "settings": {
+            "name": "La Riviere · living room",
+            "customer": "Property developer · La Riviere",
+            "services": "Interior render · Plan B",
+            "outcome": "Pre-sale realtor kit",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-interior-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-interior-render.jpg?width=1400"
+          }
+        },
+        "lr4": {
+          "type": "project",
+          "settings": {
+            "name": "La Riviere · rooftop amenity",
+            "customer": "Property developer · La Riviere",
+            "services": "Amenity visualization",
+            "outcome": "Pre-sale realtor kit",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-rooftop-amenity-render.png?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-rooftop-amenity-render.png?width=1400"
+          }
         }
       },
       "block_order": [
+        "lr1",
+        "lr2",
+        "lr3",
+        "lr4",
         "p1",
         "p2",
         "p3",
@@ -200,7 +252,7 @@
         "eyebrow": "Your listing next",
         "heading": "Want results like these?",
         "text": "Designer staging, photoreal renders and clean edits — back in 24 to 48 hours.",
-        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_label": "Get started — from $45 a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }
