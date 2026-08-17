@@ -1,6 +1,12 @@
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
 -%}
+{% style %}
+.bb-call{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:13px;text-align:center}
+.bb-call span{display:block;color:#6c6f6b;margin-bottom:2px}
+.bb-call a{color:var(--green);font-weight:600;text-decoration:none}
+.bb-call a:hover{text-decoration:underline}
+{% endstyle %}
 <div class="svc-page">
   {%- if section.settings.show_breadcrumb -%}
     <nav class="crumb" aria-label="Breadcrumb">
