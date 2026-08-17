@@ -27,15 +27,17 @@
       endif
     endif
   -%}
-  <div class="qt-avatar">
-    {%- if section.settings.photo != blank -%}
-      <img src="{{ section.settings.photo | image_url: width: 160, height: 160, crop: 'center' }}" alt="{{ who | escape }}" width="80" height="80" loading="lazy">
-    {%- elsif purl != blank -%}
-      <img src="{{ purl }}" alt="{{ who | escape }}" width="80" height="80" loading="lazy">
-    {%- else -%}
-      <span class="qt-mono" aria-hidden="true">{{ ini | upcase }}</span>
-    {%- endif -%}
-  </div>
+  {%- unless who == 'Craig C. Rowe' -%}
+    <div class="qt-avatar">
+      {%- if section.settings.photo != blank -%}
+        <img src="{{ section.settings.photo | image_url: width: 160, height: 160, crop: 'center' }}" alt="{{ who | escape }}" width="80" height="80" loading="lazy">
+      {%- elsif purl != blank -%}
+        <img src="{{ purl }}" alt="{{ who | escape }}" width="80" height="80" loading="lazy">
+      {%- else -%}
+        <span class="qt-mono" aria-hidden="true">{{ ini | upcase }}</span>
+      {%- endif -%}
+    </div>
+  {%- endunless -%}
   <cite>{{ section.settings.attribution }}</cite>
   <div class="rating">
     <span class="stars" aria-hidden="true">
