@@ -149,7 +149,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does virtual staging cost?",
-            "answer": "From {price:virtual-staging} per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one — the best value. A typical six-photo listing runs about $243 with the volume discount applied."
+            "answer": "From {price:virtual-staging} per photo, with volume discounts up to 20%: 5% at three photos, 10% at six, 15% at eleven, and 20% at twenty-one — the best value."
           }
         },
         "q3": {
