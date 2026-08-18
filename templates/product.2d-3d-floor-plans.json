@@ -70,7 +70,7 @@
         "def_heading": "About this service",
         "collapse_description": false,
         "min_qty": 3,
-        "enable_tiers": false
+        "enable_tiers": true
       }
     },
     "work": {

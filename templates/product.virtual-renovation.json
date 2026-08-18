@@ -70,7 +70,7 @@
         "min_qty": 3,
         "hero_pairs": "ba-reno-kitchen | Kitchen\nba-reno-greatroom | Great room\nba-reno-frontexterior | Front exterior\nba-reno-patio | Patio\nba-reno-exterior | Waterfront",
         "ba_word": "renovation",
-        "enable_tiers": false
+        "enable_tiers": true
       }
     },
     "steps": {

@@ -63,7 +63,7 @@
         "min_qty": 3,
         "hero_pairs": "ba-stage-bedroom | Bedroom\nba-stage-family | Family room\nba-stage-dining | Kitchen & dining\nba-stage-bedroom2 | Primary bedroom\nba-stage-diningroom | Dining room\nba-stage-bedroom3 | Guest bedroom",
         "ba_word": "staging",
-        "enable_tiers": false
+        "enable_tiers": true
       }
     },
     "steps": {

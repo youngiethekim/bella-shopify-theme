@@ -73,7 +73,7 @@
         "call_label": "Book a free project call →",
         "call_url": "/pages/contact-us",
         "min_qty": 3,
-        "enable_tiers": false
+        "enable_tiers": true
       }
     },
     "scope": {

@@ -71,7 +71,7 @@
         "assure_3_tip": "If a staged panorama still isn't right after rework, we refund that photo.",
         "def_heading": "About this service",
         "min_qty": 3,
-        "enable_tiers": false
+        "enable_tiers": true
       }
     },
     "steps": {

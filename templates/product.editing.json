@@ -67,7 +67,7 @@
         "assure_2_tip": "Most batches come back within 24 hours — we confirm timing when you upload.",
         "assure_3_tip": "If an edit isn't right, we rework it — or refund that photo.",
         "min_qty": 3,
-        "enable_tiers": false
+        "enable_tiers": true
       }
     },
     "steps": {
