@@ -60,7 +60,9 @@
         "assure_3_tip": "If a photo still isn't right after rework, we refund that photo. No fine print.",
         "default_qty": 6,
         "lede": "For properties that are built but sitting vacant — or occupied and cluttered. A real interior designer furnishes your listing photos so buyers see a home, not an empty room. MLS-ready in 24 to 48 hours.",
-        "min_qty": 3
+        "min_qty": 3,
+        "hero_pairs": "ba-stage-bedroom | Bedroom\nba-stage-family | Family room\nba-stage-dining | Dining room\nba-stage-bedroom2 | Primary bedroom\nba-stage-diningroom | Dining room\nba-stage-bedroom3 | Guest bedroom",
+        "ba_word": "staging"
       }
     },
     "steps": {
@@ -542,56 +544,10 @@
         "text": "Every Bella staging is composed by hand by a professional interior designer — the same design team trusted for top-tier projects by luxury brokerages, national developers and home builders across the US and Canada. No AI shortcuts and no template rooms: furniture, light and styling are chosen for your listing and your buyer.",
         "note": "Rated 4.9 on Google by verified Bella clients."
       }
-    },
-    "ba": {
-      "type": "bella-ba-slider",
-      "blocks": {
-        "ba1": {
-          "type": "pair",
-          "settings": {
-            "room": "Bedroom",
-            "before_asset": "ba-stage-bedroom-before.jpg",
-            "after_asset": "ba-stage-bedroom-after.jpg",
-            "start": 50
-          }
-        },
-        "ba2": {
-          "type": "pair",
-          "settings": {
-            "room": "Family room",
-            "before_asset": "ba-stage-family-before.jpg",
-            "after_asset": "ba-stage-family-after.jpg",
-            "start": 50
-          }
-        },
-        "ba3": {
-          "type": "pair",
-          "settings": {
-            "room": "Dining room",
-            "before_asset": "ba-stage-dining-before.jpg",
-            "after_asset": "ba-stage-dining-after.jpg",
-            "start": 50
-          }
-        }
-      },
-      "block_order": [
-        "ba1",
-        "ba2",
-        "ba3"
-      ],
-      "settings": {
-        "eyebrow": "Drag to compare",
-        "heading": "The same room, before and after.",
-        "text": "Every one of these was an empty room we were sent. Drag to see it.",
-        "service_word": "staging",
-        "before_label": "Before",
-        "after_label": "After"
-      }
     }
   },
   "order": [
     "main",
-    "ba",
     "work",
     "steps",
     "flow",

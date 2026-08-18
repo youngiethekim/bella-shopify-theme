@@ -67,7 +67,9 @@
         "assure_3_tip": "If a photo still isn't right after rework, we refund that photo.",
         "def_heading": "About this service",
         "shot_label": "Virtually renovated by a Bella designer",
-        "min_qty": 3
+        "min_qty": 3,
+        "hero_pairs": "ba-reno-kitchen | Kitchen\nba-reno-greatroom | Great room\nba-reno-frontexterior | Front exterior\nba-reno-patio | Patio\nba-reno-exterior | Waterfront",
+        "ba_word": "renovation"
       }
     },
     "steps": {
@@ -444,56 +446,10 @@
         "look_label": "See more in the portfolio →",
         "look_url": "/pages/portfolio"
       }
-    },
-    "ba": {
-      "type": "bella-ba-slider",
-      "blocks": {
-        "ba1": {
-          "type": "pair",
-          "settings": {
-            "room": "Kitchen",
-            "before_asset": "ba-reno-kitchen-before.jpg",
-            "after_asset": "ba-reno-kitchen-after.jpg",
-            "start": 50
-          }
-        },
-        "ba2": {
-          "type": "pair",
-          "settings": {
-            "room": "Great room",
-            "before_asset": "ba-reno-greatroom-before.jpg",
-            "after_asset": "ba-reno-greatroom-after.jpg",
-            "start": 50
-          }
-        },
-        "ba3": {
-          "type": "pair",
-          "settings": {
-            "room": "Waterfront",
-            "before_asset": "ba-reno-exterior-before.jpg",
-            "after_asset": "ba-reno-exterior-after.jpg",
-            "start": 50
-          }
-        }
-      },
-      "block_order": [
-        "ba1",
-        "ba2",
-        "ba3"
-      ],
-      "settings": {
-        "eyebrow": "Drag to compare",
-        "heading": "The same room, before and after.",
-        "text": "Same house, same camera. Drag to see what the renovation changed.",
-        "service_word": "renovation",
-        "before_label": "Before",
-        "after_label": "After"
-      }
     }
   },
   "order": [
     "main",
-    "ba",
     "work",
     "steps",
     "flow",

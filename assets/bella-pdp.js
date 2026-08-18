@@ -300,8 +300,8 @@
 })();
 
 /* ---- before / after drag slider ----
-   The range input owns the value; this only mirrors it onto --ba-pos so the
-   clip and the handle follow. No JS means a static 50/50 split, still legible. */
+   The range owns the value; this mirrors it onto --ba-pos so the clip and the
+   handle follow, and swaps which pair the thumb rail is pointing at. */
 (function () {
   var frames = document.querySelectorAll('[data-ba]');
   if (!frames.length) return;
@@ -313,5 +313,17 @@
     range.addEventListener('input', paint);
     range.addEventListener('change', paint);
     paint();
+  });
+
+  var thumbs = document.getElementById('BaThumbs');
+  if (!thumbs) return;
+  thumbs.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var want = b.getAttribute('data-ba-go');
+      Array.prototype.forEach.call(frames, function (f) {
+        f.classList.toggle('is-off', f.getAttribute('data-ba-index') !== want);
+      });
+      thumbs.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
+    });
   });
 })();
