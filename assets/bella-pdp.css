@@ -382,7 +382,7 @@
 .ba{margin:0;display:block}
 .ba.is-off{display:none}
 .ba-stage{--ba-pos:50%;position:relative;aspect-ratio:4/3;max-height:560px;overflow:hidden;background:#EFECE8;touch-action:pan-y}
-.ba-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;max-height:none;user-select:none;-webkit-user-drag:none}
+.shot2-ba .ba-img{position:absolute;inset:0;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;display:block;user-select:none;-webkit-user-drag:none}
 .ba-clip{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--ba-pos)) 0 0)}
 .ba-pill{position:absolute;bottom:14px;z-index:3;pointer-events:none;background:rgba(255,255,255,.94);color:#141416;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:6px}
 .ba-pill-b{left:14px}
