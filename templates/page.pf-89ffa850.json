@@ -9,17 +9,12 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-article",
-      "settings": {}
-    },
-    "lead": {
-      "type": "bella-lead",
+    "pf-89ffa850": {
+      "type": "pf-89ffa850",
       "settings": {}
     }
   },
   "order": [
-    "main",
-    "lead"
+    "pf-89ffa850"
   ]
 }
