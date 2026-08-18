@@ -62,7 +62,8 @@
         "lede": "For properties that are built but sitting vacant — or occupied and cluttered. A real interior designer furnishes your listing photos so buyers see a home, not an empty room. MLS-ready in 24 to 48 hours.",
         "min_qty": 3,
         "hero_pairs": "ba-stage-bedroom | Bedroom\nba-stage-family | Family room\nba-stage-dining | Kitchen & dining\nba-stage-bedroom2 | Primary bedroom\nba-stage-diningroom | Dining room\nba-stage-bedroom3 | Guest bedroom",
-        "ba_word": "staging"
+        "ba_word": "staging",
+        "enable_tiers": false
       }
     },
     "steps": {

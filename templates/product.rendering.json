@@ -72,7 +72,8 @@
         "call_text": "3D rendering is a bigger investment — want to talk your project through first?",
         "call_label": "Book a free project call →",
         "call_url": "/pages/contact-us",
-        "min_qty": 3
+        "min_qty": 3,
+        "enable_tiers": false
       }
     },
     "scope": {

@@ -865,3 +865,24 @@ img{height:auto}
   .feat-svc .fs-body{padding:24px 22px 26px}
 }
 .other-svcs{margin-top:44px}
+
+/* ---- market / currency switcher -------------------------------------
+   Sits between the menu and the CTA. The list is a real submit form, so
+   it switches market with no JS; the dropdown is only an enhancement.  */
+.mkt{position:relative;margin:0;display:flex;align-items:center}
+.mkt-btn{display:inline-flex;align-items:center;gap:7px;background:none;border:1px solid var(--line);padding:8px 10px;cursor:pointer;font:inherit;line-height:1;color:var(--ink)}
+.mkt-btn:hover{border-color:var(--ink)}
+.mkt-btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.mkt-cur{font-size:12px;letter-spacing:.1em}
+.mkt-caret{transition:transform .18s}
+.mkt-btn[aria-expanded="true"] .mkt-caret{transform:rotate(180deg)}
+.flag{display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.10)}
+.flag-code{font-size:10px;letter-spacing:.06em;padding:3px 4px;background:var(--line-2);border-radius:2px;box-shadow:none;line-height:1}
+.mkt-list{position:absolute;top:calc(100% + 8px);right:0;z-index:90;margin:0;padding:6px;list-style:none;min-width:212px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.10)}
+.mkt-list[hidden]{display:none}
+.mkt-opt{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:9px 10px;cursor:pointer;font:inherit;text-align:left;color:var(--ink)}
+.mkt-opt:hover{background:var(--line-2)}
+.mkt-opt.on{font-weight:500}
+.mkt-name{flex:1;font-size:13px}
+.mkt-opt .mkt-cur{color:var(--soft)}
+@media(max-width:560px){.mkt-btn .mkt-cur{display:none}}

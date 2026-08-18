@@ -69,7 +69,8 @@
         "shot_label": "Virtually renovated by a Bella designer",
         "min_qty": 3,
         "hero_pairs": "ba-reno-kitchen | Kitchen\nba-reno-greatroom | Great room\nba-reno-frontexterior | Front exterior\nba-reno-patio | Patio\nba-reno-exterior | Waterfront",
-        "ba_word": "renovation"
+        "ba_word": "renovation",
+        "enable_tiers": false
       }
     },
     "steps": {

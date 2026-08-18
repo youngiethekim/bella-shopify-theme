@@ -359,7 +359,7 @@
     { "type": "text", "id": "call_label", "label": "Consult link label", "default": "Book a free project call →" },
     { "type": "text", "id": "call_url", "label": "Consult link URL (Calendly)", "info": "Leave blank to hide. Paste your Calendly event link here." },
     { "type": "header", "content": "Volume discounts", "info": "Shown in the buy box. Create a matching automatic discount in admin so checkout applies it." },
-    { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "default": true },
+    { "type": "checkbox", "id": "enable_tiers", "label": "Show volume discount tiers", "info": "Only turn this on while matching automatic discounts are ACTIVE in admin. The tier table is hard-coded here and does not read Shopify.", "default": false },
     { "type": "number", "id": "tier1_qty", "label": "Tier 1 — from qty", "default": 3 },
     { "type": "number", "id": "tier1_pct", "label": "Tier 1 — % off", "default": 5 },
     { "type": "number", "id": "tier2_qty", "label": "Tier 2 — from qty", "default": 6 },

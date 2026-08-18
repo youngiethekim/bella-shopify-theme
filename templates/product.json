@@ -60,7 +60,8 @@
         "assure_3_tip": "If a photo still isn't right after rework, we refund that photo. No fine print.",
         "default_qty": 6,
         "lede": "For properties that are built but sitting vacant — or occupied and cluttered. A real interior designer furnishes your listing photos so buyers see a home, not an empty room. MLS-ready in 24 to 48 hours.",
-        "min_qty": 3
+        "min_qty": 3,
+        "enable_tiers": false
       }
     },
     "steps": {

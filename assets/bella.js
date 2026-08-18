@@ -290,3 +290,18 @@
   panel.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
 })();
+
+/* ---- market switcher: open the list, close it on Escape or outside click ----
+   The form submits on its own without any of this, so nothing here is load-bearing. */
+(function () {
+  var btn = document.getElementById('MarketBtn'), list = document.getElementById('MarketList');
+  if (!btn || !list) return;
+  function close() { list.hidden = true; btn.setAttribute('aria-expanded', 'false'); }
+  function open() { list.hidden = false; btn.setAttribute('aria-expanded', 'true'); }
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (list.hidden) { open(); } else { close(); }
+  });
+  document.addEventListener('click', function (e) { if (!list.hidden && !list.contains(e.target)) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !list.hidden) { close(); btn.focus(); } });
+})();
