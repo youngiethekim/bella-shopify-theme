@@ -1,4 +1,5 @@
 /* ==== product page v2 — UX pass ==== */
+.svc-hero2>*{min-width:0}
 .svc-hero2{display:grid;grid-template-columns:.824fr 1.176fr;grid-template-areas:"head media" "buy media";column-gap:60px;align-items:start;max-width:var(--shell,1200px);margin:0 auto;padding:26px var(--pad) 60px}
 .ph-head{grid-area:head;padding-top:12px}
 .ph-head h1{font-size:clamp(30px,3.4vw,44px);font-weight:300;letter-spacing:-.012em;line-height:1.1;margin-top:12px;max-width:18ch}
@@ -13,7 +14,8 @@
 .shot2{position:relative;background:#EFECE8;overflow:hidden}
 .shot2 img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover}
 .shot2 .lbl{position:absolute;left:16px;bottom:16px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(20,18,16,.6);padding:6px 12px;backdrop-filter:blur(3px)}
-.ph-thumbs{display:flex;gap:8px;margin-top:8px}
+.ph-thumbs{display:flex;gap:8px;margin-top:8px;overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.ph-thumbs button{flex:0 0 auto}
 .ph-thumbs button{width:72px;height:54px;padding:0;border:1px solid var(--line);background:#EFECE8;cursor:pointer;overflow:hidden;opacity:.75;transition:.15s}
 .ph-thumbs button img{width:100%;height:100%;object-fit:cover;display:block}
 .ph-thumbs button:hover{opacity:1}
