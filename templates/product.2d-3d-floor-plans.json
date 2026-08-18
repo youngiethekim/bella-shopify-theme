@@ -68,7 +68,8 @@
         "assure_3_icon": "shield",
         "assure_3_tip": "If a plan still is not right after rework, we refund it. No fine print.",
         "def_heading": "About this service",
-        "collapse_description": false
+        "collapse_description": false,
+        "min_qty": 3
       }
     },
     "work": {

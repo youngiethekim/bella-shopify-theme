@@ -65,7 +65,8 @@
         "reco_text": "A full listing shoot is typically 8–12 photos — batching them in one order keeps edits consistent and unlocks volume pricing.",
         "assure_1_tip": "Your order confirmation includes an upload link — send photos whenever they're ready.",
         "assure_2_tip": "Most batches come back within 24 hours — we confirm timing when you upload.",
-        "assure_3_tip": "If an edit isn't right, we rework it — or refund that photo."
+        "assure_3_tip": "If an edit isn't right, we rework it — or refund that photo.",
+        "min_qty": 3
       }
     },
     "steps": {

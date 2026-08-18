@@ -71,7 +71,8 @@
         "assure_3_tip": "High-resolution files sized for print, MLS and marketing — billboard sizing on request.",
         "call_text": "3D rendering is a bigger investment — want to talk your project through first?",
         "call_label": "Book a free project call →",
-        "call_url": "/pages/contact-us"
+        "call_url": "/pages/contact-us",
+        "min_qty": 3
       }
     },
     "scope": {

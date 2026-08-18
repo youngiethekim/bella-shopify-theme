@@ -1,5 +1,7 @@
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
+  # the quantity the page opens on, never below the minimum the shop enforces
+  assign start_qty = section.settings.default_qty | at_least: section.settings.min_qty
 -%}
 {% style %}
 .bb-call{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:13px;text-align:center}
@@ -75,6 +77,7 @@
         <div class="buybox"
           id="BuyBox"
           data-money-format="{{ shop.money_format | escape }}"
+          data-min-qty="{{ section.settings.min_qty }}"
           data-tiers-enabled="{{ section.settings.enable_tiers }}"
           data-tiers='[{"m":{{ section.settings.tier1_qty }},"d":{{ section.settings.tier1_pct }}},{"m":{{ section.settings.tier2_qty }},"d":{{ section.settings.tier2_pct }}},{"m":{{ section.settings.tier3_qty }},"d":{{ section.settings.tier3_pct }}},{"m":{{ section.settings.tier4_qty }},"d":{{ section.settings.tier4_pct }}}]'
           data-unit-label="{{ section.settings.unit_label | escape }}"
@@ -115,13 +118,13 @@
             <div class="bb-row bb-qtyrow">
               <div class="qty-step">
                 <button type="button" id="QtyMinus" aria-label="Fewer">−</button>
-                <input type="number" id="BuyQty" name="quantity" value="{{ section.settings.default_qty }}" min="1" max="99" inputmode="numeric">
+                <input type="number" id="BuyQty" name="quantity" value="{{ start_qty }}" min="{{ section.settings.min_qty }}" max="99" step="1" inputmode="numeric">
                 <button type="button" id="QtyPlus" aria-label="More">+</button>
               </div>
               <div class="bb-total">
                 <div class="bb-price">
                   <span class="was" id="BbWas" hidden></span>
-                  <span class="now" id="BbNow">{{ current_variant.price | times: section.settings.default_qty | money }}</span>
+                  <span class="now" id="BbNow">{{ current_variant.price | times: start_qty | money }}</span>
                 </div>
                 <div class="per" id="BbPer"></div>
               </div>
@@ -230,7 +233,7 @@
   <div class="buy-sticky" id="BuySticky">
     <div class="bs-total">
       <span>{{ section.settings.sticky_label }}</span>
-      <b id="StickyTotal">{{ current_variant.price | times: section.settings.default_qty | money }}</b>
+      <b id="StickyTotal">{{ current_variant.price | times: start_qty | money }}</b>
     </div>
     <button type="submit" form="BellaProductForm" class="prod-buy bs-btn" {% unless product.available %}disabled{% endunless %}>{{ section.settings.buy_label }}</button>
   </div>
@@ -250,7 +253,8 @@
     { "type": "text", "id": "variant_tip", "label": "Variant tooltip (empty = none)" },
     { "type": "textarea", "id": "variant_specs", "label": "Per-variant spec lines (Variant title | spec text, one per line)" },
     { "type": "text", "id": "qty_label", "label": "Quantity step label", "default": "How many photos?" },
-    { "type": "range", "id": "default_qty", "label": "Starting quantity", "min": 1, "max": 20, "step": 1, "default": 8 },
+    { "type": "range", "id": "default_qty", "label": "Starting quantity", "min": 1, "max": 20, "step": 1, "default": 6 },
+    { "type": "range", "id": "min_qty", "label": "Minimum order", "info": "Buyers cannot go below this.", "min": 1, "max": 20, "step": 1, "default": 3 },
     { "type": "text", "id": "reco_text", "label": "Most popular tooltip (empty = hide badge)" },
     { "type": "text", "id": "unit_label", "label": "Unit name", "default": "photo" },
     { "type": "text", "id": "style_label", "label": "Style step label", "default": "Staging style" },

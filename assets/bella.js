@@ -205,6 +205,7 @@
   var unit = box.getAttribute('data-unit-label') || 'photo';
   var fmt = box.getAttribute('data-money-format') || '${{amount}}';
   var RECO = parseInt(box.getAttribute('data-reco'), 10) || 0;
+  var MINQ = Math.max(1, parseInt(box.getAttribute('data-min-qty'), 10) || 1);
   var TIERS = [];
   try { TIERS = JSON.parse(box.getAttribute('data-tiers') || '[]'); } catch (e) {}
   TIERS = TIERS.filter(function (t) { return t && t.m > 0 && t.d > 0; }).sort(function (a, b) { return a.m - b.m; });
@@ -226,7 +227,7 @@
     }
     return parseInt(variantEl.getAttribute('data-price'), 10) || 0;
   }
-  function qty() { return Math.max(1, Math.min(99, parseInt(qtyEl.value, 10) || 1)); }
+  function qty() { return Math.max(MINQ, Math.min(99, parseInt(qtyEl.value, 10) || MINQ)); }
   function discFor(q) {
     if (!tiersOn) return 0;
     var d = 0;
@@ -267,7 +268,7 @@
       });
     }
   }
-  minus.addEventListener('click', function () { qtyEl.value = Math.max(1, qty() - 1); paint(); });
+  minus.addEventListener('click', function () { qtyEl.value = Math.max(MINQ, qty() - 1); paint(); });
   plus.addEventListener('click', function () { qtyEl.value = Math.min(99, qty() + 1); paint(); });
   qtyEl.addEventListener('input', paint);
   qtyEl.addEventListener('change', function () { qtyEl.value = qty(); paint(); });

@@ -69,7 +69,8 @@
         "assure_1_tip": "Your order confirmation includes an upload link — send the panoramas straight off the camera.",
         "assure_2_tip": "Mark up any room you'd like re-staged — revisions are free for two weeks.",
         "assure_3_tip": "If a staged panorama still isn't right after rework, we refund that photo.",
-        "def_heading": "About this service"
+        "def_heading": "About this service",
+        "min_qty": 3
       }
     },
     "steps": {

@@ -298,3 +298,20 @@
   sel.addEventListener('change', swap);
   swap();
 })();
+
+/* ---- before / after drag slider ----
+   The range input owns the value; this only mirrors it onto --ba-pos so the
+   clip and the handle follow. No JS means a static 50/50 split, still legible. */
+(function () {
+  var frames = document.querySelectorAll('[data-ba]');
+  if (!frames.length) return;
+  Array.prototype.forEach.call(frames, function (fig) {
+    var range = fig.querySelector('[data-ba-range]');
+    var stage = fig.querySelector('.ba-stage');
+    if (!range || !stage) return;
+    function paint() { stage.style.setProperty('--ba-pos', range.value + '%'); }
+    range.addEventListener('input', paint);
+    range.addEventListener('change', paint);
+    paint();
+  });
+})();
