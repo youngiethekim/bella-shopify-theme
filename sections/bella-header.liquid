@@ -27,8 +27,18 @@
           <span class="mkt-cur">{{ localization.country.currency.iso_code }}</span>
           <svg class="mkt-caret" viewBox="0 0 10 6" width="9" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
+        {%- comment -%}
+          available_countries is every country Shopify ships to (234 here), but
+          they resolve to only four currencies: 231 of them are USD. Listing all
+          234 would be a wall of identical choices, so we show one country per
+          currency, named in the setting below.
+        {%- endcomment -%}
+        {%- assign wanted = section.settings.market_codes | default: 'US,CA,GB,AU' | upcase | replace: ' ', '' -%}
+        {%- assign wanted_lookup = ',' | append: wanted | append: ',' -%}
         <ul class="mkt-list" id="MarketList" hidden>
           {%- for c in localization.available_countries -%}
+            {%- assign probe = ',' | append: c.iso_code | append: ',' -%}
+            {%- unless wanted_lookup contains probe -%}{%- continue -%}{%- endunless -%}
             <li>
               <button type="submit" name="country_code" value="{{ c.iso_code }}" class="mkt-opt{% if c.iso_code == localization.country.iso_code %} on{% endif %}"{% if c.iso_code == localization.country.iso_code %} aria-current="true"{% endif %}>
                 {%- render 'bella-flag', code: c.iso_code, size: 18 -%}
@@ -62,6 +72,7 @@
     { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
     { "type": "text", "id": "cta_label", "label": "Button label", "default": "Get started" },
     { "type": "checkbox", "id": "show_market", "label": "Show region / currency switcher", "info": "Hidden automatically unless the shop has more than one market.", "default": true },
+    { "type": "text", "id": "market_codes", "label": "Regions to offer", "info": "Comma-separated ISO country codes, one per currency you sell in. Empty falls back to US,CA,GB,AU.", "default": "US,CA,GB,AU" },
     { "type": "url", "id": "cta_link", "label": "Button link" }
   ]
 }
