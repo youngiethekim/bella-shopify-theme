@@ -56,7 +56,7 @@
         "lede": "For properties that haven't been built yet. Photoreal interiors and exteriors built from your plans by our 3D team — so buyers commit before ground breaks.",
         "unit_label": "render",
         "qty_label": "How many renders?",
-        "default_qty": 5,
+        "default_qty": 1,
         "assure_1": "Send plans after checkout",
         "assure_2": "Revisions until it's right",
         "assure_3": "Print-ready delivery",
@@ -72,7 +72,7 @@
         "call_text": "3D rendering is a bigger investment — want to talk your project through first?",
         "call_label": "Book a free project call →",
         "call_url": "/pages/contact-us",
-        "min_qty": 3,
+        "min_qty": 1,
         "enable_tiers": true
       }
     },
