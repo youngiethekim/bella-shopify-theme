@@ -1,5 +1,5 @@
 /* ==== product page v2 — UX pass ==== */
-.svc-hero2{display:grid;grid-template-columns:1.02fr .98fr;grid-template-areas:"head media" "buy media";column-gap:60px;align-items:start;max-width:var(--shell,1200px);margin:0 auto;padding:26px var(--pad) 60px}
+.svc-hero2{display:grid;grid-template-columns:.824fr 1.176fr;grid-template-areas:"head media" "buy media";column-gap:60px;align-items:start;max-width:var(--shell,1200px);margin:0 auto;padding:26px var(--pad) 60px}
 .ph-head{grid-area:head;padding-top:12px}
 .ph-head h1{font-size:clamp(30px,3.4vw,44px);font-weight:300;letter-spacing:-.012em;line-height:1.1;margin-top:12px;max-width:18ch}
 .ph-rating{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
