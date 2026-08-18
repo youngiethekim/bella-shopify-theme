@@ -300,16 +300,16 @@
 })();
 
 /* ---- before / after drag slider ----
-   The range owns the value; this mirrors it onto --ba-pos so the clip and the
+   The range owns the value; this mirrors it onto --bacmp-pos so the clip and the
    handle follow, and swaps which pair the thumb rail is pointing at. */
 (function () {
-  var frames = document.querySelectorAll('[data-ba]');
+  var frames = document.querySelectorAll('[data-bacmp]');
   if (!frames.length) return;
   Array.prototype.forEach.call(frames, function (fig) {
-    var range = fig.querySelector('[data-ba-range]');
-    var stage = fig.querySelector('.ba-stage');
+    var range = fig.querySelector('[data-bacmp-range]');
+    var stage = fig.querySelector('.bacmp-stage');
     if (!range || !stage) return;
-    function paint() { stage.style.setProperty('--ba-pos', range.value + '%'); }
+    function paint() { stage.style.setProperty('--bacmp-pos', range.value + '%'); }
     range.addEventListener('input', paint);
     range.addEventListener('change', paint);
     paint();
@@ -319,9 +319,9 @@
   if (!thumbs) return;
   thumbs.querySelectorAll('button').forEach(function (b) {
     b.addEventListener('click', function () {
-      var want = b.getAttribute('data-ba-go');
+      var want = b.getAttribute('data-bacmp-go');
       Array.prototype.forEach.call(frames, function (f) {
-        f.classList.toggle('is-off', f.getAttribute('data-ba-index') !== want);
+        f.classList.toggle('is-off', f.getAttribute('data-bacmp-index') !== want);
       });
       thumbs.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
     });
