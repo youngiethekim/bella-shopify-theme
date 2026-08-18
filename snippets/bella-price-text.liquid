@@ -8,11 +8,11 @@
   assign t = text
   if t contains '{price:'
     if t contains '{price:virtual-staging}'
-      assign amt = all_products['virtual-staging-1'].price_min | money_without_trailing_zeros
+      assign amt = all_products['virtual-staging'].price_min | money_without_trailing_zeros
       assign t = t | replace: '{price:virtual-staging}', amt
     endif
     if t contains '{price:virtual-staging-1}'
-      assign amt = all_products['virtual-staging-1'].price_min | money_without_trailing_zeros
+      assign amt = all_products['virtual-staging'].price_min | money_without_trailing_zeros
       assign t = t | replace: '{price:virtual-staging-1}', amt
     endif
     if t contains '{price:3d-rendering}'
@@ -20,11 +20,11 @@
       assign t = t | replace: '{price:3d-rendering}', amt
     endif
     if t contains '{price:virtual-renovation-service}'
-      assign amt = all_products['virtual-renovation'].price_min | money_without_trailing_zeros
+      assign amt = all_products['virtual-renovation-service'].price_min | money_without_trailing_zeros
       assign t = t | replace: '{price:virtual-renovation-service}', amt
     endif
     if t contains '{price:virtual-renovation}'
-      assign amt = all_products['virtual-renovation'].price_min | money_without_trailing_zeros
+      assign amt = all_products['virtual-renovation-service'].price_min | money_without_trailing_zeros
       assign t = t | replace: '{price:virtual-renovation}', amt
     endif
     if t contains '{price:photo-editing}'

@@ -102,7 +102,7 @@
             "new_amount": "{price:virtual-staging}",
             "new_unit": "a photo · paid once",
             "link_label": "Virtual staging →",
-            "url": "/products/virtual-staging-1"
+            "url": "/products/virtual-staging"
           }
         },
         "p2": {
@@ -126,7 +126,7 @@
             "new_amount": "$69",
             "new_unit": "a photo · renovated virtually",
             "link_label": "Virtual renovation →",
-            "url": "/products/virtual-renovation"
+            "url": "/products/virtual-renovation-service"
           }
         },
         "p4": {

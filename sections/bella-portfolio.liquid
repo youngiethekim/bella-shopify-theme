@@ -41,7 +41,7 @@
       {%- if section.settings.look_label != blank or section.settings.cta_label != blank -%}
         <div class="pf-foot">
           {%- if section.settings.cta_label != blank -%}
-            <a class="btn" href="{{ section.settings.cta_url | default: '/products/virtual-staging-1' }}">{% render 'bella-price-text', text: section.settings.cta_label %}</a>
+            <a class="btn" href="{{ section.settings.cta_url | default: '/products/virtual-staging' }}">{% render 'bella-price-text', text: section.settings.cta_label %}</a>
           {%- endif -%}
           {%- if section.settings.look_label != blank -%}
             <a class="pf-look" href="{{ section.settings.look_url | default: '/pages/lookbook' }}">{{ section.settings.look_label }}</a>

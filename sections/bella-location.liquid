@@ -1,5 +1,5 @@
-{%- assign vs_price = all_products['virtual-staging-1'].price_min | money_without_trailing_zeros -%}
-{%- assign vr_price = all_products['virtual-renovation'].price_min | money_without_trailing_zeros -%}
+{%- assign vs_price = all_products['virtual-staging'].price_min | money_without_trailing_zeros -%}
+{%- assign vr_price = all_products['virtual-renovation-service'].price_min | money_without_trailing_zeros -%}
 {%- assign rd_price = all_products['3d-rendering'].price_min | money_without_trailing_zeros -%}
 <section class="loc-hero">
   <span class="micro">{{ section.settings.eyebrow }}</span>
@@ -8,7 +8,7 @@
   <div class="row">
     {%- assign cta_default = 'Stage my listing — from ' | append: vs_price -%}
     {%- capture cta_txt %}{% render 'bella-price-text', text: section.settings.cta_label %}{% endcapture -%}
-    <a class="btn" href="{{ section.settings.cta_link | default: '/products/virtual-staging-1' }}">{{ cta_txt | strip | default: cta_default }}</a>
+    <a class="btn" href="{{ section.settings.cta_link | default: '/products/virtual-staging' }}">{{ cta_txt | strip | default: cta_default }}</a>
     <a class="loc-alt" href="{{ section.settings.alt_link | default: '/pages/lookbook' }}">{{ section.settings.alt_label | default: 'Browse the lookbook' }}</a>
   </div>
   <div class="loc-cred">
@@ -39,8 +39,8 @@
   <div class="loc-services">
     <span class="micro">Every Bella service, available in {{ section.settings.city }}</span>
     <div class="loc-svc-row">
-      <a href="/products/virtual-staging-1">Virtual staging <b>from {{ vs_price }}</b></a>
-      <a href="/products/virtual-renovation">Virtual renovation <b>from {{ vr_price }}</b></a>
+      <a href="/products/virtual-staging">Virtual staging <b>from {{ vs_price }}</b></a>
+      <a href="/products/virtual-renovation-service">Virtual renovation <b>from {{ vr_price }}</b></a>
       <a href="/products/3d-rendering">3D rendering <b>from {{ rd_price }}</b></a>
       <a href="/products/2d-3d-floor-plan-service">Floor plans</a>
       <a href="/products/photo-editing">Photo editing</a>

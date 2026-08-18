@@ -52,7 +52,7 @@
           assign cta_heading = 'Building or pre-selling? Photoreal 3D renders from {price:3d-rendering}.'
           assign cta_label = 'See 3D rendering →'
         elsif topic contains 'renovation' or topic contains 'dated home' or topic contains 'flip'
-          assign cta_url = '/products/virtual-renovation'
+          assign cta_url = '/products/virtual-renovation-service'
           assign cta_heading = 'Selling a dated home? Renovate it virtually for {price:virtual-renovation-service} a photo.'
           assign cta_label = 'See virtual renovation →'
         elsif topic contains '360' or topic contains 'house tour' or topic contains 'virtual tour'
@@ -68,7 +68,7 @@
           assign cta_heading = 'Polish your listing photos — professional edits from {price:photo-editing} a photo.'
           assign cta_label = 'See photo editing →'
         else
-          assign cta_url = '/products/virtual-staging-1'
+          assign cta_url = '/products/virtual-staging'
         endif
       endif
     -%}

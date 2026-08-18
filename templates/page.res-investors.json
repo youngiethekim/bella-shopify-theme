@@ -16,13 +16,13 @@
         "heading": "Marketing for Real Estate Investors & Flippers",
         "lede": "Sell the after while the property is still the before: guides and tools for flips, estates, wholesaling and tenanted units.",
         "cta_label": "See virtual renovation — $69",
-        "cta_link": "/products/virtual-renovation",
+        "cta_link": "/products/virtual-renovation-service",
         "alt_label": "Back to all resources",
         "alt_link": "/pages/resources",
         "market_heading": "Sell the after, not the before",
         "market_text": "<p>Investor marketing is vision marketing. Buyers of flips, estates and value-add properties aren't paying for what the property is — they're paying for what it can be, and they pay more when they can see it. Virtual renovation shows the finished flip while trades are still inside; virtual staging turns a cleared unit into a home; item removal declutters a tenanted photo without touching the tenancy.</p>",
         "local_heading": "The investor's toolkit",
-        "local_text": "<p><a href=\"/products/virtual-renovation\">Virtual renovation is $69 a photo</a> with designer staging included — against $20,000+ for a real pre-sale refresh. Pair it with <a href=\"/products/virtual-staging-1\">{price:virtual-staging} staging</a> for the rooms that only need furniture, and disclose everything on the MLS exactly as our guides show.</p>",
+        "local_text": "<p><a href=\"/products/virtual-renovation-service\">Virtual renovation is $69 a photo</a> with designer staging included — against $20,000+ for a real pre-sale refresh. Pair it with <a href=\"/products/virtual-staging\">{price:virtual-staging} staging</a> for the rooms that only need furniture, and disclose everything on the MLS exactly as our guides show.</p>",
         "hoods_label": "What's on this shelf",
         "hoods": "Virtual renovation guide, Disclosure rules, Item removal, Marketing the flip"
       }
@@ -46,7 +46,7 @@
             "tag": "Service",
             "title": "Virtual renovation — from $69",
             "text": "Dated rooms digitally renovated and staged, disclosed for the MLS. Built for flips, estates and tenanted units.",
-            "link": "/products/virtual-renovation",
+            "link": "/products/virtual-renovation-service",
             "link_label": "See the service →"
           }
         },

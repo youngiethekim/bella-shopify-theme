@@ -1,6 +1,16 @@
 {
   "sections": {
-    "main": { "type": "main-article", "settings": {} }
+    "main": {
+      "type": "main-article",
+      "settings": {}
+    },
+    "lead": {
+      "type": "bella-lead",
+      "settings": {}
+    }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "lead"
+  ]
 }
