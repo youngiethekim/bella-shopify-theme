@@ -43,7 +43,7 @@
       {%- endif -%}
       <div class="ph-price">
         {%- if product.price_varies -%}From {% endif -%}
-        <b id="PhUnit">{{ product.price_min | money }}</b> / {{ section.settings.unit_label }}
+        <b id="PhUnit">{{ product.price_min | money_without_trailing_zeros }}</b> / {{ section.settings.unit_label }}
         {%- if section.settings.enable_tiers %} <span class="tt" tabindex="0" data-tip="Save {{ section.settings.tier1_pct }}% at {{ section.settings.tier1_qty }}+, {{ section.settings.tier2_pct }}% at {{ section.settings.tier2_qty }}+, {{ section.settings.tier3_pct }}% at {{ section.settings.tier3_qty }}+ and {{ section.settings.tier4_pct }}% at {{ section.settings.tier4_qty }}+ {{ section.settings.unit_label }}s — applied automatically in the order box.">· volume discounts up to {{ section.settings.tier4_pct }}%</span>{% endif -%}
       </div>
     </div>
@@ -168,7 +168,7 @@
                     {% if variant.image %}data-image="{{ variant.image | image_url: width: 1400, height: 1050, crop: 'center' }}"{% endif %}
                     {% if variant == current_variant %}selected{% endif %}
                     {% unless variant.available %}disabled{% endunless %}>
-                    {{ variant.title }} — {{ variant.price | money }}{% unless variant.available %} (sold out){% endunless %}
+                    {{ variant.title }} — {{ variant.price | money_without_trailing_zeros }}{% unless variant.available %} (sold out){% endunless %}
                   </option>
                 {%- endfor -%}
               </select>
@@ -196,7 +196,7 @@
               <div class="bb-total">
                 <div class="bb-price">
                   <span class="was" id="BbWas" hidden></span>
-                  <span class="now" id="BbNow">{{ current_variant.price | times: start_qty | money }}</span>
+                  <span class="now" id="BbNow">{{ current_variant.price | times: start_qty | money_without_trailing_zeros }}</span>
                 </div>
                 <div class="per" id="BbPer"></div>
               </div>
@@ -305,7 +305,7 @@
   <div class="buy-sticky" id="BuySticky">
     <div class="bs-total">
       <span>{{ section.settings.sticky_label }}</span>
-      <b id="StickyTotal">{{ current_variant.price | times: start_qty | money }}</b>
+      <b id="StickyTotal">{{ current_variant.price | times: start_qty | money_without_trailing_zeros }}</b>
     </div>
     <button type="submit" form="BellaProductForm" class="prod-buy bs-btn" {% unless product.available %}disabled{% endunless %}>{{ section.settings.buy_label }}</button>
   </div>

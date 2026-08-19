@@ -13,7 +13,7 @@
             <a class="cl-title" href="{{ item.url }}">{{ item.product.title }}</a>
             <div class="cl-meta">
               {%- unless item.product.has_only_default_variant -%}{{ item.variant.title }} · {% endunless -%}
-              {{ item.final_price | money }} each
+              {{ item.final_price | money_without_trailing_zeros }} each
               {%- for property in item.properties -%}
                 {%- unless property.last == blank %} · {{ property.first }}: {{ property.last }}{% endunless -%}
               {%- endfor -%}
@@ -25,7 +25,7 @@
       {%- endfor -%}
       <div class="cart-foot">
         <button type="submit" class="btn-line" name="update" style="border:1px solid var(--line);background:none;font-family:inherit;padding:12px 18px;border-radius:9px;cursor:pointer">Update</button>
-        <span class="total">{{ cart.total_price | money }}</span>
+        <span class="total">{{ cart.total_price | money_without_trailing_zeros }}</span>
         <button type="submit" name="checkout" class="prod-buy" style="width:auto;padding:16px 34px">Check out</button>
       </div>
     {%- endform -%}
