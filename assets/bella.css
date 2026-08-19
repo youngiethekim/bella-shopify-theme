@@ -886,3 +886,14 @@ img{height:auto}
 .mkt-name{flex:1;font-size:13px}
 .mkt-opt .mkt-cur{color:var(--soft)}
 @media(max-width:560px){.mkt-btn .mkt-cur{display:none}}
+/* phones: the language-selector app embed crowds the header row, so the CTA
+   moves into the hamburger menu (it's already the last item there) instead of clipping */
+@media(max-width:760px){
+  .nav{gap:14px;min-width:0}
+  .nav > .btn{display:none}
+  .nav-burger{margin-left:auto}
+  .mark{flex:none}
+}
+@media(min-width:761px) and (max-width:900px){
+  .nav .btn{font-size:11px;padding:11px 14px;letter-spacing:.1em}
+}
