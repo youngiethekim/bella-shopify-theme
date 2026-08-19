@@ -15,6 +15,14 @@
       assign amt = all_products['virtual-staging'].price_min | money_without_trailing_zeros
       assign t = t | replace: '{price:virtual-staging-1}', amt
     endif
+       if t contains '{price:3d-rendering-service-for-architectural-visualization}'
+      assign amt = all_products['3d-rendering-service-for-architectural-visualization'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:3d-rendering-service-for-architectural-visualization}', amt
+    endif
+    if t contains '{price:real-estate-photo-editing}'
+      assign amt = all_products['photo-editing'].price_min | money_without_trailing_zeros
+      assign t = t | replace: '{price:real-estate-photo-editing}', amt
+    endif
     if t contains '{price:3d-rendering}'
       assign amt = all_products['3d-rendering'].price_min | money_without_trailing_zeros
       assign t = t | replace: '{price:3d-rendering}', amt
