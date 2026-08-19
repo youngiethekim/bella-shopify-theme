@@ -92,66 +92,10 @@
     },
     "value": {
       "type": "bella-value",
-      "blocks": {
-        "p1": {
-          "type": "pair",
-          "settings": {
-            "service": "Staging a vacant listing",
-            "old_label": "Physical staging",
-            "old_amount": "$2,000–5,000 a month",
-            "new_amount": "{price:virtual-staging}",
-            "new_unit": "a photo · paid once",
-            "link_label": "Virtual staging →",
-            "url": "/products/virtual-staging"
-          }
-        },
-        "p2": {
-          "type": "pair",
-          "settings": {
-            "service": "Selling homes that aren't built yet",
-            "old_label": "A model home",
-            "old_amount": "$100,000+",
-            "new_amount": "$550",
-            "new_unit": "a render · from your plans",
-            "link_label": "3D rendering →",
-            "url": "/products/3d-rendering"
-          }
-        },
-        "p3": {
-          "type": "pair",
-          "settings": {
-            "service": "Modernizing a dated listing",
-            "old_label": "A real renovation",
-            "old_amount": "$20,000+",
-            "new_amount": "$69",
-            "new_unit": "a photo · renovated virtually",
-            "link_label": "Virtual renovation →",
-            "url": "/products/virtual-renovation-service"
-          }
-        },
-        "p4": {
-          "type": "pair",
-          "settings": {
-            "service": "Getting the twilight hero shot",
-            "old_label": "A dusk re-shoot",
-            "old_amount": "$150–300",
-            "new_amount": "$5",
-            "new_unit": "a photo · pro editing",
-            "link_label": "Photo editing →",
-            "url": "/products/photo-editing"
-          }
-        }
-      },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
       "settings": {
-        "eyebrow": "The math",
-        "heading": "Same result. A fraction of the cost.",
-        "note": "Every Bella service replaces a physical process that costs 10–100× more — staging trucks, model homes, renovation crews, re-shoots. What buyers see on their screen is the same; the bill isn't. Modern technology in the hands of real designers, priced per photo instead of per project.",
+        "eyebrow": "How we do it",
+        "heading": "Better work, priced like it shouldn't be.",
+        "note": "Bella is not a software company, and not an offshore desk. Our team has spent over ten years in real estate and interior design — we know which rooms buyers decide in, which furniture reads on a small screen, and what a listing photo has to do in the three seconds it gets. Every image is composed by hand by a designer, never AI. What lets us price the way we do is not a cheaper product but a better process: we have engineered everything around the design work — intake, revisions, delivery — so the cost sits in the designer's eye rather than in overhead. Competitive pricing usually means a compromise somewhere. Ours does not.",
         "cta_label": "",
         "also_label": ""
       }
