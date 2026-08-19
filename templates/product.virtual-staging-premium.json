@@ -314,7 +314,7 @@
         "rq1": {
           "type": "req",
           "settings": {
-            "text": "Photos at least <strong>2,000 × 3,000 pixels</strong> (about 6 MP). This is a hard minimum — smaller files can't be staged to our quality bar and will be declined."
+            "text": "Photos at least <strong>1,000 pixels</strong> on the long edge — most phone and camera photos already qualify. <strong>2,000 × 3,000 px</strong> (about 6 MP) or larger is ideal and gives your designer the most to work with."
           }
         },
         "rq2": {
