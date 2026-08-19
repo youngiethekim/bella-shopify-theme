@@ -234,7 +234,7 @@
         "rq1": {
           "type": "req",
           "settings": {
-            "text": "Photos at least <strong>2,000 × 3,000 pixels</strong> (about 6 MP) — the same hard minimum as virtual staging; smaller files will be declined."
+            "text": "Photos at least <strong>1,000 pixels</strong> on the long edge — the same minimum as virtual staging. <strong>2,000 × 3,000 px</strong> or larger is ideal."
           }
         },
         "rq2": {
