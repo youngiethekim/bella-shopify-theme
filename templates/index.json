@@ -23,14 +23,14 @@
           "type": "cred",
           "settings": {
             "icon": "clock",
-            "text": "24–48 hour delivery"
+            "text": "Most work back in 24–48 hours"
           }
         },
         "cred3": {
           "type": "cred",
           "settings": {
             "icon": "doc",
-            "text": "MLS-ready & AB 723"
+            "text": "Full usage rights"
           }
         },
         "cred4": {
