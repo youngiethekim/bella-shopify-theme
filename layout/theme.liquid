@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
   {%- endif -%}
 
-  {%- assign vs_home_price = all_products['virtual-staging-1'].price_min | money_without_trailing_zeros -%}
+  {%- assign vs_home_price = all_products['virtual-staging'].price_min | money_without_trailing_zeros -%}
   {%- if request.page_type == 'index' -%}
   <title>Virtual Staging for Real Estate — From {{ vs_home_price }} a Photo | Bella</title>
   <meta name="description" content="Designer virtual staging for real estate — MLS-ready in 24–48 hours, from {{ vs_home_price }} a photo. Plus 3D rendering, floor plans, photo editing and 360 tours. Rated 4.9 on Google.">
@@ -54,7 +54,7 @@
   {%- unless template.name == 'product' or template.name == 'cart' -%}
     <a class="bb-float" id="BbFloat" href="{{ routes.all_products_collection_url }}">
       <span class="bf-txt">Order now</span>
-      <span class="bf-sub">From {{ all_products['virtual-staging-1'].price_min | money_without_trailing_zeros }} · 24–48 h delivery</span>
+      <span class="bf-sub">From {{ all_products['virtual-staging'].price_min | money_without_trailing_zeros }} · 24–48 h delivery</span>
     </a>
   {%- endunless -%}
 
