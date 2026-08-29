@@ -13,68 +13,81 @@
 .brl img{display:block;max-width:100%}
 .brl button{font-family:inherit;cursor:pointer;color:inherit}
 .brl .wrap{max-width:none;padding:0}
-.brl .coverart{display:none}
-.brl .eye{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600;margin:0}
+.brl .brl-coverart{display:none}
+/* tab mode — when the staged lookbook is on the same page */
+.brl.brl-is-tab{padding-top:0}
+.brl.brl-is-tab .brl-hero{padding:0 0 22px;border-bottom:0}
+.brl.brl-is-tab .brl-hero .brl-eye,.brl.brl-is-tab .brl-hero h1{display:none}
+.brl.brl-is-tab .brl-sub{margin-top:0}
+.blb-tabs{display:flex;gap:26px;align-items:flex-end;border-bottom:1px solid #E8E4DE;margin:26px 0 0}
+.blb-tabs button{background:0;border:0;padding:0 0 13px;margin:0;cursor:pointer;font-family:'Jost',system-ui,sans-serif;
+  font-weight:400;font-size:15.5px;color:#9C978F;position:relative;transition:color .15s}
+.blb-tabs button:hover{color:#232120}
+.blb-tabs button[aria-selected="true"]{color:#232120}
+.blb-tabs button[aria-selected="true"]::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:#3E6B4C}
+.blb-tabs button:focus-visible{outline:2px solid #3E6B4C;outline-offset:3px}
+.blb-tabs .tn{font-size:11.5px;color:#9C978F;margin-left:6px}
+.brl .brl-eye{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600;margin:0}
 .brl h1{font-weight:300;font-size:clamp(32px,5vw,58px);letter-spacing:-.018em;line-height:1.06;margin:12px 0 0;text-wrap:balance}
 .brl h2{font-weight:300;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.015em;line-height:1.12;margin:0}
-.brl .sub{color:var(--soft);max-width:62ch;margin:16px 0 0;font-size:17px}
-.brl .hero{padding:46px 0 30px;border-bottom:1px solid var(--line)}
-.brl .lede{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end}
-.brl .facts{display:flex;flex-wrap:wrap;gap:26px;margin-top:6px}
-.brl .facts div{display:flex;flex-direction:column;gap:2px}
-.brl .facts b{font-weight:400;font-size:26px;letter-spacing:-.01em;line-height:1}
-.brl .facts span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
-.brl .bar{position:sticky;top:0;z-index:5;background:rgba(253,252,250,.95);backdrop-filter:blur(8px);padding:14px 0;border-bottom:1px solid var(--line)}
-.brl .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.brl .chip{font-family:inherit;font-weight:300;font-size:13px;border:1px solid var(--line);background:#fff;color:var(--soft);border-radius:99px;padding:8px 15px;cursor:pointer;transition:all .15s}
-.brl .chip:hover{border-color:var(--green);color:var(--ink)}
-.brl .chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
-.brl .chip:focus-visible{outline:2px solid var(--green);outline-offset:2px}
-.brl .chip .n{opacity:.6;font-size:11.5px;margin-left:5px}
-.brl .count{margin-left:auto;font-size:13px;color:var(--faint)}
-.brl .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px 0 8px}
-.brl .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:pointer;padding:0;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
-.brl .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -20px rgba(20,18,16,.32)}
-.brl .card:focus-visible{outline:2px solid var(--green);outline-offset:3px}
-.brl .ph{position:relative;display:block;aspect-ratio:4/3;background:var(--wash);overflow:hidden}
-.brl .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.brl .card:hover .ph img{transform:scale(1.04)}
-.brl .sku{position:absolute;top:10px;left:10px;font-size:10.5px;letter-spacing:.08em;background:rgba(253,252,250,.92);color:var(--ink);padding:4px 8px;border-radius:6px}
-.brl .dur{position:absolute;bottom:10px;right:10px;font-size:10.5px;letter-spacing:.08em;background:rgba(35,33,32,.82);color:#fff;padding:4px 8px;border-radius:6px}
-.brl .cbody{display:block;padding:14px 15px 16px}
-.brl .cbody b{font-weight:400;font-size:15.5px;display:block}
-.brl .cbody span{font-size:12.5px;color:var(--faint);display:block;margin-top:3px}
-.brl .band{border-top:1px solid var(--line);padding:56px 0}
-.brl .steps.three{grid-template-columns:repeat(3,1fr)}
-.brl .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:34px;border-top:1px solid var(--line)}
-.brl .steps div{padding:22px 22px 26px;border-right:1px solid var(--line2)}
-.brl .steps div:last-child{border-right:0}
-.brl .steps .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:600}
-.brl .steps h4{font-weight:400;font-size:17px;margin:9px 0 7px}
-.brl .steps p{margin:0;font-size:14.5px;color:var(--soft);line-height:1.5}
-.brl .cta{border-top:1px solid var(--line);padding:56px 0 10px}
-.brl .cta h2{margin:12px 0 0}
-.brl .ctarow{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:26px}
-.brl .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-size:15px;font-weight:400;padding:13px 26px;border-radius:99px;transition:opacity .15s}
-.brl .btn:hover{opacity:.88}
-.brl .btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-.brl .ctarow small{font-size:13.5px;color:var(--faint)}
-@media(max-width:900px){.brl .grid{grid-template-columns:repeat(2,1fr)}.brl .steps,.brl .steps.three{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.brl .grid{grid-template-columns:1fr}}
-@media(max-width:860px){.brl .lede{grid-template-columns:1fr;gap:26px}}
+.brl .brl-sub{color:var(--soft);max-width:62ch;margin:16px 0 0;font-size:17px}
+.brl .brl-hero{padding:46px 0 30px;border-bottom:1px solid var(--line)}
+.brl .brl-lede{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end}
+.brl .brl-facts{display:flex;flex-wrap:wrap;gap:26px;margin-top:6px}
+.brl .brl-facts div{display:flex;flex-direction:column;gap:2px}
+.brl .brl-facts b{font-weight:400;font-size:26px;letter-spacing:-.01em;line-height:1}
+.brl .brl-facts span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.brl .brl-bar{position:sticky;top:0;z-index:5;background:rgba(253,252,250,.95);backdrop-filter:blur(8px);padding:14px 0;border-bottom:1px solid var(--line)}
+.brl .brl-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.brl .brl-chip{font-family:inherit;font-weight:300;font-size:13px;border:1px solid var(--line);background:#fff;color:var(--soft);border-radius:99px;padding:8px 15px;cursor:pointer;transition:all .15s}
+.brl .brl-chip:hover{border-color:var(--green);color:var(--ink)}
+.brl .brl-chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.brl .brl-chip:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.brl .brl-chip .brl-n{opacity:.6;font-size:11.5px;margin-left:5px}
+.brl .brl-count{margin-left:auto;font-size:13px;color:var(--faint)}
+.brl .brl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px 0 8px}
+.brl .brl-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:pointer;padding:0;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.brl .brl-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -20px rgba(20,18,16,.32)}
+.brl .brl-card:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.brl .brl-ph{position:relative;display:block;aspect-ratio:4/3;background:var(--wash);overflow:hidden}
+.brl .brl-ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.brl .brl-card:hover .brl-ph img{transform:scale(1.04)}
+.brl .brl-sku{position:absolute;top:10px;left:10px;font-size:10.5px;letter-spacing:.08em;background:rgba(253,252,250,.92);color:var(--ink);padding:4px 8px;border-radius:6px}
+.brl .brl-dur{position:absolute;bottom:10px;right:10px;font-size:10.5px;letter-spacing:.08em;background:rgba(35,33,32,.82);color:#fff;padding:4px 8px;border-radius:6px}
+.brl .brl-cbody{display:block;padding:14px 15px 16px}
+.brl .brl-cbody b{font-weight:400;font-size:15.5px;display:block}
+.brl .brl-cbody span{font-size:12.5px;color:var(--faint);display:block;margin-top:3px}
+.brl .brl-band{border-top:1px solid var(--line);padding:56px 0}
+.brl .brl-steps.brl-three{grid-template-columns:repeat(3,1fr)}
+.brl .brl-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:34px;border-top:1px solid var(--line)}
+.brl .brl-steps div{padding:22px 22px 26px;border-right:1px solid var(--line2)}
+.brl .brl-steps div:last-child{border-right:0}
+.brl .brl-steps .brl-k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:600}
+.brl .brl-steps h4{font-weight:400;font-size:17px;margin:9px 0 7px}
+.brl .brl-steps p{margin:0;font-size:14.5px;color:var(--soft);line-height:1.5}
+.brl .brl-cta{border-top:1px solid var(--line);padding:56px 0 10px}
+.brl .brl-cta h2{margin:12px 0 0}
+.brl .brl-ctarow{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:26px}
+.brl .brl-btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-size:15px;font-weight:400;padding:13px 26px;border-radius:99px;transition:opacity .15s}
+.brl .brl-btn:hover{opacity:.88}
+.brl .brl-btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.brl .brl-ctarow small{font-size:13.5px;color:var(--faint)}
+@media(max-width:900px){.brl .brl-grid{grid-template-columns:repeat(2,1fr)}.brl .brl-steps,.brl .brl-steps.brl-three{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.brl .brl-grid{grid-template-columns:1fr}}
+@media(max-width:860px){.brl .brl-lede{grid-template-columns:1fr;gap:26px}}
 @media(prefers-reduced-motion:reduce){.brl *{transition:none!important}}
 
 </style>
 
 <div class="brl">
-  <div class="hero">
-    <div class="lede">
+  <div class="brl-hero">
+    <div class="brl-lede">
       <div>
-        <p class="eye">{{ section.settings.eyebrow }}</p>
+        <p class="brl-eye">{{ section.settings.eyebrow }}</p>
         <h1>{{ section.settings.heading }}</h1>
-        <p class="sub">{{ section.settings.intro }}</p>
+        <p class="brl-sub">{{ section.settings.intro }}</p>
       </div>
-      <div class="facts">
+      <div class="brl-facts">
         <div><b>18</b><span>Looks</span></div>
         <div><b>16</b><span>Stills</span></div>
         <div><b>2</b><span>Animations</span></div>
@@ -83,26 +96,26 @@
     </div>
   </div>
 
-  <div class="bar"><div class="row" id="brl-chips"></div></div>
-  <div class="grid" id="brl-grid"></div>
+  <div class="brl-bar"><div class="brl-row" id="brl-chips"></div></div>
+  <div class="brl-grid" id="brl-grid"></div>
 
-  <section class="band">
-    <p class="eye">{{ section.settings.process_eyebrow }}</p>
+  <section class="brl-band">
+    <p class="brl-eye">{{ section.settings.process_eyebrow }}</p>
     <h2>{{ section.settings.process_heading }}</h2>
-    <p class="sub">{{ section.settings.process_intro }}</p>
-    <div class="steps three">
-      <div><span class="k">Step one</span><h4>Send your drawings</h4><p>Floor plans, elevations, CAD files or architectural drawings &mdash; plus any finishes or references you have in mind.</p></div>
-      <div><span class="k">Step two</span><h4>We build the render</h4><p>A 3D artist models the space, applies your materials and lighting, and produces a photoreal interior or exterior render.</p></div>
-      <div><span class="k">Step three</span><h4>Approve &amp; download</h4><p>Review, request changes, and download high-resolution renders ready for the MLS, brochures and investor decks.</p></div>
+    <p class="brl-sub">{{ section.settings.process_intro }}</p>
+    <div class="brl-steps brl-three">
+      <div><span class="brl-k">Step one</span><h4>Send your drawings</h4><p>Floor plans, elevations, CAD files or architectural drawings &mdash; plus any finishes or references you have in mind.</p></div>
+      <div><span class="brl-k">Step two</span><h4>We build the render</h4><p>A 3D artist models the space, applies your materials and lighting, and produces a photoreal interior or exterior render.</p></div>
+      <div><span class="brl-k">Step three</span><h4>Approve &amp; download</h4><p>Review, request changes, and download high-resolution renders ready for the MLS, brochures and investor decks.</p></div>
     </div>
   </section>
 
-  <section class="cta">
-    <p class="eye">{{ section.settings.cta_eyebrow }}</p>
+  <section class="brl-cta">
+    <p class="brl-eye">{{ section.settings.cta_eyebrow }}</p>
     <h2>{{ section.settings.cta_heading }}</h2>
-    <p class="sub">{{ section.settings.cta_text }}</p>
-    <div class="ctarow">
-      <a class="btn" href="{{ section.settings.cta_link | default: routes.root_url }}">{{ section.settings.cta_label }}</a>
+    <p class="brl-sub">{{ section.settings.cta_text }}</p>
+    <div class="brl-ctarow">
+      <a class="brl-btn" href="{{ section.settings.cta_link | default: routes.root_url }}">{{ section.settings.cta_label }}</a>
       <small>{{ section.settings.cta_fine }}</small>
     </div>
   </section>
@@ -124,14 +137,14 @@
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
 
   function chipHtml(){
-    var h = '<button class="chip" data-room="" aria-pressed="' + (state.room===''), t;
-    h = '<button class="chip" data-room="" aria-pressed="' + (state.room===''?'true':'false') + '">All<span class="n">' + DATA.length + '</span></button>';
+    var h = '<button class="brl-chip" data-room="" aria-pressed="' + (state.room===''), t;
+    h = '<button class="brl-chip" data-room="" aria-pressed="' + (state.room===''?'true':'false') + '">All<span class="brl-n">' + DATA.length + '</span></button>';
     ROOMS.forEach(function(r){
       var n = DATA.filter(function(d){ return d.room===r; }).length;
-      h += '<button class="chip" data-room="' + esc(r) + '" aria-pressed="' + (state.room===r?'true':'false') + '">' + esc(r) + '<span class="n">' + n + '</span></button>';
+      h += '<button class="brl-chip" data-room="' + esc(r) + '" aria-pressed="' + (state.room===r?'true':'false') + '">' + esc(r) + '<span class="brl-n">' + n + '</span></button>';
     });
     var shown = DATA.filter(function(d){ return !state.room || d.room===state.room; }).length;
-    h += '<span class="count">' + shown + (shown===1?' look':' looks') + '</span>';
+    h += '<span class="brl-count">' + shown + (shown===1?' look':' looks') + '</span>';
     return h;
   }
 
@@ -139,17 +152,17 @@
     chips.innerHTML = chipHtml();
     grid.innerHTML = DATA.filter(function(d){ return !state.room || d.room===state.room; })
       .map(function(d,i){
-        return '<button class="card" type="button" data-sku="' + esc(d.sku) + '" aria-label="Open ' + esc(d.sku) + '">'
-          + '<span class="ph"><span class="sku">' + esc(d.sku) + '</span>'
+        return '<button class="brl-card" type="button" data-sku="' + esc(d.sku) + '" aria-label="Open ' + esc(d.sku) + '">'
+          + '<span class="brl-ph"><span class="brl-sku">' + esc(d.sku) + '</span>'
           + '<img src="' + IMG_BASE + encodeURIComponent(d.sku) + '.jpg" alt="' + esc(d.title) + '" loading="lazy" decoding="async">'
-          + (d.dur ? '<span class="dur">' + esc(d.dur) + ' &middot; 1080p</span>' : '')
-          + '</span><span class="cbody"><b>' + esc(d.title) + '</b>'
+          + (d.dur ? '<span class="brl-dur">' + esc(d.dur) + ' &middot; 1080p</span>' : '')
+          + '</span><span class="brl-cbody"><b>' + esc(d.title) + '</b>'
           + '<span>' + esc(d.room) + ' &middot; ' + esc(d.style) + ' &middot; ' + esc(d.caption) + '</span></span></button>';
       }).join('');
   }
 
   chips.addEventListener('click', function(e){
-    var b = e.target.closest('.chip'); if(!b) return;
+    var b = e.target.closest('.brl-chip'); if(!b) return;
     state.room = b.getAttribute('data-room'); render();
   });
 
@@ -157,14 +170,14 @@
   function openLB(sku){
     var d = DATA.filter(function(x){ return x.sku===sku; })[0]; if(!d) return;
     lb.hidden = false;
-    lb.innerHTML = '<div class="lbin"><button class="x" aria-label="Close">&times;</button>'
-      + '<div class="pane"><img src="' + IMG_BASE + encodeURIComponent(d.sku) + '.jpg" alt="' + esc(d.title) + '">'
-      + '<div class="nav"><button class="prev" aria-label="Previous look">&#8592;</button><button class="next" aria-label="Next look">&#8594;</button></div></div>'
-      + '<div class="info"><p class="eye">' + esc(d.sku) + '</p><h3>' + esc(d.title) + '</h3><p>' + esc(d.detail) + '</p>'
-      + '<dl class="meta"><dt>Room</dt><dd>' + esc(d.room) + '</dd><dt>Style</dt><dd>' + esc(d.style) + '</dd>'
+    lb.innerHTML = '<div class="brl-lbin"><button class="brl-x" aria-label="Close">&times;</button>'
+      + '<div class="brl-pane"><img src="' + IMG_BASE + encodeURIComponent(d.sku) + '.jpg" alt="' + esc(d.title) + '">'
+      + '<div class="brl-nav"><button class="prev" aria-label="Previous look">&#8592;</button><button class="next" aria-label="Next look">&#8594;</button></div></div>'
+      + '<div class="brl-info"><p class="brl-eye">' + esc(d.sku) + '</p><h3>' + esc(d.title) + '</h3><p>' + esc(d.detail) + '</p>'
+      + '<dl class="brl-meta"><dt>Room</dt><dd>' + esc(d.room) + '</dd><dt>Style</dt><dd>' + esc(d.style) + '</dd>'
       + '<dt>Delivered</dt><dd>' + esc(d.px) + (d.dur ? ' &middot; ' + esc(d.dur) + ' &middot; 1080p' : '') + '</dd>'
       + '<dt>Quote as</dt><dd>' + esc(d.sku) + '</dd></dl></div></div>';
-    lb.querySelector('.x').onclick = closeLB;
+    lb.querySelector('.brl-x').onclick = closeLB;
     lb.querySelector('.prev').onclick = function(){ step(sku,-1); };
     lb.querySelector('.next').onclick = function(){ step(sku, 1); };
   }
@@ -175,18 +188,66 @@
   }
   function closeLB(){ lb.hidden = true; lb.innerHTML = ''; }
   grid.addEventListener('click', function(e){
-    var c = e.target.closest('.card'); if(c) openLB(c.getAttribute('data-sku'));
+    var c = e.target.closest('.brl-card'); if(c) openLB(c.getAttribute('data-sku'));
   });
   lb.addEventListener('click', function(e){ if(e.target===lb) closeLB(); });
   document.addEventListener('keydown', function(e){
     if(lb.hidden) return;
-    var cur = lb.querySelector('.info .eye'); if(!cur) return;
+    var cur = lb.querySelector('.brl-info .eye'); if(!cur) return;
     if(e.key==='Escape') closeLB();
     if(e.key==='ArrowLeft') step(cur.textContent,-1);
     if(e.key==='ArrowRight') step(cur.textContent, 1);
   });
 
   render();
+
+  /* If the staged lookbook is on this page, present the two collections as tabs.
+     Nothing in bella-lookbook.liquid is modified — its nodes are only regrouped. */
+  try{
+    var blb  = document.querySelector('.blb');
+    var bar  = blb && blb.querySelector('.blb-bar');
+    var bgrid= blb && blb.querySelector('.blb-grid');
+    var hero = blb && blb.querySelector('.blb-hero');
+    if({{ section.settings.as_tab | default: true | json }} && blb && bar && bgrid && hero){
+      root.classList.add('brl-is-tab');
+
+      var panelA=document.createElement('div');
+      panelA.id='blb-panel-staged';
+      panelA.setAttribute('role','tabpanel');
+      hero.parentNode.insertBefore(panelA,hero.nextSibling);
+      [bar,bgrid,blb.querySelector('.blb-empty')].forEach(function(n){ if(n) panelA.appendChild(n); });
+
+      root.id='blb-panel-renders';
+      root.setAttribute('role','tabpanel');
+
+      var tabs=document.createElement('div');
+      tabs.className='blb-tabs';
+      tabs.setAttribute('role','tablist');
+      tabs.innerHTML='<button role="tab" aria-selected="true"  aria-controls="blb-panel-staged"  data-panel="staged">'
+          + {{ section.settings.tab_staged | default: 'Staged rooms' | json }} + '</button>'
+        + '<button role="tab" aria-selected="false" aria-controls="blb-panel-renders" data-panel="renders">'
+          + {{ section.settings.tab_renders | default: '3D renders' | json }}
+          + '<span class="tn">' + DATA.length + '</span></button>';
+      hero.parentNode.insertBefore(tabs,hero.nextSibling);
+
+      var btns=[].slice.call(tabs.querySelectorAll('button'));
+      function show(which){
+        btns.forEach(function(b){ b.setAttribute('aria-selected', String(b.dataset.panel===which)); });
+        panelA.style.display = which==='staged'  ? '' : 'none';
+        root.style.display   = which==='renders' ? '' : 'none';
+      }
+      btns.forEach(function(b){ b.addEventListener('click',function(){ show(b.dataset.panel); }); });
+      tabs.addEventListener('keydown',function(e){
+        var i=btns.indexOf(document.activeElement); if(i<0)return;
+        if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+          e.preventDefault();
+          var n=btns[(i+(e.key==='ArrowRight'?1:btns.length-1))%btns.length];
+          n.focus(); show(n.dataset.panel);
+        }
+      });
+      show(location.hash==='#renders' ? 'renders' : 'staged');
+    }
+  }catch(err){ /* leave both collections visible if anything is unexpected */ }
 })();
 </script>
 
@@ -214,6 +275,9 @@
 {
   "name": "3D Rendering Catalogue",
   "settings": [
+    { "type": "checkbox", "id": "as_tab", "label": "Show as a tab when the staged lookbook is on the same page", "default": true },
+    { "type": "text", "id": "tab_staged", "label": "First tab label", "default": "Staged rooms" },
+    { "type": "text", "id": "tab_renders", "label": "Second tab label", "default": "3D renders" },
     { "type": "text", "id": "img_base", "label": "Image base URL", "default": "https://youngiethekim.github.io/bella-preview/assets/render-lookbook/" },
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Bella · 3D Rendering Studio" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Sell it before you build it." },

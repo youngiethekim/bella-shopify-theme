@@ -1,6 +1,7 @@
 {
   "sections": {
-    "main": { "type": "bella-lookbook", "settings": {} }
+    "main": { "type": "bella-lookbook", "settings": {} },
+    "renders": { "type": "bella-render-lookbook", "settings": {} }
   },
-  "order": ["main"]
+  "order": ["main", "renders"]
 }
