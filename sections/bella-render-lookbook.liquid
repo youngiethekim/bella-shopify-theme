@@ -1,0 +1,233 @@
+<!-- ============================================================
+     BELLA · Rendering Catalogue — paste-ready section
+     Companion to bella-lookbook.liquid. Everything is scoped under .brl
+     so it will not affect the rest of the theme.
+     Images load from an absolute URL — change IMG_BASE below after you
+     upload sections/../render-lookbook/*.jpg to the bella-preview repo.
+     ============================================================ -->
+<style>
+.brl{--bg:#FDFCFA;--ink:#232120;--soft:#6E6A66;--faint:#9C978F;--line:#E8E4DE;--line2:#F0EDE8;--green:#3E6B4C;--wash:#FAF8F5;
+  background:var(--bg);color:var(--ink);font-family:'Jost',system-ui,-apple-system,sans-serif;font-weight:300;line-height:1.6;
+  -webkit-font-smoothing:antialiased;max-width:1440px;margin:0 auto;padding:0 22px 60px}
+.brl,.brl *,.brl *::before,.brl *::after{box-sizing:border-box}
+.brl img{display:block;max-width:100%}
+.brl button{font-family:inherit;cursor:pointer;color:inherit}
+.brl .wrap{max-width:none;padding:0}
+.brl .coverart{display:none}
+.brl .eye{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600;margin:0}
+.brl h1{font-weight:300;font-size:clamp(32px,5vw,58px);letter-spacing:-.018em;line-height:1.06;margin:12px 0 0;text-wrap:balance}
+.brl h2{font-weight:300;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.015em;line-height:1.12;margin:0}
+.brl .sub{color:var(--soft);max-width:62ch;margin:16px 0 0;font-size:17px}
+.brl .hero{padding:46px 0 30px;border-bottom:1px solid var(--line)}
+.brl .lede{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end}
+.brl .facts{display:flex;flex-wrap:wrap;gap:26px;margin-top:6px}
+.brl .facts div{display:flex;flex-direction:column;gap:2px}
+.brl .facts b{font-weight:400;font-size:26px;letter-spacing:-.01em;line-height:1}
+.brl .facts span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.brl .bar{position:sticky;top:0;z-index:5;background:rgba(253,252,250,.95);backdrop-filter:blur(8px);padding:14px 0;border-bottom:1px solid var(--line)}
+.brl .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.brl .chip{font-family:inherit;font-weight:300;font-size:13px;border:1px solid var(--line);background:#fff;color:var(--soft);border-radius:99px;padding:8px 15px;cursor:pointer;transition:all .15s}
+.brl .chip:hover{border-color:var(--green);color:var(--ink)}
+.brl .chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.brl .chip:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.brl .chip .n{opacity:.6;font-size:11.5px;margin-left:5px}
+.brl .count{margin-left:auto;font-size:13px;color:var(--faint)}
+.brl .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px 0 8px}
+.brl .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:pointer;padding:0;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.brl .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -20px rgba(20,18,16,.32)}
+.brl .card:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.brl .ph{position:relative;display:block;aspect-ratio:4/3;background:var(--wash);overflow:hidden}
+.brl .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.brl .card:hover .ph img{transform:scale(1.04)}
+.brl .sku{position:absolute;top:10px;left:10px;font-size:10.5px;letter-spacing:.08em;background:rgba(253,252,250,.92);color:var(--ink);padding:4px 8px;border-radius:6px}
+.brl .dur{position:absolute;bottom:10px;right:10px;font-size:10.5px;letter-spacing:.08em;background:rgba(35,33,32,.82);color:#fff;padding:4px 8px;border-radius:6px}
+.brl .cbody{display:block;padding:14px 15px 16px}
+.brl .cbody b{font-weight:400;font-size:15.5px;display:block}
+.brl .cbody span{font-size:12.5px;color:var(--faint);display:block;margin-top:3px}
+.brl .band{border-top:1px solid var(--line);padding:56px 0}
+.brl .steps.three{grid-template-columns:repeat(3,1fr)}
+.brl .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:34px;border-top:1px solid var(--line)}
+.brl .steps div{padding:22px 22px 26px;border-right:1px solid var(--line2)}
+.brl .steps div:last-child{border-right:0}
+.brl .steps .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:600}
+.brl .steps h4{font-weight:400;font-size:17px;margin:9px 0 7px}
+.brl .steps p{margin:0;font-size:14.5px;color:var(--soft);line-height:1.5}
+.brl .cta{border-top:1px solid var(--line);padding:56px 0 10px}
+.brl .cta h2{margin:12px 0 0}
+.brl .ctarow{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:26px}
+.brl .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-size:15px;font-weight:400;padding:13px 26px;border-radius:99px;transition:opacity .15s}
+.brl .btn:hover{opacity:.88}
+.brl .btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.brl .ctarow small{font-size:13.5px;color:var(--faint)}
+@media(max-width:900px){.brl .grid{grid-template-columns:repeat(2,1fr)}.brl .steps,.brl .steps.three{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.brl .grid{grid-template-columns:1fr}}
+@media(max-width:860px){.brl .lede{grid-template-columns:1fr;gap:26px}}
+@media(prefers-reduced-motion:reduce){.brl *{transition:none!important}}
+
+</style>
+
+<div class="brl">
+  <div class="hero">
+    <div class="lede">
+      <div>
+        <p class="eye">{{ section.settings.eyebrow }}</p>
+        <h1>{{ section.settings.heading }}</h1>
+        <p class="sub">{{ section.settings.intro }}</p>
+      </div>
+      <div class="facts">
+        <div><b>18</b><span>Looks</span></div>
+        <div><b>16</b><span>Stills</span></div>
+        <div><b>2</b><span>Animations</span></div>
+        <div><b>5000</b><span>Max px wide</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar"><div class="row" id="brl-chips"></div></div>
+  <div class="grid" id="brl-grid"></div>
+
+  <section class="band">
+    <p class="eye">{{ section.settings.process_eyebrow }}</p>
+    <h2>{{ section.settings.process_heading }}</h2>
+    <p class="sub">{{ section.settings.process_intro }}</p>
+    <div class="steps three">
+      <div><span class="k">Step one</span><h4>Send your drawings</h4><p>Floor plans, elevations, CAD files or architectural drawings &mdash; plus any finishes or references you have in mind.</p></div>
+      <div><span class="k">Step two</span><h4>We build the render</h4><p>A 3D artist models the space, applies your materials and lighting, and produces a photoreal interior or exterior render.</p></div>
+      <div><span class="k">Step three</span><h4>Approve &amp; download</h4><p>Review, request changes, and download high-resolution renders ready for the MLS, brochures and investor decks.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <p class="eye">{{ section.settings.cta_eyebrow }}</p>
+    <h2>{{ section.settings.cta_heading }}</h2>
+    <p class="sub">{{ section.settings.cta_text }}</p>
+    <div class="ctarow">
+      <a class="btn" href="{{ section.settings.cta_link | default: routes.root_url }}">{{ section.settings.cta_label }}</a>
+      <small>{{ section.settings.cta_fine }}</small>
+    </div>
+  </section>
+</div>
+
+<div class="brl-lb" id="brl-lb" hidden></div>
+
+<script>
+(function(){
+  var IMG_BASE = {{ section.settings.img_base | default: 'https://youngiethekim.github.io/bella-preview/assets/render-lookbook/' | json }};
+  var DATA = [{"sku": "LR-CGI-100", "room": "Great Room", "style": "Coastal", "title": "Coastal great room", "caption": "Open plan, water view, hard afternoon sun", "detail": "Directional sunlight throwing real window patterning across the floor boards. Sun study is the thing buyers feel and can’t name — it tells them which units get the light and at what hour. Charcoal cabinetry against warm oak, sea held in the glazing rather than blown out.", "px": "3840 × 2160 px", "dur": ""}, {"sku": "LR-CGI-110", "room": "Great Room", "style": "Scandinavian", "title": "Compact open plan", "caption": "Kitchen, dining and living in one frame", "detail": "The hardest plan to sell on paper and the most common in new multi-family: one room doing three jobs. This frame proves the scale reads — the sofa sits correctly against the dining set, the balcony stays exposed, and the eye height is where a buyer’s actually is.", "px": "3840 × 2164 px", "dur": ""}, {"sku": "LR-CGI-120", "room": "Great Room", "style": "Scandinavian", "title": "Four-room plan, full depth", "caption": "Kitchen through island, dining and living", "detail": "A single camera carrying four zones without any of them going muddy. For a builder this is the whole-floor shot — the one that replaces four separate room renders in a brochure and shows how the plan actually flows.", "px": "3800 × 2138 px", "dur": ""}, {"sku": "LR-CGI-130", "room": "Great Room", "style": "Contemporary", "title": "Townhome ground floor", "caption": "Open stair, living through to dining", "detail": "The open stair is the tell. Treads, stringers and their shadows have to agree with light coming from three directions at once, which is where weaker renders fall apart. Long narrow ground floors are the townhome standard, so this is the reference for that product type.", "px": "3800 × 2138 px", "dur": ""}, {"sku": "LR-CGI-140", "room": "Great Room", "style": "Transitional", "title": "Suburban great room", "caption": "Warm palette, island seating, yard beyond", "detail": "The closest thing here to a North American production-builder interior, in the palette that market actually specifies — rust and charcoal upholstery, brass fixture, oak floor. A figure at the island gives scale, which is standard for builder marketing and wrong for a listing photo.", "px": "3840 × 2783 px", "dur": ""}, {"sku": "LR-CGI-150", "room": "Great Room", "style": "Bold Luxe", "title": "Vaulted living, stone fireplace", "caption": "Book-matched marble, brass pendant, vault", "detail": "Premium spec sold as premium: a book-matched stone fireplace running the full height of a vault, with the veining continuous across the joint. That detail is exactly what a buyer is paying the upgrade for, and it has to survive the render to be worth quoting.", "px": "3840 × 2160 px", "dur": ""}, {"sku": "LR-CGI-160", "room": "Great Room", "style": "Bold Luxe", "title": "Layered living and dining", "caption": "Coffered ceiling, filled shelving, cove light", "detail": "The highest prop density in the collection — filled bookcases, a patterned rug, a timber-coffered ceiling with concealed cove lighting, and a laid dining room behind. Dressing is where renders usually turn plastic. This one carries a lot of it and stays photographic.", "px": "3640 × 2048 px", "dur": ""}, {"sku": "KT-CGI-100", "room": "Kitchen", "style": "Contemporary", "title": "Panelled kitchen", "caption": "Full-height veneer, marble splashback", "detail": "Full-height oak panelling reading as veneer rather than a repeating texture — the usual giveaway in a CG kitchen. Useful for showing a finish package where the millwork is the product.", "px": "2000 × 1500 px", "dur": ""}, {"sku": "BA-CGI-100", "room": "Bath", "style": "Contemporary", "title": "Bath and laundry", "caption": "Large-format stone, glass return, integrated laundry", "detail": "Baths are where composites break: wet reflections, shower glass and chrome all have to agree with one light. Shower glass carries a believable green edge here, the mirror reflects the correct room, and the towels read as cloth. Also a plan point — a combined bath-laundry, common and rarely rendered well.", "px": "3840 × 3487 px", "dur": ""}, {"sku": "BA-CGI-110", "room": "Bath", "style": "Bold Luxe", "title": "Primary bath, tower floor", "caption": "Travertine, freestanding tub, city outlook", "detail": "The upgrade-tier bath: bronze-framed screens, a stone trough vanity, and a mirror run that reflects correctly down the length of the room. The outlook through the window is the thing that sells the floor level, not the fixtures.", "px": "3840 × 3200 px", "dur": ""}, {"sku": "BA-CGI-120", "room": "Bath", "style": "Traditional", "title": "Subway tile bath", "caption": "Bevelled tile, walk-in shower, timber vanity", "detail": "Standard-spec rather than upgrade — useful precisely because most units are this, not the tower bath. The bevelled tile catching the downlights is the detail carrying it.", "px": "2100 × 1181 px", "dur": ""}, {"sku": "EX-CGI-130", "room": "Exterior", "style": "Contemporary", "title": "Townhouse cluster", "caption": "Front elevation from the turning circle", "detail": "A conventional elevation render done properly: grade, driveway, undercroft parking and planting all resolving together. This is the sheet that goes on the hoarding and in the first brochure spread, before anything is built.", "px": "4500 × 2531 px", "dur": ""}, {"sku": "EX-CGI-100", "room": "Exterior", "style": "Traditional", "title": "Brick terrace row", "caption": "Masterplan view with landscape and water", "detail": "A masterplan image rather than a single building — entourage, planting, water and sky all built. For a builder this is the community shot: it sells the neighbourhood the buyer is moving into, not the unit they are buying.", "px": "3000 × 3000 px", "dur": ""}, {"sku": "EX-CGI-110", "room": "Exterior", "style": "Contemporary", "title": "Apartment block, street view", "caption": "Timber screens, planted balconies, mid-afternoon", "detail": "Material separation is the work here — render panel, timber slat, glass balustrade and brick each reading as themselves at a distance. That is what makes an elevation render usable for a finishes conversation rather than just a mood image.", "px": "3000 × 1786 px", "dur": ""}, {"sku": "EX-CGI-120", "room": "Exterior", "style": "Contemporary", "title": "Twilight streetscape", "caption": "Charred timber, wet asphalt, warm windows", "detail": "Twilight is the highest-value exterior a builder buys and the hardest to produce: wet road reflections, bollard lighting, interior spill and a dusk sky all balanced in one frame. It is also the shot that makes a dark-clad elevation look warm rather than grim.", "px": "3840 × 2492 px", "dur": ""}, {"sku": "EX-CGI-140", "room": "Exterior", "style": "Patio", "title": "Rooftop amenity at dusk", "caption": "Blue hour, interior spill, planted terrace", "detail": "Amenity decks are sold on atmosphere, and blue hour is where that lives — sky, interior spill and deck lanterns all resolving at once. At 5000 px wide this is also the largest asset in the collection, which matters for hoarding and large-format print.", "px": "5000 × 3538 px", "dur": ""}, {"sku": "MO-CGI-100", "room": "Motion", "style": "Contemporary", "title": "Exterior walkthrough", "caption": "49 seconds, 1080p, continuous camera move", "detail": "A full exterior animation with animated entourage, moving planting and one continuous camera pass. An order of magnitude more production than a still and priced separately. Delivered at 1080p, which is below what a 2026 sales-centre screen or a paid social cut wants — confirm the studio can deliver 4K before quoting it.", "px": "1920 × 1080 px", "dur": "49 s"}, {"sku": "MO-CGI-110", "room": "Motion", "style": "Patio", "title": "Terrace, night scene", "caption": "10 seconds, 1080p, practical lighting", "detail": "The most atmospheric asset in the collection: candle and lantern practicals, planted uplighting, a visible star field. Ten seconds at a very high bitrate, which reads as a showreel excerpt rather than a delivered cut — worth asking to see the full sequence it came from.", "px": "1920 × 1080 px", "dur": "10 s"}];
+  var ROOMS = ["Great Room", "Kitchen", "Bath", "Exterior", "Motion"];
+  var root = document.querySelector('.brl');
+  var grid = document.getElementById('brl-grid');
+  var chips = document.getElementById('brl-chips');
+  var state = { room: '' };
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function chipHtml(){
+    var h = '<button class="chip" data-room="" aria-pressed="' + (state.room===''), t;
+    h = '<button class="chip" data-room="" aria-pressed="' + (state.room===''?'true':'false') + '">All<span class="n">' + DATA.length + '</span></button>';
+    ROOMS.forEach(function(r){
+      var n = DATA.filter(function(d){ return d.room===r; }).length;
+      h += '<button class="chip" data-room="' + esc(r) + '" aria-pressed="' + (state.room===r?'true':'false') + '">' + esc(r) + '<span class="n">' + n + '</span></button>';
+    });
+    var shown = DATA.filter(function(d){ return !state.room || d.room===state.room; }).length;
+    h += '<span class="count">' + shown + (shown===1?' look':' looks') + '</span>';
+    return h;
+  }
+
+  function render(){
+    chips.innerHTML = chipHtml();
+    grid.innerHTML = DATA.filter(function(d){ return !state.room || d.room===state.room; })
+      .map(function(d,i){
+        return '<button class="card" type="button" data-sku="' + esc(d.sku) + '" aria-label="Open ' + esc(d.sku) + '">'
+          + '<span class="ph"><span class="sku">' + esc(d.sku) + '</span>'
+          + '<img src="' + IMG_BASE + encodeURIComponent(d.sku) + '.jpg" alt="' + esc(d.title) + '" loading="lazy" decoding="async">'
+          + (d.dur ? '<span class="dur">' + esc(d.dur) + ' &middot; 1080p</span>' : '')
+          + '</span><span class="cbody"><b>' + esc(d.title) + '</b>'
+          + '<span>' + esc(d.room) + ' &middot; ' + esc(d.style) + ' &middot; ' + esc(d.caption) + '</span></span></button>';
+      }).join('');
+  }
+
+  chips.addEventListener('click', function(e){
+    var b = e.target.closest('.chip'); if(!b) return;
+    state.room = b.getAttribute('data-room'); render();
+  });
+
+  var lb = document.getElementById('brl-lb');
+  function openLB(sku){
+    var d = DATA.filter(function(x){ return x.sku===sku; })[0]; if(!d) return;
+    lb.hidden = false;
+    lb.innerHTML = '<div class="lbin"><button class="x" aria-label="Close">&times;</button>'
+      + '<div class="pane"><img src="' + IMG_BASE + encodeURIComponent(d.sku) + '.jpg" alt="' + esc(d.title) + '">'
+      + '<div class="nav"><button class="prev" aria-label="Previous look">&#8592;</button><button class="next" aria-label="Next look">&#8594;</button></div></div>'
+      + '<div class="info"><p class="eye">' + esc(d.sku) + '</p><h3>' + esc(d.title) + '</h3><p>' + esc(d.detail) + '</p>'
+      + '<dl class="meta"><dt>Room</dt><dd>' + esc(d.room) + '</dd><dt>Style</dt><dd>' + esc(d.style) + '</dd>'
+      + '<dt>Delivered</dt><dd>' + esc(d.px) + (d.dur ? ' &middot; ' + esc(d.dur) + ' &middot; 1080p' : '') + '</dd>'
+      + '<dt>Quote as</dt><dd>' + esc(d.sku) + '</dd></dl></div></div>';
+    lb.querySelector('.x').onclick = closeLB;
+    lb.querySelector('.prev').onclick = function(){ step(sku,-1); };
+    lb.querySelector('.next').onclick = function(){ step(sku, 1); };
+  }
+  function step(sku,dir){
+    var vis = DATA.filter(function(d){ return !state.room || d.room===state.room; });
+    var i = vis.findIndex(function(d){ return d.sku===sku; }); if(i<0) return;
+    openLB(vis[(i+dir+vis.length)%vis.length].sku);
+  }
+  function closeLB(){ lb.hidden = true; lb.innerHTML = ''; }
+  grid.addEventListener('click', function(e){
+    var c = e.target.closest('.card'); if(c) openLB(c.getAttribute('data-sku'));
+  });
+  lb.addEventListener('click', function(e){ if(e.target===lb) closeLB(); });
+  document.addEventListener('keydown', function(e){
+    if(lb.hidden) return;
+    var cur = lb.querySelector('.info .eye'); if(!cur) return;
+    if(e.key==='Escape') closeLB();
+    if(e.key==='ArrowLeft') step(cur.textContent,-1);
+    if(e.key==='ArrowRight') step(cur.textContent, 1);
+  });
+
+  render();
+})();
+</script>
+
+<style>
+.brl-lb{position:fixed;inset:0;z-index:9999;background:rgba(35,33,32,.72);display:flex;align-items:center;justify-content:center;padding:24px}
+.brl-lb[hidden]{display:none}
+.brl-lb .lbin{position:relative;background:#fff;border-radius:14px;overflow:hidden;max-width:min(1120px,94vw);width:100%;max-height:92vh;
+  display:grid;grid-template-columns:1.5fr 1fr;font-family:'Jost',system-ui,sans-serif;font-weight:300;color:#232120}
+.brl-lb .pane{position:relative;background:#FAF8F5;display:flex;align-items:center;justify-content:center;overflow:hidden;min-height:0}
+.brl-lb .pane img{max-width:100%;max-height:92vh;object-fit:contain;display:block}
+.brl-lb .info{padding:30px 32px;overflow-y:auto;display:flex;flex-direction:column;gap:14px}
+.brl-lb .info .eye{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#3E6B4C;font-weight:600;margin:0}
+.brl-lb .info h3{font-weight:300;font-size:26px;letter-spacing:-.012em;line-height:1.15;margin:0}
+.brl-lb .info p{margin:0;color:#6E6A66;font-size:15.5px;line-height:1.62}
+.brl-lb .meta{display:grid;grid-template-columns:auto 1fr;gap:7px 18px;font-size:13px;border-top:1px solid #F0EDE8;padding-top:16px;margin:2px 0 0}
+.brl-lb .meta dt{color:#9C978F;letter-spacing:.06em;font-size:11.5px;text-transform:uppercase;padding-top:2px}
+.brl-lb .meta dd{margin:0;font-weight:400}
+.brl-lb .x{position:absolute;top:12px;right:14px;z-index:5;background:#fff;border:1px solid #E8E4DE;border-radius:99px;width:34px;height:34px;font-size:17px;line-height:1;cursor:pointer}
+.brl-lb .nav{position:absolute;bottom:14px;left:14px;display:flex;gap:8px}
+.brl-lb .nav button{background:rgba(253,252,250,.94);border:1px solid #E8E4DE;border-radius:99px;width:34px;height:34px;font-size:15px;line-height:1;cursor:pointer}
+@media(max-width:860px){.brl-lb .lbin{grid-template-columns:1fr;grid-template-rows:auto 1fr}.brl-lb .pane img{max-height:44vh}}
+</style>
+
+{% schema %}
+{
+  "name": "3D Rendering Catalogue",
+  "settings": [
+    { "type": "text", "id": "img_base", "label": "Image base URL", "default": "https://youngiethekim.github.io/bella-preview/assets/render-lookbook/" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Bella · 3D Rendering Studio" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Sell it before you build it." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "default": "Eighteen photoreal renders built from plans — great rooms, kitchens, baths, elevations and motion. Every one was made before there was a model home to photograph, with the client's exact materials, finishes and light. Filter by room, open a look for what it demonstrates, and quote its code when you brief us." },
+    { "type": "text", "id": "process_eyebrow", "label": "Process eyebrow", "default": "How it works" },
+    { "type": "text", "id": "process_heading", "label": "Process heading", "default": "Three steps, MLS-ready in days." },
+    { "type": "textarea", "id": "process_intro", "label": "Process intro", "default": "The same process behind every look in this catalogue." },
+    { "type": "text", "id": "cta_eyebrow", "label": "CTA eyebrow", "default": "Ready to render your project?" },
+    { "type": "text", "id": "cta_heading", "label": "CTA heading", "default": "Send us your plans." },
+    { "type": "textarea", "id": "cta_text", "label": "CTA text", "default": "Quoted per project, interior and exterior, priced by scope — built from your plans, in your exact materials, finishes and light." },
+    { "type": "text", "id": "cta_label", "label": "CTA button label", "default": "Get a quote" },
+    { "type": "url", "id": "cta_link", "label": "CTA button link" },
+    { "type": "text", "id": "cta_fine", "label": "CTA fine print", "default": "Unlimited revisions until it’s right. Brokerage or builder with volume? Talk to us about volume pricing." }
+  ],
+  "presets": [{ "name": "3D Rendering Catalogue" }]
+}
+{% endschema %}
