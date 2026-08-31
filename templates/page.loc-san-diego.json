@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
+        "eyebrow": "Virtual home staging near you",
         "heading": "Virtual Home Staging in San Diego, CA",
-        "lede": "Coastal light, military relocations and lifestyle buyers: San Diego listings are made for staging. Bella delivers MLS-ready staged photos in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "lede": "Coastal light, military relocations and lifestyle buyers: San Diego listings are made for staging. Bella delivers MLS-ready virtual home staging in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "San Diego",
-        "market_heading": "Why staging matters in the San Diego market",
-        "market_text": "<p>San Diego's steady stream of military and defense-industry relocations means a constant pool of buyers shopping on short timelines from far away — buyers who rank listings almost entirely by photos before a whirlwind house-hunting trip. Staged photos get shortlisted; empty ones get skipped.</p><p>And like the rest of coastal California, the lifestyle is the pitch: staged patios, decks and indoor-outdoor rooms let a La Jolla condo or a North Park bungalow sell the weather along with the walls.</p>",
+        "market_heading": "Why home staging matters in the San Diego market",
+        "market_text": "<p>San Diego's steady stream of military and defense-industry relocations means a constant pool of buyers shopping on short timelines from far away — buyers who rank listings almost entirely by photos before a whirlwind house-hunting trip. Home staging gets a listing shortlisted; empty photos get skipped.</p><p>And like the rest of coastal California, the lifestyle is the pitch: staged patios, decks and indoor-outdoor rooms let a La Jolla condo or a North Park bungalow sell the weather along with the walls.</p><p>The ADU boom adds a second job for staging here. A converted garage or granny flat is often the reason a buyer stretches for the property, but photographed empty it reads as storage. Staged as a studio with a bed, a table and a place to sit, it reads as the rental income or in-law suite the listing is really selling.</p>",
         "local_heading": "Staged for the San Diego buyer",
-        "local_text": "<p>Our designers stage coastal-contemporary for beach communities, clean modern for downtown condos, and family transitional for Carlsbad, Chula Vista and the inland suburbs. MLS-ready in 24 to 48 hours, disclosed as virtually staged.</p>",
+        "local_text": "<p>Designers stage coastal-casual for La Jolla, Pacific Beach and Encinitas, modern for downtown and East Village condos, and warm bungalow looks for North Park, South Park and Normal Heights.</p><p>Military relocation timelines drive a lot of the urgency, so photos come back in 24 to 48 hours — fast enough to list inside the window a PCS-ing buyer is actually house-hunting in.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "La Jolla, Pacific Beach, North Park, Hillcrest, Point Loma, Del Mar, Encinitas, Carlsbad, Chula Vista, Oceanside"
+        "hoods": "La Jolla, Pacific Beach, North Park, South Park, Normal Heights, Encinitas, Carlsbad, Chula Vista, Downtown, Point Loma"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Does this meet California's disclosure requirements?",
+            "answer": "Yes — San Diego orders are built to the AB 723 standard, and disclosure wording ships with the files. Your broker or board has the final say on exactly how it appears on the listing."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage an ADU or converted garage?",
+            "answer": "Yes, and it's worth doing. An empty ADU photographs as storage; staged as a small studio it reads as rental income or an in-law suite, which is usually why the buyer is interested in the property at all."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "A lot of my buyers are military, relocating on short notice. Does that matter?",
+            "answer": "It puts pressure on turnaround more than anything. A PCS-ing buyer house-hunts inside a narrow window, so photos coming back in 24 to 48 hours means your listing is live while they're actually looking."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage outdoor space?",
+            "answer": "Yes. In coastal San Diego the patio, deck or indoor-outdoor room is often the strongest thing about the property, and it's the room that suffers most from being photographed empty."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from San Diego agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

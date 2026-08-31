@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Los Angeles, CA",
-        "lede": "LA listings sell a lifestyle before they sell square footage. Bella stages your photos — and turns day shots to twilight — in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Los Angeles, CA",
+        "lede": "LA listings sell a lifestyle before they sell square footage. Bella's virtual home staging — plus day-to-twilight editing — comes back in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Los Angeles",
-        "market_heading": "Why staging matters in the Los Angeles market",
-        "market_text": "<p>Los Angeles buyers are as image-literate as any in the country — they scroll past anything that doesn't look like the homes they see on Instagram and Zillow's front page. An empty Spanish bungalow or a bare new build in the hills leaves the lifestyle to the imagination, and in LA the lifestyle is the product.</p><p>Indoor-outdoor space is where LA listings win: staged patios, decks and yards routinely out-click staged living rooms. We stage exteriors too, and our day-to-dusk editing turns a flat afternoon exterior into the golden-hour shot that anchors the listing.</p>",
+        "market_heading": "Why home staging matters in the Los Angeles market",
+        "market_text": "<p>Los Angeles buyers are as image-literate as any in the country — they scroll past anything that doesn't look like the homes they see on Instagram and Zillow's front page. An empty Spanish bungalow or a bare new build in the hills leaves the lifestyle to the imagination, and in LA the lifestyle is the product.</p><p>Indoor-outdoor space is where LA listings win: staged patios, decks and yards routinely out-click staged living rooms. Our home staging covers exteriors too, and our day-to-dusk editing turns a flat afternoon exterior into the golden-hour shot that anchors the listing.</p><p>Los Angeles is also a market where physical staging is genuinely expensive and genuinely slow — coastal and hillside listings can run thousands a month, and scheduling a crew up a canyon road is its own problem. Staging the photos removes the logistics and fixes the cost at {price:virtual-staging} a photo, whether the listing closes in ten days or ninety.</p>",
         "local_heading": "Staged for the LA buyer",
-        "local_text": "<p>From Silver Lake creative contemporaries to Westside family traditionals, our designers furnish to the buyer each pocket attracts. Every image is MLS-ready, disclosed as virtually staged, and delivered in 24 to 48 hours.</p>",
+        "local_text": "<p>From Silver Lake creative contemporaries to Westside family traditionals, our designers furnish to the buyer each pocket attracts. Every image is MLS-ready, disclosed as virtually staged, and delivered in 24 to 48 hours.</p><p>Architectural listings get handled as architecture. A Spanish revival, a mid-century post-and-beam and a new spec build each want a different furniture vocabulary, and staging that ignores the house tends to read as a stock room dropped into someone's photo.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Silver Lake, Venice, Santa Monica, West Hollywood, Pasadena, Sherman Oaks, Studio City, Long Beach, Culver City, DTLA"
+        "hoods": "Silver Lake, Los Feliz, Echo Park, Venice, Santa Monica, Brentwood, Studio City, Sherman Oaks, Pasadena, Hollywood Hills"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Does this meet California's disclosure rules?",
+            "answer": "Yes. LA orders are built to the AB 723 standard and disclosure wording ships with the files. Your broker or board is the final word on exactly where it appears on the listing."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage the patio and yard, not just inside?",
+            "answer": "Yes, and in LA we'd push for it. Indoor-outdoor space is what the market is buying, and staged patios and decks routinely draw more engagement than staged living rooms."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you turn my daytime exterior into a twilight shot?",
+            "answer": "Yes — that's day-to-dusk editing, and it's one of the most-ordered add-ons on LA listings. A flat 2pm exterior becomes the golden-hour hero shot without a second photography visit."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "My listing is a period Spanish. Will the furniture look wrong?",
+            "answer": "It shouldn't — a designer composes to the architecture rather than dropping in a template. Spanish revival, mid-century and new-build spec homes each get a different furniture vocabulary."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Los Angeles agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Tampa, FL",
-        "lede": "One of America's busiest relocation markets, shopped largely from out of state. Bella stages Tampa Bay listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Tampa, FL",
+        "lede": "One of America's busiest relocation markets, shopped largely from out of state. Bella's virtual home staging turns Tampa Bay listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Tampa",
-        "market_heading": "Why staging matters in the Tampa market",
-        "market_text": "<p>Tampa Bay has spent years near the top of national relocation lists, and the buyers arriving from the Northeast and Midwest do most of their shopping before the moving truck is booked. For them the listing photos are the property tour — and an empty stucco ranch with tile floors reads as an echo, not a home.</p><p>The bay itself does heavy lifting in local marketing: staged waterfront lanais, pool decks and bonus rooms consistently out-perform interior shots. We stage outdoor living too, and day-to-dusk editing turns a flat exterior into the sunset-over-the-water shot.</p>",
+        "market_heading": "Why home staging matters in the Tampa market",
+        "market_text": "<p>Tampa Bay has spent years near the top of national relocation lists, and the buyers arriving from the Northeast and Midwest do most of their shopping before the moving truck is booked. For them the listing photos are the property tour — and an empty stucco ranch with tile floors reads as an echo, not a home.</p><p>The bay itself does heavy lifting in local marketing: staged waterfront lanais, pool decks and bonus rooms consistently out-perform interior shots. Our home staging covers outdoor living too, and day-to-dusk editing turns a flat exterior into the sunset-over-the-water shot.</p><p>Tampa's inventory also skews toward the two hardest room types to photograph empty: wide-open great rooms in newer builds, where there's nothing to establish scale, and tiled Florida rooms that read as unfinished space until furniture gives them a purpose.</p>",
         "local_heading": "Staged for the Tampa buyer",
-        "local_text": "<p>Our designers stage coastal-bright for South Tampa and St. Pete condos, airy transitional for Wesley Chapel and Brandon family homes, and clean modern for Channelside towers. Stellar MLS-ready files in 24 to 48 hours, disclosure guidance included.</p>",
+        "local_text": "<p>Designers stage coastal-transitional for waterfront and beach communities, clean contemporary for downtown and Water Street condos, and family looks for Carrollwood, Westchase and the Pasco and Hillsborough suburbs. Files are Stellar MLS-ready in 24 to 48 hours.</p><p>Outdoor rooms are staged as rooms. A screened lanai or pool deck with furniture in it does more for a Tampa listing than another angle of the same living room.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "South Tampa, Hyde Park, Seminole Heights, Channelside, Westchase, St. Petersburg, Clearwater, Wesley Chapel, Brandon, Riverview"
+        "hoods": "South Tampa, Hyde Park, Seminole Heights, Water Street, Westchase, Carrollwood, St. Petersburg, Clearwater, Riverview"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these upload to Stellar MLS?",
+            "answer": "Yes. Files come back at standard Stellar MLS dimensions and specs, ready to post. Disclosure guidance is included and we recommend noting virtual staging in the remarks."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage a screened lanai or pool deck?",
+            "answer": "Yes, and in Tampa we'd recommend it before another interior angle. Outdoor living is a large part of what buyers are shopping for, and an empty lanai is one of the weakest photos in a typical listing set."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "My buyers are relocating from up north and haven't visited. Does staging help?",
+            "answer": "It's most of what they're judging on. A buyer building a shortlist from Ohio or New Jersey has only the photos, and an empty tiled room gives them no sense of scale or of what living there feels like."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "The great room is huge and empty. How do you handle that?",
+            "answer": "By establishing scale. Wide-open great rooms are hard to read without furniture — there's nothing to measure against. Staged with a seating arrangement and a dining zone, the same room reads as generous rather than cavernous."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Tampa agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Atlanta, GA",
-        "lede": "Atlanta's growth market runs on investors, relocations and fast flips. Bella stages Atlanta listings in 24 to 48 hours, from {price:virtual-staging} a photo — renovations rendered too.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Atlanta, GA",
+        "lede": "Atlanta's growth market runs on investors, relocations and fast flips. Bella's virtual home staging turns Atlanta listings around in 24 to 48 hours, from {price:virtual-staging} a photo — renovations rendered too.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Atlanta",
-        "market_heading": "Why staging matters in the Atlanta market",
-        "market_text": "<p>Atlanta absorbs tens of thousands of new residents a year, and many of them shortlist homes from out of state before a single visit. Staged photos give relocating buyers the confidence to book the one weekend of showings they'll fly in for.</p><p>It's also one of the country's busiest flip and BRRRR markets. For investor listings, virtual staging sells the finished flip, and our virtual renovation service lets wholesalers and flippers market the <em>after</em> while the property is still the before.</p>",
+        "market_heading": "Why home staging matters in the Atlanta market",
+        "market_text": "<p>Atlanta absorbs tens of thousands of new residents a year, and many of them shortlist homes from out of state before a single visit. Staged photos give relocating buyers the confidence to book the one weekend of showings they'll fly in for.</p><p>It's also one of the country's busiest flip and BRRRR markets. For investor listings, virtual home staging sells the finished flip, and our virtual renovation service lets wholesalers and flippers market the after while the property is still the before — useful when a property trades twice in a year and the second listing needs to look nothing like the first.</p><p>Atlanta's other quirk is spread. A buyer weighing Grant Park against Alpharetta is choosing between two different lives, not two similar houses. Staging that reads correctly for each — urban and compact, or suburban and family-sized — does more work here than in cities with a single dominant housing type.</p>",
         "local_heading": "Staged for the Atlanta buyer",
-        "local_text": "<p>Designers stage modern-warm for Midtown and Old Fourth Ward condos, classic South for Buckhead, and family transitional for the northern suburbs. Every image is FMLS/GAMLS-ready in 24 to 48 hours with disclosure guidance.</p>",
+        "local_text": "<p>Designers stage modern-warm for Midtown and Old Fourth Ward condos, classic South for Buckhead, and family transitional for the northern suburbs. Every image is FMLS and GAMLS-ready in 24 to 48 hours with disclosure guidance.</p><p>Investor work moves on a different clock, so flip portfolios are quoted as a batch and delivered together rather than photo by photo — the whole listing lands at once, ready to post.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Buckhead, Midtown, Old Fourth Ward, Inman Park, Grant Park, East Atlanta, Decatur, Sandy Springs, Alpharetta, Marietta"
+        "hoods": "Midtown, Old Fourth Ward, Buckhead, Grant Park, East Atlanta, Decatur, Alpharetta, Sandy Springs"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these photos work on FMLS and GAMLS?",
+            "answer": "Yes. Atlanta is one of the few markets running two major systems side by side, and files are exported to the specifications both accept, so the same set uploads to either without re-exporting."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "I flip houses. Can you stage before the renovation is finished?",
+            "answer": "That's virtual renovation rather than staging. We render the finished result from photos of the current condition, so you can market the after while the property is still the before — common on Atlanta BRRRR and wholesale deals."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you stage differently for Buckhead than for the suburbs?",
+            "answer": "Yes, and it matters more here than most cities. Buckhead leans classic and formal; Midtown and O4W lean modern-warm; the northern suburbs want family transitional. Tell us the pocket and we furnish to that buyer."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Most of my buyers are relocating. Does that change anything?",
+            "answer": "It raises the stakes on photos. A buyer flying in from out of state builds their entire shortlist online and books one weekend of showings. Listings that photograph as furnished homes make that list; empty rooms usually don't."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Atlanta agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

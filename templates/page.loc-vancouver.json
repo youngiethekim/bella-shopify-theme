@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Vancouver, BC",
-        "lede": "Bella is headquartered in Vancouver — the designers staging listings across North America work from right here in BC. Send your listing photos and get designer-staged, MLS-ready images back in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Vancouver, BC",
+        "lede": "Bella is headquartered in Vancouver — the designers staging listings across North America work from right here in BC. Send your listing photos and get designer virtual home staging back, MLS-ready, in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Vancouver",
-        "market_heading": "Why staging matters in the Vancouver market",
-        "market_text": "<p>Vancouver buyers shop online first, and the region's housing stock is hard on empty photos: glass condo towers shot against grey skies read cold, and compact downtown floor plans look even smaller unfurnished. Staging fills the square footage believably, so a 550 sq ft Yaletown one-bed reads as a home rather than a box with a view.</p><p>With presales and assignments a constant part of the market, many Vancouver listings can't be photographed furnished at all. Virtual staging — and for unbuilt units, 3D rendering — lets you market the lifestyle before the furniture, or the building, exists.</p>",
+        "market_heading": "Why home staging matters in the Vancouver market",
+        "market_text": "<p>Vancouver buyers shop online first, and the region's housing stock is hard on empty photos: glass condo towers shot against grey skies read cold, and compact downtown floor plans look even smaller unfurnished. Home staging fills the square footage believably, so a 550 sq ft Yaletown one-bed reads as a home rather than a box with a view.</p><p>The light is a genuine technical problem here for much of the year. An empty white-walled unit photographed under overcast Vancouver skies has almost no warmth in it, and no amount of exposure correction adds the furniture, texture and colour that make a room feel lived in.</p><p>Vancouver is also where Bella actually is. The designers staging listings across North America work from here, which means local agents are dealing with a studio in their own time zone rather than an overseas production line — and the work is composed by hand rather than generated.</p>",
         "local_heading": "Staged for the Vancouver buyer",
-        "local_text": "<p>Our designers match furnishing to the local buyer: clean west-coast modern with light woods and glass for downtown condos, warmer transitional looks for East Van character homes and North Shore family houses. Every image is composed by hand, disclosed as virtually staged, and sized to REBGV MLS specs.</p>",
+        "local_text": "<p>Designers stage clean contemporary for Yaletown, Coal Harbour and downtown towers, West Coast warmth for Kitsilano, Mount Pleasant and East Van character homes, and family looks for Burnaby, Richmond and the North Shore.</p><p>Compact floor plans get furnished to scale rather than flattered. In a market this expensive per square foot, buyers measure carefully — staging that oversells a room loses the trust it was meant to build.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Yaletown, Coal Harbour, Kitsilano, Mount Pleasant, East Vancouver, North Vancouver, Burnaby, Richmond, Surrey"
+        "hoods": "Yaletown, Coal Harbour, Kitsilano, Mount Pleasant, East Vancouver, West End, Burnaby, Richmond, North Vancouver, Surrey"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Are you actually based in Vancouver?",
+            "answer": "Yes — this is home. The designers who stage listings across the US and Canada work from here in BC, so local agents are working with a studio in their own time zone rather than an overseas queue."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "My photos were shot on a grey day and everything looks cold. Can you fix that?",
+            "answer": "That's a large part of what staging does here. Furniture, texture and colour put warmth into a room that overcast light strips out — and where the exterior needs help, day-to-dusk editing is available too."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these be ready for the local board and Realtor.ca?",
+            "answer": "Yes. Files come back at standard MLS and Realtor.ca dimensions with disclosure guidance included; noting virtual staging on the listing is standard practice and we recommend it."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Is this AI staging?",
+            "answer": "No. Every image is composed by hand by a professional interior designer. AI staging tends to invent details and repeat the same room across a market — on Vancouver price points, that's not a risk worth taking with a listing."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Vancouver agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

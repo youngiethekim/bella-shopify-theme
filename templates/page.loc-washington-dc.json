@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Washington, DC",
-        "lede": "DC's professional buyers tour on lunch breaks and decide on their phones. Bella stages Washington-area listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Washington, DC",
+        "lede": "DC's professional buyers tour on lunch breaks and decide on their phones. Bella's virtual home staging turns Washington-area listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Washington DC",
-        "market_heading": "Why staging matters in the DC market",
-        "market_text": "<p>Washington turns over constantly — administrations, postings and contracts move people in and out on fixed timelines, which makes DC buyers decisive and photo-driven. A rowhouse in Capitol Hill or a condo in Navy Yard gets judged in a commute-length scroll; staging is what stops the thumb.</p><p>The stock splits between historic rowhouses with formal, narrow rooms and new glass condos with open plans that photograph empty as bare concrete. Both need furniture to make the floor plan legible — one to modernize the traditional, the other to humanize the new.</p>",
+        "market_heading": "Why home staging matters in the DC market",
+        "market_text": "<p>Washington turns over constantly — administrations, postings and contracts move people in and out on fixed timelines, which makes DC buyers decisive and photo-driven. A rowhouse in Capitol Hill or a condo in Navy Yard gets judged in a commute-length scroll; home staging is what stops the thumb.</p><p>The stock splits between historic rowhouses with formal, narrow rooms and new glass condos with open plans that photograph empty as bare concrete. Both need furniture to make the floor plan legible — one to modernize the traditional, the other to humanize the new.</p><p>DC's relocation clock is the practical argument. A buyer arriving for a fixed-term posting is house-hunting inside a few weeks and often from another city entirely, which means the listing has to be photograph-ready the day it goes live rather than a week later once a stager has been scheduled.</p>",
         "local_heading": "Staged for the Washington buyer",
-        "local_text": "<p>Designers stage polished traditional for Georgetown and Capitol Hill, sleek contemporary for Navy Yard, Shaw and Arlington towers, and family looks for Bethesda and the Virginia suburbs. Images ship MLS-ready in 24 to 48 hours with disclosure guidance.</p>",
+        "local_text": "<p>Designers stage period-aware for Capitol Hill, Georgetown and Logan Circle rowhouses, clean modern for Navy Yard and NoMa condos, and family transitional for Bethesda, Arlington and Alexandria.</p><p>Formal rowhouse rooms get furniture that respects the architecture rather than fighting it — the mouldings and proportions are part of what the buyer is paying for, and staging should make them read better, not bury them.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Capitol Hill, Georgetown, Dupont Circle, Shaw, Navy Yard, Petworth, Arlington, Alexandria, Bethesda, Silver Spring"
+        "hoods": "Capitol Hill, Georgetown, Logan Circle, Navy Yard, NoMa, Shaw, Petworth, Bethesda, Arlington, Alexandria"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these upload to Bright MLS?",
+            "answer": "Yes. Files come back at standard Bright MLS dimensions and specs. We include disclosure wording and recommend noting virtual staging in the listing remarks."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "My buyers are relocating on a fixed timeline. How fast can I get photos?",
+            "answer": "24 to 48 hours from upload. That matters in DC, where a buyer arriving for a posting is house-hunting inside a few weeks — the listing needs to be ready the day it goes live, not once a stager has an opening."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "The rowhouse has formal, narrow rooms. Will staging make them look cramped?",
+            "answer": "Handled properly, the opposite. Furniture chosen to scale establishes how the room actually works, and period-aware staging keeps the mouldings and proportions visible rather than burying them under oversized pieces."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "A new-build condo photographs as bare concrete. Can that be fixed?",
+            "answer": "Yes, and it's the other half of our DC work. Open-plan new construction has nothing in it to establish scale or warmth; staging gives the space a purpose so the buyer can see where life happens in it."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from DC agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
+        "eyebrow": "Virtual home staging near you",
         "heading": "Virtual Home Staging in Las Vegas, NV",
-        "lede": "Vegas moves fast: investors, relocations and second-home buyers shopping from out of state. Bella stages Las Vegas listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "lede": "Vegas moves fast: investors, relocations and second-home buyers shopping from out of state. Bella's virtual home staging turns Las Vegas listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Las Vegas",
-        "market_heading": "Why staging matters in the Las Vegas market",
-        "market_text": "<p>A huge share of Las Vegas buyers are shopping from somewhere else — California equity movers, retirees, and investors who may write an offer before they ever fly in. For a buyer who will only see the home through its photos, the photos <em>are</em> the showing, and an empty beige-carpet room tells them nothing.</p><p>Vegas inventory skews new and vacant: spec builds, flipped ranches and investor-owned condos rarely have furniture in them. Virtual staging fills entire vacant houses for less than the cost of renting furniture for one room.</p>",
+        "market_heading": "Why home staging matters in the Las Vegas market",
+        "market_text": "<p>A huge share of Las Vegas buyers are shopping from somewhere else — California equity movers, retirees, and investors who may write an offer before they ever fly in. For a buyer who will only see the home through its photos, the photos are the showing, and an empty beige-carpet room tells them nothing.</p><p>Vegas inventory skews new and vacant: spec builds, flipped ranches and investor-owned condos rarely have furniture in them. Virtual home staging fills entire vacant houses for less than the cost of renting furniture for one room.</p><p>The volume of near-identical inventory is the other problem. In a Summerlin or Henderson development where a dozen listings share the same three floor plans, the photos are the only thing distinguishing one from another — and an empty version of a plan a buyer has already scrolled past four times gives them no reason to stop.</p>",
         "local_heading": "Staged for the Las Vegas buyer",
-        "local_text": "<p>Designers stage to the local palette — bright desert-modern for Summerlin and Henderson new builds, clean contemporary for high-rise condos on the Strip corridor. Every image is MLS-ready in 24 to 48 hours with disclosure guidance.</p>",
+        "local_text": "<p>Designers stage to the local palette — bright desert-modern for Summerlin and Henderson new builds, clean contemporary for high-rise condos on the Strip corridor. Every image is MLS-ready in 24 to 48 hours with disclosure guidance.</p><p>Second-home and short-term-rental listings get staged for how they'll actually be used, which is rarely the same as a primary residence: flexible sleeping space, an obvious place to put a table, and outdoor areas that read as usable most of the year.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Summerlin, Henderson, Green Valley, Spring Valley, Centennial Hills, North Las Vegas, Paradise, Enterprise, Boulder City"
+        "hoods": "Summerlin, Henderson, Green Valley, The Lakes, Southern Highlands, Anthem, Centennial Hills, Strip corridor"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Most of my buyers never see the house before offering. Does staging help?",
+            "answer": "It's close to the whole ballgame for an out-of-state buyer. They're ranking listings on photos alone, often from California, and a furnished-looking room is what earns a second click and a call."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Every house in this development looks the same. Can staging differentiate mine?",
+            "answer": "That's exactly where it earns its keep in Vegas. When a buyer has already scrolled three identical empty versions of the same floor plan, a staged set is the one that reads as a home rather than a plan number."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these work for Las Vegas REALTORS® listings?",
+            "answer": "Yes — standard MLS dimensions and file specs, ready to upload. We include disclosure wording and recommend noting virtual staging in the remarks."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage a whole vacant spec home, not just a room or two?",
+            "answer": "Yes, and it's the common order here. Whole-home sets get volume pricing, so an eight-photo vacant build costs a fraction of renting furniture for one room for one month."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Las Vegas agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

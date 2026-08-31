@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
+        "eyebrow": "Virtual home staging near you",
         "heading": "Virtual Home Staging in Boston, MA",
-        "lede": "Brownstone parlors, tight condo layouts and historic rooms are exactly where staging earns its keep. Bella stages Boston listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "lede": "Brownstone parlors, tight condo layouts and historic rooms are exactly where staging earns its keep. Bella's virtual home staging turns Boston listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Boston",
-        "market_heading": "Why staging matters in the Boston market",
-        "market_text": "<p>Boston's inventory is old, and old rooms confuse buyers: parlor-level living rooms with fireplaces at odd angles, third-floor walk-ups with sloped ceilings, basement units that need proof they can feel bright. Staging answers the question every Boston buyer asks — <em>will my furniture fit?</em> — before they book the showing.</p><p>In a market where inventory is chronically tight and well-presented listings still draw multiple offers, the listing that photographs best sets the pace for the open house.</p>",
+        "market_heading": "Why home staging matters in the Boston market",
+        "market_text": "<p>Boston's inventory is old, and old rooms confuse buyers: parlor-level living rooms with fireplaces at odd angles, third-floor walk-ups with sloped ceilings, basement units that need proof they can feel bright. Home staging answers the question every Boston buyer asks — will my furniture fit? — before they book the showing.</p><p>In a market where inventory is chronically tight and well-presented listings still draw multiple offers, the listing that photographs best sets the pace for the open house.</p><p>Boston also runs on a calendar almost no other US market shares. The September 1 lease turnover concentrates an enormous share of moves into a few weeks, which pulls listing activity forward into a crowded early-summer window. Photos that are ready when the listing goes live — not a week later once a stager's truck is scheduled — are the difference between catching that window and missing it.</p>",
         "local_heading": "Staged for the Boston buyer",
-        "local_text": "<p>Our designers stage to the neighbourhood: classic-contemporary blends for Back Bay and Beacon Hill, cleaner modern looks for Seaport condos, and family staging for Brookline, Newton and the suburbs. Every image is MLS-ready with disclosure guidance included.</p>",
+        "local_text": "<p>Our designers stage to the neighbourhood: classic-contemporary blends for Back Bay and Beacon Hill, cleaner modern looks for Seaport condos, and family staging for Brookline, Newton and the suburbs.</p><p>Period rooms get particular care. A Beacon Hill parlor with original mouldings and a working fireplace should look furnished, not redecorated — the staging works around the architecture buyers are paying for rather than covering it.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Back Bay, South End, Beacon Hill, Seaport, Charlestown, Jamaica Plain, Cambridge, Somerville, Brookline, Newton"
+        "hoods": "Back Bay, Beacon Hill, South End, Seaport, Charlestown, Jamaica Plain, Brookline, Newton, Somerville"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I get photos back before the September 1 rush?",
+            "answer": "That's exactly the case virtual staging handles well. Turnaround is 24 to 48 hours from upload, so a listing photographed on a Monday can go live mid-week — no waiting on a stager's schedule during the busiest weeks of the Boston calendar."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "My listing is a triple-decker with a tenant still in it. Can you stage that?",
+            "answer": "Yes. Furniture removal is included, so we digitally clear the tenant's belongings first and then stage the room clean. You don't need a vacancy or an awkward conversation to get usable photos."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these upload to MLS PIN?",
+            "answer": "Yes — files come back at standard MLS dimensions and file specs. We also include disclosure wording; noting that photos are virtually staged in the remarks is standard practice and we recommend it on every listing."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "The room has a fireplace in a strange spot. Does that break the staging?",
+            "answer": "No, and it's the most common Boston request we get. Odd fireplace placement, sloped third-floor ceilings and narrow parlor proportions are worked around by hand — a designer composes each room rather than dropping in a template."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Boston agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

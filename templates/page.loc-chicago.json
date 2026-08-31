@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Chicago, IL",
-        "lede": "From Loop high-rises to brick two-flats, Bella stages Chicago listings in 24 to 48 hours, from {price:virtual-staging} a photo. Ask Beverly — her staged listing drew an offer in four days.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Chicago, IL",
+        "lede": "From Loop high-rises to brick two-flats, Bella's virtual home staging turns Chicago listings around in 24 to 48 hours, from {price:virtual-staging} a photo. Ask Beverly — her staged listing drew an offer in four days.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Chicago",
-        "market_heading": "Why staging matters in the Chicago market",
-        "market_text": "<p>Chicago's signature stock — vintage condos, greystones and two-flats — photographs with beautiful bones and empty, echoing rooms. Staging warms the vintage details buyers love while proving the rooms hold modern furniture, the doubt that stalls showings on older stock.</p><p>Chicago is also fiercely seasonal: listings that launch in spring market weeks compete with everything else that waited for March. A staged listing stands out in the flood — and in the winter months, staged photos keep a listing feeling warm when the light outside is grey.</p>",
+        "market_heading": "Why home staging matters in the Chicago market",
+        "market_text": "<p>Chicago's signature stock — vintage condos, greystones and two-flats — photographs with beautiful bones and empty, echoing rooms. Home staging warms the vintage details buyers love while proving the rooms hold modern furniture, the doubt that stalls showings on older stock.</p><p>Chicago is also fiercely seasonal: listings that launch in spring market weeks compete with everything else that waited for March. A staged listing stands out in the flood — and in the winter months, staged photos keep a listing feeling warm when the light outside is grey.</p><p>That seasonality is the real argument for staging virtually here. Physical staging in January means scheduling a truck and a crew through Chicago weather; the furniture also has to stay, and pay rent, for however long the listing sits in a slow month. Staging the photos instead removes both problems — the cost is fixed at {price:virtual-staging} a photo whether the listing moves in a week or sits until spring.</p>",
         "local_heading": "Staged for the Chicago buyer",
-        "local_text": "<p>Designers stage clean contemporary for West Loop and River North condos, warm transitional for Lincoln Park and Lakeview vintage units, and family looks for the North Shore and western suburbs. MLS-ready files in 24 to 48 hours, disclosure guidance included.</p>",
+        "local_text": "<p>Designers stage clean contemporary for West Loop and River North condos, warm transitional for Lincoln Park and Lakeview vintage units, and family looks for the North Shore and western suburbs. MLS-ready files in 24 to 48 hours, disclosure guidance included.</p><p>Two-flats and greystones get treated as the multi-unit listings they are: each unit staged to the buyer most likely to live in it, and the garden unit given enough light and warmth to read as a home rather than a basement.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Lincoln Park, West Loop, River North, Wicker Park, Logan Square, Lakeview, Gold Coast, Hyde Park, Evanston, Oak Park"
+        "hoods": "West Loop, River North, Lincoln Park, Lakeview, Logan Square, Pilsen, Hyde Park, Evanston, Oak Park, Naperville"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I list in January without staging looking bleak?",
+            "answer": "That's one of the better reasons to stage virtually here. Grey Chicago light makes empty rooms read cold; staged photos put warmth in the room regardless of what the weather is doing outside, and there's no truck to schedule in the snow."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these upload to MRED?",
+            "answer": "Yes. Files come back at standard MLS dimensions, so they go straight into MRED without re-exporting. Disclosure wording is included and we recommend noting virtual staging in the remarks on every listing."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "How do you handle a vintage unit with unusual room proportions?",
+            "answer": "By hand. Long narrow greystone rooms, sunrooms off the living room and awkward vintage layouts are composed individually by a designer — the goal is proving your actual furniture fits, which a template can't do."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "I'm listing a two-flat. Do you stage both units?",
+            "answer": "Yes, and usually differently. The owner's unit and the rental unit attract different buyers, so staging each to its own audience tends to work better than repeating one look upstairs and down. Volume pricing applies across the whole set."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Chicago agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
+        "eyebrow": "Virtual home staging near you",
         "heading": "Virtual Home Staging in California",
-        "lede": "From San Francisco flats to San Diego ranch homes, Bella stages listings across California in 24 to 48 hours, from {price:virtual-staging} a photo — with furnishing matched to each metro's buyer.",
+        "lede": "From San Francisco flats to San Diego ranch homes, Bella's virtual home staging turns California listings around in 24 to 48 hours, from {price:virtual-staging} a photo — with furnishing matched to each metro's buyer.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "California",
-        "market_heading": "Why staging matters across California",
-        "market_text": "<p>California is not one market — a Noe Valley Victorian, a Sacramento new build and an Orange County family home attract different buyers with different taste. What they share is price point: with the median California home among the most expensive in the nation, buyers expect listing photos that look like the money being asked.</p><p>Physical staging costs scale with those prices — often thousands per month in coastal metros. Virtual staging delivers the same first impression once, for {price:virtual-staging} a photo, which is why California agents were among our first and remain our largest client base.</p>",
+        "market_heading": "Why home staging matters across California",
+        "market_text": "<p>California is not one market — a Noe Valley Victorian, a Sacramento new build and an Orange County family home attract different buyers with different taste. What they share is price point: with the median California home among the most expensive in the nation, buyers expect listing photos that look like the money being asked.</p><p>Physical staging costs scale with those prices — often thousands per month in coastal metros. Virtual home staging delivers the same first impression once, for {price:virtual-staging} a photo, which is why California agents were among our first and remain our largest client base.</p><p>The state also has the clearest disclosure expectations in the country, which is a good thing for agents who want to use staged photos without second-guessing. AB 723 set the standard, and our California work is built to it — disclosure guidance ships with the order rather than being something you assemble afterward.</p>",
         "local_heading": "One studio, every California metro",
-        "local_text": "<p>Our designers stage daily for the Bay Area, Los Angeles, San Diego, Sacramento and the Central Valley, matching furniture and palette to each region's buyer. Images are MLS-ready in 24 to 48 hours, disclosed as virtually staged, with unlimited revisions free for two weeks.</p>",
+        "local_text": "<p>Our designers stage daily for the Bay Area, Los Angeles, San Diego, Sacramento and the Central Valley, matching furniture and palette to each region's buyer. Images are MLS-ready in 24 to 48 hours, disclosed as virtually staged, with unlimited revisions free for two weeks.</p><p>Because we work across every major California board, an agent listing in two metros gets one consistent look rather than two different vendors' idea of what a staged room should be.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "San Francisco, San Jose, Oakland, Sacramento, Fresno, Orange County, Riverside, Palm Springs, Santa Barbara, Bakersfield"
+        "hoods": "San Francisco, Oakland, San Jose, Sacramento, Los Angeles, Orange County, San Diego, Central Valley, Palm Springs"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "What does AB 723 actually require of me?",
+            "answer": "In short: be clear with buyers that the photos are virtually staged. We build every California order to that standard and send you the disclosure wording to put on the listing. Your broker or local board is the final word on placement, and we'd always point you there for anything unusual."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "I list in both the Bay Area and Southern California. Same team?",
+            "answer": "Same studio, different furnishing. The palette and furniture that sell a Noe Valley Victorian aren't what sell an Orange County family home, so we stage to the metro — but you get one consistent standard of finish across both."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "How does the cost compare to physical staging here?",
+            "answer": "It's the sharpest contrast in the country. Physical staging in coastal California metros routinely runs into the thousands per month; virtual home staging is {price:virtual-staging} a photo, once, with no rental period to extend if the listing sits."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you handle new construction with nothing built yet?",
+            "answer": "Yes, though that's 3D rendering rather than staging — we build the interior from plans instead of photos. Common for California developers marketing pre-sale inventory."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from California agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

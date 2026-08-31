@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Montreal, QC",
-        "lede": "From Plateau walk-ups to Griffintown condos, Bella stages Montreal listings in 24 to 48 hours, from {price:virtual-staging} a photo — composed by real interior designers, never AI.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Montreal, QC",
+        "lede": "From Plateau walk-ups to Griffintown condos, Bella's virtual home staging turns Montreal listings around in 24 to 48 hours, from {price:virtual-staging} a photo — composed by real interior designers, never AI.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Montreal",
-        "market_heading": "Why staging matters in the Montreal market",
-        "market_text": "<p>Montreal's housing stock is unlike anywhere else in Canada: duplexes and triplexes with tenant-occupied units, century-old walk-ups with unusual room shapes, and a fast-growing stock of new condos. Empty or cluttered, these spaces are hard for buyers to read — staging shows what the crooked-charming rooms of a Plateau flat actually hold.</p><p>Many plex listings are photographed mid-tenancy. Our free furniture removal digitally clears the tenant's belongings first, then stages the space clean — no awkward photos, no waiting for a vacancy.</p>",
+        "market_heading": "Why home staging matters in the Montreal market",
+        "market_text": "<p>Montreal's housing stock is unlike anywhere else in Canada: duplexes and triplexes with tenant-occupied units, century-old walk-ups with unusual room shapes, and a fast-growing stock of new condos. Empty or cluttered, these spaces are hard for buyers to read — home staging shows what the crooked-charming rooms of a Plateau flat actually hold.</p><p>Many plex listings are photographed mid-tenancy. Our free furniture removal digitally clears the tenant's belongings first, then stages the space clean — no awkward photos, no waiting for a vacancy.</p><p>The plex market is the reason this matters so much here. A triplex buyer is underwriting three units they will mostly never see empty, and photos taken around a tenant's furniture make that impossible to assess. Cleared and staged, each unit can be judged on its own layout and light.</p>",
         "local_heading": "Staged for the Montreal buyer",
-        "local_text": "<p>Designers match the furnishing to the neighbourhood: European-leaning contemporary for Old Montreal and Griffintown, eclectic warmth for the Plateau and Mile End, family staging for NDG and the West Island. Images are Centris- and MLS-ready in 24 to 48 hours.</p>",
+        "local_text": "<p>Designers match the furnishing to the neighbourhood: European-leaning contemporary for Old Montreal and Griffintown, eclectic warmth for the Plateau and Mile End, family staging for NDG and the West Island. Images are Centris- and MLS-ready in 24 to 48 hours.</p><p>Montreal's winters make the timing argument on their own — moving physical furniture into a second-floor walk-up in February is a job nobody wants, and the listing usually can't wait for spring.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Le Plateau, Griffintown, Mile End, Old Montreal, Outremont, NDG, Verdun, Rosemont, Laval, Longueuil"
+        "hoods": "Plateau Mont-Royal, Mile End, Griffintown, Old Montreal, Rosemont, Verdun, NDG, Outremont, West Island"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "The unit still has tenants. Can you work with that?",
+            "answer": "Yes — this is the most common Montreal request we get. Furniture removal is included, so the tenant's belongings are digitally cleared and the room staged clean. You don't need to wait for a vacancy or ask anyone to tidy."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Are the files ready for Centris?",
+            "answer": "Yes. Images come back at standard dimensions for Centris and MLS, with disclosure guidance included. Noting that photos are virtually staged is standard practice and we recommend it."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "I'm listing a triplex. Do you stage every unit?",
+            "answer": "You can, and for plex listings it's usually worth it. A buyer underwriting three units needs to read each layout on its own, which is difficult when every photo is shot around a tenant's furniture. Volume pricing applies across the set."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you stage in a European style or a North American one?",
+            "answer": "Whichever suits the property. Old Montreal and Griffintown condos tend to want a European-leaning contemporary look; the Plateau wants eclectic warmth; NDG and the West Island read better with family staging."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Montreal agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Philadelphia, PA",
-        "lede": "Rowhomes are hard to photograph empty — long, narrow and dark in the middle. Bella stages Philadelphia listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Philadelphia, PA",
+        "lede": "Rowhomes are hard to photograph empty — long, narrow and dark in the middle. Bella's virtual home staging turns Philadelphia listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Philadelphia",
-        "market_heading": "Why staging matters in the Philadelphia market",
-        "market_text": "<p>The classic Philly rowhome is a staging problem by design: a straight-through floor plan where the living room, dining space and kitchen blur together in photos. Staged furniture defines the zones, so buyers scrolling Zillow can read the layout in one glance instead of puzzling over it.</p><p>Philadelphia also runs on value-conscious buyers and tight margins for flippers — which makes {price:virtual-staging}-a-photo staging an easy line item where $3,000-a-month physical staging isn't. For dated interiors in transitioning blocks, our virtual renovation shows the after without the contractor.</p>",
+        "market_heading": "Why home staging matters in the Philadelphia market",
+        "market_text": "<p>The classic Philly rowhome is a home staging problem by design: a straight-through floor plan where the living room, dining space and kitchen blur together in photos. Staged furniture defines the zones, so buyers scrolling Zillow can read the layout in one glance instead of guessing where one room ends and the next begins.</p><p>Philadelphia's stock also runs old and narrow. Trinity houses, two-bedroom rowhomes and converted flats have proportions that empty photography flattens — a 12-foot-wide room reads as a corridor until there's furniture in it establishing scale.</p><p>The city's price range works in staging's favour too. On a rowhome listed well under the coastal-metro median, a month of physical staging is a meaningful percentage of the seller's net. Staging the photos instead keeps the marketing budget proportional to the sale.</p>",
         "local_heading": "Staged for the Philadelphia buyer",
-        "local_text": "<p>Designers match the furnishing to the block: refined traditional around Rittenhouse Square, industrial-warm for Fishtown and Northern Liberties lofts, family staging for Manayunk and the suburbs. MLS-ready in 24 to 48 hours, disclosure guidance included.</p>",
+        "local_text": "<p>Designers stage contemporary for Fishtown and Northern Liberties, classic and period-aware for Society Hill and Rittenhouse, and practical family looks for the Main Line and the northwest neighbourhoods.</p><p>Narrow-room composition is the specialty here. Trinities and straight-through rowhomes get furniture chosen for scale first, so the photo proves the room works rather than just decorating it.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Rittenhouse Square, Fishtown, Northern Liberties, Old City, Graduate Hospital, University City, Manayunk, South Philly, East Passyunk"
+        "hoods": "Fishtown, Northern Liberties, Fairmount, Rittenhouse, Society Hill, Queen Village, Graduate Hospital, Manayunk, Chestnut Hill"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "My rowhome reads as one long corridor in photos. Can staging fix that?",
+            "answer": "That's the single most common Philadelphia brief. Staged furniture defines where the living room ends and the dining area begins, so a straight-through floor plan becomes legible in one glance instead of confusing."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these upload to Bright MLS?",
+            "answer": "Yes. Files come back at standard Bright MLS dimensions and specs. Disclosure wording is included and we recommend noting virtual staging in the remarks."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "The house is a trinity with tiny rooms. Is it worth staging?",
+            "answer": "Usually yes, and we furnish to scale rather than oversizing. The point on a small room is proving usable furniture fits — that's what a buyer is trying to work out from the photo."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "What does it cost relative to physical staging on a rowhome?",
+            "answer": "Physical staging is priced for the furniture and the month, regardless of the sale price, which lands hard on a modestly priced rowhome. Virtual home staging is {price:virtual-staging} a photo, once, with volume discounts across the set."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Philadelphia agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }

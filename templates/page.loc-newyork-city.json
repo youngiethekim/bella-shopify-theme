@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in New York City",
-        "lede": "At Manhattan and Brooklyn prices, every photo carries five figures of value. Bella stages NYC listings in 24 to 48 hours, from {price:virtual-staging} a photo — a rounding error next to what physical staging costs in the city.",
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in New York City",
+        "lede": "At Manhattan and Brooklyn prices, every photo carries five figures of value. Bella's virtual home staging turns NYC listings around in 24 to 48 hours, from {price:virtual-staging} a photo — a rounding error next to what physical staging costs in the city.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "New York City",
-        "market_heading": "Why staging matters in the NYC market",
-        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan is among the most expensive in the country, with freight elevators, COIs and monthly furniture rental stacking up fast. Virtual staging does the same visual job for {price:virtual-staging} a photo, with nothing to move in or out.</p>",
+        "market_heading": "Why home staging matters in the NYC market",
+        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Home staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan and Brooklyn is a serious expense: furniture rental, a service elevator booking, a certificate of insurance for the building, and a crew who can work within board rules. Virtual home staging skips all of it, which is why the cost comparison here is more lopsided than in any other US market.</p><p>Co-op and condo board logistics are the hidden cost people forget. A physical stage can stall for weeks waiting on building approval and elevator access; the photos can't wait that long when a listing's first week on StreetEasy determines most of its traffic.</p>",
         "local_heading": "Staged for the New York buyer",
-        "local_text": "<p>Our designers stage daily across all five boroughs — polished contemporary for Manhattan condos, warm modern for Brooklyn brownstones and Queens co-ops. Files ship REBNY- and MLS-ready in 24 to 48 hours, disclosed as virtually staged.</p>",
+        "local_text": "<p>Designers stage pre-war co-ops with furniture that respects the mouldings and proportions, new developments with the clean contemporary look those buyers expect, and Brooklyn brownstones somewhere between the two.</p><p>Small-room proof is the priority throughout. In a market where the deciding question is usually whether real furniture fits, staging that quietly oversizes a room does more harm than good — we furnish to scale so the photo survives the showing.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Upper East Side, Upper West Side, Chelsea, Tribeca, Harlem, Williamsburg, Park Slope, Astoria, Long Island City, Forest Hills"
+        "hoods": "Upper East Side, Upper West Side, Chelsea, Tribeca, Williamsburg, Park Slope, Brooklyn Heights, Long Island City, Harlem, Astoria"
       }
     },
     "steps": {
@@ -81,12 +81,57 @@
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Do these work for StreetEasy and the REBNY listing feed?",
+            "answer": "Yes. Files come back at standard dimensions and upload wherever you syndicate. We include disclosure wording and recommend noting virtual staging on the listing."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "My co-op won't approve a physical stage. Is this an alternative?",
+            "answer": "It's the usual reason NYC agents call us. There's no elevator booking, no certificate of insurance, no board approval and no crew in the building — the staging happens to the photos, so building rules never enter into it."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Will you make the rooms look bigger than they are?",
+            "answer": "No. We furnish to scale, deliberately. Oversized furniture that makes a second bedroom look roomy just moves the disappointment to the showing, and in a market where buyers are measuring for a queen bed, that costs you the deal."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "How does the cost compare to staging a Manhattan listing physically?",
+            "answer": "It's the widest gap of any market we work in. Physical staging here carries furniture rental plus building logistics; virtual home staging is {price:virtual-staging} a photo with none of the overhead."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from New York agents",
+        "open_first": true
+      }
     }
   },
   "order": [
     "loc",
     "steps",
     "quote",
+    "faq",
     "cta"
   ]
 }
