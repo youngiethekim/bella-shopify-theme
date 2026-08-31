@@ -125,11 +125,43 @@
         "heading": "Staging questions from Atlanta agents",
         "open_first": true
       }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Bedroom",
+            "customer": "Real estate agent · Atlanta",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Atlanta_-_Before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Atlanta_-_After.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Recent Atlanta work.",
+        "sub": true,
+        "carousel": false,
+        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
     }
   },
   "order": [
     "loc",
     "steps",
+    "work",
     "quote",
     "faq",
     "cta"

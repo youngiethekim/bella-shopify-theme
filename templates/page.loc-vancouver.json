@@ -125,11 +125,56 @@
         "heading": "Staging questions from Vancouver agents",
         "open_first": true
       }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "289 Drake St · Unit 706 dining",
+            "customer": "Brokerage · Vancouver",
+            "services": "Virtual staging, 360° tour",
+            "outcome": "Leased · 30 days",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Unit_706_289_Drake_Street_Vancouver-dining_room-1_nhi_hb.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "Vancouver condo",
+            "customer": "Real estate agent · Vancouver",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Vancouver_-_Before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Vancouver_-_After.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Recent Vancouver work.",
+        "sub": true,
+        "carousel": false,
+        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
     }
   },
   "order": [
     "loc",
     "steps",
+    "work",
     "quote",
     "faq",
     "cta"

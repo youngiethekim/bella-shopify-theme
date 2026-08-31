@@ -125,11 +125,108 @@
         "heading": "Staging questions from New York agents",
         "open_first": true
       }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "305 E 40th St 11S · living & dining",
+            "customer": "Real estate agent · Murray Hill",
+            "services": "Virtual staging",
+            "outcome": "Manhattan condo",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/manhattan-condo-virtual-staging-view1-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/manhattan-condo-virtual-staging-view1-after.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "300 E 40th St 16K · living & dining",
+            "customer": "Real estate agent · Murray Hill",
+            "services": "Virtual staging",
+            "outcome": "Manhattan condo",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-murray-hill-living-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-murray-hill-living-after.jpg?width=1200"
+          }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "300 E 40th St 16K · private terrace",
+            "customer": "Real estate agent · Murray Hill",
+            "services": "Virtual staging",
+            "outcome": "Outdoor space",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-murray-hill-terrace-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-murray-hill-terrace-after.jpg?width=1200"
+          }
+        },
+        "w4": {
+          "type": "project",
+          "settings": {
+            "name": "130 Bradhurst · living room",
+            "customer": "Real estate agent · Harlem",
+            "services": "Virtual staging",
+            "outcome": "Uptown listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-harlem-living-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-harlem-living-after.jpg?width=1200"
+          }
+        },
+        "w5": {
+          "type": "project",
+          "settings": {
+            "name": "130 Bradhurst · primary bedroom",
+            "customer": "Real estate agent · Harlem",
+            "services": "Virtual staging",
+            "outcome": "Uptown listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-harlem-bedroom-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-harlem-bedroom-after.jpg?width=1200"
+          }
+        },
+        "w6": {
+          "type": "project",
+          "settings": {
+            "name": "415 Central Park West · primary bedroom",
+            "customer": "Real estate agent · Upper West Side",
+            "services": "Virtual staging",
+            "outcome": "Pre-war co-op",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-upper-west-side-primary-bedroom-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-upper-west-side-primary-bedroom-after.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Recent New York work.",
+        "sub": true,
+        "carousel": true,
+        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
     }
   },
   "order": [
     "loc",
     "steps",
+    "work",
     "quote",
     "faq",
     "cta"

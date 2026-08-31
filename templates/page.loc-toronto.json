@@ -125,11 +125,56 @@
         "heading": "Staging questions from Toronto agents",
         "open_first": true
       }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "120 Bayview Ave · living to dining",
+            "customer": "Real estate agent · Toronto",
+            "services": "Virtual staging, floor plan, house tour",
+            "outcome": "Sold · 21 days",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Gareth_Roberts_-_Living_room_to_Dinning_Room_S210-120_Bayview_Ave-13_Tung_NAM.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "Toronto condo",
+            "customer": "Real estate agent · Toronto",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Toronto_-_Before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Toronto_-_After.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Recent Toronto work.",
+        "sub": true,
+        "carousel": false,
+        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
     }
   },
   "order": [
     "loc",
     "steps",
+    "work",
     "quote",
     "faq",
     "cta"

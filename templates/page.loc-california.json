@@ -125,11 +125,69 @@
         "heading": "Staging questions from California agents",
         "open_first": true
       }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "California listing",
+            "customer": "Real estate agent · California",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/California_-_Before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/California_-_After.jpg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "500 Leslie Ln · living room",
+            "customer": "Real estate agent · Beverly Hills",
+            "services": "Virtual staging",
+            "outcome": "Luxury listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/luxury-virtual-staging-beverly-hills-living-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/luxury-virtual-staging-beverly-hills-living-after.jpg?width=1200"
+          }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "500 Leslie Ln · kitchen",
+            "customer": "Real estate agent · Beverly Hills",
+            "services": "Virtual staging",
+            "outcome": "Luxury listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/luxury-virtual-staging-beverly-hills-kitchen-before.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/luxury-virtual-staging-beverly-hills-kitchen-after.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Recent California work.",
+        "sub": true,
+        "carousel": true,
+        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
     }
   },
   "order": [
     "loc",
     "steps",
+    "work",
     "quote",
     "faq",
     "cta"
