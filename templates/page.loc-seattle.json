@@ -125,11 +125,82 @@
         "heading": "Staging questions from Seattle agents",
         "open_first": true
       }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Living room",
+            "customer": "Real estate agent · Bellevue, WA",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_Living_Room_1.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_Living_Room_1_final-ink_1.jpeg?width=1200"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "Family room",
+            "customer": "Real estate agent · Bellevue, WA",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_Family_Room_2.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_Family_Room_2_final-ink_1.jpeg?width=1200"
+          }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "Bedroom",
+            "customer": "Real estate agent · Bellevue, WA",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_Bedroom.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_Bedroom_final-ink_1.jpeg?width=1200"
+          }
+        },
+        "w4": {
+          "type": "project",
+          "settings": {
+            "name": "Condo living & dining",
+            "customer": "Real estate agent · Bellevue, WA",
+            "services": "Virtual staging",
+            "outcome": "Eastside condo",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_31594_3.jpg?width=1200",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/Hao_Dang_-_31594_3_final.jpg?width=1200"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3",
+        "w4"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Recent Washington work.",
+        "sub": true,
+        "carousel": true,
+        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
     }
   },
   "order": [
     "loc",
     "steps",
+    "work",
     "quote",
     "faq",
     "cta"
