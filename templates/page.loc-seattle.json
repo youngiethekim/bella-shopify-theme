@@ -1,0 +1,137 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Seattle, WA",
+        "lede": "Grey skies and empty rooms are a hard combination to sell. Bella's virtual home staging turns Seattle and Eastside listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "cta_label": "Stage my listing — from {price:virtual-staging}",
+        "cta_link": "/products/virtual-staging",
+        "alt_label": "Browse the lookbook",
+        "alt_link": "/pages/lookbook",
+        "city": "Seattle",
+        "market_heading": "Why home staging matters in the Seattle market",
+        "market_text": "<p>Seattle and the Eastside run on tech relocation. Buyers arriving for roles in Bellevue, Redmond and South Lake Union are often house-hunting from another city, sometimes another country, on a start-date deadline. The listing photos are the entire tour until the week they land.</p><p>The light is a genuine technical problem here for much of the year. An empty white-walled condo photographed under overcast Puget Sound skies has almost no warmth in it, and no amount of exposure correction adds the furniture, texture and colour that make a room feel lived in. Home staging is what puts that back.</p><p>Bellevue and downtown Seattle also skew heavily to towers, where a one-bedroom unit photographs like every other one-bedroom in the building. When the floor plan is shared by forty other listings, the staging is the only thing distinguishing yours in the scroll.</p>",
+        "local_heading": "Staged for the Seattle buyer",
+        "local_text": "<p>Designers stage clean contemporary for Bellevue, downtown and South Lake Union towers, Pacific Northwest warmth for Ballard, Fremont and Capitol Hill character homes, and family looks for Kirkland, Redmond, Sammamish and Mercer Island.</p><p>Compact tower floor plans get furnished to scale rather than flattered. At Eastside price per square foot, buyers measure carefully, and staging that oversells a room loses the trust it was meant to build. Files come back NWMLS-ready in 24 to 48 hours.</p>",
+        "hoods_label": "Where we stage most",
+        "hoods": "Bellevue, Kirkland, Redmond, Capitol Hill, Ballard, Fremont, Queen Anne, South Lake Union, Mercer Island, Sammamish"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+        "attribution": "Beverly Bahm · Real estate agent, Chicago IL",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Stage your Seattle listing this week.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "My photos were shot on a grey day and everything looks cold. Can staging fix that?",
+            "answer": "That's a large part of what it does here. Furniture, texture and colour put warmth into a room that overcast Puget Sound light strips out — and where the exterior needs help, day-to-dusk editing is available too."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these upload to NWMLS?",
+            "answer": "Yes. Files come back at standard NWMLS dimensions and specs. Disclosure wording is included and we recommend noting virtual staging in the listing remarks."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "My buyer is relocating for a tech role and hasn't visited. Does that change anything?",
+            "answer": "It raises the stakes on photos and on turnaround. A buyer moving for a start date house-hunts inside a narrow window from another city, so the listing needs to be photograph-ready the day it goes live."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "It's a 550 sq ft Bellevue one-bedroom. Is staging going to look ridiculous?",
+            "answer": "Not if it's done to scale, which is the point. The buyer wants to know whether a real bed and a real sofa fit — furniture that oversizes the room fails that test at the showing, so we furnish honestly."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Seattle agents",
+        "open_first": true
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "quote",
+    "faq",
+    "cta"
+  ]
+}

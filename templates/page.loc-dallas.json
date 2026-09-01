@@ -1,0 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual home staging near you",
+        "heading": "Virtual Home Staging in Dallas, TX",
+        "lede": "DFW runs on relocation and new construction — both sold from photos before anyone lands. Bella's virtual home staging turns Dallas listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "cta_label": "Stage my listing — from {price:virtual-staging}",
+        "cta_link": "/products/virtual-staging",
+        "alt_label": "Browse the lookbook",
+        "alt_link": "/pages/lookbook",
+        "city": "Dallas",
+        "market_heading": "Why home staging matters in the Dallas market",
+        "market_text": "<p>Dallas–Fort Worth adds more people each year than almost any metro in the country, and a large share of them are relocating on a corporate timeline from California, Illinois or the Northeast. They build a shortlist online weeks before they fly in, and an empty room gives them nothing to judge but square footage.</p><p>The other half of the market is new construction. Plano, Frisco, McKinney and Prosper turn over thousands of spec homes and model-plan builds where six listings in a development share three floor plans. Photographed empty, they're indistinguishable — home staging is what makes one of them the listing a relocating buyer remembers.</p><p>DFW price points also make the maths obvious. Physical staging is priced for furniture plus a monthly rental period regardless of how long the listing sits. Virtual home staging is {price:virtual-staging} a photo, once, with no rental clock — which matters on a builder's inventory of eight vacant homes rather than one.</p>",
+        "local_heading": "Staged for the Dallas buyer",
+        "local_text": "<p>Designers stage modern-transitional for Plano, Frisco and McKinney new builds, warmer traditional for Highland Park and Lakewood, and clean contemporary for Uptown and Design District condos.</p><p>Builder and investor inventory is quoted as a batch and delivered together, so a whole community's worth of listings lands at once rather than photo by photo. Files come back NTREIS-ready with disclosure guidance included.</p>",
+        "hoods_label": "Where we stage most",
+        "hoods": "Plano, Frisco, McKinney, Allen, Prosper, Uptown, Highland Park, Lakewood, Arlington, Fort Worth"
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Place your order, then send your photos — right after checkout or whenever you're ready. No upload needed to get started.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room to feel lived-in and aspirational, matched to your local market.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {}
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+        "attribution": "Beverly Bahm · Real estate agent, Chicago IL",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Stage your Dallas listing this week.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Every house in this Frisco development looks the same. Can staging differentiate mine?",
+            "answer": "That's the strongest case for it in DFW. When a buyer has already scrolled three identical empty versions of the same floor plan, the staged one reads as somewhere to live rather than a plan number."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Will these upload to NTREIS?",
+            "answer": "Yes. Files come back at standard MLS dimensions and specs, ready to post. Disclosure wording is included and we recommend noting virtual staging in the remarks on every listing."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Most of my buyers are relocating and haven't seen the house. Does staging help?",
+            "answer": "It's most of what they're judging on. A buyer moving from California on a corporate timeline builds their shortlist online and books one trip — listings that photograph as furnished homes make that list."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "I'm a builder with eight vacant homes. Is there volume pricing?",
+            "answer": "Yes, discounts scale to 20% across a set, and builder inventory is quoted as a batch and delivered together. There's also no rental period to extend if a home sits, which is the usual problem with staging spec inventory physically."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Staging questions from Dallas agents",
+        "open_first": true
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Great room · Dallas",
+            "customer": "Real estate agent · Dallas, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/4_Dallas_TX.png?width=918&height=610&crop=left",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/4_Dallas_TX.png?width=918&height=610&crop=right"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "Living room · Austin",
+            "customer": "Real estate agent · Austin, TX",
+            "services": "Virtual staging",
+            "outcome": "Vacant listing",
+            "tag": "Before ⇄ After",
+            "before_url": "https://www.bellavirtual.com/cdn/shop/files/8_Austin_TX.png?width=918&height=610&crop=left",
+            "after_url": "https://www.bellavirtual.com/cdn/shop/files/8_Austin_TX.png?width=918&height=610&crop=right"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Recent Texas work.",
+        "sub": true,
+        "carousel": false,
+        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "steps",
+    "work",
+    "quote",
+    "faq",
+    "cta"
+  ]
+}
