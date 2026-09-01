@@ -56,7 +56,8 @@
           "type": "heading",
           "settings": {
             "title": "Start here — flagship guides",
-            "text": "Long-form playbooks written by the Bella team, with the numbers, checklists and scripts included."
+            "text": "Long-form playbooks written by the Bella team, with the numbers, checklists and scripts included.",
+            "nav_label": "Flagship guides"
           }
         },
         "f1": {
@@ -93,7 +94,8 @@
           "type": "heading",
           "settings": {
             "title": "Quick tools for every client",
-            "text": "Shortcuts you'll use on every order, whoever you are."
+            "text": "Shortcuts you'll use on every order, whoever you are.",
+            "nav_label": "Quick tools"
           }
         },
         "r13": {
@@ -155,7 +157,9 @@
       "settings": {
         "eyebrow": "Free resources",
         "heading": "Real Estate Marketing Resources",
-        "lede": "Pick your shelf: dedicated resource pages for agents, builders, investors and photographers — plus the flagship guides everyone starts with. 100% free, no order required."
+        "lede": "Pick your shelf: dedicated resource pages for agents, builders, investors and photographers — plus the flagship guides everyone starts with. 100% free, no order required.",
+        "sub_tabs": true,
+        "first_tab_label": "By client type"
       }
     },
     "cta": {

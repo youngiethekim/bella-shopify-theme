@@ -8,6 +8,13 @@
 .res-tabs a{padding:10px 16px 12px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .15s}
 .res-tabs a:hover{color:var(--ink)}
 .res-tabs a.cur{color:var(--ink);border-bottom-color:var(--green)}
+.res-subtabs{display:flex;flex-wrap:wrap;gap:8px;max-width:1120px;margin:22px auto 0;padding:0 var(--pad)}
+.res-subtabs button{border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:12.5px;
+  font-family:inherit;color:var(--ink);background:#fff;cursor:pointer;white-space:nowrap;transition:.15s}
+.res-subtabs button:hover{border-color:var(--green);color:var(--green)}
+.res-subtabs button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.res-subtabs button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+@media(max-width:640px){.res-subtabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch}}
 {% endstyle %}
 <section class="res-hero">
   <span class="micro">{{ section.settings.eyebrow }}</span>
@@ -36,7 +43,18 @@
     endif
   endfor
 -%}
-{%- if section.settings.show_nav and navcount > 1 -%}
+{%- liquid
+  assign lead = false
+  assign first_block = section.blocks[0]
+  if first_block and first_block.type != 'heading'
+    assign lead = true
+  endif
+  assign use_subtabs = false
+  if section.settings.sub_tabs and navcount > 0
+    assign use_subtabs = true
+  endif
+-%}
+{%- if section.settings.show_nav and navcount > 1 and use_subtabs == false -%}
   <nav class="res-pills" aria-label="Jump to a section">
     {%- for block in section.blocks -%}
       {%- if block.type == 'heading' -%}
@@ -45,16 +63,46 @@
     {%- endfor -%}
   </nav>
 {%- endif -%}
-<section class="res-wrap">
-  <div class="res-grid">
+{%- if use_subtabs -%}
+  {%- capture label_str -%}
+    {%- if lead -%}{{ section.settings.first_tab_label | default: 'By client type' }}|{%- endif -%}
     {%- for block in section.blocks -%}
+      {%- if block.type == 'heading' -%}{{ block.settings.nav_label | default: block.settings.title }}|{%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- assign labels = label_str | strip | split: '|' -%}
+  {%- comment -%}
+    Filter buttons rather than a tablist: the cards are direct grid children, so
+    there are no tabpanel elements for aria-controls to point at.
+  {%- endcomment -%}
+  <div class="res-subtabs" id="res-subtabs-{{ section.id }}" role="group" aria-label="Filter resources by group">
+    {%- for label in labels -%}
+      {%- assign lab = label | strip -%}
+      {%- if lab != blank -%}
+        <button type="button" data-rg="{{ forloop.index0 }}"
+          aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ lab }}</button>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+{%- endif -%}
+<section class="res-wrap">
+  <div class="res-grid"{% if use_subtabs %} data-res-subtabs="res-subtabs-{{ section.id }}"{% endif %}>
+    {%- liquid
+      if lead
+        assign gi = 0
+      else
+        assign gi = -1
+      endif
+    -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'heading' -%}{%- assign gi = gi | plus: 1 -%}{%- endif -%}
       {%- if block.type == 'heading' -%}
-        <div class="res-break" id="res-{{ block.settings.title | handleize }}" {{ block.shopify_attributes }}>
+        <div class="res-break" id="res-{{ block.settings.title | handleize }}"{% if use_subtabs %} data-rg="{{ gi }}"{% endif %} {{ block.shopify_attributes }}>
           <h2>{{ block.settings.title }}</h2>
           {%- if block.settings.text != blank -%}<p>{% render 'bella-copy', text: block.settings.text %}</p>{%- endif -%}
         </div>
       {%- else -%}
-        <a class="res-card" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+        <a class="res-card" href="{{ block.settings.link }}"{% if use_subtabs %} data-rg="{{ gi }}"{% endif %} {{ block.shopify_attributes }}>
           <span class="res-tag">{{ block.settings.tag }}</span>
           <h3>{% render 'bella-copy', text: block.settings.title %}</h3>
           <p>{% render 'bella-copy', text: block.settings.text %}</p>
@@ -64,6 +112,31 @@
     {%- endfor -%}
   </div>
 </section>
+{%- if use_subtabs -%}
+<script>
+(function(){
+  var grid = document.querySelector('[data-res-subtabs="res-subtabs-{{ section.id }}"]');
+  var tabs = document.getElementById('res-subtabs-{{ section.id }}');
+  if(!grid || !tabs) return;
+  var btns = [].slice.call(tabs.querySelectorAll('button'));
+  var items = [].slice.call(grid.querySelectorAll('[data-rg]'));
+  function show(g){
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.rg === g)); });
+    items.forEach(function(n){ n.style.display = n.dataset.rg === g ? '' : 'none'; });
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.rg); }); });
+  tabs.addEventListener('keydown', function(e){
+    var i = btns.indexOf(document.activeElement); if(i < 0) return;
+    if(e.key === 'ArrowRight' || e.key === 'ArrowLeft'){
+      e.preventDefault();
+      var n = btns[(i + (e.key === 'ArrowRight' ? 1 : btns.length - 1)) % btns.length];
+      n.focus(); show(n.dataset.rg);
+    }
+  });
+  show('0');   // JS-only: without it every group stays visible
+})();
+</script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -73,6 +146,8 @@
     { "type": "text", "id": "heading", "label": "Heading", "default": "Real estate marketing resources" },
     { "type": "checkbox", "id": "sub", "label": "Render heading as H2 (page already has an H1)", "default": false },
     { "type": "checkbox", "id": "show_nav", "label": "Show jump links to each group", "default": true },
+    { "type": "checkbox", "id": "sub_tabs", "label": "Show groups as sub-tabs (replaces the jump links)", "default": false },
+    { "type": "text", "id": "first_tab_label", "label": "Sub-tab label for cards above the first group heading", "default": "By client type" },
     { "type": "textarea", "id": "tabs", "label": "Audience tabs (one per line: Label | /url)", "default": "All resources | /pages/resources\nFor agents | /pages/real-estate-marketing-for-agents\nFor home builders | /pages/home-builder-marketing\nFor investors | /pages/real-estate-investor-marketing\nFor photographers | /pages/real-estate-photography-business" },
     { "type": "textarea", "id": "lede", "label": "Lede", "default": "Practical guides, checklists and how-tos from the team that stages thousands of listings a year. 100% free — no order required." }
   ],
