@@ -26,7 +26,6 @@
 .blb-tabs button[aria-selected="true"]{color:#232120}
 .blb-tabs button[aria-selected="true"]::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:#3E6B4C}
 .blb-tabs button:focus-visible{outline:2px solid #3E6B4C;outline-offset:3px}
-.blb-tabs .tn{font-size:11.5px;color:#9C978F;margin-left:6px}
 .brl .brl-eye{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600;margin:0}
 .brl h1{font-weight:300;font-size:clamp(32px,5vw,58px);letter-spacing:-.018em;line-height:1.06;margin:12px 0 0;text-wrap:balance}
 .brl h2{font-weight:300;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.015em;line-height:1.12;margin:0}
@@ -227,7 +226,7 @@
           + {{ section.settings.tab_staged | default: 'Staged rooms' | json }} + '</button>'
         + '<button role="tab" aria-selected="false" aria-controls="blb-panel-renders" data-panel="renders">'
           + {{ section.settings.tab_renders | default: '3D renders' | json }}
-          + '<span class="tn">' + DATA.length + '</span></button>';
+          + '</button>';
       hero.parentNode.insertBefore(tabs,hero.nextSibling);
 
       var btns=[].slice.call(tabs.querySelectorAll('button'));
