@@ -5,7 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#FDFCFA">
-  <link rel="canonical" href="{{ canonical_url }}">
+  {%- comment -%} Every collection renders the same blocks from templates/collection.json, so they all canonicalise to one URL. Drop this branch if collections get per-collection content. {%- endcomment -%}
+  {%- if request.page_type == 'collection' -%}
+    <link rel="canonical" href="{{ shop.secure_url }}/collections/our-services">
+  {%- else -%}
+    <link rel="canonical" href="{{ canonical_url }}">
+  {%- endif -%}
 
   {%- if settings.favicon != blank -%}
     <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">

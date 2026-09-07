@@ -12,18 +12,18 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual home staging near you",
-        "heading": "Virtual Home Staging in Toronto, ON",
-        "lede": "Toronto's listings live or die in the first three photos on the MLS and Realtor.ca. Bella's designers deliver virtual home staging in 24 to 48 hours, from {price:virtual-staging} a photo — a fraction of what a downtown staging company charges for a single month.",
+        "eyebrow": "Virtual staging near you",
+        "heading": "Virtual Staging in Toronto, ON",
+        "lede": "Toronto's listings live or die in the first three photos on the MLS and Realtor.ca. Bella's designers deliver virtual staging in 24 to 48 hours, from {price:virtual-staging} a photo — a fraction of what a downtown staging company charges for a single month.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Toronto",
-        "market_heading": "Why home staging matters in the Toronto market",
-        "market_text": "<p>Toronto is one of the most condo-dense markets in North America, and an empty 500 sq ft unit in a King West tower photographs like every other empty unit in the building. Home staging is how a listing separates itself when a buyer is flipping through forty near-identical floor plans.</p><p>Small-space proof is the specific job here. In a market where a large share of inventory is one-bedroom and junior one-bedroom units, the buyer's real question is whether a bed, a sofa and a work-from-home setup can coexist. Staged to scale, the photo answers it; empty, the buyer assumes the answer is no.</p><p>Toronto's freehold market has the opposite problem. Narrow Victorian semis and century homes in the older neighbourhoods have room proportions and additions that empty photography makes confusing, and buyers at those price points are unforgiving about listings that don't present well.</p>",
+        "market_heading": "Why virtual staging matters in the Toronto market",
+        "market_text": "<p>Toronto is one of the most condo-dense markets in North America, and an empty 500 sq ft unit in a King West tower photographs like every other empty unit in the building. Home staging is how a listing separates itself when a buyer is flipping through forty near-identical floor plans.</p><p>Small-space proof is the specific job here. In a market where a large share of inventory is one-bedroom and junior one-bedroom units, the buyer's real question is whether a bed, a sofa and a work-from-home setup can coexist. Staged to scale, the photo answers it; empty, the buyer assumes the answer is no.</p><p>Toronto's freehold market has the opposite problem. Narrow Victorian semis and century homes in the older neighbourhoods have room proportions and additions that empty photography makes confusing, and buyers at those price points are unforgiving about listings that don't present well.</p><p>The cost of leaving a property empty is measurable. Vacant listings sit longer because potential buyers cannot judge scale from bare walls, and every extra week on market invites a price conversation. Staged images give a buyer somewhere to put themselves, which is why empty rooms are the first thing we fix when an agent needs to sell.</p>",
         "local_heading": "Staged for the Toronto buyer",
-        "local_text": "<p>Designers stage clean contemporary for King West, Liberty Village and downtown condos, warm transitional for Leslieville, Roncesvalles and the Danforth, and family looks for North York, Etobicoke and the 905.</p><p>Files come back ready for TRREB and Realtor.ca in 24 to 48 hours, with disclosure guidance included — fast enough to shoot on a Monday and list mid-week rather than waiting on a staging company's calendar.</p>",
+        "local_text": "<p>Designers stage clean contemporary for King West, Liberty Village and downtown condos, warm transitional for Leslieville, Roncesvalles and the Danforth, and family looks for North York, Etobicoke and the 905.</p><p>Files come back ready for TRREB and Realtor.ca in 24 to 48 hours, with disclosure guidance included — fast enough to shoot on a Monday and list mid-week rather than waiting on a staging company's calendar.</p><p>Design styles are chosen per room rather than per order — contemporary, transitional, Scandinavian or family-forward — and our design professionals match the furniture to the buyer each property attracts. Realtors receive a set of virtually staged images ready to showcase across MLS, social and print, with everything scaled honestly so nothing surprises anyone at the showing.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "King West, Liberty Village, Leslieville, Roncesvalles, The Danforth, Yorkville, Riverdale, North York, Etobicoke, Scarborough"
       }
@@ -110,7 +110,28 @@
           "type": "qa",
           "settings": {
             "question": "How does this compare to hiring a Toronto staging company?",
-            "answer": "A downtown staging company typically charges for furniture plus a monthly rental period. Virtual home staging is {price:virtual-staging} a photo, once, with no rental clock running if the listing takes longer than expected."
+            "answer": "A downtown staging company typically charges for furniture plus a monthly rental period. Virtual staging is {price:virtual-staging} a photo, once, with no rental clock running if the listing takes longer than expected."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use the staged images anywhere besides MLS?",
+            "answer": "Yes — the staged photos are yours. MLS, a virtual tour, social ads, brochures and print all work, provided the virtual staging is disclosed in each. Many realtors get the most out of a staged photo in paid social, where it is the image that stops the scroll."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Which Toronto properties benefit most from virtual staging?",
+            "answer": "Vacant condos first — an empty space gives potential buyers nothing to anchor to. After that: small or awkward layouts where furniture placement proves the room actually works, tenanted units where we remove the existing furniture, pre-construction where there is nothing to photograph yet, and stale listings that need a real reason to relaunch."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you offer virtual staging services outside Toronto?",
+            "answer": "Yes. We provide virtual staging services across Canada and the US, with dedicated pages for our busiest markets. Toronto and the wider GTA are among our highest-volume regions, so the designers on your listing stage this market every week."
           }
         }
       },
@@ -118,7 +139,10 @@
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7"
       ],
       "settings": {
         "eyebrow": "Questions",
