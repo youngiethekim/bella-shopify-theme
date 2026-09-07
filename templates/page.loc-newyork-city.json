@@ -12,16 +12,16 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual home staging near you",
-        "heading": "Virtual Home Staging in New York City",
-        "lede": "At Manhattan and Brooklyn prices, every photo carries five figures of value. Bella's virtual home staging turns NYC listings around in 24 to 48 hours, from {price:virtual-staging} a photo — a rounding error next to what physical staging costs in the city.",
+        "eyebrow": "Virtual staging near you",
+        "heading": "Virtual Staging in New York City",
+        "lede": "At Manhattan and Brooklyn prices, every photo carries five figures of value. Bella's virtual staging turns NYC listings around in 24 to 48 hours, from {price:virtual-staging} a photo — a rounding error next to what physical staging costs in the city.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "New York City",
-        "market_heading": "Why home staging matters in the NYC market",
-        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Home staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan and Brooklyn is a serious expense: furniture rental, a service elevator booking, a certificate of insurance for the building, and a crew who can work within board rules. Virtual home staging skips all of it, which is why the cost comparison here is more lopsided than in any other US market.</p><p>Co-op and condo board logistics are the hidden cost people forget. A physical stage can stall for weeks waiting on building approval and elevator access; the photos can't wait that long when a listing's first week on StreetEasy determines most of its traffic.</p>",
+        "market_heading": "Why virtual staging matters in the NYC market",
+        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Home staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan and Brooklyn is a serious expense: furniture rental, a service elevator booking, a certificate of insurance for the building, and a crew who can work within board rules. Virtual staging skips all of it, which is why the cost comparison here is more lopsided than in any other US market.</p><p>Co-op and condo board logistics are the hidden cost people forget. A physical stage can stall for weeks waiting on building approval and elevator access; the photos can't wait that long when a listing's first week on StreetEasy determines most of its traffic.</p>",
         "local_heading": "Staged for the New York buyer",
         "local_text": "<p>Designers stage pre-war co-ops with furniture that respects the mouldings and proportions, new developments with the clean contemporary look those buyers expect, and Brooklyn brownstones somewhere between the two.</p><p>Small-room proof is the priority throughout. In a market where the deciding question is usually whether real furniture fits, staging that quietly oversizes a room does more harm than good — we furnish to scale so the photo survives the showing.</p>",
         "hoods_label": "Where we stage most",
@@ -110,7 +110,7 @@
           "type": "qa",
           "settings": {
             "question": "How does the cost compare to staging a Manhattan listing physically?",
-            "answer": "It's the widest gap of any market we work in. Physical staging here carries furniture rental plus building logistics; virtual home staging is {price:virtual-staging} a photo with none of the overhead."
+            "answer": "It's the widest gap of any market we work in. Physical staging here carries furniture rental plus building logistics; virtual staging is {price:virtual-staging} a photo with none of the overhead."
           }
         }
       },
