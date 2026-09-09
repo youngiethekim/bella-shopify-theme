@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ request.locale.iso_code }}">
 <head>
-{% include 'booster-seo' %}
   {% include 'shop-sheriff-amp' %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,18 +18,18 @@
 
   {%- assign vs_home_price = all_products['virtual-staging'].price_min | money_without_trailing_zeros -%}
   {%- if request.page_type == 'index' -%}
-  {% comment %}<title>Virtual Staging for Real Estate — From {{ vs_home_price }} a Photo | Bella</title>{% endcomment %}
-  {% comment %}<meta name="description" content="Designer virtual staging for real estate — MLS-ready in 24–48 hours, from {{ vs_home_price }} a photo. Plus 3D rendering, floor plans, photo editing and 360 tours. Rated 4.9 on Google.">{% endcomment %}
+  <title>Virtual Staging for Real Estate — From {{ vs_home_price }} a Photo | Bella</title>
+  <meta name="description" content="Designer virtual staging for real estate — MLS-ready in 24–48 hours, from {{ vs_home_price }} a photo. Plus 3D rendering, floor plans, photo editing and 360 tours. Rated 4.9 on Google.">
   {%- else -%}
-  {% comment %}<title>
+  <title>
     {{ page_title }}
     {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
     {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
     {%- unless page_title contains 'Bella' %} &ndash; Bella{% endunless -%}
-  </title>{% endcomment %}
+  </title>
 
   {% if page_description %}
-    {% comment %}<meta name="description" content="Designer virtual staging for real estate — MLS-ready in 24–48 hours, from {{ vs_home_price }} a photo. Plus 3D rendering, floor plans, photo editing and 360 tours. Rated 4.9 on Google.">{% endcomment %}
+    <meta name="description" content="{{ page_description | escape }}">
   {% endif %}
   {%- endif -%}
 
