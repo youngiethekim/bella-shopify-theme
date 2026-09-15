@@ -41,7 +41,10 @@
       { "type": "checkbox", "id": "enable_assistant", "label": "Show the \"Ask Bella\" chat bubble", "default": true, "info": "Scripted answers about pricing, services and process, with buttons that route visitors to order / pricing pages" },
       { "type": "url", "id": "assistant_order_url", "label": "Order page link" },
       { "type": "url", "id": "assistant_pricing_url", "label": "Pricing page link" },
-      { "type": "url", "id": "assistant_services_url", "label": "Services page link" }
+      { "type": "url", "id": "assistant_services_url", "label": "Services page link" },
+      { "type": "text", "id": "assistant_api_url", "label": "Assistant API address", "default": "https://delivery.bellavirtualstaging.com", "info": "Where the bubble sends messages to be answered. Leave empty to turn the AI off and go back to the built-in scripted answers." },
+      { "type": "checkbox", "id": "assistant_ask_email", "label": "Ask for an email before answering", "default": true, "info": "Captures a contact on every chat. Turn off to answer first and only ask when the assistant cannot help." },
+      { "type": "checkbox", "id": "assistant_send_summary", "label": "Send a summary when the chat ends", "default": true, "info": "Emails the sales inbox and posts to Slack once the visitor leaves." }
     ]
   },
   {

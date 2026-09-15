@@ -101,7 +101,10 @@
     setTimeout(function () { els.forEach(force); }, 4000);
   })();
 
-  /* ---- Bella assistant (scripted) ---- */
+  /* ---- Bella assistant ----
+     Answers come from the assistant API when one is configured, and from the
+     scripted table below when it is not, or when the request fails. The
+     scripted path is the floor: the bubble never shows a visitor an error. */
   (function () {
     var launch = document.getElementById('baLaunch'), panel = document.getElementById('baPanel');
     if (!launch || !panel) return;
@@ -109,7 +112,28 @@
         form = document.getElementById('baForm'), input = document.getElementById('baInput'), started = false;
     var ORDER = panel.getAttribute('data-order-url') || '/', PRICING = panel.getAttribute('data-pricing-url') || '/',
         SERVICES = panel.getAttribute('data-services-url') || '/';
+    var API = (panel.getAttribute('data-api-url') || '').replace(/\/$/, ''),
+        ASK_EMAIL = panel.getAttribute('data-ask-email') === '1',
+        SEND_SUMMARY = panel.getAttribute('data-send-summary') === '1',
+        PAGE_URL = panel.getAttribute('data-page-url') || location.href,
+        PAGE_TITLE = panel.getAttribute('data-page-title') || document.title;
+    var TURNS = [], EMAIL = null, pendingQuestion = null, awaitingEmail = false, summarySent = false;
+    /* The prices Liquid rendered from the real products. The only ones the
+       model is allowed to quote, so they cannot go stale against the store. */
+    var PRICES = (function () {
+      var out = {}, names = { staging: 'Virtual staging', renovation: 'Virtual renovation', rendering: '3D rendering', floorplan: 'Floor plans', editing: 'Photo editing' };
+      for (var key in names) {
+        var value = panel.getAttribute('data-price-' + key);
+        if (value) out[names[key]] = value;
+      }
+      return out;
+    })();
     function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+    /* Model output goes in as HTML, so allow only the two tags the prompt asks
+       for and escape everything else. */
+    function safeHtml(s) {
+      return esc(s).replace(/&lt;(\/?)b&gt;/g, '<$1b>').replace(/&lt;br\s*\/?&gt;/g, '<br>');
+    }
     function add(cls, html) { var d = document.createElement('div'); d.className = 'ba-msg ' + cls; d.innerHTML = html; body.appendChild(d); body.scrollTop = body.scrollHeight; }
     function acts(list) {
       if (!list || !list.length) return; var w = document.createElement('div'); w.className = 'ba-acts';
@@ -118,7 +142,7 @@
       w.querySelectorAll('button[data-q]').forEach(function (b) { b.onclick = function () { ask(b.getAttribute('data-q')); }; });
     }
     function typing() { var t = document.createElement('div'); t.className = 'ba-typing'; t.innerHTML = '<i></i><i></i><i></i>'; body.appendChild(t); body.scrollTop = body.scrollHeight; return t; }
-    function answer(q) {
+    function scriptedAnswer(q) {
       q = q.toLowerCase();
       if (/price|cost|how much|pricing|\$|expensive|rate|cheap/.test(q))
         return { t: 'Virtual staging is priced per photo, paid once, with volume discounts up to 20% — most listings only need 5 to 8 photos. Floor plans, photo edits, tours and 3D renders each have simple per-item pricing on their pages. Want the full breakdown, or shall I start your order?', a: [{ label: 'See full pricing', href: PRICING }, { label: 'Start my order →', href: ORDER, primary: true }] };
@@ -134,7 +158,92 @@
         return { t: 'Yes — every image is built to MLS specs and disclosure standards (like AB 723), and we tell you exactly what to note. Check your local board for any extra requirements.', a: [{ label: 'Start my order →', href: ORDER, primary: true }] };
       return { t: 'Good question. Quickest path to a precise answer is our pricing page, or just start an order and we’ll guide you the whole way. What are you working on?', a: [{ label: 'See pricing', href: PRICING }, { label: 'Which service do I need?', q: 'which service do I need' }, { label: 'Start my order →', href: ORDER, primary: true }] };
     }
-    function ask(q) { add('me', esc(q)); var r = answer(q), t = typing(); setTimeout(function () { t.remove(); add('them', r.t); acts(r.a); }, 650 + Math.min(600, q.length * 8)); }
+    /* The scripted reply, on the same delay it has always had. */
+    function replyScripted(q, t) {
+      var r = scriptedAnswer(q);
+      setTimeout(function () {
+        t.remove(); add('them', r.t); acts(r.a); TURNS.push({ role: 'model', text: r.t });
+      }, 650 + Math.min(600, q.length * 8));
+    }
+    function replyRemote(q, t) {
+      var done = false, ctrl = typeof AbortController === 'function' ? new AbortController() : null;
+      /* A visitor will not wait, and an answer that arrives after they gave up
+         is worse than the scripted one that arrived on time. */
+      var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 12000);
+      function fallback() {
+        if (done) return; done = true; clearTimeout(timer); replyScripted(q, t);
+      }
+      fetch(API + '/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: q,
+          history: TURNS.slice(-8),
+          context: { pageUrl: PAGE_URL, pageTitle: PAGE_TITLE, prices: PRICES }
+        }),
+        signal: ctrl ? ctrl.signal : undefined
+      }).then(function (res) {
+        return res.ok ? res.json() : null;
+      }).then(function (data) {
+        if (done) return;
+        if (!data || !data.reply) { fallback(); return; }
+        done = true; clearTimeout(timer); t.remove();
+        add('them', safeHtml(data.reply));
+        acts([{ label: 'See pricing', href: PRICING }, { label: 'Start my order →', href: ORDER, primary: true }]);
+        TURNS.push({ role: 'model', text: data.reply });
+      }).catch(fallback);
+    }
+    function answerNow(q) {
+      var t = typing();
+      TURNS.push({ role: 'user', text: q });
+      if (API) replyRemote(q, t); else replyScripted(q, t);
+    }
+    function ask(q) {
+      add('me', esc(q));
+      /* Hold the question rather than refusing it: the visitor gets the answer
+         they came for the moment they hand over an address. */
+      if (ASK_EMAIL && !EMAIL) {
+        pendingQuestion = q; awaitingEmail = true;
+        var t = typing();
+        setTimeout(function () {
+          t.remove();
+          add('them', 'Happy to help with that. What is the best email for you, in case we get cut off?');
+        }, 500);
+        return;
+      }
+      answerNow(q);
+    }
+    function takeEmail(value) {
+      if (!/.+@.+\..+/.test(value)) {
+        add('them', 'That does not look like an email. Try again, or type "skip".');
+        return;
+      }
+      EMAIL = value; awaitingEmail = false;
+      var q = pendingQuestion; pendingQuestion = null;
+      if (q) answerNow(q); else add('them', 'Thanks. What would you like to know?');
+    }
+    /* One write-up per conversation when the visitor goes. sendBeacon with a
+       text/plain body stays a simple request, so there is no preflight to fail
+       while the page is unloading. */
+    function sendSummary() {
+      if (summarySent || !SEND_SUMMARY || !API || TURNS.length < 2) return;
+      summarySent = true;
+      var payload = JSON.stringify({
+        transcript: TURNS, email: EMAIL,
+        context: { pageUrl: PAGE_URL, pageTitle: PAGE_TITLE }
+      });
+      try {
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon(API + '/api/chat/summary', new Blob([payload], { type: 'text/plain' }));
+        } else {
+          fetch(API + '/api/chat/summary', { method: 'POST', body: payload, keepalive: true });
+        }
+      } catch (e) {}
+    }
+    window.addEventListener('pagehide', sendSummary);
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'hidden') sendSummary();
+    });
     var CHIPS = ['How much is it?', 'Which service do I need?', 'How does it work?', 'Start my order'];
     function boot() {
       if (started) return; started = true;
@@ -144,7 +253,26 @@
     }
     launch.onclick = function () { panel.classList.add('open'); launch.style.display = 'none'; boot(); setTimeout(function () { input.focus(); }, 80); };
     document.getElementById('baClose').onclick = function () { panel.classList.remove('open'); launch.style.display = ''; };
-    form.onsubmit = function (e) { e.preventDefault(); var v = input.value.trim(); if (!v) return; input.value = ''; ask(v); };
+    form.onsubmit = function (e) {
+      e.preventDefault();
+      var v = input.value.trim();
+      if (!v) return;
+      input.value = '';
+      if (awaitingEmail) {
+        add('me', esc(v));
+        /* Nobody is held hostage. Refusing still gets an answer, it just
+           arrives without a way to follow up. */
+        if (/^(skip|no|nope|no thanks)$/i.test(v)) {
+          awaitingEmail = false;
+          var held = pendingQuestion; pendingQuestion = null;
+          if (held) answerNow(held);
+          return;
+        }
+        takeEmail(v);
+        return;
+      }
+      ask(v);
+    };
   })();
 
   /* ---- free-stage popup ---- */

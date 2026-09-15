@@ -26,7 +26,11 @@
   <span>Ask Bella</span><span class="ba-dot"></span>
 </button>
 <div class="ba-panel" id="baPanel" role="dialog" aria-label="Bella assistant"
-  data-order-url="{{ order_url }}" data-pricing-url="{{ pricing_url }}" data-services-url="{{ services_url }}"{{ price_attrs }}>
+  data-order-url="{{ order_url }}" data-pricing-url="{{ pricing_url }}" data-services-url="{{ services_url }}"
+  data-api-url="{{ settings.assistant_api_url | strip | escape }}"
+  data-ask-email="{% if settings.assistant_ask_email %}1{% else %}0{% endif %}"
+  data-send-summary="{% if settings.assistant_send_summary %}1{% else %}0{% endif %}"
+  data-page-url="{{ canonical_url }}" data-page-title="{{ page_title | strip_html | escape }}"{{ price_attrs }}>
   <div class="ba-head">
     <span class="ba-av">B</span>
     <div class="ba-ht"><b>Bella assistant</b><span>Replies instantly</span></div>
