@@ -50,6 +50,19 @@
         </ul>
       {%- endform -%}
     {%- endif -%}
+    {%- comment -%}
+      Tap to call. The href is stripped to digits because a tel: link must not
+      carry spaces or brackets, while the label keeps the punctuation a person
+      reads. On a phone the number itself is hidden and the handset stays, so
+      calling is one tap without crowding a 360px bar.
+    {%- endcomment -%}
+    {%- if section.settings.phone != blank -%}
+      {%- assign tel_digits = section.settings.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' | remove: '.' -%}
+      <a class="nav-tel" href="tel:{{ tel_digits }}" aria-label="Call {{ section.settings.phone | escape }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>{{ section.settings.phone }}</span>
+      </a>
+    {%- endif -%}
     <a class="btn" href="{{ section.settings.cta_link | default: routes.all_products_collection_url }}">{{ section.settings.cta_label }}</a>
     <button class="nav-burger" id="NavBurger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="MobileNav">
       <span></span><span></span><span></span>
@@ -60,6 +73,10 @@
       <a href="{{ link.url }}">{{ link.title }}</a>
     {%- endfor -%}
     <a class="btn" href="{{ section.settings.cta_link | default: routes.all_products_collection_url }}">{{ section.settings.cta_label }}</a>
+    {%- if section.settings.phone != blank -%}
+      {%- assign tel_digits = section.settings.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' | remove: '.' -%}
+      <a class="mobile-tel" href="tel:{{ tel_digits }}">{{ section.settings.phone }}</a>
+    {%- endif -%}
   </nav>
 </header>
 
@@ -71,6 +88,7 @@
     { "type": "text", "id": "logo_text", "label": "Wordmark text", "default": "BELLA", "info": "Used when no logo image is set" },
     { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" },
     { "type": "text", "id": "cta_label", "label": "Button label", "default": "Get started" },
+    { "type": "text", "id": "phone", "label": "Phone number", "default": "+1 (888) 471-2278", "info": "Shown in the header as a tap-to-call link. This is the toll-free number the previous theme published; the shop's billing record has a different, local one. Empty hides it." },
     { "type": "checkbox", "id": "show_market", "label": "Show region / currency switcher", "info": "Hidden automatically unless the shop has more than one market.", "default": true },
     { "type": "text", "id": "market_codes", "label": "Regions to offer", "info": "Comma-separated ISO country codes, one per currency you sell in. Empty falls back to US,CA,GB,AU.", "default": "US,CA,GB,AU" },
     { "type": "url", "id": "cta_link", "label": "Button link" }

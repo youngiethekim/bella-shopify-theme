@@ -16,7 +16,7 @@
             <div class="fs-body">
               <p class="micro" style="color:var(--green)">{{ block.settings.eyebrow }}</p>
               <h2>{% if block.settings.title != blank %}{{ block.settings.title }}{% else %}{{ p.title }}{% endif %}</h2>
-              <div class="fs-price">{% if p.price_varies %}From {% endif %}<b>{{ p.price_min | money }}</b> / {{ block.settings.unit }}</div>
+              <div class="fs-price">{% if p.price_varies %}From {% endif %}<b>{{ p.price_min | money_without_trailing_zeros }}</b> / {{ block.settings.unit }}</div>
               {%- if block.settings.audience != blank -%}
                 <p class="fs-for">For {{ block.settings.audience }}</p>
               {%- endif -%}
@@ -41,7 +41,7 @@
             {%- endif -%}
             <div class="cc-body">
               <div class="cc-title">{{ product.title }}</div>
-              <div class="cc-price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money }}</div>
+              <div class="cc-price">{% if product.price_varies %}From {% endif %}{{ product.price_min | money_without_trailing_zeros }}</div>
             </div>
           </a>
         {%- else -%}

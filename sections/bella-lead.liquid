@@ -23,7 +23,7 @@
           <option value="investor">Investor / flipper</option>
           <option value="photographer">Real estate photographer</option>
         </select>
-        <input type="hidden" name="contact[body]" value="Free sample request from: {{ article.title | default: page.title | default: page_title | escape }}">
+        <input type="hidden" name="contact[body]" value="Partner pricing request from: {{ article.title | default: page.title | default: page_title | escape }}">
         <button type="submit">{{ section.settings.button }}</button>
         <small>{{ section.settings.fine }}</small>
       {%- endif -%}
@@ -37,9 +37,9 @@
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "For real estate pros & builders" },
     { "type": "text", "id": "heading", "label": "Heading", "default": "See it on your own listing — free." },
-    { "type": "textarea", "id": "text", "label": "Text", "default": "You may be eligible for one free sample visualization: a staged photo of your listing, or a sample render concept for your project. See the quality before you spend a dollar." },
-    { "type": "text", "id": "button", "label": "Button", "default": "Claim my free sample →" },
-    { "type": "text", "id": "fine", "label": "Fine print", "default": "For real estate professionals, builders and developers; one free sample each. We'll never share your email." }
+    { "type": "textarea", "id": "text", "label": "Text", "default": "We partner with hundreds of brokerages across the US and Canada, at pricing built for volume rather than one-off orders. Leave your email and we'll send your team's partner pricing." },
+    { "type": "text", "id": "button", "label": "Button", "default": "Send me partner pricing →" },
+    { "type": "text", "id": "fine", "label": "Fine print", "default": "For real estate professionals, builders and developers. We'll never share your email." }
   ],
   "presets": [{ "name": "Lead capture band" }]
 }

@@ -31,7 +31,20 @@
   .btn-line{background:transparent;color:var(--ink);border:1px solid var(--ink);padding:12px 21px}
   .btn-line:hover{background:var(--ink);color:#fff;opacity:1}
   .btn-wht{background:#fff;color:var(--ink)}
-  @media(max-width:900px){.nav nav{display:none}}
+  /* tap to call. Sits between the menu and the button; the handset alone once
+     the bar gets tight, so a phone keeps one-tap calling without wrapping. */
+  .nav-tel{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;letter-spacing:.08em;
+    color:var(--soft);white-space:nowrap}
+  .nav-tel:hover{color:var(--ink)}
+  .nav-tel svg{width:15px;height:15px;flex:none}
+  .mobile-tel{display:none}
+  @media(max-width:900px){
+    .nav nav{display:none}
+    .nav{gap:16px}
+    .nav-tel{margin-left:auto}
+    .nav-tel span{display:none}
+    .mobile-tel{display:block}
+  }
 
   /* ---------- hero ---------- */
   .hero{position:relative;height:84vh;min-height:560px;max-height:860px;overflow:hidden}
@@ -532,13 +545,19 @@
   .end .row{display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap}
   .end small{display:block;margin-top:18px;font-size:12.5px;color:rgba(255,255,255,.62)}
 
-  footer{background:var(--dark);color:#6F6A63;padding:34px var(--pad) 26px;font-size:12.5px}
+  /* The bottom padding clears the two fixed floats (.bb-float bottom-left,
+     the assistant bubble bottom-right), which otherwise sit on top of the
+     last lines of the footer once the page is scrolled to the end. */
+  footer{background:var(--dark);color:#6F6A63;padding:34px var(--pad) 96px;font-size:12.5px}
   footer a{color:#A8A29A}
   .foot-cities{padding-bottom:22px;border-bottom:1px solid #2E2B28;margin-bottom:20px}
   .foot-cities .micro{color:#6F6A63;display:block;margin-bottom:12px}
   .foot-cities nav{display:flex;flex-wrap:wrap;gap:8px 22px}
   .foot-cities nav a{font-size:12.5px;text-decoration:none}
   .foot-cities nav a:hover{color:#fff}
+  .foot-contact{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:12.5px;color:#6F6A63;margin-bottom:14px}
+  .foot-contact a{text-decoration:none;color:inherit}
+  .foot-contact a:hover{color:#fff}
   .foot-base{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
   /* ---------- compare ---------- */
@@ -788,6 +807,7 @@
 .mobile-nav a{padding:14px 2px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-2)}
 .mobile-nav a:last-child{border-bottom:0}
 .mobile-nav .btn{margin-top:14px;text-align:center;color:#fff;border-bottom:0}
+.mobile-nav .mobile-tel{text-align:center;color:var(--soft);letter-spacing:.08em;text-transform:none;border-bottom:0}
 @media(max-width:900px){
   .nav-burger{display:flex}
   .nav .btn{margin-left:auto}
