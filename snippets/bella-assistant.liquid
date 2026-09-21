@@ -30,7 +30,8 @@
   data-api-url="{{ settings.assistant_api_url | strip | escape }}"
   data-ask-email="{% if settings.assistant_ask_email %}1{% else %}0{% endif %}"
   data-send-summary="{% if settings.assistant_send_summary %}1{% else %}0{% endif %}"
-  data-page-url="{{ canonical_url }}" data-page-title="{{ page_title | strip_html | escape }}"{{ price_attrs }}>
+  data-page-url="{{ canonical_url }}" data-page-title="{{ page_title | strip_html | escape }}"
+  data-phone="{{ settings.company_phone | strip | escape }}" data-address="{{ settings.company_address | strip | escape }}"{{ price_attrs }}>
   <div class="ba-head">
     <span class="ba-av">B</span>
     <div class="ba-ht"><b>Bella assistant</b><span>Replies instantly</span></div>
