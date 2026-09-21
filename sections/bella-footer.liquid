@@ -24,18 +24,18 @@
     because foot-base is a space-between row and a third item there collapses
     awkwardly once the note wraps on a phone.
   {%- endcomment -%}
-  {%- if section.settings.address != blank or section.settings.phone != blank -%}
+  {%- if settings.company_address != blank or settings.company_phone != blank -%}
     <div class="foot-contact">
-      {%- if section.settings.address != blank -%}
-        {%- if section.settings.map_url != blank -%}
-          <a href="{{ section.settings.map_url }}" target="_blank" rel="noopener">{{ section.settings.address }}</a>
+      {%- if settings.company_address != blank -%}
+        {%- if settings.company_map_url != blank -%}
+          <a href="{{ settings.company_map_url }}" target="_blank" rel="noopener">{{ settings.company_address }}</a>
         {%- else -%}
-          <span>{{ section.settings.address }}</span>
+          <span>{{ settings.company_address }}</span>
         {%- endif -%}
       {%- endif -%}
-      {%- if section.settings.phone != blank -%}
-        {%- assign foot_tel = section.settings.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' | remove: '.' -%}
-        <a href="tel:{{ foot_tel }}">{{ section.settings.phone }}</a>
+      {%- if settings.company_phone != blank -%}
+        {%- assign foot_tel = settings.company_phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' | remove: '.' -%}
+        <a href="tel:{{ foot_tel }}">{{ settings.company_phone }}</a>
       {%- endif -%}
     </div>
   {%- endif -%}
@@ -55,9 +55,6 @@
     { "type": "link_list", "id": "menu_1", "label": "First menu", "default": "footer" },
     { "type": "text", "id": "menu_2_title", "label": "Second menu heading", "default": "Virtual staging near you" },
     { "type": "link_list", "id": "menu_2", "label": "Second menu (e.g. city pages)" },
-    { "type": "text", "id": "address", "label": "Company address", "default": "838 West Hastings Street, Suite 801, Vancouver, BC V6C 0A6", "info": "Shown above the copyright line. Taken from the shop's billing address. Empty hides it." },
-    { "type": "url", "id": "map_url", "label": "Address link (optional)", "info": "Link the address to a map. Leave empty for plain text." },
-    { "type": "text", "id": "phone", "label": "Phone number", "info": "Optional second place for the number alongside the header. Empty hides it." },
     { "type": "richtext", "id": "note", "label": "Bottom note", "default": "<p>Brokerage or builder with volume? Talk to us about volume pricing.</p>" }
   ]
 }

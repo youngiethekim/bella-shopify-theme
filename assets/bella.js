@@ -116,7 +116,9 @@
         ASK_EMAIL = panel.getAttribute('data-ask-email') === '1',
         SEND_SUMMARY = panel.getAttribute('data-send-summary') === '1',
         PAGE_URL = panel.getAttribute('data-page-url') || location.href,
-        PAGE_TITLE = panel.getAttribute('data-page-title') || document.title;
+        PAGE_TITLE = panel.getAttribute('data-page-title') || document.title,
+        PHONE = panel.getAttribute('data-phone') || '',
+        ADDRESS = panel.getAttribute('data-address') || '';
     var TURNS = [], EMAIL = null, pendingQuestion = null, awaitingEmail = false, summarySent = false;
     /* The prices Liquid rendered from the real products. The only ones the
        model is allowed to quote, so they cannot go stale against the store. */
@@ -131,8 +133,11 @@
     function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
     /* Model output goes in as HTML, so allow only the two tags the prompt asks
        for and escape everything else. */
+    /* esc() escapes & and < but leaves > alone, so an escaped tag reads
+       "&lt;b>" and not "&lt;b&gt;". Matching the escaped form here is what
+       decides whether a visitor sees bold text or the literal characters. */
     function safeHtml(s) {
-      return esc(s).replace(/&lt;(\/?)b&gt;/g, '<$1b>').replace(/&lt;br\s*\/?&gt;/g, '<br>');
+      return esc(s).replace(/&lt;(\/?)b>/g, '<$1b>').replace(/&lt;br\s*\/?>/g, '<br>');
     }
     function add(cls, html) { var d = document.createElement('div'); d.className = 'ba-msg ' + cls; d.innerHTML = html; body.appendChild(d); body.scrollTop = body.scrollHeight; }
     function acts(list) {
@@ -179,7 +184,7 @@
         body: JSON.stringify({
           message: q,
           history: TURNS.slice(-8),
-          context: { pageUrl: PAGE_URL, pageTitle: PAGE_TITLE, prices: PRICES }
+          context: { pageUrl: PAGE_URL, pageTitle: PAGE_TITLE, prices: PRICES, phone: PHONE, address: ADDRESS }
         }),
         signal: ctrl ? ctrl.signal : undefined
       }).then(function (res) {

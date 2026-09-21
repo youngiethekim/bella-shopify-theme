@@ -36,9 +36,17 @@
     ]
   },
   {
+    "name": "Company contact",
+    "settings": [
+      { "type": "text", "id": "company_phone", "label": "Phone number", "default": "+1 (888) 471-2278", "info": "Shown in the header as tap-to-call, in the footer, and given out by the Ask Bella assistant. Empty hides it everywhere." },
+      { "type": "text", "id": "company_address", "label": "Company address", "default": "838 West Hastings Street, Suite 801, Vancouver, BC V6C 0A6", "info": "Shown in the footer and given out by the assistant. Empty hides it." },
+      { "type": "url", "id": "company_map_url", "label": "Address link (optional)", "info": "Link the footer address to a map. Leave empty for plain text." }
+    ]
+  },
+  {
     "name": "Bella assistant",
     "settings": [
-      { "type": "checkbox", "id": "enable_assistant", "label": "Show the \"Ask Bella\" chat bubble", "default": true, "info": "Scripted answers about pricing, services and process, with buttons that route visitors to order / pricing pages" },
+      { "type": "checkbox", "id": "enable_assistant", "label": "Show the \"Ask Bella\" chat bubble", "default": true, "info": "Answers from the assistant API when one is set, and from the built-in scripted answers when it is not or the request fails" },
       { "type": "url", "id": "assistant_order_url", "label": "Order page link" },
       { "type": "url", "id": "assistant_pricing_url", "label": "Pricing page link" },
       { "type": "url", "id": "assistant_services_url", "label": "Services page link" },
