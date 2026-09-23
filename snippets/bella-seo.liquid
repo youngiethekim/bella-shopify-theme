@@ -27,12 +27,69 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": {{ shop.secure_url | append: '/#organization' | json }},
   "name": {{ shop.name | json }},
   "url": {{ shop.secure_url | json }},
   "description": "Virtual staging, 3D rendering, floor plans and photo editing for real estate — designed by hand, never AI.",
+  {%- if settings.company_phone != blank %}
+  "telephone": {{ settings.company_phone | strip | json }},
+  {%- endif %}
+  {%- if settings.company_address != blank %}
+  "address": {{ settings.company_address | strip | json }},
+  {%- endif %}
+  "areaServed": ["United States", "Canada"],
+  "knowsAbout": ["Virtual staging", "Virtual renovation", "Virtual furniture removal", "3D architectural rendering", "2D and 3D floor plans", "Real estate photo editing", "360° virtual tours"],
   "sameAs": []
 }
 </script>
+
+{%- if request.page_type == 'page' and page %}
+{%- liquid
+  assign pg_suffix = page.template_suffix | default: ''
+  assign pg_service = false
+  assign pg_area = ''
+  if pg_suffix contains 'loc-'
+    assign pg_service = true
+    assign pg_area = page.title | remove: 'Virtual Home Staging in ' | remove: 'Virtual Staging in ' | strip
+  elsif pg_suffix == 'arch-rendering' or pg_suffix == 'arch-viz' or pg_suffix == 'pricing'
+    assign pg_service = true
+  elsif page.handle contains 'rendering-services' or page.handle contains '3d-rendering-' or page.handle == '3d-floor-plans' or page.handle == 'real-estate-photo-editing'
+    assign pg_service = true
+    if page.handle contains '3d-rendering-'
+      assign pg_area = page.title | remove: '3D Rendering Services in ' | strip
+    endif
+  endif
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ shop.secure_url | json }} },
+    { "@type": "ListItem", "position": 2, "name": {{ page.title | json }}, "item": {{ shop.secure_url | append: page.url | json }} }
+  ]
+}
+</script>
+{%- if pg_service %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ page.title | json }},
+  "url": {{ shop.secure_url | append: page.url | json }},
+  {%- if page_description != blank %}
+  "description": {{ page_description | json }},
+  {%- endif %}
+  "provider": { "@id": {{ shop.secure_url | append: '/#organization' | json }} },
+  {%- if pg_area != blank and pg_area != page.title %}
+  "areaServed": {{ pg_area | json }}
+  {%- else %}
+  "areaServed": ["United States", "Canada"]
+  {%- endif %}
+}
+</script>
+{%- endif %}
+{%- endif %}
 
 {%- if request.page_type == 'index' %}
 <script type="application/ld+json">
