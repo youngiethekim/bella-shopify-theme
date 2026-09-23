@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Chicago, IL",
-        "lede": "From Loop high-rises to brick two-flats, Bella's virtual staging turns Chicago listings around in 24 to 48 hours, from {price:virtual-staging} a photo. Ask Beverly — her staged listing drew an offer in four days.",
+        "heading": "Virtual Staging Chicago, IL",
+        "lede": "Virtual staging is a digital marketing technique for real estate photos: an interior designer adds 3D furniture and decor to empty or cleared rooms so buyers can see how the space lives, with no furniture ever entering the home. From Loop high-rises to brick two-flats, Bella's designers stage Chicago homes in 24 to 48 hours, from {price:virtual-staging} a photo. Ask Beverly — her staged listing drew an offer in four days.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Chicago",
-        "market_heading": "Why virtual staging matters in the Chicago market",
-        "market_text": "<p>Chicago's signature stock — vintage condos, greystones and two-flats — photographs with beautiful bones and empty, echoing rooms. Home staging warms the vintage details buyers love while proving the rooms hold modern furniture, the doubt that stalls showings on older stock.</p><p>Chicago is also fiercely seasonal: listings that launch in spring market weeks compete with everything else that waited for March. A staged listing stands out in the flood — and in the winter months, staged photos keep a listing feeling warm when the light outside is grey.</p><p>That seasonality is the real argument for staging virtually here. Physical staging in January means scheduling a truck and a crew through Chicago weather; the furniture also has to stay, and pay rent, for however long the listing sits in a slow month. Staging the photos instead removes both problems — the cost is fixed at {price:virtual-staging} a photo whether the listing moves in a week or sits until spring.</p>",
-        "local_heading": "Staged for the Chicago buyer",
-        "local_text": "<p>Designers stage clean contemporary for West Loop and River North condos, warm transitional for Lincoln Park and Lakeview vintage units, and family looks for the North Shore and western suburbs. MLS-ready files in 24 to 48 hours, disclosure guidance included.</p><p>Two-flats and greystones get treated as the multi-unit listings they are: each unit staged to the buyer most likely to live in it, and the garden unit given enough light and warmth to read as a home rather than a basement.</p>",
+        "market_heading": "Why virtual home staging matters in today’s Chicago market",
+        "market_text": "<p>Chicago's signature stock — vintage condos, greystones and two-flats — photographs with beautiful bones and empty, echoing rooms. Home staging warms the vintage details buyers love while proving the rooms hold modern furniture, the doubt that stalls showings on older stock.</p><p>With 97% of buyers starting their search online (NAR), the listing photos are the first impression most potential buyers get — and an empty vintage room rarely makes a memorable one. Staging makes a home visually distinctive online and highlights the features and appeal buyers are paying for.</p><p>Chicago is also fiercely seasonal: listings that launch in spring market weeks compete with everything else that waited for March. A staged listing stands out in the flood — and in the winter months, staged photos keep a listing feeling warm when the light outside is grey.</p><p>That seasonality is the real argument for virtual home staging here. Physical home staging in January means scheduling a truck and a crew through Chicago weather; the furniture also has to stay, and pay rent, for however long the listing sits in a slow month. Staging the photos instead removes both problems — the cost is a one-time investment of {price:virtual-staging} a photo whether the home sells in a week or sits until spring.</p>",
+        "local_heading": "Chicago home staging, done virtually for each buyer",
+        "local_text": "<p>Designers stage clean contemporary for West Loop and River North condos, warm transitional for Lincoln Park and Lakeview vintage units, and family looks for the North Shore and western suburbs. MRED-ready files in 24 to 48 hours, disclosure guidance included, with full usage rights for the MLS, your website and social posts.</p><p>Two-flats and greystones get treated as the multi-unit listings they are: each unit staged to the buyer most likely to live in it, and the garden unit given enough light and warmth to read as a home rather than a basement.</p><p>Our design team works online, so there is no walk-through or consultation to schedule: order, upload your photos and your designer handles the layout, furnishings and accessories, creating a finished room from an empty one. Volume discounts apply automatically: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "West Loop, River North, Lincoln Park, Lakeview, Logan Square, Pilsen, Hyde Park, Evanston, Oak Park, Naperville"
       }
@@ -61,7 +61,10 @@
         "s2",
         "s3"
       ],
-      "settings": {}
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "The virtual staging process for Chicago homes"
+      }
     },
     "quote": {
       "type": "bella-trust-quote",
@@ -89,14 +92,14 @@
           "type": "qa",
           "settings": {
             "question": "Can I list in January without staging looking bleak?",
-            "answer": "That's one of the better reasons to stage virtually here. Grey Chicago light makes empty rooms read cold; staged photos put warmth in the room regardless of what the weather is doing outside, and there's no truck to schedule in the snow."
+            "answer": "That's one of the better reasons for virtual home staging here. Grey Chicago light makes empty rooms read cold; staged photos put warmth in the room regardless of what the weather is doing outside, and there's no truck to schedule in the snow."
           }
         },
         "q2": {
           "type": "qa",
           "settings": {
             "question": "Will these upload to MRED?",
-            "answer": "Yes. Files come back at standard MLS dimensions, so they go straight into MRED without re-exporting. Disclosure wording is included and we recommend noting virtual staging in the remarks on every listing."
+            "answer": "Yes. Files come back at standard MLS dimensions, so they go straight into MRED without re-exporting. MRED's rules permit virtual staging of furniture and other personal property but require virtually staged photos to be disclosed in the designated field, and prohibit adding or removing anything outside the owner's control, such as views or neighboring buildings. Disclosure wording is included with every order."
           }
         },
         "q3": {
@@ -112,24 +115,214 @@
             "question": "I'm listing a two-flat. Do you stage both units?",
             "answer": "Yes, and usually differently. The owner's unit and the rental unit attract different buyers, so staging each to its own audience tends to work better than repeating one look upstairs and down. Volume pricing applies across the whole set."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does home staging cost in Chicago?",
+            "answer": "Physical home staging is priced by the stager, the size of the home and how long the furniture stays, so Chicago quotes vary; as a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging from Bella is {price:virtual-staging} a photo, paid once, with no rental period to extend through a slow winter."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal for occupied rooms, unlimited revisions for two weeks and full usage rights are included — no subscription, no minimum."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it? Does staging sell a house?",
+            "answer": "Staging can't guarantee faster sales or higher offers, but for most vacant homes it's worth it. 97% of buyers start their search online, and 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, according to the National Association of Realtors. Virtual staging gives the listing photos that effect for a one-time cost per photo."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Illinois?",
+            "answer": "Yes, when it's disclosed and doesn't misrepresent the property. The furniture shown isn't in the home, so stage furniture and decor only, don't hide defects or change permanent features, and label the photos as \"Virtually Staged\" — MRED requires disclosure in its designated field. Every Bella order includes disclosure guidance."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the cheapest way to stage a house?",
+            "answer": "Virtual staging. You stage only the rooms that appear in the listing photos, pay once per photo from {price:virtual-staging}, and skip furniture rental, delivery and installation — a staging budget that doesn't grow if the home sits on the market."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps exist, but they tend to repeat the same furniture and misjudge room scale. For a designer-staged photo, new clients can claim a $40 voucher on our sign-up page to try Bella risk-free, subject to Bella's approval."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "What not to do when staging a house?",
+            "answer": "Don't over-furnish small rooms, don't stage furniture that couldn't physically fit, don't hide defects like cracks or water damage, and don't change permanent features such as walls, windows or views in a staged photo. Keep the unstaged photos available and always disclose virtual staging."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Chicago agents",
+        "heading": "Chicago virtual staging questions from agents",
         "open_first": true
+      }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The price",
+            "text": "Physical home staging from a staging company is typically billed as a design fee plus monthly furniture rental under a contract — conventional staging runs about $2,000–5,000 a month for as long as the property spends on the market. Bella virtual staging is {price:virtual-staging} a photo, paid once."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "No truck to book through Chicago weather, no installation day, no pickup. Upload photos after checkout and designer-staged images come back in 24 to 48 hours, ready for MRED."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant homes and vintage layouts",
+            "text": "Staged homes show scale: a designer places furniture to prove a long greystone living room or an odd vintage bedroom is functional, inviting space — and to highlight the architectural detail that sets Chicago's vintage homes apart."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied rooms, cleared first",
+            "text": "Homeowners don't have to move their own furniture. Occupied, tenant-filled or cluttered rooms are digitally cleared, then staged clean, so buyers can visualize the room rather than the clutter — useful for two-flats with a tenant in one unit."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Styles for every Chicago buyer",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — to appeal to different buyers, or let the designer match the style to the unit and neighborhood."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor, never structural changes, and never use staging to hide defects. Every order includes disclosure guidance so buyers know the rooms are virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in Chicago",
+        "text": "Physical home stagers and virtual staging do the same job: showcase a home's features and appeal so potential buyers can picture living in it. Here is the difference for Chicago real estate agents, home sellers and builders."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior design, never AI",
+            "text": "Every room is composed by hand by a professional interior designer on our team, who places 3D furniture into your photo using Photoshop, 3D Max and Corona — never AI and never a template repeated across the market."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "MRED-ready files",
+            "text": "Standard MLS dimensions with disclosure guidance, plus full usage rights for print, web and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — across both units of a two-flat or a builder's whole project."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging risk-free. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Chicago order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same service and guarantees on every home."
       }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
+    "included",
     "quote",
     "faq",
     "cta"

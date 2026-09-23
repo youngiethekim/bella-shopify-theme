@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Atlanta, GA",
-        "lede": "Atlanta's growth market runs on investors, relocations and fast flips. Bella's virtual staging turns Atlanta listings around in 24 to 48 hours, from {price:virtual-staging} a photo — renovations rendered too.",
+        "heading": "Virtual Staging Atlanta, GA",
+        "lede": "Virtual staging is a digital marketing technique for real estate photos: an interior designer adds 3D furniture and decor to empty or cleared rooms so buyers can see how the space lives, with no furniture ever entering the house. Bella's designers stage Atlanta listings in 24 to 48 hours, from {price:virtual-staging} a photo — renovations rendered too.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Atlanta",
-        "market_heading": "Why virtual staging matters in the Atlanta market",
-        "market_text": "<p>Atlanta absorbs tens of thousands of new residents a year, and many of them shortlist homes from out of state before a single visit. Staged photos give relocating buyers the confidence to book the one weekend of showings they'll fly in for.</p><p>It's also one of the country's busiest flip and BRRRR markets. For investor listings, virtual staging sells the finished flip, and our virtual renovation service lets wholesalers and flippers market the after while the property is still the before — useful when a property trades twice in a year and the second listing needs to look nothing like the first.</p><p>Atlanta's other quirk is spread. A buyer weighing Grant Park against Alpharetta is choosing between two different lives, not two similar houses. Staging that reads correctly for each — urban and compact, or suburban and family-sized — does more work here than in cities with a single dominant housing type.</p>",
-        "local_heading": "Staged for the Atlanta buyer",
-        "local_text": "<p>Designers stage modern-warm for Midtown and Old Fourth Ward condos, classic South for Buckhead, and family transitional for the northern suburbs. Every image is FMLS and GAMLS-ready in 24 to 48 hours with disclosure guidance.</p><p>Investor work moves on a different clock, so flip portfolios are quoted as a batch and delivered together rather than photo by photo — the whole listing lands at once, ready to post.</p>",
+        "market_heading": "Why virtual staging matters in the metro Atlanta market",
+        "market_text": "<p>Atlanta's growth market runs on investors, relocations and fast flips. Metro Atlanta absorbs tens of thousands of new residents a year, and many of them shortlist homes from out of state before a single visit. Staged photos give relocating buyers the confidence to book the one weekend of showings they'll fly in for — and with 97% of buyers starting their search online (NAR), the listing photos are the first impressions most potential buyers get. Listings that stand out online tend to draw more clicks and showing requests, which is why virtual staging is especially effective in a competitive, fast-moving market like Atlanta.</p><p>It's also one of the country's busiest flip and BRRRR markets. For investor listings, virtual staging sells the finished flip, and our virtual renovation service lets wholesalers and flippers market the after while the property is still the before — useful when a property trades twice in a year and the second listing needs to look nothing like the first.</p><p>Atlanta's other quirk is spread. A buyer weighing Grant Park against Alpharetta is choosing between two different lives, not two similar houses. Staging that reads correctly for each — urban and compact, or suburban and family-sized — does more work here than in cities with a single dominant housing type.</p>",
+        "local_heading": "Atlanta home staging, done virtually for each buyer",
+        "local_text": "<p>Designers stage modern-warm for Midtown and Old Fourth Ward condos, classic South for Buckhead, and family transitional for the northern suburbs. Every image is FMLS and GAMLS-ready in 24 to 48 hours with disclosure guidance, and you keep full usage rights for the MLS, your website and social posts.</p><p>Our design team works online, so there is no in-person consultation to schedule: order, upload your photos and your designer handles the styling and detail. Investor work moves on a different clock, so flip portfolios are quoted as a batch and delivered together rather than photo by photo — the whole listing lands at once, ready to post. Volume discounts apply automatically: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Midtown, Old Fourth Ward, Buckhead, Grant Park, East Atlanta, Decatur, Alpharetta, Sandy Springs"
       }
@@ -112,17 +112,81 @@
             "question": "Most of my buyers are relocating. Does that change anything?",
             "answer": "It raises the stakes on photos. A buyer flying in from out of state builds their entire shortlist online and books one weekend of showings. Listings that photograph as furnished homes make that list; empty rooms usually don't."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does home staging cost in Atlanta?",
+            "answer": "Physical home staging is priced by the stager, the size of the house and how long the furniture stays, so Atlanta quotes vary; as a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging from Bella is {price:virtual-staging} a photo, paid once, with no rental period to extend if the listing sits."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal for occupied rooms, unlimited revisions for two weeks and full usage rights are included — no subscription, no minimum."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant homes, yes. Staging can't guarantee a sale, but 97% of buyers start their search online, and 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, according to the National Association of Realtors. Virtual staging gives the listing photos that effect for a one-time cost per photo instead of monthly furniture rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Georgia?",
+            "answer": "Yes — virtual staging is a standard marketing practice. The rule is not to misrepresent the property: the furniture shown isn't in the home, so add furniture and decor only, don't hide defects or change permanent features, and disclose that photos are virtually staged — MLS rules and the NAR Code of Ethics both expect it. Check FMLS or GAMLS rules for exact labeling; every Bella order includes disclosure guidance."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the cheapest way to stage a house?",
+            "answer": "Virtual staging. You stage only the rooms that appear in the listing photos, pay once per photo from {price:virtual-staging}, and skip furniture rental, delivery and installation. New clients can also claim a $40 voucher on our sign-up page to try it."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "What do realtors use for virtual staging?",
+            "answer": "Some use AI staging apps; many hire a virtual staging company like Bella, where a real interior designer composes each room in Photoshop, 3D Max and Corona. Designer staging keeps the room's true scale and finishes, which matters when a buyer walks in and compares."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Where can I find home staging services in Atlanta, GA?",
+            "answer": "Physical stagers in metro Atlanta deliver and install rented furniture in person. Bella works online instead: order, upload your photos and our designers deliver staged images in 24 to 48 hours for listings anywhere from Midtown to Alpharetta — and across the US and Canada."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Do builders use virtual staging for new construction?",
+            "answer": "Yes. Builders virtually stage finished spec homes that are sitting empty, and use 3D rendering, from {price:3d-rendering}, to market homes that aren't built yet. Volume discounts apply when several homes' photos are ordered together."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Atlanta agents",
+        "heading": "Atlanta virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -156,12 +220,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The price",
+            "text": "A home staging company typically bills a design fee plus monthly furniture rental under a contract — conventional staging runs about $2,000–5,000 a month until the house sells. Bella virtual staging is {price:virtual-staging} a photo, paid once, whether the listing sells in a week or a season."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "No consultation visit, no installation day and no pickup. Upload photos after checkout and designer-staged images come back in 24 to 48 hours, ready for the MLS."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant staging without a truck",
+            "text": "Vacant homes are where virtual staging does the most work. Empty rooms photograph smaller than they are; staged homes show scale, flow and the living space a buyer is paying for — and a stale listing gets a fresh set of photos without re-staging the house."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied or cluttered rooms",
+            "text": "Tenant-occupied, dated or mid-renovation rooms are digitally cleared first, then staged clean — so owner-occupied Atlanta listings can be staged too."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Tailored styling for every property type",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer match the style to the property type and neighborhood."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor, never structural changes, and never use staging to hide defects. Every order includes disclosure guidance so buyers know the rooms are virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in Atlanta",
+        "text": "Physical and virtual home staging services do the same job: create the emotional connection that helps potential home buyers imagine living in the house. Here is where they differ for Atlanta agents, investors, builders and home sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior design, never AI",
+            "text": "Every room is composed by hand by a professional interior designer on our team, who places 3D furniture into your photo using Photoshop, 3D Max and Corona — interior design services built for listings, never AI and never a template repeated across your market."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "FMLS and GAMLS-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for print, web and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for flip portfolios and builders with several homes to market."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging risk-free. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Atlanta order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"
