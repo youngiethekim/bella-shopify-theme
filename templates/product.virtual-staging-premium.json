@@ -204,14 +204,54 @@
             "question": "Does virtual staging help sell a house?",
             "answer": "Yes — staging exists because buyers struggle to picture empty rooms. NAR reports 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, and staged listings consistently earn more saves and showings in the critical first days on market."
           }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "How many photos should I virtually stage?",
+            "answer": "Most listings need 5–8 photos: the living room, the kitchen and dining room, the primary bedroom, and any other room that looks empty or awkward. Stage the photos that lead your listing, because buyers decide in the first few images. Volume discounts start at three photos."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal, or is it misleading buyers?",
+            "answer": "It’s legal and widely accepted when it’s disclosed. Label each image as virtually staged, keep the unstaged photo available, and never use staging to hide defects like cracks or water damage. Our guide to disclosing virtual staging covers MLS and NAR expectations."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Can AI or ChatGPT do virtual staging?",
+            "answer": "AI tools, including image features in chatbots, can add furniture to a photo in seconds. The results often show floating furniture, the wrong scale or altered walls and windows, which can misrepresent the property. Bella’s staging is done by human designers, so every image stays true to the room and safe for the MLS."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Is there free virtual staging?",
+            "answer": "Free AI apps exist, but they come with the quality trade-offs above. New clients can claim a $40 voucher on our free virtual staging page to try a designer-staged photo from Bella risk-free."
+          }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage 360° virtual tours?",
+            "answer": "Yes. Our 360° virtual tour + staging service furnishes panoramic photos so buyers can walk through a staged home online."
+          }
         }
       },
       "block_order": [
         "q0",
         "q1",
+        "q9",
         "q2",
         "q3",
+        "q10",
+        "q11",
+        "q12",
         "q4",
+        "q13",
         "q8",
         "q5",
         "q6",
@@ -251,7 +291,7 @@
           "type": "item",
           "settings": {
             "icon": "clock",
-            "title": "Sell empty homes faster",
+            "title": "Sell a vacant property faster",
             "text": "Vacant listings feel cold and photograph small. Staged photos get the showing booked before a competitor's does."
           }
         },
@@ -280,7 +320,7 @@
       ],
       "settings": {
         "eyebrow": "How agents use it",
-        "heading": "How virtual staging wins you."
+        "heading": "How real estate agents use virtual staging in their marketing."
       }
     },
     "quote": {
@@ -545,6 +585,120 @@
         "text": "Every Bella staging is composed by hand by a professional interior designer — the same design team trusted for top-tier projects by luxury brokerages, national developers and home builders across the US and Canada. No AI shortcuts and no template rooms: furniture, light and styling are chosen for your listing and your buyer.",
         "note": "Rated 4.9 on Google by verified Bella clients."
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Choosing a service",
+        "heading": "Virtual staging companies compared: human designers, AI apps and physical staging",
+        "text": "Real estate agents have three ways to fill a vacant property’s listing photos. Here’s how they differ on realism, turnaround time and cost."
+      },
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Human virtual staging (Bella)",
+            "text": "A professional interior designer places every piece by hand, so scale, shadows and light match the room. Photorealistic, MLS-ready photos in 24–48 hours, free revisions for two weeks, from {price:virtual-staging} a photo."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "AI virtual staging apps",
+            "text": "AI virtual staging tools return a staged image in seconds for a few dollars or less. The trade-off is quality: floating furniture, wrong scale and altered walls or windows are common, and fixing them is on you."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Physical staging",
+            "text": "Rented furniture looks great in person, but traditional staging runs thousands of dollars a month, needs movers, and leaves the day the home sells."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "How to pick a virtual staging company",
+            "text": "Check before-and-after samples for realistic lighting, confirm the turnaround time and revision policy, make sure you own the images, and ask for MLS disclosure guidance. Avoid anyone offering to hide a property’s flaws."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "styles": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Furniture styles",
+        "heading": "Furniture styles matched to your target buyer",
+        "text": "Pick a style from our Look Book, or tell us who you’re selling to and a designer chooses for you. Every style works in any room, from the living room and dining room to the primary bedroom."
+      },
+      "blocks": {
+        "s1": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Contemporary",
+            "text": "Clean lines and a neutral palette that suit almost any listing and let buyers picture their own things."
+          }
+        },
+        "s2": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Modern Farmhouse",
+            "text": "Warm woods and soft textiles for suburban family homes."
+          }
+        },
+        "s3": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Scandinavian",
+            "text": "Light, airy and uncluttered, so small condos and apartments feel bigger."
+          }
+        },
+        "s4": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Coastal",
+            "text": "Soft blues, natural fibres and relaxed seating for waterfront and vacation properties."
+          }
+        },
+        "s5": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Mid-Century Modern",
+            "text": "Walnut tones and iconic silhouettes for urban buyers and period homes."
+          }
+        },
+        "s6": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Traditional & Transitional",
+            "text": "Classic pieces for luxury listings and established neighbourhoods, or a transitional mix that bridges old and new."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
     }
   },
   "order": [
@@ -554,6 +708,8 @@
     "flow",
     "reqs",
     "uses",
+    "compare",
+    "styles",
     "proof",
     "cred",
     "quote",
