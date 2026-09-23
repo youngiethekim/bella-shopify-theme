@@ -13,19 +13,20 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Montreal, QC",
-        "lede": "From Plateau walk-ups to Griffintown condos, Bella's virtual staging turns Montreal listings around in 24 to 48 hours, from {price:virtual-staging} a photo — composed by real interior designers, never AI.",
+        "heading": "Virtual Staging Montreal, QC",
+        "lede": "Virtual staging is a digital marketing technique for real estate listings: an interior designer adds photorealistic 3D furniture and decor to photos of empty or cleared rooms so buyers can visualize how the space lives, with no physical furniture ever entering the home. Bella's designers stage Montreal listings — from Plateau walk-ups to Griffintown condos — in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Montreal",
-        "market_heading": "Why virtual staging matters in the Montreal market",
-        "market_text": "<p>Montreal's housing stock is unlike anywhere else in Canada: duplexes and triplexes with tenant-occupied units, century-old walk-ups with unusual room shapes, and a fast-growing stock of new condos. Empty or cluttered, these spaces are hard for buyers to read — home staging shows what the crooked-charming rooms of a Plateau flat actually hold.</p><p>Many plex listings are photographed mid-tenancy. Our free furniture removal digitally clears the tenant's belongings first, then stages the space clean — no awkward photos, no waiting for a vacancy.</p><p>The plex market is the reason this matters so much here. A triplex buyer is underwriting three units they will mostly never see empty, and photos taken around a tenant's furniture make that impossible to assess. Cleared and staged, each unit can be judged on its own layout and light.</p>",
-        "local_heading": "Staged for the Montreal buyer",
-        "local_text": "<p>Designers match the furnishing to the neighbourhood: European-leaning contemporary for Old Montreal and Griffintown, eclectic warmth for the Plateau and Mile End, family staging for NDG and the West Island. Images are Centris- and MLS-ready in 24 to 48 hours.</p><p>Montreal's winters make the timing argument on their own — moving physical furniture into a second-floor walk-up in February is a job nobody wants, and the listing usually can't wait for spring.</p>",
+        "market_heading": "Why virtual staging matters in the Montreal real estate market",
+        "market_text": "<p>Montreal's housing stock is unlike anywhere else in Canada: duplexes and triplexes with tenant-occupied units, century-old walk-ups with unusual room shapes, and a fast-growing stock of new condos. Empty or cluttered, these spaces are hard for buyers to read — home staging shows what the crooked-charming rooms of a Plateau flat actually hold, capturing a buyer's attention and helping them understand the space from the first photo online.</p><p>Many plex listings are photographed mid-tenancy. Our furniture removal digitally clears the tenant's belongings first, then stages the space clean — no awkward photos, no waiting for a vacancy.</p><p>The plex market is the reason this matters so much here. A triplex buyer is underwriting three units they will mostly never see empty, and photos taken around a tenant's furniture make that impossible to assess. Cleared and staged, each unit can be judged on its own layout and light.</p>",
+        "local_heading": "Virtual staging Montreal: plexes, condos and family homes",
+        "local_text": "<p>Our designers specialize in furnishing to scale, and match each room to the neighbourhood and the buyer's lifestyle: European-leaning contemporary for Old Montreal and Griffintown, eclectic warmth for the Plateau and Mile End, family staging for NDG and the West Island. Images are ready for Centris, Realtor.ca and the MLS in 24 to 48 hours, with disclosure guidance, so your virtual staging services reach buyers the same week you list.</p><p>In Quebec, the OACIQ's advertising guideline says images that fundamentally alter a property's actual appearance violate the rules, and asks brokers to keep the original photos available on request. We add furniture and decor only — never structural changes — and our <a href=\"/pages/resources-mls-rules-canada\">Canadian virtual staging compliance guide</a> covers labelling on Centris and Realtor.ca.</p><p>Montreal's winters make the timing argument on their own — moving physical furniture into a second-floor walk-up in February is a job nobody wants, and the listing usually can't wait for spring. Volume discounts apply automatically: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Plateau Mont-Royal, Mile End, Griffintown, Old Montreal, Rosemont, Verdun, NDG, Outremont, West Island"
+        "hoods": "Plateau Mont-Royal, Mile End, Griffintown, Old Montreal, Rosemont, Verdun, NDG, Outremont, West Island",
+        "cred_text": ""
       }
     },
     "steps": {
@@ -88,29 +89,57 @@
         "q1": {
           "type": "qa",
           "settings": {
-            "question": "The unit still has tenants. Can you work with that?",
-            "answer": "Yes — this is the most common Montreal request we get. Furniture removal is included, so the tenant's belongings are digitally cleared and the room staged clean. You don't need to wait for a vacancy or ask anyone to tidy."
+            "question": "How much does virtual staging cost in Montreal?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included — no subscription and no minimum."
           }
         },
         "q2": {
           "type": "qa",
           "settings": {
-            "question": "Are the files ready for Centris?",
-            "answer": "Yes. Images come back at standard dimensions for Centris and MLS, with disclosure guidance included. Noting that photos are virtually staged is standard practice and we recommend it."
+            "question": "How much does home staging cost in Montreal?",
+            "answer": "Physical staging is priced by the stager, the size of the home and how long the furniture stays, so quotes vary; as a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging is {price:virtual-staging} a photo, paid once."
           }
         },
         "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging allowed in Quebec?",
+            "answer": "Yes, with care. The OACIQ's advertising guideline says images that fundamentally alter a property's actual appearance violate the rules, and asks brokers to disclose changes made with AI tools, never hide defects, and keep original photos available on request. Add furniture and decor only, label staged photos, and check your listing platform's rules."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "The unit still has tenants. Can you work with that?",
+            "answer": "Yes — this is the most common Montreal request we get. Furniture removal is included, so the tenant's belongings are digitally cleared and the room staged clean. You don't need to wait for a vacancy or ask anyone to tidy."
+          }
+        },
+        "q6": {
           "type": "qa",
           "settings": {
             "question": "I'm listing a triplex. Do you stage every unit?",
             "answer": "You can, and for plex listings it's usually worth it. A buyer underwriting three units needs to read each layout on its own, which is difficult when every photo is shot around a tenant's furniture. Volume pricing applies across the set."
           }
         },
-        "q4": {
+        "q8": {
           "type": "qa",
           "settings": {
-            "question": "Do you stage in a European style or a North American one?",
-            "answer": "Whichever suits the property. Old Montreal and Griffintown condos tend to want a European-leaning contemporary look; the Plateau wants eclectic warmth; NDG and the West Island read better with family staging."
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant homes, yes. Staging can't guarantee a sale, but 97% of buyers start their search online and 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, according to the US National Association of Realtors. Virtual staging gives listing photos that effect for a one-time cost per photo."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage rental listings too?",
+            "answer": "Yes. Landlords and property managers use our virtual staging services for vacant rental listings too — long-term leases, furnished rentals and Airbnb listings, where staged photos help a unit stand out among other Airbnb options. The same disclosure applies: label the staged photos."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Which Montreal properties benefit most from virtual staging?",
+            "answer": "Vacant condos, duplexes and triplexes, and historic homes with unusual room shapes. Staged photos stand out on Centris and Realtor.ca, and the decor can be styled to the buyer each property targets — young professionals in Griffintown, families in NDG — for a one-time cost per photo rather than a monthly rental."
           }
         }
       },
@@ -118,11 +147,15 @@
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q6",
+        "q10",
+        "q8",
+        "q9"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Montreal agents",
+        "heading": "Virtual staging Montreal questions from agents",
         "open_first": true
       }
     },
@@ -156,12 +189,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The price",
+            "text": "A home staging company typically bills a design fee plus monthly furniture rental — physical staging generally runs about $2,000–5,000 a month until the home sells. Bella virtual staging is {price:virtual-staging} a photo, paid once, which keeps it within almost any listing budget."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Fast turnaround",
+            "text": "No consultation visit, no installation day and no pickup. Upload photos after checkout and designer-staged images come back in 24 to 48 hours, ready for Centris and the MLS."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Empty rooms without a truck",
+            "text": "Empty rooms photograph smaller than they are. Staged photos show scale, flow and the living space a buyer is paying for — and a stale listing gets a fresh set of images without re-staging the property."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Tenant-occupied plexes",
+            "text": "Occupied, dated or cluttered rooms are digitally cleared first, then staged clean — so plex units can be marketed without waiting for a vacancy or asking tenants to tidy."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Style options for every buyer",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer decide based on the property and neighbourhood."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor, never structural changes, and never use staging to hide defects. Every order includes disclosure guidance so buyers know the rooms are virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in Montreal",
+        "text": "Physical and virtual staging do the same job: help buyers picture living in the home. Here is where they differ for Montreal real estate agents, realtors, landlords and sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Every room is composed by hand by a professional interior designer on our team, who places 3D furniture into your photo using Photoshop, 3D Max and Corona, with attention to every detail — never AI and never a template repeated across your market."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Centris and MLS-ready files",
+            "text": "Images sized for Centris, Realtor.ca and the MLS with disclosure guidance, plus full usage rights for print, web and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful when staging every unit of a duplex or triplex."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Montreal order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

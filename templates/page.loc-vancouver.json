@@ -13,19 +13,20 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Vancouver, BC",
-        "lede": "Bella is headquartered in Vancouver — the designers staging listings across North America work from right here in BC. Send your listing photos and get designer virtual staging back, MLS-ready, in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Vancouver, BC",
+        "lede": "Virtual staging is a digital marketing technique for real estate photos: an interior designer adds 3D furniture and decor to empty or cleared rooms so potential buyers can see how the space lives, with no physical furniture ever entering the home. Bella is headquartered in Vancouver, and our designers stage Lower Mainland listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Vancouver",
-        "market_heading": "Why virtual staging matters in the Vancouver market",
-        "market_text": "<p>Vancouver buyers shop online first, and the region's housing stock is hard on empty photos: glass condo towers shot against grey skies read cold, and compact downtown floor plans look even smaller unfurnished. Home staging fills the square footage believably, so a 550 sq ft Yaletown one-bed reads as a home rather than a box with a view.</p><p>The light is a genuine technical problem here for much of the year. An empty white-walled unit photographed under overcast Vancouver skies has almost no warmth in it, and no amount of exposure correction adds the furniture, texture and colour that make a room feel lived in.</p><p>Vancouver is also where Bella actually is. The designers staging listings across North America work from here, which means local agents are dealing with a studio in their own time zone rather than an overseas production line — and the work is composed by hand rather than generated.</p>",
-        "local_heading": "Staged for the Vancouver buyer",
-        "local_text": "<p>Designers stage clean contemporary for Yaletown, Coal Harbour and downtown towers, West Coast warmth for Kitsilano, Mount Pleasant and East Van character homes, and family looks for Burnaby, Richmond and the North Shore.</p><p>Compact floor plans get furnished to scale rather than flattered. In a market this expensive per square foot, buyers measure carefully — staging that oversells a room loses the trust it was meant to build.</p>",
+        "market_heading": "Why virtual staging matters in the Vancouver real estate market",
+        "market_text": "<p>Vancouver buyers shop online first, and the region's housing stock is hard on empty photos: glass condo towers shot against grey skies read cold, and compact downtown floor plans look even smaller unfurnished. Home staging fills the square footage believably, so a 550 sq ft Yaletown one-bed reads as a home rather than a box with a view — helping buyers envision the space and building the emotional connection that gets a listing shortlisted.</p><p>The light is a genuine technical problem here for much of the year. An empty white-walled unit photographed under overcast Vancouver skies has almost no warmth in it, and no amount of exposure correction adds the furniture, texture and colour that make a room feel lived in. Staging makes property listings visually appealing without changing the room itself.</p><p>The rest of the Lower Mainland adds variety: townhomes and detached homes in Burnaby, Coquitlam and Surrey, family houses in Langley and the Fraser Valley, and new construction and presale inventory from developers across the region. Each of those buyers is looking for something different, and staging lets the photos show it.</p>",
+        "local_heading": "Virtual staging Vancouver: condos, townhomes and detached homes",
+        "local_text": "<p>Designers stage clean contemporary for Yaletown, Coal Harbour and downtown towers, West Coast warmth for Kitsilano, Mount Pleasant and East Van character homes, and family looks for Burnaby, Richmond, North Vancouver and the suburbs. Compact floor plans get furnished to scale rather than flattered: in a market this expensive per square foot, buyers measure carefully, and staging that oversells a room loses the trust it was meant to build.</p><p>Our team works online, so there is no consultation to schedule: order, upload your photos and your designer handles the interior design, furniture and accessories. Files come back MLS-ready for Realtor.ca in 24 to 48 hours with disclosure guidance. In BC, the BC Financial Services Authority says licensees should label photos that have been altered or enhanced, such as virtually staged photos, so they don't mislead a potential buyer — see our <a href=\"/pages/resources-mls-rules-canada\">Canadian virtual staging compliance guide</a>.</p><p>Volume discounts apply automatically: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Yaletown, Coal Harbour, Kitsilano, Mount Pleasant, East Vancouver, West End, Burnaby, Richmond, North Vancouver, Surrey"
+        "hoods": "Yaletown, Coal Harbour, Kitsilano, Mount Pleasant, East Vancouver, West End, Burnaby, Richmond, North Vancouver, Surrey",
+        "cred_text": ""
       }
     },
     "steps": {
@@ -88,29 +89,57 @@
         "q1": {
           "type": "qa",
           "settings": {
-            "question": "Are you actually based in Vancouver?",
-            "answer": "Yes — this is home. The designers who stage listings across the US and Canada work from here in BC, so local agents are working with a studio in their own time zone rather than an overseas queue."
+            "question": "How much does virtual staging cost in Vancouver?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included — no subscription and no minimum."
           }
         },
         "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does home staging cost in Vancouver?",
+            "answer": "Physical staging is priced by the stager, the size of the home and how long the furniture stays, so quotes vary; as a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging is {price:virtual-staging} a photo, paid once, with no rental period to extend."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging allowed in BC?",
+            "answer": "Yes. The BC Financial Services Authority says it may be okay to virtually stage a house, but licensees should label photos that have been altered or enhanced so they don't mislead a potential buyer. Add furniture and decor only and never change the property's permanent features. Every Bella order includes disclosure guidance."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Are you based in Vancouver?",
+            "answer": "Yes — Bella is headquartered in Vancouver and stages listings for agents, developers and homeowners across BC, the rest of Canada and the US. Everything is ordered online, so it works the same for a Yaletown condo or a Langley detached home."
+          }
+        },
+        "q5": {
           "type": "qa",
           "settings": {
             "question": "My photos were shot on a grey day and everything looks cold. Can you fix that?",
             "answer": "That's a large part of what staging does here. Furniture, texture and colour put warmth into a room that overcast light strips out — and where the exterior needs help, day-to-dusk editing is available too."
           }
         },
-        "q3": {
-          "type": "qa",
-          "settings": {
-            "question": "Will these be ready for the local board and Realtor.ca?",
-            "answer": "Yes. Files come back at standard MLS and Realtor.ca dimensions with disclosure guidance included; noting virtual staging on the listing is standard practice and we recommend it."
-          }
-        },
-        "q4": {
+        "q6": {
           "type": "qa",
           "settings": {
             "question": "Is this AI staging?",
             "answer": "No. Every image is composed by hand by a professional interior designer. AI staging tends to invent details and repeat the same room across a market — on Vancouver price points, that's not a risk worth taking with a listing."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage presale and new construction units?",
+            "answer": "Yes. Completed but empty units are staged from photos like any vacant home. For homes that aren't built yet, 3D rendering from your drawings is the better fit."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the cheapest way to stage a house?",
+            "answer": "Virtual staging. You stage only the rooms that appear in the listing photos, pay once per photo from {price:virtual-staging}, and skip furniture rental, delivery and installation. New clients can also claim a $40 voucher on our sign-up page."
           }
         }
       },
@@ -118,11 +147,15 @@
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Vancouver agents",
+        "heading": "Virtual staging Vancouver questions from agents",
         "open_first": true
       }
     },
@@ -169,12 +202,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The price",
+            "text": "A home staging company typically bills a design fee plus monthly furniture rental — physical staging generally runs about $2,000–5,000 a month until the home sells. Bella virtual staging is {price:virtual-staging} a photo, paid once, whether the listing sells in a week or a season."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "No consultation visit, no installation day, no elevator booking and no pickup. Upload photos after checkout and designer-staged images come back in 24 to 48 hours, ready for the MLS."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant homes without a truck",
+            "text": "Empty rooms photograph smaller than they are. Staged photos show scale, layout and the living space a buyer is paying for — and a stale listing gets a fresh set of images without re-staging the home."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied or cluttered rooms",
+            "text": "Tenant-occupied, dated or mid-renovation rooms are digitally cleared first, then staged clean — so homeowners and landlords can stage without moving anything out."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Styles to suit every property",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer customize the style to the property and neighbourhood."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor, never structural changes, and never use staging to hide a property's features or defects. Every order includes disclosure guidance so buyers know the rooms are virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in Vancouver",
+        "text": "Physical staging and virtual staging do the same job: help potential buyers picture living in the home. Here is where they differ for Vancouver real estate agents, developers, homeowners and sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Every room is composed by hand by a professional interior designer on our team, who places realistic 3D furniture into your photo using Photoshop, 3D Max and Corona — never AI and never a template repeated across your market."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "MLS-ready files, full usage rights",
+            "text": "MLS and Realtor.ca-ready images with disclosure guidance, plus full usage rights for print, web and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for developers and presale teams with several units to market."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Vancouver order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"
