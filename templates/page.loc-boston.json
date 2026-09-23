@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Boston, MA",
-        "lede": "Brownstone parlors, tight condo layouts and historic rooms are exactly where staging earns its keep. Bella's virtual staging turns Boston listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Boston, MA",
+        "lede": "Virtual staging is a digital marketing technique for real estate — home staging done in the photo: an interior designer adds realistic furniture and decor to photos of empty or cleared rooms so potential buyers can connect emotionally with the space, without a moving truck or a rental contract. Brownstone parlors, tight condo layouts and historic rooms are exactly where staging earns its keep — Bella's designers stage Boston listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Boston",
         "market_heading": "Why virtual staging matters in the Boston market",
-        "market_text": "<p>Boston's inventory is old, and old rooms confuse buyers: parlor-level living rooms with fireplaces at odd angles, third-floor walk-ups with sloped ceilings, basement units that need proof they can feel bright. Home staging answers the question every Boston buyer asks — will my furniture fit? — before they book the showing.</p><p>In a market where inventory is chronically tight and well-presented listings still draw multiple offers, the listing that photographs best sets the pace for the open house.</p><p>Boston also runs on a calendar almost no other US market shares. The September 1 lease turnover concentrates an enormous share of moves into a few weeks, which pulls listing activity forward into a crowded early-summer window. Photos that are ready when the listing goes live — not a week later once a stager's truck is scheduled — are the difference between catching that window and missing it.</p>",
-        "local_heading": "Staged for the Boston buyer",
-        "local_text": "<p>Our designers stage to the neighbourhood: classic-contemporary blends for Back Bay and Beacon Hill, cleaner modern looks for Seaport condos, and family staging for Brookline, Newton and the suburbs.</p><p>Period rooms get particular care. A Beacon Hill parlor with original mouldings and a working fireplace should look furnished, not redecorated — the staging works around the architecture buyers are paying for rather than covering it.</p>",
+        "market_text": "<p>Boston's inventory is old, and old rooms confuse buyers: parlor-level living rooms with fireplaces at odd angles, third-floor walk-ups with sloped ceilings, basement units that need proof they can feel bright. Home staging answers the question every Boston buyer asks — will my furniture fit? — before they book the showing.</p><p>In a market where inventory is chronically tight and well-presented listings still draw multiple offers, the listing that photographs best sets the pace for the open house.</p><p>Boston also runs on a calendar almost no other US market shares. The September 1 lease turnover concentrates an enormous share of moves into a few weeks, which pulls listing activity forward into a crowded early-summer window. Photos that are ready when the listing goes live — not a week later once a stager's truck is scheduled — are the difference between catching that window and missing it.</p><p>97% of buyers use the internet in their home search (NAR), so for most Boston home sellers the listing photos are the first open house. Empty rooms photograph smaller than they are, and a period living room with no furniture gives buyers no sense of scale; staged photos tend to draw more clicks, views and showing requests. Virtually staged photos turn awkward rooms into functional spaces and point buyers to the key features — which is why real estate agents from Back Bay to Newton use virtual staging on luxury listings and new construction alike.</p>",
+        "local_heading": "Boston home staging, done virtually for each buyer",
+        "local_text": "<p>Our designers stage to the neighbourhood: classic-contemporary blends for Back Bay and Beacon Hill, cleaner modern looks for Seaport condos, and family staging for Brookline, Newton and the suburbs.</p><p>Period rooms get particular care. A Beacon Hill parlor with original mouldings and a working fireplace should look furnished, not redecorated — the staging works around the architecture buyers are paying for rather than covering it.</p><p>Our design team works online, so there's no consultation visit to arrange: order, upload your photos and a designer handles the style, art and decor. Luxury properties get a restrained palette of neutral colors and classic pieces; condos and new construction get clean modern furniture, and the design can flex to suit a young professional, a downsizer or a growing family. Every image is MLS PIN-ready with disclosure guidance, and volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — for developers and busy teams.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Back Bay, Beacon Hill, South End, Seaport, Charlestown, Jamaica Plain, Brookline, Newton, Somerville"
       }
@@ -112,17 +112,89 @@
             "question": "The room has a fireplace in a strange spot. Does that break the staging?",
             "answer": "No, and it's the most common Boston request we get. Odd fireplace placement, sloped third-floor ceilings and narrow parlor proportions are worked around by hand — a designer composes each room rather than dropping in a template."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost to do virtual staging?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included — no subscription and no minimum."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do home staging services cost in Boston?",
+            "answer": "Physical staging is priced by the stager, the size of the home and how long the furniture stays, so Boston quotes vary; as a general benchmark it runs about $2,000–5,000 a month. Virtual staging is {price:virtual-staging} a photo, once, with no rental period to extend."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant Boston listings, yes. Staging can't guarantee a sale, but 83% of buyers' agents say staging makes it easier for a buyer to visualize the property as a future home (NAR, 2025), and 97% of buyers use the internet in their home search, so the photos are the first showing. Virtual staging furnishes them for a one-time cost per photo instead of monthly rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "What do realtors use for virtual staging?",
+            "answer": "Realtors choose between AI apps they run themselves and services that do it for them. Bella is a service: you upload photos and a designer builds each room by hand, so furniture fits the real proportions of a parlor or a sloped third-floor room."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best virtual staging program?",
+            "answer": "The best choice depends on the listing. AI programs are fast but generate furniture automatically, which can look wrong in period rooms. For luxury listings and unusual layouts, a designer-led service with a collaborative approach — you mark up changes and the designer revises — gives more control."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you stage luxury listings?",
+            "answer": "Yes. Luxury home staging is about restraint: neutral colors, quality pieces, art and decor that point buyers to the architecture rather than competing with it. Back Bay, Beacon Hill and Brookline are among the neighborhoods where we stage most."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Massachusetts?",
+            "answer": "Yes. The rule is not to misrepresent the property: add furniture and decor only, don't hide defects or change permanent features, and disclose that photos are virtually staged. The NAR Code of Ethics expects it; check MLS PIN rules for exact labeling. Every Bella order includes disclosure guidance."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Should I use virtual or physical staging?",
+            "answer": "You do not have to choose. Physical staging can create a stronger emotional connection during in-person showings, while virtual staging is more cost-effective for listing photos — especially for vacant properties in a high-cost market. A hybrid approach, physically staging the main living areas and virtually staging the rest, keeps costs down without leaving empty rooms in the photos."
+          }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "What photos do I need for virtual staging?",
+            "answer": "High-resolution, well-lit photos of each room, shot wide from a corner. Empty rooms are ideal, but occupied rooms work too because furniture removal is included. A spare bedroom can be staged as a home office or a nursery — tell the designer which use suits the buyer. If you are choosing which rooms to stage, NAR's 2025 staging report found buyers' agents rank the living room first (37%), then the primary bedroom (34%) and the kitchen (23%)."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12",
+        "q13"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Boston agents",
+        "heading": "Virtual staging Boston questions from real estate agents",
         "open_first": true
       }
     },
@@ -156,12 +228,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost of traditional staging",
+            "text": "A home staging company typically charges a design fee plus monthly furniture rental — traditional staging generally runs $2,000–5,000 a month until the house sells. Virtual staging is {price:virtual-staging} a photo, paid once, however long it takes to reach the asking price."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Listing photos in 24–48 hours",
+            "text": "Virtual staging takes 24 to 48 hours from upload — no consultation, no installation day on a narrow Beacon Hill street and no pickup after the sale. That turnaround matters in the weeks before September 1."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Empty rooms and new construction",
+            "text": "An empty room photographs smaller than it is. Staging shows scale, flow and how each space is used, and developers can stage every unit in a new construction building without furnishing one."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied or dated rooms",
+            "text": "Furniture removal is included: triple-deckers with tenants, cluttered rooms and dated furniture are digitally cleared first, then staged clean."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Luxury home staging in any style",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer match the style to the house, from a Back Bay brownstone to a Seaport condo."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor only — never changes to walls, windows or other permanent features, and never to hide defects. Every order includes disclosure guidance."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. traditional staging",
+        "heading": "Virtual staging vs. a home staging company in Boston",
+        "text": "A professional home stager and a virtual staging company do the same job: help buyers connect emotionally with the house and picture living in it. Here is how their home staging services compare for Boston agents, developers and home sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Each room is composed by hand by a professional interior designer — interior decorating skill applied in Photoshop, 3D Max and Corona, never AI and never a template repeated across Greater Boston."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "MLS PIN-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for the MLS, your website, print and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — built for developers and teams with several homes to market."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a Boston listing. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Boston order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract and the same guarantees on every Boston listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

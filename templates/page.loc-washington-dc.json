@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Washington, DC",
-        "lede": "DC's professional buyers tour on lunch breaks and decide on their phones. Bella's virtual staging turns Washington-area listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Washington DC",
+        "lede": "Virtual staging is a digital marketing technique for real estate: an interior designer places 3D models of furniture and decor into photos of empty rooms or an occupied home so buyers can imagine living there, with no physical furniture delivered. DC's professional buyers decide on their phones, so Bella's designers stage Washington-area listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Washington DC",
         "market_heading": "Why virtual staging matters in the DC market",
-        "market_text": "<p>Washington turns over constantly — administrations, postings and contracts move people in and out on fixed timelines, which makes DC buyers decisive and photo-driven. A rowhouse in Capitol Hill or a condo in Navy Yard gets judged in a commute-length scroll; home staging is what stops the thumb.</p><p>The stock splits between historic rowhouses with formal, narrow rooms and new glass condos with open plans that photograph empty as bare concrete. Both need furniture to make the floor plan legible — one to modernize the traditional, the other to humanize the new.</p><p>DC's relocation clock is the practical argument. A buyer arriving for a fixed-term posting is house-hunting inside a few weeks and often from another city entirely, which means the listing has to be photograph-ready the day it goes live rather than a week later once a stager has been scheduled.</p>",
-        "local_heading": "Staged for the Washington buyer",
-        "local_text": "<p>Designers stage period-aware for Capitol Hill, Georgetown and Logan Circle rowhouses, clean modern for Navy Yard and NoMa condos, and family transitional for Bethesda, Arlington and Alexandria.</p><p>Formal rowhouse rooms get furniture that respects the architecture rather than fighting it — the mouldings and proportions are part of what the buyer is paying for, and staging should make them read better, not bury them.</p>",
+        "market_text": "<p>Washington turns over constantly — administrations, postings and contracts move people in and out on fixed timelines, which makes DC buyers decisive and photo-driven. A rowhouse in Capitol Hill or a condo in Navy Yard gets judged in a commute-length scroll; home staging is what stops the thumb.</p><p>The stock splits between historic rowhouses with formal, narrow rooms and new glass condos with open plans that photograph empty as bare concrete. Both need furniture to make the floor plan legible — one to modernize the traditional, the other to humanize the new.</p><p>DC's relocation clock is the practical argument. A buyer arriving for a fixed-term posting is house-hunting inside a few weeks and often from another city entirely, which means the listing has to be photograph-ready the day it goes live rather than a week later once a stager has been scheduled.</p><p>97% of buyers use the internet in their home search (NAR), and in a competitive market like DC the listing photos decide which homes get a lunch-break tour. Empty rooms photograph smaller than they are, and staged homes tend to draw more clicks, views and showing requests. That's why real estate virtual staging is widely used on vacant homes, investment properties and luxury properties across the District, Maryland and Northern Virginia — it helps buyers visualize a future home without the cost of physical furniture.</p>",
+        "local_heading": "Washington home staging, done virtually for each buyer",
+        "local_text": "<p>Designers stage period-aware for Capitol Hill, Georgetown and Logan Circle rowhouses, clean modern for Navy Yard and NoMa condos, and family transitional for Bethesda, Arlington and Alexandria.</p><p>Formal rowhouse rooms get furniture that respects the architecture rather than fighting it — the mouldings and proportions are part of what the buyer is paying for, and staging should make them read better, not bury them.</p><p>Tell us the target demographic and a design style — or let the designer choose furniture styles for the neighborhood. Every image comes back Bright MLS-ready with disclosure guidance, and volume discounts apply automatically: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+, for investors and builders with several vacant properties.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Capitol Hill, Georgetown, Logan Circle, Navy Yard, NoMa, Shaw, Petworth, Bethesda, Arlington, Alexandria"
       }
@@ -112,24 +112,214 @@
             "question": "A new-build condo photographs as bare concrete. Can that be fixed?",
             "answer": "Yes, and it's the other half of our DC work. Open-plan new construction has nothing in it to establish scale or warmth; staging gives the space a purpose so the buyer can see where life happens in it."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included, so the per-photo price is the final price — no subscription and no minimum."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How does the virtual staging process work?",
+            "answer": "It starts with high-quality photos of the empty space. A designer selects a style that appeals to the target buyer, places 3D models of furniture and decor into each photo, and delivers final images for marketing and MLS use. You mark up any changes, and the whole process takes 24 to 48 hours from upload."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant DC listings, yes. Staging can't guarantee faster sales, but 83% of buyers' agents say staging makes it easier for a buyer to visualize the property as a future home (NAR, 2025), and 97% of buyers use the internet in their home search, so the photos are the first showing. Virtual staging furnishes them for a one-time cost per photo instead of monthly rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in DC?",
+            "answer": "Yes. Add furniture and decor only, don't hide defects or change permanent features, and disclose that photos are virtually staged — the NAR Code of Ethics expects it, and failing to disclose can lead to MLS penalties. Check Bright MLS rules for exact labeling. Every Bella order includes disclosure guidance."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Which virtual staging companies are considered the best?",
+            "answer": "Judge a virtual staging company on four things: realistic, correctly scaled furniture; turnaround time; revision and refund policy; and clear per-photo pricing. Bella uses real interior designers, delivers in 24 to 48 hours, offers unlimited revisions for two weeks and reworks or refunds anything that isn't right."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Does virtual staging work for small or awkward rooms?",
+            "answer": "It is where it helps most. Compact urban condos and narrow rowhouse rooms are hard to read empty; furniture chosen to scale shows how a small or awkward layout actually works. Virtual renovation, from {price:virtual-renovation} a photo, can also show a dated room updated."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage a room for a different use?",
+            "answer": "Yes. Virtual staging can show more than one potential use of a space — a rowhouse den as a home office or a nursery — so buyers see what the room can do for them."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from DC agents",
+        "heading": "Virtual staging Washington DC questions from agents",
         "open_first": true
+      }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Traditional home staging costs",
+            "text": "Home stagers typically charge a design fee, labor and monthly rental of physical furniture — traditional staging generally runs $2,000–5,000 a month until the house sells. Virtual staging is {price:virtual-staging} a photo, paid once."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Turnaround time",
+            "text": "No consultation, delivery or pickup to schedule around a rowhouse's parking. Quick turnaround times matter on a relocation clock: staged photos come back in 24 to 48 hours."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant homes and new construction",
+            "text": "Empty rooms and empty floors photograph smaller than they are. Staging shows scale and how each space is used, and builders can stage new construction without furnishing a single unit."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "An occupied home",
+            "text": "Furniture removal is included: an occupied home, family photos, clutter or dated furniture are digitally cleared first, then the room is staged clean."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A design style for every buyer",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer place furniture to suit the house, from a Capitol Hill rowhouse to a Navy Yard condo."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor only — never structural changes, and never to hide defects. Every order includes disclosure guidance: label virtually staged images so they never mislead buyers — transparency builds trust."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. traditional staging",
+        "heading": "Virtual staging vs. a home staging company in Washington DC",
+        "text": "Traditional home staging and virtual staging do the same job: create an inviting atmosphere that helps potential buyers imagine living in the home. Here is how a staging company and a virtual staging company compare for DC agents, investors and sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior design, never AI",
+            "text": "A real person — a professional interior designer — composes each room by hand in Photoshop, 3D Max and Corona for photorealistic results, never AI and never a template repeated across DC."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the final images delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. You keep full control: if it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Bright MLS-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for real estate marketing on the MLS, your website, print and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — built for investment properties and builders with several homes."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a DC listing. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every DC order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract and the same guarantees on every Washington-area listing."
       }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
+    "included",
     "quote",
     "faq",
     "cta"

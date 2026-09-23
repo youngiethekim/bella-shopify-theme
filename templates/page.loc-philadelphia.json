@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Philadelphia, PA",
-        "lede": "Rowhomes are hard to photograph empty — long, narrow and dark in the middle. Bella's virtual staging turns Philadelphia listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Philadelphia, PA",
+        "lede": "Virtual staging is a digital marketing technique in real estate: a designer adds furniture and decor to photos of empty or cluttered rooms so buyers can read scale and layout, with no furniture moved into the house. Rowhomes are hard to photograph empty — long, narrow and dark in the middle — so Bella's designers stage Philadelphia listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Philadelphia",
-        "market_heading": "Why virtual staging matters in the Philadelphia market",
-        "market_text": "<p>The classic Philly rowhome is a home staging problem by design: a straight-through floor plan where the living room, dining space and kitchen blur together in photos. Staged furniture defines the zones, so buyers scrolling Zillow can read the layout in one glance instead of guessing where one room ends and the next begins.</p><p>Philadelphia's stock also runs old and narrow. Trinity houses, two-bedroom rowhomes and converted flats have proportions that empty photography flattens — a 12-foot-wide room reads as a corridor until there's furniture in it establishing scale.</p><p>The city's price range works in staging's favour too. On a rowhome listed well under the coastal-metro median, a month of physical staging is a meaningful percentage of the seller's net. Staging the photos instead keeps the marketing budget proportional to the sale.</p>",
-        "local_heading": "Staged for the Philadelphia buyer",
-        "local_text": "<p>Designers stage contemporary for Fishtown and Northern Liberties, classic and period-aware for Society Hill and Rittenhouse, and practical family looks for the Main Line and the northwest neighbourhoods.</p><p>Narrow-room composition is the specialty here. Trinities and straight-through rowhomes get furniture chosen for scale first, so the photo proves the room works rather than just decorating it.</p>",
+        "market_heading": "Why virtual staging matters in the Philadelphia real estate market",
+        "market_text": "<p>The classic Philly rowhome is a home staging problem by design: a straight-through floor plan where the living room, dining space and kitchen blur together in photos. Staged furniture defines the zones, so buyers scrolling Zillow can read the layout in one glance instead of guessing where one room ends and the next begins.</p><p>Philadelphia's stock also runs old and narrow. Trinity houses, two-bedroom rowhomes and converted flats have proportions that empty photography flattens — a 12-foot-wide room reads as a corridor until there's furniture in it establishing scale.</p><p>The city's price range works in staging's favour too. On a rowhome listed well under the coastal-metro median, a month of physical staging is a meaningful percentage of the seller's net. Staging the photos instead keeps the marketing budget proportional to the sale.</p><p>97% of buyers use the internet in their home search (NAR), so Philadelphia agents compete on Zillow and Bright MLS photos long before a showing, and staged photos tend to draw more clicks and showing requests. Virtual staging shows a property's potential — rowhouses, condos and single family homes alike — at a fraction of the cost of traditional staging, with no delay waiting on a stager's truck and none of the logistics of moving furniture into a rowhome. Historic homes benefit most: period rooms read better once furniture shows how they work today.</p>",
+        "local_heading": "Staged for every buyer in the Philadelphia market",
+        "local_text": "<p>Designers stage contemporary for Fishtown and Northern Liberties, classic and period-aware for Society Hill and Rittenhouse, and practical family looks for the Main Line and the northwest neighbourhoods.</p><p>Narrow-room composition is the specialty here. Trinities and straight-through rowhomes get furniture chosen for scale first, so the photo proves the room works rather than just decorating it.</p><p>Tell us the target buyer and the designer tailors the style to them. Every image comes back Bright MLS-ready with disclosure guidance. Upload whenever you're ready; volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — for investors and builders with several homes.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Fishtown, Northern Liberties, Fairmount, Rittenhouse, Society Hill, Queen Village, Graduate Hospital, Manayunk, Chestnut Hill"
       }
@@ -112,24 +112,222 @@
             "question": "What does it cost relative to physical staging on a rowhome?",
             "answer": "Physical staging is priced for the furniture and the month, regardless of the sale price, which lands hard on a modestly priced rowhome. Virtual staging is {price:virtual-staging} a photo, once, with volume discounts across the set."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do people charge for virtual staging?",
+            "answer": "Prices depend on who does the work: AI apps charge little but generate the room automatically, while designer services charge per photo. Bella is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+, and furniture removal and two weeks of unlimited revisions included."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant Philadelphia listings, yes. Staging can't guarantee a sale, but 83% of buyers' agents say staging makes it easier for a buyer to visualize the property as a future home (NAR, 2025), and 97% of buyers use the internet in their home search, so the photos are the first showing. Virtual staging furnishes them for a one-time cost per photo instead of a month of rental."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Pennsylvania?",
+            "answer": "Yes. Add furniture and decor only, don't hide defects or change permanent features, and disclose that photos are virtually staged — the NAR Code of Ethics expects it; check Bright MLS rules for exact labeling. Every Bella order includes disclosure guidance."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps can place furniture in a photo, but it is generated rather than designed and often out of scale in narrow rooms. New Bella clients can claim a $40 voucher on our sign-up page to try designer staging. Eligibility subject to Bella's approval."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you show a dated rowhome renovated?",
+            "answer": "Yes — that is virtual renovation rather than staging, from {price:virtual-renovation} a photo. We render updated finishes from photos of the current condition, so buyers see the property's potential without any physical changes. Disclose it the same way you would virtual staging."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "What types of properties can be virtually staged?",
+            "answer": "Almost any: rowhouses and trinities, condos, single family homes, new construction and investor flips, whether the rooms are empty, occupied or cluttered. Interiors are the usual brief, and each room is staged to suit the property and the target buyer."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does it take to get staged photos in Philadelphia?",
+            "answer": "24 to 48 hours from upload, for a single room or a whole house. There is no consultation or delivery to schedule, so a listing photographed this week can go live with staged photos this week."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "What do your virtual staging services include?",
+            "answer": "Staging by a real interior designer, furniture removal for occupied rooms, unlimited revisions for two weeks, Bright MLS-ready files, disclosure guidance and full usage rights. Send wide, high-resolution photos in good light and the designer handles the rest."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Philadelphia agents",
+        "heading": "Virtual staging questions from Philadelphia agents",
         "open_first": true
+      }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "A home staging company typically charges a design fee plus monthly furniture rental — traditional staging generally runs $2,000–5,000 a month, a real share of a rowhome's marketing budget. Virtual staging is {price:virtual-staging} a photo, paid once."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Staged photos in 24–48 hours",
+            "text": "No consultation, no furniture carried up a narrow rowhome stair and no pickup. Upload after checkout and staged photos come back in 24 to 48 hours."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Rowhouses and narrow rooms",
+            "text": "An empty room photographs smaller than it is. Staging defines where the living room ends and dining begins, and shows that real furniture fits a 12-foot-wide room."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Empty or cluttered rooms",
+            "text": "Furniture removal is included: occupied, empty or cluttered rooms are digitally cleared first, then staged clean."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A style for every Philadelphia home",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer match the style to the neighborhood, from Fishtown to Chestnut Hill."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor only — never structural changes, and never to hide defects. Every order includes disclosure guidance."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. traditional staging",
+        "heading": "Virtual staging vs. a home staging company in Philadelphia",
+        "text": "Physical and virtual staging do the same job — help buyers picture living in the home. Here is the difference for Philadelphia agents, investors and sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "A professional interior designer composes each room by hand in Photoshop, 3D Max and Corona — not an AI app, and never one template repeated across the city."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Bright MLS-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for the MLS, Zillow, your website and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — built for investors and builders marketing several homes."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a Philadelphia listing. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Philadelphia order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract and the same guarantees on every Philadelphia listing."
       }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
+    "included",
     "quote",
     "faq",
     "cta"

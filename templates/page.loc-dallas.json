@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Dallas, TX",
-        "lede": "DFW runs on relocation and new construction — both sold from photos before anyone lands. Bella's virtual staging turns Dallas listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Dallas, TX",
+        "lede": "Virtual staging is a digital marketing technique for real estate — the process of adding furniture and decor to listing photos: an interior designer furnishes empty or cleared rooms in the image so buyers can judge scale and layout, without any physical furniture entering the house. Bella's designers stage Dallas–Fort Worth listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Dallas",
-        "market_heading": "Why virtual staging matters in the Dallas market",
-        "market_text": "<p>Dallas–Fort Worth adds more people each year than almost any metro in the country, and a large share of them are relocating on a corporate timeline from California, Illinois or the Northeast. They build a shortlist online weeks before they fly in, and an empty room gives them nothing to judge but square footage.</p><p>The other half of the market is new construction. Plano, Frisco, McKinney and Prosper turn over thousands of spec homes and model-plan builds where six listings in a development share three floor plans. Photographed empty, they're indistinguishable — home staging is what makes one of them the listing a relocating buyer remembers.</p><p>DFW price points also make the maths obvious. Physical staging is priced for furniture plus a monthly rental period regardless of how long the listing sits. Virtual staging is {price:virtual-staging} a photo, once, with no rental clock — which matters on a builder's inventory of eight vacant homes rather than one.</p>",
-        "local_heading": "Staged for the Dallas buyer",
-        "local_text": "<p>Designers stage modern-transitional for Plano, Frisco and McKinney new builds, warmer traditional for Highland Park and Lakewood, and clean contemporary for Uptown and Design District condos.</p><p>Builder and investor inventory is quoted as a batch and delivered together, so a whole community's worth of listings lands at once rather than photo by photo. Files come back NTREIS-ready with disclosure guidance included.</p>",
+        "market_heading": "Why virtual staging matters in the Dallas-Fort Worth market",
+        "market_text": "<p>Dallas–Fort Worth adds more people each year than almost any metro in the country, and a large share of them are relocating on a corporate timeline from California, Illinois or the Northeast. They build a shortlist online weeks before they fly in, and an empty room gives them nothing to judge but square footage.</p><p>The other half of the market is new construction. Plano, Frisco, McKinney and Prosper turn over thousands of spec homes and model-plan builds where six listings in a development share three floor plans. Photographed empty, they're indistinguishable — home staging is what makes one of them the listing a relocating buyer remembers.</p><p>DFW price points also make the maths obvious. Physical staging is priced for furniture plus a monthly rental period regardless of how long the listing sits. Virtual staging is {price:virtual-staging} a photo, once, with no rental clock — which matters on a builder's inventory of eight vacant homes rather than one.</p><p>That's why Dallas virtual staging is routine for DFW agents, builders and investors. 97% of buyers use the internet in their home search (NAR), so the listing photos are where most buyers first compare homes — and listings that stand out online tend to draw more clicks, views and showing requests. Virtually staged photos show what each room is for and how much furniture it really holds, so the house makes the shortlist before anyone books a showing. For a relocating buyer deciding which homes to tour on a single trip, that is often the whole decision.</p>",
+        "local_heading": "Dallas home staging, done virtually for each buyer",
+        "local_text": "<p>Designers stage modern-transitional for Plano, Frisco and McKinney new builds, warmer traditional for Highland Park and Lakewood, and clean contemporary for Uptown and Design District condos.</p><p>Builder and investor inventory is quoted as a batch and delivered together, so a whole community's worth of listings lands at once rather than photo by photo. Files come back NTREIS-ready with disclosure guidance included.</p><p>Our design team works online, so there's no walkthrough to schedule anywhere in Texas: order, upload your photos and a designer handles the styling. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — which is where most Plano and Frisco builder sets land. Modern and transitional styles suit most DFW new construction, while Lakewood Tudors and Craftsman bungalows get warmer traditional pieces in wood tones.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Plano, Frisco, McKinney, Allen, Prosper, Uptown, Highland Park, Lakewood, Arlington, Fort Worth"
       }
@@ -112,17 +112,81 @@
             "question": "I'm a builder with eight vacant homes. Is there volume pricing?",
             "answer": "Yes, discounts scale to 20% across a set, and builder inventory is quoted as a batch and delivered together. There's also no rental period to extend if a home sits, which is the usual problem with staging spec inventory physically."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost in Dallas?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo anywhere in Dallas–Fort Worth, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included. Physical staging, by comparison, generally runs $2,000–5,000 a month."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do people charge for virtual staging?",
+            "answer": "It depends on who does the work. AI apps generate a room automatically for a small fee; designer services charge per photo for a room composed by hand. Bella is the second kind, at {price:virtual-staging} a photo with no subscription and no minimum."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant Dallas listings, yes. Staging can't guarantee a sale, but 97% of buyers use the internet in their home search (NAR), so the photos are the first showing. Virtual staging furnishes those photos for a one-time cost per photo instead of monthly rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Texas?",
+            "answer": "Yes. Virtual staging is a standard marketing practice; the rule is not to misrepresent the property. Add furniture and decor only, don't hide defects or change permanent features, and disclose that photos are virtually staged — the NAR Code of Ethics expects it. Check NTREIS rules for exact labeling; every Bella order includes disclosure guidance."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "What do realtors use for virtual staging?",
+            "answer": "Realtors generally choose between do-it-yourself AI apps and done-for-you services. Bella is done-for-you: you upload photos and an interior designer builds each room by hand, so the furniture is sized to the actual room and the photo holds up when buyers walk in."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "What photos do I need for virtual staging?",
+            "answer": "High-resolution, well-lit photos of each room, shot wide from a corner. Empty rooms are ideal, but occupied rooms work too because furniture removal is included. The better the original photo, the more realistic the virtually staged photo."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage a room for a different use?",
+            "answer": "Yes. Virtual staging can show more than one potential use of a space — a Frisco bonus room as a home office, a game room or a nursery — so buyers see what the room can do for them. Tell your designer which use suits the target buyer."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you stage Fort Worth and the suburbs too?",
+            "answer": "Yes. We work online, so listings anywhere in DFW — Plano, Frisco, McKinney, Allen, Arlington, Fort Worth and beyond — get the same 24 to 48 hour delivery. We also work across the US and Canada."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Dallas agents",
+        "heading": "Dallas virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -169,12 +233,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "A home staging company typically charges a design fee plus monthly furniture rental — physical staging generally runs $2,000–5,000 a month until the house sells. Virtual staging with Bella is {price:virtual-staging} a photo, paid once, so the money goes into the photos buyers actually see."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "Virtual staging cuts turnaround time compared with traditional staging, which can take weeks to schedule: no consultation, delivery truck or pickup to coordinate across the Metroplex. Upload after checkout and virtually staged photos come back in 24 to 48 hours, ready to post."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Empty rooms and spec homes",
+            "text": "An empty room photographs smaller than it is. Staging shows scale, flow and how each space lives — and a builder can stage eight vacant homes without eight furniture contracts."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied or dated rooms",
+            "text": "Furniture removal is included: tenant-occupied, cluttered or dated rooms are digitally cleared first, then staged clean."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A style for every Dallas property",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer match the style to the neighborhood, from Highland Park to McKinney."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor only — never structural changes, and never to hide defects. Every order includes disclosure guidance: label each virtually staged photo and add a note in the agent remarks so your listing follows MLS rules."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical staging",
+        "heading": "Virtual staging vs. a home staging company in Dallas",
+        "text": "Physical staging and virtual staging do the same job: help potential buyers picture living in the home. Here is how they compare for Dallas agents, builders, investors and home sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Each room is composed by hand by a professional interior designer using Photoshop, 3D Max and Corona — not an AI app, and never one template repeated across every listing in Texas."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If a room still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "NTREIS-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for the MLS, your website, print and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — built for builders and investors with several Dallas homes to market."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a Dallas listing. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Dallas order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract and the same guarantees on every DFW listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

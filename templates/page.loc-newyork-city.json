@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in New York City",
-        "lede": "At Manhattan and Brooklyn prices, every photo carries five figures of value. Bella's virtual staging turns NYC listings around in 24 to 48 hours, from {price:virtual-staging} a photo — a rounding error next to what physical staging costs in the city.",
+        "heading": "Virtual Staging NYC",
+        "lede": "Virtual staging is a digital marketing technique that adds furniture and decor to real estate photographs: an interior designer furnishes empty apartments and cleared rooms in the image so buyers can see scale and layout, with nothing carried up the service elevator. At Manhattan and Brooklyn prices every listing photo carries real value — Bella's designers stage NYC listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "New York City",
         "market_heading": "Why virtual staging matters in the NYC market",
-        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Home staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan and Brooklyn is a serious expense: furniture rental, a service elevator booking, a certificate of insurance for the building, and a crew who can work within board rules. Virtual staging skips all of it, which is why the cost comparison here is more lopsided than in any other US market.</p><p>Co-op and condo board logistics are the hidden cost people forget. A physical stage can stall for weeks waiting on building approval and elevator access; the photos can't wait that long when a listing's first week on StreetEasy determines most of its traffic.</p>",
-        "local_heading": "Staged for the New York buyer",
-        "local_text": "<p>Designers stage pre-war co-ops with furniture that respects the mouldings and proportions, new developments with the clean contemporary look those buyers expect, and Brooklyn brownstones somewhere between the two.</p><p>Small-room proof is the priority throughout. In a market where the deciding question is usually whether real furniture fits, staging that quietly oversizes a room does more harm than good — we furnish to scale so the photo survives the showing.</p>",
+        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Home staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan and Brooklyn is a serious expense: furniture rental, a service elevator booking, a certificate of insurance for the building, and a crew who can work within board rules. Virtual staging skips all of it, which is why the cost comparison here is more lopsided than in any other US market.</p><p>Co-op and condo board logistics are the hidden cost people forget. A physical stage can stall for weeks waiting on building approval and elevator access; the photos can't wait that long when a listing's first week on StreetEasy determines most of its traffic.</p><p>97% of buyers use the internet in their home search (NAR), and New York buyers compare listing photos on StreetEasy long before a showing. Empty apartments photograph smaller and colder than they are, and staged photos tend to draw more clicks, views and showing requests. Virtual staging answers the scale question with furniture sized to the real room, so buyers can visualize how each space is used. Brokerages that need virtual staging New York buyers believe — including Brown Harris Stevens, a Bella client — use it on everything from pre-war co-ops to new developments.</p>",
+        "local_heading": "Virtual staging NYC buyers can trust at the showing",
+        "local_text": "<p>Designers stage pre-war co-ops with furniture that respects the mouldings and proportions, new developments with the clean contemporary look those buyers expect, and Brooklyn brownstones somewhere between the two.</p><p>Small-room proof is the priority throughout. In a market where the deciding question is usually whether real furniture fits, staging that quietly oversizes a room does more harm than good — we furnish to scale so the photo survives the showing.</p><p>For the shoot, send wide, high-resolution photos in the best light you can get: daylight, lamps on, blinds open. Our designers match the lighting, textures and ceiling height in each photo so the furnishings sit realistically against the walls, and every final image is ready for the REBNY RLS and StreetEasy with disclosure guidance. Developers and teams marketing several apartments get volume discounts automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Upper East Side, Upper West Side, Chelsea, Tribeca, Williamsburg, Park Slope, Brooklyn Heights, Long Island City, Harlem, Astoria"
       }
@@ -112,17 +112,73 @@
             "question": "How does the cost compare to staging a Manhattan listing physically?",
             "answer": "It's the widest gap of any market we work in. Physical staging here carries furniture rental plus building logistics; virtual staging is {price:virtual-staging} a photo with none of the overhead."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost to virtually stage a house?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included, with no subscription and no minimum. Physical staging generally runs $2,000–5,000 a month."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How many photos should I stage?",
+            "answer": "Stage the rooms buyers decide on: the living room, the primary bedroom and any room whose scale or use isn't obvious. For a typical apartment that is often three to six photos; volume discounts start at three."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best virtual staging program?",
+            "answer": "It depends on the listing. AI apps are fast and cheap but generate furniture automatically, and poorly scaled furniture is a real risk in small NYC rooms. For listings where accuracy matters, a virtual staging service where a designer composes each room in Photoshop, 3D Max and Corona is the safer choice — that is how Bella works."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant NYC apartments, yes. Staging can't guarantee a sale, but 97% of buyers use the internet in their home search (NAR), and in New York the photos decide which showings get booked. Virtual staging furnishes them for a one-time cost per photo, with no building logistics."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in New York?",
+            "answer": "Yes, as long as the photos aren't misleading. Add furniture and decor only, don't hide defects or change permanent features, and clearly disclose that images are virtually staged — the NAR Code of Ethics and New York advertising rules both expect honest marketing. Every Bella order includes disclosure guidance."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps can place furniture in a photo, but the results are generated rather than designed. New Bella clients can claim a $40 voucher on our sign-up page to try designer staging. Eligibility subject to Bella's approval."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "What do you need from me to start?",
+            "answer": "Wide, high-resolution photos of each room, shot in good light. If you have a floor plan, send it along — it helps the designer confirm scale in tight rooms. Tell us the target buyer and a style, or let the designer choose."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from New York agents",
+        "heading": "Virtual staging NYC questions from New York agents",
         "open_first": true
       }
     },
@@ -221,12 +277,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "Traditional staging in Manhattan means a design fee and monthly furniture rental — physical staging generally runs $2,000–5,000 a month — plus building logistics on top. Virtual staging is {price:virtual-staging} a photo, paid once, so more money stays with the seller."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "No building logistics",
+            "text": "No service elevator booking, certificate of insurance or board approval, and no weeks lost waiting on them. Upload after the shoot and staged photos are delivered in 24 to 48 hours."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Empty apartments and new developments",
+            "text": "An empty apartment photographs smaller than it is. Staging shows scale and how each room is used, which is why developers stage vacant units across new developments without furnishing a single one."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied or dated rooms",
+            "text": "Furniture removal is included: tenant-occupied, cluttered or dated apartments are digitally cleared first, then staged clean."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A style for every property type",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer match the furnishings to the property's architecture, from a pre-war co-op to a glass-tower condo."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Realistic, disclosed images",
+            "text": "Furniture is scaled to the real room, never oversized, and we never change walls, ceilings or other permanent features. Every order includes disclosure guidance so buyer expectations match the showing."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. traditional staging",
+        "heading": "Virtual staging vs. a home staging company in New York City",
+        "text": "Physical staging and virtual staging do the same job — help potential buyers picture living in the apartment. Here is how they compare for NYC agents, developers and sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Each room is composed by hand by a professional interior designer in Photoshop, 3D Max and Corona — nothing artificial or auto-generated, and never one template repeated across Manhattan."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Final images are delivered together, fast enough to have the listing photos live in its first week on StreetEasy."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "REBNY RLS-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for the RLS, StreetEasy, your website, print and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for developers and teams with several apartments to market."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a New York listing. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every New York order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract and no building paperwork — the same guarantees on every NYC listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

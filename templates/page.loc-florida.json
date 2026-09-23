@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Florida",
-        "lede": "Half of Florida's buyers are shopping from another state — the photos do the showing. Bella's virtual staging turns Florida listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Florida",
+        "lede": "Virtual staging is a digital marketing technique for real estate: a designer adds furniture and décor to photos of empty or cleared rooms so potential buyers can visualize the space, with no furniture delivered to the property. Half of Florida's buyers shop from another state, so the pictures do the showing — Bella's designers stage Florida listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Florida",
-        "market_heading": "Why virtual staging matters across Florida",
-        "market_text": "<p>Florida is a remote-buyer market: northern relocations, snowbirds and international purchasers routinely shortlist — and sometimes buy — from photos alone. When the buyer can't attend the open house, the listing photos are the open house, and an empty white-tile room doesn't sell a Florida lifestyle to someone scrolling from New Jersey in February.</p><p>The stock skews vacant, too — investor condos, estate sales and new spec builds — so whole-home staging is routine here. Virtually staging an entire 8-photo listing costs about what one month of physically staging a single room would.</p><p>Florida's selling calendar is also inverted relative to most of the country. The buying season peaks when northern buyers are escaping winter, which means listings need to look their best in months when much of the US market is quiet. Photos that are ready on demand matter more in a market whose busiest weeks arrive in January.</p>",
-        "local_heading": "Staged for the Florida buyer",
-        "local_text": "<p>Our designers stage coastal-bright for Miami and Fort Lauderdale condos, airy transitional for Orlando and Tampa family homes, and elegant looks for Naples and Sarasota. Every image is MLS-ready in 24 to 48 hours, disclosed as virtually staged.</p><p>Outdoor space gets staged as living space here rather than as an afterthought — lanais, pool decks and screened porches are where Florida listings win the scroll, and they photograph empty worse than any interior room.</p>",
+        "market_heading": "Why virtual staging works in the Florida real estate market",
+        "market_text": "<p>Florida is a remote-buyer market: northern relocations, snowbirds and international purchasers routinely shortlist — and sometimes buy — from photos alone. When the buyer can't attend the open house, the listing photos are the open house, and an empty white-tile room doesn't sell a Florida lifestyle to someone scrolling from New Jersey in February.</p><p>The stock skews vacant, too — investor condos, estate sales and new spec builds — so whole-home staging is routine here. Virtually staging an entire 8-photo listing costs about what one month of physically staging a single room would.</p><p>Florida's selling calendar is also inverted relative to most of the country. The buying season peaks when northern buyers are escaping winter, which means listings need to look their best in months when much of the US market is quiet. Photos that are ready on demand matter more in a market whose busiest weeks arrive in January.</p><p>97% of buyers use the internet in their home search (NAR), and in Florida the online listing is often the only showing a remote buyer gets. Many buyers decide which homes to visit based on listing photos alone, so staged images make the first impression that decides whether a buyer books a visit — which is why virtual staging works so well in a state with so many vacant, seasonal, investment and second-home properties. Staged photos also tend to perform better online and on social media, where buyers often see a listing first.</p>",
+        "local_heading": "Florida home staging, done virtually for each buyer",
+        "local_text": "<p>Our designers stage coastal-bright for Miami and Fort Lauderdale condos, airy transitional for Orlando and Tampa family homes, and elegant looks for Naples and Sarasota. Every image is MLS-ready in 24 to 48 hours, disclosed as virtually staged.</p><p>Outdoor space gets staged as living space here rather than as an afterthought — lanais, pool decks and screened porches are where Florida listings win the scroll, and they photograph empty worse than any interior room.</p><p>Our design team works online, so there's no site visit or delivery to schedule anywhere in the state: order, upload your original photos and a designer handles the style and layout. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — so whole-home sets and investor portfolios cost less per photo.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Miami, Fort Lauderdale, Palm Beach, Naples, Sarasota, Tampa, St. Petersburg, Orlando, Jacksonville"
       }
@@ -112,17 +112,65 @@
             "question": "The condo is furnished, but badly. Options?",
             "answer": "Furniture removal is included, so we can clear the existing furniture digitally and stage the room fresh. That's a common request on estate sales and older snowbird condos where the furniture dates the listing."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo in Florida and everywhere else we work, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included — no subscription and no minimum."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does home staging cost in Florida?",
+            "answer": "Physical staging is priced by the stager, the size of the home and how long the furniture stays, so Florida quotes vary; as a general benchmark it runs about $2,000–5,000 a month. Virtual staging is {price:virtual-staging} a photo, once, with no rental period to extend if the listing sits through the off-season."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps can drop furniture into a photo, but the scale and finishes are generated, not designed. For designer staging, new Bella clients can claim a $40 voucher on our sign-up page to try it. Eligibility subject to Bella's approval."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant Florida listings, yes. Staging is meant to make a property more appealing and help it sell faster, but it can't guarantee multiple offers or stronger offers. What it can do is make the photos count: 97% of buyers use the internet in their home search (NAR), and an out-of-state buyer judges the home from the listing photos. Virtual staging furnishes them for a one-time cost per photo."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "What photos do I need for virtual staging?",
+            "answer": "High-resolution, well-lit photos of each room, shot wide from a corner — bright Florida daylight helps. Empty rooms are ideal, but furnished ones work too because furniture removal is included. The better the original photos, the more realistic the staged images."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Florida?",
+            "answer": "Yes, as long as the photos don't mislead buyers. Add furniture and décor only, don't hide defects or change permanent features, disclose that the images are virtually staged, and consider including the original photos alongside them. Check your MLS rules for exact labeling; every Bella order includes disclosure guidance."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Florida agents",
+        "heading": "Florida virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -156,12 +204,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "A home staging company typically bills a design fee plus monthly furniture rental; physical staging generally runs $2,000–5,000 a month until the property sells. Virtual staging cuts costs to {price:virtual-staging} a photo, paid once — that's money back in the seller's pocket, and a fast, affordable marketing tool for the agent."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "No consultation, truck or pickup to schedule, which saves time on an owner who lives in another state. Upload your photos and staged images come back in 24 to 48 hours."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant homes, from living room to lanai",
+            "text": "An empty room photographs smaller than it is. Staging shows scale and how the living room, lanai or bedroom is used, making homes easier to picture from a thousand miles away."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied or dated rooms",
+            "text": "Furniture removal is included: dated snowbird furniture, tenant belongings or estate contents are digitally cleared first, then the room is staged clean."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A style for every Florida property",
+            "text": "Choose from the Look Book — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional — or let the designer match the style to the target buyer and property, from a Miami condo to a Naples pool home."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Staging that won't mislead buyers",
+            "text": "We add furniture and décor only. We avoid misleading enhancements — no structural changes, no hidden defects — and the staging always reflects the home's actual layout and dimensions. Disclosure guidance is included so virtually staged images never mislead buyers."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical staging",
+        "heading": "Virtual staging vs. a home staging company in Florida",
+        "text": "Physical and virtual home staging do the same job — create the emotional connection that helps buyers imagine living in the home. Here is how they compare for Florida agents, sellers and homeowners listing from out of state."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "A professional interior designer on our team composes every room by hand in Photoshop, 3D Max and Corona — not an AI app, and never one template repeated across the Florida market."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Staged images are delivered together, fast enough to have a listing ready for the winter buying season."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If the result still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "MLS-ready files",
+            "text": "Sized for Stellar MLS, Miami REALTORS® and the other Florida MLSs, with disclosure guidance and full usage rights for the listing, website and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for whole-home staging and investor clients with several properties."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher the first time",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella for the first time. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Florida order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract and the same guarantees on every Florida listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"
