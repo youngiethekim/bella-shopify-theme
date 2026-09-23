@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in San Diego, CA",
-        "lede": "Coastal light, military relocations and lifestyle buyers: San Diego listings are made for staging. Bella delivers MLS-ready virtual staging in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging San Diego, CA",
+        "lede": "Virtual staging is a digital marketing technique in real estate where a designer places true-to-scale 3D furniture, rugs and decor into photos of empty or cleared rooms, so buyers can see how each space lives before they visit. Bella's designers stage San Diego homes — coastal condos, bungalows and ADUs — in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "San Diego",
         "market_heading": "Why virtual staging matters in the San Diego market",
-        "market_text": "<p>San Diego's steady stream of military and defense-industry relocations means a constant pool of buyers shopping on short timelines from far away — buyers who rank listings almost entirely by photos before a whirlwind house-hunting trip. Home staging gets a listing shortlisted; empty photos get skipped.</p><p>And like the rest of coastal California, the lifestyle is the pitch: staged patios, decks and indoor-outdoor rooms let a La Jolla condo or a North Park bungalow sell the weather along with the walls.</p><p>The ADU boom adds a second job for staging here. A converted garage or granny flat is often the reason a buyer stretches for the property, but photographed empty it reads as storage. Staged as a studio with a bed, a table and a place to sit, it reads as the rental income or in-law suite the listing is really selling.</p>",
-        "local_heading": "Staged for the San Diego buyer",
-        "local_text": "<p>Designers stage coastal-casual for La Jolla, Pacific Beach and Encinitas, modern for downtown and East Village condos, and warm bungalow looks for North Park, South Park and Normal Heights.</p><p>Military relocation timelines drive a lot of the urgency, so photos come back in 24 to 48 hours — fast enough to list inside the window a PCS-ing buyer is actually house-hunting in.</p>",
+        "market_text": "<p>San Diego's steady stream of military and defense-industry relocations means a constant pool of buyers shopping on short timelines from far away — buyers who rank listings almost entirely by photos before a whirlwind house-hunting trip. Home staging gets a listing shortlisted; empty photos get skipped.</p><p>And like the rest of coastal California, the lifestyle is the pitch: staged patios, decks and indoor-outdoor rooms let a La Jolla condo or a North Park bungalow sell the weather along with the walls.</p><p>The ADU boom adds a second job for staging here. A converted garage or granny flat is often the reason a buyer stretches for the property, but photographed empty it reads as storage. Staged as a studio with a bed, a table and a place to sit, it reads as the rental income or in-law suite the listing is really selling.</p><p>That's why the photos matter so much here: 97% of buyers use the internet in their home search, according to the National Association of Realtors. Virtual staging gives real estate agents a market-ready set of listing photos without scheduling a stager, a crew or a truck — and gives relocating buyers a reason to put the home on their shortlist.</p>",
+        "local_heading": "Virtual home staging San Diego, neighborhood by neighborhood",
+        "local_text": "<p>Designers stage coastal-casual for La Jolla, Pacific Beach and Encinitas, modern for downtown and East Village condos, and warm bungalow looks for North Park, South Park and Normal Heights.</p><p>Military relocation timelines drive a lot of the urgency, so photos come back in 24 to 48 hours — fast enough to list inside the window a PCS-ing buyer is actually house-hunting in.</p><p>Files upload to SDMLS or CRMLS with disclosure guidance built to California's AB 723 standard, and you keep full usage rights for the MLS, your website and social posts. There's no in-person consultation to schedule: order, upload and our design team handles the rest. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "La Jolla, Pacific Beach, North Park, South Park, Normal Heights, Encinitas, Carlsbad, Chula Vista, Downtown, Point Loma"
       }
@@ -89,7 +89,7 @@
           "type": "qa",
           "settings": {
             "question": "Does this meet California's disclosure requirements?",
-            "answer": "Yes — San Diego orders are built to the AB 723 standard, and disclosure wording ships with the files. Your broker or board has the final say on exactly how it appears on the listing."
+            "answer": "Yes. California's AB 723 requires a statement on or next to any digitally altered listing image, plus access to the original, unaltered photo — posted alongside it or through a link. San Diego orders ship with disclosure wording; keep your original photos to post or link next to the staged set. Your broker or MLS has the final say on exactly how it appears."
           }
         },
         "q2": {
@@ -112,17 +112,81 @@
             "question": "Can you stage outdoor space?",
             "answer": "Yes. In coastal San Diego the patio, deck or indoor-outdoor room is often the strongest thing about the property, and it's the room that suffers most from being photographed empty."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do stagers charge to stage a house in San Diego?",
+            "answer": "Physical stagers quote by the size of the home, the number of rooms furnished and how long the furniture stays, so San Diego quotes vary widely. As a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging from Bella is {price:virtual-staging} a photo, paid once, with no rental period to extend if the listing sits."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do people charge for virtual staging?",
+            "answer": "Prices vary by provider and by whether a person or an AI app does the work. Bella's designer-made virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal for occupied rooms, unlimited revisions for two weeks and full usage rights are included — no subscription, no minimum."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is staging a house really worth it? Does staging sell a house?",
+            "answer": "For most vacant or dated listings, yes. Staging can't guarantee a sale, but 97% of buyers use the internet in their home search, according to the National Association of Realtors, so the photos decide which homes get a showing. NAR's research on home staging also finds that staging makes it easier for buyers to visualize a property as their future home. Virtual staging gives those photos a furnished, market-ready look for a one-time cost per photo instead of monthly furniture rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in California?",
+            "answer": "Yes, as long as it isn't misleading. Under AB 723 (California Business and Professions Code §10140.8), a digitally altered listing image needs a conspicuous statement on or next to it saying it was altered, plus access to the original, unaltered image — posted alongside it or through a link or QR code. Add furniture and decor only; don't hide defects or change permanent features. Every Bella order includes disclosure guidance, and your broker or MLS has the final say on placement."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best virtual staging program?",
+            "answer": "It depends on the listing. DIY programs and AI apps are fast and cheap, but they can distort scale, finishes and light. A virtual staging company like Bella has a real interior designer compose each room, which keeps furniture true to the room's dimensions — important when a buyer walks in and compares."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you show a room in more than one style, or a home that isn't built yet?",
+            "answer": "Yes. Because the furniture is digital, a room can be staged in more than one Look Book style, which makes it easy to test which look suits the buyer. For dated rooms, virtual renovation (from {price:virtual-renovation-service}) shows new floors, walls and finishes; for homes that aren't built yet, 3D rendering (from {price:3d-rendering}) creates photorealistic images from plans."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps and DIY software can drop furniture into a photo, but the results often distort scale and finishes, and a misleading image creates disclosure problems. New clients can claim a $40 voucher on Bella's sign-up page to try designer-made staging, subject to Bella's approval."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Is home staging in demand in San Diego?",
+            "answer": "Staging remains a standard part of listing prep, and it matters most where buyers shop remotely — which describes much of San Diego's military and relocation market. Virtual staging meets the same need for the online listing without furniture rental, and it works for vacant, occupied and ADU photos alike."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from San Diego agents",
+        "heading": "San Diego virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -182,12 +246,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "A physical staging company quotes a design fee plus furniture rental, usually on a monthly contract — conventional staging runs about $2,000–5,000 a month until the home sells. Bella virtual staging is priced per photo at {price:virtual-staging}, paid once, however long the listing takes."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The schedule",
+            "text": "No consultation visit, no delivery window and no pickup to coordinate around a move-out. Upload photos after checkout and staged images come back in 24 to 48 hours, ready for SDMLS or CRMLS."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Empty space, made readable",
+            "text": "Vacant rooms photograph smaller and colder than they are. Staging gives each empty space scale and purpose — a living room, a kitchen with stools at the island, an ADU with a bed — so buyers can visualize the home, not just the walls. It also stages spaces that are hard to furnish physically, like a hillside deck or a narrow balcony."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied rooms, cleared first",
+            "text": "Tenant-occupied or cluttered rooms are digitally cleared, with furniture removal included at no extra cost, then staged clean — useful for military rentals and estates where the furniture can't leave before the photos are due."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Tailored design for every property",
+            "text": "Pick a Look Book style — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional or Transitional — or let the designer match modern design or coastal décor to the property and the neighborhood."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and décor only — no structural changes and no hiding defects. Disclosure guidance built to AB 723 ships with every order, so each staged photo is clearly labeled as virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in San Diego",
+        "text": "A San Diego home staging company and a virtual staging service aim for the same result: a home ready for market that buyers can picture themselves in. Here is how the two compare for agents, realtors and homeowners."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Each room is composed by a professional interior designer on our team, who places 3D furniture into your photo in Photoshop, 3D Max and Corona — no AI generator and no template repeated across San Diego listings."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Quick enough to list inside a PCS window, with the full set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "SDMLS and CRMLS-ready files",
+            "text": "MLS-ready dimensions with AB 723 disclosure guidance, plus full usage rights for the MLS, your website, print and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — applied automatically to whole-home sets and investor portfolios."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every San Diego order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

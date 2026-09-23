@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Seattle, WA",
-        "lede": "Grey skies and empty rooms are a hard combination to sell. Bella's virtual staging turns Seattle and Eastside listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Seattle, WA",
+        "lede": "Virtual staging is the process of furnishing a listing's photos instead of the property: an interior designer adds realistic 3D furniture and decor to images of empty or cleared rooms, so buyers see how the home lives without physical staging. Grey skies and empty rooms are a hard combination to sell, and Bella's designers stage Seattle and Eastside listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Seattle",
         "market_heading": "Why virtual staging matters in the Seattle market",
-        "market_text": "<p>Seattle and the Eastside run on tech relocation. Buyers arriving for roles in Bellevue, Redmond and South Lake Union are often house-hunting from another city, sometimes another country, on a start-date deadline. The listing photos are the entire tour until the week they land.</p><p>The light is a genuine technical problem here for much of the year. An empty white-walled condo photographed under overcast Puget Sound skies has almost no warmth in it, and no amount of exposure correction adds the furniture, texture and colour that make a room feel lived in. Home staging is what puts that back.</p><p>Bellevue and downtown Seattle also skew heavily to towers, where a one-bedroom unit photographs like every other one-bedroom in the building. When the floor plan is shared by forty other listings, the staging is the only thing distinguishing yours in the scroll.</p>",
-        "local_heading": "Staged for the Seattle buyer",
-        "local_text": "<p>Designers stage clean contemporary for Bellevue, downtown and South Lake Union towers, Pacific Northwest warmth for Ballard, Fremont and Capitol Hill character homes, and family looks for Kirkland, Redmond, Sammamish and Mercer Island.</p><p>Compact tower floor plans get furnished to scale rather than flattered. At Eastside price per square foot, buyers measure carefully, and staging that oversells a room loses the trust it was meant to build. Files come back NWMLS-ready in 24 to 48 hours.</p>",
+        "market_text": "<p>Seattle and the Eastside run on tech relocation. Buyers arriving for roles in Bellevue, Redmond and South Lake Union are often house-hunting from another city, sometimes another country, on a start-date deadline. The listing photos are the entire tour until the week they land.</p><p>The light is a genuine technical problem here for much of the year. An empty white-walled condo photographed under overcast Puget Sound skies has almost no warmth in it, and no amount of exposure correction adds the furniture, texture and colour that make a room feel lived in. Home staging is what puts that back.</p><p>Bellevue and downtown Seattle also skew heavily to towers, where a one-bedroom unit photographs like every other one-bedroom in the building. When the floor plan is shared by forty other listings, the staging is the only thing distinguishing yours in the scroll.</p><p>Buyers who can't tour in person lean on the listing, and most Seattle buyers start their search online: 97% of buyers use the internet in their home search, according to the National Association of Realtors. For relocating tech buyers especially, Seattle virtual staging gives them warm, furnished listing photos matched to the expectations of each neighborhood, without thousands a month in furniture rental.</p><p>Empty homes look smaller and less inviting than they are, and in a rainy city, buyers tend to vet listings online before committing to a wet Saturday of showings. Staging helps them visualize the property's size and potential, shows a room's dimensions and layout at a glance, and it can illustrate a potential use — a spare bedroom shown as a home office or a guest room, a reading nook on a landing — with furniture styles that match local taste, from Scandinavian minimalism to warm Pacific Northwest modern.</p>",
+        "local_heading": "Seattle virtual staging for every neighborhood",
+        "local_text": "<p>Designers stage clean contemporary for Bellevue, downtown and South Lake Union towers, Pacific Northwest warmth for Ballard, Fremont and Capitol Hill character homes, and family looks for Kirkland, Redmond, Sammamish and Mercer Island.</p><p>Compact tower floor plans get furnished to scale rather than flattered. At Eastside price per square foot, buyers measure carefully, and staging that oversells a room loses the trust it was meant to build. Files come back NWMLS-ready in 24 to 48 hours.</p><p>Every image is clearly identified as virtually staged, with disclosure guidance your broker can review and full usage rights for the MLS, your website and social. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Bellevue, Kirkland, Redmond, Capitol Hill, Ballard, Fremont, Queen Anne, South Lake Union, Mercer Island, Sammamish"
       }
@@ -112,17 +112,65 @@
             "question": "It's a 550 sq ft Bellevue one-bedroom. Is staging going to look ridiculous?",
             "answer": "Not if it's done to scale, which is the point. The buyer wants to know whether a real bed and a real sofa fit — furniture that oversizes the room fails that test at the showing, so we furnish honestly."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost to stage a home in Seattle?",
+            "answer": "Physical staging in Seattle is quoted per home — size, number of rooms and rental length all move the price. As a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging from Bella is {price:virtual-staging} a photo, paid once, with no rental to extend if the listing sits."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do people charge for virtual staging?",
+            "answer": "Prices vary by provider and by whether a person or an AI app does the work. Bella's designer-made virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal for occupied rooms, unlimited revisions for two weeks and full usage rights are included — no subscription, no minimum."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it? Will it sell my home faster?",
+            "answer": "For most vacant or dated listings, yes. Staging can't guarantee a sale, but 97% of buyers use the internet in their home search, according to the National Association of Realtors, so the photos decide which homes get a showing. NAR's research on home staging also finds that staging makes it easier for buyers to visualize a property as their future home. In Seattle, staged photos give an empty or grey-day listing the warmth buyers expect, for a one-time cost per photo instead of monthly furniture rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Washington? Do I have to disclose it?",
+            "answer": "Yes, it's legal, and yes, disclose it. MLS rules generally prohibit misleading listing photos and the NAR Code of Ethics requires a true picture in advertising, so label each virtually staged image and note virtual staging in the listing remarks. Add furniture and decor only — never alter structural elements or hide defects — and it's good practice to include an unstaged photo of major rooms. Check NWMLS rules for exact labeling; every Bella order includes disclosure guidance."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you show a room in more than one style, or a home that isn't built yet?",
+            "answer": "Yes. Because the furniture is digital, a room can be staged in more than one Look Book style, which makes it easy to test which look suits the buyer. For dated rooms, virtual renovation (from {price:virtual-renovation-service}) shows new floors, walls and finishes; for homes that aren't built yet, 3D rendering (from {price:3d-rendering}) creates photorealistic images from plans."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps and DIY software can drop furniture into a photo, but the results often distort scale and finishes, and a misleading image creates disclosure problems. New clients can claim a $40 voucher on Bella's sign-up page to try designer-made staging, subject to Bella's approval."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Seattle agents",
+        "heading": "Seattle virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -195,12 +243,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "A home staging company bills a design fee plus monthly furniture rental — conventional staging runs about $2,000–5,000 a month until the home sells. Bella virtual staging is {price:virtual-staging} a photo, paid once, whether the listing sells in a week or a season."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "No consultation, install day or pickup to schedule. Upload photos after checkout and staged images come back in 24 to 48 hours, NWMLS-ready — so the listing reaches the market sooner than the one to two weeks it typically takes to schedule a physical stage."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant condos and grey-day photos",
+            "text": "Empty rooms under overcast light read cold and small. Staged with furniture, texture and colour, the same room shows its scale and warmth."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied rooms, cleared first",
+            "text": "Tenant-occupied or cluttered rooms are digitally cleared, with furniture removal included at no extra cost, then staged clean, so occupied Seattle listings can be staged too."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Styles for every Seattle buyer",
+            "text": "Choose a Look Book style — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional or Transitional — or let the designer furnish Pacific Northwest warmth for character homes and cleaner lines for Bellevue towers."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "Furniture and decor only — never structural changes, never hiding defects. Every order includes disclosure guidance so buyers know which photos are virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in Seattle",
+        "text": "Physical staging and virtual staging both help buyers picture themselves in a home. Physical staging offers a tactile experience at in-person showings; virtual staging does its work online, where the search starts. Here is how they compare for Seattle agents, brokers and sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Every room is composed by a professional interior designer on our team in Photoshop, 3D Max and Corona — furnished to scale, never generated by AI."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to list before a relocating buyer's start date, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "NWMLS-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for print, web and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for builders and brokers with several homes to market."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Seattle order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Los Angeles, CA",
-        "lede": "LA listings sell a lifestyle before they sell square footage. Bella's virtual staging — plus day-to-twilight editing — comes back in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Los Angeles, CA",
+        "lede": "Virtual staging is digital home staging for listing photos: an interior designer places realistic 3D furniture and decor into photos of empty rooms, so buyers can see scale, flow and lifestyle before they tour. LA listings sell a lifestyle before they sell square footage, and Bella's Los Angeles virtual staging — plus day-to-twilight editing — comes back in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Los Angeles",
         "market_heading": "Why virtual staging matters in the Los Angeles market",
-        "market_text": "<p>Los Angeles buyers are as image-literate as any in the country — they scroll past anything that doesn't look like the homes they see on Instagram and Zillow's front page. An empty Spanish bungalow or a bare new build in the hills leaves the lifestyle to the imagination, and in LA the lifestyle is the product.</p><p>Indoor-outdoor space is where LA listings win: staged patios, decks and yards routinely out-click staged living rooms. Our home staging covers exteriors too, and our day-to-dusk editing turns a flat afternoon exterior into the golden-hour shot that anchors the listing.</p><p>Los Angeles is also a market where physical staging is genuinely expensive and genuinely slow — coastal and hillside listings can run thousands a month, and scheduling a crew up a canyon road is its own problem. Staging the photos removes the logistics and fixes the cost at {price:virtual-staging} a photo, whether the listing closes in ten days or ninety.</p>",
-        "local_heading": "Staged for the LA buyer",
-        "local_text": "<p>From Silver Lake creative contemporaries to Westside family traditionals, our designers furnish to the buyer each pocket attracts. Every image is MLS-ready, disclosed as virtually staged, and delivered in 24 to 48 hours.</p><p>Architectural listings get handled as architecture. A Spanish revival, a mid-century post-and-beam and a new spec build each want a different furniture vocabulary, and staging that ignores the house tends to read as a stock room dropped into someone's photo.</p>",
+        "market_text": "<p>Los Angeles buyers are as image-literate as any in the country — they scroll past anything that doesn't look like the homes they see on Instagram and Zillow's front page. An empty Spanish bungalow or a bare new build in the hills leaves the lifestyle to the imagination, and in LA the lifestyle is the product.</p><p>Indoor-outdoor space is where LA listings win: staged patios, decks and yards routinely out-click staged living rooms. Our home staging covers exteriors too, and our day-to-dusk editing turns a flat afternoon exterior into the golden-hour shot that anchors the listing.</p><p>Los Angeles is also a market where physical staging is genuinely expensive and genuinely slow — coastal and hillside listings can run thousands a month, and scheduling a crew up a canyon road is its own problem. Staging the photos removes the logistics and fixes the cost at {price:virtual-staging} a photo, whether the listing closes in ten days or ninety.</p><p>That makes the listing photos the first showing for most buyers — 97% of buyers use the internet in their home search, according to the National Association of Realtors. In a competitive market full of luxury listings and investment properties, virtually staged photos help Los Angeles listings stand out in the scroll and give buyers a reason to book the tour.</p>",
+        "local_heading": "Los Angeles virtual staging, pocket by pocket",
+        "local_text": "<p>From Silver Lake creative contemporaries to Westside family traditionals, our designers furnish to the buyer each pocket attracts. Every image is MLS-ready, disclosed as virtually staged, and delivered in 24 to 48 hours.</p><p>Architectural listings get handled as architecture. A Spanish revival, a mid-century post-and-beam and a new spec build each want a different furniture vocabulary, and staging that ignores the house tends to read as a stock room dropped into someone's photo.</p><p>Files are sized for CRMLS and The MLS (CLAW), so the same set uploads wherever you list, and every order ships with AB 723 disclosure guidance and full usage rights. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Silver Lake, Los Feliz, Echo Park, Venice, Santa Monica, Brentwood, Studio City, Sherman Oaks, Pasadena, Hollywood Hills"
       }
@@ -89,7 +89,7 @@
           "type": "qa",
           "settings": {
             "question": "Does this meet California's disclosure rules?",
-            "answer": "Yes. LA orders are built to the AB 723 standard and disclosure wording ships with the files. Your broker or board is the final word on exactly where it appears on the listing."
+            "answer": "Yes. AB 723 requires a statement on or next to each digitally altered listing image, plus access to the original photo — posted beside it or through a link. LA orders ship with disclosure wording; keep your original photos to post or link next to the staged set. Your broker or MLS is the final word on placement."
           }
         },
         "q2": {
@@ -112,17 +112,81 @@
             "question": "My listing is a period Spanish. Will the furniture look wrong?",
             "answer": "It shouldn't — a designer composes to the architecture rather than dropping in a template. Spanish revival, mid-century and new-build spec homes each get a different furniture vocabulary."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost in Los Angeles?",
+            "answer": "Prices vary by provider and by whether a person or an AI app does the work. Bella's designer-made virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal for occupied rooms, unlimited revisions for two weeks and full usage rights are included — no subscription, no minimum."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does home staging cost in Los Angeles?",
+            "answer": "Physical staging in Los Angeles is quoted per home by the stager — size, number of rooms and rental length all move the price. As a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging from Bella is {price:virtual-staging} a photo, paid once, with no rental to extend if the listing sits."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant or dated listings, yes. Staging can't guarantee a sale, but 97% of buyers use the internet in their home search, according to the National Association of Realtors, so the photos decide which homes get a showing. NAR's research on home staging also finds that staging makes it easier for buyers to visualize a property as their future home. In Los Angeles, where the lifestyle is the product, staged photos show buyers how the home lives for a one-time cost per photo instead of monthly furniture rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Los Angeles?",
+            "answer": "Yes, as long as it isn't misleading. Under AB 723 (California Business and Professions Code §10140.8), a digitally altered listing image needs a conspicuous statement on or next to it saying it was altered, plus access to the original, unaltered image — posted alongside it or through a link or QR code. The requirement sits in the state's Real Estate Law, where a violation is a crime, so it's worth getting right. Add furniture and decor only; don't hide defects or change permanent features. Every Bella order includes disclosure guidance, and your broker or MLS has the final say on placement."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "What are common virtual staging mistakes?",
+            "answer": "Oversized or unrealistic furniture that misrepresents the room, hiding defects or changing permanent features, a design style that doesn't fit the buyer, low-resolution original photos (start with high-quality, well-lit shots), and failing to disclose virtual staging. In California, forgetting to provide the original photo with a digitally altered image is also an AB 723 problem."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Should I use DIY software or a virtual staging company?",
+            "answer": "DIY software and AI apps are cheap and instant, but you do the design work and results can distort scale. A done-for-you service like Bella assigns a real designer, removes existing furniture and includes revisions — a better fit for luxury listings, where buyers compare the photos with the real room."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you show a room in more than one style, or a home that isn't built yet?",
+            "answer": "Yes. Because the furniture is digital, a room can be staged in more than one Look Book style, which makes it easy to test which look suits the buyer. For dated rooms, virtual renovation (from {price:virtual-renovation-service}) shows new floors, walls and finishes; for homes that aren't built yet, 3D rendering (from {price:3d-rendering}) creates photorealistic images from plans."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps and DIY software can drop furniture into a photo, but the results often distort scale and finishes, and a misleading image creates disclosure problems. New clients can claim a $40 voucher on Bella's sign-up page to try designer-made staging, subject to Bella's approval."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Los Angeles agents",
+        "heading": "Los Angeles virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -195,12 +259,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Virtual staging cost vs. furniture rental",
+            "text": "Traditional home staging bills a design fee plus monthly furniture rental — conventional staging runs about $2,000–5,000 a month until the home sells, and the rental keeps running if the listing sits. Bella virtual staging is {price:virtual-staging} a photo, paid once."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Turnaround time",
+            "text": "No crew up a canyon road, no install day and no pickup. Upload after checkout and virtually staged images come back in 24 to 48 hours."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Empty rooms and vacant listings",
+            "text": "Empty rooms feel cold and photograph smaller than they are. Staging the empty living room, primary bedroom and dining area gives vacant listings scale and flow — and a stale listing gets fresh listing photos without re-staging the house."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Removing existing furniture",
+            "text": "Dated or tenant-owned furniture is digitally removed first, at no extra cost, then the room is staged clean — so occupied Los Angeles listings can be staged too."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A design style for every property type",
+            "text": "Choose a Look Book style — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional or Transitional — or let the designer match layered textiles and furniture to the architecture, from Spanish revival to new construction."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Disclosed, never misleading",
+            "text": "Furniture and decor only — no structural changes, no hiding defects. Disclosure guidance built to AB 723 ships with every order, so buyers understand which images are digitally altered — disclosure builds trust and sets expectations before the showing."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in Los Angeles",
+        "text": "Physical staging and virtual staging services share one goal: help buyers visualize their future home. Neither alters the physical space of the property; here is where they differ for Los Angeles agents, builders and sellers."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior design, never AI",
+            "text": "Every room is composed by a professional interior designer in Photoshop, 3D Max and Corona — not DIY software or an AI generator — so furniture stays true to the room's scale and finishes."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "High-resolution images, delivered together, fast enough to stage a listing the week it goes live."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "CRMLS and The MLS-ready files",
+            "text": "MLS-ready dimensions with AB 723 disclosure guidance, plus full usage rights for print, web and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for luxury properties with many rooms and builders marketing several homes."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Los Angeles order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

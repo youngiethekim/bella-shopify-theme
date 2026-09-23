@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in Las Vegas, NV",
-        "lede": "Vegas moves fast: investors, relocations and second-home buyers shopping from out of state. Bella's virtual staging turns Las Vegas listings around in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "heading": "Virtual Staging Las Vegas, NV",
+        "lede": "Virtual staging is the digital process of adding furniture and decor to photos of vacant or cleared rooms — home staging done in the pictures instead of the house, so buyers can imagine living there with no furniture rental and no install day. Vegas moves fast — investors, relocations and second-home buyers shopping from out of state — and Bella's designers stage Las Vegas listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Las Vegas",
         "market_heading": "Why virtual staging matters in the Las Vegas market",
-        "market_text": "<p>A huge share of Las Vegas buyers are shopping from somewhere else — California equity movers, retirees, and investors who may write an offer before they ever fly in. For a buyer who will only see the home through its photos, the photos are the showing, and an empty beige-carpet room tells them nothing.</p><p>Vegas inventory skews new and vacant: spec builds, flipped ranches and investor-owned condos rarely have furniture in them. Virtual staging fills entire vacant houses for less than the cost of renting furniture for one room.</p><p>The volume of near-identical inventory is the other problem. In a Summerlin or Henderson development where a dozen listings share the same three floor plans, the photos are the only thing distinguishing one from another — and an empty version of a plan a buyer has already scrolled past four times gives them no reason to stop.</p>",
-        "local_heading": "Staged for the Las Vegas buyer",
-        "local_text": "<p>Designers stage to the local palette — bright desert-modern for Summerlin and Henderson new builds, clean contemporary for high-rise condos on the Strip corridor. Every image is MLS-ready in 24 to 48 hours with disclosure guidance.</p><p>Second-home and short-term-rental listings get staged for how they'll actually be used, which is rarely the same as a primary residence: flexible sleeping space, an obvious place to put a table, and outdoor areas that read as usable most of the year.</p>",
+        "market_text": "<p>A huge share of Las Vegas buyers are shopping from somewhere else — California equity movers, retirees, and investors who may write an offer before they ever fly in. For a buyer who will only see the home through its photos, the photos are the showing, and an empty beige-carpet room tells them nothing.</p><p>Vegas inventory skews new and vacant: spec builds, flipped ranches and investor-owned condos rarely have furniture in them. Virtual staging fills entire vacant houses for less than the cost of renting furniture for one room.</p><p>The volume of near-identical inventory is the other problem. In a Summerlin or Henderson development where a dozen listings share the same three floor plans, the photos are the only thing distinguishing one from another — and an empty version of a plan a buyer has already scrolled past four times gives them no reason to stop.</p><p>That makes Las Vegas a digital-first market. Those buyers start online like almost everyone else: 97% of buyers use the internet in their home search, according to the National Association of Realtors. A staged home gives a vacant listing the living space, scale and warmth that make a property stand out before the first showing — or the first offer.</p><p>Vacant homes look smaller and less appealing in online listings. Virtual staging illustrates a possible furniture layout for each room, and because it's drawn to accurate proportions, buyers can judge the space without being misled about its size. With a diverse pool of buyers — relocating families, retirees, investors and second-home owners — the staging style can be matched to whoever the listing is most likely to attract.</p>",
+        "local_heading": "Las Vegas home staging, done virtually",
+        "local_text": "<p>Designers stage to the local palette — bright desert-modern for Summerlin and Henderson new builds, clean contemporary for high-rise condos on the Strip corridor. Every image is MLS-ready in 24 to 48 hours with disclosure guidance.</p><p>Second-home and short-term-rental listings get staged for how they'll actually be used, which is rarely the same as a primary residence: flexible sleeping space, an obvious place to put a table, and outdoor areas that read as usable most of the year.</p><p>Files are ready for the Las Vegas REALTORS® MLS with disclosure guidance and full usage rights. There's no consultation to schedule and no crew to hire: order, upload and your designer handles the rest. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — so whole-home sets for Summerlin and Henderson new builds stay affordable.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Summerlin, Henderson, Green Valley, The Lakes, Southern Highlands, Anthem, Centennial Hills, Strip corridor"
       }
@@ -112,17 +112,73 @@
             "question": "Can you stage a whole vacant spec home, not just a room or two?",
             "answer": "Yes, and it's the common order here. Whole-home sets get volume pricing, so an eight-photo vacant build costs a fraction of renting furniture for one room for one month."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does home staging cost in Las Vegas?",
+            "answer": "Physical staging in Las Vegas is quoted per home by the stager — size, number of rooms and how long the furniture stays all move the price. As a general benchmark, conventional staging runs about $2,000–5,000 a month until the home sells. Virtual staging from Bella is {price:virtual-staging} a photo, paid once."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do people charge for virtual staging?",
+            "answer": "Prices vary by provider and by whether a person or an AI app does the work. Bella's designer-made virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal for occupied rooms, unlimited revisions for two weeks and full usage rights are included — no subscription, no minimum."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant or dated listings, yes. Staging can't guarantee a sale, but 97% of buyers use the internet in their home search, according to the National Association of Realtors, so the photos decide which homes get a showing. NAR's research on home staging also finds that staging makes it easier for buyers to visualize a property as their future home. For a Las Vegas buyer who may offer before flying in, staged photos are the showing — and virtually staged photos can lift online engagement with the listing — for a one-time cost per photo instead of monthly furniture rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Nevada?",
+            "answer": "Yes — virtual staging is a standard marketing practice as long as it doesn't misrepresent the property, and real estate professionals should disclose it in the listing. Add furniture and decor only, don't hide defects or change permanent features, and disclose that the photos are virtually staged; the NAR Code of Ethics requires a true picture in advertising. Check Las Vegas REALTORS® MLS rules for exact labeling. Every Bella order includes disclosure guidance."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you show a room in more than one style, or a home that isn't built yet?",
+            "answer": "Yes. Because the furniture is digital, a room can be staged in more than one Look Book style, which makes it easy to test which look suits the buyer. For dated rooms, virtual renovation (from {price:virtual-renovation-service}) shows new floors, walls and finishes; for homes that aren't built yet, 3D rendering (from {price:3d-rendering}) creates photorealistic images from plans."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps and DIY software can drop furniture into a photo, but the results often distort scale and finishes, and a misleading image creates disclosure problems. New clients can claim a $40 voucher on Bella's sign-up page to try designer-made staging, subject to Bella's approval."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Should I professionally stage a vacant home in Las Vegas?",
+            "answer": "If most buyers will see it online first, staging the photos covers most of the benefit. Professional physical staging helps at in-person showings but means a furniture rental; virtual staging stages the listing photos for {price:virtual-staging} each, and you can still stage in person later."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from Las Vegas agents",
+        "heading": "Las Vegas virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -156,12 +212,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "Hiring a staging company means a design fee plus renting furniture month to month — conventional staging runs about $2,000–5,000 a month until the home sells. Bella virtual staging is {price:virtual-staging} a photo, paid once, whether the home sells in a week or a season."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "No walkthrough, no install day and no pickup. Upload photos after checkout and staged images come back in 24 to 48 hours, ready for the MLS."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant home staging without a truck",
+            "text": "Vacant homes are where virtual staging earns its keep. An empty room gives buyers nothing to measure against; staged, each room shows its scale and purpose — and a stale listing gets fresh photos without re-staging."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Occupied and rental homes",
+            "text": "Tenant-occupied or cluttered rooms are cleared digitally at no extra cost, then staged — no need to rearrange or move anyone's furniture."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A style for every buyer",
+            "text": "Choose a Look Book style — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional or Transitional — or let the designer furnish bright desert-modern for new builds and clean contemporary for high-rise condos."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "Furniture and decor only — never structural changes, never hiding defects. Every order includes disclosure guidance so buyers know the rooms are virtually staged."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in Las Vegas",
+        "text": "Physical and virtual staging services share one job: help buyers imagine living in the home. Here is how they compare for Las Vegas agents, investors, builders and homeowners across Nevada."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Every room is composed by a professional interior designer on our team using design software — Photoshop, 3D Max and Corona — never AI and never the same template repeated across a Las Vegas subdivision."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to list before an out-of-state buyer's next search, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Las Vegas REALTORS® MLS-ready files",
+            "text": "MLS-ready dimensions with disclosure guidance, plus full usage rights for print, web and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for flips, spec builds and investor portfolios."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Las Vegas order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"

@@ -13,17 +13,17 @@
       "type": "bella-location",
       "settings": {
         "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging in California",
-        "lede": "From San Francisco flats to San Diego ranch homes, Bella's virtual staging turns California listings around in 24 to 48 hours, from {price:virtual-staging} a photo — with furnishing matched to each metro's buyer.",
+        "heading": "Virtual Staging California",
+        "lede": "Virtual staging is the digital alternative to physical staging: a designer furnishes photos of empty or cleared rooms with realistic 3D furniture and decor, so buyers see a finished home online without any furniture being delivered. From San Francisco flats to San Diego ranch homes, Bella's designers stage California listings in 24 to 48 hours, from {price:virtual-staging} a photo — with furnishing matched to each metro's buyer.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "California",
         "market_heading": "Why virtual staging matters across California",
-        "market_text": "<p>California is not one market — a Noe Valley Victorian, a Sacramento new build and an Orange County family home attract different buyers with different taste. What they share is price point: with the median California home among the most expensive in the nation, buyers expect listing photos that look like the money being asked.</p><p>Physical staging costs scale with those prices — often thousands per month in coastal metros. Virtual staging delivers the same first impression once, for {price:virtual-staging} a photo, which is why California agents were among our first and remain our largest client base.</p><p>The state also has the clearest disclosure expectations in the country, which is a good thing for agents who want to use staged photos without second-guessing. AB 723 set the standard, and our California work is built to it — disclosure guidance ships with the order rather than being something you assemble afterward.</p>",
-        "local_heading": "One studio, every California metro",
-        "local_text": "<p>Our designers stage daily for the Bay Area, Los Angeles, San Diego, Sacramento and the Central Valley, matching furniture and palette to each region's buyer. Images are MLS-ready in 24 to 48 hours, disclosed as virtually staged, with unlimited revisions free for two weeks.</p><p>Because we work across every major California board, an agent listing in two metros gets one consistent look rather than two different vendors' idea of what a staged room should be.</p>",
+        "market_text": "<p>California is not one market — a Noe Valley Victorian, a Sacramento new build and an Orange County family home attract different buyers with different taste. What they share is price point: with the median California home among the most expensive in the nation, buyers expect listing photos that look like the money being asked.</p><p>Physical staging costs scale with those prices — often thousands per month in coastal metros. Virtual staging delivers the same first impression once, for {price:virtual-staging} a photo, which is why California agents were among our first and remain our largest client base.</p><p>The state also has the clearest disclosure expectations in the country, which is a good thing for agents who want to use staged photos without second-guessing. AB 723 set the standard, and our California work is built to it — disclosure guidance ships with the order rather than being something you assemble afterward.</p><p>It matters because the listing photos do the first showing: 97% of buyers use the internet in their home search, according to the National Association of Realtors. A virtually staged image of an empty room tells a buyer where the sofa goes, how big the primary bedroom really is and what the space could feel like.</p>",
+        "local_heading": "Virtual staging services for every California metro",
+        "local_text": "<p>Our designers stage daily for the Bay Area, Los Angeles, San Diego, Sacramento and the Central Valley, matching furniture and palette to each region's buyer. Images are MLS-ready in 24 to 48 hours, disclosed as virtually staged, with unlimited revisions free for two weeks.</p><p>Because we work across every major California board, an agent listing in two metros gets one consistent look rather than two different vendors' idea of what a staged room should be.</p><p>Files are sized for the MLS you list on — CRMLS, SDMLS or The MLS (CLAW) among them — and ship with AB 723 disclosure guidance and full usage rights. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "San Francisco, Oakland, San Jose, Sacramento, Los Angeles, Orange County, San Diego, Central Valley, Palm Springs"
       }
@@ -89,7 +89,7 @@
           "type": "qa",
           "settings": {
             "question": "What does AB 723 actually require of me?",
-            "answer": "In short: be clear with buyers that the photos are virtually staged. We build every California order to that standard and send you the disclosure wording to put on the listing. Your broker or local board is the final word on placement, and we'd always point you there for anything unusual."
+            "answer": "Two things for any digitally altered listing image: a reasonably conspicuous statement on or next to the image saying it has been altered, and access to the original, unaltered image — included in the posting or through a link or QR code. We build every California order to that standard and send you the disclosure wording. Your broker or MLS is the final word on placement."
           }
         },
         "q2": {
@@ -112,17 +112,65 @@
             "question": "Do you handle new construction with nothing built yet?",
             "answer": "Yes, though that's 3D rendering rather than staging — we build the interior from plans instead of photos. Common for California developers marketing pre-sale inventory."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost?",
+            "answer": "Prices vary by provider and by whether a person or an AI app does the work. Bella's designer-made virtual staging is {price:virtual-staging} per photo, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal for occupied rooms, unlimited revisions for two weeks and full usage rights are included — no subscription, no minimum."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in California?",
+            "answer": "Yes, as long as it isn't misleading. Under AB 723 (California Business and Professions Code §10140.8), a digitally altered listing image needs a conspicuous statement on or next to it saying it was altered, plus access to the original, unaltered image — posted alongside it or through a link or QR code. The requirement sits in the state's Real Estate Law, where a violation is a crime, so it's worth getting right. Add furniture and decor only; don't hide defects or change permanent features. Every Bella order includes disclosure guidance, and your broker or MLS has the final say on placement."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant or dated listings, yes. Staging can't guarantee a sale, but 97% of buyers use the internet in their home search, according to the National Association of Realtors, so the photos decide which homes get a showing. NAR's research on home staging also finds that staging makes it easier for buyers to visualize a property as their future home. At California price points, staged listing photos give buyers the full picture of an empty home for a one-time cost per image instead of monthly furniture rental."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you show a room in more than one style, or a home that isn't built yet?",
+            "answer": "Yes. Because the furniture is digital, a room can be staged in more than one Look Book style, which makes it easy to test which look suits the buyer. For dated rooms, virtual renovation (from {price:virtual-renovation-service}) shows new floors, walls and finishes; for homes that aren't built yet, 3D rendering (from {price:3d-rendering}) creates photorealistic images from plans."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I virtually stage my home for free?",
+            "answer": "Free AI apps and DIY software can drop furniture into a photo, but the results often distort scale and finishes, and a misleading image creates disclosure problems. New clients can claim a $40 voucher on Bella's sign-up page to try designer-made staging, subject to Bella's approval."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging good for luxury listings?",
+            "answer": "Yes, if it's realistic. Luxury buyers compare the photos with the real room at the showing, so furniture has to be true to scale and finishes. That's why Bella has real interior designers compose every room rather than an AI app."
+          }
         }
       },
       "block_order": [
         "q1",
         "q2",
         "q3",
-        "q4"
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Staging questions from California agents",
+        "heading": "California virtual staging questions from agents",
         "open_first": true
       }
     },
@@ -182,12 +230,146 @@
         "look_label": "Browse 300+ furnished looks in the lookbook →",
         "look_url": "/pages/lookbook"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "The cost",
+            "text": "Physical staging is a design fee plus monthly furniture rental — conventional staging runs about $2,000–5,000 a month until the home sells. Bella's virtual staging cost is {price:virtual-staging} per image, paid once, with no rental period to extend."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "The timing",
+            "text": "No setup day and no pickup. Upload photos after checkout and staged images come back in 24 to 48 hours, MLS-ready."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Every room type, empty or vacant",
+            "text": "Living rooms, primary bedrooms, kitchens, patios and ADUs. An empty room photographs smaller and colder than it is; staged, it shows the real space and how it lives. Vacant and outdated homes benefit most, because staging supplies the emotional connection a bare or dated room lacks."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Remove furniture first",
+            "text": "Existing furniture in occupied or cluttered rooms is digitally removed at no extra cost, then the room is staged clean."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A furniture style for each metro",
+            "text": "Choose a Look Book style — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional or Transitional — or let the designer match the furniture style to the market: a Noe Valley Victorian and an Orange County family home get different rooms."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "AB 723-ready disclosure",
+            "text": "California requires a disclosure on or next to every digitally altered photo plus access to the original, unaltered image — a consumer-protection rule meant to keep buyers from being misled about a property's condition. We add furniture and decor only, never structural changes, and every order ships with disclosure guidance — disclosure builds trust and sets buyer expectations before the showing."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Virtual vs. physical",
+        "heading": "Virtual staging vs. a home staging company in California",
+        "text": "Physical staging and digital staging both help buyers visualize the home. Here is how they compare for California agents, builders and sellers — on cost, speed and the rules."
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Every staged image is composed by a professional interior designer in Photoshop, 3D Max and Corona — realistic furniture at true scale, never an AI generator."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a listing the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Free revisions, rework or refund",
+            "text": "Unlimited free revisions for two weeks after delivery. If it still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "MLS-ready files",
+            "text": "Sized to MLS rules with AB 723 disclosure guidance, plus full usage rights for the MLS, your website, print and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for luxury listings with many rooms and developers marketing several homes."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella virtual staging. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every California order includes",
+        "heading": "Professional staging, priced per photo",
+        "text": "One price per photo, no rental contract, the same guarantees on every listing."
+      }
     }
   },
   "order": [
     "loc",
+    "compare",
     "steps",
     "work",
+    "included",
     "quote",
     "faq",
     "cta"
