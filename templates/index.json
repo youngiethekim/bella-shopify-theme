@@ -48,7 +48,11 @@
         "cred4"
       ],
       "settings": {
-        "ghost_label": "","badge": "For agents, brokerages & builders","heading": "Your visual marketing","heading_em": "department.","subtext": "Bella is the visual marketing department for real estate professionals — virtual staging, 3D rendering, floor plans and photo editing, handled by real interior designers. Everything your listing needs to sell, MLS-ready in 24 to 48 hours, from {price:virtual-staging} a photo."
+        "ghost_label": "",
+        "badge": "For agents, brokerages & builders",
+        "heading": "Your visual marketing",
+        "heading_em": "department.",
+        "subtext": "Bella is the visual marketing department for real estate professionals — virtual staging, 3D rendering, floor plans and photo editing, handled by real interior designers. Everything your listing needs to sell, MLS-ready in 24 to 48 hours, from {price:virtual-staging} a photo."
       }
     },
     "trust": {
@@ -150,7 +154,7 @@
           "settings": {
             "icon": "sofa",
             "title": "Virtual staging",
-            "text": "Empty rooms furnished by real interior designers to match the home and the buyer."
+            "text": "Vacant homes and empty rooms furnished by real interior designers, in furniture styles matched to the home and your target buyer."
           }
         },
         "s2": {
@@ -158,7 +162,7 @@
           "settings": {
             "icon": "eraser",
             "title": "Furniture removal",
-            "text": "Clear occupied or cluttered rooms, then restage them clean."
+            "text": "We digitally remove existing furniture from occupied or cluttered rooms, then restage them clean. Included free with virtual staging."
           }
         },
         "s3": {
@@ -205,7 +209,7 @@
           "type": "service",
           "settings": {
             "icon": "cloud",
-            "title": "Sky swaps & photo edits",
+            "title": "Image enhancement & sky swaps",
             "text": "Sky replacement, item removal, and general image enhancement."
           }
         }
@@ -226,7 +230,10 @@
         "s7",
         "s8"
       ],
-      "settings": {}
+      "settings": {
+        "intro_heading": "Virtual staging services & real estate marketing specialists in your corner.",
+        "intro_text": "One studio designs and delivers everything below — the full visual package that makes your residential and commercial properties stand out from the competition and stops potential buyers mid-scroll."
+      }
     },
     "doors": {
       "type": "bella-doors",
@@ -535,8 +542,8 @@
         "q1": {
           "type": "qa",
           "settings": {
-            "question": "What does it cost?",
-            "answer": "{price:virtual-staging} per photo, with volume discounts that scale to 20%: 5% at three photos, 10% at six to ten, 15% at ten to twenty, and 20% at twenty-one to thirty. No subscription, no minimum, no monthly rental."
+            "question": "How much do your virtual staging services cost?",
+            "answer": "Virtual staging is {price:virtual-staging} per photo, with automatic volume discounts: 5% off 3 or more photos, 10% off 6 or more, 15% off 11 or more and 20% off 21 or more. The same discounts apply to virtual renovation, photo editing, floor plans, 3D rendering and 360° tours in the same order. No subscription, no minimum, no monthly rental."
           }
         },
         "q2": {
@@ -549,7 +556,7 @@
         "q3": {
           "type": "qa",
           "settings": {
-            "question": "Is this AI?",
+            "question": "Is this AI virtual staging?",
             "answer": "No. That is the entire point. Every Bella image is composed by hand by a professional interior designer using Photoshop, 3D Max, Corona, and our own internal tools. We do not use AI staging or templates, because they misrepresent properties and produce the same room on every listing in your market."
           }
         },
@@ -580,30 +587,305 @@
             "question": "Where do you work?",
             "answer": "Most of our work is with agents, brokerages, and builders across the United States and Canada, and we take listings internationally on request."
           }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging worth it?",
+            "answer": "For most vacant homes, yes. 97% of buyers start their search online, and 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, according to the National Association of Realtors. Virtual staging gives your listing photos that effect for a one-time cost per photo, while physical staging runs thousands of dollars a month."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "How is virtual staging different from traditional home staging?",
+            "answer": "Traditional home staging rents real furniture into the property and can cost thousands of dollars a month for as long as it's on the market. Virtual staging adds furniture digitally to your listing photos, so there are no movers and no monthly rental, and the staged images are yours for the whole listing. We always recommend disclosing virtually staged photos on the listing."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "What furniture styles can I choose?",
+            "answer": "Pick a style from our Look Book, including contemporary, modern farmhouse, Scandinavian, coastal, mid-century modern, and traditional or transitional. Or tell us who you're selling to and a designer chooses furniture styles for your target buyer."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "How many photos should I virtually stage?",
+            "answer": "One per room or angle you want buyers to see furnished. Most listings need 5–8 staged photos, starting with the living room, kitchen, dining room and primary bedroom."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I try Bella's virtual staging for free?",
+            "answer": "Yes. Real estate professionals can claim a $40 voucher on our free sample page to try Bella virtual staging risk-free. Eligibility is subject to Bella's approval."
+          }
         }
       },
       "block_order": [
         "q1",
+        "q8",
         "q2",
         "q3",
+        "q9",
         "q4",
         "q5",
         "q6",
+        "q10",
+        "q11",
+        "q12",
         "q7"
       ],
-      "settings": {}
+      "settings": {
+        "heading": "Virtual staging services: what agents ask before they order."
+      }
     },
     "end": {
       "type": "bella-end-cta",
-      "settings": {}
+      "settings": {
+        "text": "While other listings show empty rooms, yours shows a home — designer-composed, MLS-ready staged images back in 24 to 48 hours."
+      }
+    },
+    "compare": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Choosing a service",
+        "heading": "How our virtual staging services compare to AI virtual staging and physical staging",
+        "text": "Real estate agents have three ways to fill an empty listing. Here's how they compare on realism, turnaround time and cost."
+      },
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Human virtual staging (Bella)",
+            "text": "Human designers, not software: a professional interior designer places every piece of realistic furniture by hand, so scale, shadows and light match the room. MLS-ready virtually staged photos in 24–48 hours, from {price:virtual-staging} a photo, with free revisions for two weeks."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "AI-powered virtual staging apps",
+            "text": "AI virtual staging tools return an image in seconds for less money. The catch is image quality: floating furniture, wrong scale and altered walls or windows, which can misrepresent the property to potential buyers."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Physical staging",
+            "text": "Rented furniture looks great at an open house, but traditional staging runs thousands of dollars a month, needs movers, and leaves the day the home sells."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Choosing between virtual staging companies",
+            "text": "Compare before-and-after samples, turnaround time and the revision policy. Make sure you own the images, and ask for MLS disclosure guidance. Avoid anyone who offers to hide a property's flaws."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "How many photos to stage",
+            "text": "Most listings need 5–8 staged photos, one per room or angle: start with the living room, kitchen, dining room and primary bedroom. Volume discounts start at three photos."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5"
+      ]
+    },
+    "process": {
+      "type": "bella-steps",
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "How a virtual staging project works, from upload to MLS"
+      },
+      "blocks": {
+        "p1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & upload",
+            "text": "Choose how many photos you need and place your order. You get an upload link with our Look Book, so you can send your listing photos right away or whenever you're ready."
+          }
+        },
+        "p2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "Pick a furniture style",
+            "text": "Choose from multiple furniture styles in the Look Book, or tell us your target buyer and a designer picks the style that fits the property."
+          }
+        },
+        "p3": {
+          "type": "step",
+          "settings": {
+            "icon": "sofa",
+            "title": "A designer stages every room",
+            "text": "A real interior designer places the virtual furniture by hand, and digitally removes existing furniture first if the room is occupied. No drag-and-drop editor, no AI."
+          }
+        },
+        "p4": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Approve & download in 24–48 hours",
+            "text": "Download MLS-ready virtually staged images in 24 to 48 hours. Revisions are unlimited and free for two weeks, and if it's still not right we rework it or refund it."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ]
+    },
+    "styles": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Furniture styles",
+        "heading": "Multiple furniture styles, from starter condos to luxury listings",
+        "text": "Every style works in any room, from the living room and dining room to the primary bedroom. Pick one from our Look Book, or let a designer match it to the buyers your listing needs to attract."
+      },
+      "blocks": {
+        "y1": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Contemporary",
+            "text": "Neutral, clean-lined stylish furniture that suits almost any property and lets buyers picture their own things."
+          }
+        },
+        "y2": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Modern Farmhouse",
+            "text": "Warm wood, soft textiles and relaxed pieces for suburban family homes."
+          }
+        },
+        "y3": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Scandinavian",
+            "text": "Pale woods and uncluttered rooms that make small condos and apartments feel bigger."
+          }
+        },
+        "y4": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Coastal",
+            "text": "Light blues and natural fibres for waterfront and vacation homes."
+          }
+        },
+        "y5": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Mid-Century Modern",
+            "text": "Walnut tones and classic silhouettes for urban buyers and period homes."
+          }
+        },
+        "y6": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Traditional & Transitional",
+            "text": "Classic pieces for luxury listings and established neighbourhoods, or a transitional mix of old and new."
+          }
+        }
+      },
+      "block_order": [
+        "y1",
+        "y2",
+        "y3",
+        "y4",
+        "y5",
+        "y6"
+      ]
+    },
+    "marketing": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Why it works",
+        "heading": "Virtual staging in your real estate marketing strategy",
+        "text": "Listing photos do the first showing. Here's where virtually staged images earn their place in real estate marketing for agents, brokerages and builders."
+      },
+      "blocks": {
+        "m1": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Win the first photos",
+            "text": "97% of buyers start their search online, so your listing photos are the first showing. Virtually staged images give vacant rooms scale and purpose before a buyer scrolls past."
+          }
+        },
+        "m2": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Help buyers visualize the home",
+            "text": "82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home (NAR). Staged images do that for empty rooms without renting furniture."
+          }
+        },
+        "m3": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Use them everywhere",
+            "text": "Full usage rights mean your staged images can go on the MLS, your website, brochures, online ads and social media, alongside the rest of your marketing tools."
+          }
+        },
+        "m4": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "One studio for multiple listings",
+            "text": "Staging, floor plans, photo editing and 3D renders in one order, so running multiple listings doesn't mean managing multiple vendors."
+          }
+        },
+        "m5": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Quality without the premium",
+            "text": "Every image is composed by a designer, from {price:virtual-staging} a photo, so competitive pricing doesn't mean sacrificing quality."
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5"
+      ]
     }
   },
   "order": [
     "hero",
     "trust",
     "who",
+    "marketing",
     "value",
+    "compare",
     "services",
+    "process",
+    "styles",
     "doors",
     "jobs",
     "press",

@@ -15,14 +15,14 @@
         "eyebrow": "Free resources · for builders & developers",
         "heading": "Home Builder Marketing",
         "lede": "How builders and property developers pre-sell from plans, win approvals, and market projects before ground breaks — guides, pricing and the pre-sale playbook, all free.",
-        "cta_label": "Order a render — from $550",
+        "cta_label": "Order a render — from {price:3d-rendering}",
         "cta_link": "/products/3d-rendering",
         "alt_label": "Back to all resources",
         "alt_link": "/pages/resources",
         "market_heading": "Home builder marketing starts before ground breaks",
-        "market_text": "<p>Marketing for home builders has one job the rest of real estate doesn't: selling something that doesn't exist yet. The cheapest money in any build is a pre-sale, and pre-sales come from visuals — photoreal renders that let a buyer commit from a floor plan, upgrade packages they can see, and lender decks that read like the project is already selling.</p><p>The resources below cover that whole arc, from the render shot list to the model-home math.</p>",
+        "market_text": "<p><strong>Home builder marketing</strong> is how builders and property developers attract buyers for homes that are planned, under construction or newly built. It has one job the rest of real estate marketing doesn't: selling something that doesn't exist yet. The cheapest money in any build is a pre-sale, and pre-sales come from visuals: photoreal 3D renderings that let a buyer commit from a floor plan, upgrade packages they can see, and lender decks that read like the project is already selling.</p><p>The resources below cover that whole arc, from the render shot list to the model-home math.</p>",
         "local_heading": "From drawings to deposits",
-        "local_text": "<p>Our <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a> run from $550 per photoreal view — interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans with revisions included. A full 4–6 view pre-sale package costs $2,500–4,500, against a six-figure model home that shows one floor plan.</p>",
+        "local_text": "<p>Our <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a> start at {price:3d-rendering} per photoreal view: interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans by real designers (never AI) with revisions included. A pre-sale set of four to six views is priced per render with volume discounts, against a six-figure model home that shows one floor plan.</p>",
         "hoods_label": "What's on this shelf",
         "hoods": "Pre-sale playbook, Rendering pricing & scope, What is architectural rendering, Approvals & lender packages, Model home math"
       }
@@ -107,11 +107,230 @@
         "cta_link": "/collections/all",
         "fine_print": "Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "plan": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "The playbook",
+        "heading": "Home builder marketing strategies that start before construction",
+        "text": "A home builder marketing plan runs in stages, from the drawings to the last closing. These are the channels that matter most, and what each needs from you."
+      },
+      "blocks": {
+        "p1": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Pre-sales visuals come first",
+            "text": "Before construction starts there is nothing to photograph. Photorealistic 3D renderings of each floor plan, elevation and finish package let buyers and real estate agents commit from plans, so order them as soon as the design process locks the drawings."
+          }
+        },
+        "p2": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "A website that answers buyers",
+            "text": "Most buyers start their home search online, so give every community and floor plan its own page with high-quality images, floor plans with accurate dimensions, pricing guidance and a clear next step. Keep your Google Business Profile current for local search, and answer inquiries fast."
+          }
+        },
+        "p3": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Social media marketing with shareable content",
+            "text": "Renders, day-to-dusk exteriors and staged interiors give Instagram, Facebook and other social media platforms shareable content long before move-in. Post each stage, from floor plans to construction progress to the finished house, and add short video once there is something to film."
+          }
+        },
+        "p4": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Stage the homes you've built",
+            "text": "Vacant spec homes and quick move-ins photograph empty. Virtual staging furnishes the listing photos from {price:virtual-staging} a photo, with no truck or rental furniture, in a style matched to your target audience."
+          }
+        },
+        "p5": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Open houses and model homes",
+            "text": "A model home still earns its place at open houses, but it shows one floor plan. Pair it with renders of the other plans and upgrade packages so visitors see every option in real life and on screen."
+          }
+        },
+        "p6": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Build trust with real work",
+            "text": "Show finished projects, reviews, your process and clear pricing. A portfolio of real homes and plain answers build credibility with future homeowners faster than claims do."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ]
+    },
+    "faq": {
+      "type": "bella-faq",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Home builder marketing FAQ",
+        "open_first": true
+      },
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "What is home builder marketing?",
+            "answer": "Home builder marketing is the mix of digital marketing, sales and visual work that brings buyers to new construction: the website and listings, social media, real estate agents, open houses and model homes. What sets it apart is timing. Many new homes are marketed before they exist, so photorealistic renderings and floor plans carry the marketing efforts until construction is complete."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best marketing for a home builder or construction company?",
+            "answer": "There is no single channel. Effective home builder marketing usually combines a website that answers buyer questions, local search visibility, social media, relationships with real estate agents and strong visuals. For homes that aren't built yet, the visuals are the constraint: photorealistic 3D renderings let every other channel start before construction does."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "What is a 3D marketing strategy?",
+            "answer": "A 3D marketing strategy uses 3D renderings, 3D floor plans and virtual tours to market a property before or alongside photography. For a home builder it means launching pre-sales from plans, with renders on the website and listings, in brochures, on site hoardings and in social media campaigns."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do 3D renderings cost?",
+            "answer": "At Bella, photoreal 3D renders start at {price:3d-rendering} per finished image (one room or building from one camera angle), with revisions and 4K print-ready delivery included and volume discounts up to 20%. Exterior streetscapes, aerials and multi-building views cost more; the full price table is on our 3D architectural rendering services page."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Can ChatGPT or artificial intelligence create renderings?",
+            "answer": "AI image tools, including ChatGPT, can generate a picture of a house in seconds, but they don't work from your dimensioned plans, so walls, windows and rooflines often drift from the real design. That is a problem when you are marketing a home you will actually build. Bella's renders are modelled by human 3D artists from your drawings, never generated by AI."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best rendering software for home design?",
+            "answer": "Designers commonly use SketchUp, Revit or Autodesk 3ds Max to model a home, a rendering engine to produce the image, and Photoshop to finish it. If your goal is marketing homes rather than designing them, you don't need rendering software at all: send your plans to a rendering studio and get finished, photorealistic images back."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "How do 3D renderings help home builders sell?",
+            "answer": "They let marketing start before construction starts. Listings, ads and social posts go live with photorealistic images of the finished home, so you collect interest and pre-sales from the moment the plans are final. Buyers can compare design options and finishes side by side, and because buyers, your sales team and your trades all sign off on the same image, renders can reduce the misunderstandings that turn into change orders."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "How can a home builder get more leads?",
+            "answer": "Make the homes easy to find and easy to picture. Keep a website page for every community and floor plan, a current Google Business Profile for local search, and listings with photorealistic images. Run targeted ads to the buyers you build for, answer inquiries quickly, collect reviews, and publish helpful content that answers buyer questions rather than only promoting."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Should I hire freelance designers or a rendering studio?",
+            "answer": "Freelance designers can cost less per image, but quality, turnaround and revision policy vary from person to person. A studio gives you one price list, a consistent team and a defined revision process. Either way, check the portfolio for projects like yours and confirm you get full usage rights to the images."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q8",
+        "q7",
+        "q3",
+        "q4",
+        "q5",
+        "q9",
+        "q6"
+      ]
+    },
+    "visuals": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "What to render",
+        "heading": "The visuals that bring home builders more leads",
+        "text": "You don't need every image on day one. These are the renders and visuals that do the most work in a new construction campaign, and where each one earns its place."
+      },
+      "blocks": {
+        "v1": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Exterior renderings with exterior lighting",
+            "text": "A day-to-dusk exterior with warm exterior lighting, sky and landscaping elements is the hero image for the listing, the site sign and the hoarding."
+          }
+        },
+        "v2": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "The base model and its upgrades",
+            "text": "Render the base model, then the upgrade packages: cabinetry, flooring, counters and paint colors. Buyers see exactly what each upgrade adds to the final product before they pay for it."
+          }
+        },
+        "v3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Interiors that feel like real life",
+            "text": "A furnished, naturally lit living room lets future homeowners picture themselves in the house, an emotional connection a floor plan alone can't make."
+          }
+        },
+        "v4": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "The right camera angles",
+            "text": "Pick camera angles the way a photographer would: the street view buyers will drive past, the kitchen from the family room, the view from the primary bedroom."
+          }
+        },
+        "v5": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "2D and 3D floor plans",
+            "text": "3D floor plans show layout and flow for every unit type, and sit next to your renders on the website and in listings. Bella’s 2D and 3D floor plans start at {price:2d-3d-floor-plan-service}."
+          }
+        },
+        "v6": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Virtual tours once it's built",
+            "text": "When the house is finished, a 360° virtual tour lets remote buyers walk through it. Bella stages 360° photos so the empty rooms look lived in."
+          }
+        }
+      },
+      "block_order": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5",
+        "v6"
+      ]
     }
   },
   "order": [
     "loc",
+    "plan",
+    "visuals",
     "res",
+    "faq",
     "lead",
     "cta"
   ]

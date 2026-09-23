@@ -54,7 +54,7 @@
         "assure_1_icon": "upload",
         "assure_2_icon": "pen",
         "assure_3_icon": "shield",
-        "lede": "Dated rooms modernized digitally — new floors, paint and fixtures, then staged by a real designer. Show buyers the after, without doing the renovation.",
+        "lede": "A virtual renovation service for dated listings: a real interior designer digitally replaces floors, paint, counters and fixtures, then stages the finished room. Show buyers the after, without doing the renovation.",
         "unit_label": "photo",
         "qty_label": "How many photos?",
         "default_qty": 5,
@@ -65,7 +65,7 @@
         "assure_1_tip": "Your order confirmation includes an upload link — send photos whenever they're ready.",
         "assure_2_tip": "Mark up anything you'd like changed — finishes, colors, furniture — free for two weeks.",
         "assure_3_tip": "If a photo still isn't right after rework, we refund that photo.",
-        "def_heading": "About this service",
+        "def_heading": "What is a virtual renovation service?",
         "shot_label": "Virtually renovated by a Bella designer",
         "min_qty": 3,
         "hero_pairs": "ba-reno-kitchen | Kitchen\nba-reno-greatroom | Great room\nba-reno-frontexterior | Front exterior\nba-reno-patio | Patio\nba-reno-exterior | Waterfront",
@@ -106,7 +106,10 @@
         "s2",
         "s3"
       ],
-      "settings": {}
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "The virtual renovation process, in three steps"
+      }
     },
     "faq": {
       "type": "bella-faq",
@@ -115,21 +118,21 @@
           "type": "qa",
           "settings": {
             "question": "What can you change?",
-            "answer": "Finishes: flooring, wall colors, countertops, cabinet fronts, lighting and plumbing fixtures. We never change the structure — no moved walls, added windows or square footage that isn't there."
+            "answer": "Finishes: flooring, wall colors, countertops, cabinet fronts, lighting and plumbing fixtures. We never change the structure — no moved walls, new windows or doors, or square footage that isn't there."
           }
         },
         "q2": {
           "type": "qa",
           "settings": {
             "question": "Is staging included?",
-            "answer": "Yes. Every virtually renovated room is also staged with designer furniture at no extra charge, so the photo is listing-ready."
+            "answer": "Yes. Every virtually renovated room is also virtually staged with designer furniture at no extra charge, so the photo shows a fully furnished, listing-ready space."
           }
         },
         "q3": {
           "type": "qa",
           "settings": {
             "question": "Can I use these photos on the MLS?",
-            "answer": "Yes, with disclosure. Virtually renovated photos must be clearly disclosed as digitally altered — we build every image to MLS specifications and tell you exactly what to note."
+            "answer": "Yes, with disclosure. Virtually renovated photos must be clearly disclosed as digitally altered — label each image, keep the original photo available, and never use a renovation to hide defects. We build every image to MLS specifications and tell you exactly what to note."
           }
         },
         "q4": {
@@ -138,17 +141,89 @@
             "question": "What if I don't like the result?",
             "answer": "Unlimited revisions for two weeks after delivery. If it's still not right, we rework it or refund that photo."
           }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "What is virtual renovation?",
+            "answer": "Virtual renovation is a digital edit of a real listing photo that updates the finishes — flooring, wall color, countertops, cabinets, lighting and plumbing fixtures — so buyers see the room as it would look after a remodel. At Bella, a real interior designer does the work by hand and stages the finished room, while the structure stays exactly as it is."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual renovation cost?",
+            "answer": "Bella's virtual renovation cost is {price:virtual-renovation-service} per photo, with designer staging and furniture removal included at no additional cost. Orders start at three photos, and volume discounts apply in the cart: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does a virtual renovation take?",
+            "answer": "24–48 hours from upload. After delivery you have two weeks of unlimited free revisions, and if a photo still isn't right, we rework it or refund it."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "What's the difference between virtual renovation and virtual staging?",
+            "answer": "Virtual staging adds furniture and decor to an empty room. Virtual renovation goes further: it changes the finishes themselves — floors, walls, counters, cabinets and fixtures — and then stages the room. Choose staging when the finishes are fine, and renovation when dated finishes are the problem."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Can AI or ChatGPT do a virtual renovation?",
+            "answer": "AI tools, including image features in chatbots, can redesign a room photo in seconds, but they often alter walls, windows or proportions, which misrepresents the property. Bella's virtual renovations are done by human designers, so the layout stays true and the image is safe to use on the MLS with disclosure."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best virtual home renovation app?",
+            "answer": "For brainstorming ideas at home, an AI renovation app is a fine place to start. For listing photos that buyers will compare with the real room, a designer-made virtual renovation is the safer choice: realistic finishes, an untouched structure, MLS disclosure guidance and unlimited revisions for two weeks."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you renovate exteriors and outdoor areas?",
+            "answer": "Yes. Front exteriors, patios and waterfront outdoor areas can be virtually renovated too — see the before-and-after examples at the top of this page."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I choose the finishes and furniture style?",
+            "answer": "Yes. Pick one of our Benjamin Moore-matched palettes, name any colors or finishes in your order notes, or let the designer match your market. For the staging, choose a Look Book style — Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional or Transitional."
+          }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "Who owns the renovated photos?",
+            "answer": "You do. Every order includes full usage rights, so you can use the images in your listing, marketing and print materials."
+          }
         }
       },
       "block_order": [
+        "q5",
         "q1",
+        "q8",
+        "q6",
+        "q7",
         "q2",
         "q3",
-        "q4"
+        "q12",
+        "q11",
+        "q9",
+        "q10",
+        "q4",
+        "q13"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Before you order"
+        "heading": "Virtual renovation questions, answered"
       }
     },
     "related": {
@@ -191,16 +266,44 @@
             "title": "Attract investors and flippers",
             "text": "Show the upside at a glance — the vision is exactly what value buyers pay for."
           }
+        },
+        "w4": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Sell an unfinished property",
+            "text": "Mid-renovation or never finished? Show the finished room, so buyers aren't pricing in a half-done job site."
+          }
+        },
+        "w5": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Increase buyer interest in dated listings",
+            "text": "A modern kitchen or bathroom in the lead photo gives buyers a reason to click, save and book the showing."
+          }
+        },
+        "w6": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Preview a virtual renovation project",
+            "text": "Developers, renovators and homeowners use virtually renovated images to see the final outcome, and present it to clients, before spending money on materials."
+          }
         }
       },
       "block_order": [
         "w1",
         "w2",
-        "w3"
+        "w3",
+        "w4",
+        "w5",
+        "w6"
       ],
       "settings": {
         "eyebrow": "How clients use it",
-        "heading": "What renovation wins you."
+        "heading": "Why real estate agents use virtual renovation",
+        "text": "Virtually renovated photos help potential buyers see past dated finishes and visualize the space as their future home. Here's where agents, investors, developers and renovators put them to work in their property listings."
       }
     },
     "quote": {
@@ -234,7 +337,7 @@
         "rq1": {
           "type": "req",
           "settings": {
-            "text": "Photos at least <strong>1,000 pixels</strong> on the long edge — the same minimum as virtual staging. <strong>2,000 × 3,000 px</strong> or larger is ideal."
+            "text": "Photos at least <strong>1,000 pixels</strong> on the long edge — the same minimum as virtual staging. <strong>2,000 × 3,000 px</strong> or larger is ideal, and professional real estate photos give the most realistic result."
           }
         },
         "rq2": {
@@ -270,7 +373,7 @@
         "gt3": {
           "type": "get",
           "settings": {
-            "text": "MLS-ready files with clear disclosure guidance for digitally altered images."
+            "text": "MLS-ready, high resolution image files with clear disclosure guidance for digitally altered images."
           }
         },
         "gt4": {
@@ -321,7 +424,7 @@
           "type": "step",
           "settings": {
             "when": "Day 1–2",
-            "title": "We renovate it digitally",
+            "title": "We renovate and stage the finished room",
             "text": "New floors, paint, counters and fixtures — then a designer stages the finished room.",
             "us": true
           }
@@ -447,6 +550,72 @@
         "look_label": "See more in the portfolio →",
         "look_url": "/pages/portfolio"
       }
+    },
+    "compare": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Choosing a service",
+        "heading": "Virtual renovation service vs. AI virtual remodeling apps vs. a real remodel",
+        "text": "There are several ways to show potential buyers a renovated home before the listing goes live. Here's how they differ on realism, turnaround time and cost."
+      },
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Designer virtual renovation (Bella)",
+            "text": "A real interior designer updates floors, walls, cabinets and fixtures by hand, keeps the room's structure true, and stages the finished room. MLS-ready in 24–48 hours with unlimited revisions for two weeks, from {price:virtual-renovation-service} a photo."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "AI remodeling apps",
+            "text": "AI virtual remodeling apps return a redesigned room in seconds for little or no cost. The trade-off is accuracy: they often change windows, walls or proportions, which misrepresents the property in a listing, and fixing the result is on you."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "roller",
+            "title": "A real renovation before listing",
+            "text": "Physical remodeling delivers the real thing, but a pre-sale refresh can run $20,000+ per room and weeks of trades — money spent before you know what buyers want."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Virtual staging only",
+            "text": "If the finishes are fine and the room is just empty or cluttered, virtual staging from {price:virtual-staging} a photo is all you need — no renovation required."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "3D rendering, for homes not built yet",
+            "text": "For new construction that only exists on plans, our 3D rendering team builds photoreal interiors and exteriors from your drawings. Virtual renovation is for rooms that already exist."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "How to choose a virtual renovation service",
+            "text": "Look at before-and-after samples for realistic light and materials, confirm the turnaround time and revision policy, make sure the structure is never changed, and ask for MLS disclosure guidance."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ]
     }
   },
   "order": [
@@ -456,6 +625,7 @@
     "flow",
     "reqs",
     "uses",
+    "compare",
     "quote",
     "math",
     "pal",
