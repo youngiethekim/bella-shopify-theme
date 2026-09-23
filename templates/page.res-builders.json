@@ -24,7 +24,8 @@
         "local_heading": "From drawings to deposits",
         "local_text": "<p>Our <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a> start at {price:3d-rendering} per photoreal view: interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans by real designers (never AI) with revisions included. A pre-sale set of four to six views is priced per render with volume discounts, against a six-figure model home that shows one floor plan.</p>",
         "hoods_label": "What's on this shelf",
-        "hoods": "Pre-sale playbook, Rendering pricing & scope, What is architectural rendering, Approvals & lender packages, Model home math"
+        "hoods": "Pre-sale playbook, Rendering pricing & scope, What is architectural rendering, Approvals & lender packages, Model home math",
+        "cred_text": "3D renders from {price:3d-rendering} · Human 3D artists, never AI · Revisions included · US and Canada"
       }
     },
     "res": {

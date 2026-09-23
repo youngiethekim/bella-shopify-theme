@@ -12,7 +12,13 @@
     <a class="loc-alt" href="{{ section.settings.alt_link | default: '/pages/lookbook' }}">{{ section.settings.alt_label | default: 'Browse the lookbook' }}</a>
   </div>
   <div class="loc-cred">
+    {%- if section.settings.cred_text != blank -%}
+      {%- capture cred_txt %}{% render 'bella-price-text', text: section.settings.cred_text %}{% endcapture -%}
+      {%- assign cred_items = cred_txt | strip | split: '·' -%}
+      {%- for item in cred_items %}{% unless forloop.first %}<span>·</span>{% endunless %}<span>{{ item | strip }}</span>{% endfor -%}
+    {%- else -%}
     <span>From {{ vs_price }} a photo</span><span>·</span><span>24–48 hour delivery</span><span>·</span><span>Real designers, never AI</span><span>·</span><span>Rework or refund</span>
+    {%- endif -%}
   </div>
 </section>
 <section class="loc-body">
@@ -53,21 +59,88 @@
 {
   "name": "Location page",
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Virtual staging near you" },
-    { "type": "text", "id": "heading", "label": "Heading (H1)" },
-    { "type": "textarea", "id": "lede", "label": "Lede" },
-    { "type": "text", "id": "cta_label", "label": "CTA label" },
-    { "type": "url", "id": "cta_link", "label": "CTA link" },
-    { "type": "text", "id": "alt_label", "label": "Secondary link label" },
-    { "type": "url", "id": "alt_link", "label": "Secondary link" },
-    { "type": "text", "id": "city", "label": "City name (for services row)" },
-    { "type": "text", "id": "market_heading", "label": "Market column heading" },
-    { "type": "richtext", "id": "market_text", "label": "Market column text" },
-    { "type": "text", "id": "local_heading", "label": "Local column heading" },
-    { "type": "richtext", "id": "local_text", "label": "Local column text" },
-    { "type": "text", "id": "hoods_label", "label": "Neighbourhoods label" },
-    { "type": "text", "id": "hoods", "label": "Neighbourhoods (comma-separated)" }
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Virtual staging near you"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading (H1)"
+    },
+    {
+      "type": "textarea",
+      "id": "lede",
+      "label": "Lede"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA label"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA link"
+    },
+    {
+      "type": "text",
+      "id": "alt_label",
+      "label": "Secondary link label"
+    },
+    {
+      "type": "url",
+      "id": "alt_link",
+      "label": "Secondary link"
+    },
+    {
+      "type": "text",
+      "id": "cred_text",
+      "label": "Promise strip (optional)",
+      "info": "Replaces the default staging strip under the buttons. Separate items with ·. Price tokens like {price:3d-rendering} work."
+    },
+    {
+      "type": "text",
+      "id": "city",
+      "label": "City name (for services row)"
+    },
+    {
+      "type": "text",
+      "id": "market_heading",
+      "label": "Market column heading"
+    },
+    {
+      "type": "richtext",
+      "id": "market_text",
+      "label": "Market column text"
+    },
+    {
+      "type": "text",
+      "id": "local_heading",
+      "label": "Local column heading"
+    },
+    {
+      "type": "richtext",
+      "id": "local_text",
+      "label": "Local column text"
+    },
+    {
+      "type": "text",
+      "id": "hoods_label",
+      "label": "Neighbourhoods label"
+    },
+    {
+      "type": "text",
+      "id": "hoods",
+      "label": "Neighbourhoods (comma-separated)"
+    }
   ],
-  "presets": [{ "name": "Location page" }]
+  "presets": [
+    {
+      "name": "Location page"
+    }
+  ]
 }
 {% endschema %}
