@@ -118,7 +118,7 @@
           "type": "qa",
           "settings": {
             "question": "What can you change?",
-            "answer": "Finishes: flooring, wall colors, countertops, cabinet fronts, lighting and plumbing fixtures. We never change the structure — no moved walls, new windows or doors, or square footage that isn't there."
+            "answer": "Finishes: flooring, wall colors, countertops, cabinet fronts, lighting and plumbing fixtures. Layout changes such as removing a wall to open up a kitchen are available on request, shown as a proposed renovation. We never add square footage that isn't there."
           }
         },
         "q2": {
@@ -174,7 +174,7 @@
           "type": "qa",
           "settings": {
             "question": "Can AI or ChatGPT do a virtual renovation?",
-            "answer": "AI tools, including image features in chatbots, can redesign a room photo in seconds, but they often alter walls, windows or proportions, which misrepresents the property. Bella's virtual renovations are done by human designers, so the layout stays true and the image is safe to use on the MLS with disclosure."
+            "answer": "AI tools, including image features in chatbots, can redesign a room photo in seconds, but they often alter walls, windows or proportions, which misrepresents the property. Bella's virtual renovations are done by human designers, so every change is intentional and the image is safe to use on the MLS with disclosure."
           }
         },
         "q10": {
@@ -361,7 +361,7 @@
         "gt1": {
           "type": "get",
           "settings": {
-            "text": "The same room with <strong>new floors, walls, counters and fixtures</strong>, rendered photoreal — structure never changes."
+            "text": "The same room with <strong>new floors, walls, counters and fixtures</strong>, rendered photoreal, with layout changes like an opened-up wall on request."
           }
         },
         "gt2": {
@@ -564,7 +564,7 @@
           "settings": {
             "icon": "star",
             "title": "Designer virtual renovation (Bella)",
-            "text": "A real interior designer updates floors, walls, cabinets and fixtures by hand, keeps the room's structure true, and stages the finished room. MLS-ready in 24–48 hours with unlimited revisions for two weeks, from {price:virtual-renovation-service} a photo."
+            "text": "A real interior designer updates floors, walls, cabinets and fixtures by hand, can open up walls on request, and stages the finished room. MLS-ready in 24–48 hours with unlimited revisions for two weeks, from {price:virtual-renovation-service} a photo."
           }
         },
         "c2": {
@@ -604,7 +604,7 @@
           "settings": {
             "icon": "check",
             "title": "How to choose a virtual renovation service",
-            "text": "Look at before-and-after samples for realistic light and materials, confirm the turnaround time and revision policy, make sure the structure is never changed, and ask for MLS disclosure guidance."
+            "text": "Look at before-and-after samples for realistic light and materials, confirm the turnaround time and revision policy, make sure any layout change is shown as a proposed renovation, and ask for MLS disclosure guidance."
           }
         }
       },
