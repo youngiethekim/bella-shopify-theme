@@ -16,7 +16,7 @@
           "type": "usp",
           "settings": {
             "icon": "sofa",
-            "text": "<b>3 designs</b> per photo"
+            "text": "<b>3 designs</b> per room"
           }
         },
         "u2": {
@@ -53,11 +53,11 @@
         "shot_label": "One room, three designs · by a Bella designer",
         "hero_pairs": "",
         "ba_word": "design",
-        "unit_label": "photo",
+        "unit_label": "room",
         "qty_label": "How many photos?",
         "default_qty": 1,
         "min_qty": 1,
-        "reco_text": "Order one photo for each room or angle you want designed. Every photo comes back as three designs.",
+        "reco_text": "Order once for each room you want designed. Every room comes back as three designs.",
         "style_options": "",
         "show_notes": false,
         "assure_1": "Upload photos after checkout",
@@ -68,7 +68,7 @@
         "assure_2_tip": "Ask for changes to any of your three designs, free and unlimited for two weeks after delivery.",
         "assure_3": "Rework or refund",
         "assure_3_icon": "shield",
-        "assure_3_tip": "If a design still isn't right after rework, we refund that photo.",
+        "assure_3_tip": "If a design still isn't right after rework, we refund that room.",
         "call_url": "",
         "enable_tiers": false,
         "tier1_pct": 0,
@@ -163,7 +163,7 @@
         "gt1": {
           "type": "get",
           "settings": {
-            "text": "<strong>Three photorealistic designs</strong> of your room for every photo, each in a different furniture style."
+            "text": "<strong>Three photorealistic designs</strong> of your room, each in a different furniture style."
           }
         },
         "gt2": {
@@ -205,7 +205,7 @@
       ],
       "settings": {
         "eyebrow": "Black and white",
-        "heading": "Send one photo. Get three designs.",
+        "heading": "One room. Three designs.",
         "text": "Here's exactly what your order needs, and exactly what lands in your inbox. Not sure a photo will work? <a href=\"/pages/contact-us\">Contact us</a> before you order.",
         "req_heading": "What we need from you",
         "get_heading": "What you get back",
@@ -324,7 +324,7 @@
           "type": "row",
           "settings": {
             "title": "Design My Room (Bella)",
-            "price": "{price:design-my-room} per photo",
+            "price": "{price:design-my-room} per room",
             "covers": "Three photorealistic designs of your own room, by a real interior designer",
             "limit": "24–48 hours",
             "ideal": "Choosing a style and layout before you buy furniture"
@@ -395,7 +395,7 @@
           "type": "qa",
           "settings": {
             "question": "How does virtual room design work?",
-            "answer": "You share photos of the room, measurements if you have them, and your style preferences online. A designer builds the room digitally, furnishes it, renders it as a photorealistic image and refines it with your feedback, so you can preview the finished space before you buy, paint or move anything. With Bella's Design My Room, every photo you send comes back as three designs in different furniture styles, made by a real interior designer."
+            "answer": "You share photos of the room, measurements if you have them, and your style preferences online. A designer builds the room digitally, furnishes it, renders it as a photorealistic image and refines it with your feedback, so you can preview the finished space before you buy, paint or move anything. With Bella's Design My Room, every room you send comes back as three designs in different furniture styles, made by a real interior designer."
           }
         },
         "q2": {
@@ -416,7 +416,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does it cost to design a room virtually?",
-            "answer": "Design My Room is one flat price per photo, shown at the top of this page, and every photo includes three designs. There are no hourly fees and no subscription. For comparison, Angi's 2026 cost data puts in-person interior designers at $100 to $500 an hour, with the average project costing $8,550."
+            "answer": "Design My Room is one flat price per room, shown at the top of this page, and every room includes three designs. There are no hourly fees and no subscription. For comparison, Angi's 2026 cost data puts in-person interior designers at $100 to $500 an hour, with the average project costing $8,550."
           }
         },
         "q5": {
@@ -465,7 +465,7 @@
           "type": "qa",
           "settings": {
             "question": "What's the difference between Design My Room and virtual staging?",
-            "answer": "Both are done by Bella's interior designers, but they solve different problems. Virtual staging furnishes listing photos for a home that's for sale: one MLS-ready design per photo. Design My Room gives you three designs per photo, so you can compare styles and choose a direction for your own space. Selling a home? Start with <a href=\"/products/virtual-staging\">virtual staging</a>."
+            "answer": "Both are done by Bella's interior designers, but they solve different problems. Virtual staging furnishes listing photos for a home that's for sale: one MLS-ready design per photo. Design My Room gives you three designs per room, so you can compare styles and choose a direction for your own space. Selling a home? Start with <a href=\"/products/virtual-staging\">virtual staging</a>."
           }
         },
         "q12": {
@@ -493,7 +493,7 @@
           "type": "qa",
           "settings": {
             "question": "What if I don't like the designs?",
-            "answer": "Ask for changes. You can request adjustments to the layout, colors or furniture in any of your three designs, and revisions are unlimited and free for two weeks after delivery. If a design still isn't right after rework, we refund that photo."
+            "answer": "Ask for changes. You can request adjustments to the layout, colors or furniture in any of your three designs, and revisions are unlimited and free for two weeks after delivery. If a design still isn't right after rework, we refund that room."
           }
         },
         "q16": {
@@ -541,7 +541,7 @@
         "eyebrow": "Your room, three ways",
         "heading": "Ready to see your room redesigned?",
         "text": "Send a photo today and compare three designer-made designs of your own space in 24 to 48 hours.",
-        "cta_label": "Design my room — {price:design-my-room} a photo",
+        "cta_label": "Design my room — {price:design-my-room} a room",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
     }
