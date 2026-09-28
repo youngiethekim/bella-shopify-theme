@@ -1,0 +1,751 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Bella · 3D modeling & product rendering studio",
+        "heading": "3D Product Rendering Services & Furniture 3D Modeling",
+        "lede": "3D product rendering services turn a piece of furniture into photorealistic product images without a photo shoot. Bella's 3D artists build an accurate 3D model of each product from your photos, dimensions, spec sheets and material swatches, then render it as white-background product images, lifestyle scenes in styled rooms, and colour and material variants for your product pages, catalogues and marketing campaigns. We work with furniture brands, furniture retailers and e-commerce teams, and with home builders, across the US and Canada. Every piece in our gallery was modelled from scratch by our 3D artists in 3ds Max, never AI, and every project is priced by quote.",
+        "cta_label": "Contact us for a quote",
+        "cta_link": "/pages/contact-us",
+        "alt_label": "See the furniture looks our 3D team built",
+        "alt_link": "/pages/lookbook",
+        "cred_text": "Human 3D artists, never AI · Built in 3ds Max · Quote-based pricing · US and Canada",
+        "city": "",
+        "market_heading": "What are 3D product rendering and 3D furniture modeling?",
+        "market_text": "<p><strong>3D furniture modeling</strong> is model creation: a 3D artist builds a three dimensional digital object that matches the real piece with technical accuracy: precise dimensions, true proportions and every seam, leg and edge profile in place. Texture mapping then wraps the model in its materials, from wood grain and leather to metal and fabric weave, so the finish reads the way it does in your showroom.</p><p><strong>3D product rendering</strong> is what happens next. The finished 3D model is lit, framed by a virtual camera and rendered into computer generated images that look like product photography. This is photorealistic rendering: the software simulates how light falls on each material, so the result reads as a photograph rather than an illustration. Chaos, the company behind the V-Ray renderer, breaks 3D furniture rendering into five stages: modeling, texturing, lighting, rendering and post-processing (<a href=\"https://blog.chaos.com/3d-furniture-rendering-everything-you-need-to-know\" target=\"_blank\" rel=\"noopener\">Chaos</a>). Put simply, 3D modeling builds the product and 3D rendering photographs it, and once the model exists it can be rendered from any angle, in any finish, in any room.</p><p>That is why furniture product rendering has become a mainstream alternative to traditional product photography. In a 2014 CGSociety interview, IKEA's in-house agency said around 75% of IKEA's product images were already computer generated, a shift that began as a way to cut the logistics and cost of building and shipping prototype furniture around the world to be photographed (<a href=\"https://slate.com/human-interest/2014/09/ikea-product-images-75-percent-are-computer-generated.html\" target=\"_blank\" rel=\"noopener\">Slate</a>).</p>",
+        "local_heading": "A 3D product rendering company that models its own furniture",
+        "local_text": "<p>Most 3D product rendering companies model whatever arrives in the inbox. Bella's 3D artists also model furniture from scratch for our own furniture library and Look Book, the 3D furniture models used in Bella's virtual staging, in seven styles: Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional. Every sofa, chair, table and bed in our gallery was modelled from scratch by that team, so building furniture pieces that look real inside a furnished room is work they already do.</p><p>That same team provides 3D product modeling and visualization services for furniture brands, retailers and builders, and models your products from photos, dimensions and spec sheets. They work in 3ds Max, by hand, never with AI image generators, so the product on your product pages is your product: the arm height, the cushion profile, the stitching and the finish your customer actually receives. Pricing is quote-based, because a single accent chair and a full catalogue are different projects. Timelines depend on catalogue size; we'll give you a schedule with your quote.</p>",
+        "hoods_label": "What we deliver",
+        "hoods": "White-background product images, Lifestyle room scenes, Colour & material variants, Close-ups & details, Product pages, Catalogues, Marketing campaigns, Home builder marketing"
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "settings": {
+        "eyebrow": "Our work",
+        "heading": "3D furniture models and renders by Bella's 3D artists",
+        "sub": true,
+        "carousel": true,
+        "text": "Every piece below was modelled from scratch and rendered by Bella's own 3D artists in 3ds Max: high-quality renders of furniture from our own library, shown in studio renders and styled rooms. Swipe to see more.",
+        "cta_label": "Contact us for a quote",
+        "cta_url": "/pages/contact-us",
+        "look_label": "See the Look Book styles our 3D team maintains →",
+        "look_url": "/pages/lookbook"
+      },
+      "blocks": {
+        "g1": {
+          "type": "project",
+          "settings": {
+            "name": "Contemporary living room",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-living-room-contemporary-1.jpg",
+            "after_url": "bella-3d-model-living-room-contemporary-1.jpg"
+          }
+        },
+        "g2": {
+          "type": "project",
+          "settings": {
+            "name": "Modern dining set",
+            "customer": "Studio render",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-dining-table-modern-1.jpg",
+            "after_url": "bella-3d-model-dining-table-modern-1.jpg"
+          }
+        },
+        "g3": {
+          "type": "project",
+          "settings": {
+            "name": "Transitional bedroom",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-bedroom-transitional-1.jpg",
+            "after_url": "bella-3d-model-bedroom-transitional-1.jpg"
+          }
+        },
+        "g4": {
+          "type": "project",
+          "settings": {
+            "name": "Scandinavian dining room",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-dining-room-scandinavian-1.jpg",
+            "after_url": "bella-3d-model-dining-room-scandinavian-1.jpg"
+          }
+        },
+        "g5": {
+          "type": "project",
+          "settings": {
+            "name": "Modern farmhouse living room",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-living-room-modern-farmhouse-1.jpg",
+            "after_url": "bella-3d-model-living-room-modern-farmhouse-1.jpg"
+          }
+        },
+        "g6": {
+          "type": "project",
+          "settings": {
+            "name": "Modern upholstered bed",
+            "customer": "Studio render",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-bed-modern-1.jpg",
+            "after_url": "bella-3d-model-bed-modern-1.jpg"
+          }
+        },
+        "g7": {
+          "type": "project",
+          "settings": {
+            "name": "Japandi dining room",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-dining-room-japandi-1.jpg",
+            "after_url": "bella-3d-model-dining-room-japandi-1.jpg"
+          }
+        },
+        "g8": {
+          "type": "project",
+          "settings": {
+            "name": "Traditional dining room",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-dining-room-traditional-1.jpg",
+            "after_url": "bella-3d-model-dining-room-traditional-1.jpg"
+          }
+        },
+        "g9": {
+          "type": "project",
+          "settings": {
+            "name": "Modern dining room",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-dining-room-modern-2.jpg",
+            "after_url": "bella-3d-model-dining-room-modern-2.jpg"
+          }
+        },
+        "g10": {
+          "type": "project",
+          "settings": {
+            "name": "Contemporary dining room",
+            "customer": "Styled room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-model-dining-room-contemporary-2.jpg",
+            "after_url": "bella-3d-model-dining-room-contemporary-2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10"
+      ]
+    },
+    "get": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "What you get",
+        "heading": "What you get from our 3D furniture rendering services",
+        "text": "One accurate 3D model per product, then as many product visuals as your sales channels need. Every image comes from the same model, so your whole range shares one visual identity."
+      },
+      "blocks": {
+        "k1": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "White-background product images",
+            "text": "Clean silo renders on a pure white background for product pages, marketplaces and large e-commerce catalogs, lit the same way so every product sits in the same studio light."
+          }
+        },
+        "k2": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Lifestyle scenes in styled rooms",
+            "text": "Your furniture placed in a fully styled room, creating realistic context with the rug, lighting, art and accessories that show customers how it lives. Made for hero banners, social posts, catalogues and marketing campaigns."
+          }
+        },
+        "k3": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Colour, fabric and material variants",
+            "text": "Every colour way, fabric, leather and wood finish rendered from the same 3D model, so you can present products in every option without sampling or reshooting each one."
+          }
+        },
+        "k4": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Close-ups and detail shots",
+            "text": "Tight views of wood grain, fabric weave, stitching, hardware and leg details: the product details premium brands are judged on, and the ones that give shoppers a deeper understanding of quality when they can't touch the piece."
+          }
+        },
+        "k5": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "Any camera angle",
+            "text": "Front, three-quarter, side, back and overhead views from one model, with camera angles matched across the range so your product pages line up."
+          }
+        },
+        "k6": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "3D model files",
+            "text": "Need the 3D model itself? Ask us about file formats for your website, configurator or AR viewer."
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5",
+        "k6"
+      ]
+    },
+    "who": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Who it's for",
+        "heading": "Who our 3D modeling services are for",
+        "text": "Anyone who has to show furniture beautifully, accurately and at scale, including pieces that are hard to photograph or not made yet."
+      },
+      "blocks": {
+        "w1": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Furniture retailers and stores",
+            "text": "Show the full range online and in store, including pieces that aren't on your floor, with high-quality visuals and room scenes that look consistent from one supplier to the next."
+          }
+        },
+        "w2": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Furniture brands and manufacturers",
+            "text": "Present new collections with realistic renderings built from dimensions and spec sheets, show every finish without a physical sample of each, and hand retail partners ready-made marketing assets."
+          }
+        },
+        "w3": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "E-commerce brands and online teams",
+            "text": "3D models for furniture ecommerce brands: high-quality product images on white, detail views and lifestyle scenes for every colour way, built to one standard for online sales on every product page and sales channel."
+          }
+        },
+        "w4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Catalogue and marketing teams",
+            "text": "Build catalogues, lookbooks, ads and email campaigns from renders you can restyle each season, instead of booking a photography studio every time the range changes."
+          }
+        },
+        "w5": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Interior designers and showrooms",
+            "text": "Show clients realistic visuals of a made-to-order piece in the fabric and finish they chose, so decision making happens on an image of the final product, not a swatch card."
+          }
+        },
+        "w6": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Home builders",
+            "text": "3D models of plans and homes for marketing, from exteriors to furnished interiors. See 3D modeling services for home builders below."
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6"
+      ]
+    },
+    "proof": {
+      "type": "bella-proof",
+      "settings": {
+        "eyebrow": "Studio and styled",
+        "heading": "Studio renders and styled rooms, from one 3D team",
+        "before_url": "bella-3d-model-dining-set-contemporary-1.jpg",
+        "before_label": "Studio render · contemporary dining set modelled by Bella's 3D artists",
+        "after_url": "bella-3d-model-dining-room-contemporary-1.jpg",
+        "after_label": "Styled room · contemporary dining room modelled by Bella's 3D artists"
+      },
+      "blocks": {
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "icon": "pen",
+            "figure": "3ds Max",
+            "text": "is where every piece in our gallery was modelled from scratch, by hand, by Bella's own 3D artists. Never AI.",
+            "source": "Bella 3D team"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "icon": "sofa",
+            "figure": "7",
+            "text": "Look Book styles our artists model and maintain, from Contemporary and Scandinavian to Coastal and Traditional.",
+            "source": "Bella Look Book"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "icon": "image",
+            "figure": "~75%",
+            "text": "of IKEA's product images were computer generated by 2014, according to IKEA's in-house agency.",
+            "source": "CGSociety, 2014"
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ]
+    },
+    "steps": {
+      "type": "bella-steps",
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "How our 3D product modeling and rendering works"
+      },
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Send photos, dimensions and specs",
+            "text": "Share product photos, dimensions, spec sheets and material swatches, and tell us which images each product needs. If you have technical drawings or existing CAD files, send those too."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "We build the 3D model",
+            "text": "A Bella 3D artist handles the entire process: modeling each of your products from scratch in 3ds Max, matching the materials to your swatches, then lighting and rendering the white-background and lifestyle images on your list."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Review and revise",
+            "text": "You check the drafts against the real product: shape, proportions, colour, texture and styling. Tell us what to change and our artists revise the model and the renders."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "icon": "doc",
+            "title": "Delivery",
+            "text": "Final renders arrive ready for product pages, catalogues and marketing campaigns. Timelines depend on catalogue size; we'll give you a schedule with your quote."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    "compare": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Rendering vs photography",
+        "heading": "3D product rendering vs traditional product photography",
+        "text": "Product photography needs a finished product, a photography studio, a set and a crew. 3D product rendering needs accurate information about the product. Here is how the two compare for furniture."
+      },
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "No samples, sets or shipping",
+            "text": "A shoot needs physical samples shipped to a studio, a set built around them and a crew booked. A render needs photos, dimensions and material swatches, so no product has to travel."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Show it before it's made",
+            "text": "Furniture manufacturers and retailers use 3D rendering to show designs before they are physically produced, which cuts the need for costly physical prototypes and lets marketing materials be ready for product launches (<a href=\"https://blog.chaos.com/3d-furniture-rendering-everything-you-need-to-know\" target=\"_blank\" rel=\"noopener\">Chaos</a>)."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Every colour way from one model",
+            "text": "Photography shoots each finish separately. With a 3D model, a new fabric or wood finish is a material change on the model rather than a reshoot, so wide option ranges stay practical."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "One look across the catalogue",
+            "text": "Lighting, camera angles and shadows can be matched across every product, supplier and season, so a growing range keeps one visual identity in print ads, on social media and on your website without sacrificing quality."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Change the room, not the product",
+            "text": "A lifestyle scene can be restyled for a new season, market or campaign by changing the room around the model, without building a new physical set."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "When traditional photography still makes sense",
+            "text": "For a one-off hero shot of a product already in your warehouse, a good photographer is still a fine choice. Rendering earns its place when the range is wide, the options are many or the product doesn't exist yet."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ]
+    },
+    "why": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Why Bella",
+        "heading": "Why Bella for 3D furniture modeling services",
+        "text": "A 3D product rendering agency is only as good as the artists who build the models. Here is what you get with ours."
+      },
+      "blocks": {
+        "y1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Human 3D artists, never AI",
+            "text": "Every model is built by hand by Bella's own 3D artists, and every piece in our gallery was modelled from scratch. We don't use AI image generators to invent products, because a render your customers can't trust costs you more than it saves."
+          }
+        },
+        "y2": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "Built in 3ds Max",
+            "text": "Our artists model in 3ds Max, one of the most widely used tools for furniture visualization and product visualization, so geometry, materials and lighting hold up in close-ups."
+          }
+        },
+        "y3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Our own furniture library and Look Book",
+            "text": "The same team modelled the furniture library and Look Book used in Bella's virtual staging from scratch, and maintains it in seven styles from Contemporary and Modern Farmhouse to Mid-Century Modern and Transitional."
+          }
+        },
+        "y4": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Room scenes from a staging company",
+            "text": "Bella furnishes rooms for real estate listings through virtual staging, so we know how to build a room that looks lived-in rather than like a stock asset. Your product gets that same eye."
+          }
+        },
+        "y5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Flexible pricing, by quote",
+            "text": "Each project is quoted on product count, product complexity, variants and scenes, so you pay for the catalogue you have rather than a package built for someone else."
+          }
+        },
+        "y6": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Who we work with",
+            "text": "Bella works with real estate agents, brokerages, home builders and developers across the US and Canada, including staging and rendering clients such as Brown Harris Stevens and Highland Homes."
+          }
+        }
+      },
+      "block_order": [
+        "y1",
+        "y2",
+        "y3",
+        "y4",
+        "y5",
+        "y6"
+      ]
+    },
+    "builders": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "For home builders",
+        "heading": "3D modeling services for home builders",
+        "text": "Builders use the same 3D modeling skills on a different product: the home itself. We model plans and homes for marketing, and these pages cover each service in full."
+      },
+      "blocks": {
+        "b1": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "3D models of plans and homes",
+            "text": "Photorealistic visuals of exteriors and interiors, modeled from your plans for pre-sale marketing. For 3D architectural modelling and rendering, see <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D architectural rendering</a>."
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Home builder marketing",
+            "text": "Renders, virtual staging and floor plans put together for builders' sales and marketing teams. See <a href=\"/pages/home-builder-marketing\">home builder marketing</a>."
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Builders in Texas",
+            "text": "Model-home and new-construction staging for builders across Texas. See <a href=\"/pages/virtual-staging-texas\">virtual staging in Texas</a>."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "faq": {
+      "type": "bella-faq",
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "3D product rendering services, answered",
+        "open_first": true
+      },
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "What are 3D product rendering services?",
+            "answer": "3D product rendering services create photorealistic images of a product from a 3D model instead of a camera. A 3D artist builds the model from photos, dimensions and spec sheets, applies the real materials, then renders white-background product images, lifestyle scenes and colour variants. Furniture brands, retailers and e-commerce teams use them for product pages, catalogues and marketing campaigns, often in place of traditional product photography."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the difference between 3D modeling and 3D rendering?",
+            "answer": "3D modeling builds the product: the geometry, dimensions and details of a three dimensional digital object. 3D rendering turns that model into images by adding materials, lighting and a camera. You need the model once; after that it can be rendered again in new finishes, rooms and camera angles."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do 3D product rendering and 3D modeling cost?",
+            "answer": "Bella prices 3D modeling and rendering by quote. The cost depends on how many products you have, how complex each one is, how many colour and material variants you need, and how many white-background or lifestyle images each product needs. Send us your product list and we'll quote the whole project: <a href=\"/pages/contact-us\">contact us for a quote</a>."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "What do you need from me to start a 3D furniture rendering project?",
+            "answer": "Product photos, overall dimensions, spec sheets and material swatches, or high-resolution photos of each fabric, leather, wood and metal finish. If you already have technical drawings or CAD files, send them too and we'll tell you how we can use them. A short list of the images you need for each product helps us quote accurately."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does 3D furniture rendering take?",
+            "answer": "Timelines depend on catalogue size and product complexity: a handful of pieces is a different schedule from a full range with dozens of variants. We'll give you a schedule with your quote."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Are your 3D models made with AI?",
+            "answer": "No. Every model is built by hand by Bella's own 3D artists in 3ds Max. AI image generators and other AI-enhanced tools can generate a convincing picture of a sofa, but not reliably your sofa: dimensions, seams and finishes drift from the real product, which becomes a problem when a customer compares the delivered piece with the image they bought from."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you render furniture before it's manufactured?",
+            "answer": "3D rendering is widely used to show furniture before it is produced, so marketing can start before the first production run. If a piece is still in development, send the drawings, dimensions and spec sheets you have, and we'll tell you what else we need to model it accurately."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you show every colour and fabric option?",
+            "answer": "Yes. Colour and material variants are rendered from the same 3D model, so each fabric, leather, wood or metal finish appears in the same lighting and camera angles as the rest of the range."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you create lifestyle scenes as well as white-background images?",
+            "answer": "Yes. We deliver photoreal renders on a white background and lifestyle renders of your furniture in styled rooms. Our 3D team also maintains Bella's Look Book of Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional styles, so a room can be styled in the direction that suits your brand."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I get 3D model files for my website, configurator or augmented reality (AR) viewer?",
+            "answer": "Ask us about file formats for your website, configurator or AR viewer when you request your quote."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you offer 3D modeling and rendering services in Canada, including Toronto and Vancouver?",
+            "answer": "Yes. Bella provides 3D modeling and rendering services across Canada and the US. Furniture brands, retailers and builders looking for 3D product rendering services in Toronto, a 3D product rendering agency in Vancouver or a studio in Montreal work with us online: photos, specs, drafts and revisions all move online."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you offer 3D modeling services for home builders?",
+            "answer": "Yes. For home builders we model plans and homes for marketing. See <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D architectural rendering</a> for exteriors and interiors built from plans, <a href=\"/pages/home-builder-marketing\">home builder marketing</a> for the full builder toolkit, and <a href=\"/pages/virtual-staging-texas\">virtual staging in Texas</a> for model homes and new construction."
+          }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you offer 3D architectural modelling services?",
+            "answer": "Yes. Architectural visualization is a separate Bella service: our 3D artists model buildings from floor plans, elevations and CAD files and render photoreal exteriors and interiors. See our <a href=\"/pages/3d-rendering-services\">3D rendering services</a>."
+          }
+        },
+        "q14": {
+          "type": "qa",
+          "settings": {
+            "question": "What software do 3D product modelers use?",
+            "answer": "Bella's artists work in 3ds Max. Across the industry, furniture and product studios also model in tools such as Rhino and Blender and render with physically based rendering engines such as V-Ray and Corona, according to Chaos. You don't need any specialized software to order: send your product information and our team does the modeling."
+          }
+        },
+        "q15": {
+          "type": "qa",
+          "settings": {
+            "question": "Is 3D rendering cheaper than furniture photography?",
+            "answer": "It depends on the range. For a single hero shot of a product you already have, photography can be simpler. For wide ranges, many finishes or products that aren't made yet, rendering removes the samples, shipping, sets and reshoots; IKEA began moving its product images to CGI renders partly to save the cost of building and shipping prototype furniture to be photographed. We'll quote your project so you can compare."
+          }
+        },
+        "q16": {
+          "type": "qa",
+          "settings": {
+            "question": "What should I look for in 3D product visualization companies?",
+            "answer": "Look for a portfolio with products like yours, artists who model from your real specs rather than generating images with AI, material accuracy that holds up in close-ups, consistency across a whole catalogue, a clear review and revision process, and a written quote and schedule before the project begins."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12",
+        "q13",
+        "q14",
+        "q15",
+        "q16"
+      ]
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "image": "shopify://shop_images/great-room-interior-render.jpg",
+        "eyebrow": "Your next collection",
+        "heading": "Ready to see your furniture in 3D?",
+        "text": "Send us your product list, photos, dimensions and swatches, and we'll come back with a quote and a schedule for your catalogue.",
+        "cta_label": "Contact us for a quote",
+        "cta_link": "/pages/contact-us",
+        "fine_print": "Human 3D artists, never AI · Built in 3ds Max · Quote-based pricing · US and Canada"
+      }
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "3D rendering",
+        "heading": "More 3D rendering from Bella.",
+        "text": "Architectural, interior and exterior rendering, floor plans and pricing guides.",
+        "menu": "related-rendering"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "work",
+    "get",
+    "who",
+    "proof",
+    "steps",
+    "compare",
+    "why",
+    "builders",
+    "faq",
+    "cluster_related",
+    "cta"
+  ]
+}
