@@ -172,7 +172,9 @@
         "s2",
         "s3"
       ],
-      "settings": {}
+      "settings": {
+        "heading": "How our 3D rendering process works"
+      }
     },
     "proof": {
       "type": "bella-proof",
@@ -247,7 +249,7 @@
           "type": "qa",
           "settings": {
             "question": "How long does a render take?",
-            "answer": "It depends on scope — we confirm timing as soon as you send your plans, and interiors are typically faster than multi-building exteriors."
+            "answer": "Typical delivery is one to two weeks, depending on project scope. We confirm timing as soon as you send your plans, and interiors are usually faster than multi-building exteriors."
           }
         },
         "q3": {
@@ -305,6 +307,20 @@
             "question": "How can I get 3D renderings of my house plans?",
             "answer": "Order the render type you need, then upload floor plans with dimensions, elevations and a material list after checkout. Our 3D team models the house from scratch and sends a draft for your markup. You don't need a 3D model or rendering software of your own."
           }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "What are real estate renderings?",
+            "answer": "Real estate renderings are photorealistic images of a property created from its plans instead of photographed. Home builders, developers and real estate agents use them to market homes before construction begins or before a renovation is finished, on the listing, website, brochures and site signage, so buyers can see the finished property."
+          }
+        },
+        "q14": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you create 3D animations or virtual tours?",
+            "answer": "Our rendering service delivers finished still images. 3D animation and rendered virtual tours show a project in motion, but they are larger productions than a still render. A set of still renders covering each room, elevation and amenity covers the listing, brochure and website."
+          }
         }
       },
       "block_order": [
@@ -313,10 +329,12 @@
         "q7",
         "q6",
         "q9",
+        "q13",
         "q12",
         "q2",
         "q3",
         "q10",
+        "q14",
         "q11",
         "q5",
         "q4"
@@ -352,7 +370,7 @@
           "settings": {
             "icon": "doc",
             "title": "Win approvals and lenders",
-            "text": "Photoreal visuals carry planning meetings and pitch decks further than technical drawings ever do."
+            "text": "Photoreal visuals carry planning meetings, investor presentations and pitch decks further than technical drawings ever do, and help urban planners and stakeholders judge scale and design concepts before construction begins."
           }
         },
         "w3": {
@@ -837,7 +855,7 @@
           "settings": {
             "icon": "check",
             "title": "How to choose a 3D rendering company",
-            "text": "Look for photoreal quality and detail in portfolio work on projects like yours, renders built from your actual drawings rather than approximations, a clear per-image price and revision policy, full usage rights, and human 3D artists rather than AI generators that can change walls, windows or rooflines."
+            "text": "Look for photoreal quality and detail in portfolio work on projects like yours, renders built from your actual drawings rather than approximations, a clear per-image price and revision policy, a delivery date you can plan your project timeline around, full usage rights, and human 3D artists rather than AI generators that can change walls, windows or rooflines."
           }
         },
         "c5": {
