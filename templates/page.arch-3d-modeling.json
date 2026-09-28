@@ -37,7 +37,7 @@
         "heading": "3D furniture models and renders by Bella's 3D artists",
         "sub": true,
         "carousel": true,
-        "text": "Every piece below was modelled from scratch and rendered by Bella's own 3D artists in 3ds Max: high-quality renders of furniture from our own library, shown in studio renders and styled rooms. Swipe to see more.",
+        "text": "Every piece below was modelled and rendered by Bella's 3D artists in 3ds Max, from modular sofas shown in every configuration to full styled rooms. Swipe to see more.",
         "cta_label": "Contact us for a quote",
         "cta_url": "/pages/contact-us",
         "look_label": "See the Look Book styles our 3D team maintains →",
@@ -164,9 +164,61 @@
             "before_url": "bella-3d-model-dining-room-contemporary-2.jpg",
             "after_url": "bella-3d-model-dining-room-contemporary-2.jpg"
           }
+        },
+        "living_1": {
+          "type": "project",
+          "settings": {
+            "name": "Sectional with chaise",
+            "customer": "Living room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-render-living-sectional-chaise.jpg",
+            "after_url": "bella-3d-render-living-sectional-chaise.jpg"
+          }
+        },
+        "living_2": {
+          "type": "project",
+          "settings": {
+            "name": "Modular sofa and ottoman",
+            "customer": "Living room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-render-living-modular-sofa-ottoman.jpg",
+            "after_url": "bella-3d-render-living-modular-sofa-ottoman.jpg"
+          }
+        },
+        "living_3": {
+          "type": "project",
+          "settings": {
+            "name": "Double chaise configuration",
+            "customer": "Living room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-render-living-double-chaise.jpg",
+            "after_url": "bella-3d-render-living-double-chaise.jpg"
+          }
+        },
+        "living_4": {
+          "type": "project",
+          "settings": {
+            "name": "Compact loveseat",
+            "customer": "Living room",
+            "services": "3D model and render by Bella's 3D artists",
+            "outcome": "",
+            "tag": "Bella 3D render",
+            "before_url": "bella-3d-render-living-compact-loveseat.jpg",
+            "after_url": "bella-3d-render-living-compact-loveseat.jpg"
+          }
         }
       },
       "block_order": [
+        "living_1",
+        "living_2",
+        "living_3",
+        "living_4",
         "g1",
         "g2",
         "g3",
@@ -314,12 +366,12 @@
     "proof": {
       "type": "bella-proof",
       "settings": {
-        "eyebrow": "Studio and styled",
-        "heading": "Studio renders and styled rooms, from one 3D team",
-        "before_url": "bella-3d-model-dining-set-contemporary-1.jpg",
-        "before_label": "Studio render · contemporary dining set modelled by Bella's 3D artists",
-        "after_url": "bella-3d-model-dining-room-contemporary-1.jpg",
-        "after_label": "Styled room · contemporary dining room modelled by Bella's 3D artists"
+        "eyebrow": "One model, every configuration",
+        "heading": "Build the 3D model once. Render every configuration.",
+        "before_url": "bella-3d-render-living-loveseat.jpg",
+        "before_label": "Loveseat configuration",
+        "after_url": "bella-3d-render-living-sectional-chaise.jpg",
+        "after_label": "Sectional configuration · same 3D model, same room"
       },
       "blocks": {
         "st1": {
@@ -741,84 +793,96 @@
         "model_1": {
           "type": "model",
           "settings": {
-            "name": "Woven leather lounge chair",
-            "detail": "Oiled wood frame, woven leather sling",
-            "glb": "bella-3d-woven-leather-lounge-chair.glb",
-            "poster": "bella-3d-woven-leather-lounge-chair-poster.jpg",
-            "thumb": "bella-3d-woven-leather-lounge-chair-thumb.jpg",
-            "alt": "Interactive 3D model of a woven leather lounge chair with an oiled wood frame, modelled by Bella's 3D artists",
+            "name": "Curved sectional",
+            "detail": "Ivory bouclé on a brass plinth",
+            "glb": "bella-3d-curved-sectional.glb",
+            "poster": "bella-3d-curved-sectional-poster.jpg",
+            "thumb": "bella-3d-curved-sectional-thumb.jpg",
+            "alt": "Interactive 3D model of a curved ivory bouclé sectional with a brass plinth, shown in a living room, modelled by Bella's 3D artists",
             "orbit": "30deg 75deg auto"
           }
         },
         "model_2": {
           "type": "model",
           "settings": {
-            "name": "Lounge chair in four colourways",
-            "detail": "One model, four velvet colourways",
-            "glb": "bella-3d-lounge-chair-colourways.glb",
-            "poster": "bella-3d-lounge-chair-colourways-poster.jpg",
-            "thumb": "bella-3d-lounge-chair-colourways-thumb.jpg",
-            "alt": "Interactive 3D model of one lounge chair model shown in four velvet colourways: ochre, burgundy, blue and grey, modelled by Bella's 3D artists",
+            "name": "Modular sectional with chaise",
+            "detail": "Oatmeal weave, low black-metal legs",
+            "glb": "bella-3d-modular-sectional.glb",
+            "poster": "bella-3d-modular-sectional-poster.jpg",
+            "thumb": "bella-3d-modular-sectional-thumb.jpg",
+            "alt": "Interactive 3D model of a modular oatmeal sectional sofa with a chaise, shown in a living room, modelled by Bella's 3D artists",
             "orbit": "30deg 75deg auto"
           }
         },
         "model_3": {
           "type": "model",
           "settings": {
-            "name": "Rolled-arm sofa",
-            "detail": "Linen upholstery, turned wood legs, scatter cushions",
-            "glb": "bella-3d-rolled-arm-sofa.glb",
-            "poster": "bella-3d-rolled-arm-sofa-poster.jpg",
-            "thumb": "bella-3d-rolled-arm-sofa-thumb.jpg",
-            "alt": "Interactive 3D model of a rolled-arm linen sofa with turned wood legs and scatter cushions, modelled by Bella's 3D artists",
+            "name": "Cane lounge chair",
+            "detail": "Hand-woven cane on a dark walnut frame",
+            "glb": "bella-3d-cane-lounge-chair.glb",
+            "poster": "bella-3d-cane-lounge-chair-poster.jpg",
+            "thumb": "bella-3d-cane-lounge-chair-thumb.jpg",
+            "alt": "Interactive 3D model of a cane lounge chair with a dark walnut frame, shown in a living room, modelled by Bella's 3D artists",
             "orbit": "30deg 75deg auto"
           }
         },
         "model_4": {
           "type": "model",
           "settings": {
-            "name": "Curved sofa",
-            "detail": "Ivory bouclé on a low plinth",
-            "glb": "bella-3d-curved-sofa.glb",
-            "poster": "bella-3d-curved-sofa-poster.jpg",
-            "thumb": "bella-3d-curved-sofa-thumb.jpg",
-            "alt": "Interactive 3D model of a curved sofa in ivory bouclé on a low plinth, modelled by Bella's 3D artists",
+            "name": "Deep-seat sectional",
+            "detail": "Oatmeal weave with scatter cushions",
+            "glb": "bella-3d-deep-seat-sectional.glb",
+            "poster": "bella-3d-deep-seat-sectional-poster.jpg",
+            "thumb": "bella-3d-deep-seat-sectional-thumb.jpg",
+            "alt": "Interactive 3D model of a deep-seat oatmeal sectional with scatter cushions, shown in a living room, modelled by Bella's 3D artists",
             "orbit": "30deg 75deg auto"
           }
         },
         "model_5": {
           "type": "model",
           "settings": {
-            "name": "Bouclé armchair",
-            "detail": "Sculpted shell in off-white bouclé",
-            "glb": "bella-3d-boucle-armchair.glb",
-            "poster": "bella-3d-boucle-armchair-poster.jpg",
-            "thumb": "bella-3d-boucle-armchair-thumb.jpg",
-            "alt": "Interactive 3D model of a sculpted armchair in off-white bouclé, modelled by Bella's 3D artists",
+            "name": "Velvet lounge chair",
+            "detail": "Rust velvet shell on black steel legs",
+            "glb": "bella-3d-velvet-lounge-chair.glb",
+            "poster": "bella-3d-velvet-lounge-chair-poster.jpg",
+            "thumb": "bella-3d-velvet-lounge-chair-thumb.jpg",
+            "alt": "Interactive 3D model of a rust velvet lounge chair on black steel legs, shown in a living room, modelled by Bella's 3D artists",
             "orbit": "30deg 75deg auto"
           }
         },
         "model_6": {
           "type": "model",
           "settings": {
-            "name": "Round dining set",
-            "detail": "Oak pedestal table, four upholstered oak chairs",
-            "glb": "bella-3d-round-dining-set.glb",
-            "poster": "bella-3d-round-dining-set-poster.jpg",
-            "thumb": "bella-3d-round-dining-set-thumb.jpg",
-            "alt": "Interactive 3D model of a round oak pedestal dining table with four upholstered oak chairs, modelled by Bella's 3D artists",
+            "name": "Two-seat sofa",
+            "detail": "Stone felt on a walnut base",
+            "glb": "bella-3d-two-seat-sofa.glb",
+            "poster": "bella-3d-two-seat-sofa-poster.jpg",
+            "thumb": "bella-3d-two-seat-sofa-thumb.jpg",
+            "alt": "Interactive 3D model of a stone felt two-seat sofa on a walnut base, shown in a living room, modelled by Bella's 3D artists",
             "orbit": "30deg 75deg auto"
           }
         },
         "model_7": {
           "type": "model",
           "settings": {
-            "name": "Walnut dining set",
-            "detail": "Walnut table, four bentwood chairs, linen runner",
-            "glb": "bella-3d-walnut-dining-set.glb",
-            "poster": "bella-3d-walnut-dining-set-poster.jpg",
-            "thumb": "bella-3d-walnut-dining-set-thumb.jpg",
-            "alt": "Interactive 3D model of a walnut dining table with four bentwood chairs and a linen runner, modelled by Bella's 3D artists",
+            "name": "Bouclé lounge chair",
+            "detail": "Channel-tufted ivory bouclé on an oak base",
+            "glb": "bella-3d-boucle-lounge-chair.glb",
+            "poster": "bella-3d-boucle-lounge-chair-poster.jpg",
+            "thumb": "bella-3d-boucle-lounge-chair-thumb.jpg",
+            "alt": "Interactive 3D model of a channel-tufted ivory bouclé lounge chair, shown in a living room, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        },
+        "model_8": {
+          "type": "model",
+          "settings": {
+            "name": "Barrel lounge chair",
+            "detail": "Olive velvet on walnut feet",
+            "glb": "bella-3d-barrel-lounge-chair.glb",
+            "poster": "bella-3d-barrel-lounge-chair-poster.jpg",
+            "thumb": "bella-3d-barrel-lounge-chair-thumb.jpg",
+            "alt": "Interactive 3D model of an olive velvet barrel lounge chair, shown in a living room, modelled by Bella's 3D artists",
             "orbit": "30deg 75deg auto"
           }
         }
@@ -830,12 +894,13 @@
         "model_4",
         "model_5",
         "model_6",
-        "model_7"
+        "model_7",
+        "model_8"
       ],
       "settings": {
         "eyebrow": "Bella · 3D modeling & product rendering",
         "heading": "3D Product Rendering Services for Furniture",
-        "lede": "Drag to spin any piece, each modelled from scratch by Bella's 3D artists. Send us photos, dimensions and swatches, and we'll build your furniture in 3D, then render white-background, lifestyle and colourway images.",
+        "lede": "Every piece here is a 3D model built by Bella's 3D artists. Spin it, see it in a real living room or on a clean studio backdrop, or place it in your own space. Send us photos, dimensions and swatches, and we'll do the same for your furniture.",
         "cta_label": "Contact us for a quote",
         "cta_link": "/pages/contact-us",
         "alt_label": "See finished renders",
@@ -844,7 +909,14 @@
         "hint": "Drag to rotate",
         "ar_label": "View in your room",
         "credit": "Modelled by Bella's 3D artists",
-        "picker_label": "Choose a 3D model"
+        "picker_label": "Choose a 3D model",
+        "default_mode": "room",
+        "room_skybox": "bella-3d-room-living.jpg",
+        "room_env": "bella-3d-room-living.hdr",
+        "room_height": "1.5m",
+        "room_label": "In a room",
+        "studio_label": "Studio",
+        "modes_label": "Backdrop"
       }
     }
   },
