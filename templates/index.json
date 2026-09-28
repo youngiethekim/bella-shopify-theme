@@ -49,10 +49,10 @@
       ],
       "settings": {
         "ghost_label": "",
-        "badge": "For agents, brokerages & builders",
-        "heading": "Your visual marketing",
+        "badge": "Virtual staging for agents, brokerages & builders",
+        "heading": "Your virtual staging and visual marketing",
         "heading_em": "department.",
-        "subtext": "Bella is the visual marketing department for real estate professionals — virtual staging, 3D rendering, floor plans and photo editing, handled by real interior designers. Everything your listing needs to sell, MLS-ready in 24 to 48 hours, from {price:virtual-staging} a photo."
+        "subtext": "Bella is the visual marketing department for real estate professionals: virtual home staging services, 3D rendering, floor plans and photo editing, handled by real interior designers. Everything your listing needs to sell, MLS-ready in 24 to 48 hours, from {price:virtual-staging} a photo."
       }
     },
     "trust": {
@@ -92,14 +92,16 @@
         "c2",
         "c3"
       ],
-      "settings": {}
+      "settings": {
+        "text": "Bella isn't a software company. We're a virtual staging company run by interior designers and real estate professionals who have helped market and sell thousands of residential and commercial properties, so we know exactly what buyers in your market are looking for. We turn your listing photos and other real estate media into visuals that stand out, showing the full potential of the property and painting the picture buyers are searching for. You walk into every appointment with a property that already looks sold."
+      }
     },
     "value": {
       "type": "bella-value",
       "settings": {
         "eyebrow": "How we do it",
         "heading": "Better work, priced like it shouldn't be.",
-        "note": "Bella is not a software company, and not an offshore desk. Our team has spent over ten years in real estate and interior design — we know which rooms buyers decide in, which furniture reads on a small screen, and what a listing photo has to do in the three seconds it gets. Every image is composed by hand by a designer, never AI. What lets us price the way we do is not a cheaper product but a better process: we have engineered everything around the design work — intake, revisions, delivery — so the cost sits in the designer's eye rather than in overhead. Competitive pricing usually means a compromise somewhere. Ours does not.",
+        "note": "Home staging, virtual or physical, does one job: it shows buyers what a room is for. Bella is not a software company, and not an offshore desk. Our team has spent over ten years in the real estate industry and interior design — we know which rooms buyers decide in, which furniture reads on a small screen, and what a listing photo has to do in the three seconds it gets. Every image is composed by hand by a real person, a designer, never AI. What lets us price the way we do is not a cheaper product but a better process: we have engineered the entire process around the design work — intake, revisions, delivery — so the cost sits in the designer's eye rather than in overhead. Competitive pricing usually means a compromise somewhere. Ours does not.",
         "cta_label": "",
         "also_label": ""
       }
@@ -154,7 +156,7 @@
           "settings": {
             "icon": "sofa",
             "title": "Virtual staging",
-            "text": "Vacant homes and empty rooms furnished by real interior designers, in furniture styles matched to the home and your target buyer."
+            "text": "Virtual furniture staging for vacant homes and empty rooms, by real interior designers, in furniture styles matched to the home and your target buyer."
           }
         },
         "s2": {
@@ -162,7 +164,7 @@
           "settings": {
             "icon": "eraser",
             "title": "Furniture removal",
-            "text": "We digitally remove existing furniture from occupied or cluttered rooms, then restage them clean. Included free with virtual staging."
+            "text": "We digitally remove existing furniture from occupied or cluttered rooms, then restage them with new furniture. Included free with virtual staging."
           }
         },
         "s3": {
@@ -170,7 +172,7 @@
           "settings": {
             "icon": "roller",
             "title": "Virtual renovation",
-            "text": "Modernize dated finishes, floors, and fixtures before staging."
+            "text": "Update dated flooring, wall color, countertops, cabinets and fixtures digitally, so a home that needs work shows its potential before staging."
           }
         },
         "s4": {
@@ -508,7 +510,7 @@
           "settings": {
             "icon": "shield",
             "title": "AB 723-compliant",
-            "text": "Disclosure standards built into the order, not bolted on afterward."
+            "text": "California's AB 723 requires virtually staged listing photos to be disclosed, with access to the original images. We build that disclosure standard into the order, not bolted on afterward."
           }
         },
         "cp3": {
@@ -516,7 +518,7 @@
           "settings": {
             "icon": "eye",
             "title": "We never invent the property",
-            "text": "Staged photos never add windows, move walls or invent square footage. Layout changes are made only on request, as a disclosed virtual renovation."
+            "text": "Staged photos never add windows, move walls or invent square footage, so you are never misleading buyers. Layout changes are made only on request, as a disclosed virtual renovation."
           }
         },
         "cp4": {
@@ -524,7 +526,7 @@
           "settings": {
             "icon": "note",
             "title": "Disclosure guidance included",
-            "text": "We tell you exactly what to note on the listing, and we always recommend you do."
+            "text": "We tell you exactly what to note on the listing, and we always recommend you do. Honest advertising is what NAR's Code of Ethics expects, and transparency builds trust with buyers."
           }
         }
       },
@@ -534,7 +536,9 @@
         "cp3",
         "cp4"
       ],
-      "settings": {}
+      "settings": {
+        "heading": "Virtual staging real estate agents can list without risking their license."
+      }
     },
     "faq": {
       "type": "bella-faq",
@@ -542,8 +546,8 @@
         "q1": {
           "type": "qa",
           "settings": {
-            "question": "How much do your virtual staging services cost?",
-            "answer": "Virtual staging is {price:virtual-staging} per photo, with automatic volume discounts: 5% off 3 or more photos, 10% off 6 or more, 15% off 11 or more and 20% off 21 or more. The same discounts apply to virtual renovation, photo editing, floor plans, 3D rendering and 360° tours in the same order. No subscription, no minimum, no monthly rental."
+            "question": "How much does virtual staging cost per image?",
+            "answer": "Virtual staging is {price:virtual-staging} per image, with automatic volume discounts: 5% off 3 or more photos, 10% off 6 or more, 15% off 11 or more and 20% off 21 or more. Furniture removal is included free. The same discounts apply to virtual renovation, photo editing, floor plans, 3D rendering and 360° tours in the same order. No subscription, no minimum, no monthly rental."
           }
         },
         "q2": {
@@ -564,7 +568,7 @@
           "type": "qa",
           "settings": {
             "question": "How fast do I get my photos back?",
-            "answer": "24 to 48 hours from the moment you upload, not the one to two weeks it typically takes to schedule a physical stage."
+            "answer": "A quick turnaround: 24 to 48 hours from the moment you upload, not the one to two weeks it typically takes to schedule a physical stage."
           }
         },
         "q5": {
@@ -592,14 +596,14 @@
           "type": "qa",
           "settings": {
             "question": "Is virtual staging worth it?",
-            "answer": "For most vacant homes, yes. 97% of buyers start their search online, and 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, according to the National Association of Realtors. Virtual staging gives your listing photos that effect for a one-time cost per photo, while physical staging runs thousands of dollars a month."
+            "answer": "For most vacant homes, yes. 97% of buyers use the internet in their home search, and 82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, according to the National Association of Realtors. Virtual staging gives your listing photos that effect for a one-time cost per photo, while physical staging runs thousands of dollars a month."
           }
         },
         "q9": {
           "type": "qa",
           "settings": {
             "question": "How is virtual staging different from traditional home staging?",
-            "answer": "Traditional home staging rents real furniture into the property and can cost thousands of dollars a month for as long as it's on the market. Virtual staging adds furniture digitally to your listing photos, so there are no movers and no monthly rental, and the staged images are yours for the whole listing. We always recommend disclosing virtually staged photos on the listing."
+            "answer": "Traditional home staging rents real furniture into the property and can cost thousands of dollars a month for as long as it's on the market. Virtual staging means adding furniture digitally to your listing photos, so there are no movers and no monthly rental, and the staged images are yours for the whole listing. We always recommend disclosing virtually staged photos on the listing."
           }
         },
         "q10": {
@@ -622,12 +626,35 @@
             "question": "Can I try Bella's virtual staging for free?",
             "answer": "Yes. Real estate professionals can claim a $40 voucher on our free sample page to try Bella virtual staging risk-free. Eligibility is subject to Bella's approval."
           }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "How does virtual staging for real estate photos work?",
+            "answer": "You send the listing photos you already have. A designer removes existing furniture if needed, then furnishes each room digitally in the style you pick, matching scale, light and shadows to the photo. Nothing is delivered or installed, and the staged images come back ready for the MLS, your website and social media in 24 to 48 hours."
+          }
+        },
+        "q14": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal, or is it misleading buyers?",
+            "answer": "Virtual staging is legal when it is disclosed and doesn't misrepresent the property. Label virtually staged photos on the listing, keep the original images available, and never alter walls, windows or views. In California, AB 723 makes that disclosure a legal requirement. Every Bella order comes with disclosure guidance."
+          }
+        },
+        "q15": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you work with real estate photographers?",
+            "answer": "Yes. A real estate photographer can add our virtual staging, item removal, day-to-dusk and sky swaps to any shoot as a white-label service, with your brand on every file and the same 24 to 48 hour turnaround."
+          }
         }
       },
       "block_order": [
         "q1",
+        "q13",
         "q8",
         "q2",
+        "q14",
         "q3",
         "q9",
         "q4",
@@ -636,6 +663,7 @@
         "q10",
         "q11",
         "q12",
+        "q15",
         "q7"
       ],
       "settings": {
@@ -653,7 +681,7 @@
       "settings": {
         "eyebrow": "Choosing a service",
         "heading": "How our virtual staging services compare to AI virtual staging and physical staging",
-        "text": "Real estate agents have three ways to fill an empty listing. Here's how they compare on realism, turnaround time and cost."
+        "text": "Real estate agents have three ways to fill an empty listing. Here's how they compare on realism, turnaround time and cost, and why most agents who try it pick virtual staging over physical staging."
       },
       "blocks": {
         "c1": {
@@ -661,7 +689,7 @@
           "settings": {
             "icon": "star",
             "title": "Human virtual staging (Bella)",
-            "text": "Human designers, not software: a professional interior designer places every piece of realistic furniture by hand, so scale, shadows and light match the room. MLS-ready virtually staged photos in 24–48 hours, from {price:virtual-staging} a photo, with free revisions for two weeks."
+            "text": "Human designers, not software: a professional interior designer places every piece of realistic furniture by hand, so scale, shadows and light match the room. Traditional virtual staging takes longer than an app, but it is how we deliver photorealistic results: MLS-ready virtually staged photos in 24–48 hours, from {price:virtual-staging} a photo, with free revisions for two weeks."
           }
         },
         "c2": {
@@ -669,7 +697,7 @@
           "settings": {
             "icon": "cube",
             "title": "AI-powered virtual staging apps",
-            "text": "AI virtual staging tools return an image in seconds for less money. The catch is image quality: floating furniture, wrong scale and altered walls or windows, which can misrepresent the property to potential buyers."
+            "text": "Virtual staging AI tools return an image in seconds for less money, and some let you resize furniture yourself. The catch is image quality: floating furniture, wrong scale and altered walls or windows, which can misrepresent the property to potential buyers."
           }
         },
         "c3": {
@@ -677,7 +705,7 @@
           "settings": {
             "icon": "sofa",
             "title": "Physical staging",
-            "text": "Rented furniture looks great at an open house, but traditional staging runs thousands of dollars a month, needs movers, and leaves the day the home sells."
+            "text": "Rented furniture looks great at an open house, but traditional staging can cost thousands of dollars a month, needs movers, and leaves the day the home sells."
           }
         },
         "c4": {
@@ -685,7 +713,7 @@
           "settings": {
             "icon": "check",
             "title": "Choosing between virtual staging companies",
-            "text": "Compare before-and-after samples, turnaround time and the revision policy. Make sure you own the images, and ask for MLS disclosure guidance. Avoid anyone who offers to hide a property's flaws."
+            "text": "Compare before-and-after samples, turnaround time and the revision policy of every virtual staging company on your shortlist. Make sure you own the images, and ask for MLS disclosure guidance. Avoid anyone who offers to hide a property's flaws."
           }
         },
         "c5": {
@@ -693,7 +721,7 @@
           "settings": {
             "icon": "image",
             "title": "How many photos to stage",
-            "text": "Most listings need 5–8 staged photos, one per room or angle: start with the living room, kitchen, dining room and primary bedroom. Volume discounts start at three photos."
+            "text": "Most listings need 5–8 staged photos, one per room or angle: start with the living room, kitchen, dining room and primary bedroom. Send high resolution images if you have them. Volume discounts start at three photos."
           }
         }
       },
@@ -708,7 +736,7 @@
     "process": {
       "type": "bella-steps",
       "settings": {
-        "eyebrow": "How it works",
+        "eyebrow": "The virtual staging process",
         "heading": "How a virtual staging project works, from upload to MLS"
       },
       "blocks": {
@@ -757,7 +785,7 @@
       "settings": {
         "eyebrow": "Furniture styles",
         "heading": "Multiple furniture styles, from starter condos to luxury listings",
-        "text": "Every style works in any room, from the living room and dining room to the primary bedroom. Pick one from our Look Book, or let a designer match it to the buyers your listing needs to attract."
+        "text": "Every style works in any room, from the living room and dining room to the primary bedroom. Different buyers respond to different furniture styles, so pick one from our Look Book or let a designer match it to the buyers your listing needs to attract."
       },
       "blocks": {
         "y1": {
@@ -831,7 +859,7 @@
           "settings": {
             "icon": "eye",
             "title": "Win the first photos",
-            "text": "97% of buyers start their search online, so your listing photos are the first showing. Virtually staged images give vacant rooms scale and purpose before a buyer scrolls past."
+            "text": "97% of buyers use the internet in their home search, so your listing photos are the first showing. Empty rooms often look smaller on a phone screen; virtually staged images give them scale and purpose, designed to increase buyer interest before a buyer scrolls past."
           }
         },
         "m2": {
@@ -839,7 +867,7 @@
           "settings": {
             "icon": "sofa",
             "title": "Help buyers visualize the home",
-            "text": "82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home (NAR). Staged images do that for empty rooms without renting furniture."
+            "text": "82% of buyers' agents say staging makes it easier for buyers to visualize a property as their future home, according to the National Association of Realtors. Virtually staged photos do that for empty rooms without renting furniture."
           }
         },
         "m3": {
@@ -855,7 +883,7 @@
           "settings": {
             "icon": "plan",
             "title": "One studio for multiple listings",
-            "text": "Staging, floor plans, photo editing and 3D renders in one order, so running multiple listings doesn't mean managing multiple vendors."
+            "text": "Staging, floor plans, photo editing and 3D renders in one order, so growing your real estate business doesn't mean managing multiple vendors across multiple listings."
           }
         },
         "m5": {
@@ -865,9 +893,18 @@
             "title": "Quality without the premium",
             "text": "Every image is composed by a designer, from {price:virtual-staging} a photo, so competitive pricing doesn't mean sacrificing quality."
           }
+        },
+        "m6": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "What is virtual staging?",
+            "text": "Virtual staging, also called digital staging or digital home staging, is a real estate marketing technique: a designer adds furniture and decor to photos of empty rooms, so buyers see how each space lives. It works best for vacant homes and online listings."
+          }
         }
       },
       "block_order": [
+        "m6",
         "m1",
         "m2",
         "m3",
