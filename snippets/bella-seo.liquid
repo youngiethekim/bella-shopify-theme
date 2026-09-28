@@ -30,7 +30,7 @@
   "@id": {{ shop.secure_url | append: '/#organization' | json }},
   "name": {{ shop.name | json }},
   "url": {{ shop.secure_url | json }},
-  "description": "Virtual staging, 3D rendering, floor plans and photo editing for real estate — designed by hand, never AI.",
+  "description": "Virtual staging, 3D rendering, floor plans, 3D furniture modeling and photo editing — designed by hand, never AI.",
   {%- if settings.company_phone != blank %}
   "telephone": {{ settings.company_phone | strip | json }},
   {%- endif %}
@@ -38,7 +38,7 @@
   "address": {{ settings.company_address | strip | json }},
   {%- endif %}
   "areaServed": ["United States", "Canada"],
-  "knowsAbout": ["Virtual staging", "Virtual renovation", "Virtual furniture removal", "3D architectural rendering", "2D and 3D floor plans", "Real estate photo editing", "360° virtual tours"],
+  "knowsAbout": ["Virtual staging", "Virtual renovation", "Virtual furniture removal", "3D architectural rendering", "3D product rendering", "3D furniture modeling", "2D and 3D floor plans", "Real estate photo editing", "360° virtual tours"],
   "sameAs": []
 }
 </script>
