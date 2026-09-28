@@ -1,0 +1,487 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Virtual staging for Texas home builders",
+        "heading": "Virtual Staging for Home Builders in Texas",
+        "lede": "Virtual staging for home builders is the digital furnishing of new construction photos: an interior designer places furniture and decor into photos of empty spec homes, quick move-ins and model plans, so prospective buyers can see how each room lives. Bella's designers stage Texas builder inventory in 24 to 48 hours, from {price:virtual-staging} a photo, and our 3D artists render the homes you haven't built yet from your plans.",
+        "cta_label": "Stage a spec home — from {price:virtual-staging}",
+        "cta_link": "/products/virtual-staging",
+        "alt_label": "3D renderings from your plans",
+        "alt_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "cred_text": "",
+        "city": "Texas",
+        "market_heading": "Virtual staging for home builders: Texas new construction, furnished online",
+        "market_text": "<p>Texas builds more new homes than any other state. It led the country with 140,002 single-family permits in 2025, according to NAHB's analysis of Census Bureau data, and the Dallas and Houston metros issued more residential permits than any other US metro. That volume creates the builder's marketing problem: dozens of vacant spec homes and quick move-ins going live at once, several of them the same floor plan, all photographed empty.</p><p>Empty new construction photographs cold. White walls, bare floors and natural light bouncing off nothing make a four-bedroom plan look smaller than it is, and prospective buyers can't tell the flex room from the study. Virtually staged photos furnish each room to scale, so buyers understand the layout, how much furniture it really holds, and why this home beats the identical one two streets over.</p><p>A model home still earns its keep, but it shows one floor plan in one community. Traditional staging for every vacant spec home means a design fee and furniture rental per house, plus the logistics of moving furniture between new communities. Virtual staging services cost a fraction of that: {price:virtual-staging} a photo, paid once, with no rental clock running while a home waits for its buyer.</p><p>For homes that aren't built yet, the same team works from your plans. Our <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D rendering service</a> turns CAD or PDF drawings into photoreal exteriors, interiors and streetscapes from {price:3d-rendering-service-for-architectural-visualization} a view, so sales can open before the slab is poured. The full builder playbook, from pre-sales to the last closing, is in our <a href=\"/pages/home-builder-marketing\">home builder marketing</a> guides.</p><p>Buyers decide online first: 83% of buyers' agents say staging makes it easier for a buyer to visualize the property as a future home (NAR, 2025 Profile of Home Staging). Staged photos are how Texas listings stand out when a buyer is scrolling a dozen new builds in the same ZIP code.</p>",
+        "local_heading": "New construction in Houston, Austin, Dallas–Fort Worth and San Antonio",
+        "local_text": "<p><strong>Houston.</strong> Master-planned communities in Katy, Cypress, The Woodlands and Sugar Land release single family homes in phases, and each phase needs listing photos the week it opens. Staged photos come back ready for the HAR.com MLS, with disclosure guidance.</p><p><strong>Dallas–Fort Worth.</strong> From Fort Worth to Frisco, Prosper, Celina and McKinney, DFW builders compete for relocation buyers who shortlist homes online before they fly in. Dallas listings upload to NTREIS; agents listing resale homes can see our <a href=\"/pages/virtual-staging-dallas\">virtual staging Dallas</a> page.</p><p><strong>Austin.</strong> Georgetown, Leander, Round Rock, Hutto and Kyle turn over spec inventory fast, and a clean modern style suits most of it. Files are ready for Unlock MLS.</p><p><strong>San Antonio.</strong> New Braunfels, Boerne, Schertz and the city's growth corridors are full of new builds that look alike online. Files are ready for LERA MLS, formerly the SABOR MLS.</p><p><strong>Luxury and custom builds.</strong> Custom builders in River Oaks, Highland Park and Westlake get the same designers at the same {price:virtual-staging} a photo. See <a href=\"/pages/luxury-virtual-staging\">luxury virtual staging</a> for how we stage high-end homes.</p>",
+        "hoods_label": "Texas markets we stage for builders",
+        "hoods": "Houston, Katy, Cypress, The Woodlands, Frisco, Prosper, McKinney, Fort Worth, Austin, Georgetown, Leander, San Antonio, New Braunfels"
+      }
+    },
+    "cred": {
+      "type": "bella-cred",
+      "blocks": {
+        "m1": {
+          "type": "mark",
+          "settings": {
+            "name": "Highland Homes",
+            "detail": "Home builder · Texas",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/highland-homes-logo.png?v=1786950040"
+          }
+        },
+        "m2": {
+          "type": "mark",
+          "settings": {
+            "name": "Concord Pacific",
+            "detail": "Community developer · Vancouver",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/concord-pacific-logo.png?v=1786982242"
+          }
+        },
+        "m3": {
+          "type": "mark",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "detail": "Multi-family development"
+          }
+        },
+        "m4": {
+          "type": "mark",
+          "settings": {
+            "name": "Brown Harris Stevens",
+            "detail": "Luxury brokerage · New York",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/brown-harris-stevens-logo.png?v=1786982242"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "settings": {
+        "eyebrow": "Builder clients",
+        "heading": "Trusted by Texas home builders like Highland Homes",
+        "sub": true,
+        "text": "Highland Homes' marketing team stages its new spec homes with Bella the same way every time: kitchen, primary bedroom, living and dining, and study, in the community's chosen style and matched to the furniture-layout references their coordinators provide. Bella is part of the launch checklist for new Highland communities across Texas.",
+        "note": "Rated 4.9 on Google by verified Bella clients."
+      }
+    },
+    "compare": {
+      "type": "bella-included",
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Virtual staging cost",
+            "text": "Traditional staging is usually quoted as a design fee plus monthly furniture rental for each home, which adds up to thousands of dollars on a vacant house. Virtual staging is {price:virtual-staging} a photo, paid once, with volume discounts across a community."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "One model home, many floor plans",
+            "text": "A model shows one plan with one set of finishes. 3D renderings show every plan, elevation and upgrade package, and virtual staging furnishes each quick move-in for its own listing."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Fast turnaround for launches",
+            "text": "No furniture delivery, no crew and no waiting for an install date. Upload after checkout and virtual staging photos come back in 24 to 48 hours, delivered as one set for the whole release."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Vacant properties and spec homes",
+            "text": "Vacant rooms photograph smaller than they are. Staging shows scale and flow, and a builder can showcase ten vacant properties without signing ten furniture rental contracts."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Styles that fit the community",
+            "text": "Choose from the Look Book, including Contemporary, Modern Farmhouse, Transitional and Traditional, or send your furniture-layout references so every home in a community is staged the same way."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "shield",
+            "title": "Honest, disclosed images",
+            "text": "We add furniture and decor only: no structural changes, and nothing that hides a defect. Every order includes disclosure guidance and full usage rights, so copyright laws aren't a question when the photos run on the MLS, your website, brochures or social media."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ],
+      "settings": {
+        "eyebrow": "Staging options for builders",
+        "heading": "Virtual staging vs. traditional staging and model homes",
+        "text": "Traditional staging, a furnished model home and virtual staging all help buyers visualize a new home. For builders, sales teams and real estate agents marketing Texas new builds, here is how they compare."
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "title": "Order & upload",
+            "text": "Order for one home or a whole release, then send the real estate photography from your shoot, right after checkout or whenever the photographer delivers.",
+            "icon": "upload"
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "title": "A designer stages it",
+            "text": "A real interior designer furnishes each room in your community's style, scaled to the actual floor plan.",
+            "icon": "sofa"
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "title": "Approve & download",
+            "text": "Mark up anything you'd like changed, then download MLS-ready files. Unlimited revisions, free for two weeks.",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "From real estate photography to staged photos in three steps"
+      }
+    },
+    "work": {
+      "type": "bella-portfolio",
+      "blocks": {
+        "w1": {
+          "type": "project",
+          "settings": {
+            "name": "Two-story great room",
+            "customer": "Highland Homes · Austin, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-austin-new-construction-living-dining-before.jpg",
+            "after_url": "bella-austin-new-construction-living-dining-after.jpg"
+          }
+        },
+        "w2": {
+          "type": "project",
+          "settings": {
+            "name": "Open kitchen and living room",
+            "customer": "Highland Homes · San Antonio, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-san-antonio-new-construction-open-kitchen-living-before.jpg",
+            "after_url": "bella-san-antonio-new-construction-open-kitchen-living-after.jpg"
+          }
+        },
+        "w3": {
+          "type": "project",
+          "settings": {
+            "name": "Living room open to the kitchen",
+            "customer": "Highland Homes · Austin, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-austin-new-construction-living-room-before.jpg",
+            "after_url": "bella-austin-new-construction-living-room-after.jpg"
+          }
+        },
+        "w4": {
+          "type": "project",
+          "settings": {
+            "name": "Primary suite with sitting area",
+            "customer": "Highland Homes · San Antonio, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-san-antonio-new-construction-primary-suite-before.jpg",
+            "after_url": "bella-san-antonio-new-construction-primary-suite-after.jpg"
+          }
+        },
+        "w5": {
+          "type": "project",
+          "settings": {
+            "name": "Spec house · exterior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Pre-sale marketing",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spec-house-exterior-3d-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/spec-house-exterior-3d-render.jpg?width=1400"
+          }
+        },
+        "w6": {
+          "type": "project",
+          "settings": {
+            "name": "Kitchen · interior",
+            "customer": "Home builder",
+            "services": "3D rendering from plans",
+            "outcome": "Upgrade-package visuals",
+            "tag": "Finished render",
+            "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1400",
+            "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1400"
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6"
+      ],
+      "settings": {
+        "eyebrow": "Recent work",
+        "heading": "Staged photos and renders that help buyers visualize a new home",
+        "sub": true,
+        "carousel": false,
+        "text": "Highland Homes new construction in Austin and San Antonio, staged by our designers, plus 3D renders built from builder plans. Hover or tap a staged photo to see the empty room we started with.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_url": "/products/virtual-staging",
+        "look_label": "Browse 300+ furnished looks in the lookbook →",
+        "look_url": "/pages/lookbook"
+      }
+    },
+    "included": {
+      "type": "bella-included",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Real interior designers, never AI",
+            "text": "Each room is composed by hand by a professional interior designer, not an AI app, so the furniture is sized to the real room and the photo holds up when buyers walk in."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "24–48 hour delivery",
+            "text": "Fast enough to stage a release the week it goes live, with the whole set delivered together."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Unlimited revisions, rework or refund",
+            "text": "Unlimited revisions, free for two weeks after delivery. If a room still isn't right, we rework it or refund it."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "MLS-ready for every Texas market",
+            "text": "Files sized for HAR.com, NTREIS, Unlock MLS and LERA MLS, with disclosure guidance and full usage rights for the MLS, your website, print and social."
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Volume discounts and free furniture removal",
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+, applied automatically. Furniture removal is free with staging for occupied or cluttered rooms."
+          }
+        },
+        "i6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "A $40 voucher to try it",
+            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a Texas home. Eligibility subject to Bella's approval."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6"
+      ],
+      "settings": {
+        "eyebrow": "Every Texas order includes",
+        "heading": "Virtual staging services built for builder volume",
+        "text": "One price per photo, no rental contract and the same guarantees on every home, whether it's one quick move-in or a whole community release."
+      }
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "These look amazing! Thank you!",
+        "attribution": "Caleigh Wells · Senior Marketing Coordinator, Highland Homes",
+        "rating": "4.9",
+        "rating_text": "on Google · trusted by home builders, developers and agents"
+      }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does virtual staging cost in Texas?",
+            "answer": "Bella virtual staging is {price:virtual-staging} per photo anywhere in Texas, with volume discounts of 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+. Furniture removal, unlimited revisions for two weeks and full usage rights are included."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost to stage a house in Texas?",
+            "answer": "Physical staging is usually a design fee plus monthly furniture rental, and on a vacant home it commonly runs to thousands of dollars before the house sells. Virtual staging costs a fraction of that: a one-time {price:virtual-staging} a photo, whether the home sells in a week or a season."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage a home that isn't built yet?",
+            "answer": "Yes, with 3D rendering. Send CAD or PDF plans and elevations, and our 3D artists build photoreal exterior and interior renders from {price:3d-rendering-service-for-architectural-visualization} a view, so you can pre-sell from plans. Once the home is built and photographed, virtual staging furnishes the real photos."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Will the photos upload to HAR, NTREIS, Unlock MLS and LERA MLS?",
+            "answer": "Yes. Files come back at standard MLS dimensions, ready to post in Houston (HAR.com), Dallas–Fort Worth (NTREIS), Austin (Unlock MLS) and San Antonio (LERA MLS). Check your MLS rules for exact labeling; every order includes disclosure guidance."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Is virtual staging legal in Texas?",
+            "answer": "Yes. Virtual staging is a standard marketing practice. The rule is not to misrepresent the property: add furniture and decor only, don't hide defects or change permanent features, and disclose that photos are virtually staged, as the NAR Code of Ethics expects."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage every home in a community the same way?",
+            "answer": "Yes. Send your furniture-layout references and chosen style once, and our designers apply them across every spec home in the release. Highland Homes' team works this way for its Texas communities: kitchen, primary bedroom, living and dining, and study in every home."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "Which rooms should a builder stage?",
+            "answer": "Start with the rooms buyers weigh most. In NAR's 2025 Profile of Home Staging, buyers' agents rated the living room most important to stage (37%), followed by the primary bedroom (34%) and the kitchen (23%). Add a study or flex room when the plan has one, so buyers see what it's for."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "How much should a 3D rendering cost?",
+            "answer": "It depends on the view and the detail. At Bella, photoreal 3D renderings start at {price:3d-rendering-service-for-architectural-visualization} per view, built by human 3D artists from your plans, with revisions included and volume discounts on larger sets."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Can ChatGPT do architectural renderings?",
+            "answer": "AI image tools can generate a picture of a house, but they don't work from your dimensioned plans, so walls, windows and rooflines drift from the real design. For a home you will actually build, Bella's renders are modelled by human 3D artists from your drawings."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Is AI virtual staging legit for new construction?",
+            "answer": "AI apps are quick and cheap, but they guess at scale and often repeat the same room. Bella never uses AI: a designer builds each room by hand, so the furniture fits the actual floor plan and buyers aren't surprised at the walkthrough."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I try virtual staging for free?",
+            "answer": "Free AI apps exist, but builders marketing real inventory usually want designer work. New Bella clients can claim a $40 voucher on our sign-up page to try Bella on a first home. Eligibility subject to Bella's approval."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you work across all of Texas?",
+            "answer": "Yes. We work online, so builders in Houston, Austin, Dallas–Fort Worth, San Antonio and everywhere in between get the same 24 to 48 hour delivery. We also work across the US and Canada."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Texas home builder virtual staging questions",
+        "open_first": true
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next release",
+        "heading": "Stage your next Texas community launch.",
+        "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours, with no furniture rental, crew or truck.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "cta_link": "/products/virtual-staging",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "cred",
+    "compare",
+    "steps",
+    "work",
+    "included",
+    "quote",
+    "faq",
+    "cta"
+  ]
+}
