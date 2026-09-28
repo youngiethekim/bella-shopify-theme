@@ -911,6 +911,15 @@
         "m4",
         "m5"
       ]
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "Virtual staging",
+        "heading": "More about virtual staging.",
+        "text": "Services, pricing and honest comparisons of virtual staging companies and apps.",
+        "menu": "related-virtual-staging"
+      }
     }
   },
   "order": [
@@ -930,6 +939,7 @@
     "sold",
     "comply",
     "faq",
-    "end"
+    "end",
+    "cluster_related"
   ]
 }

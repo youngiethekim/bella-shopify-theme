@@ -394,6 +394,15 @@
         "c",
         "d"
       ]
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "Home builders",
+        "heading": "More for home builders.",
+        "text": "Virtual staging, 3D renderings and marketing for new construction in Texas and Florida.",
+        "menu": "related-home-builders"
+      }
     }
   },
   "order": [
@@ -404,6 +413,7 @@
     "res",
     "faq",
     "lead",
+    "cluster_related",
     "cta"
   ]
 }

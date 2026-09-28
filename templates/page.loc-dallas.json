@@ -544,6 +544,15 @@
         "text": "Bella's interior designers stage and render for home builders, developers and brokerages across the US and Canada, including Highland Homes in Texas. Every image is composed by hand — no AI shortcuts and no template rooms.",
         "note": "Rated 4.9 on Google by verified Bella client reviews."
       }
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "Home builders",
+        "heading": "More for home builders.",
+        "text": "Virtual staging, 3D renderings and marketing for new construction in Texas and Florida.",
+        "menu": "related-home-builders"
+      }
     }
   },
   "order": [
@@ -556,6 +565,7 @@
     "included",
     "quote",
     "faq",
+    "cluster_related",
     "cta"
   ]
 }

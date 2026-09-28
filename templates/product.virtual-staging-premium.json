@@ -264,7 +264,12 @@
     },
     "related": {
       "type": "bella-related-links",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Virtual staging",
+        "heading": "More about virtual staging.",
+        "text": "Services, pricing and honest comparisons of virtual staging companies and apps.",
+        "menu": "related-virtual-staging"
+      }
     },
     "cta": {
       "type": "bella-end-cta",

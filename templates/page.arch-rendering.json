@@ -460,6 +460,15 @@
         "c5",
         "c6"
       ]
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "3D rendering",
+        "heading": "More about 3D rendering.",
+        "text": "Rendering services, city pages and guides to cost and process.",
+        "menu": "related-rendering"
+      }
     }
   },
   "order": [
@@ -472,6 +481,7 @@
     "quote",
     "math",
     "faq",
+    "cluster_related",
     "cta"
   ]
 }

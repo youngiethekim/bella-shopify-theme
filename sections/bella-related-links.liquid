@@ -8,7 +8,9 @@
       {%- endif -%}
       {%- if section.settings.menu != blank -%}
         <div class="related-row">
+          {%- assign self_url = request.origin | append: request.path -%}
           {%- for link in section.settings.menu.links -%}
+            {%- if link.url == self_url or link.url == request.path -%}{%- continue -%}{%- endif -%}
             <a href="{{ link.url }}">{{ link.title }}</a>
           {%- endfor -%}
         </div>

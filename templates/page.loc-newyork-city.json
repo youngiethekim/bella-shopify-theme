@@ -660,6 +660,15 @@
         "text": "Bella's interior designers bring the same design expertise to luxury brokerages, developers and home builders across the US and Canada, including Brown Harris Stevens in New York. Brokers use luxury virtual staging on high-end listings when timing, building rules or budget rule out a physical install; the benefit is a luxurious, furnished look in the photos without the logistics.",
         "note": "Rated 4.9 on Google by verified Bella client reviews."
       }
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "New York luxury",
+        "heading": "More for New York luxury listings and developments.",
+        "text": "Luxury virtual staging and 3D rendering guides and services for Manhattan and NYC.",
+        "menu": "related-ny-luxury"
+      }
     }
   },
   "order": [
@@ -672,6 +681,7 @@
     "included",
     "quote",
     "faq",
+    "cluster_related",
     "cta"
   ]
 }

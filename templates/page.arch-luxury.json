@@ -619,6 +619,15 @@
         "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
         "fine_print": "Send plans after checkout · Revisions included · 4K print-ready delivery · Full usage rights"
       }
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "New York luxury",
+        "heading": "More for New York luxury listings and developments.",
+        "text": "Luxury virtual staging and 3D rendering guides and services for Manhattan and NYC.",
+        "menu": "related-ny-luxury"
+      }
     }
   },
   "order": [
@@ -633,6 +642,7 @@
     "quote",
     "math",
     "faq",
+    "cluster_related",
     "cta"
   ]
 }

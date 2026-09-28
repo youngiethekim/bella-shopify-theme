@@ -344,6 +344,15 @@
         "heading": "Professional staging, priced per photo",
         "text": "One price per photo, no rental contract, the same guarantees on every listing."
       }
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "Home builders",
+        "heading": "More for home builders.",
+        "text": "Virtual staging, 3D renderings and marketing for new construction in Texas and Florida.",
+        "menu": "related-home-builders"
+      }
     }
   },
   "order": [
@@ -354,6 +363,7 @@
     "included",
     "quote",
     "faq",
+    "cluster_related",
     "cta"
   ]
 }

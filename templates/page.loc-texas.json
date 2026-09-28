@@ -497,6 +497,15 @@
         "cta_link": "/products/virtual-staging",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "Home builders",
+        "heading": "More for home builders.",
+        "text": "Virtual staging, 3D renderings and marketing for new construction in Texas and Florida.",
+        "menu": "related-home-builders"
+      }
     }
   },
   "order": [
@@ -508,6 +517,7 @@
     "included",
     "quote",
     "faq",
+    "cluster_related",
     "cta"
   ]
 }

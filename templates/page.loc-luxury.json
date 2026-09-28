@@ -726,6 +726,15 @@
         "cta_link": "/products/virtual-staging",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
       }
+    },
+    "cluster_related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "New York luxury",
+        "heading": "More for New York luxury listings and developments.",
+        "text": "Luxury virtual staging and 3D rendering guides and services for Manhattan and NYC.",
+        "menu": "related-ny-luxury"
+      }
     }
   },
   "order": [
@@ -740,6 +749,7 @@
     "included",
     "quote",
     "faq",
+    "cluster_related",
     "cta"
   ]
 }
