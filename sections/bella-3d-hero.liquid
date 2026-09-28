@@ -7,23 +7,6 @@
 {%- liquid
   assign first = section.blocks.first
   assign org_id = shop.secure_url | append: '/#organization'
-  assign room_sky = section.settings.room_skybox
-  if room_sky != blank
-    unless room_sky contains '//'
-      assign room_sky = room_sky | asset_url
-    endunless
-  endif
-  assign room_env = section.settings.room_env
-  if room_env != blank
-    unless room_env contains '//'
-      # model-viewer picks its HDR loader by a URL ending in .hdr, so drop Shopify's ?v= suffix
-      assign room_env = room_env | asset_url | split: '?' | first
-    endunless
-  endif
-  assign in_room = false
-  if section.settings.default_mode == 'room' and room_sky != blank
-    assign in_room = true
-  endif
 -%}
 <section class="m3-hero" id="m3-{{ section.id }}">
   <div class="m3-copy">
@@ -59,7 +42,7 @@
     endunless
   -%}
   <div class="m3-stage-wrap">
-    <div class="m3-stage{% if in_room %} is-room{% endif %}" data-sky="{{ room_sky }}" data-env="{{ room_env | default: room_sky }}" data-height="{{ section.settings.room_height | default: '1.5m' }}">
+    <div class="m3-stage">
       <model-viewer
         src="{{ f_glb }}"
         alt="{{ first.settings.alt | escape }}"
@@ -75,13 +58,7 @@
         interaction-prompt="none"
         shadow-intensity="1"
         shadow-softness="0.9"
-        {%- if in_room %}
-        skybox-image="{{ room_sky }}"
-        environment-image="{{ room_env | default: room_sky }}"
-        skybox-height="{{ section.settings.room_height | default: '1.5m' }}"
-        {%- else %}
         environment-image="neutral"
-        {%- endif %}
         exposure="1.05"
         loading="eager"
         ar
@@ -93,12 +70,6 @@
         <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 0 1 14.9-4M20 12a8 8 0 0 1-14.9 4"/><path d="M19 4v4h-4M5 20v-4h4"/></svg>
         {{ section.settings.hint | default: 'Drag to rotate' }}
       </span>
-      {%- if room_sky != blank -%}
-      <div class="m3-modes" role="group" aria-label="{{ section.settings.modes_label | default: 'Backdrop' | escape }}">
-        <button type="button" class="m3-mode" data-mode="room" aria-pressed="{{ in_room }}">{{ section.settings.room_label | default: 'In a room' }}</button>
-        <button type="button" class="m3-mode" data-mode="studio" aria-pressed="{% if in_room %}false{% else %}true{% endif %}">{{ section.settings.studio_label | default: 'Studio' }}</button>
-      </div>
-      {%- endif -%}
     </div>
     <div class="m3-cap">
       <p><strong class="m3-name">{{ first.settings.name }}</strong> <span class="m3-detail">{{ first.settings.detail }}</span></p>
@@ -183,24 +154,6 @@
     var hint = root.querySelector('.m3-hint');
     var nameEl = root.querySelector('.m3-name');
     var detailEl = root.querySelector('.m3-detail');
-    var stage = root.querySelector('.m3-stage');
-    function setMode(mode) {
-      var room = mode === 'room' && stage.dataset.sky;
-      if (room) {
-        mv.setAttribute('environment-image', stage.dataset.env);
-        mv.setAttribute('skybox-image', stage.dataset.sky);
-        mv.setAttribute('skybox-height', stage.dataset.height);
-      } else {
-        mv.removeAttribute('skybox-image');
-        mv.removeAttribute('skybox-height');
-        mv.setAttribute('environment-image', 'neutral');
-      }
-      stage.classList.toggle('is-room', !!room);
-      root.querySelectorAll('.m3-mode').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === (room ? 'room' : 'studio'))); });
-    }
-    root.querySelectorAll('.m3-mode').forEach(function (b) {
-      b.addEventListener('click', function () { setMode(b.dataset.mode); });
-    });
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) mv.removeAttribute('auto-rotate');
     // Wheel-zoom only once someone is working the model, so the page still scrolls past it.
     mv.addEventListener('pointerdown', function () { mv.removeAttribute('disable-zoom'); });
@@ -243,11 +196,6 @@
     background:rgba(253,252,250,.9);color:var(--soft);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
     padding:7px 12px;border-radius:99px;pointer-events:none;transition:opacity .5s}
   .m3-hint.is-gone{opacity:0}
-  .m3-modes{position:absolute;left:14px;top:14px;display:inline-flex;background:rgba(253,252,250,.92);border-radius:99px;padding:3px}
-  .m3-mode{border:0;background:transparent;color:var(--soft);font:inherit;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
-    padding:7px 13px;border-radius:99px;cursor:pointer;transition:background .2s,color .2s}
-  .m3-mode[aria-pressed="true"]{background:var(--ink);color:#fff}
-  .m3-mode:focus-visible{outline:1px solid var(--ink);outline-offset:2px}
   .m3-ar{position:absolute;right:14px;bottom:14px;background:var(--ink);color:#fff;border:0;cursor:pointer;
     font:inherit;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px}
   .m3-cap{display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;margin-top:12px;font-size:13.5px;color:var(--soft)}
@@ -282,14 +230,6 @@
     { "type": "text", "id": "alt_link", "label": "Secondary link", "info": "A page URL or an #anchor on this page." },
     { "type": "text", "id": "cred_text", "label": "Promise strip", "info": "Separate items with ·" },
     { "type": "text", "id": "hint", "label": "Stage hint", "default": "Drag to rotate" },
-    { "type": "header", "content": "Room backdrop" },
-    { "type": "select", "id": "default_mode", "label": "Open in", "default": "room", "options": [ { "value": "room", "label": "A room" }, { "value": "studio", "label": "Studio" } ] },
-    { "type": "text", "id": "room_skybox", "label": "Room panorama (equirectangular JPG)", "info": "Theme asset filename or URL. Leave blank to hide the room option." },
-    { "type": "text", "id": "room_env", "label": "Room lighting (.hdr, optional)", "info": "Same room as an HDR for accurate light; falls back to the panorama." },
-    { "type": "text", "id": "room_height", "label": "Camera height in the panorama", "default": "1.5m" },
-    { "type": "text", "id": "room_label", "label": "Room button", "default": "In a room" },
-    { "type": "text", "id": "studio_label", "label": "Studio button", "default": "Studio" },
-    { "type": "text", "id": "modes_label", "label": "Backdrop toggle label (screen readers)", "default": "Backdrop" },
     { "type": "text", "id": "ar_label", "label": "AR button label", "default": "View in your room" },
     { "type": "text", "id": "credit", "label": "Caption credit", "default": "Modelled by Bella's 3D artists" },
     { "type": "text", "id": "picker_label", "label": "Picker label (screen readers)", "default": "Choose a 3D model" }
