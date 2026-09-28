@@ -397,9 +397,61 @@
             "before_url": "https://www.bellavirtual.com/cdn/shop/files/luxury-virtual-staging-beverly-hills-kitchen-before.jpg?width=1200",
             "after_url": "https://www.bellavirtual.com/cdn/shop/files/luxury-virtual-staging-beverly-hills-kitchen-after.jpg?width=1200"
           }
+        },
+        "bhs2-ph": {
+          "type": "project",
+          "settings": {
+            "name": "Upper East Side penthouse living room",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "As originally furnished ⇄ After",
+            "before_url": "bella-manhattan-penthouse-living-room-before.jpg",
+            "after_url": "bella-manhattan-penthouse-living-room-after.jpg"
+          }
+        },
+        "bhs2-tb": {
+          "type": "project",
+          "settings": {
+            "name": "Tribeca skyline living and dining",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-tribeca-open-plan-living-dining-before.jpg",
+            "after_url": "bella-tribeca-open-plan-living-dining-after.jpg"
+          }
+        },
+        "bhs2-me": {
+          "type": "project",
+          "settings": {
+            "name": "Midtown East skyline living and dining",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-midtown-east-skyline-living-dining-before.jpg",
+            "after_url": "bella-midtown-east-skyline-living-dining-after.jpg"
+          }
+        },
+        "bhs2-mb": {
+          "type": "project",
+          "settings": {
+            "name": "Midtown East primary bedroom",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-midtown-east-primary-bedroom-before.jpg",
+            "after_url": "bella-midtown-east-primary-bedroom-after.jpg"
+          }
         }
       },
       "block_order": [
+        "bhs2-ph",
+        "bhs2-tb",
+        "bhs2-me",
+        "bhs2-mb",
         "w1",
         "w2",
         "w3",

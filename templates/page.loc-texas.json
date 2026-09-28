@@ -256,6 +256,30 @@
             "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1400",
             "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/kitchen-interior-3d-render.jpg?width=1400"
           }
+        },
+        "hh2-gr": {
+          "type": "project",
+          "settings": {
+            "name": "Austin new-construction game room",
+            "customer": "Highland Homes · Austin, TX",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-austin-new-construction-game-room-before.jpg",
+            "after_url": "bella-austin-new-construction-game-room-after.jpg"
+          }
+        },
+        "hh2-kd": {
+          "type": "project",
+          "settings": {
+            "name": "San Antonio new-construction kitchen and dining",
+            "customer": "Highland Homes · San Antonio, TX",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-san-antonio-new-construction-kitchen-dining-before.jpg",
+            "after_url": "bella-san-antonio-new-construction-kitchen-dining-after.jpg"
+          }
         }
       },
       "block_order": [
@@ -263,6 +287,8 @@
         "w2",
         "w3",
         "w4",
+        "hh2-gr",
+        "hh2-kd",
         "w5",
         "w6"
       ],
