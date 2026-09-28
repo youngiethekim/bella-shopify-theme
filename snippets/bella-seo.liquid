@@ -51,7 +51,7 @@
   if pg_suffix contains 'loc-'
     assign pg_service = true
     assign pg_area = page.title | remove: 'Virtual Home Staging in ' | remove: 'Virtual Staging in ' | strip
-  elsif pg_suffix == 'arch-rendering' or pg_suffix == 'arch-viz' or pg_suffix == 'pricing'
+  elsif pg_suffix contains 'arch-' or pg_suffix == 'pricing'
     assign pg_service = true
   elsif page.handle contains 'rendering-services' or page.handle contains '3d-rendering-' or page.handle == '3d-floor-plans' or page.handle == 'real-estate-photo-editing'
     assign pg_service = true

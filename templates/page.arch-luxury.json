@@ -1,0 +1,638 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Bella · luxury architectural visualization studio",
+        "heading": "Luxury 3D Rendering Services",
+        "lede": "Luxury 3D rendering is photorealistic architectural visualization made to the standard of a high-end sales campaign: accurate materials, realistic lighting, designer styling and composed camera work. Bella's high-end residential rendering services turn your architectural drawings into luxury renders of Manhattan condos, residential towers, penthouses and amenity spaces for developers, architects and luxury brokerages in New York, Vancouver, Toronto and across the US and Canada. Every image is modelled by human 3D artists, never AI, from {price:3d-rendering} a render.",
+        "cta_label": "Order a luxury render — from {price:3d-rendering}",
+        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "alt_label": "See our rendering portfolio",
+        "alt_link": "/pages/portfolio",
+        "cred_text": "From {price:3d-rendering} a render · Human 3D artists, never AI · Revisions included · Full usage rights",
+        "market_heading": "New York 3D architectural rendering for luxury projects",
+        "market_text": "<p>New York is where Bella's luxury rendering work starts. We provide the luxury architectural rendering New York developers, architects and brokerages need for the building types that define the city's high end: Manhattan condo towers and their entry sequences, full-floor residences and penthouses, amenity floors with pools, lounges and fitness studios, roof terraces, and townhouse and brownstone projects where an interior renovation has to be seen before anyone will commit.</p><p>New York developers use these images to pre-sell residences from plans, to clarify design intent for investors and lenders, and to create marketing materials for a sales gallery, a broker open or a launch campaign long before construction begins. Whether the project is a tower in Midtown Manhattan or a boutique condo in Brooklyn, a 3D artist models it from your architectural plans, matches every finish to your specification and lights it to sell. Explore <a href=\"/pages/3d-interior-rendering-services\">luxury interior rendering</a> and <a href=\"/pages/3d-exterior-rendering-services\">luxury exterior rendering</a>, compare every service on our <a href=\"/pages/3d-rendering-services\">3D rendering services</a> hub, or order from the <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D rendering page</a>.</p>",
+        "local_heading": "What separates luxury rendering from a standard render",
+        "local_text": "<p>Luxury buyers judge quality in the details: whether marble veining runs true across a waterfall island, whether late-afternoon light falls believably across oak floors, whether a lobby feels like somewhere you would want to come home to. A luxury render gets those details right because a human 3D artist builds them, with physically accurate materials, realistic lighting, styling chosen for the buyer and camera angles composed like an architectural photographer's. The result is aesthetic appeal that stays true to the plans.</p><p>There is no luxury surcharge. A penthouse great room is an interior render and a townhouse at dusk is an exterior render, priced by render type and size rather than by the cost of the finishes. A high-rise tower and other complex projects beyond the standard size limits are quoted before you commit, and revisions are included with every render.</p>",
+        "hoods_label": "Luxury spaces we render",
+        "hoods": "Condo towers, Penthouses, Full-floor residences, Amenity floors, Roof terraces, Lobbies & lounges, Townhouses & brownstones, Custom estates, Kitchens & primary suites, Dusk exteriors"
+      }
+    },
+    "craft": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "The standard",
+        "heading": "What makes a luxury 3D rendering",
+        "text": "Every Bella render is photorealistic. A luxury render goes further in six places: the details high-end buyers, investors and real estate professionals notice first."
+      },
+      "blocks": {
+        "k1": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Material accuracy",
+            "text": "Stone, timber, brass and glass are built as physically accurate, layered materials rather than simple textures, so marble veining, brushed metal and oak grain hold up at print size. Finishes are matched to your finish schedule or sample photos."
+          }
+        },
+        "k2": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Realistic lighting",
+            "text": "Luxury interior spaces are sold on light. Each scene is lit for a believable time of day, balancing daylight through floor-to-ceiling glazing with warm interior lighting, so rooms feel the way they will in person."
+          }
+        },
+        "k3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Styling and interior design",
+            "text": "Furniture, art and accessories are chosen for the buyer the project is aimed at, by the same designers who furnish luxury listings in our virtual staging. Nothing looks like a default asset library."
+          }
+        },
+        "k4": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Camera work",
+            "text": "Views are composed the way an architectural photographer would shoot them: straight verticals, natural eye heights and angles that show off ceiling height, view corridors and the sweep of an open kitchen."
+          }
+        },
+        "k5": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Twilight and dusk exteriors",
+            "text": "Atmospheric visualization shows a building at different times of day. A dusk exterior, with warm windows against a deep blue sky, is often the hero image of a luxury launch, and at Bella it is a standard exterior render."
+          }
+        },
+        "k6": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Amenity spaces",
+            "text": "Pools, spas, fitness studios, residents' lounges, lobbies and roof terraces sell the lifestyle of a building. We render each amenity as a commercial space, furnished and lit, so buyers see the whole building and not just the suite."
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5",
+        "k6"
+      ]
+    },
+    "proof": {
+      "type": "bella-proof",
+      "blocks": {
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "icon": "clock",
+            "figure": "1–2 wks",
+            "text": "typical delivery from plans to a finished luxury render, depending on scope.",
+            "source": "Bella turnaround"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "icon": "image",
+            "figure": "4K",
+            "text": "print-ready files for real estate marketing: brochures, hoardings, sales galleries and billboards.",
+            "source": "Every render"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "icon": "star",
+            "figure": "4.9",
+            "text": "average rating on Google, from the agents, brokerages, builders and developers who order from Bella.",
+            "source": "Google"
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
+      "settings": {
+        "eyebrow": "Our work",
+        "heading": "Exterior and interior visualization, one standard.",
+        "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/apartment-building-3d-render.jpg?width=1400",
+        "before_label": "Exterior · residential towers rendered from plans by Bella",
+        "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/great-room-interior-render.jpg?width=1400",
+        "after_label": "Interior · great room with fireplace and floor-to-ceiling windows, rendered by Bella"
+      }
+    },
+    "markets": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Markets",
+        "heading": "Luxury rendering in New York, Vancouver and Toronto",
+        "text": "New York leads our luxury work, with Vancouver and Toronto close behind. Bella is headquartered in Vancouver and works from your plans online, so luxury projects anywhere in the US and Canada get the same studio, the same standard and the same prices."
+      },
+      "blocks": {
+        "m1": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "New York City",
+            "text": "Luxury architectural rendering for New York projects: condo towers, penthouses, amenity floors, townhouses and brownstone renovations in Manhattan, Brooklyn and across the five boroughs. You don't need a studio with a New York office; plans, drafts and revisions all move online."
+          }
+        },
+        "m2": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "New York clients",
+            "text": "Brown Harris Stevens, the New York luxury brokerage, sends Bella Manhattan and Brooklyn listings for virtual staging every week, so our designers already know what New York's luxury buyers expect a finished home to look like. Luxury real estate rendering extends that standard to new development that isn't built yet."
+          }
+        },
+        "m3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Vancouver",
+            "text": "Vancouver developer Concord Pacific works with Bella on staging and visualization for presale suites. For West Coast condo and tower launches, see <a href=\"/pages/3d-rendering-vancouver\">3D rendering in Vancouver</a>."
+          }
+        },
+        "m4": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Toronto",
+            "text": "Luxury condo rendering for GTA presale launches, plus townhouse and custom home projects across the region. See <a href=\"/pages/3d-rendering-toronto\">3D rendering in Toronto</a>."
+          }
+        },
+        "m5": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Montreal",
+            "text": "Luxury residential and mixed-use development projects in Montreal get the same studio and the same prices. See <a href=\"/pages/3d-rendering-montreal\">3D rendering in Montreal</a>."
+          }
+        },
+        "m6": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Local projects across the US and Canada",
+            "text": "We render local projects anywhere in the US and Canada, including Los Angeles. In Texas and Florida, Bella renders for home builders; see <a href=\"/pages/home-builder-marketing\">home builder marketing</a>."
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6"
+      ]
+    },
+    "scope": {
+      "type": "bella-scope",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "title": "Interior — residential",
+            "price": "{price:3d-rendering|Interior — residential}",
+            "covers": "One room from one camera angle, fully furnished and styled.",
+            "limit": "Open-plan spaces up to 1,000 sq ft count as one room.",
+            "ideal": "Penthouses, condo residences, custom homes"
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "title": "Interior — commercial",
+            "price": "{price:3d-rendering|Interior — commercial}",
+            "covers": "One commercial space from one angle, fixtures and furniture included.",
+            "limit": "Up to 2,500 sq ft in a single view.",
+            "ideal": "Lobbies, amenity lounges, spas, sales galleries"
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "title": "Exterior — single building",
+            "price": "{price:3d-rendering|Exterior — single building}",
+            "covers": "One building with landscaping, sky and lighting.",
+            "limit": "Single-family home or duplex up to 6,000 sq ft.",
+            "ideal": "Custom homes, luxury estates, townhouses"
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "title": "Exterior — streetscape or aerial",
+            "price": "{price:3d-rendering|Exterior — streetscape or aerial}",
+            "covers": "Street-level row or bird's-eye view of one site, one angle.",
+            "limit": "Up to 6 homes or units in frame.",
+            "ideal": "Townhouse rows, site and context views"
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "title": "Exterior — multiple buildings",
+            "price": "{price:3d-rendering|Exterior — multiple buildings}",
+            "covers": "Multi-building composition in a single view.",
+            "limit": "2–6 buildings; larger master plans quoted separately.",
+            "ideal": "Condo, tower and mixed-use developments"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "Luxury 3D rendering pricing",
+        "text": "There is no separate luxury price. Luxury renders are priced per finished image, one space or building from one camera angle, exactly like every other Bella render. Here is where each render type starts and stops.",
+        "note": "Every render includes: built from your plans · realistic lighting and styling · revisions included · 4K print-ready delivery · full usage rights. Another angle of the same space is a second render, and volume discounts apply automatically: 5% off at 3 or more renders, 10% at 6 or more, 15% at 11 or more and 20% at 21 or more. Large scale developments and complex architectural projects beyond these limits, such as a high-rise tower or a master plan, are quoted before you commit."
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & send plans",
+            "text": "Place your order, then send architectural drawings, finish schedules and reference images right after checkout."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "We model & render",
+            "text": "A human 3D artist models the project from your plans, applies your materials and lights the scene. Anything unclear is confirmed before modelling starts."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Review & revise",
+            "text": "Mark up the drafts: materials, styling, lighting or camera angle. Revisions are included before final delivery."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "icon": "doc",
+            "title": "Final delivery",
+            "text": "Print-ready 4K files with full usage rights, ready for sales galleries, brochures, websites, hoardings and investor presentations."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "How our architectural visualization services work"
+      }
+    },
+    "need": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Before we start",
+        "heading": "What we need for a luxury render",
+        "text": "Detailed plans make accurate visualization, and luxury work rewards detail. Send what you have; we confirm anything unclear before modelling starts and tell you up front if the project requirements call for more documentation."
+      },
+      "blocks": {
+        "n1": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Architectural drawings",
+            "text": "Dimensioned floor plans, plus sections for double-height spaces. CAD or PDF architectural plans are ideal, and clear hand-drawn plans or traditional blueprints work too."
+          }
+        },
+        "n2": {
+          "type": "item",
+          "settings": {
+            "icon": "doc",
+            "title": "Elevations and site plans",
+            "text": "Elevations for every luxury exterior rendering, covering each visible side, and site plans for streetscape, aerial and context views."
+          }
+        },
+        "n3": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "A finish schedule",
+            "text": "Stone, millwork, flooring, hardware, fixtures and paint, with product names or sample photos, so material accuracy holds up close."
+          }
+        },
+        "n4": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Mood and time of day",
+            "text": "Reference images that capture your project vision and the visual direction you want, and whether each view should be daylight, golden hour or dusk."
+          }
+        },
+        "n5": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Furniture selections",
+            "text": "Your interior designer's selections if you have them. If not, our designers style each space around your project goals and the buyer you're selling to."
+          }
+        },
+        "n6": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Site photos",
+            "text": "Photos of the site and its surroundings, if you have them, help us place the building in its real context."
+          }
+        }
+      },
+      "block_order": [
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6"
+      ]
+    },
+    "compare": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Choosing your visuals",
+        "heading": "Luxury interior vs exterior renderings, and other choices",
+        "text": "Most luxury launches need exterior and interior renderings together: one sells the building, the other sells the home inside it. Here is how the options compare."
+      },
+      "blocks": {
+        "c1": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "Luxury exterior rendering",
+            "text": "Exterior renderings sell the architecture: the tower at dusk, the entry canopy, the landscaped courtyard, the aerial that shows the neighbourhood. See <a href=\"/pages/3d-exterior-rendering-services\">3D exterior rendering services</a>."
+          }
+        },
+        "c2": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Luxury interior rendering",
+            "text": "Interior renderings sell the residence: the kitchen, the great room, the primary suite, the spa bath. Detailed interior visualization is where buyers decide. See <a href=\"/pages/3d-interior-rendering-services\">3D interior rendering services</a>."
+          }
+        },
+        "c3": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Amenities and commercial space",
+            "text": "Lobbies, lounges, pools and fitness studios are rendered as commercial interiors, and they often carry the marketing campaigns for residential and commercial developments alike."
+          }
+        },
+        "c4": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Stills, architectural animation or VR tours",
+            "text": "Still renders cover brochures, websites, hoardings and investor presentations. Architectural animation, virtual tours and virtual reality tours are larger productions built on the same 3D model. Bella delivers finished still images."
+          }
+        },
+        "c5": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "A human studio vs AI tools",
+            "text": "AI image tools can produce a convincing luxury interior in seconds, but walls, windows and proportions drift from your plans. Every Bella render is modelled by a 3D artist from your drawings, never AI."
+          }
+        },
+        "c6": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "How to choose an architectural visualization studio",
+            "text": "Look for a diverse portfolio with projects like yours, client reviews, clear communication, per-image pricing, turnaround in writing, full usage rights, and a team you'd trust with future projects. Technical expertise and advanced technology both matter; many high-end studios render with engines such as V-Ray or Corona."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6"
+      ]
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "These are perfect, thank you!",
+        "attribution": "Caleigh Wells · Senior Marketing Coordinator, Highland Homes",
+        "rating": "4.9",
+        "rating_text": "on Google · trusted by developers, architects and luxury brokerages"
+      }
+    },
+    "math": {
+      "type": "bella-value",
+      "settings": {
+        "eyebrow": "The math",
+        "heading": "Sell the penthouse before the tower tops out.",
+        "old_label": "A finished model residence",
+        "old_amount": "Months",
+        "old_per": "of construction and fit-out · one unit · one finish package",
+        "new_label": "Bella luxury 3D rendering",
+        "new_amount": "{price:3d-rendering}",
+        "new_per": "a render · from your plans · every residence and finish",
+        "note": "In luxury real estate development, buyers used to wait for a model residence before they could see what they were paying for. A photorealistic luxury render turns architectural visions into images buyers can react to before construction begins, for every residence type, finish package and amenity, and it is revised in the model instead of rebuilt on site.",
+        "cta_label": "",
+        "also_label": ""
+      }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "What is luxury 3D rendering?",
+            "answer": "Luxury 3D rendering is photorealistic architectural visualization for high-end residential and commercial projects. A 3D artist models the building from architectural drawings, then applies physically accurate materials, realistic lighting, designer styling and composed camera angles, so penthouses, condo towers, custom homes and amenity spaces look the way they will when finished. Developers, architects and brokerages use luxury renders to market and pre-sell architectural projects before construction is complete."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does luxury 3D rendering cost?",
+            "answer": "At Bella, luxury renders start at {price:3d-rendering} per finished image for a residential interior. Commercial interiors such as lobbies and amenity spaces, exteriors, streetscapes, aerials and multi-building views are priced per view in the table above, and there is no luxury surcharge. Across the market, 3D rendering prices range from a few hundred to several thousand dollars per image depending on project complexity; animated walkthroughs cost more than stills, and some studios bill extra revision rounds. Bella includes revisions, and volume discounts of up to 20% apply automatically."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "How much do architects charge for renderings?",
+            "answer": "Architects either produce renderings in-house as part of their design fees or commission an outside rendering studio, which usually charges per image. Bella works directly with architects and architectural firms on residential projects and commercial projects, from {price:3d-rendering} per image."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does a luxury render take?",
+            "answer": "Typically one to two weeks from plans to final renderings, depending on scope and project complexity. Interiors are usually faster than multi-building exteriors. We confirm timing as soon as you send your drawings."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you offer 3D architectural rendering in New York?",
+            "answer": "Yes. New York is Bella's lead luxury market: Manhattan condo towers, penthouses, amenity floors, townhouses and brownstone renovations, anywhere in the five boroughs. We work from your architectural drawings online, so New York developers and architects don't need a studio with a New York office. Drafts, revisions and final delivery all happen remotely."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "What does a luxury condominium look like in a render?",
+            "answer": "A luxury condo rendering shows the finished residence at its best: generous ceiling heights, floor-to-ceiling windows, stone and timber finishes, designer furniture and warm, realistic lighting, plus the amenities that come with the building. It lets buyers see the specification they are paying for before construction is complete."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "What are the different types of architectural renderings?",
+            "answer": "The main types are interior renderings, exterior renderings, aerial and streetscape views and 3D site plans, delivered as still images, architectural animation or virtual reality tours. Bella delivers still interior, exterior, streetscape, aerial and multi-building renders for residential and commercial projects."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "What is architectural visualization?",
+            "answer": "Architectural visualization is the practice of showing an unbuilt building visually, using 3D rendering to turn architectural drawings into images that clarify design intent for clients, buyers, investors and planning boards. High-end architectural visualization adds the material accuracy, lighting and styling of a luxury marketing campaign, and helps explain complex ideas to people who don't read plans."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Can ChatGPT do architectural renderings?",
+            "answer": "ChatGPT and other AI image tools can generate a picture of a building, but they don't build from your dimensioned plans, so proportions, windows and rooflines drift from the real design. They are useful for early mood boards. For luxury marketing that buyers, lenders and boards rely on, a 3D artist working from your drawings is still the standard."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best rendering software for architecture?",
+            "answer": "Studios commonly model in 3ds Max, SketchUp or Revit, render with physically based engines such as V-Ray or Corona, and finish in Photoshop. The software matters less than the artist using it, and you don't need any of it to order: send your drawings and our 3D team does the modelling."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "How can I get a luxury house rendering?",
+            "answer": "Order an interior or exterior render, then upload floor plans, elevations and finish selections after checkout. A Bella 3D artist models your home from the plans and renders it. Luxury home rendering starts at {price:3d-rendering} per image, and custom home exteriors up to 6,000 sq ft are priced as single-building exterior renders."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you render a luxury interior renovation?",
+            "answer": "Yes. Send the existing plans and the proposed design, and we render the renovated space so owners, buyers and boards can see the result before work starts. If you only have photos of the existing room, <a href=\"/products/virtual-renovation-service\">virtual renovation</a> is a faster way to show the new look."
+          }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "Who uses luxury 3D rendering?",
+            "answer": "Real estate developers and property developers pre-selling condos and towers, custom home builders, architects and architectural firms presenting to clients, interior designers, construction companies and luxury brokerages marketing new development. Bella's clients include Concord Pacific, Highland Homes and Brown Harris Stevens."
+          }
+        },
+        "q14": {
+          "type": "qa",
+          "settings": {
+            "question": "Are revisions included?",
+            "answer": "Yes. Revisions are included with every render, so you can adjust materials, styling, lighting and camera angle before final delivery."
+          }
+        },
+        "q15": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use luxury renders in marketing and investor presentations?",
+            "answer": "Yes. Every render comes with full usage rights and 4K print-ready files for websites, brochures, hoardings, sales galleries, property marketing campaigns and investor presentations. Photorealistic visuals help attract buyers early and give lenders and investors a clear picture of the final product."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q13",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q4",
+        "q14",
+        "q15",
+        "q3",
+        "q11",
+        "q12",
+        "q10",
+        "q9"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Luxury 3D rendering, answered"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "image": "shopify://shop_images/la-riviere-exterior-render-1.jpg",
+        "eyebrow": "Your next launch",
+        "heading": "Ready to render your luxury project?",
+        "text": "Order today, send your plans, and market your project with luxury 3D renders before construction begins.",
+        "cta_label": "Order a luxury render — from {price:3d-rendering}",
+        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "fine_print": "Send plans after checkout · Revisions included · 4K print-ready delivery · Full usage rights"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "craft",
+    "proof",
+    "markets",
+    "scope",
+    "steps",
+    "need",
+    "compare",
+    "quote",
+    "math",
+    "faq",
+    "cta"
+  ]
+}
