@@ -12,20 +12,21 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging Florida",
-        "lede": "Virtual staging is a digital marketing technique for real estate: a designer adds furniture and décor to photos of empty or cleared rooms so potential buyers can visualize the space, with no furniture delivered to the property. Half of Florida's buyers shop from another state, so the pictures do the showing — Bella's designers stage Florida listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual staging & 3D rendering · Florida",
+        "heading": "Virtual Staging for Home Builders: Florida New Construction & Listings",
+        "lede": "Virtual staging is a digital marketing technique for real estate: a designer adds furniture and décor to photos of empty or cleared rooms so potential buyers can visualize the space, with no furniture delivered to the property. Bella's designers stage Florida new construction, spec homes and model homes for home builders and developers — and listings for agents — in 24 to 48 hours, from {price:virtual-staging} a photo, and render homes that aren't built yet from your plans.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
-        "alt_label": "Browse the lookbook",
-        "alt_link": "/pages/lookbook",
+        "alt_label": "3D renderings for builders",
+        "alt_link": "/products/3d-rendering-service-for-architectural-visualization",
         "city": "Florida",
-        "market_heading": "Why virtual staging works in the Florida real estate market",
-        "market_text": "<p>Florida is a remote-buyer market: northern relocations, snowbirds and international purchasers routinely shortlist — and sometimes buy — from photos alone. When the buyer can't attend the open house, the listing photos are the open house, and an empty white-tile room doesn't sell a Florida lifestyle to someone scrolling from New Jersey in February.</p><p>The stock skews vacant, too — investor condos, estate sales and new spec builds — so whole-home staging is routine here. Virtually staging an entire 8-photo listing costs about what one month of physically staging a single room would.</p><p>Florida's selling calendar is also inverted relative to most of the country. The buying season peaks when northern buyers are escaping winter, which means listings need to look their best in months when much of the US market is quiet. Photos that are ready on demand matter more in a market whose busiest weeks arrive in January.</p><p>97% of buyers use the internet in their home search (NAR), and in Florida the online listing is often the only showing a remote buyer gets. Many buyers decide which homes to visit based on listing photos alone, so staged images make the first impression that decides whether a buyer books a visit — which is why virtual staging works so well in a state with so many vacant, seasonal, investment and second-home properties. Staged photos also tend to perform better online and on social media, where buyers often see a listing first.</p>",
-        "local_heading": "Florida home staging, done virtually for each buyer",
-        "local_text": "<p>Our designers stage coastal-bright for Miami and Fort Lauderdale condos, airy transitional for Orlando and Tampa family homes, and elegant looks for Naples and Sarasota. Every image is MLS-ready in 24 to 48 hours, disclosed as virtually staged.</p><p>Outdoor space gets staged as living space here rather than as an afterthought — lanais, pool decks and screened porches are where Florida listings win the scroll, and they photograph empty worse than any interior room.</p><p>Our design team works online, so there's no site visit or delivery to schedule anywhere in the state: order, upload your original photos and a designer handles the style and layout. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — so whole-home sets and investor portfolios cost less per photo.</p>",
-        "hoods_label": "Where we stage most",
-        "hoods": "Miami, Fort Lauderdale, Palm Beach, Naples, Sarasota, Tampa, St. Petersburg, Orlando, Jacksonville"
+        "market_heading": "Why virtual staging works for Florida home builders",
+        "market_text": "<p>Florida builders sell to buyers who often aren't here yet: northern relocations, retirees and second-home buyers shortlist new construction from photos, and a vacant spec home with white tile floors doesn't sell a Florida lifestyle to someone scrolling from another state. Virtual staging furnishes those listing photos so buyers can see scale, flow and how each room lives — the first impression that decides whether they book a visit.</p><p>It also removes the logistics that slow a builder down. There is no furniture to move into an active construction site, no rental contract per home and no crew to schedule across a community, so spec homes and quick move-ins get online faster. Designers can show the same floor plan in more than one style, keep one consistent look across every listing in a community, and match the design to each region's buyers — coastal on the Gulf Coast, contemporary in Miami, transitional in family communities around Orlando and Jacksonville.</p><p>Before a home is built, there is nothing to photograph. Bella's <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D rendering service</a> turns your plans into photorealistic exteriors and interiors from {price:3d-rendering} an image, so you can pre-sell from plans, fill the sales center and launch community pages before construction is complete. Our <a href=\"/pages/home-builder-marketing\">home builder marketing guide</a> covers the full pre-sale playbook.</p><p>Agents use the same service on resale listings. 97% of buyers use the internet in their home search (NAR), and in NAR's 2025 Profile of Home Staging, 83% of buyers' agents said staging made it easier for a buyer to visualize the property as a future home — which is why virtual staging works so well in a state with so many vacant, seasonal, investment and second-home properties.</p>",
+        "local_heading": "Florida builder staging: Tampa, Orlando, Miami and Jacksonville",
+        "local_text": "<p><strong>Virtual staging Tampa Bay.</strong> Spec homes and new communities from Tampa and St. Petersburg to Sarasota get airy transitional and coastal staging, with files sized for Stellar MLS. Agents listing resale homes can also see our <a href=\"/pages/virtual-staging-in-tampa\">virtual staging in Tampa</a> page.</p><p><strong>Orlando.</strong> Family-sized floor plans in new communities are staged to show how bonus rooms, lofts and lanais are used — the rooms buyers can't picture empty.</p><p><strong>Virtual staging Miami &amp; South Florida.</strong> Condo and townhome developments from Miami to Fort Lauderdale and Palm Beach get a clean contemporary look, with files ready for the Miami REALTORS® MLS. It's a lower-cost alternative to physical home staging: Miami developers can stage every vacant unit in the photos, or render the ones still under construction.</p><p><strong>Jacksonville.</strong> New construction across Northeast Florida is staged warm and transitional, with volume pricing for builders listing a community at once — 5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p><p>Outdoor space gets staged as living space rather than as an afterthought — lanais, pool decks and screened porches are where Florida listings win the scroll. Our design team works online, so there's no site visit or delivery to schedule anywhere in the state.</p>",
+        "hoods_label": "Where we work most",
+        "hoods": "Tampa, St. Petersburg, Sarasota, Orlando, Miami, Fort Lauderdale, Palm Beach, Naples, Jacksonville",
+        "cred_text": "From {price:virtual-staging} a photo · 3D renders from {price:3d-rendering} · 24–48 hour staging · Real designers, never AI"
       }
     },
     "steps": {
@@ -76,7 +77,7 @@
       "type": "bella-end-cta",
       "settings": {
         "eyebrow": "Your next listing",
-        "heading": "Stage your Florida listing this week.",
+        "heading": "Stage or render your Florida homes this week.",
         "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
@@ -138,7 +139,7 @@
           "type": "qa",
           "settings": {
             "question": "Is virtual staging worth it?",
-            "answer": "For most vacant Florida listings, yes. Staging is meant to make a property more appealing and help it sell faster, but it can't guarantee multiple offers or stronger offers. What it can do is make the photos count: 97% of buyers use the internet in their home search (NAR), and an out-of-state buyer judges the home from the listing photos. Virtual staging furnishes them for a one-time cost per photo."
+            "answer": "For most vacant Florida listings, yes. Staging is meant to make a property more appealing and help it sell faster, but it can't guarantee multiple offers or stronger offers. What it can do is make the photos count: in NAR's 2025 Profile of Home Staging, 83% of buyers' agents said staging made it easier for a buyer to visualize the property as a future home, and an out-of-state buyer judges the home from the listing photos. Virtual staging furnishes them for a one-time cost per photo."
           }
         },
         "q9": {
@@ -154,9 +155,33 @@
             "question": "Is virtual staging legal in Florida?",
             "answer": "Yes, as long as the photos don't mislead buyers. Add furniture and décor only, don't hide defects or change permanent features, disclose that the images are virtually staged, and consider including the original photos alongside them. Check your MLS rules for exact labeling; every Bella order includes disclosure guidance."
           }
+        },
+        "h1": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you work with Florida home builders and developers?",
+            "answer": "Yes. Builders and developers use Bella for new construction virtual staging on spec homes and quick move-ins, model home virtual staging for floor plans without a model, and 3D renderings to pre-sell from plans. Sets are delivered together, and volume discounts reach 20% at 21+ photos."
+          }
+        },
+        "h2": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage a home that isn't finished yet?",
+            "answer": "Virtual staging works on photos of finished or nearly finished rooms. For homes that aren't built yet, a 3D rendering from your plans shows the finished interior or exterior before construction is complete, from {price:3d-rendering} an image."
+          }
+        },
+        "h3": {
+          "type": "qa",
+          "settings": {
+            "question": "How much should a 3D rendering cost?",
+            "answer": "At Bella, photoreal 3D renderings start at {price:3d-rendering} per finished image — one room or building from one camera angle — and exteriors are priced by scope. Studios price by complexity, so compare what one image includes before you compare prices."
+          }
         }
       },
       "block_order": [
+        "h1",
+        "h2",
+        "h3",
         "q1",
         "q2",
         "q3",
@@ -170,7 +195,7 @@
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Florida virtual staging questions from agents",
+        "heading": "Virtual staging Florida questions from builders and agents",
         "open_first": true
       }
     },
@@ -221,7 +246,7 @@
           "settings": {
             "icon": "clock",
             "title": "The timing",
-            "text": "No consultation, truck or pickup to schedule, which saves time on an owner who lives in another state. Upload your photos and staged images come back in 24 to 48 hours."
+            "text": "No consultation, truck or pickup to schedule — on a vacant spec home, across a new community or for an owner who lives in another state. Upload your photos and staged images come back in 24 to 48 hours."
           }
         },
         "c3": {
@@ -267,8 +292,8 @@
       ],
       "settings": {
         "eyebrow": "Virtual vs. physical staging",
-        "heading": "Virtual staging vs. a home staging company in Florida",
-        "text": "Physical and virtual home staging do the same job — create the emotional connection that helps buyers imagine living in the home. Here is how they compare for Florida agents, sellers and homeowners listing from out of state."
+        "heading": "Virtual staging vs. home staging companies: South Florida to Jacksonville",
+        "text": "Physical and virtual home staging do the same job — create the emotional connection that helps buyers imagine living in the home. Here is how they compare for Florida builders, developers, agents and sellers."
       }
     },
     "included": {
@@ -311,7 +336,7 @@
           "settings": {
             "icon": "note",
             "title": "Volume discounts",
-            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for whole-home staging and investor clients with several properties."
+            "text": "5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — useful for builders, developers and investors with several homes to market."
           }
         },
         "i6": {
@@ -336,10 +361,127 @@
         "heading": "Professional staging, priced per photo",
         "text": "One price per photo, no rental contract and the same guarantees on every Florida listing."
       }
+    },
+    "builders": {
+      "type": "bella-included",
+      "blocks": {
+        "b1": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Spec homes and quick move-ins",
+            "text": "Bella handles new construction virtual staging: Florida spec homes, quick move-ins and vacant inventory are furnished in the listing photos in 24 to 48 hours, with no furniture moved into an active construction site and no rental contract per home."
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Every floor plan, furnished",
+            "text": "Model home virtual staging: Florida builders can show every floor plan furnished, not just the one with a model, and restyle the same plan for different buyers — coastal, contemporary or transitional."
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "3D renderings to pre-sell from plans",
+            "text": "Photorealistic exterior and interior renderings built from your plans let you pre-sell before construction is complete, from {price:3d-rendering} an image: exteriors with landscaping and dusk lighting, interiors with finishes and upgrade packages."
+          }
+        },
+        "b4": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "One look across a community",
+            "text": "One design team styles every listing in a community, so the photos on your website, the MLS and social media share one cohesive brand look instead of a different stager's taste on every home."
+          }
+        },
+        "b5": {
+          "type": "item",
+          "settings": {
+            "icon": "eraser",
+            "title": "Rooms cleared before staging",
+            "text": "Furniture removal is included: leftover furniture, boxes and clutter are digitally cleared first, then the room is staged clean and ready for the listing."
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Builder volume pricing",
+            "text": "Staging is {price:virtual-staging} a photo with 5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+, so a whole community's listings cost less per photo, and the set is delivered together."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "eyebrow": "For Florida home builders & developers",
+        "heading": "Virtual staging for home builders across Florida",
+        "text": "From 3D rendering for home builders — Florida plans turned into photoreal homes before construction is complete — to virtual staging once the home is built, one design team handles every image a builder markets."
+      }
+    },
+    "clients": {
+      "type": "bella-cred",
+      "blocks": {
+        "m1": {
+          "type": "mark",
+          "settings": {
+            "name": "Highland Homes",
+            "detail": "Home builder · Texas",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/highland-homes-logo.png?v=1786950040"
+          }
+        },
+        "m2": {
+          "type": "mark",
+          "settings": {
+            "name": "Concord Pacific",
+            "detail": "Property developer · Vancouver",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/concord-pacific-logo.png?v=1786982242"
+          }
+        },
+        "m3": {
+          "type": "mark",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "detail": "Multi-family development"
+          }
+        },
+        "m4": {
+          "type": "mark",
+          "settings": {
+            "name": "Brown Harris Stevens",
+            "detail": "Luxury brokerage · New York",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/brown-harris-stevens-logo.png?v=1786982242"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by builders and developers",
+        "heading": "The design team behind builder and developer listings.",
+        "sub": true,
+        "text": "Bella's interior designers stage and render for home builders, developers and brokerages across the US and Canada, including Highland Homes, a Texas home builder. Every image is composed by hand — no AI shortcuts and no template rooms.",
+        "note": "Rated 4.9 on Google by verified Bella client reviews."
+      }
     }
   },
   "order": [
     "loc",
+    "builders",
+    "clients",
     "compare",
     "steps",
     "work",

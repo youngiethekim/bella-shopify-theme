@@ -12,20 +12,20 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging NYC",
-        "lede": "Virtual staging is a digital marketing technique that adds furniture and decor to real estate photographs: an interior designer furnishes empty apartments and cleared rooms in the image so buyers can see scale and layout, with nothing carried up the service elevator. At Manhattan and Brooklyn prices every listing photo carries real value — Bella's designers stage NYC listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual & luxury staging · New York City",
+        "heading": "Luxury Staging NYC & Virtual Staging for Manhattan",
+        "lede": "Virtual staging is a digital marketing technique that adds furniture and decor to real estate photographs: an interior designer furnishes empty apartments and cleared rooms in the image so buyers can see scale and layout, with nothing carried up the service elevator. Bella brings that approach to luxury staging in NYC — Manhattan condos, pre-war co-ops, penthouses and townhouses — with every photo staged in 24 to 48 hours, from {price:virtual-staging} a photo, the same price for a studio or a penthouse.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "New York City",
         "market_heading": "Why virtual staging matters in the NYC market",
-        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Home staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan and Brooklyn is a serious expense: furniture rental, a service elevator booking, a certificate of insurance for the building, and a crew who can work within board rules. Virtual staging skips all of it, which is why the cost comparison here is more lopsided than in any other US market.</p><p>Co-op and condo board logistics are the hidden cost people forget. A physical stage can stall for weeks waiting on building approval and elevator access; the photos can't wait that long when a listing's first week on StreetEasy determines most of its traffic.</p><p>97% of buyers use the internet in their home search (NAR), and New York buyers compare listing photos on StreetEasy long before a showing. Empty apartments photograph smaller and colder than they are, and staged photos tend to draw more clicks, views and showing requests. Virtual staging answers the scale question with furniture sized to the real room, so buyers can visualize how each space is used. Brokerages that need virtual staging New York buyers believe — including Brown Harris Stevens, a Bella client — use it on everything from pre-war co-ops to new developments.</p>",
-        "local_heading": "Virtual staging NYC buyers can trust at the showing",
-        "local_text": "<p>Designers stage pre-war co-ops with furniture that respects the mouldings and proportions, new developments with the clean contemporary look those buyers expect, and Brooklyn brownstones somewhere between the two.</p><p>Small-room proof is the priority throughout. In a market where the deciding question is usually whether real furniture fits, staging that quietly oversizes a room does more harm than good — we furnish to scale so the photo survives the showing.</p><p>For the shoot, send wide, high-resolution photos in the best light you can get: daylight, lamps on, blinds open. Our designers match the lighting, textures and ceiling height in each photo so the furnishings sit realistically against the walls, and every final image is ready for the REBNY RLS and StreetEasy with disclosure guidance. Developers and teams marketing several apartments get volume discounts automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
+        "market_text": "<p>New York buyers make snap judgments on StreetEasy, and the city's housing stock makes empty photos brutal: pre-war co-ops with narrow rooms, new-development glass boxes that all look alike, and railroad layouts buyers can't mentally furnish. Home staging proves a queen bed fits in the second bedroom — the question that decides whether an NYC showing gets booked.</p><p>Physical staging in Manhattan and Brooklyn is a serious expense: furniture rental, a service elevator booking, a certificate of insurance for the building, and a crew who can work within board rules. Virtual staging skips all of it, which is why the cost comparison here is more lopsided than in any other US market.</p><p>Co-op and condo board logistics are the hidden cost people forget. A physical stage can stall for weeks waiting on building approval and elevator access; the photos can't wait that long when a listing's first week on StreetEasy determines most of its traffic.</p><p>New York staging companies that specialize in luxury work rent high-end furniture, art and accessories and install them room by room. Most home staging companies and staging firms in the city quote that work per project; it suits some trophy listings, but it typically means a larger upfront investment and longer lead times. The difference with virtual staging is speed and cost. We compare the city's physical stagers in our guide to <a href=\"/blogs/news/top-10-home-staging-new-york-companies\">luxury home staging companies in New York</a>; Bella is the virtual option for high-end listings that need to be online this week. See how it works on <a href=\"/pages/luxury-virtual-staging\">luxury virtual staging</a>.</p><p>97% of buyers use the internet in their home search (NAR), and New York buyers compare listing photos on StreetEasy long before a showing. Empty apartments photograph smaller and colder than they are, and staged photos tend to draw more clicks, views and showing requests. Virtual staging answers the scale question with furniture sized to the real room, so buyers can visualize how each space is used. Brokerages that need virtual staging New York buyers believe — including Brown Harris Stevens, a Bella client — use it on everything from pre-war co-ops to new developments.</p>",
+        "local_heading": "Apartment staging NYC buyers can trust at the showing",
+        "local_text": "<p>Our design team stages pre-war co-ops with furniture that respects the mouldings and proportions, new-development condos and penthouses with the clean contemporary look those buyers expect, and Brooklyn brownstones and townhouses somewhere between the two.</p><p>In home staging, NYC listings live or die on scale. Where the deciding question is usually whether real furniture fits, staging that quietly oversizes a room does more harm than good — we furnish to scale so the photo survives the showing.</p><p>For the photography, send wide, high-resolution photos in the best light you can get: daylight, lamps on, blinds open. The design team matches the lighting, textures and ceiling height in each photo so the furnishings sit realistically against the walls, and every final image is ready for the REBNY RLS and StreetEasy with disclosure guidance. Developers and teams marketing several apartments get volume discounts automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Upper East Side, Upper West Side, Chelsea, Tribeca, Williamsburg, Park Slope, Brooklyn Heights, Long Island City, Harlem, Astoria"
+        "hoods": "Upper East Side, Upper West Side, Tribeca, SoHo, West Village, Chelsea, Hudson Yards, Financial District, Brooklyn Heights, Park Slope, Williamsburg, Long Island City, Harlem, Astoria"
       }
     },
     "steps": {
@@ -76,7 +76,7 @@
       "type": "bella-end-cta",
       "settings": {
         "eyebrow": "Your next listing",
-        "heading": "Stage your New York City listing this week.",
+        "heading": "Stage your New York City listing, studio or penthouse, this week.",
         "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
@@ -161,12 +161,44 @@
             "question": "What do you need from me to start?",
             "answer": "Wide, high-resolution photos of each room, shot in good light. If you have a floor plan, send it along — it helps the designer confirm scale in tight rooms. Tell us the target buyer and a style, or let the designer choose."
           }
+        },
+        "l1": {
+          "type": "qa",
+          "settings": {
+            "question": "What is luxury staging?",
+            "answer": "Luxury staging is a high-end marketing strategy for real estate: designer-quality furniture, art and accessories chosen to match what high-net-worth buyers expect and to highlight a property's architecture, views and light. In NYC it is mostly used on condos, co-ops, penthouses and townhouses. Bella delivers it virtually, in the listing photos."
+          }
+        },
+        "l2": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost to stage a luxury home in NYC?",
+            "answer": "Luxury staging firms quote physical staging per project, because it covers design, high-end furniture rental, delivery, installation and the building paperwork, and it typically needs a larger upfront investment than standard staging. Bella's luxury virtual staging is {price:virtual-staging} a photo, the same price as any other listing, with volume discounts from 3 photos."
+          }
+        },
+        "l3": {
+          "type": "qa",
+          "settings": {
+            "question": "Do luxury buyers respond to virtually staged photos?",
+            "answer": "They respond to staging that looks real. In NAR's 2025 Profile of Home Staging, 83% of buyers' agents said staging made it easier for a buyer to visualize the property as a future home. On high-end listings the risk is poor scale or generic furniture, which is why every Bella room is composed by an interior designer to the real dimensions and disclosed as virtually staged."
+          }
+        },
+        "l4": {
+          "type": "qa",
+          "settings": {
+            "question": "Which NYC staging companies do luxury work?",
+            "answer": "Several New York staging companies specialize in luxury physical staging with their own furniture inventories; our blog guide to luxury home staging companies in New York lists them with what each is known for, checked on their own websites. Bella is the virtual option: no install, no rental term and photos back in 24 to 48 hours."
+          }
         }
       },
       "block_order": [
+        "l1",
+        "l2",
+        "l3",
         "q1",
         "q2",
         "q3",
+        "l4",
         "q4",
         "q5",
         "q6",
@@ -178,7 +210,7 @@
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Virtual staging NYC questions from New York agents",
+        "heading": "Luxury and virtual staging NYC questions from New York real estate agents and brokers",
         "open_first": true
       }
     },
@@ -188,7 +220,7 @@
         "w1": {
           "type": "project",
           "settings": {
-            "name": "305 E 40th St 11S · living & dining",
+            "name": "Murray Hill condo · living & dining",
             "customer": "Real estate agent · Murray Hill",
             "services": "Virtual staging",
             "outcome": "Manhattan condo",
@@ -200,7 +232,7 @@
         "w2": {
           "type": "project",
           "settings": {
-            "name": "300 E 40th St 16K · living & dining",
+            "name": "Murray Hill condo · open living & dining",
             "customer": "Real estate agent · Murray Hill",
             "services": "Virtual staging",
             "outcome": "Manhattan condo",
@@ -212,7 +244,7 @@
         "w3": {
           "type": "project",
           "settings": {
-            "name": "300 E 40th St 16K · private terrace",
+            "name": "Murray Hill condo · private terrace",
             "customer": "Real estate agent · Murray Hill",
             "services": "Virtual staging",
             "outcome": "Outdoor space",
@@ -224,7 +256,7 @@
         "w4": {
           "type": "project",
           "settings": {
-            "name": "130 Bradhurst · living room",
+            "name": "Harlem apartment · living room",
             "customer": "Real estate agent · Harlem",
             "services": "Virtual staging",
             "outcome": "Uptown listing",
@@ -236,7 +268,7 @@
         "w5": {
           "type": "project",
           "settings": {
-            "name": "130 Bradhurst · primary bedroom",
+            "name": "Harlem apartment · primary bedroom",
             "customer": "Real estate agent · Harlem",
             "services": "Virtual staging",
             "outcome": "Uptown listing",
@@ -248,7 +280,7 @@
         "w6": {
           "type": "project",
           "settings": {
-            "name": "415 Central Park West · primary bedroom",
+            "name": "Upper West Side pre-war co-op · primary bedroom",
             "customer": "Real estate agent · Upper West Side",
             "services": "Virtual staging",
             "outcome": "Pre-war co-op",
@@ -256,22 +288,74 @@
             "before_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-upper-west-side-primary-bedroom-before.jpg?width=1200",
             "after_url": "https://www.bellavirtual.com/cdn/shop/files/virtual-staging-upper-west-side-primary-bedroom-after.jpg?width=1200"
           }
+        },
+        "b1": {
+          "type": "project",
+          "settings": {
+            "name": "Murray Hill living room · East River view",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-murray-hill-river-view-living-room-before.jpg",
+            "after_url": "bella-murray-hill-river-view-living-room-after.jpg"
+          }
+        },
+        "b2": {
+          "type": "project",
+          "settings": {
+            "name": "Murray Hill bedroom · river view",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-murray-hill-river-view-bedroom-before.jpg",
+            "after_url": "bella-murray-hill-river-view-bedroom-after.jpg"
+          }
+        },
+        "b3": {
+          "type": "project",
+          "settings": {
+            "name": "Upper East Side pre-war formal dining room",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-upper-east-side-prewar-dining-room-before.jpg",
+            "after_url": "bella-upper-east-side-prewar-dining-room-after.jpg"
+          }
+        },
+        "b4": {
+          "type": "project",
+          "settings": {
+            "name": "Upper West Side dining room · city view",
+            "customer": "Brown Harris Stevens agent · Manhattan",
+            "services": "Virtual staging",
+            "outcome": "",
+            "tag": "As originally furnished ⇄ After",
+            "before_url": "bella-upper-west-side-city-view-dining-room-before.jpg",
+            "after_url": "bella-upper-west-side-city-view-dining-room-after.jpg"
+          }
         }
       },
       "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
         "w1",
-        "w2",
         "w3",
+        "w6",
+        "w2",
         "w4",
-        "w5",
-        "w6"
+        "w5"
       ],
       "settings": {
         "eyebrow": "Recent work",
         "heading": "Recent New York work.",
         "sub": true,
         "carousel": true,
-        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "text": "Real Manhattan listings staged by our designers, including luxury apartments for Brown Harris Stevens agents. Hover or tap any project to see the room we started with.",
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "cta_url": "/products/virtual-staging",
         "look_label": "Browse 300+ furnished looks in the lookbook →",
@@ -286,7 +370,7 @@
           "settings": {
             "icon": "note",
             "title": "The cost",
-            "text": "Traditional staging in Manhattan means a design fee and monthly furniture rental — physical staging generally runs $2,000–5,000 a month — plus building logistics on top. Virtual staging is {price:virtual-staging} a photo, paid once, so more money stays with the seller."
+            "text": "For physical home staging, Manhattan sellers pay a design fee plus monthly furniture rental — physical staging generally runs $2,000–5,000 a month, and luxury staging firms typically need a larger upfront investment, with building logistics on top. Virtual staging is {price:virtual-staging} a photo, paid once, so more money stays with the seller."
           }
         },
         "c2": {
@@ -294,7 +378,7 @@
           "settings": {
             "icon": "clock",
             "title": "No building logistics",
-            "text": "No service elevator booking, certificate of insurance or board approval, and no weeks lost waiting on them. Upload after the shoot and staged photos are delivered in 24 to 48 hours."
+            "text": "No service elevator booking, certificate of insurance or board approval, and no weeks lost waiting on them. The whole process happens online and is seamless for the building: upload after the shoot and staged photos are delivered in 24 to 48 hours."
           }
         },
         "c3": {
@@ -340,8 +424,8 @@
       ],
       "settings": {
         "eyebrow": "Virtual vs. traditional staging",
-        "heading": "Virtual staging vs. a home staging company in New York City",
-        "text": "Physical staging and virtual staging do the same job — help potential buyers picture living in the apartment. Here is how they compare for NYC agents, developers and sellers."
+        "heading": "Virtual staging NYC vs. New York staging companies",
+        "text": "Physical staging and virtual staging do the same job — help potential buyers picture living in the apartment. Here is how virtual staging compares with NYC staging companies and home stagers for agents, brokers, developers and sellers."
       }
     },
     "included": {
@@ -409,10 +493,127 @@
         "heading": "Professional staging, priced per photo",
         "text": "One price per photo, no rental contract and no building paperwork — the same guarantees on every NYC listing."
       }
+    },
+    "luxury": {
+      "type": "bella-included",
+      "blocks": {
+        "l1": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Manhattan condos and new developments",
+            "text": "Glass-walled new-development condos sell light, views and a lifestyle. Our design team furnishes open living rooms in a clean contemporary style with high-end furniture scaled to the floor plan, so the skyline stays the hero of the photo and buyers can read how the space lives."
+          }
+        },
+        "l2": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Pre-war co-ops",
+            "text": "Classic co-ops on the Upper East Side and Upper West Side get furnishings chosen with elegance and restraint to respect the mouldings, herringbone floors and proportions. Because the staging happens to the photos, there is no board approval, certificate of insurance or service elevator to book."
+          }
+        },
+        "l3": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Penthouses and terraces",
+            "text": "Double-height rooms, private terraces and wide views need furniture with presence. Terraces are staged as outdoor rooms and every detail stays to scale, so a penthouse reads as generous without being exaggerated."
+          }
+        },
+        "l4": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Townhouses and brownstones",
+            "text": "Multi-floor townhouses from the West Village to Brooklyn Heights get one design story from the parlor floor to the garden level, so buyers scrolling the listing see a single, consistent home rather than a set of unrelated rooms."
+          }
+        },
+        "l5": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Designer-led, never AI",
+            "text": "Every luxury staging is composed by hand by a professional interior designer in Photoshop, 3D Max and Corona, with lighting, shadows and reflections matched to the original photo. Share your vision for the buyer, pick a Look Book style, or let the designer customize the furnishings to the property's personality."
+          }
+        },
+        "l6": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "No luxury surcharge",
+            "text": "There is no separate luxury tier: {price:virtual-staging} a photo for a studio or a penthouse, with 5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+, plus free furniture removal and unlimited revisions for two weeks."
+          }
+        }
+      },
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6"
+      ],
+      "settings": {
+        "eyebrow": "Luxury staging · New York City",
+        "heading": "Luxury home staging: Manhattan condos, co-ops, penthouses and townhouses",
+        "text": "Luxury home staging is a high-end marketing strategy: designer-quality furniture, art and accessories chosen for the high-net-worth buyers a property is priced for, arranged to highlight the architecture, light and views they are paying for. When it comes to luxury home staging, New York listings also face building rules and install schedules. Bella's design team stages them virtually, so the photos are ready in 24 to 48 hours — staging that helps listings sell faster and over asking."
+      }
+    },
+    "clients": {
+      "type": "bella-cred",
+      "blocks": {
+        "m1": {
+          "type": "mark",
+          "settings": {
+            "name": "Brown Harris Stevens",
+            "detail": "Luxury brokerage · New York",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/brown-harris-stevens-logo.png?v=1786982242"
+          }
+        },
+        "m2": {
+          "type": "mark",
+          "settings": {
+            "name": "Concord Pacific",
+            "detail": "Property developer · Vancouver",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/concord-pacific-logo.png?v=1786982242"
+          }
+        },
+        "m3": {
+          "type": "mark",
+          "settings": {
+            "name": "Highland Homes",
+            "detail": "Home builder · Texas",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/highland-homes-logo.png?v=1786950040"
+          }
+        },
+        "m4": {
+          "type": "mark",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "detail": "Multi-family development"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by luxury brokerages and developers",
+        "heading": "Interior design talent behind high-end listings.",
+        "sub": true,
+        "text": "Bella's interior designers bring the same design expertise to luxury brokerages, developers and home builders across the US and Canada, including Brown Harris Stevens in New York. Brokers use luxury virtual staging on high-end listings when timing, building rules or budget rule out a physical install; the benefit is a luxurious, furnished look in the photos without the logistics.",
+        "note": "Rated 4.9 on Google by verified Bella client reviews."
+      }
     }
   },
   "order": [
     "loc",
+    "luxury",
+    "clients",
     "compare",
     "steps",
     "work",

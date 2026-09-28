@@ -12,20 +12,21 @@
     "loc": {
       "type": "bella-location",
       "settings": {
-        "eyebrow": "Virtual staging near you",
-        "heading": "Virtual Staging Dallas, TX",
-        "lede": "Virtual staging is a digital marketing technique for real estate — the process of adding furniture and decor to listing photos: an interior designer furnishes empty or cleared rooms in the image so buyers can judge scale and layout, without any physical furniture entering the house. Bella's designers stage Dallas–Fort Worth listings in 24 to 48 hours, from {price:virtual-staging} a photo.",
+        "eyebrow": "Virtual staging & 3D rendering · Dallas–Fort Worth",
+        "heading": "Virtual Staging for Home Builders: Dallas–Fort Worth",
+        "lede": "Virtual staging is a digital marketing technique for real estate — the process of adding furniture and decor to listing photos: an interior designer furnishes empty or cleared rooms in the image so buyers can judge scale and layout, without any physical furniture entering the house. Bella's designers stage new construction, spec homes and model-plan builds for DFW home builders — and listings for agents — in 24 to 48 hours, from {price:virtual-staging} a photo, and render homes that aren't built yet from your plans.",
         "cta_label": "Stage my listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
-        "alt_label": "Browse the lookbook",
-        "alt_link": "/pages/lookbook",
+        "alt_label": "3D renderings for builders",
+        "alt_link": "/products/3d-rendering-service-for-architectural-visualization",
         "city": "Dallas",
-        "market_heading": "Why virtual staging matters in the Dallas-Fort Worth market",
-        "market_text": "<p>Dallas–Fort Worth adds more people each year than almost any metro in the country, and a large share of them are relocating on a corporate timeline from California, Illinois or the Northeast. They build a shortlist online weeks before they fly in, and an empty room gives them nothing to judge but square footage.</p><p>The other half of the market is new construction. Plano, Frisco, McKinney and Prosper turn over thousands of spec homes and model-plan builds where six listings in a development share three floor plans. Photographed empty, they're indistinguishable — home staging is what makes one of them the listing a relocating buyer remembers.</p><p>DFW price points also make the maths obvious. Physical staging is priced for furniture plus a monthly rental period regardless of how long the listing sits. Virtual staging is {price:virtual-staging} a photo, once, with no rental clock — which matters on a builder's inventory of eight vacant homes rather than one.</p><p>That's why Dallas virtual staging is routine for DFW agents, builders and investors. 97% of buyers use the internet in their home search (NAR), so the listing photos are where most buyers first compare homes — and listings that stand out online tend to draw more clicks, views and showing requests. Virtually staged photos show what each room is for and how much furniture it really holds, so the house makes the shortlist before anyone books a showing. For a relocating buyer deciding which homes to tour on a single trip, that is often the whole decision.</p>",
-        "local_heading": "Dallas home staging, done virtually for each buyer",
-        "local_text": "<p>Designers stage modern-transitional for Plano, Frisco and McKinney new builds, warmer traditional for Highland Park and Lakewood, and clean contemporary for Uptown and Design District condos.</p><p>Builder and investor inventory is quoted as a batch and delivered together, so a whole community's worth of listings lands at once rather than photo by photo. Files come back NTREIS-ready with disclosure guidance included.</p><p>Our design team works online, so there's no walkthrough to schedule anywhere in Texas: order, upload your photos and a designer handles the styling. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — which is where most Plano and Frisco builder sets land. Modern and transitional styles suit most DFW new construction, while Lakewood Tudors and Craftsman bungalows get warmer traditional pieces in wood tones.</p>",
+        "market_heading": "Why virtual staging matters for Dallas–Fort Worth home builders",
+        "market_text": "<p>Dallas–Fort Worth adds more people each year than almost any metro in the country, and a large share of them are relocating on a corporate timeline from California, Illinois or the Northeast. They build a shortlist online weeks before they fly in, and an empty room gives them nothing to judge but square footage.</p><p>The other half of the market is new construction. Builders across Plano, Frisco, McKinney, Prosper and Celina list spec homes and model-plan builds where several homes in a community share the same floor plans. Photographed empty, they're indistinguishable — new construction staging is what makes one of them the listing a relocating buyer remembers.</p><p>Virtual staging also takes furniture logistics off the job site. There's no furniture to move through an active community, no rental contract per home and no rental clock if a spec home sits: staging is {price:virtual-staging} a photo, once. Designers can show one floor plan in several styles for different buyers, and a bonus room as an office, game room or nursery.</p><p>Before a home is built, there is nothing to photograph. Bella's <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D rendering service</a> turns your plans into photorealistic exteriors and interiors from {price:3d-rendering} an image — 3D rendering for home builders, Dallas to Fort Worth — so you can pre-sell from plans and launch community pages before construction is complete. The <a href=\"/pages/home-builder-marketing\">home builder marketing guide</a> covers the full pre-sale playbook, and our <a href=\"/pages/virtual-staging-texas\">virtual staging in Texas</a> page covers Houston, Austin and San Antonio.</p><p>97% of buyers use the internet in their home search (NAR), so the listing photos are where most buyers first compare homes, and in NAR's 2025 Profile of Home Staging, 83% of buyers' agents said staging made it easier for a buyer to visualize the property as a future home. Virtually staged photos show what each room is for and how much furniture it really holds, so the house makes the shortlist before anyone books a showing.</p>",
+        "local_heading": "Virtual staging Dallas builders and agents can list the same week",
+        "local_text": "<p>Designers stage modern-transitional for Plano, Frisco and McKinney new builds, warmer traditional for Highland Park and Lakewood, and clean contemporary for Uptown and Design District condos.</p><p>Builder inventory is quoted as a batch and delivered together, so a whole community's worth of listings lands at once rather than photo by photo. Files come back NTREIS-ready with disclosure guidance included: label each virtually staged photo, note it in the agent remarks and keep the original photo available.</p><p>Virtual staging, DFW-wide, happens online: there's no walkthrough to schedule anywhere in the Metroplex or across Texas. Order, upload your photos and a designer handles the styling. Volume discounts apply automatically — 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+ — which is where most builder sets land. Modern and transitional styles suit most DFW new construction, while Lakewood Tudors and Craftsman bungalows get warmer traditional pieces in wood tones.</p>",
         "hoods_label": "Where we stage most",
-        "hoods": "Plano, Frisco, McKinney, Allen, Prosper, Uptown, Highland Park, Lakewood, Arlington, Fort Worth"
+        "hoods": "Plano, Frisco, McKinney, Prosper, Celina, Allen, Uptown, Highland Park, Lakewood, Arlington, Fort Worth",
+        "cred_text": "From {price:virtual-staging} a photo · 3D renders from {price:3d-rendering} · 24–48 hour staging · Real designers, never AI"
       }
     },
     "steps": {
@@ -76,7 +77,7 @@
       "type": "bella-end-cta",
       "settings": {
         "eyebrow": "Your next listing",
-        "heading": "Stage your Dallas listing this week.",
+        "heading": "Stage or render your Dallas homes this week.",
         "text": "Order today and have designer-staged, MLS-ready photos back in 24 to 48 hours — no crew, no truck, no monthly rental.",
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
@@ -168,13 +169,37 @@
             "question": "Do you stage Fort Worth and the suburbs too?",
             "answer": "Yes. We work online, so listings anywhere in DFW — Plano, Frisco, McKinney, Allen, Arlington, Fort Worth and beyond — get the same 24 to 48 hour delivery. We also work across the US and Canada."
           }
+        },
+        "h1": {
+          "type": "qa",
+          "settings": {
+            "question": "Do you work with Dallas home builders?",
+            "answer": "Yes. Highland Homes, a Texas home builder, is a Bella client. Builders across DFW use Bella for new construction virtual staging on spec homes and quick move-ins, model home staging for floor plans without a model, and 3D renderings to pre-sell from plans."
+          }
+        },
+        "h2": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you stage a home that isn't finished yet?",
+            "answer": "Virtual staging works on photos of finished or nearly finished rooms. For homes that aren't built yet, a 3D rendering from your plans shows the finished interior or exterior before construction is complete, from {price:3d-rendering} an image."
+          }
+        },
+        "h3": {
+          "type": "qa",
+          "settings": {
+            "question": "How much should a 3D rendering cost?",
+            "answer": "At Bella, photoreal 3D renderings start at {price:3d-rendering} per finished image — one room or building from one camera angle — and exteriors are priced by scope. Studios price by complexity, so compare what one image includes before you compare prices."
+          }
         }
       },
       "block_order": [
+        "h1",
         "q1",
+        "q4",
+        "h2",
+        "h3",
         "q2",
         "q3",
-        "q4",
         "q5",
         "q6",
         "q7",
@@ -186,7 +211,7 @@
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Dallas virtual staging questions from agents",
+        "heading": "Dallas virtual staging questions from builders and agents",
         "open_first": true
       }
     },
@@ -216,9 +241,48 @@
             "before_url": "https://www.bellavirtual.com/cdn/shop/files/8_Austin_TX.png?width=918&height=610&crop=left",
             "after_url": "https://www.bellavirtual.com/cdn/shop/files/8_Austin_TX.png?width=918&height=610&crop=right"
           }
+        },
+        "h1": {
+          "type": "project",
+          "settings": {
+            "name": "New-construction living & dining room",
+            "customer": "Highland Homes · Austin, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-austin-new-construction-living-dining-before.jpg",
+            "after_url": "bella-austin-new-construction-living-dining-after.jpg"
+          }
+        },
+        "h2": {
+          "type": "project",
+          "settings": {
+            "name": "New-construction family room",
+            "customer": "Highland Homes · San Antonio, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-san-antonio-new-construction-family-room-before.jpg",
+            "after_url": "bella-san-antonio-new-construction-family-room-after.jpg"
+          }
+        },
+        "h3": {
+          "type": "project",
+          "settings": {
+            "name": "New-construction open kitchen & living room",
+            "customer": "Highland Homes · San Antonio, TX",
+            "services": "Virtual staging",
+            "outcome": "New construction",
+            "tag": "Before ⇄ After",
+            "before_url": "bella-san-antonio-new-construction-open-kitchen-living-before.jpg",
+            "after_url": "bella-san-antonio-new-construction-open-kitchen-living-after.jpg"
+          }
         }
       },
       "block_order": [
+        "h1",
+        "h2",
+        "h3",
         "w1",
         "w2"
       ],
@@ -226,8 +290,8 @@
         "eyebrow": "Recent work",
         "heading": "Recent Texas work.",
         "sub": true,
-        "carousel": false,
-        "text": "Real listings staged by our designers. Hover or tap any project to see the room we started with.",
+        "carousel": true,
+        "text": "Real Texas homes staged by our designers, including new construction for Highland Homes. Hover or tap any project to see the room we started with.",
         "cta_label": "Get started — from {price:virtual-staging} a photo",
         "cta_url": "/products/virtual-staging",
         "look_label": "Browse 300+ furnished looks in the lookbook →",
@@ -266,7 +330,7 @@
           "settings": {
             "icon": "eraser",
             "title": "Occupied or dated rooms",
-            "text": "Furniture removal is included: tenant-occupied, cluttered or dated rooms are digitally cleared first, then staged clean."
+            "text": "Furniture removal is included: tenant-occupied, cluttered or dated rooms, and rooms with leftover boxes or construction clutter, are digitally cleared first, then staged clean."
           }
         },
         "c5": {
@@ -282,7 +346,7 @@
           "settings": {
             "icon": "shield",
             "title": "Honest, disclosed images",
-            "text": "We add furniture and decor only — never structural changes, and never to hide defects. Every order includes disclosure guidance: label each virtually staged photo and add a note in the agent remarks so your listing follows MLS rules."
+            "text": "We add furniture and decor only — never structural changes, and never to hide defects — so the home's architectural features stay exactly as built, and lighting and shadows are matched to the original photo. Every order includes disclosure guidance: label each virtually staged photo, add a note in the agent remarks and include an unstaged photo of each major room so your listing follows MLS rules."
           }
         }
       },
@@ -296,8 +360,8 @@
       ],
       "settings": {
         "eyebrow": "Virtual vs. physical staging",
-        "heading": "Virtual staging vs. a home staging company in Dallas",
-        "text": "Physical staging and virtual staging do the same job: help potential buyers picture living in the home. Here is how they compare for Dallas agents, builders, investors and home sellers."
+        "heading": "Dallas home staging: virtual vs. a physical staging company",
+        "text": "Physical staging and virtual staging do the same job: help potential buyers picture living in the home. Here is how they compare for Dallas builders, agents, investors and home sellers."
       }
     },
     "included": {
@@ -365,10 +429,127 @@
         "heading": "Professional staging, priced per photo",
         "text": "One price per photo, no rental contract and the same guarantees on every DFW listing."
       }
+    },
+    "builders": {
+      "type": "bella-included",
+      "blocks": {
+        "b1": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Spec homes and quick move-ins",
+            "text": "New construction virtual staging, Dallas to Fort Worth: spec homes and quick move-ins are furnished in the listing photos in 24 to 48 hours, with no furniture moved through an active community and no rental clock if a home sits."
+          }
+        },
+        "b2": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Every floor plan, furnished",
+            "text": "Model home staging, Dallas-style, usually means one furnished model per community. Virtually staged photos show every floor plan furnished, and the same plan restyled for a different buyer, without furnishing another house."
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "icon": "cube",
+            "title": "3D renderings to pre-sell from plans",
+            "text": "Photorealistic exteriors and interiors built from your plans, from {price:3d-rendering} an image, so community pages, ads and the sales office go live before construction is complete."
+          }
+        },
+        "b4": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "One look across a community",
+            "text": "One design team styles every listing in a community, so the photos on your website, NTREIS and social media share one cohesive brand look instead of a different stager's taste on every home."
+          }
+        },
+        "b5": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Flex rooms shown in use",
+            "text": "Bonus rooms, flex rooms and lofts are staged for the use your buyer cares about — home office, game room or nursery — so buyers see what the space can do for them."
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Builder volume pricing",
+            "text": "Staging is {price:virtual-staging} a photo with 5% off at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+, so a whole community's listings cost less per photo, and the set is delivered together."
+          }
+        }
+      },
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ],
+      "settings": {
+        "eyebrow": "For DFW home builders",
+        "heading": "Virtual staging for home builders across Dallas–Fort Worth",
+        "text": "Highland Homes, a Texas home builder, is a Bella client. Builders use Bella for three jobs: staging the homes they have built, showing floor plans that don't have a model, and rendering the homes they haven't built yet."
+      }
+    },
+    "clients": {
+      "type": "bella-cred",
+      "blocks": {
+        "m1": {
+          "type": "mark",
+          "settings": {
+            "name": "Highland Homes",
+            "detail": "Home builder · Texas",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/highland-homes-logo.png?v=1786950040"
+          }
+        },
+        "m2": {
+          "type": "mark",
+          "settings": {
+            "name": "Concord Pacific",
+            "detail": "Property developer · Vancouver",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/concord-pacific-logo.png?v=1786982242"
+          }
+        },
+        "m3": {
+          "type": "mark",
+          "settings": {
+            "name": "Rockwood Legacy Residences",
+            "detail": "Multi-family development"
+          }
+        },
+        "m4": {
+          "type": "mark",
+          "settings": {
+            "name": "Brown Harris Stevens",
+            "detail": "Luxury brokerage · New York",
+            "logo_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/brown-harris-stevens-logo.png?v=1786982242"
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "settings": {
+        "eyebrow": "Trusted by builders and developers",
+        "heading": "The design team behind Texas builder listings.",
+        "sub": true,
+        "text": "Bella's interior designers stage and render for home builders, developers and brokerages across the US and Canada, including Highland Homes in Texas. Every image is composed by hand — no AI shortcuts and no template rooms.",
+        "note": "Rated 4.9 on Google by verified Bella client reviews."
+      }
     }
   },
   "order": [
     "loc",
+    "builders",
+    "clients",
     "compare",
     "steps",
     "work",
