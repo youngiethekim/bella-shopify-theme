@@ -22,11 +22,12 @@
         "cred_text": "Human 3D artists, never AI · Built in 3ds Max · Quote-based pricing · US and Canada",
         "city": "",
         "market_heading": "What are 3D product rendering and 3D furniture modeling?",
-        "market_text": "<p><strong>3D furniture modeling</strong> is model creation: a 3D artist builds a three dimensional digital object that matches the real piece with technical accuracy: precise dimensions, true proportions and every seam, leg and edge profile in place. Texture mapping then wraps the model in its materials, from wood grain and leather to metal and fabric weave, so the finish reads the way it does in your showroom.</p><p><strong>3D product rendering</strong> is what happens next. The finished 3D model is lit, framed by a virtual camera and rendered into computer generated images that look like product photography. This is photorealistic rendering: the software simulates how light falls on each material, so the result reads as a photograph rather than an illustration. Chaos, the company behind the V-Ray renderer, breaks 3D furniture rendering into five stages: modeling, texturing, lighting, rendering and post-processing (<a href=\"https://blog.chaos.com/3d-furniture-rendering-everything-you-need-to-know\" target=\"_blank\" rel=\"noopener\">Chaos</a>). Put simply, 3D modeling builds the product and 3D rendering photographs it, and once the model exists it can be rendered from any angle, in any finish, in any room.</p><p>That is why furniture product rendering has become a mainstream alternative to traditional product photography. In a 2014 CGSociety interview, IKEA's in-house agency said around 75% of IKEA's product images were already computer generated, a shift that began as a way to cut the logistics and cost of building and shipping prototype furniture around the world to be photographed (<a href=\"https://slate.com/human-interest/2014/09/ikea-product-images-75-percent-are-computer-generated.html\" target=\"_blank\" rel=\"noopener\">Slate</a>).</p>",
+        "market_text": "<p>3D product rendering services turn a piece of furniture into photorealistic product images without a photo shoot. Bella's 3D artists build an accurate 3D model of each product from your photos, dimensions, spec sheets and material swatches, then render it as white-background product images, lifestyle scenes in styled rooms, and colour and material variants for your product pages, catalogues and marketing campaigns. We work with furniture brands, furniture retailers and e-commerce teams, and with home builders, across the US and Canada. Every piece in our gallery was modelled from scratch by our 3D artists in 3ds Max, never AI, and every project is priced by quote.</p><p><strong>3D furniture modeling</strong> is model creation: a 3D artist builds a three dimensional digital object that matches the real piece with technical accuracy: precise dimensions, true proportions and every seam, leg and edge profile in place. Texture mapping then wraps the model in its materials, from wood grain and leather to metal and fabric weave, so the finish reads the way it does in your showroom.</p><p><strong>3D product rendering</strong> is what happens next. The finished 3D model is lit, framed by a virtual camera and rendered into computer generated images that look like product photography. This is photorealistic rendering: the software simulates how light falls on each material, so the result reads as a photograph rather than an illustration. Chaos, the company behind the V-Ray renderer, breaks 3D furniture rendering into five stages: modeling, texturing, lighting, rendering and post-processing (<a href=\"https://blog.chaos.com/3d-furniture-rendering-everything-you-need-to-know\" target=\"_blank\" rel=\"noopener\">Chaos</a>). Put simply, 3D modeling builds the product and 3D rendering photographs it, and once the model exists it can be rendered from any angle, in any finish, in any room.</p><p>That is why furniture product rendering has become a mainstream alternative to traditional product photography. In a 2014 CGSociety interview, IKEA's in-house agency said around 75% of IKEA's product images were already computer generated, a shift that began as a way to cut the logistics and cost of building and shipping prototype furniture around the world to be photographed (<a href=\"https://slate.com/human-interest/2014/09/ikea-product-images-75-percent-are-computer-generated.html\" target=\"_blank\" rel=\"noopener\">Slate</a>).</p>",
         "local_heading": "A 3D product rendering company that models its own furniture",
         "local_text": "<p>Most 3D product rendering companies model whatever arrives in the inbox. Bella's 3D artists also model furniture from scratch for our own furniture library and Look Book, the 3D furniture models used in Bella's virtual staging, in seven styles: Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional. Every sofa, chair, table and bed in our gallery was modelled from scratch by that team, so building furniture pieces that look real inside a furnished room is work they already do.</p><p>That same team provides 3D product modeling and visualization services for furniture brands, retailers and builders, and models your products from photos, dimensions and spec sheets. They work in 3ds Max, by hand, never with AI image generators, so the product on your product pages is your product: the arm height, the cushion profile, the stitching and the finish your customer actually receives. Pricing is quote-based, because a single accent chair and a full catalogue are different projects. Timelines depend on catalogue size; we'll give you a schedule with your quote.</p>",
         "hoods_label": "What we deliver",
-        "hoods": "White-background product images, Lifestyle room scenes, Colour & material variants, Close-ups & details, Product pages, Catalogues, Marketing campaigns, Home builder marketing"
+        "hoods": "White-background product images, Lifestyle room scenes, Colour & material variants, Close-ups & details, Product pages, Catalogues, Marketing campaigns, Home builder marketing",
+        "show_hero": false
       }
     },
     "work": {
@@ -40,7 +41,8 @@
         "cta_label": "Contact us for a quote",
         "cta_url": "/pages/contact-us",
         "look_label": "See the Look Book styles our 3D team maintains →",
-        "look_url": "/pages/lookbook"
+        "look_url": "/pages/lookbook",
+        "anchor": "renders"
       },
       "blocks": {
         "g1": {
@@ -732,9 +734,122 @@
         "text": "Architectural, interior and exterior rendering, floor plans and pricing guides.",
         "menu": "related-rendering"
       }
+    },
+    "hero3d": {
+      "type": "bella-3d-hero",
+      "blocks": {
+        "model_1": {
+          "type": "model",
+          "settings": {
+            "name": "Woven leather lounge chair",
+            "detail": "Oiled wood frame, woven leather sling",
+            "glb": "bella-3d-woven-leather-lounge-chair.glb",
+            "poster": "bella-3d-woven-leather-lounge-chair-poster.jpg",
+            "thumb": "bella-3d-woven-leather-lounge-chair-thumb.jpg",
+            "alt": "Interactive 3D model of a woven leather lounge chair with an oiled wood frame, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        },
+        "model_2": {
+          "type": "model",
+          "settings": {
+            "name": "Lounge chair in four colourways",
+            "detail": "One model, four velvet colourways",
+            "glb": "bella-3d-lounge-chair-colourways.glb",
+            "poster": "bella-3d-lounge-chair-colourways-poster.jpg",
+            "thumb": "bella-3d-lounge-chair-colourways-thumb.jpg",
+            "alt": "Interactive 3D model of one lounge chair model shown in four velvet colourways: ochre, burgundy, blue and grey, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        },
+        "model_3": {
+          "type": "model",
+          "settings": {
+            "name": "Rolled-arm sofa",
+            "detail": "Linen upholstery, turned wood legs, scatter cushions",
+            "glb": "bella-3d-rolled-arm-sofa.glb",
+            "poster": "bella-3d-rolled-arm-sofa-poster.jpg",
+            "thumb": "bella-3d-rolled-arm-sofa-thumb.jpg",
+            "alt": "Interactive 3D model of a rolled-arm linen sofa with turned wood legs and scatter cushions, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        },
+        "model_4": {
+          "type": "model",
+          "settings": {
+            "name": "Curved sofa",
+            "detail": "Ivory bouclé on a low plinth",
+            "glb": "bella-3d-curved-sofa.glb",
+            "poster": "bella-3d-curved-sofa-poster.jpg",
+            "thumb": "bella-3d-curved-sofa-thumb.jpg",
+            "alt": "Interactive 3D model of a curved sofa in ivory bouclé on a low plinth, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        },
+        "model_5": {
+          "type": "model",
+          "settings": {
+            "name": "Bouclé armchair",
+            "detail": "Sculpted shell in off-white bouclé",
+            "glb": "bella-3d-boucle-armchair.glb",
+            "poster": "bella-3d-boucle-armchair-poster.jpg",
+            "thumb": "bella-3d-boucle-armchair-thumb.jpg",
+            "alt": "Interactive 3D model of a sculpted armchair in off-white bouclé, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        },
+        "model_6": {
+          "type": "model",
+          "settings": {
+            "name": "Round dining set",
+            "detail": "Oak pedestal table, four upholstered oak chairs",
+            "glb": "bella-3d-round-dining-set.glb",
+            "poster": "bella-3d-round-dining-set-poster.jpg",
+            "thumb": "bella-3d-round-dining-set-thumb.jpg",
+            "alt": "Interactive 3D model of a round oak pedestal dining table with four upholstered oak chairs, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        },
+        "model_7": {
+          "type": "model",
+          "settings": {
+            "name": "Walnut dining set",
+            "detail": "Walnut table, four bentwood chairs, linen runner",
+            "glb": "bella-3d-walnut-dining-set.glb",
+            "poster": "bella-3d-walnut-dining-set-poster.jpg",
+            "thumb": "bella-3d-walnut-dining-set-thumb.jpg",
+            "alt": "Interactive 3D model of a walnut dining table with four bentwood chairs and a linen runner, modelled by Bella's 3D artists",
+            "orbit": "30deg 75deg auto"
+          }
+        }
+      },
+      "block_order": [
+        "model_1",
+        "model_2",
+        "model_3",
+        "model_4",
+        "model_5",
+        "model_6",
+        "model_7"
+      ],
+      "settings": {
+        "eyebrow": "Bella · 3D modeling & product rendering",
+        "heading": "3D Product Rendering Services for Furniture",
+        "lede": "Drag to spin any piece, each modelled from scratch by Bella's 3D artists. Send us photos, dimensions and swatches, and we'll build your furniture in 3D, then render white-background, lifestyle and colourway images.",
+        "cta_label": "Contact us for a quote",
+        "cta_link": "/pages/contact-us",
+        "alt_label": "See finished renders",
+        "alt_link": "#renders",
+        "cred_text": "Human 3D artists, never AI · Built in 3ds Max · Quote-based pricing · US and Canada",
+        "hint": "Drag to rotate",
+        "ar_label": "View in your room",
+        "credit": "Modelled by Bella's 3D artists",
+        "picker_label": "Choose a 3D model"
+      }
     }
   },
   "order": [
+    "hero3d",
     "loc",
     "work",
     "get",

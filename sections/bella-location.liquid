@@ -1,6 +1,7 @@
 {%- assign vs_price = all_products['virtual-staging'].price_min | money_without_trailing_zeros -%}
 {%- assign vr_price = all_products['virtual-renovation-service'].price_min | money_without_trailing_zeros -%}
 {%- assign rd_price = all_products['3d-rendering'].price_min | money_without_trailing_zeros -%}
+{%- if section.settings.show_hero -%}
 <section class="loc-hero">
   <span class="micro">{{ section.settings.eyebrow }}</span>
   <h1>{{ section.settings.heading }}</h1>
@@ -21,6 +22,7 @@
     {%- endif -%}
   </div>
 </section>
+{%- endif -%}
 <section class="loc-body">
   <div class="loc-grid">
     <div>
@@ -59,6 +61,13 @@
 {
   "name": "Location page",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_hero",
+      "label": "Show the hero (H1, lede, buttons)",
+      "default": true,
+      "info": "Turn off when another section on the page carries the H1."
+    },
     {
       "type": "text",
       "id": "eyebrow",

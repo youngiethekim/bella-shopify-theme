@@ -1,0 +1,255 @@
+{%- comment -%}
+  Interactive 3D hero: short copy beside a <model-viewer> stage with a picker.
+  Each block is one model. File settings take a theme asset filename
+  (e.g. bella-3d-sofa.glb) or a full URL. Posters should be 5:4 on #F2EFEA
+  so the swap from poster to live model doesn't jump.
+{%- endcomment -%}
+{%- liquid
+  assign first = section.blocks.first
+  assign org_id = shop.secure_url | append: '/#organization'
+-%}
+<section class="m3-hero" id="m3-{{ section.id }}">
+  <div class="m3-copy">
+    {%- if section.settings.eyebrow != blank -%}<span class="micro">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h1>{{ section.settings.heading }}</h1>
+    {%- if section.settings.lede != blank -%}<p class="m3-lede">{{ section.settings.lede }}</p>{%- endif -%}
+  </div>
+
+  <div class="m3-act">
+    <div class="m3-row">
+      <a class="btn" href="{{ section.settings.cta_link | default: '/pages/contact-us' }}">{{ section.settings.cta_label | default: 'Contact us for a quote' }}</a>
+      {%- if section.settings.alt_label != blank -%}
+        <a class="loc-alt" href="{{ section.settings.alt_link }}">{{ section.settings.alt_label }}</a>
+      {%- endif -%}
+    </div>
+    {%- if section.settings.cred_text != blank -%}
+      <div class="loc-cred">
+        {%- assign creds = section.settings.cred_text | split: '·' -%}
+        {%- for c in creds -%}<span>{{ c | strip }}</span>{%- unless forloop.last -%}<span aria-hidden="true">·</span>{%- endunless -%}{%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- if first -%}
+  {%- liquid
+    assign f_glb = first.settings.glb
+    unless f_glb contains '//'
+      assign f_glb = f_glb | asset_url
+    endunless
+    assign f_poster = first.settings.poster
+    unless f_poster contains '//'
+      assign f_poster = f_poster | asset_url
+    endunless
+  -%}
+  <div class="m3-stage-wrap">
+    <div class="m3-stage">
+      <model-viewer
+        src="{{ f_glb }}"
+        alt="{{ first.settings.alt | escape }}"
+        camera-orbit="{{ first.settings.orbit | default: '30deg 75deg auto' }}"
+        min-camera-orbit="auto 25deg auto"
+        max-camera-orbit="auto 95deg auto"
+        camera-controls
+        disable-zoom
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="2500"
+        rotation-per-second="16deg"
+        interaction-prompt="none"
+        shadow-intensity="1"
+        shadow-softness="0.9"
+        environment-image="neutral"
+        exposure="1.05"
+        loading="eager"
+        ar
+        ar-modes="webxr scene-viewer quick-look">
+        <img slot="poster" class="m3-poster" src="{{ f_poster }}" alt="{{ first.settings.alt | escape }}" width="1000" height="800" fetchpriority="high">
+        <button slot="ar-button" class="m3-ar" type="button">{{ section.settings.ar_label | default: 'View in your room' }}</button>
+      </model-viewer>
+      <span class="m3-hint" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12a8 8 0 0 1 14.9-4M20 12a8 8 0 0 1-14.9 4"/><path d="M19 4v4h-4M5 20v-4h4"/></svg>
+        {{ section.settings.hint | default: 'Drag to rotate' }}
+      </span>
+    </div>
+    <div class="m3-cap">
+      <p><strong class="m3-name">{{ first.settings.name }}</strong> <span class="m3-detail">{{ first.settings.detail }}</span></p>
+      {%- if section.settings.credit != blank -%}<span class="m3-credit">{{ section.settings.credit }}</span>{%- endif -%}
+    </div>
+    {%- if section.blocks.size > 1 -%}
+    <div class="m3-picks" role="group" aria-label="{{ section.settings.picker_label | default: 'Choose a 3D model' | escape }}">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign b_glb = block.settings.glb
+          unless b_glb contains '//'
+            assign b_glb = b_glb | asset_url
+          endunless
+          assign b_poster = block.settings.poster
+          unless b_poster contains '//'
+            assign b_poster = b_poster | asset_url
+          endunless
+          assign b_thumb = block.settings.thumb | default: block.settings.poster
+          unless b_thumb contains '//'
+            assign b_thumb = b_thumb | asset_url
+          endunless
+        -%}
+        <button type="button" class="m3-pick" {{ block.shopify_attributes }}
+          aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
+          aria-label="{{ block.settings.name | escape }}"
+          data-src="{{ b_glb }}" data-poster="{{ b_poster }}"
+          data-alt="{{ block.settings.alt | escape }}" data-orbit="{{ block.settings.orbit | default: '30deg 75deg auto' }}"
+          data-name="{{ block.settings.name | escape }}" data-detail="{{ block.settings.detail | escape }}">
+          <img src="{{ b_thumb }}" alt="" width="240" height="192" loading="lazy">
+        </button>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+</section>
+
+{%- if section.blocks.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ section.settings.heading | json }},
+  "itemListElement": [
+    {%- for block in section.blocks -%}
+    {%- liquid
+      assign j_glb = block.settings.glb
+      unless j_glb contains '//'
+        assign j_glb = j_glb | asset_url
+      endunless
+      assign j_poster = block.settings.poster
+      unless j_poster contains '//'
+        assign j_poster = j_poster | asset_url
+      endunless
+    -%}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "3DModel",
+        "name": {{ block.settings.name | json }},
+        "description": {{ block.settings.alt | json }},
+        "image": {{ j_poster | prepend: 'https:' | json }},
+        "creator": { "@id": {{ org_id | json }} },
+        "encoding": { "@type": "MediaObject", "contentUrl": {{ j_glb | prepend: 'https:' | json }}, "encodingFormat": "model/gltf-binary" }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+<script type="module" src="{{ 'model-viewer-4.3.1.min.js' | asset_url }}" defer></script>
+<script>
+  (function () {
+    var root = document.getElementById('m3-{{ section.id }}');
+    if (!root) return;
+    var mv = root.querySelector('model-viewer');
+    if (!mv) return;
+    var poster = root.querySelector('.m3-poster');
+    var hint = root.querySelector('.m3-hint');
+    var nameEl = root.querySelector('.m3-name');
+    var detailEl = root.querySelector('.m3-detail');
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) mv.removeAttribute('auto-rotate');
+    // Wheel-zoom only once someone is working the model, so the page still scrolls past it.
+    mv.addEventListener('pointerdown', function () { mv.removeAttribute('disable-zoom'); });
+    mv.addEventListener('pointerleave', function () { mv.setAttribute('disable-zoom', ''); });
+    mv.addEventListener('camera-change', function (e) {
+      if (hint && e.detail && e.detail.source === 'user-interaction') hint.classList.add('is-gone');
+    });
+    root.querySelectorAll('.m3-pick').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (btn.getAttribute('aria-pressed') === 'true') return;
+        root.querySelectorAll('.m3-pick').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+        btn.setAttribute('aria-pressed', 'true');
+        if (poster) { poster.src = btn.dataset.poster; poster.alt = btn.dataset.alt; }
+        mv.alt = btn.dataset.alt;
+        mv.cameraOrbit = btn.dataset.orbit;
+        mv.src = btn.dataset.src;
+        if (nameEl) nameEl.textContent = btn.dataset.name;
+        if (detailEl) detailEl.textContent = btn.dataset.detail;
+      });
+    });
+  })();
+</script>
+
+<style>
+  .m3-hero{max-width:1240px;margin:0 auto;padding:44px var(--pad) 28px;display:grid;
+    grid-template-columns:minmax(0,5fr) minmax(0,7fr);grid-template-areas:". stage" "copy stage" "act stage" ". stage";
+    grid-template-rows:1fr auto auto 1fr;column-gap:56px}
+  .m3-copy{grid-area:copy}
+  .m3-copy h1{font-size:clamp(30px,3.4vw,44px);font-weight:300;letter-spacing:-.012em;line-height:1.12;margin-top:14px;max-width:16ch}
+  .m3-lede{color:var(--soft);font-size:16px;line-height:1.7;margin-top:16px;max-width:44ch}
+  .m3-act{grid-area:act;align-self:start}
+  .m3-row{display:flex;align-items:center;gap:22px;margin-top:26px;flex-wrap:wrap}
+  .m3-stage-wrap{grid-area:stage;min-width:0}
+  .m3-stage{position:relative;aspect-ratio:5/4;background:#F2EFEA;overflow:hidden}
+  .m3-stage model-viewer{display:block;width:100%;height:100%;background:transparent;--poster-color:transparent;
+    --progress-bar-color:var(--ink);--progress-bar-height:2px}
+  .m3-stage model-viewer:focus-visible{outline:1px solid var(--ink);outline-offset:-1px}
+  .m3-poster{width:100%;height:100%;object-fit:cover}
+  .m3-hint{position:absolute;left:14px;bottom:14px;display:inline-flex;align-items:center;gap:7px;
+    background:rgba(253,252,250,.9);color:var(--soft);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+    padding:7px 12px;border-radius:99px;pointer-events:none;transition:opacity .5s}
+  .m3-hint.is-gone{opacity:0}
+  .m3-ar{position:absolute;right:14px;bottom:14px;background:var(--ink);color:#fff;border:0;cursor:pointer;
+    font:inherit;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px}
+  .m3-cap{display:flex;justify-content:space-between;align-items:baseline;gap:6px 16px;flex-wrap:wrap;margin-top:12px;font-size:13.5px;color:var(--soft)}
+  .m3-cap strong{font-weight:400;color:var(--ink);margin-right:6px}
+  .m3-credit{font-size:12px;color:var(--faint)}
+  .m3-picks{display:flex;gap:8px;margin-top:14px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .m3-picks::-webkit-scrollbar{display:none}
+  .m3-pick{flex:0 0 auto;width:84px;padding:0;border:1px solid transparent;background:#F2EFEA;cursor:pointer;opacity:.7;transition:opacity .2s,border-color .2s}
+  .m3-pick img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover}
+  .m3-pick:hover{opacity:1}
+  .m3-pick[aria-pressed="true"]{opacity:1;border-color:var(--ink)}
+  .m3-pick:focus-visible{outline:1px solid var(--ink);outline-offset:2px}
+  @media(max-width:900px){
+    .m3-hero{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "stage" "act";grid-template-rows:auto;
+      padding:28px 20px 16px;row-gap:22px}
+    .m3-copy h1{max-width:none}
+    .m3-row{margin-top:0}
+    .m3-pick{width:72px}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "3D model hero",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading (H1)" },
+    { "type": "textarea", "id": "lede", "label": "Short intro", "info": "Keep it to two lines; the models do the talking." },
+    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Contact us for a quote" },
+    { "type": "url", "id": "cta_link", "label": "Button link" },
+    { "type": "text", "id": "alt_label", "label": "Secondary link label" },
+    { "type": "text", "id": "alt_link", "label": "Secondary link", "info": "A page URL or an #anchor on this page." },
+    { "type": "text", "id": "cred_text", "label": "Promise strip", "info": "Separate items with ·" },
+    { "type": "text", "id": "hint", "label": "Stage hint", "default": "Drag to rotate" },
+    { "type": "text", "id": "ar_label", "label": "AR button label", "default": "View in your room" },
+    { "type": "text", "id": "credit", "label": "Caption credit", "default": "Modelled by Bella's 3D artists" },
+    { "type": "text", "id": "picker_label", "label": "Picker label (screen readers)", "default": "Choose a 3D model" }
+  ],
+  "blocks": [
+    {
+      "type": "model",
+      "name": "3D model",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Name" },
+        { "type": "text", "id": "detail", "label": "Materials / detail" },
+        { "type": "text", "id": "glb", "label": "GLB file", "info": "Theme asset filename or full URL" },
+        { "type": "text", "id": "poster", "label": "Poster image", "info": "5:4, same framing as the camera angle" },
+        { "type": "text", "id": "thumb", "label": "Thumbnail image" },
+        { "type": "text", "id": "alt", "label": "Alt text" },
+        { "type": "text", "id": "orbit", "label": "Camera angle", "default": "30deg 75deg auto" }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [{ "name": "3D model hero" }]
+}
+{% endschema %}
