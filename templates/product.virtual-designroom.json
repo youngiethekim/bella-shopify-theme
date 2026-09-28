@@ -1,0 +1,561 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "sofa",
+            "text": "<b>3 designs</b> per photo"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "clock",
+            "text": "Back in <b>24–48 hrs</b>"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "pen",
+            "text": "<b>Unlimited revisions</b>, 2 weeks"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "icon": "shield",
+            "text": "<b>Rework or refund</b>"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "eyebrow_fallback": "Virtual room design",
+        "lede": "Virtual room design by a real interior designer. Send a photo of a room, empty or furnished, and get back three photorealistic designs of your own space, each in a different furniture style, in 24 to 48 hours.",
+        "shot_label": "One room, three designs · by a Bella designer",
+        "hero_pairs": "",
+        "ba_word": "design",
+        "unit_label": "photo",
+        "qty_label": "How many photos?",
+        "default_qty": 1,
+        "min_qty": 1,
+        "reco_text": "Order one photo for each room or angle you want designed. Every photo comes back as three designs.",
+        "style_options": "",
+        "show_notes": false,
+        "assure_1": "Upload photos after checkout",
+        "assure_1_icon": "upload",
+        "assure_1_tip": "Your order confirmation includes an upload link. Send your photos, and any Look Book codes, whenever you're ready.",
+        "assure_2": "Unlimited revisions · 2 weeks",
+        "assure_2_icon": "pen",
+        "assure_2_tip": "Ask for changes to any of your three designs, free and unlimited for two weeks after delivery.",
+        "assure_3": "Rework or refund",
+        "assure_3_icon": "shield",
+        "assure_3_tip": "If a design still isn't right after rework, we refund that photo.",
+        "call_url": "",
+        "enable_tiers": false,
+        "tier1_pct": 0,
+        "tier2_pct": 0,
+        "tier3_pct": 0,
+        "tier4_pct": 0,
+        "def_eyebrow": "What it is",
+        "def_heading": "What is virtual room design?",
+        "collapse_description": false
+      }
+    },
+    "steps": {
+      "type": "bella-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Order & upload",
+            "text": "Order one photo per room or angle. Your confirmation includes an upload link, so you can send photos right after checkout or whenever they're ready."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "doc",
+            "title": "Share your style",
+            "text": "Send Look Book codes for the sets you like, name a style, or leave the choice to your designer."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "sofa",
+            "title": "A designer creates three designs",
+            "text": "A real interior designer builds your room digitally, then furnishes it three different ways, with furniture, decor and lighting placed to scale."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Compare, revise & download",
+            "text": "Your designs arrive in 24–48 hours. Compare them side by side, request any changes free for two weeks, and download the final images."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "How our virtual room design service works"
+      }
+    },
+    "reqs": {
+      "type": "bella-reqs",
+      "blocks": {
+        "rq1": {
+          "type": "req",
+          "settings": {
+            "text": "A photo of the room at least <strong>1,000 pixels</strong> on the long edge. Most phone photos already qualify, and <strong>2,000 × 3,000 px</strong> or larger gives your designer the most detail."
+          }
+        },
+        "rq2": {
+          "type": "req",
+          "settings": {
+            "text": "<strong>Empty or furnished</strong>: both work. Send the room as it is today."
+          }
+        },
+        "rq3": {
+          "type": "req",
+          "settings": {
+            "text": "Shot wide and level at chest height, with as much of the room, its walls and windows in frame as you can."
+          }
+        },
+        "rq4": {
+          "type": "req",
+          "settings": {
+            "text": "Your style, if you have one: <a href=\"/pages/lookbook\">Look Book</a> codes, a style name, or a few words about the look you want. Or leave it to your designer."
+          }
+        },
+        "rq5": {
+          "type": "req",
+          "settings": {
+            "text": "One photo per room or angle. To design multiple rooms, order one photo for each."
+          }
+        },
+        "gt1": {
+          "type": "get",
+          "settings": {
+            "text": "<strong>Three photorealistic designs</strong> of your room for every photo, each in a different furniture style."
+          }
+        },
+        "gt2": {
+          "type": "get",
+          "settings": {
+            "text": "Composed by hand by a <strong>real interior designer</strong>, never AI and never a template room."
+          }
+        },
+        "gt3": {
+          "type": "get",
+          "settings": {
+            "text": "High-resolution images of your own space, ready to save, share with family or show your contractor."
+          }
+        },
+        "gt4": {
+          "type": "get",
+          "settings": {
+            "text": "Delivery by download link in <strong>24–48 hours</strong>."
+          }
+        },
+        "gt5": {
+          "type": "get",
+          "settings": {
+            "text": "<strong>Unlimited revisions</strong> free for two weeks, backed by rework or refund."
+          }
+        }
+      },
+      "block_order": [
+        "rq1",
+        "rq2",
+        "rq3",
+        "rq4",
+        "rq5",
+        "gt1",
+        "gt2",
+        "gt3",
+        "gt4",
+        "gt5"
+      ],
+      "settings": {
+        "eyebrow": "Black and white",
+        "heading": "Send one photo. Get three designs.",
+        "text": "Here's exactly what your order needs, and exactly what lands in your inbox. Not sure a photo will work? <a href=\"/pages/contact-us\">Contact us</a> before you order.",
+        "req_heading": "What we need from you",
+        "get_heading": "What you get back",
+        "note": "Planning to use a design in a property listing? Disclose it as virtually staged. For listing photos, <a href=\"/products/virtual-staging\">virtual staging</a> is the MLS-ready fit."
+      }
+    },
+    "styles": {
+      "type": "bella-included",
+      "blocks": {
+        "y1": {
+          "type": "item",
+          "settings": {
+            "icon": "swatch",
+            "title": "Quote Look Book codes",
+            "text": "Copy the codes of the sets you love and send them with your photos. Your designer uses them as the starting point for your designs."
+          }
+        },
+        "y2": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Name a style",
+            "text": "Tell us \"Scandinavian\" or \"Coastal\", or describe the vision in your own words: colors, materials and the mood you want in the space."
+          }
+        },
+        "y3": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Leave it to your designer",
+            "text": "Not sure yet? Your designer picks three different styles that suit the room's space, light and layout. It's a fast way to find inspiration."
+          }
+        }
+      },
+      "block_order": [
+        "y1",
+        "y2",
+        "y3"
+      ],
+      "settings": {
+        "eyebrow": "The Look Book",
+        "heading": "Choose your styles, or leave it to your designer",
+        "text": "Every set in our <a href=\"/pages/lookbook\">Look Book</a> is a real room styled by our designers. Browse by room or style, then copy a set's code: Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional or Transitional."
+      }
+    },
+    "uses": {
+      "type": "bella-included",
+      "blocks": {
+        "w1": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Homeowners planning a redesign",
+            "text": "Planning a living room design or starting a bedroom from scratch? Experiment with three finished directions in your own home, without commitment, before you shop for a single sofa."
+          }
+        },
+        "w2": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Save time before you buy furniture",
+            "text": "Seeing colors, lighting and furniture at the room's real dimensions helps you spot design problems early, like a sofa that blocks a window, and skip pieces that don't fit the room or your budget."
+          }
+        },
+        "w3": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Home sellers",
+            "text": "An empty or dated room is hard to picture, and NAR reports 82% of buyers' agents say staging helps buyers visualize a property as their future home. For the listing photos themselves, use <a href=\"/products/virtual-staging\">virtual staging</a>."
+          }
+        },
+        "w4": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Real estate agents",
+            "text": "Bring three designs of the awkward room to a listing presentation or a showing, instead of asking clients to imagine it."
+          }
+        },
+        "w5": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Investors and landlords",
+            "text": "Test furnishing styles for a rental or a flip, and show tenants or buyers the potential of a unit before you furnish it."
+          }
+        },
+        "w6": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Multiple rooms, one look",
+            "text": "Order one photo per room to design multiple rooms and keep a consistent style from the entry to the bedroom."
+          }
+        }
+      },
+      "block_order": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6"
+      ],
+      "settings": {
+        "eyebrow": "Who it's for",
+        "heading": "Who uses our room design service",
+        "text": "Anyone who wants to see a room before spending money on it. Here's how clients put Design My Room to work."
+      }
+    },
+    "compare": {
+      "type": "bella-scope",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "title": "Design My Room (Bella)",
+            "price": "{price:design-my-room} per photo",
+            "covers": "Three photorealistic designs of your own room, by a real interior designer",
+            "limit": "24–48 hours",
+            "ideal": "Choosing a style and layout before you buy furniture"
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "title": "In-person interior designer",
+            "price": "$100–$500 an hour; $8,550 average project",
+            "covers": "Site visits, a full design plan, sourcing and contractor coordination",
+            "limit": "Depends on scope and scheduling",
+            "ideal": "Renovations, whole homes and complex projects"
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "title": "Virtual staging",
+            "price": "{price:virtual-staging} per photo",
+            "covers": "One MLS-ready staged design per photo",
+            "limit": "24–48 hours",
+            "ideal": "Listing photos for a home that's for sale"
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "title": "Room design apps and AI tools",
+            "price": "Free plan or subscription",
+            "covers": "Do-it-yourself drag-and-drop layouts, or instant AI images",
+            "limit": "Minutes, plus your own time",
+            "ideal": "Early ideas and inspiration"
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "eyebrow": "Choosing a service",
+        "heading": "Virtual room design vs. an in-person designer, virtual staging and room design apps",
+        "text": "There's more than one way to see a room before you commit. Here's how the options compare on cost, what you get and how fast you get it.",
+        "note": "In-person figures are national averages from Angi's 2026 cost data. For a deeper look at online and in-person options, read our <a href=\"/pages/interior-design-consultation\">online interior design consultation</a> guide.",
+        "col_type": "Option",
+        "col_price": "Cost",
+        "col_covers": "What you get",
+        "col_limit": "Turnaround",
+        "col_ideal": "Best for"
+      }
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "The quality is impeccable. Their furniture is so realistic it does the trick every single time. We highly recommend Bella and will keep using them.",
+        "attribution": "Natasha Reneau Jones · Real estate agent, Long Beach CA",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "faq": {
+      "type": "bella-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "How does virtual room design work?",
+            "answer": "You share photos of the room, measurements if you have them, and your style preferences online. A designer builds the room digitally, furnishes it, renders it as a photorealistic image and refines it with your feedback, so you can preview the finished space before you buy, paint or move anything. With Bella's Design My Room, every photo you send comes back as three designs in different furniture styles, made by a real interior designer."
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I take a picture of my room and redesign it?",
+            "answer": "Yes, that's exactly how Design My Room works. Take a clear, wide photo of the room, empty or furnished, upload it after checkout, and a Bella designer redesigns it three ways. You see new furniture, decor and layout in your own space, not in a generic showroom."
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I hire someone to design my room online?",
+            "answer": "Yes. With Design My Room you hire a professional interior designer online for one room or multiple rooms, with no site visit, no travel fees and no hourly billing. Order one photo per room, send your photos and style, and your designs arrive in 24–48 hours. We work with clients across the United States and Canada."
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "How much does it cost to design a room virtually?",
+            "answer": "Design My Room is one flat price per photo, shown at the top of this page, and every photo includes three designs. There are no hourly fees and no subscription. For comparison, Angi's 2026 cost data puts in-person interior designers at $100 to $500 an hour, with the average project costing $8,550."
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "How long does virtual room design take?",
+            "answer": "24 to 48 hours from the time you upload your photos. After delivery you have two weeks of unlimited free revisions, and if a design still isn't right, we rework it or refund it."
+          }
+        },
+        "q6": {
+          "type": "qa",
+          "settings": {
+            "question": "Does my room need to be empty?",
+            "answer": "No. Design My Room works from photos of empty or furnished rooms. Send the room as it is today, and your designer works from the space, walls, windows and dimensions in the photo."
+          }
+        },
+        "q7": {
+          "type": "qa",
+          "settings": {
+            "question": "How do I choose the styles for my designs?",
+            "answer": "Browse our <a href=\"/pages/lookbook\">Look Book</a> and send the codes of the sets you like with your photos, name a style, or leave the choice to your designer. Look Book styles include Contemporary, Modern Farmhouse, Scandinavian, Coastal, Mid-Century Modern, Traditional and Transitional."
+          }
+        },
+        "q8": {
+          "type": "qa",
+          "settings": {
+            "question": "Can you design a living room, bedroom or dining room?",
+            "answer": "Yes. Design My Room is built for the residential rooms you furnish, such as a living room, bedroom, dining room or home office, and the Look Book has designer sets for each. If the problem is dated floors, cabinets or fixtures rather than furniture, <a href=\"/products/virtual-renovation-service\">virtual renovation</a> is the better fit."
+          }
+        },
+        "q9": {
+          "type": "qa",
+          "settings": {
+            "question": "Is Design My Room an online interior design service?",
+            "answer": "Yes. It's a virtual interior design service with one clear deliverable: photorealistic designs of your own room that you can compare side by side. Many online design services deliver mood boards, floor plans or 3D renderings; Design My Room shows you the finished room. For a full comparison of online and in-person options, read our <a href=\"/pages/interior-design-consultation\">online interior design consultation</a> guide."
+          }
+        },
+        "q10": {
+          "type": "qa",
+          "settings": {
+            "question": "Does Design My Room include a floor plan?",
+            "answer": "No. Design My Room is a design and visualization service: you get three photorealistic designs of your room. It doesn't include a measured floor plan, a site visit, furniture purchasing or construction. If you need a layout drawing, <a href=\"/products/2d-3d-floor-plan-service\">2D and 3D floor plans</a> are a separate service."
+          }
+        },
+        "q11": {
+          "type": "qa",
+          "settings": {
+            "question": "What's the difference between Design My Room and virtual staging?",
+            "answer": "Both are done by Bella's interior designers, but they solve different problems. Virtual staging furnishes listing photos for a home that's for sale: one MLS-ready design per photo. Design My Room gives you three designs per photo, so you can compare styles and choose a direction for your own space. Selling a home? Start with <a href=\"/products/virtual-staging\">virtual staging</a>."
+          }
+        },
+        "q12": {
+          "type": "qa",
+          "settings": {
+            "question": "Can AI or ChatGPT redesign my room?",
+            "answer": "AI tools, including image features in chatbots like ChatGPT, can generate a redesigned room from a photo in seconds, and they're a fun source of ideas. The trade-off is accuracy: they often change windows, walls or proportions, and getting one specific detail right can take many tries. Every Design My Room design is composed by hand by a real interior designer, never AI, so the room stays your room."
+          }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I design my room online for free?",
+            "answer": "Yes, if you do the work yourself. Room design apps such as Planner 5D, Homestyler and Roomstyler have free plans: you draw or scan a floor plan, then drag and drop furniture on your phone, web browser or desktop and preview the room in 3D. In Apartment Therapy's 2025 review, the free plans were useful but limited, with many items behind a paywall. Design My Room is the done-for-you option: a professional designer creates the designs and delivers photorealistic images of your actual room."
+          }
+        },
+        "q14": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use the designs in a property listing?",
+            "answer": "Yes, with disclosure. If a design appears in a listing or in marketing, label it as virtually staged and keep the original photo available. For listing photos, <a href=\"/products/virtual-staging\">virtual staging</a> is built for the MLS."
+          }
+        },
+        "q15": {
+          "type": "qa",
+          "settings": {
+            "question": "What if I don't like the designs?",
+            "answer": "Ask for changes. You can request adjustments to the layout, colors or furniture in any of your three designs, and revisions are unlimited and free for two weeks after delivery. If a design still isn't right after rework, we refund that photo."
+          }
+        },
+        "q16": {
+          "type": "qa",
+          "settings": {
+            "question": "What software do your designers use?",
+            "answer": "Professional 3D modeling and rendering tools, including 3ds Max and the Corona renderer, which simulates how light falls on furniture and materials, with every image finished by hand in Photoshop. We don't use AI generators or template rooms."
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10",
+        "q11",
+        "q12",
+        "q16",
+        "q13",
+        "q14",
+        "q15"
+      ],
+      "settings": {
+        "eyebrow": "Questions",
+        "heading": "Virtual room design questions, answered"
+      }
+    },
+    "related": {
+      "type": "bella-related-links",
+      "settings": {
+        "eyebrow": "Related",
+        "heading": "More ways to see a space before you commit.",
+        "text": "Comparing online and in-person design? Read our <a href=\"/pages/interior-design-consultation\">online interior design consultation</a> guide, or browse styles in the <a href=\"/pages/lookbook\">Look Book</a>. Selling a home? <a href=\"/products/virtual-staging\">Virtual staging</a> furnishes listing photos, <a href=\"/products/virtual-renovation-service\">virtual renovation</a> updates dated finishes, and <a href=\"/products/2d-3d-floor-plan-service\">2D and 3D floor plans</a> show the layout."
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your room, three ways",
+        "heading": "Ready to see your room redesigned?",
+        "text": "Send a photo today and compare three designer-made designs of your own space in 24 to 48 hours.",
+        "cta_label": "Design my room — {price:design-my-room} a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "steps",
+    "reqs",
+    "styles",
+    "uses",
+    "compare",
+    "quote",
+    "faq",
+    "related",
+    "cta"
+  ]
+}
