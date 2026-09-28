@@ -13,7 +13,13 @@
           {%- if section.settings.before != blank -%}
             <img src="{{ section.settings.before | image_url: width: 1400 }}" alt="{{ section.settings.before.alt | default: 'Before' }}" loading="lazy" width="1400" height="930">
           {%- elsif section.settings.before_url != blank -%}
-            <img src="{{ section.settings.before_url }}" alt="{{ section.settings.before_label | escape }}" loading="lazy" width="1400" height="930">
+            {%- liquid
+              assign proof_before = section.settings.before_url
+              unless proof_before contains '//'
+                assign proof_before = proof_before | asset_url
+              endunless
+            -%}
+            <img src="{{ proof_before }}" alt="{{ section.settings.before_label | escape }}" loading="lazy" width="1400" height="930">
           {%- else -%}
             <img src="{{ 'proj-living-before.jpg' | asset_url }}" alt="An empty living room before virtual staging" loading="lazy" width="1400" height="930">
           {%- endif -%}
@@ -23,7 +29,13 @@
           {%- if section.settings.after != blank -%}
             <img src="{{ section.settings.after | image_url: width: 1400 }}" alt="{{ section.settings.after.alt | default: 'After' }}" loading="lazy" width="1400" height="930">
           {%- elsif section.settings.after_url != blank -%}
-            <img src="{{ section.settings.after_url }}" alt="{{ section.settings.after_label | escape }}" loading="lazy" width="1400" height="930">
+            {%- liquid
+              assign proof_after = section.settings.after_url
+              unless proof_after contains '//'
+                assign proof_after = proof_after | asset_url
+              endunless
+            -%}
+            <img src="{{ proof_after }}" alt="{{ section.settings.after_label | escape }}" loading="lazy" width="1400" height="930">
           {%- else -%}
             <img src="{{ 'proj-living-after.jpg' | asset_url }}" alt="The same living room after virtual staging" loading="lazy" width="1400" height="930">
           {%- endif -%}

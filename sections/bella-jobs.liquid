@@ -13,6 +13,9 @@
           assign after_src = block.settings.after | image_url: width: 1200
         elsif block.settings.after_url != blank
           assign after_src = block.settings.after_url
+          unless after_src contains '//'
+            assign after_src = after_src | asset_url
+          endunless
         else
           assign after_src = 'ext-villa-2.jpg' | asset_url
         endif
@@ -20,6 +23,9 @@
           assign before_src = block.settings.before | image_url: width: 1200
         elsif block.settings.before_url != blank
           assign before_src = block.settings.before_url
+          unless before_src contains '//'
+            assign before_src = before_src | asset_url
+          endunless
         else
           assign before_src = 'fp-2d.jpg' | asset_url
         endif

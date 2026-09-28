@@ -14,11 +14,17 @@
             assign after_fallback = 'proj-' | append: block.settings.sample | append: '-after.jpg' | asset_url
             if block.settings.before_url != blank
               assign before_src = block.settings.before_url
+              unless before_src contains '//'
+                assign before_src = before_src | asset_url
+              endunless
             else
               assign before_src = before_fallback
             endif
             if block.settings.after_url != blank
               assign after_src = block.settings.after_url
+              unless after_src contains '//'
+                assign after_src = after_src | asset_url
+              endunless
             else
               assign after_src = after_fallback
             endif
