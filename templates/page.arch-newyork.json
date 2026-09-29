@@ -8,6 +8,8 @@
         "lede": "Photorealistic renders of towers, residences and amenity floors, modelled from your drawings by human 3D artists, never AI. From {price:3d-rendering} an image, delivered in about 1–2 weeks. Revisions included.",
         "cta_label": "Order a render — from {price:3d-rendering}",
         "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "hero_image_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/apartment-building-3d-render.jpg?width=1400",
+        "hero_image_alt": "Photorealistic 3D exterior rendering of residential towers, modelled from architectural plans by Bella",
         "alt_label": "See our rendering portfolio",
         "alt_link": "/pages/portfolio",
         "cred_text": "From {price:3d-rendering} a render · Human 3D artists, never AI · Revisions included · Full usage rights"

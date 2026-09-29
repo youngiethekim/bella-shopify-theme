@@ -2,7 +2,8 @@
 {%- assign vr_price = all_products['virtual-renovation-service'].price_min | money_without_trailing_zeros -%}
 {%- assign rd_price = all_products['3d-rendering'].price_min | money_without_trailing_zeros -%}
 {%- if section.settings.show_hero -%}
-<section class="loc-hero">
+<section class="loc-hero{% if section.settings.hero_image_url != blank %} has-img{% endif %}">
+  <div class="loc-hero-copy">
   <span class="micro">{{ section.settings.eyebrow }}</span>
   <h1>{{ section.settings.heading }}</h1>
   <p class="loc-lede">{% render 'bella-price-text', text: section.settings.lede %}</p>
@@ -21,6 +22,10 @@
     <span>From {{ vs_price }} a photo</span><span>·</span><span>24–48 hour delivery</span><span>·</span><span>Real designers, never AI</span><span>·</span><span>Rework or refund</span>
     {%- endif -%}
   </div>
+  </div>
+  {%- if section.settings.hero_image_url != blank -%}
+  <figure class="loc-hero-img"><img src="{{ section.settings.hero_image_url }}" alt="{{ section.settings.hero_image_alt | escape }}" width="1400" height="1050" fetchpriority="high"></figure>
+  {%- endif -%}
 </section>
 {%- endif -%}
 <section class="loc-body">
@@ -61,6 +66,8 @@
 {
   "name": "Location page",
   "settings": [
+    { "type": "text", "id": "hero_image_url", "label": "Hero image URL (optional)", "info": "Puts a render beside the H1 on wide screens." },
+    { "type": "text", "id": "hero_image_alt", "label": "Hero image alt text" },
     {
       "type": "checkbox",
       "id": "show_hero",
