@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "loc": {
+      "type": "bella-location",
+      "settings": {
+        "eyebrow": "Bella · New York architectural visualization",
+        "heading": "3D Rendering Services in New York",
+        "lede": "Photorealistic renders of towers, residences and amenity floors, modelled from your drawings by human 3D artists, never AI. From {price:3d-rendering} an image, delivered in about 1–2 weeks. Revisions included.",
+        "cta_label": "Order a render — from {price:3d-rendering}",
+        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "alt_label": "See our rendering portfolio",
+        "alt_link": "/pages/portfolio",
+        "cred_text": "From {price:3d-rendering} a render · Human 3D artists, never AI · Revisions included · Full usage rights"
+      }
+    },
+    "proof": {
+      "type": "bella-proof",
+      "blocks": {
+        "st1": {
+          "type": "stat",
+          "settings": {
+            "icon": "clock",
+            "figure": "1–2 wks",
+            "text": "typical delivery from drawings to finished render, depending on scope.",
+            "source": "Bella turnaround"
+          }
+        },
+        "st2": {
+          "type": "stat",
+          "settings": {
+            "icon": "image",
+            "figure": "4K",
+            "text": "print-ready files for brochures, hoardings, sales galleries and listings.",
+            "source": "Every render"
+          }
+        },
+        "st3": {
+          "type": "stat",
+          "settings": {
+            "icon": "star",
+            "figure": "4.9",
+            "text": "average Google rating from the brokerages, builders and developers who order from Bella.",
+            "source": "Google"
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3"
+      ],
+      "settings": {
+        "eyebrow": "Our work",
+        "heading": "Exterior and interior renders, made from your plans.",
+        "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/apartment-building-3d-render.jpg?width=1400",
+        "before_label": "Exterior · residential towers rendered from plans by Bella",
+        "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/great-room-interior-render.jpg?width=1400",
+        "after_label": "Interior · great room rendered by Bella"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "image": "shopify://shop_images/la-riviere-exterior-render-1.jpg",
+        "eyebrow": "Your next launch",
+        "heading": "Ready to render your New York project?",
+        "text": "Order today, send your drawings, and market your project with photorealistic 3D renders before construction begins.",
+        "cta_label": "Order a render — from {price:3d-rendering}",
+        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "fine_print": "Send plans after checkout · Revisions included · 4K print-ready delivery · Full usage rights"
+      }
+    }
+  },
+  "order": [
+    "loc",
+    "proof",
+    "main",
+    "cta"
+  ]
+}
