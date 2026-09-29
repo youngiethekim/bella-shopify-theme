@@ -17,6 +17,8 @@
         "lede": "Luxury 3D rendering is photorealistic architectural visualization made to the standard of a high-end sales campaign: accurate materials, realistic lighting, designer styling and composed camera work. Bella's high-end residential rendering services turn your architectural drawings into luxury renders of Manhattan condos, residential towers, penthouses and amenity spaces for developers, architects and luxury brokerages in New York, Vancouver, Toronto and across the US and Canada. Every image is modelled by human 3D artists, never AI, from {price:3d-rendering} a render.",
         "cta_label": "Order a luxury render — from {price:3d-rendering}",
         "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "hero_image_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/la-riviere-exterior-render-1.jpg?width=1400",
+        "hero_image_alt": "Luxury 3D exterior rendering of a residential building, modelled from architectural plans by Bella",
         "alt_label": "See our rendering portfolio",
         "alt_link": "/pages/portfolio",
         "cred_text": "From {price:3d-rendering} a render · Human 3D artists, never AI · Revisions included · Full usage rights",

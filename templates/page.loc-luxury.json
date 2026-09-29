@@ -17,6 +17,8 @@
         "lede": "Luxury virtual staging is high-end virtual staging for listing photos: a professional interior designer furnishes empty or cleared rooms in the image with furniture, art and lighting scaled to the architecture, so buyers of luxury properties can see how each room lives. Bella's designers stage Manhattan condos, co-ops, penthouses and townhouses, and luxury listings across the US and Canada, in 24 to 48 hours, from {price:virtual-staging} a photo.",
         "cta_label": "Stage my luxury listing — from {price:virtual-staging}",
         "cta_link": "/products/virtual-staging",
+        "hero_image_url": "bella-manhattan-penthouse-living-room-after.jpg",
+        "hero_image_alt": "Manhattan penthouse living room virtually staged by Bella for a luxury listing",
         "alt_label": "See our New York staging",
         "alt_link": "/pages/virtual-staging-new-york",
         "cred_text": "",

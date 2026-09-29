@@ -24,7 +24,7 @@
   </div>
   </div>
   {%- if section.settings.hero_image_url != blank -%}
-  <figure class="loc-hero-img"><img src="{{ section.settings.hero_image_url }}" alt="{{ section.settings.hero_image_alt | escape }}" width="1400" height="1050" fetchpriority="high"></figure>
+  <figure class="loc-hero-img"><img src="{% if section.settings.hero_image_url contains 'http' %}{{ section.settings.hero_image_url }}{% else %}{{ section.settings.hero_image_url | asset_url }}{% endif %}" alt="{{ section.settings.hero_image_alt | escape }}" width="1400" height="1050" fetchpriority="high"></figure>
   {%- endif -%}
 </section>
 {%- endif -%}
