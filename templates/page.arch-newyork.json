@@ -60,7 +60,9 @@
     },
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "hide_title": true
+      }
     },
     "cta": {
       "type": "bella-end-cta",
