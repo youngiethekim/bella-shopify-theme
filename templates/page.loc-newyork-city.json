@@ -673,11 +673,11 @@
   },
   "order": [
     "loc",
+    "work",
     "luxury",
     "clients",
     "compare",
     "steps",
-    "work",
     "included",
     "quote",
     "faq",

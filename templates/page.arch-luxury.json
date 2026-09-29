@@ -632,8 +632,8 @@
   },
   "order": [
     "loc",
-    "craft",
     "proof",
+    "craft",
     "markets",
     "scope",
     "steps",

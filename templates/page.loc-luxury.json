@@ -739,9 +739,9 @@
   },
   "order": [
     "loc",
+    "work",
     "cred",
     "styles",
-    "work",
     "compare",
     "choose",
     "markets",
