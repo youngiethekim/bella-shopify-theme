@@ -20,10 +20,10 @@
         "alt_label": "Browse the lookbook",
         "alt_link": "/pages/lookbook",
         "city": "Atlanta",
-        "market_heading": "Why virtual staging matters in the metro Atlanta market",
-        "market_text": "<p>Atlanta's growth market runs on investors, relocations and fast flips. Metro Atlanta absorbs tens of thousands of new residents a year, and many of them shortlist homes from out of state before a single visit. Staged photos give relocating buyers the confidence to book the one weekend of showings they'll fly in for — and with 97% of buyers starting their search online (NAR), the listing photos are the first impressions most potential buyers get. Listings that stand out online tend to draw more clicks and showing requests, which is why virtual staging is especially effective in a competitive, fast-moving market like Atlanta.</p><p>It's also one of the country's busiest flip and BRRRR markets. For investor listings, virtual staging sells the finished flip, and our virtual renovation service lets wholesalers and flippers market the after while the property is still the before — useful when a property trades twice in a year and the second listing needs to look nothing like the first.</p><p>Atlanta's other quirk is spread. A buyer weighing Grant Park against Alpharetta is choosing between two different lives, not two similar houses. Staging that reads correctly for each — urban and compact, or suburban and family-sized — does more work here than in cities with a single dominant housing type.</p>",
-        "local_heading": "Atlanta home staging, done virtually for each buyer",
-        "local_text": "<p>Designers stage modern-warm for Midtown and Old Fourth Ward condos, classic South for Buckhead, and family transitional for the northern suburbs. Every image is FMLS and GAMLS-ready in 24 to 48 hours with disclosure guidance, and you keep full usage rights for the MLS, your website and social posts.</p><p>Our design team works online, so there is no in-person consultation to schedule: order, upload your photos and your designer handles the styling and detail. Investor work moves on a different clock, so flip portfolios are quoted as a batch and delivered together rather than photo by photo — the whole listing lands at once, ready to post. Volume discounts apply automatically: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
+        "market_heading": "Why virtual staging matters in the metro Atlanta, Georgia market",
+        "market_text": "<p>Atlanta's growth market runs on investors, relocations and fast flips. Metro Atlanta absorbs tens of thousands of new residents a year, and many of them shortlist homes from out of state before a single visit. Staged photos give relocating buyers the confidence to book the one weekend of showings they'll fly in for — and with 97% of buyers starting their search online (NAR), the listing photos are the first impressions most potential buyers get. Listings that stand out online tend to draw more clicks and showing requests, which is why virtual staging is especially effective in a competitive, fast-moving market like Atlanta.</p><p>It's also one of the country's busiest flip and BRRRR markets. For investor listings, virtual staging sells the finished flip, and our virtual renovation service lets wholesalers and flippers market the after while the property is still the before — useful when a property trades twice in a year and the second listing needs to look nothing like the first.</p><p>Atlanta's other quirk is spread. A buyer weighing Grant Park against Alpharetta is choosing between two different lives, not two similar houses. Staging that reads correctly for each — urban and compact, or suburban and family-sized — does more work here than in cities with a single dominant housing type.</p><p>Whether the home is in Fulton, DeKalb, Cobb or Gwinnett County, real estate agents face the same first test: online photos decide who books a showing. Professional staging helps potential buyers picture living in a home, and virtually staged photos give a listing that first impression from day one.</p>",
+        "local_heading": "Atlanta home staging services, done virtually for each buyer",
+        "local_text": "<p>Designers stage modern-warm for Midtown and Old Fourth Ward condos, classic South for Buckhead, and family transitional for the northern suburbs. Every image is FMLS and GAMLS-ready in 24 to 48 hours with disclosure guidance, and you keep full usage rights for the MLS, your website and social posts. Our home staging services cover metro Atlanta and the rest of Georgia — Savannah, Augusta, Athens and beyond — because designers work from your photos, not a showroom.</p><p>Our design team works online, so there is no in-person consultation to schedule: order, upload your photos and your designer handles the styling and detail. Investor work moves on a different clock, so flip portfolios are quoted as a batch and delivered together rather than photo by photo — the whole listing lands at once, ready to post. Volume discounts apply automatically: 5% at 3+ photos, 10% at 6+, 15% at 11+ and 20% at 21+.</p>",
         "hoods_label": "Where we stage most",
         "hoods": "Midtown, Old Fourth Ward, Buckhead, Grant Park, East Atlanta, Decatur, Alpharetta, Sandy Springs"
       }
@@ -168,6 +168,13 @@
             "question": "Do builders use virtual staging for new construction?",
             "answer": "Yes. Builders virtually stage finished spec homes that are sitting empty, and use 3D rendering, from {price:3d-rendering}, to market homes that aren't built yet. Volume discounts apply when several homes' photos are ordered together."
           }
+        },
+        "q13": {
+          "type": "qa",
+          "settings": {
+            "question": "What are the biggest home staging mistakes?",
+            "answer": "The common ones are leaving rooms cluttered or too personal, using furniture that is too big or too small for the space, shooting photos before the room is ready, and not telling buyers a room is virtually staged. Virtual staging avoids the clutter and scale problems because designers place right-sized furniture into clean rooms, and every Bella order includes disclosure guidance so the photos stay honest."
+          }
         }
       },
       "block_order": [
@@ -182,11 +189,12 @@
         "q9",
         "q10",
         "q11",
-        "q12"
+        "q12",
+        "q13"
       ],
       "settings": {
         "eyebrow": "Questions",
-        "heading": "Atlanta virtual staging questions from agents",
+        "heading": "Atlanta virtual staging questions from real estate agents",
         "open_first": true
       }
     },
