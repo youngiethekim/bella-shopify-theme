@@ -1,19 +1,26 @@
 {%- comment -%}
   FAQPage JSON-LD from a FAQ block written in page or article HTML:
-  an h2 containing "question", "faq" or "asked", then h3 questions ending in "?",
-  each followed by its answer. Text before the first h2 is never the FAQ.
+  an h2 containing "faq", "frequently" or "asked" (or, failing that, "question"),
+  then h3 questions ending in "?", each followed by its answer.
+  Text before the first h2 is never the FAQ.
   Usage: {% render 'bella-faq-schema', content: page.content %}
 {%- endcomment -%}
 {%- liquid
   assign faq_seg = ''
+  assign faq_fallback = ''
   assign body_parts = content | split: '<h2'
   for part in body_parts offset: 1
     assign h2 = part | split: '</h2>' | first | prepend: '<h2' | strip_html | downcase
-    if h2 contains 'question' or h2 contains 'faq' or h2 contains 'asked'
+    if h2 contains 'faq' or h2 contains 'frequently' or h2 contains 'asked'
       assign faq_seg = part
       break
+    elsif faq_fallback == blank and h2 contains 'question'
+      assign faq_fallback = part
     endif
   endfor
+  if faq_seg == blank
+    assign faq_seg = faq_fallback
+  endif
 -%}
 {%- if faq_seg != blank -%}
 {%- capture faq_items -%}
