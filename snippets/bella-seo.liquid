@@ -29,7 +29,12 @@
   "@type": "Organization",
   "@id": {{ shop.secure_url | append: '/#organization' | json }},
   "name": {{ shop.name | json }},
+  "alternateName": ["Bella Virtual", "Bella Staging"],
   "url": {{ shop.secure_url | json }},
+  {%- if shop.brand.logo %}
+  "logo": {{ shop.brand.logo | image_url: width: 600 | prepend: 'https:' | json }},
+  {%- endif %}
+  "foundingDate": "2017",
   "description": "Virtual staging, 3D rendering, floor plans, 3D furniture modeling and photo editing — designed by hand, never AI.",
   {%- if settings.company_phone != blank %}
   "telephone": {{ settings.company_phone | strip | json }},
@@ -39,7 +44,12 @@
   {%- endif %}
   "areaServed": ["United States", "Canada"],
   "knowsAbout": ["Virtual staging", "Virtual renovation", "Virtual furniture removal", "3D architectural rendering", "3D product rendering", "3D furniture modeling", "2D and 3D floor plans", "Real estate photo editing", "360° virtual tours"],
-  "sameAs": []
+  "sameAs": [
+    "https://www.linkedin.com/company/bella-virtual-staging",
+    "https://www.facebook.com/bellavirtualstaging",
+    "https://www.instagram.com/bella_virtual_staging/",
+    "https://www.houzz.com/professionals/interior-designers-and-decorators/bella-virtual-staging-pfvwus-pf~1421584485"
+  ]
 }
 </script>
 
@@ -59,6 +69,60 @@
       assign pg_area = page.title | remove: '3D Rendering Services in ' | strip
     endif
   endif
+
+  comment
+    Price range for the Service offer, read live from the product a page sells
+  endcomment
+  assign pg_offer_product = nil
+  assign pg_offer_filter = ''
+  if pg_suffix contains 'loc-'
+    assign pg_offer_product = all_products['virtual-staging']
+  elsif page.handle == '3d-floor-plans'
+    assign pg_offer_product = all_products['2d-3d-floor-plan-service']
+    assign pg_offer_filter = '3D'
+  elsif page.handle contains 'interior-rendering'
+    assign pg_offer_product = all_products['3d-rendering-service-for-architectural-visualization']
+    assign pg_offer_filter = 'Interior'
+  elsif page.handle contains 'exterior-rendering'
+    assign pg_offer_product = all_products['3d-rendering-service-for-architectural-visualization']
+    assign pg_offer_filter = 'Exterior'
+  elsif page.handle contains 'rendering' and pg_suffix != 'arch-3d-modeling'
+    assign pg_offer_product = all_products['3d-rendering-service-for-architectural-visualization']
+  endif
+  assign pg_lo = nil
+  assign pg_hi = nil
+  assign pg_offer_count = 0
+  if pg_offer_product
+    for v in pg_offer_product.variants
+      if pg_offer_filter == blank or v.title contains pg_offer_filter
+        if pg_lo == nil
+          assign pg_lo = v.price
+          assign pg_hi = v.price
+        elsif v.price < pg_lo
+          assign pg_lo = v.price
+        elsif v.price > pg_hi
+          assign pg_hi = v.price
+        endif
+        assign pg_offer_count = pg_offer_count | plus: 1
+      endif
+    endfor
+  endif
+
+  comment
+    FAQ block written in the page body (h2 "…Questions…"/"FAQ", then h3 question + answer).
+    Templated pages (loc-, arch-, res-) render bella-faq, which outputs its own FAQPage.
+  endcomment
+  assign pg_faq_seg = ''
+  unless pg_suffix contains 'loc-' or pg_suffix contains 'arch-' or pg_suffix contains 'res-'
+    assign pg_body_parts = page.content | split: '<h2'
+    for part in pg_body_parts
+      assign pg_h2 = part | split: '</h2>' | first | prepend: '<h2' | strip_html | downcase
+      if pg_h2 contains 'question' or pg_h2 contains 'faq' or pg_h2 contains 'asked'
+        assign pg_faq_seg = part
+        break
+      endif
+    endfor
+  endunless
 -%}
 <script type="application/ld+json">
 {
@@ -86,8 +150,41 @@
   {%- else %}
   "areaServed": ["United States", "Canada"]
   {%- endif %}
+  {%- if pg_offer_count > 0 %},
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": {{ pg_lo | money_without_currency | remove: ',' | json }},
+    "highPrice": {{ pg_hi | money_without_currency | remove: ',' | json }},
+    "priceCurrency": {{ cart.currency.iso_code | json }},
+    "offerCount": {{ pg_offer_count }}
+  }
+  {%- endif %}
 }
 </script>
+{%- endif %}
+{%- if pg_faq_seg != blank %}
+{%- capture pg_faq_items -%}
+  {%- assign pg_faq_n = 0 -%}
+  {%- assign pg_qs = pg_faq_seg | split: '<h3' -%}
+  {%- for item in pg_qs offset: 1 -%}
+    {%- assign pg_q = item | split: '</h3>' | first | prepend: '<h3' | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' | split: ' ' | join: ' ' -%}
+    {%- unless pg_q contains '?' -%}{%- continue -%}{%- endunless -%}
+    {%- assign pg_a = item | split: '</h3>' | last | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' | split: ' ' | join: ' ' -%}
+    {%- if pg_a == blank -%}{%- continue -%}{%- endif -%}
+    {%- if pg_faq_n > 0 -%},{%- endif -%}
+    { "@type": "Question", "name": {{ pg_q | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ pg_a | json }} } }
+    {%- assign pg_faq_n = pg_faq_n | plus: 1 -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if pg_faq_n > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{{ pg_faq_items }}]
+}
+</script>
+{%- endif %}
 {%- endif %}
 {%- endif %}
 
