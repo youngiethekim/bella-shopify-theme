@@ -1,0 +1,41 @@
+{%- comment -%}
+  FAQPage JSON-LD from a FAQ block written in page or article HTML:
+  an h2 containing "question", "faq" or "asked", then h3 questions ending in "?",
+  each followed by its answer. Text before the first h2 is never the FAQ.
+  Usage: {% render 'bella-faq-schema', content: page.content %}
+{%- endcomment -%}
+{%- liquid
+  assign faq_seg = ''
+  assign body_parts = content | split: '<h2'
+  for part in body_parts offset: 1
+    assign h2 = part | split: '</h2>' | first | prepend: '<h2' | strip_html | downcase
+    if h2 contains 'question' or h2 contains 'faq' or h2 contains 'asked'
+      assign faq_seg = part
+      break
+    endif
+  endfor
+-%}
+{%- if faq_seg != blank -%}
+{%- capture faq_items -%}
+  {%- assign faq_n = 0 -%}
+  {%- assign qs = faq_seg | split: '<h3' -%}
+  {%- for item in qs offset: 1 -%}
+    {%- assign q = item | split: '</h3>' | first | prepend: '<h3' | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' | split: ' ' | join: ' ' -%}
+    {%- unless q contains '?' -%}{%- continue -%}{%- endunless -%}
+    {%- assign a = item | split: '</h3>' | last | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' | split: ' ' | join: ' ' -%}
+    {%- if a == blank -%}{%- continue -%}{%- endif -%}
+    {%- if faq_n > 0 -%},{%- endif -%}
+    { "@type": "Question", "name": {{ q | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ a | json }} } }
+    {%- assign faq_n = faq_n | plus: 1 -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if faq_n > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{{ faq_items }}]
+}
+</script>
+{%- endif -%}
+{%- endif -%}

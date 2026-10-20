@@ -826,33 +826,9 @@ Collection (CollectionPage + ItemList) and Breadcrumb Schema Markup
 </script>
 {%- endif -%}
 {%- elsif template.name == 'article' or template == 'article' -%}
-{%- if booster_config.google_snippets_enabled -%}
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {{ canonical_url | json }},
-    "url": "{{ shop.secure_url }}{{ article.url }}",
-    "author": {{ article.author | json }},
-    "name": {{ article.title | json }},
-    "publisher": {
-      "@type": "Organization",
-      "logo": {"@type": "ImageObject","url": "https:{{ 'logo.png' | asset_url }}"},
-      "name": {{ shop.name | json }}
-    },
-    "headline": {{ article.title | json }},
-    {%- if article.image -%}
-      "image": {"@type": "ImageObject","width": 1024,"height": 1024,"url": "https:{{ article | img_url: '1024x1024' }}"},
-    {%- else -%}
-      "image": {"@type": "ImageObject","width": 1024,"height": 1024,"url": "https://cdn.shopify.com/s/images/admin/no-image-grande.gif"},
-    {%- endif -%}
-    "datePublished": "{{ article.published_at }}",
-    "dateCreated": "{{ article.created_at }}",
-    "dateModified": "{{ article.published_at }}",
-    {%- if article.excerpt.size > 0 -%}"description": {{ article.excerpt | strip_html | json }} {%- else -%}"description": {{ article.content | strip_html | json }} {%- endif -%},"articleBody": {{ article.content | strip_html | json }}
-  }
-</script>
-{%- endif -%}
+{%- comment -%}
+  Article schema comes from bella-seo.liquid (real dateModified, author object, no 404 logo).
+{%- endcomment -%}
 {%- elsif template == '404' -%}
 <script type="text/javascript">
   var http = new XMLHttpRequest();

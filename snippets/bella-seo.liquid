@@ -107,22 +107,6 @@
       endif
     endfor
   endif
-
-  comment
-    FAQ block written in the page body (h2 "…Questions…"/"FAQ", then h3 question + answer).
-    Templated pages (loc-, arch-, res-) render bella-faq, which outputs its own FAQPage.
-  endcomment
-  assign pg_faq_seg = ''
-  unless pg_suffix contains 'loc-' or pg_suffix contains 'arch-' or pg_suffix contains 'res-'
-    assign pg_body_parts = page.content | split: '<h2'
-    for part in pg_body_parts
-      assign pg_h2 = part | split: '</h2>' | first | prepend: '<h2' | strip_html | downcase
-      if pg_h2 contains 'question' or pg_h2 contains 'faq' or pg_h2 contains 'asked'
-        assign pg_faq_seg = part
-        break
-      endif
-    endfor
-  endunless
 -%}
 <script type="application/ld+json">
 {
@@ -162,30 +146,10 @@
 }
 </script>
 {%- endif %}
-{%- if pg_faq_seg != blank %}
-{%- capture pg_faq_items -%}
-  {%- assign pg_faq_n = 0 -%}
-  {%- assign pg_qs = pg_faq_seg | split: '<h3' -%}
-  {%- for item in pg_qs offset: 1 -%}
-    {%- assign pg_q = item | split: '</h3>' | first | prepend: '<h3' | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' | split: ' ' | join: ' ' -%}
-    {%- unless pg_q contains '?' -%}{%- continue -%}{%- endunless -%}
-    {%- assign pg_a = item | split: '</h3>' | last | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' | split: ' ' | join: ' ' -%}
-    {%- if pg_a == blank -%}{%- continue -%}{%- endif -%}
-    {%- if pg_faq_n > 0 -%},{%- endif -%}
-    { "@type": "Question", "name": {{ pg_q | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ pg_a | json }} } }
-    {%- assign pg_faq_n = pg_faq_n | plus: 1 -%}
-  {%- endfor -%}
-{%- endcapture -%}
-{%- if pg_faq_n > 0 %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{{ pg_faq_items }}]
-}
-</script>
-{%- endif %}
-{%- endif %}
+{%- comment -%} Templated pages (loc-, arch-, res-) render bella-faq, which outputs its own FAQPage. {%- endcomment -%}
+{%- unless pg_suffix contains 'loc-' or pg_suffix contains 'arch-' or pg_suffix contains 'res-' %}
+{%- render 'bella-faq-schema', content: page.content %}
+{%- endunless %}
 {%- endif %}
 
 {%- comment -%} WebSite (with SearchAction) comes from booster-seo.liquid. {%- endcomment -%}
@@ -240,10 +204,19 @@
   {%- endif %}
   "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' | json }},
   "dateModified": {{ article.updated_at | default: article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' | json }},
-  "author": { "@type": "Person", "name": {{ article.author | default: shop.name | json }} },
+  {%- if page_description != blank %}
+  "description": {{ page_description | json }},
+  {%- endif %}
+  {%- comment -%} A byline like "Bella Virtual 3D Team" is the studio, not a person. {%- endcomment -%}
+  {%- if article.author == blank or article.author contains 'Bella' %}
+  "author": { "@type": "Organization", "name": {{ article.author | default: shop.name | json }}, "url": {{ shop.secure_url | json }} },
+  {%- else %}
+  "author": { "@type": "Person", "name": {{ article.author | json }} },
+  {%- endif %}
   "publisher": { "@type": "Organization", "name": {{ shop.name | json }}, "url": {{ shop.secure_url | json }} },
   "mainEntityOfPage": {{ shop.secure_url | append: article.url | json }},
   "url": {{ shop.secure_url | append: article.url | json }}
 }
 </script>
+{%- render 'bella-faq-schema', content: article.content %}
 {%- endif %}
