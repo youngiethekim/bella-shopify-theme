@@ -319,27 +319,9 @@ Title and Description
 Organization and Website Schema Markup
 {%- endcomment -%}
 
-{%- assign logo_url = booster_config.company_logo_url -%}
-
-{%- if template.name == 'index' or template == "index" -%}
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": {{ shop.name | json }},
-    "url": "https://{{ shop.domain }}",
-    "description": {{ shop.description | json }},
-    {%- unless logo_url == blank -%}
-      "image": "{{ logo_url | remove: "\" }}",
-      "logo": "{{ logo_url | remove: "\" }}",
-    {%- else -%}
-      "image": "https:{{ 'logo.png' | asset_url }}",
-      "logo": "https:{{ 'logo.png' | asset_url }}",
-    {%- endunless -%}
-    "sameAs": ["{{ booster_config.same_as | join: '", "'}}"]
-  }
-</script>
-{%- endif -%}
+{%- comment -%}
+  Organization is output once, site-wide, by bella-seo.liquid (this one pointed at a missing logo.png).
+{%- endcomment -%}
 
 <script type="application/ld+json">
   {

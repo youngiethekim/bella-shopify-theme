@@ -188,16 +188,7 @@
 {%- endif %}
 {%- endif %}
 
-{%- if request.page_type == 'index' %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": {{ shop.name | json }},
-  "url": {{ shop.secure_url | json }}
-}
-</script>
-{%- endif %}
+{%- comment -%} WebSite (with SearchAction) comes from booster-seo.liquid. {%- endcomment -%}
 
 {%- if request.page_type == 'product' and product %}
 <script type="application/ld+json">
