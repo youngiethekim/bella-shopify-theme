@@ -281,7 +281,7 @@
           "type": "qa",
           "settings": {
             "question": "What software is used for architectural rendering?",
-            "answer": "Studios commonly model in 3ds Max, SketchUp or Revit, render with a dedicated rendering engine, and finish the image in post production in Photoshop. You do not need any of it to order: send your drawings and our 3D team does the modelling."
+            "answer": "Studios commonly model in 3ds Max, SketchUp or Revit, render with a dedicated rendering engine, and finish the image in post production in Photoshop. You do not need any of it to order: send your drawings and our 3D team does the modelling. For types, cost by type and the full process, read our <a href=\"/blogs/news/3d-architectural-rendering\">3D architectural rendering guide</a>."
           }
         },
         "q12": {
