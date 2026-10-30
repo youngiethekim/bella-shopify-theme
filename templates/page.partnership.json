@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "form": {
+      "type": "bella-partner-form",
+      "settings": {
+        "eyebrow": "Partnership",
+        "heading": "Let's talk about partnership",
+        "text": "Join our growing network of partners and unlock new opportunities for collaboration and growth. Fill out the form below to start your partnership journey.",
+        "form_title": "Partnership application",
+        "form_subtitle": "Please provide your details and we'll get back to you shortly."
+      }
+    }
+  },
+  "order": [
+    "form"
+  ]
+}

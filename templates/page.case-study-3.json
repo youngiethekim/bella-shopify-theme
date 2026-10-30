@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "story": {
+      "type": "bella-case-rows",
+      "settings": {
+        "eyebrow": "Case study · Townhouse sale",
+        "heading": "Leah – Lexington Green Townhouse, West Edmonton",
+        "sub": false,
+        "text": "Leah, a real estate agent, asked Bella to virtually stage a 2-bedroom, 2-bathroom end-unit townhouse at Lexington Green in West Edmonton. The property offered a unique layout with high ceilings and plenty of space, but needed a fresh, upscale look to attract buyers in a competitive market."
+      },
+      "blocks": {
+        "c1": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/Leah_Duvall_Main_Floor_1.png",
+            "sub": "Before staging",
+            "name": "Challenges before staging",
+            "text": "The townhouse featured 11-foot ceilings, hardwood flooring and a gas fireplace, making it an attractive space. Without staging, though, buyers struggled to see how the multi-level layout could be used. Leah needed staging to lift the living spaces, show off the large deck, and draw attention to the kitchen and dining areas with their stainless steel appliances and gas stove."
+          }
+        },
+        "c2": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/Leah_Duvall_-_LD-24007-12-Main_Floor.png",
+            "sub": "The result",
+            "name": "Sell your property faster with Bella",
+            "text": "Bella’s upscale virtual staging quickly captured buyer attention. The design highlighted the home’s best features, making it easy for buyers to imagine themselves living in this stylish, well-located property.",
+            "stat1": "Under 1 month|to sell"
+          }
+        },
+        "c3": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/Leah_Duvall_-_LD-24007-41-Upper_Level.png",
+            "sub": "The approach",
+            "name": "Efficient results for fast sales",
+            "text": "Bella’s ability to adapt quickly to style preferences and deliver upscale, polished results played a key role in helping Leah sell her Lexington Green townhouse in a short timeframe. By enhancing the home’s modern appeal, we showcased the property’s unique features so it stood out in a competitive market."
+          }
+        },
+        "c4": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/Leah_Duvall_-_LD-24007-54.png",
+            "sub": "The design",
+            "name": "Modern elegance, staged to perfection",
+            "text": "Bella transformed the townhouse with quick, thoughtful design, featuring elegant furniture and a spacious living room centred on the fireplace and patio doors."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "solution": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "What we did",
+        "heading": "Virtual staging solution",
+        "text": "Bella delivers virtual staging in 24–48 hours, enhancing spaces with modern, functional designs."
+      },
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Upscale modern staging",
+            "text": "Bella quickly delivered the first draft, and with Leah’s adjustments the final staging highlighted elegant furnishings, spacious living areas and a stylish kitchen."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "pen",
+            "title": "Revised to the agent’s style",
+            "text": "After Leah’s feedback, the revised staging featured a modern, elegant design with inviting, comfortable furniture in the living room and kitchen."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Quick turnaround, thoughtful design",
+            "text": "Bella delivered the first draft promptly, incorporating Leah’s style requests to create an upscale, modern design that highlighted the townhouse’s best features."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your listing next",
+        "heading": "Get your property staged today",
+        "text": "Designer-staged, MLS-ready photos in 24–48 hours, from {price:virtual-staging} a photo.",
+        "cta_label": "Get started →",
+        "cta_link": "/products/virtual-staging",
+        "fine_print": "Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "story",
+    "solution",
+    "cta"
+  ]
+}

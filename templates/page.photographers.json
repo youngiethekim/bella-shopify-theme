@@ -1,0 +1,94 @@
+{
+  "sections": {
+    "story": {
+      "type": "bella-case-rows",
+      "settings": {
+        "eyebrow": "Bella services for photographers",
+        "heading": "Image Editing and 360° Staged Tours That Sell",
+        "sub": false,
+        "text": "A modern approach to selling faster: we turn empty spaces in your 360° pictures into visually appealing, fully furnished rooms that highlight a property’s potential and attract more buyers or renters."
+      },
+      "blocks": {
+        "c1": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/day_to_dusk_before_22_1200x_1.png",
+            "sub": "Image editing",
+            "name": "Correct spatial perception and boost engagement",
+            "text": "Our image editing services help your clients by addressing the challenge of empty rooms appearing smaller or less inviting, providing context and scale for how furniture fits in a room, creating impactful visuals for real estate websites and social media, and giving buyers a better understanding of the property's layout and potential."
+          }
+        },
+        "c2": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/day_to_dusk_before_22_2_1200x_1.png",
+            "sub": "360° staging",
+            "name": "Transform your 360° photos with virtual staging and editing",
+            "text": "By transforming empty spaces into fully furnished, visually appealing rooms, you highlight the true potential of a property and attract more buyers or renters. It also offers clients a sustainable alternative to traditional staging, with no furniture trucks, while creating impactful visuals for online listings and social media."
+          }
+        },
+        "c3": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/3d_house_tour.png",
+            "sub": "Grow your business",
+            "name": "Maximize the impact with 360° virtually staged tours",
+            "text": "Offer value-added solutions that go beyond traditional photography, such as virtually staged tours, to meet the diverse needs of your real estate clients. A more complete package helps you carve out a unique position in the market and attract more clients to your business."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    },
+    "services": {
+      "type": "bella-doors",
+      "settings": {},
+      "blocks": {
+        "d1": {
+          "type": "door",
+          "settings": {
+            "image": "shopify://shop_images/Image_Editing.png",
+            "tag": "Photo editing",
+            "heading": "Real estate photo editing",
+            "text": "HDR edits, day-to-dusk conversions and item removal for listing photos.",
+            "link_label": "See photo editing →",
+            "link": "/products/photo-editing"
+          }
+        },
+        "d2": {
+          "type": "door",
+          "settings": {
+            "image": "shopify://shop_images/3d_house_tour.png",
+            "tag": "360° tours",
+            "heading": "360° virtual tour staging",
+            "text": "Furnish panoramic photos so buyers can walk through a staged home online.",
+            "link_label": "See 360° tour staging →",
+            "link": "/products/360-virtual-tour-staging"
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2"
+      ]
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "For photographers",
+        "heading": "Ready to add staging and editing to your packages?",
+        "text": "Contact us today to get started with virtual staging and editing for your real estate clients.",
+        "cta_label": "Contact us →",
+        "cta_link": "/pages/contact-us"
+      }
+    }
+  },
+  "order": [
+    "story",
+    "services",
+    "cta"
+  ]
+}

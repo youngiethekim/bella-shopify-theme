@@ -1,0 +1,110 @@
+{% style %}
+.pf-wrap{max-width:760px;margin:0 auto}
+.pf-head h1{margin-top:8px}
+.pf-head>p{color:var(--soft);margin-top:12px;line-height:1.7;max-width:62ch}
+.pf-card{margin-top:30px;border:1px solid var(--line);border-radius:14px;background:#fff;padding:28px}
+.pf-card h2{font-size:clamp(20px,2.2vw,24px);font-weight:400}
+.pf-card .pf-sub{color:var(--soft);font-size:14px;margin-top:6px}
+.pf-group{margin-top:24px}
+.pf-group legend{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);padding:0;margin-bottom:10px}
+.pf-group fieldset{border:0;padding:0;margin:0}
+.pf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+.pf-row.pf-full{grid-template-columns:1fr}
+.pf-field label{display:block;font-size:13.5px;color:var(--ink);margin-bottom:6px}
+.pf-field label span{color:var(--green)}
+.pf-field input,.pf-field textarea{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:8px;padding:12px 14px;font:inherit;font-size:15px;background:#fff;color:var(--ink);min-height:46px}
+.pf-field textarea{min-height:130px;resize:vertical}
+.pf-field input:focus,.pf-field textarea:focus{outline:2px solid var(--green);outline-offset:1px}
+.pf-card .btn{margin-top:22px}
+.pf-ok{border-left:2px solid var(--green);padding:10px 14px;background:#F3F6F2;color:var(--ink)}
+.pf-err{border-left:2px solid #A23B2A;padding:10px 14px;background:#FBF1EF;color:var(--ink);margin-top:14px}
+@media(max-width:640px){.pf-row{grid-template-columns:1fr}.pf-card{padding:20px}}
+{% endstyle %}
+<div class="svc-page">
+  <section class="sec">
+    <div class="sec-in pf-wrap">
+      <div class="pf-head">
+        <p class="micro">{{ section.settings.eyebrow }}</p>
+        <h1>{{ section.settings.heading }}</h1>
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+
+      <div class="pf-card">
+        <h2>{{ section.settings.form_title }}</h2>
+        {%- if section.settings.form_subtitle != blank -%}<p class="pf-sub">{{ section.settings.form_subtitle }}</p>{%- endif -%}
+
+        {%- form 'contact', id: 'PartnershipForm' -%}
+          {%- if form.posted_successfully? -%}
+            <p class="pf-ok" role="status">Thank you. Your partnership application is in, and we'll get back to you shortly.</p>
+          {%- else -%}
+            {%- if form.errors -%}
+              <div class="pf-err" role="alert">{{ form.errors | default_errors }}</div>
+            {%- endif -%}
+            <input type="hidden" name="contact[tags]" value="partnership">
+
+            <div class="pf-group"><fieldset>
+              <legend>Company information</legend>
+              <div class="pf-row">
+                <div class="pf-field">
+                  <label for="PfCompany">Company name <span aria-hidden="true">*</span></label>
+                  <input id="PfCompany" type="text" name="contact[company_name]" autocomplete="organization" required>
+                </div>
+                <div class="pf-field">
+                  <label for="PfWebsite">Website <span aria-hidden="true">*</span></label>
+                  <input id="PfWebsite" type="url" name="contact[website]" placeholder="https://" autocomplete="url" required>
+                </div>
+              </div>
+            </fieldset></div>
+
+            <div class="pf-group"><fieldset>
+              <legend>Contact information</legend>
+              <div class="pf-row pf-full">
+                <div class="pf-field">
+                  <label for="PfName">Contact name <span aria-hidden="true">*</span></label>
+                  <input id="PfName" type="text" name="contact[name]" autocomplete="name" required>
+                </div>
+              </div>
+              <div class="pf-row">
+                <div class="pf-field">
+                  <label for="PfEmail">Email address <span aria-hidden="true">*</span></label>
+                  <input id="PfEmail" type="email" name="contact[email]" autocomplete="email" required>
+                </div>
+                <div class="pf-field">
+                  <label for="PfPhone">Phone number <span aria-hidden="true">*</span></label>
+                  <input id="PfPhone" type="tel" name="contact[phone]" autocomplete="tel" required>
+                </div>
+              </div>
+            </fieldset></div>
+
+            <div class="pf-group"><fieldset>
+              <legend>Partnership details</legend>
+              <div class="pf-row pf-full">
+                <div class="pf-field">
+                  <label for="PfBody">Tell us about your partnership goals</label>
+                  <textarea id="PfBody" name="contact[body]" placeholder="Describe your organization and what you hope to achieve through this partnership."></textarea>
+                </div>
+              </div>
+            </fieldset></div>
+
+            <button type="submit" class="btn">{{ section.settings.button }}</button>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Partnership form",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Partnership" },
+    { "type": "text", "id": "heading", "label": "Heading (H1)", "default": "Let's talk about partnership" },
+    { "type": "textarea", "id": "text", "label": "Intro" },
+    { "type": "text", "id": "form_title", "label": "Form title", "default": "Partnership application" },
+    { "type": "text", "id": "form_subtitle", "label": "Form subtitle" },
+    { "type": "text", "id": "button", "label": "Button", "default": "Submit application" }
+  ],
+  "presets": [{ "name": "Partnership form" }]
+}
+{% endschema %}

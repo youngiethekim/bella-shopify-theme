@@ -1,0 +1,173 @@
+{
+  "sections": {
+    "hero": {
+      "type": "bella-case-rows",
+      "settings": {
+        "eyebrow": "Case studies",
+        "heading": "Proven Virtual Staging Results That Sell Homes Faster",
+        "sub": false,
+        "text": "From empty townhouses to luxury estates, see the before-and-after transformations that attract buyers and close deals."
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "doors": {
+      "type": "bella-doors",
+      "settings": {},
+      "blocks": {
+        "d1": {
+          "type": "door",
+          "settings": {
+            "image": "shopify://shop_images/Calvin_Theme_Dawn_Export_Nov_16_2025_2.png",
+            "tag": "Rental listing · Ridgewood",
+            "heading": "Chris – 2107 Palmetto Street, Ridgewood",
+            "text": "A renovated 3-bedroom apartment, staged in one day and rented within 30 days.",
+            "link_label": "Read the case study →",
+            "link": "/pages/case-studies-realtors"
+          }
+        },
+        "d2": {
+          "type": "door",
+          "settings": {
+            "image": "shopify://shop_images/10_0c2b9bd7-b75d-4a8a-9b67-d5634713a966.png",
+            "tag": "Home builders",
+            "heading": "From blueprint to “sold” for home builders",
+            "text": "How Highland Homes, Olivia Clarke Homes, Brown Harris Stevens and Pacesetter Homes use Bella’s renderings and staging.",
+            "link_label": "Read the case studies →",
+            "link": "/pages/case-studies-home-builder"
+          }
+        },
+        "d3": {
+          "type": "door",
+          "settings": {
+            "image": "shopify://shop_images/Calvin_Theme_Dawn_Export_Nov_16_2025_4.png",
+            "tag": "Townhouse sale · West Edmonton",
+            "heading": "Leah – Lexington Green Townhouse",
+            "text": "An end-unit townhouse given a fresh, upscale look that sold in under a month.",
+            "link_label": "Read the case study →",
+            "link": "/pages/case-studies-property-manager"
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ]
+    },
+    "why": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Why it works",
+        "heading": "Professional photography meets strategic design",
+        "text": "Our virtual staging isn't just about making rooms look pretty: it's a marketing tool designed to help buyers picture their future in the space."
+      },
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Buyer psychology",
+            "text": "Staging creates an immediate emotional connection, helping buyers envision their future in the space rather than viewing another empty property."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "image",
+            "title": "Online optimization",
+            "text": "97% of buyers start their search online. Staged photos are made for listing platforms, social media and email marketing, so your property stands out in crowded feeds."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "note",
+            "title": "Cost-effective",
+            "text": "Virtual staging costs a fraction of physical staging: from {price:virtual-staging} a photo, paid once, versus $2,000–5,000 a month for rented furniture."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3"
+      ]
+    },
+    "how": {
+      "type": "bella-steps",
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "From empty photo to sold listing"
+      },
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "upload",
+            "title": "Upload your photos",
+            "text": "Send us your empty room photos after checkout."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "sofa",
+            "title": "Choose your style",
+            "text": "Select from our design styles or request a custom look."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "clock",
+            "title": "Receive staged photos",
+            "text": "Get market-ready images in 24–48 hours."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "List and sell",
+            "text": "Watch your property generate interest and offers."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    "quote": {
+      "type": "bella-trust-quote",
+      "settings": {
+        "quote": "My favorite virtual stagers. Bella did a fabulous job. We got an offer in 4 days and closed in 2 weeks. My seller is super happy and so am I.",
+        "attribution": "Beverly Bahm · Real estate agent, Chicago IL",
+        "rating": "4.9",
+        "rating_text": "on Google · from verified Bella client reviews"
+      }
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your listing next",
+        "heading": "Get the same result for your listing",
+        "text": "Designer-staged, MLS-ready photos in 24–48 hours, from {price:virtual-staging} a photo.",
+        "cta_label": "Get started →",
+        "cta_link": "/products/virtual-staging",
+        "fine_print": "Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "doors",
+    "why",
+    "how",
+    "quote",
+    "cta"
+  ]
+}

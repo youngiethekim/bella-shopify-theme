@@ -1,0 +1,138 @@
+{
+  "sections": {
+    "story": {
+      "type": "bella-case-rows",
+      "settings": {
+        "eyebrow": "Case studies · Home builders",
+        "heading": "From Blueprint to “Sold”: The Complete Visual Lifecycle for Home Builders",
+        "sub": false,
+        "text": "We partner with leading builders to accelerate sales velocity through 3D renderings, virtual staging and immersive marketing assets. From pre-sale to final close, we bring your vision to life."
+      },
+      "blocks": {
+        "c1": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/before_2ad8a114-9ea9-4716-a15a-a9a387a973ae.png",
+            "sub": "End to end",
+            "name": "Your end-to-end visual partner",
+            "text": "Pre-construction: photorealistic 3D renderings that sell the dream before you break ground. Mid-construction: floor plans and virtual tours that keep buyers engaged during the build. Final sale: virtual staging for spec homes that shows lifestyle, scale and luxury without the overhead."
+          }
+        }
+      },
+      "block_order": [
+        "c1"
+      ]
+    },
+    "featured": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "Featured case studies",
+        "heading": "How builders and brokerages use Bella"
+      },
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "plan",
+            "title": "Highland Homes (Texas): scaling consistency across communities",
+            "text": "The challenge: one of Texas’s largest private builders needed a high volume of assets that stayed consistent across many lots and floor plans. The solution: Bella built a high-volume rendering pipeline, delivering consistent exterior elevations and interior vignettes so Highland Homes could market new communities months before construction began. The result: a unified digital presence across its Texas markets and more pre-construction leads."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "star",
+            "title": "Olivia Clarke Homes: boutique luxury and brand storytelling",
+            "text": "The challenge: to stand apart from big-box builders, Olivia Clarke Homes needed visuals that communicated craftsmanship, custom finishes and a modern-meets-classic look. The solution: bespoke interior renderings with a heavy focus on texture and lighting, so the digital experience matched the physical quality of the homes. The result: 100% sell-through of featured developments before project completion, fuelled by high-engagement social media assets."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Brown Harris Stevens (NYC): luxury real estate staging",
+            "text": "The challenge: in New York, empty luxury units can feel cold. BHS needed to show the scale and lifestyle of premium Manhattan properties without the cost of physical staging. The solution: our designers turned vacant units into designer-curated living spaces tailored to the New York buyer. The result: fewer days on market and more clicks on listing portals like StreetEasy and Zillow."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "eye",
+            "title": "Pacesetter Homes: interactive sales tools",
+            "text": "The challenge: helping buyers picture their future home while choosing between structural options and upgrades. The solution: a suite of photorealistic renderings showing different finish levels, so buyers felt confident in their choices. The result: happier buyers and a smoother design-centre process."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ]
+    },
+    "process": {
+      "type": "bella-steps",
+      "settings": {
+        "eyebrow": "Process",
+        "heading": "How we build your success"
+      },
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "icon": "doc",
+            "title": "Project alignment",
+            "text": "We review your site plans, elevations and material boards."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "icon": "pen",
+            "title": "Creation",
+            "text": "Our architectural artists build your model precisely to your drawings."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "icon": "eye",
+            "title": "Refinement",
+            "text": "We work with your marketing team until every detail, from landscaping to lighting, is right."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "icon": "check",
+            "title": "Delivery",
+            "text": "High-resolution assets in the formats you need for web, print and social media."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Builders and developers",
+        "heading": "Ready to sell your next community faster?",
+        "text": "Join Highland Homes, Brown Harris Stevens and builders across North America. Let’s turn your blueprints into your best-selling assets.",
+        "cta_label": "See 3D rendering services →",
+        "cta_link": "/pages/3d-rendering-services",
+        "fine_print": "Renders typically in 1–2 weeks · Revisions until it's right"
+      }
+    }
+  },
+  "order": [
+    "story",
+    "featured",
+    "process",
+    "cta"
+  ]
+}

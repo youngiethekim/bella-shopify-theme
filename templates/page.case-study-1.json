@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "story": {
+      "type": "bella-case-rows",
+      "settings": {
+        "eyebrow": "Case study · Rental listing",
+        "heading": "Chris – 2107 Palmetto Street, Ridgewood",
+        "sub": false,
+        "text": "Chris, a home builder, brought Bella a newly renovated 3-bedroom, 1-bathroom apartment at 2107 Palmetto Street in Ridgewood. While the unit had strong potential, it needed help standing out in a competitive rental market. Virtual staging was requested to showcase the apartment’s best features and help prospective tenants visualize the space."
+      },
+      "blocks": {
+        "c1": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/Bedroom_3_1.png",
+            "sub": "Before staging",
+            "name": "Challenges before staging",
+            "text": "Despite recent renovations and a spacious layout, the empty rooms made it difficult for renters to imagine how the space could be used. The floor plan, with two bedrooms on one end and a third off the living room, required a staging approach that highlighted both versatility and functionality."
+          }
+        },
+        "c2": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/Bedroom_3_2_1.png",
+            "sub": "The result",
+            "name": "Virtual staging that delivers results",
+            "text": "Bella updated the listing with professionally staged photos in one day. Our staging helped prospective tenants clearly visualize themselves living in the space, leading to quicker decisions and a successful lease.",
+            "stat1": "Same day|staged listing went live",
+            "stat2": "30 days|to rent; closed August 7"
+          }
+        },
+        "c3": {
+          "type": "case",
+          "settings": {
+            "image": "shopify://shop_images/Living_Room_e6c83783-d966-4eca-b94d-1e7d1e6621cd.png",
+            "sub": "The design",
+            "name": "Modern design focused on natural light",
+            "text": "Our design team chose a modern, clean aesthetic that enhances the natural light flooding the apartment. Bright finishes and simple lines create a visually appealing environment that highlights the beauty of the space."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    },
+    "solution": {
+      "type": "bella-included",
+      "settings": {
+        "eyebrow": "What we did",
+        "heading": "Virtual staging solution",
+        "text": "Bella delivers virtual staging in 24–48 hours, enhancing spaces with modern, functional designs."
+      },
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "clock",
+            "title": "Efficient virtual staging for quick turnaround",
+            "text": "Bella delivered the staged photos within 24 hours of receiving the property images, so the listing was ready to show potential tenants right away."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "sun",
+            "title": "Modern design focused on natural light",
+            "text": "Our design team emphasized a modern, clean aesthetic that enhances the natural light flooding the apartment."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "sofa",
+            "title": "Maximizing space with sleek, functional furniture",
+            "text": "We selected sleek furniture that makes the most of the spacious living areas and adds to the charm of renovated spaces like the kitchen and bathroom."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "title": "Creating inviting and functional spaces",
+            "text": "With strategic furniture placement and thoughtful design elements, the apartment became a comfortable and practical living area."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ]
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your listing next",
+        "heading": "Start your virtual staging today",
+        "text": "Designer-staged, MLS-ready photos in 24–48 hours, from {price:virtual-staging} a photo.",
+        "cta_label": "Get started →",
+        "cta_link": "/products/virtual-staging",
+        "fine_print": "Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "story",
+    "solution",
+    "cta"
+  ]
+}
