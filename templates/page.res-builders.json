@@ -22,7 +22,7 @@
         "market_heading": "Home builder marketing starts before ground breaks",
         "market_text": "<p><strong>Home builder marketing</strong> is how builders and property developers attract buyers for homes that are planned, under construction or newly built. It has one job the rest of real estate marketing doesn't: selling something that doesn't exist yet. The cheapest money in any build is a pre-sale, and pre-sales come from visuals: photoreal 3D renderings that let a buyer commit from a floor plan, upgrade packages they can see, and lender decks that read like the project is already selling.</p><p>The resources below cover that whole arc, from the render shot list to the model-home math.</p>",
         "local_heading": "From drawings to deposits",
-        "local_text": "<p>Our <a href=\"/pages/3d-architectural-rendering-services\">3D architectural rendering services</a> start at {price:3d-rendering} per photoreal view: interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans by real designers (never AI) with revisions included. A pre-sale set of four to six views is priced per render with volume discounts, against a six-figure model home that shows one floor plan.</p>",
+        "local_text": "<p>Our <a href=\"/pages/3d-rendering-services\">3D rendering services</a> start at {price:3d-rendering} per photoreal view: interiors, exteriors, streetscapes and aerials, built from your CAD or PDF plans by real designers (never AI) with revisions included. A pre-sale set of four to six views is priced per render with volume discounts, against a six-figure model home that shows one floor plan.</p>",
         "hoods_label": "What's on this shelf",
         "hoods": "Pre-sale playbook, Rendering pricing & scope, What is architectural rendering, Approvals & lender packages, Model home math",
         "cred_text": "3D renders from {price:3d-rendering} · Human 3D artists, never AI · Revisions included · US and Canada"
@@ -56,7 +56,7 @@
             "tag": "Service",
             "title": "3D architectural rendering services",
             "text": "Interiors, exteriors, streetscapes and aerials from your plans — the full pricing and scope table.",
-            "link": "/pages/3d-architectural-rendering-services",
+            "link": "/pages/3d-rendering-services",
             "link_label": "See pricing & scope →"
           }
         },
