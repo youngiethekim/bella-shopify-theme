@@ -1,0 +1,78 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>82%</b> of buyers visualize it · NAR",
+            "icon": "star"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "text": "Back in <b>24–48 hrs</b>",
+            "icon": "clock"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>Unlimited revisions</b>, 2 weeks",
+            "icon": "pen"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "text": "<b>Rework or refund</b>",
+            "icon": "shield"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "style_options": "",
+        "show_notes": false,
+        "assure_1_icon": "upload",
+        "assure_2_icon": "pen",
+        "assure_3_icon": "shield",
+        "reco_text": "",
+        "collapse_description": false,
+        "assure_1_tip": "Your order confirmation includes an upload link — send photos right away or whenever the shoot is done.",
+        "assure_2_tip": "Mark up anything you'd like changed — revisions are free and unlimited for two weeks after delivery.",
+        "assure_3_tip": "If a photo still isn't right after rework, we refund that photo. No fine print.",
+        "default_qty": 6,
+        "lede": "For occupied homes with dated or cluttered furniture. We digitally clear the furniture, clutter and personal items from each listing photo, then a real interior designer restages the room in a style that suits your buyer. MLS-ready in 24 to 48 hours, with no movers and no storage unit.",
+        "min_qty": 3,
+        "enable_tiers": true
+      }
+    },
+    "related": {
+      "type": "bella-related-links",
+      "settings": {}
+    },
+    "cta": {
+      "type": "bella-end-cta",
+      "settings": {
+        "eyebrow": "Your next listing",
+        "heading": "Ready to stage your listing?",
+        "text": "Order today and have MLS-ready, designer-staged photos back in 24 to 48 hours.",
+        "cta_label": "Get started — from {price:virtual-staging} a photo",
+        "fine_print": "Upload after checkout · Unlimited revisions for two weeks · Rework or refund"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "cta"
+  ]
+}
