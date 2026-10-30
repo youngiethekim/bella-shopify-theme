@@ -14,15 +14,15 @@
       "settings": {
         "eyebrow": "Bella · architectural visualization studio",
         "heading": "3D Architectural Rendering Services",
-        "lede": "3D architectural rendering is a photorealistic image of a building, inside or out, created from its floor plans, elevations and CAD files before it is built. Bella Virtual, a Vancouver-based rendering studio, delivers architectural renders from {price:3d-rendering-service-for-architectural-visualization} per image, typically in 1–2 weeks, in 4K with revisions until it's right.",
-        "cta_label": "Order a render — from {price:3d-rendering-service-for-architectural-visualization}",
-        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "lede": "3D architectural rendering is a photorealistic image of a building, inside or out, created from its floor plans, elevations and CAD files before it is built. Bella Virtual, a Vancouver-based rendering studio, delivers architectural renders from {price:3d-rendering} per image, typically in 1–2 weeks, in 4K with revisions until it's right.",
+        "cta_label": "Order a render — from {price:3d-rendering}",
+        "cta_link": "/products/3d-rendering",
         "alt_label": "See real projects in our portfolio",
         "alt_link": "/pages/portfolio",
         "market_heading": "What our architectural visualization services include",
-        "market_text": "<p>We cover the full range of architectural visualization services for residential and commercial projects: photorealistic interior renderings, 3D exterior rendering with landscaping, sky and realistic lighting, streetscapes and aerial site views for townhome rows and subdivisions, and multi-building compositions for condo, mixed-use and large scale developments.</p><p>Every photorealistic architectural rendering is built from your architectural drawings (CAD, PDF or even hand-drawn floor plans) with materials and finishes matched to your selections, and revisions included until the image is right. Explore <a href=\"/pages/3d-interior-rendering-services\">3D interior rendering</a>, <a href=\"/pages/3d-exterior-rendering-services\">3D exterior rendering</a> and <a href=\"/products/commercial-rendering\">commercial rendering</a>, see every service on our <a href=\"/pages/3d-rendering-services\">3D rendering services</a> hub, or order directly from the <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D rendering page</a>.</p>",
+        "market_text": "<p>We cover the full range of architectural visualization services for residential and commercial projects: photorealistic interior renderings, 3D exterior rendering with landscaping, sky and realistic lighting, streetscapes and aerial site views for townhome rows and subdivisions, and multi-building compositions for condo, mixed-use and large scale developments.</p><p>Every photorealistic architectural rendering is built from your architectural drawings (CAD, PDF or even hand-drawn floor plans) with materials and finishes matched to your selections, and revisions included until the image is right. Explore <a href=\"/pages/3d-interior-rendering-services\">3D interior rendering</a>, <a href=\"/pages/3d-exterior-rendering-services\">3D exterior rendering</a> and <a href=\"/products/commercial-rendering\">commercial rendering</a>, see every service on our <a href=\"/pages/3d-rendering-services\">3D rendering services</a> hub, or order directly from the <a href=\"/products/3d-rendering\">3D rendering page</a>.</p>",
         "local_heading": "An architectural rendering studio, not a rendering app",
-        "local_text": "<p>AI render tools and DIY architectural rendering software produce images that look almost right, and buyers, lenders and planning boards notice the almost. Bella is an architectural rendering studio: a human 3D artist models your project, places the cameras like a photographer would, and lights the scene to sell it. That is why builders use our renders on billboards, hoardings, investor presentations and pre-sale brochures, not just listings.</p><p>Pricing is black and white: one finished image, one space or building, one camera angle, from {price:3d-rendering-service-for-architectural-visualization}, with 4K print-ready delivery and volume discounts applied automatically: 5% off at 3 or more renders, 10% at 6 or more, 15% at 11 or more and 20% at 21 or more.</p>",
+        "local_text": "<p>AI render tools and DIY architectural rendering software produce images that look almost right, and buyers, lenders and planning boards notice the almost. Bella is an architectural rendering studio: a human 3D artist models your project, places the cameras like a photographer would, and lights the scene to sell it. That is why builders use our renders on billboards, hoardings, investor presentations and pre-sale brochures, not just listings.</p><p>Pricing is black and white: one finished image, one space or building, one camera angle, from {price:3d-rendering}, with 4K print-ready delivery and volume discounts applied automatically: 5% off at 3 or more renders, 10% at 6 or more, 15% at 11 or more and 20% at 21 or more.</p>",
         "hoods_label": "Projects we render",
         "hoods": "Custom homes, Spec builds, Townhome rows, Condo developments, Mixed-use projects, Commercial interiors, Restaurants & retail, Landscape & site views, Real estate marketing, Planning submissions",
         "cred_text": "From {price:3d-rendering} a render · Human 3D artists, never AI · Revisions included · Full usage rights · Updated October 2026"
@@ -35,7 +35,7 @@
           "type": "row",
           "settings": {
             "title": "Interior — residential",
-            "price": "{price:3d-rendering-service-for-architectural-visualization}",
+            "price": "{price:3d-rendering}",
             "covers": "One room from one camera angle, fully furnished and styled.",
             "limit": "Open-plan spaces up to 1,000 sq ft count as one room.",
             "ideal": "Homes, condos, pre-sale suites"
@@ -175,7 +175,7 @@
         "heading": "From architectural drawings to photoreal.",
         "before_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/files/floorplan-standard.PNG?v=1615928605",
         "before_label": "Before · your drawings",
-        "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/products/3d-rendering-service-for-architectural-visualization-607448.jpg?v=1673656751",
+        "after_url": "https://cdn.shopify.com/s/files/1/0052/2085/9992/products/3d-rendering-607448.jpg?v=1673656751",
         "after_label": "After · photoreal render by Bella"
       }
     },
@@ -197,7 +197,7 @@
         "old_amount": "$100,000+",
         "old_per": "one floor plan · months of construction · built to be torn out",
         "new_label": "Bella 3D rendering",
-        "new_amount": "{price:3d-rendering-service-for-architectural-visualization}",
+        "new_amount": "{price:3d-rendering}",
         "new_per": "a render · from your plans · every floor plan and finish",
         "note": "Pre-selling used to mean building a model home and hoping buyers could imagine the rest. A photoreal architectural render does the model home's job before ground breaks — and does it for every floor plan, elevation and finish package, not just one. Modern 3D technology in the hands of a human artist: the render sells the build instead of describing it.",
         "cta_label": "",
@@ -218,7 +218,7 @@
           "type": "qa",
           "settings": {
             "question": "How much do architectural rendering services cost?",
-            "answer": "At Bella, photoreal architectural renders start at {price:3d-rendering-service-for-architectural-visualization} per finished image for a residential interior. Commercial interiors, single-building exteriors, streetscapes and multi-building compositions are priced per view in the table above. Every price includes modelling from your plans, revisions and 4K print-ready delivery, and volume discounts of up to 20% apply automatically. Across the wider North American market, expect roughly $300 to $5,000 USD per image depending on complexity."
+            "answer": "At Bella, photoreal architectural renders start at {price:3d-rendering} per finished image for a residential interior. Commercial interiors, single-building exteriors, streetscapes and multi-building compositions are priced per view in the table above. Every price includes modelling from your plans, revisions and 4K print-ready delivery, and volume discounts of up to 20% apply automatically. Across the wider North American market, expect roughly $300 to $5,000 USD per image depending on complexity."
           }
         },
         "q3": {
@@ -253,7 +253,7 @@
           "type": "qa",
           "settings": {
             "question": "How much do architects charge for renderings?",
-            "answer": "Architects either produce renderings in-house as part of their design fees or commission an outside rendering studio. Studio prices across North America run roughly $300 to $5,000 USD per image depending on complexity and realism. Bella works directly with architects, builders and developers, from {price:3d-rendering-service-for-architectural-visualization} per image."
+            "answer": "Architects either produce renderings in-house as part of their design fees or commission an outside rendering studio. Studio prices across North America run roughly $300 to $5,000 USD per image depending on complexity and realism. Bella works directly with architects, builders and developers, from {price:3d-rendering} per image."
           }
         },
         "q8": {
@@ -333,8 +333,8 @@
         "eyebrow": "Your next project",
         "heading": "Ready to bring your plans to life?",
         "text": "Order today, send your plans, and market your project with photoreal renders — before ground breaks.",
-        "cta_label": "Order a render — from {price:3d-rendering-service-for-architectural-visualization}",
-        "cta_link": "/products/3d-rendering-service-for-architectural-visualization",
+        "cta_label": "Order a render — from {price:3d-rendering}",
+        "cta_link": "/products/3d-rendering",
         "fine_print": "Send plans after checkout · Revisions included · Print-ready 4K delivery"
       }
     },

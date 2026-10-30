@@ -81,13 +81,13 @@
     assign pg_offer_product = all_products['2d-3d-floor-plan-service']
     assign pg_offer_filter = '3D'
   elsif page.handle contains 'interior-rendering'
-    assign pg_offer_product = all_products['3d-rendering-service-for-architectural-visualization']
+    assign pg_offer_product = all_products['3d-rendering']
     assign pg_offer_filter = 'Interior'
   elsif page.handle contains 'exterior-rendering'
-    assign pg_offer_product = all_products['3d-rendering-service-for-architectural-visualization']
+    assign pg_offer_product = all_products['3d-rendering']
     assign pg_offer_filter = 'Exterior'
   elsif page.handle contains 'rendering' and pg_suffix != 'arch-3d-modeling'
-    assign pg_offer_product = all_products['3d-rendering-service-for-architectural-visualization']
+    assign pg_offer_product = all_products['3d-rendering']
   endif
   assign pg_lo = nil
   assign pg_hi = nil

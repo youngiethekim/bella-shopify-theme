@@ -10,9 +10,9 @@
   endcomment
   assign p_staging = settings.product_staging | default: all_products['virtual-staging']
   assign p_renovation = settings.product_renovation | default: all_products['virtual-renovation-service']
-  assign p_rendering = settings.product_rendering | default: all_products['3d-rendering-service-for-architectural-visualization']
+  assign p_rendering = settings.product_rendering | default: all_products['3d-rendering']
   assign p_floorplan = settings.product_floorplan | default: all_products['2d-3d-floor-plan-service']
-  assign p_editing = settings.product_editing | default: all_products['real-estate-photo-editing']
+  assign p_editing = settings.product_editing | default: all_products['photo-editing']
 -%}
 {%- capture price_attrs -%}
   {%- if p_staging.price_min > 0 %} data-price-staging="{{ p_staging.price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code | strip_html | escape }}"{% endif -%}

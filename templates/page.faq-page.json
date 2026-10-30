@@ -72,7 +72,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does 3D rendering cost?",
-            "answer": "At Bella, photoreal renders start at {price:3d-rendering-service-for-architectural-visualization} per finished image — one room or building from one camera angle, with revisions and 4K print-ready delivery included."
+            "answer": "At Bella, photoreal renders start at {price:3d-rendering} per finished image — one room or building from one camera angle, with revisions and 4K print-ready delivery included."
           }
         },
         "q10": {

@@ -548,7 +548,7 @@
           "settings": {
             "icon": "plan",
             "title": "3D models of plans and homes",
-            "text": "Photorealistic visuals of exteriors and interiors, modeled from your plans for pre-sale marketing. For 3D architectural modelling and rendering, see <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D architectural rendering</a>."
+            "text": "Photorealistic visuals of exteriors and interiors, modeled from your plans for pre-sale marketing. For 3D architectural modelling and rendering, see <a href=\"/products/3d-rendering\">3D architectural rendering</a>."
           }
         },
         "b2": {
@@ -663,7 +663,7 @@
           "type": "qa",
           "settings": {
             "question": "Do you offer 3D modeling services for home builders?",
-            "answer": "Yes. For home builders we model plans and homes for marketing. See <a href=\"/products/3d-rendering-service-for-architectural-visualization\">3D architectural rendering</a> for exteriors and interiors built from plans, <a href=\"/pages/home-builder-marketing\">home builder marketing</a> for the full builder toolkit, and <a href=\"/pages/virtual-staging-texas\">virtual staging in Texas</a> for model homes and new construction."
+            "answer": "Yes. For home builders we model plans and homes for marketing. See <a href=\"/products/3d-rendering\">3D architectural rendering</a> for exteriors and interiors built from plans, <a href=\"/pages/home-builder-marketing\">home builder marketing</a> for the full builder toolkit, and <a href=\"/pages/virtual-staging-texas\">virtual staging in Texas</a> for model homes and new construction."
           }
         },
         "q13": {
