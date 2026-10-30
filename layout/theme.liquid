@@ -58,7 +58,7 @@
   {% sections 'footer-group' %}
 
   {%- unless template.name == 'product' or template.name == 'cart' -%}
-    <a class="bb-float" id="BbFloat" href="{{ routes.all_products_collection_url }}">
+    <a class="bb-float" id="BbFloat" href="{{ '/collections/our-services' }}">
       <span class="bf-txt">Order now</span>
       <span class="bf-sub">From {{ all_products['virtual-staging'].price_min | money_without_trailing_zeros }} · 24–48 h delivery</span>
     </a>

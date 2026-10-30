@@ -17,7 +17,7 @@
     a setting rather than a path typed into the script.
   endcomment
   assign lookbook_product = settings.product_staging | default: all_products['virtual-staging']
-  assign lookbook_order_url = settings.lookbook_order_url | default: lookbook_product.url | default: routes.all_products_collection_url
+  assign lookbook_order_url = settings.lookbook_order_url | default: lookbook_product.url | default: '/collections/our-services'
 -%}
 <div class="blb" data-order-url="{{ lookbook_order_url }}">
   <div class="blb-hero">

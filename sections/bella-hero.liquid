@@ -15,7 +15,7 @@
     <p>{% render 'bella-price-text', text: section.settings.subtext %}</p>
     <div class="row">
       {%- if section.settings.cta_label != blank -%}
-        <a class="btn btn-wht" href="{{ section.settings.cta_link | default: routes.all_products_collection_url }}">{% render 'bella-price-text', text: section.settings.cta_label %}</a>
+        <a class="btn btn-wht" href="{{ section.settings.cta_link | default: '/collections/our-services' }}">{% render 'bella-price-text', text: section.settings.cta_label %}</a>
       {%- endif -%}
       {%- if section.settings.ghost_label != blank -%}
         <a class="btn-ghost" href="{{ section.settings.ghost_link | default: '#work' }}">{{ section.settings.ghost_label }}</a>

@@ -1,7 +1,7 @@
 {%- liquid
-  assign order_url = settings.assistant_order_url | default: routes.all_products_collection_url
-  assign pricing_url = settings.assistant_pricing_url | default: routes.all_products_collection_url
-  assign services_url = settings.assistant_services_url | default: routes.all_products_collection_url
+  assign order_url = settings.assistant_order_url | default: '/collections/our-services'
+  assign pricing_url = settings.assistant_pricing_url | default: '/collections/our-services'
+  assign services_url = settings.assistant_services_url | default: '/collections/our-services'
 
   comment
     The assistant quotes prices, so it reads them from the products rather than

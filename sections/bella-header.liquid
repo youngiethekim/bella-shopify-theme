@@ -63,7 +63,7 @@
         <span>{{ settings.company_phone }}</span>
       </a>
     {%- endif -%}
-    <a class="btn" href="{{ section.settings.cta_link | default: routes.all_products_collection_url }}">{{ section.settings.cta_label }}</a>
+    <a class="btn" href="{{ section.settings.cta_link | default: '/collections/our-services' }}">{{ section.settings.cta_label }}</a>
     <button class="nav-burger" id="NavBurger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="MobileNav">
       <span></span><span></span><span></span>
     </button>
@@ -72,7 +72,7 @@
     {%- for link in section.settings.menu.links -%}
       <a href="{{ link.url }}">{{ link.title }}</a>
     {%- endfor -%}
-    <a class="btn" href="{{ section.settings.cta_link | default: routes.all_products_collection_url }}">{{ section.settings.cta_label }}</a>
+    <a class="btn" href="{{ section.settings.cta_link | default: '/collections/our-services' }}">{{ section.settings.cta_label }}</a>
     {%- if settings.company_phone != blank -%}
       {%- assign tel_digits = settings.company_phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' | remove: '.' -%}
       <a class="mobile-tel" href="tel:{{ tel_digits }}">{{ settings.company_phone }}</a>
