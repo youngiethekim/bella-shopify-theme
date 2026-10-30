@@ -246,7 +246,7 @@
             "image_url": "https://images.unsplash.com/photo-1592621385612-4d7129426394?w=1200&q=75&fm=jpg",
             "tag": "For real estate agents",
             "heading": "Your listing goes live Thursday, and the rooms are empty.",
-            "text": "Or worse: full of the tenant's furniture. Staging, floor plans, and photo edits in one order, back in 24 to 48 hours. Listing bundles from $349.",
+            "text": "Or worse: full of the tenant's furniture. Staging, floor plans, and photo edits in one order, back in 24 to 48 hours. Listing bundles from US$349.",
             "quote": "My favorite virtual stagers. We got an offer in 4 days and closed in 2 weeks.",
             "quote_name": "Beverly Bahm",
             "quote_role": "Real estate agent, Chicago IL",
@@ -259,7 +259,7 @@
             "image_url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=75&fm=jpg",
             "tag": "For home builders & developers",
             "heading": "You need pre-sales, and all you have is drawings.",
-            "text": "Photoreal exterior and interior renders, furnished 3D floor plans, and model-unit staging. Sell it before you build it. Packs from $1,950.",
+            "text": "Photoreal exterior and interior renders, furnished 3D floor plans, and model-unit staging. Sell it before you build it. Packs from US$1,950.",
             "quote": "These are perfect, thank you!",
             "quote_name": "Caleigh Wells",
             "quote_role": "Marketing, Highland Homes",
@@ -624,7 +624,7 @@
           "type": "qa",
           "settings": {
             "question": "Can I try Bella's virtual staging for free?",
-            "answer": "Yes. Real estate professionals can claim a $40 voucher on our free sample page to try Bella virtual staging risk-free. Eligibility is subject to Bella's approval."
+            "answer": "Yes. Real estate professionals can claim a US$40 voucher on our free sample page to try Bella virtual staging risk-free. Eligibility is subject to Bella's approval."
           }
         },
         "q13": {

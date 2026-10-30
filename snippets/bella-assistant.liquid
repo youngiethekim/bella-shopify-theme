@@ -15,11 +15,11 @@
   assign p_editing = settings.product_editing | default: all_products['real-estate-photo-editing']
 -%}
 {%- capture price_attrs -%}
-  {%- if p_staging.price_min > 0 %} data-price-staging="{{ p_staging.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
-  {%- if p_renovation.price_min > 0 %} data-price-renovation="{{ p_renovation.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
-  {%- if p_rendering.price_min > 0 %} data-price-rendering="{{ p_rendering.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
-  {%- if p_floorplan.price_min > 0 %} data-price-floorplan="{{ p_floorplan.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
-  {%- if p_editing.price_min > 0 %} data-price-editing="{{ p_editing.price_min | money_without_trailing_zeros | strip_html | escape }}"{% endif -%}
+  {%- if p_staging.price_min > 0 %} data-price-staging="{{ p_staging.price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code | strip_html | escape }}"{% endif -%}
+  {%- if p_renovation.price_min > 0 %} data-price-renovation="{{ p_renovation.price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code | strip_html | escape }}"{% endif -%}
+  {%- if p_rendering.price_min > 0 %} data-price-rendering="{{ p_rendering.price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code | strip_html | escape }}"{% endif -%}
+  {%- if p_floorplan.price_min > 0 %} data-price-floorplan="{{ p_floorplan.price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code | strip_html | escape }}"{% endif -%}
+  {%- if p_editing.price_min > 0 %} data-price-editing="{{ p_editing.price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code | strip_html | escape }}"{% endif -%}
 {%- endcapture -%}
 <button class="ba-launch" id="baLaunch" aria-label="Ask Bella">
   <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>

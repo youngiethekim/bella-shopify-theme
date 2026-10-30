@@ -351,8 +351,8 @@
           "type": "item",
           "settings": {
             "icon": "star",
-            "title": "A $40 voucher to try it",
-            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a Texas home. Eligibility subject to Bella's approval."
+            "title": "A US$40 voucher to try it",
+            "text": "New clients can claim a US$40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella on a Texas home. Eligibility subject to Bella's approval."
           }
         }
       },
@@ -456,7 +456,7 @@
           "type": "qa",
           "settings": {
             "question": "How can I try virtual staging for free?",
-            "answer": "Free AI apps exist, but builders marketing real inventory usually want designer work. New Bella clients can claim a $40 voucher on our sign-up page to try Bella on a first home. Eligibility subject to Bella's approval."
+            "answer": "Free AI apps exist, but builders marketing real inventory usually want designer work. New Bella clients can claim a US$40 voucher on our sign-up page to try Bella on a first home. Eligibility subject to Bella's approval."
           }
         },
         "q12": {

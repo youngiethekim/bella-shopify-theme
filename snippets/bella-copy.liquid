@@ -63,7 +63,7 @@
 
     if bella_amount > 0
       assign bella_token = '{price:' | append: bella_spec | append: '}'
-      assign bella_money = bella_amount | money_without_trailing_zeros
+      assign bella_money = bella_amount | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code
       assign bella_copy = bella_copy | replace: bella_token, bella_money
     endif
   endfor

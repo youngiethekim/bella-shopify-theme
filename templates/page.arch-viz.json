@@ -137,7 +137,7 @@
           "type": "qa",
           "settings": {
             "question": "How much does architectural visualization cost?",
-            "answer": "Renders are priced per finished image: interiors from {price:3d-rendering-service-for-architectural-visualization}, exteriors from $750, streetscapes from $1,000 and multi-building views from $1,400, with automatic volume discounts. See the full breakdown on our 3D architectural rendering services page."
+            "answer": "Renders are priced per finished image: interiors from {price:3d-rendering-service-for-architectural-visualization}, exteriors from US$750, streetscapes from US$1,000 and multi-building views from US$1,400, with automatic volume discounts. See the full breakdown on our 3D architectural rendering services page."
           }
         },
         "q4": {

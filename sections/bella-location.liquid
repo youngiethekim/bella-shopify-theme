@@ -1,6 +1,6 @@
-{%- assign vs_price = all_products['virtual-staging'].price_min | money_without_trailing_zeros -%}
-{%- assign vr_price = all_products['virtual-renovation-service'].price_min | money_without_trailing_zeros -%}
-{%- assign rd_price = all_products['3d-rendering'].price_min | money_without_trailing_zeros -%}
+{%- assign vs_price = all_products['virtual-staging'].price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code -%}
+{%- assign vr_price = all_products['virtual-renovation-service'].price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code -%}
+{%- assign rd_price = all_products['3d-rendering'].price_min | money_without_trailing_zeros | append: ' ' | append: cart.currency.iso_code -%}
 {%- if section.settings.show_hero -%}
 <section class="loc-hero{% if section.settings.hero_image_url != blank %} has-img{% endif %}">
   <div class="loc-hero-copy">

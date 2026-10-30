@@ -132,7 +132,7 @@
           "type": "qa",
           "settings": {
             "question": "How can I virtually stage my home for free?",
-            "answer": "Free AI apps can drop furniture into a photo, but the scale and finishes are generated, not designed. For designer staging, new Bella clients can claim a $40 voucher on our sign-up page to try it. Eligibility subject to Bella's approval."
+            "answer": "Free AI apps can drop furniture into a photo, but the scale and finishes are generated, not designed. For designer staging, new Bella clients can claim a US$40 voucher on our sign-up page to try it. Eligibility subject to Bella's approval."
           }
         },
         "q8": {
@@ -343,8 +343,8 @@
           "type": "item",
           "settings": {
             "icon": "star",
-            "title": "A $40 voucher the first time",
-            "text": "New clients can claim a $40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella for the first time. Eligibility subject to Bella's approval."
+            "title": "A US$40 voucher the first time",
+            "text": "New clients can claim a US$40 voucher on our sign-up page (bellavirtual.com/pages/sign-up) to try Bella for the first time. Eligibility subject to Bella's approval."
           }
         }
       },
