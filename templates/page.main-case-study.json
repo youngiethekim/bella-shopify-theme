@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -7,13 +16,10 @@
         "heading": "Proven Virtual Staging Results That Sell Homes Faster",
         "sub": false,
         "text": "From empty townhouses to luxury estates, see the before-and-after transformations that attract buyers and close deals."
-      },
-      "blocks": {},
-      "block_order": []
+      }
     },
     "doors": {
       "type": "bella-doors",
-      "settings": {},
       "blocks": {
         "d1": {
           "type": "door",
@@ -53,15 +59,11 @@
         "d1",
         "d2",
         "d3"
-      ]
+      ],
+      "settings": {}
     },
     "why": {
       "type": "bella-included",
-      "settings": {
-        "eyebrow": "Why it works",
-        "heading": "Professional photography meets strategic design",
-        "text": "Our virtual staging isn't just about making rooms look pretty: it's a marketing tool designed to help buyers picture their future in the space."
-      },
       "blocks": {
         "i1": {
           "type": "item",
@@ -92,14 +94,15 @@
         "i1",
         "i2",
         "i3"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "Why it works",
+        "heading": "Professional photography meets strategic design",
+        "text": "Our virtual staging isn't just about making rooms look pretty: it's a marketing tool designed to help buyers picture their future in the space."
+      }
     },
     "how": {
       "type": "bella-steps",
-      "settings": {
-        "eyebrow": "How it works",
-        "heading": "From empty photo to sold listing"
-      },
       "blocks": {
         "s1": {
           "type": "step",
@@ -139,7 +142,11 @@
         "s2",
         "s3",
         "s4"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "How it works",
+        "heading": "From empty photo to sold listing"
+      }
     },
     "quote": {
       "type": "bella-trust-quote",
