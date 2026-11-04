@@ -2,7 +2,7 @@
   {%- if section.settings.video != blank -%}
     {{ section.settings.video | video_tag: class: 'hero-vid', autoplay: true, muted: true, loop: false, controls: false, playsinline: true }}
   {%- else -%}
-    <video class="hero-vid" autoplay muted playsinline poster="{{ 'hero-before.jpg' | asset_url }}">
+    <video class="hero-vid" muted playsinline preload="none" data-defer-play poster="{{ 'hero-before.jpg' | asset_url }}">
       <source src="{{ 'hero-transform.mp4' | asset_url }}" type="video/mp4">
     </video>
   {%- endif -%}

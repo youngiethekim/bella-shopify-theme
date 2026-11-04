@@ -13,7 +13,8 @@ Title and Description
 
 {%- assign booster_config = shop.metafields.booster_apps_seo.config.value -%}
 {%- if template.name == 'index' or template == "index" -%}
-  {%- assign booster_title = booster_config.index_title -%}
+  {%- comment -%} Audit fix 9: home title names the two head services. {%- endcomment -%}
+  {%- assign booster_title = 'Virtual Staging Services & 3D Rendering | Bella Virtual' -%}
   {%- assign booster_desc = booster_config.index_desc -%}
   {%- assign baType = 'shop' -%}
 {%- elsif template.name == 'product' or template == 'product' -%}

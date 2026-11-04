@@ -6,6 +6,11 @@
   (function () {
     var v = document.querySelector('.hero-vid, .hero video');
     if (!v) return;
+    /* LCP: the poster loads first; the 3 MB video only starts once the page has loaded */
+    if (v.hasAttribute('data-defer-play')) {
+      var start = function () { v.preload = 'auto'; var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+      if (document.readyState === 'complete') { start(); } else { window.addEventListener('load', start, { once: true }); }
+    }
     v.addEventListener('ended', function () {
       setTimeout(function () { try { v.currentTime = 0; v.play(); } catch (e) {} }, 3500);
     });

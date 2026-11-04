@@ -9,6 +9,9 @@
   {%- comment -%} Every collection renders the same blocks from templates/collection.json, so they all canonicalise to one URL. Drop this branch if collections get per-collection content. {%- endcomment -%}
   {%- if request.page_type == 'collection' -%}
     <link rel="canonical" href="{{ shop.secure_url }}/collections/our-services">
+  {%- elsif request.page_type == 'product' and product.metafields.custom.seo_canonical.value != blank -%}
+    {%- comment -%} Order pages point at the long-form service page that should rank (audit fix 3). {%- endcomment -%}
+    <link rel="canonical" href="{{ shop.secure_url }}{{ product.metafields.custom.seo_canonical.value }}">
   {%- else -%}
     <link rel="canonical" href="{{ canonical_url }}">
   {%- endif -%}
@@ -34,6 +37,12 @@
   {% endif %}
   {%- endif -%}
 
+  {%- if template.name == 'list-collections' -%}
+    <meta name="robots" content="noindex,follow">
+  {%- endif -%}
+  {%- if request.page_type == 'index' -%}
+    <link rel="preload" as="image" href="{{ 'hero-before.jpg' | asset_url }}" fetchpriority="high">
+  {%- endif -%}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -53,6 +62,17 @@
 
   <main id="MainContent" role="main">
     {{ content_for_layout }}
+    {%- liquid
+      assign faq_owner = nil
+      if request.page_type == 'page'
+        assign faq_owner = page
+      elsif request.page_type == 'product'
+        assign faq_owner = product
+      elsif request.page_type == 'collection'
+        assign faq_owner = collection
+      endif
+    -%}
+    {%- if faq_owner -%}{% render 'bella-faq-meta', owner: faq_owner %}{%- endif -%}
   </main>
 
   {% sections 'footer-group' %}
