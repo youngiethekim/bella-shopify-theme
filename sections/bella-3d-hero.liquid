@@ -98,7 +98,7 @@
           data-src="{{ b_glb }}" data-poster="{{ b_poster }}"
           data-alt="{{ block.settings.alt | escape }}" data-orbit="{{ block.settings.orbit | default: '30deg 75deg auto' }}"
           data-name="{{ block.settings.name | escape }}" data-detail="{{ block.settings.detail | escape }}">
-          <img src="{{ b_thumb }}" alt="" width="240" height="192" loading="lazy">
+          <img src="{{ b_thumb }}" alt="{{ block.settings.alt | default: block.settings.name | escape }}" width="240" height="192" loading="lazy">
         </button>
       {%- endfor -%}
     </div>
