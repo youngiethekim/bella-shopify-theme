@@ -18,9 +18,16 @@
         "form_title": "Partnership application",
         "form_subtitle": "Please provide your details and we'll get back to you shortly."
       }
+    },
+    "content": {
+      "type": "main-page",
+      "settings": {
+        "hide_title": true
+      }
     }
   },
   "order": [
-    "form"
+    "form",
+    "content"
   ]
 }
