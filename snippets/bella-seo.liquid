@@ -26,7 +26,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "ProfessionalService"],
   "@id": {{ shop.secure_url | append: '/#organization' | json }},
   "name": {{ shop.name | json }},
   "alternateName": ["Bella Virtual", "Bella Staging"],
@@ -40,7 +40,17 @@
   "telephone": {{ settings.company_phone | strip | json }},
   {%- endif %}
   {%- if settings.company_address != blank %}
-  "address": {{ settings.company_address | strip | json }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "838 West Hastings Street, Suite 801",
+    "addressLocality": "Vancouver",
+    "addressRegion": "BC",
+    "postalCode": "V6C 0A6",
+    "addressCountry": "CA"
+  },
+  {%- if settings.company_map_url != blank %}
+  "hasMap": {{ settings.company_map_url | json }},
+  {%- endif %}
   {%- endif %}
   "areaServed": ["United States", "Canada"],
   "knowsAbout": ["Virtual staging", "Virtual renovation", "Virtual furniture removal", "3D architectural rendering", "3D product rendering", "3D furniture modeling", "2D and 3D floor plans", "Real estate photo editing", "360° virtual tours"],
@@ -155,31 +165,7 @@
 {%- comment -%} WebSite (with SearchAction) comes from booster-seo.liquid. {%- endcomment -%}
 
 {%- if request.page_type == 'product' and product %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": {{ product.title | json }},
-  "url": {{ shop.secure_url | append: product.url | json }},
-  {%- if product.featured_image %}
-  "image": [{{ product.featured_image | image_url: width: 1400 | prepend: 'https:' | json }}],
-  {%- endif %}
-  "description": {{ product.description | strip_html | truncatewords: 60 | json }},
-  "brand": { "@type": "Brand", "name": {{ shop.name | json }} },
-  "offers": [
-    {%- for variant in product.variants %}
-    {
-      "@type": "Offer",
-      "name": {{ variant.title | json }},
-      "price": {{ variant.price | money_without_currency | remove: ',' | json }},
-      "priceCurrency": {{ cart.currency.iso_code | json }},
-      "availability": "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-      "url": {{ shop.secure_url | append: product.url | append: '?variant=' | append: variant.id | json }}
-    }{% unless forloop.last %},{% endunless %}
-    {%- endfor %}
-  ]
-}
-</script>
+{%- comment -%} Product JSON-LD comes from booster-seo.liquid (ratings, shipping, returns); only the breadcrumb is output here. {%- endcomment -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

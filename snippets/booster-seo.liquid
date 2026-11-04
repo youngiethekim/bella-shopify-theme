@@ -746,26 +746,7 @@ Organization and Website Schema Markup
 {%- endif -%}
 }
 </script>
-{%- comment -%}
-Breadcrumb Schema Markup (Home > Collection > Product)
-{%- endcomment -%}
-{%- assign bc_col = collection -%}
-{%- if bc_col == blank -%}{%- assign bc_col = product.collections.first -%}{%- endif -%}
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem","position": 1,"name": "Home","item": "{{ shop.secure_url }}"}
-      {%- if bc_col != blank -%},
-      {"@type": "ListItem","position": 2,"name": {{ bc_col.title | json }},"item": "{{ shop.secure_url }}{{ bc_col.url }}"},
-      {"@type": "ListItem","position": 3,"name": {{ product.title | json }},"item": "{{ shop.secure_url }}{{ product.url }}"}
-      {%- else -%},
-      {"@type": "ListItem","position": 2,"name": {{ product.title | json }},"item": "{{ shop.secure_url }}{{ product.url }}"}
-      {%- endif -%}
-    ]
-  }
-</script>
+{%- comment -%} Product breadcrumb JSON-LD is output by bella-seo.liquid (Home > Services > Product). {%- endcomment -%}
 {%- endif -%}
 {%- elsif template.name == 'collection' or template == 'collection' -%}
 {%- if booster_config.google_snippets_enabled -%}
